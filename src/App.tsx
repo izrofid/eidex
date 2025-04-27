@@ -7,7 +7,8 @@ import { useState, useMemo, useEffect } from "react";
 type FilterOptions = {
   name?: string;
   typeId?: number;
-  minBST?: number;
+  minStat?: number;
+  statType?: string;
 };
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
   const [filters, setFilters] = useState<FilterOptions>({
     name: "",
     typeId: undefined,
-    minBST: undefined,
+    minStat: undefined,
   });
 
   const [isShiny, setIsShiny] = useState(false);
@@ -24,7 +25,7 @@ function App() {
   const [rawFilters, setRawFilters] = useState<FilterOptions>({
     name: "",
     typeId: undefined,
-    minBST: undefined,
+    minStat: undefined,
   });
 
   // Debounce delay in milliseconds
