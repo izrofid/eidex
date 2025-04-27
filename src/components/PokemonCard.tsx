@@ -26,7 +26,7 @@ export function PokemonCard({
   const bst = stats.reduce((sum, stat) => sum + stat, 0);
 
   return (
-    <div className="mx-auto flex w-2/5 flex-col text-white shadow-lg">
+    <div className="mx-auto flex w-full sm:w-max min-w-2/5 flex-col text-white shadow-lg">
       {/* Header */}
       <div className="flex justify-between bg-gray-900 py-3">
         <div className="flex items-center">
@@ -35,7 +35,7 @@ export function PokemonCard({
           <div className="text-md font-bold">{name}</div>
 
           {/* Types */}
-          <div className="flex items-center gap-1 px-2">
+          <div className="flex flex-row items-center gap-1 px-2 max-sm:flex-col">
             {types.map((typeId: number, index: number) => (
               <div key={index}>
                 <TypeBadge typeId={typeId} />
@@ -67,8 +67,8 @@ export function PokemonCard({
 
         <div>
           {/* Abilities */}
-          {abilities.map(([abilityId, _]: number[], index: number) => (
-            <div key={index}>{abilityId}</div>
+          {abilities.map((ability: number[], index: number) => (
+            <div key={index}>{ability[0]}</div>
           ))}
         </div>
       </div>
