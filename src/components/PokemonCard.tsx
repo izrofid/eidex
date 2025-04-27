@@ -67,7 +67,7 @@ export function PokemonCard({
 
         <div>
           {/* Abilities */}
-          {abilities.map(([abilityId, flag]: number[], index: number) => (
+          {abilities.map(([abilityId, _]: number[], index: number) => (
             <div key={index}>{abilityId}</div>
           ))}
         </div>
