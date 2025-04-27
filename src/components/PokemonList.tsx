@@ -1,22 +1,32 @@
+import { useEffect, useState } from "react";
 import { PokemonCard } from "./PokemonCard";
 
 type PokemonListProps = {
-    pokemons: any[]; 
-  };
+  pokemons: any[];
+  isShiny?: boolean;
+};
 
-export function PokemonList({ pokemons }: PokemonListProps) {
+export function PokemonList({ pokemons, isShiny }: PokemonListProps) {
+  const [visibleCount, setVisibleCount] = useState(10);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (
+        window.innerHeight + window.scrollY >=
+        document.body.offsetHeight - 300
+      ) {
+        setVisibleCount((prev) => Math.min(prev + 10, pokemons.length));
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [pokemons.length]);
+
   return (
-    <div className="flex flex-col items-center w-full border-2">
-      {pokemons.map((pokemon) => (
-        <PokemonCard
-          key={pokemon.id}
-          id={pokemon.id}
-          name={pokemon.name}
-          types={pokemon.types}
-          sprite={pokemon.sprite}
-          stats={pokemon.stats}
-          abilities={pokemon.abilities}
-        />
+    <div className="flex w-full flex-col items-center">
+      {pokemons.slice(0, visibleCount).map((pokemon) => (
+        <PokemonCard key={pokemon.id} {...pokemon} isShiny={isShiny} />
       ))}
     </div>
   );

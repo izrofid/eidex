@@ -1,3 +1,6 @@
+import spritesData from "../data/sprites.json";
+import shinySpritesData from "../data/shiny_sprites.json";
+
 import { TypeBadge } from "./TypeBadge";
 import { getAbilityName } from "../utils/abilityData";
 
@@ -5,7 +8,7 @@ type PokemonCardProps = {
   id: number;
   name: string;
   types: number[];
-  sprite: string;
+  isShiny: boolean;
   stats: number[]; // [HP, Atk, Def, Spe, SpA, SpD]
   abilities: [number, number][];
 };
@@ -14,7 +17,7 @@ export function PokemonCard({
   id,
   name,
   types,
-  sprite,
+  isShiny,
   stats,
   abilities,
 }: PokemonCardProps) {
@@ -31,14 +34,19 @@ export function PokemonCard({
   // If the sprite is "", then use the default sprite
   const fallbackSprite = "/eidex/missingno.png";
 
+  const shinySprite = `data:image/png;base64,${shinySpritesData[id.toString() as keyof typeof shinySpritesData]}`;
+  const regularSprite = `data:image/png;base64,${spritesData[id.toString() as keyof typeof spritesData]}`;
+
+  const displaySprite = isShiny ? shinySprite : regularSprite;
+
   return (
-    <div className="w-full flex flex-col text-white">
+    <div className="flex w-full flex-col text-white">
       {/* Header */}
       <div className="flex justify-between bg-gray-900 px-2 py-3">
         <div className="flex items-center gap-2">
           {/* Sprite and name  */}
           <img
-            src={sprite || fallbackSprite}
+            src={displaySprite || fallbackSprite}
             className="h-14 w-14 object-contain p-1"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
