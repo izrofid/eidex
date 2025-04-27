@@ -1,4 +1,5 @@
 import { TypeBadge } from "./TypeBadge";
+import { getAbilityName } from "../utils/abilityData";
 
 type PokemonCardProps = {
   id: number;
@@ -6,7 +7,7 @@ type PokemonCardProps = {
   types: number[];
   sprite: string;
   stats: number[]; // [HP, Atk, Def, Spe, SpA, SpD]
-  abilities: number[][];
+  abilities: [number, number][];
 };
 
 export function PokemonCard({
@@ -25,13 +26,25 @@ export function PokemonCard({
   // Calculate the BST (Base Stat Total)
   const bst = stats.reduce((sum, stat) => sum + stat, 0);
 
+  const reorderedAbilities = [...abilities.slice(1), abilities[0]];
+
+  // If the sprite is "", then use the default sprite
+  const fallbackSprite = "/eidex/missingno.png";
+
   return (
-    <div className="mx-auto flex w-full sm:w-max min-w-2/5 flex-col text-white shadow-lg">
+    <div className="min-w-2/5 mx-auto flex w-full flex-col text-white shadow-lg sm:w-max">
       {/* Header */}
       <div className="flex justify-between bg-gray-900 py-3">
         <div className="flex items-center">
           {/* Sprite and name  */}
-          <img src={sprite} className="h-13 w-13" />
+          <img
+            src={sprite || fallbackSprite}
+            className="h-14 w-14 object-contain p-1"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.src = fallbackSprite;
+            }}
+          />
           <div className="text-md font-bold">{name}</div>
 
           {/* Types */}
@@ -47,7 +60,28 @@ export function PokemonCard({
       </div>
 
       {/* Card body */}
-      <div className="bg-gray-800 px-3">
+      <div className="bg-gray-800 px-3 py-3">
+        <div className="flex flex-row gap-5 py-2">
+          {/* Abilities */}
+          {reorderedAbilities.map(
+            ([abilityId, abilityIndex], index: number) => {
+              const name = getAbilityName([abilityId, abilityIndex]);
+              const isHidden = index === reorderedAbilities.length - 1; // last one = Hidden
+
+              return (
+                <div
+                  key={index}
+                  className={`text-left italic ${
+                    isHidden ? "font-semibold text-pink-400" : ""
+                  }`}
+                >
+                  {name}
+                </div>
+              );
+            },
+          )}
+        </div>
+
         {/* Stats here */}
         <div className="my-2 flex flex-col">
           <div className="flex gap-4 text-center">
@@ -59,17 +93,10 @@ export function PokemonCard({
             ))}
             {/* After all the stats, add one extra box for BST */}
             <div className="flex flex-col items-center">
-              <div className="text-sm italic font-bold">{bst}</div>
+              <div className="text-sm font-bold italic">{bst}</div>
               <div className="text-sm font-bold text-amber-400">BST</div>
             </div>
           </div>
-        </div>
-
-        <div>
-          {/* Abilities */}
-          {abilities.map((ability: number[], index: number) => (
-            <div key={index}>{ability[0]}</div>
-          ))}
         </div>
       </div>
     </div>
