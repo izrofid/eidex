@@ -1,24 +1,24 @@
 // Utility to get type data for Pokémon
 
-export const TYPE_INFO: { [id: number]: { name: string; color: string } } = {
-  0: { name: "Normal", color: "#A8A77A" },
-  1: { name: "Fighting", color: "#C22E28" },
-  2: { name: "Flying", color: "#8571BE" },
-  3: { name: "Poison", color: "#A33EA1" },
-  4: { name: "Ground", color: "#B1954F" },
-  5: { name: "Rock", color: "#B6A136" },
-  6: { name: "Bug", color: "#808F13" },
-  7: { name: "Ghost", color: "#735797" },
-  8: { name: "Steel", color: "#8C8C9E" },
-  10: { name: "Fire", color: "#EE8130" },
-  11: { name: "Water", color: "#6390F0" },
-  12: { name: "Grass", color: "#62A13D" },
-  13: { name: "Electric", color: "#CF9A09" },
-  14: { name: "Psychic", color: "#F95587" },
-  15: { name: "Ice", color: "#65A19E" },
-  16: { name: "Dragon", color: "#6F35FC" },
-  17: { name: "Dark", color: "#705746" },
-  23: { name: "Fairy", color: "#D685AD" },
+export const TYPE_INFO: { [id: number]: { id: number; name: string; color: string } } = {
+  0: { id: 0, name: "Normal", color: "#A8A77A" },
+  1: { id: 1, name: "Fighting", color: "#C22E28" },
+  2: { id: 2, name: "Flying", color: "#8571BE" },
+  3: { id: 3, name: "Poison", color: "#A33EA1" },
+  4: { id: 4, name: "Ground", color: "#B1954F" },
+  5: { id: 5, name: "Rock", color: "#B6A136" },
+  6: { id: 6, name: "Bug", color: "#808F13" },
+  7: { id: 7, name: "Ghost", color: "#735797" },
+  8: { id: 8, name: "Steel", color: "#8C8C9E" },
+  10: { id: 10, name: "Fire", color: "#EE8130" },
+  11: { id: 11, name: "Water", color: "#6390F0" },
+  12: { id: 12, name: "Grass", color: "#62A13D" },
+  13: { id: 13, name: "Electric", color: "#CF9A09" },
+  14: { id: 14, name: "Psychic", color: "#F95587" },
+  15: { id: 15, name: "Ice", color: "#65A19E" },
+  16: { id: 16, name: "Dragon", color: "#6F35FC" },
+  17: { id: 17, name: "Dark", color: "#705746" },
+  23: { id: 23, name: "Fairy", color: "#D685AD" },
 };
 
 export function getTypeName(typeId: number): string {
