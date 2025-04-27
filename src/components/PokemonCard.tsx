@@ -32,10 +32,10 @@ export function PokemonCard({
   const fallbackSprite = "/eidex/missingno.png";
 
   return (
-    <div className="min-w-2/5 mx-auto flex w-full flex-col text-white shadow-lg sm:w-max">
+    <div className="w-full flex flex-col text-white">
       {/* Header */}
-      <div className="flex justify-between bg-gray-900 py-3">
-        <div className="flex items-center">
+      <div className="flex justify-between bg-gray-900 px-2 py-3">
+        <div className="flex items-center gap-2">
           {/* Sprite and name  */}
           <img
             src={sprite || fallbackSprite}
@@ -60,7 +60,7 @@ export function PokemonCard({
       </div>
 
       {/* Card body */}
-      <div className="bg-gray-800 px-3 py-3">
+      <div className="bg-gray-800 px-5 py-3">
         <div className="flex flex-row gap-5 py-2">
           {/* Abilities */}
           {reorderedAbilities.map(
