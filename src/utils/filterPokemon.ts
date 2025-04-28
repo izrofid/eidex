@@ -1,3 +1,5 @@
+import { Pokemon } from "../types";
+
 type FilterOptions = {
   name?: string;
   typeId?: number;
@@ -6,9 +8,9 @@ type FilterOptions = {
 };
 
 export function filterPokemon(
-  pokemons: any[],
+  pokemons: Pokemon[],
   filters: FilterOptions = {},
-): any[] {
+): Pokemon[] {
   return pokemons.filter((pokemon) => {
     // Name filter
     const matchesName = filters.name

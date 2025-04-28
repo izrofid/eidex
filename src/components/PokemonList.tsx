@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { PokemonCard } from "./PokemonCard";
+import { Pokemon } from "../types";
 
 type PokemonListProps = {
-  pokemons: any[];
+  pokemons: Pokemon[];
   isShiny?: boolean;
 };
 

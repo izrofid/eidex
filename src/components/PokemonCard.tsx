@@ -3,14 +3,10 @@ import shinySpritesData from "../data/shiny_sprites.json";
 
 import { TypeBadge } from "./TypeBadge";
 import { getAbilityName } from "../utils/abilityData";
+import { Pokemon } from "../types";
 
-type PokemonCardProps = {
-  id: number;
-  name: string;
-  types: number[];
-  isShiny: boolean;
-  stats: number[]; // [HP, Atk, Def, Spe, SpA, SpD]
-  abilities: [number, number][];
+type PokemonCardProps = Pokemon & {
+  isShiny?: boolean;
 };
 
 export function PokemonCard({
