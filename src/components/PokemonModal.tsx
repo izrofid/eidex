@@ -40,8 +40,8 @@ function PokemonView({
   pokemon: Pokemon;
   isShiny: boolean;
 }) {
-  const shinySprite = `data:image/png;base64,${shinySpritesData[pokemon.id.toString() as keyof typeof shinySpritesData]}`;
-  const regularSprite = `data:image/png;base64,${spritesData[pokemon.id.toString() as keyof typeof spritesData]}`;
+  const shinySprite = `data:image/png;base64,${shinySpritesData[pokemon.ID.toString() as keyof typeof shinySpritesData]}`;
+  const regularSprite = `data:image/png;base64,${spritesData[pokemon.ID.toString() as keyof typeof spritesData]}`;
 
   const displaySprite = isShiny ? shinySprite : regularSprite;
   return (
@@ -54,7 +54,7 @@ function PokemonView({
       <div className="flex items-center gap-3">
         {" "}
         <div className="text-xl font-bold text-gray-200">{pokemon.name}</div>
-        <div className="text-md text-gray-400">#{pokemon.id}</div>
+        <div className="text-md text-gray-400">#{pokemon.ID}</div>
       </div>
       {/* Add more details about the Pokemon here */}
     </div>

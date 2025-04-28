@@ -11,16 +11,16 @@ type PokemonCardProps = Pokemon & {
 };
 
 export function PokemonCard({
-  id,
+  ID,
   name,
-  types,
+  type,
   isShiny,
   stats,
   abilities,
   onClick,
 }: PokemonCardProps) {
   // Convert the ID to a string and pad it with leading zeros and a #
-  const formattedId = `#${String(id).padStart(3, "0")}`;
+  const formattedId = `#${String(ID).padStart(3, "0")}`;
 
   const statLabels = ["HP", "Atk", "Def", "Spe", "SpA", "SpD"];
 
@@ -32,8 +32,8 @@ export function PokemonCard({
   // If the sprite is "", then use the default sprite
   const fallbackSprite = "/eidex/missingno.png";
 
-  const shinySprite = `data:image/png;base64,${shinySpritesData[id.toString() as keyof typeof shinySpritesData]}`;
-  const regularSprite = `data:image/png;base64,${spritesData[id.toString() as keyof typeof spritesData]}`;
+  const shinySprite = `data:image/png;base64,${shinySpritesData[ID.toString() as keyof typeof shinySpritesData]}`;
+  const regularSprite = `data:image/png;base64,${spritesData[ID.toString() as keyof typeof spritesData]}`;
 
   const displaySprite = isShiny ? shinySprite : regularSprite;
 
@@ -56,7 +56,7 @@ export function PokemonCard({
 
             {/* Types */}
             <div className="flex flex-row items-center gap-1 px-2 max-sm:flex-col">
-              {types.map((typeId: number, index: number) => (
+              {type.map((typeId: number, index: number) => (
                 <div key={index}>
                   <TypeBadge typeId={typeId} />
                 </div>

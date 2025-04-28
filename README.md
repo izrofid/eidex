@@ -1,54 +1,37 @@
-# React + TypeScript + Vite
+# Emerald Imperium Pokédex ![WIP Badge](https://img.shields.io/badge/status-work%20in%20progress-yellow) ![GitHub Pages](https://img.shields.io/badge/deployed%20on-GitHub%20Pages-blue)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About
+The Emerald Imperium Pokédex is a searchable, filterable, and eventually fully-featured online Pokédex for the Pokémon ROM hack **Emerald Imperium**.
 
-Currently, two official plugins are available:
+It is currently a **Work in Progress** and is actively being developed.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Current Features
+- View the complete list of available Pokémon with:
+  - Names
+  - DEX Numbers
+  - Sprites
+  - Base Stats
+  - Abilities
+- Filtering options:
+  - **Name Search**: Quickly find Pokémon by name.
+  - **Type Filter**: Filter Pokémon by one or more types.
+  - **Stat Clamp**: Filter Pokémon based on a minimum base stat (e.g., Attack ≥ 100).
 
-## Expanding the ESLint configuration
+<details>
+<summary>Planned Features</summary>
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Full feature parity with the Radical Red Pokédex
+- Detailed individual Pokémon view (moves, abilities, stats, forms)
+- Save file reading support for:
+  - Randomized abilities
+  - Other randomizer settings
+- Additional filtering options:
+  - Egg groups
+  - Encounter locations
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+</details>
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Technologies Used
+- **React** (Frontend Framework)
+- **TailwindCSS** (Styling)
+- **Vite** (Build Tool)
