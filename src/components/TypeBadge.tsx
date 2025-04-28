@@ -17,7 +17,7 @@ function TypeBadge({ typeId }: { typeId: number }) {
       style={typeStyle}
     >
       {/*add type icons later */}
-      <p className="pt-[1px]"style={{lineHeight: 1.2}}>{typeName}</p>
+      <p className="pt-[1px] leading-6">{typeName}</p>
     </div>
   );
 }

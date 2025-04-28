@@ -41,7 +41,7 @@ export function PokemonCard({
     <div onClick={onClick} className="cursor-pointer w-full">
       <div className="flex w-full flex-col text-white">
         {/* Header */}
-        <div className="flex justify-between bg-gray-900 px-2 py-3">
+        <div className="flex justify-between bg-gray-900 px-2 py-3 ">
           <div className="flex items-center gap-2">
             {/* Sprite and name  */}
             <img
@@ -52,10 +52,11 @@ export function PokemonCard({
                 target.src = fallbackSprite;
               }}
             />
-            <div className="text-md font-bold">{name}</div>
+            <div className="text-md font-bold min-w-[5rem]">{name}</div>
 
             {/* Types */}
-            <div className="flex flex-row items-center gap-1 px-2 max-sm:flex-col">
+            <div className="flex flex-row items-center gap-1 px-2 mt-1 max-sm:flex-col justify-self-end
+">
               {type.map((typeId: number, index: number) => (
                 <div key={index}>
                   <TypeBadge typeId={typeId} />
