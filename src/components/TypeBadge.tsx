@@ -13,11 +13,13 @@ function TypeBadge({ typeId }: { typeId: number }) {
 
   return (
     <div
-      className="pkmnem-face flex w-16 flex-shrink-0 items-center justify-center whitespace-nowrap rounded-full"
+      className="flex w-16 flex-shrink-0 items-center justify-center whitespace-nowrap rounded-full"
       style={typeStyle}
     >
       {/*add type icons later */}
-      <p className="pt-[1px] leading-6">{typeName}</p>
+      <p className="pkmnem-face-short pkmnem-face-shadow pt-1 leading-6 text-lg">
+        {typeName.toUpperCase()}
+      </p>
     </div>
   );
 }

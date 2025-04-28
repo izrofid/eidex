@@ -69,7 +69,8 @@ export function PokemonCard({
 
         {/* Card body */}
         <div className="bg-gray-800 px-5 py-3">
-          <div className="flex flex-row gap-5 py-2">
+          <div className="flex flex-row gap-5 py-2 relative border-2 border-gray-600 rounded-md p-4">
+            <span className="absolute -top-2.5 left-4 pkmnem-face pkmnem-face-shadow px-1 bg-gray-800 text-gray-300">ABILITIES</span>
             {/* Abilities */}
             {reorderedAbilities.map(
               ([abilityId, abilityIndex], index: number) => {
