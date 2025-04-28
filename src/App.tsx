@@ -1,9 +1,11 @@
-import pokemonData from "./data/pokemon.json";
+import speciesData from "./data/speciesData.json";
 import { PokemonList } from "./components/PokemonList";
 import { filterPokemon } from "./utils/filterPokemon";
 import { FilterBar } from "./components/FilterUI";
 import { useState, useMemo, useEffect } from "react";
 import { FilterOptions } from "./types";
+
+const pokemonData = Object.values(speciesData)
 
 function App() {
   // State for the actual filters used for searching (debounced)

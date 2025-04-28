@@ -42,7 +42,7 @@ export function PokemonList({ pokemons, isShiny }: PokemonListProps) {
     <div className="flex w-full flex-col items-center">
       {pokemons.slice(0, visibleCount).map((pokemon) => (
         <PokemonCard
-          key={pokemon.id}
+          key={pokemon.ID}
           {...pokemon}
           isShiny={isShiny}
           onClick={() => setSelectedPokemon(pokemon)}

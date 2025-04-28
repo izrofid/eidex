@@ -17,7 +17,7 @@ function matchesNameFilter(pokemon: Pokemon, name?: string): boolean {
 
 function matchesTypeFilter(pokemon: Pokemon, typeId?: number): boolean {
   return typeId !== undefined
-    ? pokemon.types.includes(typeId)
+    ? pokemon.type.includes(typeId)
     : true;
 }
 
