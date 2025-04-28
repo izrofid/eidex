@@ -12,13 +12,13 @@ function TypeBadge({ typeId }: { typeId: number }) {
   };
 
   return (
-    <span
-      className="flex w-16 flex-shrink-0 items-center whitespace-nowrap rounded-full px-1.5 py-0.5 text-xs font-semibold text-white shadow-sm"
+    <div
+      className="pkmnem-face flex w-16 flex-shrink-0 items-center justify-center whitespace-nowrap rounded-full"
       style={typeStyle}
     >
       {/*add type icons later */}
-      <span className="ml-1">{typeName}</span>
-    </span>
+      <p className="pt-[1px]"style={{lineHeight: 1.2}}>{typeName}</p>
+    </div>
   );
 }
 
