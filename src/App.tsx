@@ -56,8 +56,13 @@ function App() {
         <FilterBar filters={rawFilters} setFilters={setRawFilters} />
 
         {/* Shiny toggle UI */}
-        <div className="flex items-center gap-3 bg-gray-900/50 py-3 px-2">
-          <span className="text-gray-300 font-medium">Shiny Mode</span>
+        <div className="flex items-center gap-2 bg-gray-900/50 py-2 px-2">
+            <img 
+            src="/eidex/shinycharm.png"
+            alt="Shiny Mode" 
+            className="h-6.5 w-6.5 object-contain"
+            title="Shiny Mode"
+            />
           <button
             type="button"
             role="switch"
