@@ -3,13 +3,7 @@ import { PokemonList } from "./components/PokemonList";
 import { filterPokemon } from "./utils/filterPokemon";
 import { FilterBar } from "./components/FilterUI";
 import { useState, useMemo, useEffect } from "react";
-
-type FilterOptions = {
-  name?: string;
-  typeId?: number;
-  minStat?: number;
-  statType?: string;
-};
+import { FilterOptions } from "./types";
 
 function App() {
   // State for the actual filters used for searching (debounced)

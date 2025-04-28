@@ -1,12 +1,5 @@
 import { TYPE_INFO } from "../utils/typeData";
-
-type FilterOptions = {
-  name?: string;
-  typeId?: number;
-  minStat?: number;
-  statType?: string;
-  ability?: string;
-};
+import { FilterOptions } from "../types";
 
 type FilterBarProps = {
   filters: FilterOptions;

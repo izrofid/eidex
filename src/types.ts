@@ -6,3 +6,11 @@ export interface Pokemon {
     abilities: number[][];  // Format: [abilityId, flag]
     sprite?: string;  // Base64 encoded image
   }
+
+export interface FilterOptions {
+    name?: string;
+    typeId?: number;
+    minStat?: number;
+    statType?: string;
+    ability?: string;
+  }
