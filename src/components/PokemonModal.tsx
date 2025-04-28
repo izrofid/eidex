@@ -70,7 +70,7 @@ export function PokemonModal({
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black/30 backdrop-blur-md">
-      <div className="w-xl relative my-5 h-[95vh] max-h-screen justify-normal rounded-lg bg-neutral-800 p-6 border-gray-100 border">
+      <div className="w-xl relative my-5 h-[95dvh] max-h-screen justify-normal rounded-lg bg-neutral-800 p-6 border-gray-100 border">
         <CloseButton onClick={onClose} />
         <PokemonView pokemon={pokemon} isShiny={isShiny} />
       </div>
