@@ -38,10 +38,10 @@ export function PokemonCard({
   const displaySprite = isShiny ? shinySprite : regularSprite;
 
   return (
-    <div onClick={onClick} className="cursor-pointer w-full">
+    <div onClick={onClick} className="w-full cursor-pointer">
       <div className="flex w-full flex-col text-white">
         {/* Header */}
-        <div className="flex justify-between bg-gray-900 px-2 py-3 ">
+        <div className="flex justify-between bg-gray-900 px-2 py-3">
           <div className="flex items-center gap-2">
             {/* Sprite and name  */}
             <img
@@ -52,11 +52,10 @@ export function PokemonCard({
                 target.src = fallbackSprite;
               }}
             />
-            <div className="text-md font-bold min-w-[5rem]">{name}</div>
+            <div className="text-md min-w-[5rem] font-bold">{name}</div>
 
             {/* Types */}
-            <div className="flex flex-row items-center gap-1 px-2 mt-1 max-sm:flex-col justify-self-end
-">
+            <div className="mt-1 flex flex-row items-center gap-1 justify-self-end px-2 max-sm:flex-col">
               {type.map((typeId: number, index: number) => (
                 <div key={index}>
                   <TypeBadge typeId={typeId} />
@@ -69,8 +68,10 @@ export function PokemonCard({
 
         {/* Card body */}
         <div className="bg-gray-800 px-5 py-3">
-          <div className="flex flex-row gap-5 py-2 relative border-2 border-gray-600 rounded-md p-4">
-            <span className="absolute -top-2.5 left-4 pkmnem-face pkmnem-face-shadow px-1 bg-gray-800 text-gray-300">ABILITIES</span>
+          <div className="relative flex flex-row gap-5 rounded-md border-2 border-gray-600 p-4 py-2">
+            <span className="h-4 md:h-5 pkmnem-face pkmnem-face-shadow absolute -top-2.5 md:-top-3 left-4 bg-fieldset px-2 text-gray-200 rounded-sm text-sm md:text-base">
+              ABILITIES
+            </span>
             {/* Abilities */}
             {reorderedAbilities.map(
               ([abilityId, abilityIndex], index: number) => {
@@ -97,7 +98,9 @@ export function PokemonCard({
               {stats.map((statValue, index) => (
                 <div key={index} className="flex flex-col items-center">
                   <div className="text-sm italic">{statValue}</div>
-                  <div className="text-sm font-bold">{statLabels[index]}</div>
+                  <div className="text-md pkmnem-face pkmnem-face-shadow font-bold">
+                    {statLabels[index]}
+                  </div>
                 </div>
               ))}
               {/* After all the stats, add one extra box for BST */}

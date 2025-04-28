@@ -5,6 +5,8 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: none;
 }
 @font-face {
   font-family: "Emerald-Short";
@@ -13,6 +15,10 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+  letter-spacing: 0vmin;
+  font-optical-sizing: none;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: none;
 }
 @font-face {
   font-family: "Emerald-Narrow";
@@ -21,6 +27,9 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+  /* letter-spacing: ; */
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: none;
 }
 /* Color below from https://lospec.com/palette-list/pokemon-ruby-sapphire-exterior */
 .pkmnem-face {
@@ -35,5 +44,6 @@
 .pkmnem-face-shadow {
   text-shadow:
     0px 1px #6a5a5a,
-    1px 0px #6a5a5a;
+    1.25px 0px #6a5a5a,
+    1.25px 1.25px #6a5a5a;
 }
