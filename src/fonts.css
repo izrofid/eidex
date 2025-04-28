@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Emerald";
+    src: url(./fonts/pkmnem.ttf) format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  .pkmnem-face {
+    font-family: 'Emerald';
+    text-shadow: 1px 0px #6a5a5a;
+    /* padding-left: 0.2rem; 
+    padding-right: 0.2rem;  */
+  
+  }

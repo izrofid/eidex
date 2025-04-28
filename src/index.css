@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./fonts.css";
 
 body {
   @apply bg-zinc-700;
