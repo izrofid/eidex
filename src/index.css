@@ -16,3 +16,9 @@ input[type="number"] {
   appearance: textfield;
   -moz-appearance: textfield;
 }
+
+@layer components {
+  .ability_badge {
+    @apply w-30 select-none items-center rounded-full bg-zinc-600 px-2 text-center text-sm text-white shadow-md;
+  }
+}
