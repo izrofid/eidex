@@ -17,7 +17,7 @@ function TypeBadge({ typeId }: { typeId: number }) {
       style={typeStyle}
     >
       {/*add type icons later */}
-      <p className="pkmnem-face-short pkmnem-face-shadow pt-1 leading-6 text-lg">
+      <p className="pkmnem-face-short pkmnem-face-shadow leading-6 text-lg">
         {typeName.toUpperCase()}
       </p>
     </div>

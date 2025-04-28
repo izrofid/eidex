@@ -69,8 +69,11 @@ export function PokemonCard({
         {/* Card body */}
         <div className="bg-gray-800 px-5 py-3">
           <div className="relative flex flex-row gap-5 rounded-md border-2 border-gray-600 p-4 py-2">
-            <span className="h-4 md:h-5 pkmnem-face pkmnem-face-shadow absolute -top-2.5 md:-top-3 left-4 bg-fieldset px-2 text-gray-200 rounded-sm text-sm md:text-base">
-              ABILITIES
+            <span className="h-4 md:h-5 pkmnem-face pkmnem-face-shadow align-middle
+              absolute -top-2.5 md:-top-3 left-4 bg-fieldset px-2 py-0 text-gray-200 rounded-sm text-sm md:text-base">
+              <p className="-mt-[1.5px] md:-mt-[2.5px]">
+                ABILITIES
+                </p>
             </span>
             {/* Abilities */}
             {reorderedAbilities.map(
