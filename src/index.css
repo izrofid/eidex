@@ -1,6 +1,9 @@
 @import "tailwindcss";
 @import "./fonts.css";
 
+@theme {
+  --color-fieldset: #4a73ac;
+}
 body {
   @apply bg-zinc-700;
 }
