@@ -1163,3 +1163,10 @@ export function getAbilityName([abilityId, abilityIndex]: [number, number]): str
   if (!ability) return "None";
   return ability.names[abilityIndex] || "None";
 }
+
+// function to export the ability description as a string given id and index
+export function getAbilityDescription([abilityId]: [number, number]): string {
+  const ability = abilities[abilityId];
+  if (!ability) return "None";
+  return ability.description || "None";
+}
