@@ -7,17 +7,17 @@ function TypeBadge({ typeId }: { typeId: number }) {
 
   // Set the background color and gradient
   const typeStyle = {
-    backgroundColor: typeColor,
-    backgroundImage: `linear-gradient(105deg, ${typeColor} 50%, ${adjustColor(typeColor, -20)} 50%)`,
+    backgroundColor: adjustColor(typeColor, -20),
+    // backgroundImage: `linear-gradient(105deg, ${typeColor} 50%, ${adjustColor(typeColor, -10)} 50%)`,
   };
 
   return (
     <span
-      className="flex w-16 flex-shrink-0 items-center whitespace-nowrap rounded-full px-1.5 py-0.5 text-xs font-semibold text-white shadow-sm"
+      className="flex w-16 flex-shrink-0 items-center justify-center whitespace-nowrap rounded px-2 py-0.5 text-sm font-bold border-1 border-gray-300 text-white shadow-md/50"
       style={typeStyle}
     >
       {/*add type icons later */}
-      <span className="ml-1">{typeName}</span>
+      <span className="text-center text-shadow-md/40">{typeName}</span>
     </span>
   );
 }

@@ -39,9 +39,9 @@ export function PokemonCard({
 
   return (
     <div onClick={onClick} className="cursor-pointer w-full">
-      <div className="flex w-full flex-col text-white">
+      <div className="flex w-full flex-col text-white font-pixel">
         {/* Header */}
-        <div className="flex justify-between bg-gray-900 px-2 py-3">
+        <div className="flex justify-between bg-gray-900 px-2 py-1">
           <div className="flex items-center gap-2">
             {/* Sprite and name  */}
             <img
@@ -67,7 +67,7 @@ export function PokemonCard({
         </div>
 
         {/* Card body */}
-        <div className="bg-gray-800 px-5 py-3">
+        <div className="bg-gray-800 px-5 py-7">
           <div className="flex flex-row gap-5 py-2">
             {/* Abilities */}
             {reorderedAbilities.map(
