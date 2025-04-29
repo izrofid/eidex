@@ -16,7 +16,7 @@ function CloseButton({
         style={{ lineHeight: 0 }}
       >
         <svg
-          xmlns="http://www.w3.org/2000/svg"
+          xmlns="https://www.w3.org/2000/svg"
           className={`h-${size / 4} w-${size / 4}`}
           width={size}
           height={size}
