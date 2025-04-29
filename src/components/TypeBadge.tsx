@@ -13,7 +13,7 @@ function TypeBadge({ typeId }: { typeId: number }) {
 
   return (
     <span
-      className="font-pixel border-1 shadow-md/50 flex w-18 flex-shrink-0 items-center justify-center whitespace-nowrap rounded-lg border-gray-300 px-2 font-bold text-gray-200"
+      className="font-pixel border-1 shadow-md/50 flex w-17 flex-shrink-0 items-center justify-center text-sm select-none whitespace-nowrap rounded-xl border-gray-300 px-2 font-bold text-gray-200"
       style={typeStyle}
     >
       {/*add type icons later here don't forget */}

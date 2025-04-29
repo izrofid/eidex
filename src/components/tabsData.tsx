@@ -1,5 +1,6 @@
 import { Pokemon } from "../types";
 import { getMoveData, getTMMove, getTutorMove } from "../utils/moveData";
+import MoveEntry from "./MoveEntry";
 
 export const generateTabsData = (pokemon: Pokemon) => [
   {
@@ -8,15 +9,15 @@ export const generateTabsData = (pokemon: Pokemon) => [
       <div className="text-center font-bold text-white">
         {pokemon.levelupMoves.length > 0 ? (
           <ul>
-            {pokemon.levelupMoves.map(([moveId, level]: number[], index) => {
-              const move = getMoveData(moveId);
-              return (
-                <li key={`1-${index}`}>
-                  Level {level}: {move.name}
-                </li>
-              );
-            })}
-          </ul>
+          {pokemon.levelupMoves.map(([moveId]: number[], index) => {
+            const move = getMoveData(moveId);
+            return (
+              <div key={`1-${index}`}>
+                <MoveEntry move={move} />
+              </div>
+            );
+          })}
+        </ul>
         ) : (
           "No Level-Up Moves Available"
         )}
@@ -31,7 +32,7 @@ export const generateTabsData = (pokemon: Pokemon) => [
           <ul>
             {pokemon.tmMoves.map((moveIndex, index) => {
               const move = getTMMove(moveIndex);
-              return move ? <li key={`2-${index}`}>{move.name}</li> : null;
+              return move ? <li key={`2-${index}`}><MoveEntry move={move}/></li> : null;
             })}
           </ul>
         ) : (
@@ -48,7 +49,7 @@ export const generateTabsData = (pokemon: Pokemon) => [
           <ul>
             {(pokemon.tutorMoves ?? []).map((moveIndex, index) => {
               const move = getTutorMove(moveIndex);
-              return move ? <li key={`3-${index}`}>{move.name}</li> : null;
+              return move ? <li key={`3-${index}`}><MoveEntry move={move}/></li> : null;
             })}
           </ul>
         ) : (
@@ -65,7 +66,7 @@ export const generateTabsData = (pokemon: Pokemon) => [
           <ul>
         {(pokemon.eggMoves ?? []).map((moveId, index) => {
           const move = getMoveData(moveId);
-          return move ? <li key={`4-${index}`}>{move.name}</li> : null;
+          return move ? <li key={`4-${index}`}><MoveEntry move={move}/></li> : null;
         })}
           </ul>
         ) : (
