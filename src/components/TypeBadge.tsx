@@ -7,8 +7,8 @@ function TypeBadge({ typeId }: { typeId: number }) {
 
   // Set the background color and gradient
   const typeStyle = {
-    backgroundColor: typeColor,
-    backgroundImage: `linear-gradient(105deg, ${typeColor} 50%, ${adjustColor(typeColor, -20)} 50%)`,
+    backgroundColor: adjustColor(typeColor, -20),
+    // backgroundImage: `linear-gradient(105deg, ${typeColor} 50%, ${adjustColor(typeColor, -10)} 50%)`,
   };
 
   return (
@@ -18,7 +18,7 @@ function TypeBadge({ typeId }: { typeId: number }) {
     >
       {/*add type icons later */}
       <p
-        className="flex pkmnem-face-short pkmn-types -mt-[1px] self-center text-lg leading-5 md:text-xl md:leading-6"
+        className="flex font-pixel pkmn-types -mt-[1px] self-center text-lg leading-5 md:text-xl md:leading-6"
         style={{ verticalAlign: "middle" }}
       >
         {typeName.toUpperCase()}

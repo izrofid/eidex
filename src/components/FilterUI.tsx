@@ -56,7 +56,7 @@ function TypeDropdown({
         }
         className="h-9 w-32 appearance-none rounded-md border-0 bg-gray-800 pl-3 pr-8 text-sm text-white focus:ring-1 focus:ring-blue-400"
       >
-        <option value="">All Types</option>
+        <option value="">All</option>
         {Object.values(TYPE_INFO).map((typeInfo) => (
           <option key={typeInfo.id} value={typeInfo.id}>
             {typeInfo.name}
@@ -175,7 +175,7 @@ function AbilitySearchInput({
 
 export function FilterBar({ filters, setFilters }: FilterBarProps) {
   return (
-    <div className="flex w-full flex-wrap items-center gap-3 rounded-t-lg bg-gray-900/90 px-3 py-2 shadow-lg">
+    <div className="flex w-full flex-wrap items-center justify-evenly gap-3 rounded-t-lg bg-gray-900/90 px-3 py-2 shadow-lg font-pixel">
       <NameSearchInput
         value={filters.name || ""}
         onChange={(name) => setFilters((prev) => ({ ...prev, name }))}
