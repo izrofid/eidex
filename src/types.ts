@@ -4,12 +4,15 @@ export interface PokemonChanges {
   abilities?: (string | number[])[];
 }
 
+export type Ability = [number, number];
+export type Abilities = Ability[];
+
 export interface Pokemon {
   ID: number;
   name: string;
   stats: number[]; // [HP, Attack, Defense, Speed, Sp. Atk, Sp. Def]
   type: number[]; // Type IDs
-  abilities: number[][]; // [Ability ID, index]
+  abilities: Abilities; // [Ability ID, index]
   eggGroup: number[]; // Egg group IDs
   items: number[]; // Item IDs
   levelupMoves: number[][]; // [Move ID, Level]
@@ -31,3 +34,20 @@ export interface FilterOptions {
   statType?: string;
   ability?: string;
 }
+
+export interface Move {
+  ID: number;
+  name: string;
+  power: number;
+  type: number;
+  accuracy: number;
+  pp: number;
+  secondaryEffectChance: number;
+  target: number;
+  priority: number;
+  split: number;
+  description: string;
+}
+
+export type MoveData = Record<string, Move>;
+export type MoveMap = Record<string, number>;
