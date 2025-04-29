@@ -1,10 +1,11 @@
 @font-face {
   font-family: "Emerald";
   src: url(./fonts/pkmnem.ttf) format("truetype");
-
+  letter-spacing: -0.5px;
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+
   -webkit-font-smoothing: none;
   -moz-osx-font-smoothing: none;
 }
@@ -15,15 +16,13 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  letter-spacing: 0vmin;
-  font-optical-sizing: none;
+
   -webkit-font-smoothing: none;
   -moz-osx-font-smoothing: none;
 }
 @font-face {
   font-family: "Emerald-Narrow";
   src: url(./fonts/pkmnemn.ttf) format("truetype");
-
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -34,6 +33,7 @@
 /* Color below from https://lospec.com/palette-list/pokemon-ruby-sapphire-exterior */
 .pkmnem-face {
   font-family: "Emerald";
+  /* letter-spacing: 1px; Like kerning?*/
 }
 .pkmnem-face-short {
   font-family: "Emerald-Short";
@@ -41,9 +41,29 @@
 .pkmnem-face-narrow {
   font-family: "Emerald-Narrow";
 }
+/* Weirdness with font */
+.pkmn-types {
+  padding-left: 1px;
+  text-shadow:
+    0px 1px #6a5a5a,
+    1px 1px #6a5a5a,
+    1px 0px #6a5a5a,
+    1px 0px 1px #83838b,
+    0px 1px 1px#83838b;
+}
 .pkmnem-face-shadow {
   text-shadow:
     0px 1px #6a5a5a,
-    1.25px 0px #6a5a5a,
-    1.25px 1.25px #6a5a5a;
+    1px 1px #6a5a5a,
+    1px 0px #6a5a5a;
+}
+/* Fix weird bug in mobile safari where text is too high */
+@supports (-webkit-touch-callout: none) {
+  .pkmn-types {
+    padding-top: 4px;
+    margin-bottom: -2px;
+  }
+  .ios-padding-fix {
+    padding-top: 1px;
+  }
 }

@@ -3,6 +3,7 @@
 
 @theme {
   --color-fieldset: #4a73ac;
+  --color-fieldset-border: #414a6a;
 }
 body {
   @apply bg-zinc-700;
