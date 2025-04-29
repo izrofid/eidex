@@ -61,10 +61,18 @@ export function filterPokemon(
   pokemons: Pokemon[],
   filters: FilterOptions = {},
 ): Pokemon[] {
-  return pokemons.filter((pokemon) =>
+  const filtered = pokemons.filter((pokemon) =>
     matchesNameFilter(pokemon, filters.name) &&
     matchesTypeFilter(pokemon, filters.typeId) &&
     matchesStatFilter(pokemon, filters.minStat, filters.statType) &&
     matchesAbilityFilter(pokemon, filters.ability)
   );
+
+  // Sort by dexID first, then by id if dexID is the same
+  return filtered.sort((a, b) => {
+    if (a.dexID !== b.dexID) {
+      return a.dexID - b.dexID; // Primary sort by dexID
+    }
+    return a.ID - b.ID; // Secondary sort by id
+  });
 }

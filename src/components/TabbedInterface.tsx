@@ -13,7 +13,7 @@ const TabbedInterface: React.FC<TabbedInterfaceProps> = ({ tabs }) => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div className="tabbed-interface w-full font-pixel">
+    <div className="tabbed-interface w-full">
       <div className="flex justify-between border-b border-gray-600 mb-4">
         {tabs.map((tab, index) => (
           <button
