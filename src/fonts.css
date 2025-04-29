@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Emerald";
   src: url(./fonts/pkmnem.ttf) format("truetype");
-  letter-spacing: -0.5px;
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -23,6 +22,7 @@
 @font-face {
   font-family: "Emerald-Narrow";
   src: url(./fonts/pkmnemn.ttf) format("truetype");
+
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -43,7 +43,14 @@
 }
 /* Weirdness with font */
 .pkmn-types {
+  box-sizing: border-box;
+  vertical-align: middle;
+  font-feature-settings:
+    "kern" 1,
+    "liga" 1;
   padding-left: 1px;
+  padding-top: 4px;
+  padding-bottom: 1px;
   text-shadow:
     0px 1px #6a5a5a,
     1px 1px #6a5a5a,
