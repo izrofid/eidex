@@ -71,7 +71,7 @@ export function PokemonCard({
           <div className="relative flex flex-row gap-5 rounded-md border-3 border-fieldset-border p-4 py-2">
             <span className="h-4 md:h-5 font-pixel pkmnem-face-shadow 
               absolute -top-2.5 md:-top-3 left-2 bg-fieldset px-2 py-0 text-gray-200 rounded-sm text-sm md:text-base">
-              <p className="ios-padding-fix -mt-[1.5px] md:-mt-[1px]">
+              <p className="ios-padding-fix -mt-[1.5px] md:-mt-[1.5px] p-0">
                 ABILITIES
                 </p>
             </span>
