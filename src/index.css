@@ -50,6 +50,6 @@ input[type="number"] {
 
 @layer components {
   .ability_badge {
-    @apply w-30 select-none items-center rounded-md bg-slate-600 px-1 py-0.5 text-center font-pixel text-white shadow-md/50 border-1 border-gray-200;
+    @apply w-30 select-none items-center rounded-md bg-slate-600 px-1 py-0.5 text-center font-pixel text-white text-shadow-lg/40 shadow-md/50 border-1 border-gray-200;
   }
 }

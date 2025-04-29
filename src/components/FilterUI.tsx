@@ -175,7 +175,7 @@ function AbilitySearchInput({
 
 export function FilterBar({ filters, setFilters }: FilterBarProps) {
   return (
-    <div className="flex w-full flex-wrap items-center justify-evenly gap-3 rounded-t-lg bg-gray-900/90 px-3 py-2 shadow-lg font-pixel">
+    <div className="flex w-full flex-wrap items-center justify-evenly gap-3 rounded-t-lg bg-gray-900/90 px-3 py-2 shadow-lg">
       <NameSearchInput
         value={filters.name || ""}
         onChange={(name) => setFilters((prev) => ({ ...prev, name }))}
