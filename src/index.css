@@ -5,24 +5,6 @@
   --color-fieldset: #4a73ac;
   --color-fieldset-border: #414a6a;
 }
-@font-face {
-  font-family: "Pixel Operator";
-  src: url("/eidex/pixel_operator/PixelOperator.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Pixel Operator";
-  src: url("/eidex/pixel_operator/PixelOperator-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@theme {
-  --font-pixel: "Pixel Operator", sans-serif;
-}
-
 
 body {
   @apply bg-zinc-700;
@@ -55,6 +37,6 @@ input[type="number"] {
 
 @layer components {
   .ability_badge {
-    @apply w-30 select-none items-center rounded-md bg-slate-600 px-1 py-0.5 text-center font-pixel text-white shadow-md/50 border-1 border-gray-200;
+    /* @apply w-30 select-none items-center rounded-md bg-slate-600 px-1 py-0.5 text-center font-pixel text-white shadow-md/50 border-1 border-gray-200; */
   }
 }

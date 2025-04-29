@@ -69,7 +69,7 @@ export function PokemonCard({
         {/* Card body */}
         <div className="bg-gray-800 px-5 py-3">
           <div className="relative flex flex-row gap-5 rounded-md border-3 border-fieldset-border p-4 py-2">
-            <span className="h-4 md:h-5 font-pixel pkmnem-face-shadow 
+            <span className="h-4 md:h-5 pkmnem-face pkmnem-face-shadow 
               absolute -top-2.5 md:-top-3 left-2 bg-fieldset px-2 py-0 text-gray-200 rounded-sm text-sm md:text-base">
               <p className="ios-padding-fix -mt-[1.5px] md:-mt-[1.5px] p-0">
                 ABILITIES
@@ -101,7 +101,7 @@ export function PokemonCard({
               {stats.map((statValue, index) => (
                 <div key={index} className="flex flex-col items-center">
                   <div className="text-sm italic">{statValue}</div>
-                  <div className="text-md pkmnem-face pkmnem-face-shadow font-bold">
+                  <div className="text-md font-bold">
                     {statLabels[index]}
                   </div>
                 </div>
