@@ -54,7 +54,7 @@ function App() {
         {/* Shiny toggle UI */}
         <div className="flex items-center gap-2 bg-gray-900/50 py-2 px-2">
             <img 
-            src="/eidex/shinycharm.png"
+            src="/shinycharm.png"
             alt="Shiny Mode" 
             className="h-6.5 w-6.5 object-contain"
             title="Shiny Mode"

@@ -12,7 +12,8 @@ type PokemonCardProps = Pokemon & {
 
 export function PokemonCard({
   ID,
-  name,
+  dexID,
+  nameKey,
   type,
   isShiny,
   stats,
@@ -20,7 +21,7 @@ export function PokemonCard({
   onClick,
 }: PokemonCardProps) {
   // Convert the ID to a string and pad it with leading zeros and a #
-  const formattedId = `#${String(ID).padStart(3, "0")}`;
+  const formattedId = `#${String(dexID).padStart(3, "0")}`;
 
   const statLabels = ["HP", "Atk", "Def", "Spe", "SpA", "SpD"];
 
@@ -30,7 +31,7 @@ export function PokemonCard({
   const reorderedAbilities = [...abilities.slice(1), abilities[0]];
 
   // If the sprite is "", then use the default sprite
-  const fallbackSprite = "/eidex/missingno.png";
+  const fallbackSprite = "/missingno.png";
 
   const shinySprite = `data:image/png;base64,${shinySpritesData[ID.toString() as keyof typeof shinySpritesData]}`;
   const regularSprite = `data:image/png;base64,${spritesData[ID.toString() as keyof typeof spritesData]}`;
@@ -39,7 +40,7 @@ export function PokemonCard({
 
   return (
     <div onClick={onClick} className="cursor-pointer w-full">
-      <div className="flex w-full flex-col text-white font-pixel">
+      <div className="flex w-full flex-col text-white">
         {/* Header */}
         <div className="flex justify-between bg-gray-900 px-2 py-1">
           <div className="flex items-center gap-2">
@@ -52,7 +53,7 @@ export function PokemonCard({
                 target.src = fallbackSprite;
               }}
             />
-            <div className="text-md min-w-[5rem] font-bold">{name}</div>
+            <div className="text-md font-bold">{nameKey}</div>
 
             {/* Types */}
             <div className="mt-1 flex flex-row items-center gap-1 justify-self-end px-2 max-sm:flex-col">
