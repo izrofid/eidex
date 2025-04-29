@@ -43,14 +43,15 @@
 }
 /* Weirdness with font */
 .pkmn-types {
-  box-sizing: border-box;
+  /* box-sizing: border-box;
   vertical-align: middle;
   font-feature-settings:
     "kern" 1,
     "liga" 1;
   padding-left: 1px;
   padding-top: 4px;
-  padding-bottom: 1px;
+  padding-bottom: 1px; */
+  /* font-weight: 500; */
   text-shadow:
     0px 1px #6a5a5a,
     1px 1px #6a5a5a,
@@ -66,10 +67,10 @@
 }
 /* Fix weird bug in mobile safari where text is too high */
 @supports (-webkit-touch-callout: none) {
-  .pkmn-types {
+  /* .pkmn-types {
     padding-top: 4px;
     margin-bottom: -2px;
-  }
+  } */
   .ios-padding-fix {
     padding-top: 1px;
   }
