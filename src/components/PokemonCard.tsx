@@ -30,7 +30,7 @@ export function PokemonCard({
   const reorderedAbilities = [...abilities.slice(1), abilities[0]];
 
   // If the sprite is "", then use the default sprite
-  const fallbackSprite = "/eidex/missingno.png";
+  const fallbackSprite = "/missingno.png";
 
   const shinySprite = `data:image/png;base64,${shinySpritesData[ID.toString() as keyof typeof shinySpritesData]}`;
   const regularSprite = `data:image/png;base64,${spritesData[ID.toString() as keyof typeof spritesData]}`;
