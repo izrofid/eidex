@@ -4,7 +4,7 @@ export interface PokemonChanges {
   abilities?: (string | number[])[];
 }
 
-export type Ability = [number, number];
+export type Ability =number[];
 export type Abilities = Ability[];
 
 export interface Pokemon {
