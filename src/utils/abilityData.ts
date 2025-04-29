@@ -1,10 +1,12 @@
-export type Ability = {
+import { Ability } from "../types";
+
+export type AbilityObject = {
   id: number;
   names: string[];
   description: string;
 };
 
-export const abilities: Record<number, Ability> = {
+export const abilities: Record<number, AbilityObject> = {
   1: { id: 1, names: ["Stench"], description: "Helps repel wild Pokemon." },
   2: { id: 2, names: ["Drizzle"], description: "Summons Rain for 5 turns." },
   3: { id: 3, names: ["Speed Boost"], description: "Gradually boosts Speed." },
@@ -1158,14 +1160,14 @@ export const abilities: Record<number, Ability> = {
   },
 };
 
-export function getAbilityName([abilityId, abilityIndex]: [number, number]): string {
+export function getAbilityName([abilityId, abilityIndex]: Ability): string {
   const ability = abilities[abilityId];
   if (!ability) return "None";
   return ability.names[abilityIndex] || "None";
 }
 
 // function to export the ability description as a string given id and index
-export function getAbilityDescription([abilityId]: [number, number]): string {
+export function getAbilityDescription([abilityId]: Ability): string {
   const ability = abilities[abilityId];
   if (!ability) return "None";
   return ability.description || "None";
