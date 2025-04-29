@@ -22,7 +22,7 @@ const AbilityBadge: React.FC<AbilityBadgeProps> = ({
         }`}
         onClick={() => onClick(ability)}
       >
-        {getAbilityName(ability)}
+        {getAbilityName(ability as [number, number])}
       </div>
     );
   };
