@@ -2,14 +2,14 @@
 
 @font-face {
   font-family: "Pixel Operator";
-  src: url("/eidex/pixel_operator/PixelOperator.woff2") format("woff2");
+  src: url("/pixel_operator/PixelOperator.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Pixel Operator";
-  src: url("/eidex/pixel_operator/PixelOperator-Bold.woff2") format("woff2");
+  src: url("/pixel_operator/PixelOperator-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
