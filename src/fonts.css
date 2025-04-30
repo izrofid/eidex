@@ -4,31 +4,15 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-
-  -webkit-font-smoothing: none;
-  -moz-osx-font-smoothing: none;
 }
 @font-face {
   font-family: "Emerald-Short";
-  src: url(./fonts/dp-pro/pokemon-dp-pro.ttf) format("truetype");
+  src: url(./fonts/dp-pro/pokemon-advanced-battle.otf) format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-
-  -webkit-font-smoothing: none;
-  -moz-osx-font-smoothing: none;
 }
-@font-face {
-  font-family: "Emerald-Narrow";
-  src: url(./fonts/pkmnemn.ttf) format("truetype");
 
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  /* letter-spacing: ; */
-  -webkit-font-smoothing: none;
-  -moz-osx-font-smoothing: none;
-}
 /* Color below from https://lospec.com/palette-list/pokemon-ruby-sapphire-exterior */
 .pkmnem-face {
   font-family: "Emerald";
@@ -37,30 +21,28 @@
 .pkmnem-face-short {
   font-family: "Emerald-Short";
 }
-.pkmnem-face-narrow {
-  font-family: "Emerald-Narrow";
-}
-/* Weirdness with font */
-.pkmn-types {
-  box-sizing: border-box;
-  margin-left: -1px;
-  color: "#f8f8f8" /* Pulled straight from the in-game type badges */;
 
+/* Types text gets its own shadow to match in-game */
+.pkmn-types {
+  margin-left: 1px;
+  color: "#f6f5f5" /* Pulled straight from the in-game type badges */;
   text-shadow:
-    1px 0px 2px rgba(135, 131, 129, 0.2),
-    1px 0.5px #413141,
-    1px 0.75px #413141,
-    0px 0.5px #413141,
-    0.5px 1px #413141,
-    0px 1px #413141,
-    /* 1.1px 0px #413141, */
-    0.5px 0px #413141,
-    0px 1px rgba(129, 119, 111, 0.6),
-    1px 1px rgba(129, 119, 111, 0.6),
-    1px 0px rgba(129, 119, 111, 0.6);
-  /* 1.5px 1.5px 1px rgba(129, 119, 111, 0.6), */
-  /* 0.5px 0px 6px rgba(129, 119, 111, 0.6); */
+    0.25px 0px #9d9a99,
+    0px 0.25px #9d9a99,
+    -0.30px 0px rgba(195, 191, 190, 0.25),
+    -0.30px -0.30px rgba(195, 191, 190, 0.25),
+    0px -0.30px rgba(195, 191, 190, 0.25),
+    0.80px 0px rgba(128, 120, 112, 0.75),
+    0.80px 0.80px rgba(128, 120, 112, 0.60),
+    0px 0.80px rgba(128, 120, 112, 0.75),
+    0.85px 0px rgba(81, 76, 71, 0.65),
+    0.85px 0.85px rgba(81, 76, 71, 0.65),
+    0px 0.85px rgba(81, 76, 71, 0.75),
+    0.95px 0px rgba(132, 124, 116, 0.5),
+    0px 0.95px rgba(132, 124, 116, 0.5),
+    1px 1px rgba(132, 124, 116, 0.5);
 }
+
 .pkmnem-face-shadow {
   text-shadow:
     0px 0.5px #413141,

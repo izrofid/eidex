@@ -5,19 +5,22 @@ function TypeBadge({ typeId }: { typeId: number }) {
   const [typeColor, endColor] = getTypeColor(typeId);
   const typeName = getTypeName(typeId);
 
-    // Set the background color and gradient
-    const typeStyle = {
-      backgroundColor: adjustColor(typeColor, -20),
-      backgroundImage: `linear-gradient(0deg, ${typeColor}, ${endColor} 75%)`,
-    };
+  // Set the background color and gradient
+  const typeStyle = {
+    backgroundColor: adjustColor(typeColor, -20),
+    backgroundImage: `linear-gradient(0deg, ${typeColor}, ${endColor} 75%)`,
+  };
 
   return (
     <div
-      className="flex w-14 flex-shrink-0 items-center justify-center whitespace-nowrap rounded-sm"
+      className="flex w-14 items-center justify-center whitespace-nowrap rounded-sm"
       style={typeStyle}
     >
       {/*add type icons later */}
-      <p className="pkmnem-face-short pkmn-types text-lg leading-5 md:text-xl md:leading-6">
+      <p
+        title={typeName.toUpperCase()}
+        className="pkmnem-face-short pkmn-types text-xs md:text-s leading-5"
+      >
         {typeName.toUpperCase()}
       </p>
     </div>
