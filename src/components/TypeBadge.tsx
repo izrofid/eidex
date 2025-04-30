@@ -13,7 +13,7 @@ function TypeBadge({ typeId }: { typeId: number }) {
 
   return (
     <div
-      className="flex w-14 items-center justify-center whitespace-nowrap rounded-sm"
+      className="flex w-16 items-center justify-center whitespace-nowrap rounded-sm py-0.5"
       style={typeStyle}
     >
       {/*add type icons later */}
