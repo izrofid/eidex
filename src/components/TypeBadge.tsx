@@ -2,23 +2,28 @@ import { getTypeColor, getTypeName, adjustColor } from "../utils/typeData";
 
 function TypeBadge({ typeId }: { typeId: number }) {
   // Type ID is passed as a prop
-  const typeColor = getTypeColor(typeId);
+  const [typeColor, endColor] = getTypeColor(typeId);
   const typeName = getTypeName(typeId);
 
   // Set the background color and gradient
   const typeStyle = {
     backgroundColor: adjustColor(typeColor, -20),
-    // backgroundImage: `linear-gradient(105deg, ${typeColor} 50%, ${adjustColor(typeColor, -10)} 50%)`,
+    backgroundImage: `linear-gradient(0deg, ${typeColor}, ${endColor} 100%)`,
   };
 
   return (
-    <span
-      className="font-pixel border-1 shadow-md/50 flex w-17 flex-shrink-0 items-center justify-center text-sm select-none whitespace-nowrap rounded-xl border-gray-300 px-2 font-bold text-gray-200"
+    <div
+      className="flex w-16 items-center justify-center whitespace-nowrap rounded-sm py-0.5"
       style={typeStyle}
     >
-      {/*add type icons later here don't forget */}
-      <span className="text-shadow-lg/35 text-center">{typeName}</span>
-    </span>
+      {/*add type icons later */}
+      <p
+        title={typeName.toUpperCase()}
+        className="font-pkmnem-short pkmn-types text-xs md:text-s leading-5"
+      >
+        {typeName.toUpperCase()}
+      </p>
+    </div>
   );
 }
 
