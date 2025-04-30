@@ -14,7 +14,7 @@ const AbilityDescription: React.FC<AbilityDescriptionProps> = ({
   if (!selectedAbility) return null;
 
   return (
-    <div className="min-h-19 border-1 relative mt-4 w-full rounded-sm border-slate-600/80 p-2 text-gray-200 shadow">
+    <div className="min-h-19 border-3 relative mt-4 w-full rounded-sm border-fieldset-border p-2 text-gray-200 shadow">
       <div className="font-bold">{getAbilityName(selectedAbility)}</div>
       {onClose && (
         <CloseButton
