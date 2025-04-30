@@ -8,7 +8,7 @@ function TypeBadge({ typeId }: { typeId: number }) {
   // Set the background color and gradient
   const typeStyle = {
     backgroundColor: adjustColor(typeColor, -20),
-    backgroundImage: `linear-gradient(0deg, ${typeColor}, ${endColor} 75%)`,
+    backgroundImage: `linear-gradient(0deg, ${typeColor}, ${endColor} 100%)`,
   };
 
   return (
