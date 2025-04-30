@@ -19,7 +19,7 @@ function TypeBadge({ typeId }: { typeId: number }) {
       {/*add type icons later */}
       <p
         title={typeName.toUpperCase()}
-        className="pkmnem-face-short pkmn-types text-xs md:text-s leading-5"
+        className="font-pkmnem-short pkmn-types text-xs md:text-s leading-5"
       >
         {typeName.toUpperCase()}
       </p>

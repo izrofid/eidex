@@ -13,52 +13,62 @@
   font-display: swap;
 }
 
-/* Color below from https://lospec.com/palette-list/pokemon-ruby-sapphire-exterior */
-.pkmnem-face {
-  font-family: "Emerald";
-  /* letter-spacing: 1px; Like kerning?*/
-}
-.pkmnem-face-short {
-  font-family: "Emerald-Short";
+@font-face {
+  font-family: "Pixel Operator";
+  src: url("/pixel_operator/PixelOperator.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
-/* Types text gets its own shadow to match in-game */
-.pkmn-types {
-  margin-left: 1px;
-  color: "#f6f5f5" /* Pulled straight from the in-game type badges */;
-  text-shadow:
-    -0.3px 0px rgba(195, 191, 190, 0.25),
-    -0.3px -0.3px rgba(195, 191, 190, 0.25),
-    0px -0.3px rgba(195, 191, 190, 0.25),
-    0.25px 0px #9d9a99,
-    0px 0.25px #9d9a99,
-    0.8px 0px rgba(128, 120, 112, 0.15),
-    0.8px 0.8px rgba(128, 120, 112, 0.46),
-    0px 0.8px rgba(128, 120, 112, 0.5),
-    0.85px 0px rgba(81, 76, 71, 0.15),
-    0.85px 0.85px rgba(81, 76, 71, 0.5),
-    0px 0.85px rgba(81, 76, 71, 0.5),
-    0.9px 0px rgba(132, 124, 116, 0.5),
-    0.9px 0.9px rgba(132, 124, 116, 0.15),
-    0px 0.9px rgba(132, 124, 116, 0.14),
-    1px 1px rgba(132, 124, 116, 0.15);
+@font-face {
+  font-family: "Pixel Operator";
+  src: url("/pixel_operator/PixelOperator-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
 }
 
-.pkmnem-face-shadow {
-  text-shadow:
-    0px 0.5px #413141,
-    0.5px 0.5px #413141,
-    0.5px 0px #413141,
-    0.75px 0.75px #6a5a5a,
-    0.5px 0px 2px rgba(129, 119, 111, 0.6);
+@theme {
+  --font-pixel: "Pixel Operator", sans-serif;
+  --font-pkmnem: "Emerald", sans-serif;
+  --font-pkmnem-short: "Emerald-Short", sans-serif;
 }
-/* Fix weird bug in mobile safari where text is too high */
+
+@layer components {
+  .pkmn-types {
+    margin-left: 1px;
+    color: "#f6f5f5"; /* Pulled straight from the in-game type badges */
+    text-shadow:
+      -0.3px 0px rgba(195, 191, 190, 0.25),
+      -0.3px -0.3px rgba(195, 191, 190, 0.25),
+      0px -0.3px rgba(195, 191, 190, 0.25),
+      0.25px 0px #9d9a99,
+      0px 0.25px #9d9a99,
+      0.8px 0px rgba(128, 120, 112, 0.15),
+      0.8px 0.8px rgba(128, 120, 112, 0.46),
+      0px 0.8px rgba(128, 120, 112, 0.5),
+      0.85px 0px rgba(81, 76, 71, 0.15),
+      0.85px 0.85px rgba(81, 76, 71, 0.5),
+      0px 0.85px rgba(81, 76, 71, 0.5),
+      0.9px 0px rgba(132, 124, 116, 0.5),
+      0.9px 0.9px rgba(132, 124, 116, 0.15),
+      0px 0.9px rgba(132, 124, 116, 0.14),
+      1px 1px rgba(132, 124, 116, 0.15);
+  }
+
+  .pkmnem-face-shadow {
+    text-shadow:
+      0px 0.5px #413141,
+      0.5px 0.5px #413141,
+      0.5px 0px #413141,
+      0.75px 0.75px #6a5a5a,
+      0.5px 0px 2px rgba(129, 119, 111, 0.6);
+  }
+}
+
 @supports (-webkit-touch-callout: none) {
-  /* .pkmn-types {
-    padding-top: 4px;
-    margin-bottom: -9px;
-  } */
-  .ios-padding-fix {
-    padding-top: 1px;
+  @layer components {
+    .ios-padding-fix {
+      padding-top: 1px;
+    }
   }
 }

@@ -1,23 +1,9 @@
 @import "tailwindcss";
 @import "./fonts.css";
-@font-face {
-  font-family: "Pixel Operator";
-  src: url("/pixel_operator/PixelOperator.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Pixel Operator";
-  src: url("/pixel_operator/PixelOperator-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
 
 @theme {
   --color-fieldset: #4a73ac;
   --color-fieldset-border: #414a6a;
-  --font-pixel: "Pixel Operator", sans-serif;
 }
 
 body {
