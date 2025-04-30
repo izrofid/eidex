@@ -39,7 +39,7 @@ export function PokemonCard({
   const displaySprite = isShiny ? shinySprite : regularSprite;
 
   return (
-    <div onClick={onClick} className="cursor-pointer w-full">
+    <div onClick={onClick} className="w-full cursor-pointer">
       <div className="flex w-full flex-col text-white">
         {/* Header */}
         <div className="flex justify-between bg-gray-900 px-2 py-1">
@@ -69,12 +69,11 @@ export function PokemonCard({
 
         {/* Card body */}
         <div className="bg-gray-800 px-5 py-3 pt-4">
-          <div className="relative flex flex-row gap-5 mt-1.5 rounded-md border-3 border-fieldset-border p-4 py-2">
-            <span className="h-4 md:h-5 font-pkmnem-short pkmnem-face-shadow 
-              absolute -top-2.5 md:-top-3 left-2 bg-fieldset px-2 py-0 text-gray-200 rounded-sm text-xs">
-              <p className="ios-padding-fix -mt-[1px] md:mt-[1px] p-0">
+          <div className="border-3 border-fieldset-border relative mt-1.5 flex flex-row gap-5 rounded-md p-4 py-2">
+            <span className="font-pkmnem-short pkmnem-face-shadow bg-fieldset absolute -top-2.5 left-2 h-4 rounded-sm px-2 py-0 text-xs text-gray-200 md:-top-3 md:h-5">
+              <p className="ios-padding-fix -mt-[1px] p-0 md:mt-[1px]">
                 ABILITIES
-                </p>
+              </p>
             </span>
             {/* Abilities */}
             {reorderedAbilities.map(
@@ -102,9 +101,7 @@ export function PokemonCard({
               {stats.map((statValue, index) => (
                 <div key={index} className="flex flex-col items-center">
                   <div className="text-sm italic">{statValue}</div>
-                  <div className="text-md font-bold">
-                    {statLabels[index]}
-                  </div>
+                  <div className="text-md font-bold">{statLabels[index]}</div>
                 </div>
               ))}
               {/* After all the stats, add one extra box for BST */}
