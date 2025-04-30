@@ -53,7 +53,7 @@ export function PokemonCard({
                 target.src = fallbackSprite;
               }}
             />
-            <div className="text-md font-bold">{nameKey}</div>
+            <div className="text-md min-w-25 font-bold">{nameKey}</div>
 
             {/* Types */}
             <div className="mt-1 flex flex-row items-center gap-1 justify-self-end px-2 max-sm:flex-col">
