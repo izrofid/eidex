@@ -39,7 +39,7 @@ export function PokemonCard({
   const displaySprite = isShiny ? shinySprite : regularSprite;
 
   return (
-    <div onClick={onClick} className="cursor-pointer w-full">
+    <div onClick={onClick} className="w-full cursor-pointer">
       <div className="flex w-full flex-col text-white">
         {/* Header */}
         <div className="flex justify-between bg-gray-900 px-2 py-1">
@@ -53,10 +53,10 @@ export function PokemonCard({
                 target.src = fallbackSprite;
               }}
             />
-            <div className="text-md font-bold">{nameKey}</div>
+            <div className="text-md min-w-25 font-bold">{nameKey}</div>
 
             {/* Types */}
-            <div className="flex flex-row items-center gap-1 px-2 max-sm:flex-col">
+            <div className="mt-1 flex flex-row items-center gap-1 justify-self-end px-2 max-sm:flex-col">
               {type.map((typeId: number, index: number) => (
                 <div key={index}>
                   <TypeBadge typeId={typeId} />
@@ -68,8 +68,13 @@ export function PokemonCard({
         </div>
 
         {/* Card body */}
-        <div className="bg-gray-800 px-5 py-7">
-          <div className="flex flex-row gap-5 py-2">
+        <div className="bg-gray-800 px-5 py-3 pt-4">
+          <div className="border-3 border-fieldset-border relative mt-1.5 flex flex-row gap-5 rounded-md p-4 py-2">
+            <span className="font-pkmnem-short pkmnem-face-shadow bg-fieldset absolute -top-2.5 left-2 h-4 rounded-sm px-2 py-0 text-xs text-gray-200 md:-top-3 md:h-5">
+              <p className="ios-padding-fix -mt-[1px] p-0 md:mt-[1px]">
+                ABILITIES
+              </p>
+            </span>
             {/* Abilities */}
             {reorderedAbilities.map(
               ([abilityId, abilityIndex], index: number) => {
@@ -96,7 +101,7 @@ export function PokemonCard({
               {stats.map((statValue, index) => (
                 <div key={index} className="flex flex-col items-center">
                   <div className="text-sm italic">{statValue}</div>
-                  <div className="text-sm font-bold">{statLabels[index]}</div>
+                  <div className="text-md font-bold">{statLabels[index]}</div>
                 </div>
               ))}
               {/* After all the stats, add one extra box for BST */}

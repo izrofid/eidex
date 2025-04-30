@@ -1,23 +1,10 @@
 @import "tailwindcss";
-
-@font-face {
-  font-family: "Pixel Operator";
-  src: url("/pixel_operator/PixelOperator.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Pixel Operator";
-  src: url("/pixel_operator/PixelOperator-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
+@import "./fonts.css";
 
 @theme {
-  --font-pixel: "Pixel Operator", sans-serif;
+  --color-fieldset: #4a73ac;
+  --color-fieldset-border: #414a6a;
 }
-
 
 body {
   @apply bg-zinc-700;
@@ -39,13 +26,13 @@ input[type="number"] {
 @layer utilities {
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
-      display: none;
+    display: none;
   }
- /* Hide scrollbar for IE, Edge and Firefox */
+  /* Hide scrollbar for IE, Edge and Firefox */
   .no-scrollbar {
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
-}
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
 
 @layer components {
