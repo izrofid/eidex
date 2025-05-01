@@ -1,6 +1,6 @@
-import { Ability } from "../types";
-import { getAbilityName, getAbilityDescription } from "../utils/abilityData";
-import CloseButton from "./CloseButton";
+import { Ability } from "../../types";
+import { getAbilityName, getAbilityDescription } from "../../utils/abilityData";
+import CloseButton from "../CloseButton";
 
 type AbilityDescriptionProps = {
   selectedAbility: Ability | null;
