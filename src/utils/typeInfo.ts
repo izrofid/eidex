@@ -74,3 +74,29 @@ export const adjustColor = (color: string, amount: number): string => {
   // Convert back to hex
   return `#${newR.toString(16).padStart(2, "0")}${newG.toString(16).padStart(2, "0")}${newB.toString(16).padStart(2, "0")}`;
 };
+
+const typeColors: Record<number, string> = {
+  0: '#cecac5',
+  1: '#d69e9c',
+  2: '#adc6ef',
+  3: '#bd8ec5',
+  4: '#debe8c',
+  5: '#ce966b',
+  6: '#bdd25a',
+  7: '#a5aade',
+  8: '#adc2bd',
+  10: '#ef8263',
+  11: '#7bcee6',
+  12: '#84c28c',
+  13: '#efe363',
+  14: '#f792ad',
+  15: '#9cdfd6',
+  16: '#7bb2e6',
+  17: '#a5aaad',
+  23: '#f7b6ef',
+};
+
+export function getTypeSnapColor(typeID: number): string {
+  return typeColors[typeID] || '#cecac5'; // Default to Normal color if not found
+}
+

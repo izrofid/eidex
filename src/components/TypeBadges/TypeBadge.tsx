@@ -1,29 +1,37 @@
-import { getTypeColor, getTypeName, adjustColor } from '../../utils/typeInfo';
+import { getTypeName, getTypeSnapColor } from "../../utils/typeInfo";
+import { typeIcons } from "../../utils/typeIcons";
 
 function TypeBadge({ typeId }: { typeId: number }) {
-  // Type ID is passed as a prop
-  const [typeColor, endColor] = getTypeColor(typeId);
-  const typeName = getTypeName(typeId);
+  const name = getTypeName(typeId);
+  const color = getTypeSnapColor(typeId);
+  const icon = typeIcons[typeId];
 
-  // Set the background color and gradient
-  const typeStyle = {
-    backgroundColor: adjustColor(typeColor, -20),
-    backgroundImage: `linear-gradient(0deg, ${typeColor}, ${endColor} 100%)`,
-  };
+  // Adjust the 40% value to match the start of the dark area in your gradient
+  const background = `linear-gradient(120deg, ${color} 0 33%, #5a5a5a 35% 100%)`;
 
   return (
-    <div
-      className="flex w-16 items-center justify-center whitespace-nowrap rounded-sm py-0.5"
-      style={typeStyle}
+    <span
+      className="relative inline-flex items-center rounded-full overflow-hidden w-[5.7rem] h-6.5 select-none"
+      style={{ background }}
     >
-      {/*add type icons later */}
-      <p
-        title={typeName.toUpperCase()}
-        className="font-pkmnem-short pkmn-types text-xs md:text-s leading-5"
+      {icon && (
+        <img
+          src={icon}
+          alt={name}
+          className="w-7 h-7 object-contain"
+          aria-hidden="true"
+        />
+      )}
+      {/* Centered name in the dark area */}
+      <span
+        className="h-full flex items-center justify-center font-medium text-white text-xs"
+        style={{
+          width: "80%",
+        }}
       >
-        {typeName.toUpperCase()}
-      </p>
-    </div>
+        {name}
+      </span>
+    </span>
   );
 }
 
