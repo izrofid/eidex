@@ -1,6 +1,6 @@
 import React from "react";
-import { Ability } from "../types" 
-import { getAbilityName } from "../utils/abilityData";
+import { Ability } from "../../types" 
+import { getAbilityName } from "../../utils/abilityData";
 
 type AbilityBadgeProps = {
     ability: Ability;
