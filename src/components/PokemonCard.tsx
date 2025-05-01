@@ -1,5 +1,5 @@
 import spritesData from "../data/sprites.json";
-import shinySpritesData from "../data/shiny_sprites.json";
+import shinySpritesData from "../data/shinySprites.json";
 
 import { TypeBadge } from "./TypeBadge";
 import { getAbilityName } from "../utils/abilityData";

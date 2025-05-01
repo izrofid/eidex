@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { PokemonCard } from "./PokemonCard";
 import { Pokemon } from "../types";
-import { PokemonModal } from "./PokemonModal";
+import { PokemonModal } from "./PokemonModal/PokemonModal";
 
 type PokemonListProps = {
   pokemons: Pokemon[];
