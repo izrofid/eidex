@@ -51,3 +51,11 @@ export interface Move {
 
 export type MoveData = Record<string, Move>;
 export type MoveMap = Record<string, number>;
+
+export interface TypeData {
+  typeID: number;
+  typeName: string;
+  color: string;
+  colorEnd: string;
+  matchup : number[]
+}

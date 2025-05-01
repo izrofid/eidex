@@ -5,7 +5,7 @@ import { FilterBar } from "./components/FilterUI";
 import { useState, useMemo, useEffect } from "react";
 import { FilterOptions } from "./types";
 
-const pokemonData = Object.values(speciesData)
+const pokemonData = Object.values(speciesData);
 
 function App() {
   // State for the actual filters used for searching (debounced)
@@ -15,7 +15,12 @@ function App() {
     minStat: undefined,
   });
 
-  const [isShiny, setIsShiny] = useState(false);
+
+  // Retrieve the shiny state from localStorage or default to false
+  const [isShiny, setIsShiny] = useState(() => {
+    const savedShinyState = localStorage.getItem("isShiny");
+    return savedShinyState == "true"; // beacuse it's stored as a string
+  });
 
   // State for the raw filter input (updates immediately as user types)
   const [rawFilters, setRawFilters] = useState<FilterOptions>({
@@ -45,6 +50,12 @@ function App() {
     return filterPokemon(pokemonData, filters);
   }, [filters]);
 
+
+  // Effect to save shiny state to localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem("isShiny", isShiny.toString());
+  }, [isShiny])
+
   return (
     <div className="flex min-h-screen justify-center bg-zinc-800">
       <div className="flex w-full max-w-3xl flex-col p-4">
@@ -52,13 +63,13 @@ function App() {
         <FilterBar filters={rawFilters} setFilters={setRawFilters} />
 
         {/* Shiny toggle UI */}
-        <div className="flex items-center gap-2 bg-gray-900/50 py-2 px-2">
-            <img 
+        <div className="flex items-center gap-2 bg-gray-900/50 px-2 py-2">
+          <img
             src="/shinycharm.png"
-            alt="Shiny Mode" 
+            alt="Shiny Mode"
             className="h-6.5 w-6.5 object-contain"
             title="Shiny Mode"
-            />
+          />
           <button
             type="button"
             role="switch"

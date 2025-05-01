@@ -1,5 +1,5 @@
-import { Move } from "../types";
-import { TypeBadge } from "./TypeBadge";
+import { Move } from "../../types";
+import { TypeBadge } from "../TypeBadge";
 
 type MoveEntryProps = {
     move: Move;

@@ -1,13 +1,15 @@
-import { Pokemon, Ability } from "../types";
-import spritesData from "../data/sprites.json";
-import shinySpritesData from "../data/shiny_sprites.json";
+import { Pokemon, Ability } from "../../types";
+import spritesData from "../../data/sprites.json";
+import shinySpritesData from "../../data/shinySprites.json";
 import { useState } from "react";
 import TabbedInterface from "./TabbedInterface";
 
-import CloseButton from "./CloseButton";
+import CloseButton from "../CloseButton";
 import AbilityBadge from "./AbilityBadge";
 import AbilityDescription from "./AbiltyDescription";
 import { generateTabsData } from "./tabsData";
+
+import TypeMatchup from "./TypeMatchup";
 
 type PokemonModalProps = {
   pokemon: Pokemon | null;
@@ -53,7 +55,7 @@ function PokemonView({
       <div className="my-2 flex w-full flex-col">
         <div className="border-3 border-fieldset-border relative flex w-full flex-row justify-evenly rounded-sm px-3 py-7 text-center">
           {/* Abilities Label */}
-          <div className="w-19 font-pkmnem-short text-xs absolute left-6 top-0 flex translate-y-[-50%] select-none items-center justify-center rounded border border-gray-300 bg-blue-900 px-4 py-1 text-center font-bold uppercase text-gray-100">
+          <div className="w-19 font-pkmnem-short absolute left-6 top-0 flex translate-y-[-50%] select-none items-center justify-center rounded border border-gray-300 bg-blue-900 px-4 py-1 text-center text-xs font-bold uppercase text-gray-100">
             Abilities
           </div>
 
@@ -75,6 +77,9 @@ function PokemonView({
             selectedAbility={selectedAbility}
             onClose={() => setSelectedAbility(null)}
           />
+        </div>
+        <div className="flex flex-wrap text-gray-100">
+          <TypeMatchup pokemon={pokemon} />
         </div>
       </div>
       <div className="flex w-full flex-grow">
