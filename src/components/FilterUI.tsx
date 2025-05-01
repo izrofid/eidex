@@ -1,37 +1,30 @@
-import { TYPE_INFO } from "../utils/typeData";
+import { typeDataArray, getTypeName} from "../utils/typeInfo";
 import { FilterOptions } from "../types";
+
+interface SearchInputProps {
+  value: string;
+  onChange: (v: string) => void;
+  placeholder: string;
+  icon: React.ReactNode;
+}
+
+interface TypeDropdownProps {
+  value: number | undefined;
+  onChange: (v: number | undefined) => void;
+}
 
 type FilterBarProps = {
   filters: FilterOptions;
   setFilters: React.Dispatch<React.SetStateAction<FilterOptions>>;
 };
 
-function NameSearchInput({
-  value,
-  onChange,
-}: {
-  value: string;
-  onChange: (v: string) => void;
-}) {
+function SearchInput({ value, onChange, placeholder, icon }: SearchInputProps) {
   return (
     <div className="relative">
-      <svg
-        xmlns="https://www.w3.org/2000/svg"
-        className="absolute left-2 top-2.5 h-4 w-4 text-gray-400"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-        />
-      </svg>
+      {icon}
       <input
         type="text"
-        placeholder="Search Pokémon"
+        placeholder={placeholder}
         value={value}
         onChange={(e) => onChange(e.target.value)}
         className="h-9 w-48 rounded-md border-0 bg-gray-800 pl-8 pr-3 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-blue-400"
@@ -40,13 +33,38 @@ function NameSearchInput({
   );
 }
 
+function NameSearchInput({ value, onChange }: Omit<SearchInputProps, 'placeholder' | 'icon'>) {
+  const searchIcon = (
+    <svg
+      xmlns="https://www.w3.org/2000/svg"
+      className="absolute left-2 top-2.5 h-4 w-4 text-gray-400"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+      />
+    </svg>
+  );
+  
+  return (
+    <SearchInput
+      value={value}
+      onChange={onChange}
+      placeholder="Search Pokémon"
+      icon={searchIcon}
+    />
+  );
+}
+
 function TypeDropdown({
   value,
   onChange,
-}: {
-  value: number | undefined;
-  onChange: (v: number | undefined) => void;
-}) {
+}: TypeDropdownProps) {
   return (
     <div className="relative">
       <select
@@ -57,9 +75,12 @@ function TypeDropdown({
         className="h-9 w-32 appearance-none rounded-md border-0 bg-gray-800 pl-3 pr-8 text-sm text-white focus:ring-1 focus:ring-blue-400"
       >
         <option value="">All</option>
-        {Object.values(TYPE_INFO).map((typeInfo) => (
-          <option key={typeInfo.id} value={typeInfo.id}>
-            {typeInfo.name}
+        {typeDataArray.map((typeInfo) => (
+          <option 
+            key={typeInfo.typeID} 
+            value={typeInfo.typeID}
+          >
+            {getTypeName(typeInfo.typeID)}
           </option>
         ))}
       </select>
@@ -142,34 +163,31 @@ function StatFilter({
 function AbilitySearchInput({
   value,
   onChange,
-}: {
-  value: string;
-  onChange: (v: string) => void;
-}) {
-  return (
-    <div className="relative">
-      <svg
-        xmlns="https://www.w3.org/2000/svg"
-        className="absolute left-2 top-2.5 h-4 w-4 text-gray-400"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z"
-        />
-      </svg>
-      <input
-        type="text"
-        placeholder="Ability"
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        className="h-9 w-40 rounded-md border-0 bg-gray-800 pl-8 pr-3 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-blue-400"
+}: Omit<SearchInputProps, 'placeholder' | 'icon'>) {
+  const abilityIcon = (
+    <svg
+      xmlns="https://www.w3.org/2000/svg"
+      className="absolute left-2 top-2.5 h-4 w-4 text-gray-400"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z"
       />
-    </div>
+    </svg>
+  );
+
+  return (
+    <SearchInput
+      value={value}
+      onChange={onChange}
+      placeholder="Ability"
+      icon={abilityIcon}
+    />
   );
 }
 
