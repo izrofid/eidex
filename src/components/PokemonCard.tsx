@@ -1,7 +1,7 @@
 import spritesData from "../data/sprites.json";
 import shinySpritesData from "../data/shinySprites.json";
 
-import { TypeBadge } from "./TypeBadge";
+import { TypeBadge } from "./TypeBadges/TypeBadge";
 import { getAbilityName } from "../utils/abilityData";
 import { Pokemon } from "../types";
 
