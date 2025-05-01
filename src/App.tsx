@@ -4,6 +4,7 @@ import { filterPokemon } from "./utils/filterPokemon";
 import { FilterBar } from "./components/FilterUI";
 import { useState, useMemo, useEffect } from "react";
 import { FilterOptions } from "./types";
+import CreditsButton from "./components/CreditsButton";
 
 const pokemonData = Object.values(speciesData);
 
@@ -14,7 +15,6 @@ function App() {
     typeId: undefined,
     minStat: undefined,
   });
-
 
   // Retrieve the shiny state from localStorage or default to false
   const [isShiny, setIsShiny] = useState(() => {
@@ -50,11 +50,10 @@ function App() {
     return filterPokemon(pokemonData, filters);
   }, [filters]);
 
-
   // Effect to save shiny state to localStorage whenever it changes
   useEffect(() => {
     localStorage.setItem("isShiny", isShiny.toString());
-  }, [isShiny])
+  }, [isShiny]);
 
   return (
     <div className="flex min-h-screen justify-center bg-zinc-800">
@@ -63,24 +62,27 @@ function App() {
         <FilterBar filters={rawFilters} setFilters={setRawFilters} />
 
         {/* Shiny toggle UI */}
-        <div className="flex items-center gap-2 bg-gray-900/50 px-2 py-2">
-          <img
-            src="/shinycharm.png"
-            alt="Shiny Mode"
-            className="h-6.5 w-6.5 object-contain"
-            title="Shiny Mode"
-          />
-          <button
-            type="button"
-            role="switch"
-            aria-checked={isShiny}
-            onClick={() => setIsShiny((prev) => !prev)}
-            className={`relative inline-flex h-5 w-10 items-center rounded-full transition-colors duration-200 focus:outline-none ${isShiny ? "bg-blue-600" : "bg-zinc-600"}`}
-          >
-            <span
-              className={`inline-block h-3 w-3 transform rounded-full bg-white shadow transition-transform duration-200 ${isShiny ? "translate-x-5" : "translate-x-1"}`}
+        <div className="flex items-center justify-between gap-2 bg-slate-900/50 px-3 py-2">
+          <div className="flex flex-row items-center">
+            <img
+              src="/shinycharm.png"
+              alt="Shiny Mode"
+              className="h-6.5 w-6.5 object-contain"
+              title="Shiny Mode"
             />
-          </button>
+            <button
+              type="button"
+              role="switch"
+              aria-checked={isShiny}
+              onClick={() => setIsShiny((prev) => !prev)}
+              className={`relative inline-flex h-5 w-10 items-center rounded-full transition-colors duration-200 focus:outline-none ${isShiny ? "bg-blue-600" : "bg-zinc-600"}`}
+            >
+              <span
+                className={`inline-block h-3 w-3 transform rounded-full bg-white shadow transition-transform duration-200 ${isShiny ? "translate-x-5" : "translate-x-1"}`}
+              />
+            </button>
+          </div>
+          <CreditsButton />
         </div>
 
         <PokemonList pokemons={filteredPokemon} isShiny={isShiny} />
