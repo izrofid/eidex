@@ -1,6 +1,6 @@
 import { Pokemon, Ability } from "../types";
 import spritesData from "../data/sprites.json";
-import shinySpritesData from "../data/shiny_sprites.json";
+import shinySpritesData from "../data/shinySprites.json";
 import { useState } from "react";
 import TabbedInterface from "./TabbedInterface";
 
