@@ -11,7 +11,7 @@ type FilterOptions = {
 
 function matchesNameFilter(pokemon: Pokemon, name?: string): boolean {
   return name
-    ? pokemon.name.toLowerCase().includes(name.toLowerCase())
+    ? pokemon.nameKey.toLowerCase().includes(name.toLowerCase())
     : true;
 }
 
