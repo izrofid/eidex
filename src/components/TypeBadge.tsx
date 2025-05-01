@@ -1,4 +1,4 @@
-import { getTypeColor, getTypeName, adjustColor } from "../utils/typeData";
+import { getTypeColor, getTypeName, adjustColor } from "../utils/typeInfo";
 
 function TypeBadge({ typeId }: { typeId: number }) {
   // Type ID is passed as a prop
