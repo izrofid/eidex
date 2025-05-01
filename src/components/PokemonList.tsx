@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { PokemonCard } from "./PokemonCard";
 import { Pokemon } from "../types";
 import { PokemonModal } from "./PokemonModal/PokemonModal";
+import useBodyScrollLock from "../hooks/useBodyScrollLock";
 
 type PokemonListProps = {
   pokemons: Pokemon[];
@@ -27,16 +28,7 @@ export function PokemonList({ pokemons, isShiny }: PokemonListProps) {
   }, [pokemons.length]);
 
   // Prevent background scroll when modal is open
-  useEffect(() => {
-    if (selectedPokemon) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [selectedPokemon]);
+  useBodyScrollLock(!!selectedPokemon);
 
   return (
     <div className="flex w-full flex-col items-center">
