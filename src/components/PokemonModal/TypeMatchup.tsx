@@ -1,6 +1,6 @@
 // Component to show a single pokemon's type matchups with data from typeInfo.ts
 import { getDefensiveMatchup} from "../../utils/typeInfo";
-import { TypeBadge } from "../TypeBadge";
+import { TypeBadge } from "../TypeBadges/TypeBadge";
 
 import { Pokemon } from "../../types";
 
