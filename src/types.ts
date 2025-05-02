@@ -9,7 +9,7 @@ export type Abilities = Ability[];
 
 export interface Pokemon {
   ID: number;
-  name: string;
+  name: string; // Base pokemon name. Same name for other forms of pokemon
   stats: number[]; // [HP, Attack, Defense, Speed, Sp. Atk, Sp. Def]
   type: number[]; // Type IDs
   abilities: Abilities; // [Ability ID, index]
@@ -19,7 +19,7 @@ export interface Pokemon {
   evolutions?: number[][];
   tmMoves?: number[]; // TM IDs
   tutorMoves?: number[]; // Tutor move IDs
-  nameKey: string; // Redundant name
+  nameKey: string; // Display name
   dexID: number; // National Dex ID
   ancestor: number; // Pre-evolution's ID
   eggMoves?: number[]; // Egg move IDs
