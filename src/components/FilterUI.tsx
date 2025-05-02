@@ -1,5 +1,7 @@
-import { typeDataArray, getTypeName} from "../utils/typeInfo";
-import { FilterOptions } from "../types";
+import { typeDataArray, getTypeName } from "../utils/typeInfo";
+import { FilterOptions, Move } from "../types";
+import { useState, useMemo } from "react";
+import moveData from "../data/moveData.json";
 
 interface SearchInputProps {
   value: string;
@@ -20,20 +22,23 @@ type FilterBarProps = {
 
 function SearchInput({ value, onChange, placeholder, icon }: SearchInputProps) {
   return (
-    <div className="relative">
+    <div className="relative flex-1 h-9 min-w-32">
       {icon}
       <input
         type="text"
         placeholder={placeholder}
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="h-9 w-48 rounded-md border-0 bg-gray-800 pl-8 pr-3 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-blue-400"
+        className="h-9 w-full rounded-md border-0 bg-gray-800 pl-8 pr-3 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-blue-400"
       />
     </div>
   );
 }
 
-function NameSearchInput({ value, onChange }: Omit<SearchInputProps, 'placeholder' | 'icon'>) {
+function NameSearchInput({
+  value,
+  onChange,
+}: Omit<SearchInputProps, "placeholder" | "icon">) {
   const searchIcon = (
     <svg
       xmlns="https://www.w3.org/2000/svg"
@@ -50,7 +55,7 @@ function NameSearchInput({ value, onChange }: Omit<SearchInputProps, 'placeholde
       />
     </svg>
   );
-  
+
   return (
     <SearchInput
       value={value}
@@ -61,43 +66,107 @@ function NameSearchInput({ value, onChange }: Omit<SearchInputProps, 'placeholde
   );
 }
 
-function TypeDropdown({
-  value,
-  onChange,
-}: TypeDropdownProps) {
+function TypeDropdown({ value, onChange }: TypeDropdownProps) {
   return (
-    <div className="relative">
+    <div className="relative flex-1 min-w-32">
       <select
         value={value ?? ""}
         onChange={(e) =>
           onChange(e.target.value ? Number(e.target.value) : undefined)
         }
-        className="h-9 w-32 appearance-none rounded-md border-0 bg-gray-800 pl-3 pr-8 text-sm text-white focus:ring-1 focus:ring-blue-400"
+        className="h-9 rounded-md w-full border-0 bg-gray-800 pl-3 pr-8 text-sm text-white focus:ring-1 focus:ring-blue-400"
       >
         <option value="">All</option>
         {typeDataArray.map((typeInfo) => (
-          <option 
-            key={typeInfo.typeID} 
-            value={typeInfo.typeID}
-          >
+          <option key={typeInfo.typeID} value={typeInfo.typeID}>
             {getTypeName(typeInfo.typeID)}
           </option>
         ))}
       </select>
-      <svg
-        xmlns="https://www.w3.org/2000/svg"
-        className="pointer-events-none absolute right-2 top-2.5 h-4 w-4 text-gray-400"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M19 9l-7 7-7-7"
-        />
-      </svg>
+    </div>
+  );
+}
+
+type MoveSource = "all" | "levelup" | "tm" | "tutor";
+
+function MoveSourceDropdown({
+  value,
+  onChange,
+}: {
+  value: MoveSource;
+  onChange: (v: MoveSource) => void;
+}) {
+  return (
+    <select
+      value={value}
+      onChange={(e) => onChange(e.target.value as MoveSource)}
+      className="h-9 w-24 rounded-md border-0 bg-gray-800 pl-2 pr-6 text-sm text-white focus:ring-1 focus:ring-blue-400"
+    >
+      <option value="all">All</option>
+      <option value="levelup">Lvl</option>
+      <option value="tm">TM</option>
+      <option value="tutor">Tutor</option>
+    </select>
+  );
+}
+
+function MoveDropdown({
+  value,
+  onChange,
+  placeholder,
+}: {
+  value: string;
+  onChange: (v: string) => void;
+  placeholder: string;
+}) {
+  const [input, setInput] = useState(value || "");
+  const [open, setOpen] = useState(false);
+
+  // Flatten all moves into an array and filter as user types
+  const allMoves = useMemo(() => {
+    return Object.values(moveData) as Move[];
+  }, []);
+
+  const filteredMoves = useMemo(() => {
+    if (!input) return allMoves;
+    return allMoves.filter((move) =>
+      move.name.toLowerCase().includes(input.toLowerCase()),
+    );
+  }, [input, allMoves]);
+
+  return (
+    <div className="relative w-full min-w-48 flex-1">
+      <input
+        type="text"
+        placeholder={placeholder}
+        value={input}
+        onChange={(e) => {
+          setInput(e.target.value);
+          setOpen(true);
+          onChange(e.target.value);
+        }}
+        onFocus={() => setOpen(true)}
+        onBlur={() => setTimeout(() => setOpen(false), 100)}
+        className="h-9 w-full rounded-md border-0 bg-gray-800 pl-3 pr-3 text-sm text-white placeholder-gray-500"
+        autoComplete="off"
+      />
+      {open && filteredMoves.length > 0 && (
+        <ul className="no-scrollbar absolute z-10 mt-1 max-h-48 w-full overflow-auto rounded-md bg-gray-900 shadow-lg ring-1 ring-black ring-opacity-5">
+          {filteredMoves.slice(0, 30).map((move) => (
+            <li
+              key={move.ID}
+              className="cursor-pointer px-3 py-1 text-sm text-white hover:bg-blue-600"
+              onMouseDown={() => {
+                setInput(move.name);
+                onChange(move.name);
+                setOpen(false);
+              }}
+            >
+              {move.name}
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
@@ -114,7 +183,7 @@ function StatFilter({
   onStatTypeChange: (v: string) => void;
 }) {
   return (
-    <div className="group flex items-center overflow-hidden rounded-md bg-gray-800 focus-within:ring-1 focus-within:ring-blue-400">
+    <div className="group flex flex-1 items-center h-9 justify-evenly rounded-md bg-gray-800 focus-within:ring-1 focus-within:ring-blue-400">
       <input
         type="number"
         placeholder="Min"
@@ -122,16 +191,16 @@ function StatFilter({
         onChange={(e) =>
           onMinStatChange(e.target.value ? Number(e.target.value) : undefined)
         }
-        className="h-8 w-16 border-0 bg-transparent pl-2 text-sm text-white focus:outline-none focus:ring-0"
+        className="h-9 border-0 w-10 bg-transparent pl-2 text-sm text-white focus:outline-none focus:ring-0"
       />
-      <div className="flex h-8 items-center px-1">
+      <div className="flex h-9 items-center px-1">
         <span className="text-xs text-gray-400">in</span>
       </div>
       <div className="relative">
         <select
           value={statType || "bst"}
           onChange={(e) => onStatTypeChange(e.target.value)}
-          className="h-8 w-20 appearance-none border-0 bg-gray-800 pl-2 pr-6 text-sm text-white focus:outline-none focus:ring-0"
+          className="h-9 appearance-none border-0 bg-gray-800 pl-2 pr-6 text-sm text-white focus:outline-none focus:ring-0"
         >
           <option value="">BST</option>
           <option value="hp">HP</option>
@@ -141,20 +210,6 @@ function StatFilter({
           <option value="spDef">SpD</option>
           <option value="speed">Spe</option>
         </select>
-        <svg
-          xmlns="https://www.w3.org/2000/svg"
-          className="pointer-events-none absolute right-2 top-2 h-4 w-4 text-gray-400"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M19 9l-7 7-7-7"
-          />
-        </svg>
       </div>
     </div>
   );
@@ -163,7 +218,7 @@ function StatFilter({
 function AbilitySearchInput({
   value,
   onChange,
-}: Omit<SearchInputProps, 'placeholder' | 'icon'>) {
+}: Omit<SearchInputProps, "placeholder" | "icon">) {
   const abilityIcon = (
     <svg
       xmlns="https://www.w3.org/2000/svg"
@@ -191,9 +246,74 @@ function AbilitySearchInput({
   );
 }
 
-export function FilterBar({ filters, setFilters }: FilterBarProps) {
+function MoveFilterGroup({
+  moveSource,
+  onMoveSourceChange,
+  moveName,
+  onMoveNameChange,
+}: {
+  moveSource: MoveSource;
+  onMoveSourceChange: (v: MoveSource) => void;
+  moveName: string;
+  onMoveNameChange: (v: string) => void;
+}) {
   return (
-    <div className="flex w-full flex-wrap items-center justify-evenly gap-3 rounded-t-lg bg-gray-900/90 px-3 py-2 shadow-lg">
+    <div className="flex h-9 flex-1 items-center gap-2 rounded-md bg-gray-800 px-2 py-1 focus-within:ring-1 focus-within:ring-blue-400">
+      <MoveSourceDropdown value={moveSource} onChange={onMoveSourceChange} />
+      <MoveDropdown
+        value={moveName}
+        onChange={onMoveNameChange}
+        placeholder="Move Name"
+      />
+    </div>
+  );
+}
+
+export function FilterBar({ filters, setFilters }: FilterBarProps) {
+  const moveSource = filters.moveSource || "all";
+
+  function handleMoveChange(move: string) {
+    setFilters((prev) => {
+      if (moveSource === "levelup") {
+        return {
+          ...prev,
+          levelupMove: move,
+          tmMove: "",
+          tutorMove: "",
+          moveName: move,
+        };
+      }
+      if (moveSource === "tm") {
+        return {
+          ...prev,
+          levelupMove: "",
+          tmMove: move,
+          tutorMove: "",
+          moveName: move,
+        };
+      }
+      if (moveSource === "tutor") {
+        return {
+          ...prev,
+          levelupMove: "",
+          tmMove: "",
+          tutorMove: move,
+          moveName: move,
+        };
+      }
+      // "all"
+      return {
+        ...prev,
+        levelupMove: move,
+        tmMove: move,
+        tutorMove: move,
+        moveName: move,
+      };
+    });
+  }
+
+  return (
+    <div className="flex flex-wrap items-center justify-between gap-3 rounded-t-lg bg-gray-900/90 px-3 py-2 shadow-lg">
       <NameSearchInput
         value={filters.name || ""}
         onChange={(name) => setFilters((prev) => ({ ...prev, name }))}
@@ -215,6 +335,14 @@ export function FilterBar({ filters, setFilters }: FilterBarProps) {
         onStatTypeChange={(statType) =>
           setFilters((prev) => ({ ...prev, statType }))
         }
+      />
+      <MoveFilterGroup
+        moveSource={moveSource}
+        onMoveSourceChange={(src) =>
+          setFilters((prev) => ({ ...prev, moveSource: src }))
+        }
+        moveName={filters.moveName || ""}
+        onMoveNameChange={handleMoveChange}
       />
     </div>
   );

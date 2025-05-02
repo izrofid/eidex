@@ -14,6 +14,9 @@ function App() {
     name: "",
     typeId: undefined,
     minStat: undefined,
+    levelupMove: "",
+    tmMove: "",
+    tutorMove: "",
   });
 
   // Retrieve the shiny state from localStorage or default to false
@@ -27,6 +30,9 @@ function App() {
     name: "",
     typeId: undefined,
     minStat: undefined,
+    levelupMove: "",
+    tmMove: "",
+    tutorMove: "",
   });
 
   // Debounce delay in milliseconds
