@@ -107,7 +107,7 @@ export function PokemonCard({
 
           {/* Stats here */}
           <div className="my-1 flex flex-col">
-            <div className="place-items-center-safe flex items-end gap-4 text-center">
+            <div className="flex items-end gap-4 text-center">
               {reorderedStats.map((statValue, index) => (
                 <div key={index} className="flex min-w-1 flex-col items-center">
                   <div className="text-sm italic">{statValue}</div>

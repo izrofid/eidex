@@ -2,11 +2,14 @@ import { getTypeName, getTypeSnapColor } from "../../utils/typeInfo";
 import { typeIcons } from "../../utils/typeIcons";
 const { innerWidth } = window;
 const replacerReg = new RegExp("[aeiouAEIOU]", "g");
+// Needs refactoring too
+const makeBackgroundStyle = (color: string) =>
+  `linear-gradient(120deg, ${color} 0 ${innerWidth > 768 ? "33%" : "43%"}, var(--color-stone-700) 35% 100%)`;
 // This should be in some hook; this is just for testing/demo rn.
 const adjustForDevice = (str: string) => {
   if (innerWidth > 768) return str;
   if (str.length === 4) return str;
-  return str.replace(replacerReg, "").slice(0, 3);
+  return str.replace(replacerReg, "").slice(0, 3).toUpperCase();
 };
 
 function TypeBadge({ typeId }: { typeId: number }) {
@@ -15,7 +18,7 @@ function TypeBadge({ typeId }: { typeId: number }) {
   const icon = typeIcons[typeId];
 
   // Adjust the 40% value to match the start of the dark area in your gradient
-  const background = `linear-gradient(120deg, ${color} 0 45%, var(--color-stone-700) 35% 100%)`;
+  const background = makeBackgroundStyle(color);
 
   return (
     <span
@@ -36,7 +39,9 @@ function TypeBadge({ typeId }: { typeId: number }) {
         </span>
         {/* Name container */}
         <span className="flex h-full flex-1 items-center justify-center">
-          <span className="text-xs leading-none text-white">{name}</span>
+          <span className="pr-1 text-xs font-medium leading-none text-white sm:font-bold">
+            {name}
+          </span>
         </span>
       </span>
     </span>
