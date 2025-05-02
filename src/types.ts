@@ -33,6 +33,11 @@ export interface FilterOptions {
   minStat?: number;
   statType?: string;
   ability?: string;
+  levelupMove?: string;
+  tmMove?: string;
+  tutorMove?: string;
+  moveName?: string;
+  moveSource?: "all" | "levelup" | "tm" | "tutor";
 }
 
 export interface Move {
