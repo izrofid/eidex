@@ -44,7 +44,7 @@ function PokemonView({
       <img
         src={displaySprite}
         alt={pokemon.name}
-        className="h-19 w-19 object-contain py-0"
+        className="h-[128px] w-[128px] object-contain py-0"
       />
       <div className="flex items-center gap-3">
         <div className="font-pixel text-xl font-bold text-gray-200">
