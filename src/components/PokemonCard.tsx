@@ -23,7 +23,17 @@ export function PokemonCard({
   // Convert the ID to a string and pad it with leading zeros and a #
   const formattedId = `#${String(dexID).padStart(3, "0")}`;
 
-  const statLabels = ["HP", "Atk", "Def", "Spe", "SpA", "SpD"];
+  const statLabels = ["HP", "Atk", "Def", "SpA", "SpD", "Spe"];
+
+  // Reorder stats to speed is moved from third to last
+  const reorderedStats = [
+    stats[0],
+    stats[1],
+    stats[2],
+    stats[4],
+    stats[5],
+    stats[3],
+  ];
 
   // Calculate the BST (Base Stat Total)
   const bst = stats.reduce((sum, stat) => sum + stat, 0);
@@ -42,21 +52,21 @@ export function PokemonCard({
     <div onClick={onClick} className="w-full cursor-pointer">
       <div className="flex w-full flex-col text-white">
         {/* Header */}
-        <div className="flex justify-between bg-gray-900 px-2 py-1">
-          <div className="flex items-center gap-2">
+        <div className="flex justify-between bg-gray-900 py-1 pl-2">
+          <div className="flex items-center gap-1">
             {/* Sprite and name  */}
             <img
               src={displaySprite || fallbackSprite}
-              className="h-14 w-14 object-contain p-1"
+              className="h-[64px] w-[64px] object-contain"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
                 target.src = fallbackSprite;
               }}
             />
-            <div className="text-md min-w-25 font-bold">{nameKey}</div>
+            <div className="text-md font-bold">{nameKey}</div>
 
             {/* Types */}
-            <div className="mt-1 flex flex-row items-center gap-1 justify-self-end px-2 max-sm:flex-col">
+            <div className="mt-1 flex flex-row items-center gap-1 justify-self-end px-2">
               {type.map((typeId: number, index: number) => (
                 <div key={index}>
                   <TypeBadge typeId={typeId} />
@@ -97,17 +107,20 @@ export function PokemonCard({
 
           {/* Stats here */}
           <div className="my-2 flex flex-col">
-            <div className="flex gap-4 text-center">
-              {stats.map((statValue, index) => (
-                <div key={index} className="flex flex-col items-center">
+            <div className="flex items-end gap-4 text-center">
+              {reorderedStats.map((statValue, index) => (
+                <div
+                  key={index}
+                  className="flex min-w-[40px] flex-col items-center"
+                >
                   <div className="text-sm italic">{statValue}</div>
                   <div className="text-md font-bold">{statLabels[index]}</div>
                 </div>
               ))}
-              {/* After all the stats, add one extra box for BST */}
+              {/* BST box, styled identically to stat boxes */}
               <div className="flex flex-col items-center">
                 <div className="text-sm font-bold italic">{bst}</div>
-                <div className="text-sm font-bold text-amber-400">BST</div>
+                <div className="text-md font-bold text-amber-400">BST</div>
               </div>
             </div>
           </div>
