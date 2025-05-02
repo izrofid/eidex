@@ -4,7 +4,7 @@ export interface PokemonChanges {
   abilities?: (string | number[])[];
 }
 
-export type Ability =number[];
+export type Ability = number[];
 export type Abilities = Ability[];
 
 export interface Pokemon {
@@ -57,5 +57,14 @@ export interface TypeData {
   typeName: string;
   color: string;
   colorEnd: string;
-  matchup : number[]
+  matchup: number[];
 }
+
+export interface Item {
+  ID: number;
+  name: string;
+  description: string;
+}
+
+export type ItemData = Record<string, Item>;
+export type ItemMap = Record<string, number>;
