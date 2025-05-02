@@ -106,21 +106,24 @@ export function PokemonCard({
           </div>
 
           {/* Stats here */}
-          <div className="my-2 flex flex-col">
-            <div className="flex items-end gap-4 text-center">
+          <div className="my-1 flex flex-col">
+            <div className="place-items-center-safe flex items-end gap-4 text-center">
               {reorderedStats.map((statValue, index) => (
-                <div
-                  key={index}
-                  className="flex min-w-[40px] flex-col items-center"
-                >
+                <div key={index} className="flex min-w-1 flex-col items-center">
                   <div className="text-sm italic">{statValue}</div>
-                  <div className="text-md font-bold">{statLabels[index]}</div>
+                  <div className="md:text-md text-sm font-bold">
+                    {statLabels[index]}
+                  </div>
                 </div>
               ))}
+              <div className="self-center h-8 -mx-1 border border-amber-400/50 rounded-lg"></div>
               {/* BST box, styled identically to stat boxes */}
               <div className="flex flex-col items-center">
                 <div className="text-sm font-bold italic">{bst}</div>
-                <div className="text-md font-bold text-amber-400">BST</div>
+
+                <div className="md:text-md text-sm font-bold text-amber-400">
+                  BST
+                </div>
               </div>
             </div>
           </div>
