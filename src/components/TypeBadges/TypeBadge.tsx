@@ -7,29 +7,31 @@ function TypeBadge({ typeId }: { typeId: number }) {
   const icon = typeIcons[typeId];
 
   // Adjust the 40% value to match the start of the dark area in your gradient
-  const background = `linear-gradient(120deg, ${color} 0 33%, #5a5a5a 35% 100%)`;
+  const background = `linear-gradient(120deg, ${color} 0 33%, #464646 35% 100%)`;
 
   return (
     <span
-      className="relative inline-flex items-center rounded-full overflow-hidden w-[5.7rem] h-6.5 select-none"
+      className="relative inline-flex items-center rounded-full overflow-hidden w-[86px] h-[24px] select-none"
       style={{ background }}
     >
-      {icon && (
-        <img
-          src={icon}
-          alt={name}
-          className="w-7 h-7 object-contain"
-          aria-hidden="true"
-        />
-      )}
-      {/* Centered name in the dark area */}
-      <span
-        className="h-full flex items-center justify-center font-medium text-white text-xs"
-        style={{
-          width: "80%",
-        }}
-      >
-        {name}
+      <span className="flex flex-row w-full h-full items-center">
+        {/* Icon container */}
+        <span className="flex items-center justify-center w-[28px] h-full">
+          {icon && (
+            <img
+              src={icon}
+              alt={name}
+              className="w-[28px] h-[28px] object-contain"
+              aria-hidden="true"
+            />
+          )}
+        </span>
+        {/* Name container */}
+        <span className="flex-1 flex items-center justify-center h-full">
+          <span className="font-medium text-white text-sm leading-none">
+            {name}
+          </span>
+        </span>
       </span>
     </span>
   );
