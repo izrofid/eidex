@@ -1,7 +1,7 @@
 import speciesData from "./data/speciesData.json";
-import { PokemonList } from "./components/PokemonList";
+import { PokemonList } from "./components/PokemonList/PokemonList";
 import { filterPokemon } from "./utils/filterPokemon";
-import { FilterBar } from "./components/Filter/FilterUI";
+import FilterBar from "./components/Filter/FilterBar";
 import { useState, useMemo, useEffect } from "react";
 import { FilterOptions } from "./types";
 import CreditsButton from "./components/CreditsButton";
