@@ -1,26 +1,21 @@
 import { MoveSource } from "../../types";
 import MoveSourceDropdown from "./MoveSourceDropdown";
-import MoveDropdown from "./MoveDropdown";
+import { ComboBoxEntry } from "./GenericComboBox";
+import MoveCombobox from "./MoveCombobox";
 
 function MoveFilterGroup({
   moveSource,
   onMoveSourceChange,
-  moveName,
-  onMoveNameChange,
+  handleMoveSelect,
 }: {
   moveSource: MoveSource;
   onMoveSourceChange: (v: MoveSource) => void;
-  moveName: string;
-  onMoveNameChange: (v: string) => void;
+  handleMoveSelect: (entry: ComboBoxEntry | null) => void;
 }) {
   return (
-    <div className="flex h-9 flex-1 items-center gap-2 rounded-md bg-gray-800 px-2 py-1 focus-within:ring-1 focus-within:ring-blue-400">
+    <div className="flex flex-1 items-center gap-2 rounded-md bg-gray-800 focus-within:ring-1 focus-within:ring-blue-400 max-sm:flex-col sm:h-9">
       <MoveSourceDropdown value={moveSource} onChange={onMoveSourceChange} />
-      <MoveDropdown
-        value={moveName}
-        onChange={onMoveNameChange}
-        placeholder="Move Name"
-      />
+      <MoveCombobox onSelect={handleMoveSelect} />
     </div>
   );
 }
