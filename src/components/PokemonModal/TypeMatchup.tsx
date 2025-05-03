@@ -3,6 +3,7 @@ import { getDefensiveMatchup} from "../../utils/typeInfo";
 import { TypeBadge } from "../TypeBadges/TypeBadge";
 
 import { Pokemon } from "../../types";
+import { useScreenWidth } from "../../hooks/useScreenWidth";
 
 type Props = {
   pokemon: Pokemon;
@@ -29,6 +30,8 @@ const TypeMatchup: React.FC<Props> = ({ pokemon }) => {
     }
   });
 
+  const screenWidth = useScreenWidth();
+
   return (
     <div className="border-3 border-emerald-400/30 my-5 w-full rounded-sm px-3 py-2 flex flex-col gap-4">
       {nonNeutralMultipliers.map((mult) =>
@@ -36,7 +39,7 @@ const TypeMatchup: React.FC<Props> = ({ pokemon }) => {
           <div key={mult} className="flex flex-row gap-2 p-2 select-none">
             <div className="w-14 flex-none text-center flex items-center justify-center bg-zinc-600 rounded-md">{multiplierLabels[mult]}</div>
             <div className="flex gap-1 flex-wrap items-center">{groups[mult].map((typeId) => (
-              <TypeBadge key={typeId} typeId={typeId} />
+              <TypeBadge key={typeId} typeId={typeId} screenWidth={screenWidth} />
             ))}</div>
           </div>
         ) : null,
