@@ -7,6 +7,8 @@ export interface PokemonChanges {
 export type Ability = number[];
 export type Abilities = Ability[];
 
+export type MoveSource = "all" | "levelup" | "tm" | "tutor";
+
 export interface Pokemon {
   ID: number;
   name: string; // Base pokemon name. Same name for other forms of pokemon
@@ -33,11 +35,13 @@ export interface FilterOptions {
   minStat?: number;
   statType?: string;
   ability?: string;
+  abilityId?: number
   levelupMove?: string;
   tmMove?: string;
   tutorMove?: string;
   moveName?: string;
-  moveSource?: "all" | "levelup" | "tm" | "tutor";
+  moveId?: number;
+  moveSource?: MoveSource;
 }
 
 export interface Move {

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { PokemonCard } from "./PokemonCard";
-import { Pokemon } from "../types";
-import { PokemonModal } from "./PokemonModal/PokemonModal";
-import useBodyScrollLock from "../hooks/useBodyScrollLock";
+import { Pokemon } from "../../types";
+import { PokemonModal } from "../PokemonModal/PokemonModal";
+import useBodyScrollLock from "../../hooks/useBodyScrollLock";
 
 type PokemonListProps = {
   pokemons: Pokemon[];

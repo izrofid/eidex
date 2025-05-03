@@ -1,6 +1,7 @@
 import { Pokemon, FilterOptions } from "../types";
-import { getAbilityName } from "./abilityData";
-import { getMoveData, getTMMove, getTutorMove } from "./moveData";
+// import { getMoveData, getTMMove, getTutorMove } from "./moveData";
+import tmMoves from "../data/tmMoves.json";
+import tutorMoves from "../data/tutorMoves.json";
 
 function matchesNameFilter(pokemon: Pokemon, name?: string): boolean {
   return name
@@ -40,14 +41,10 @@ function matchesStatFilter(
 
 function matchesAbilityFilter(
   pokemon: Pokemon,
-  ability?: string
+  abilityId?: number,
 ): boolean {
-  if (!ability) return true;
-  return pokemon.abilities.some((a) =>
-    getAbilityName(a as [number, number])
-      .toLowerCase()
-      .includes(ability.toLowerCase())
-  );
+  if (!abilityId) return true;
+  return pokemon.abilities.some(([id]) => id === abilityId);
 }
 
 // function matchesLevelupMove(pokemon: Pokemon, move?: string): boolean {
@@ -77,21 +74,41 @@ function matchesAbilityFilter(
 //   });
 // }
 
-function matchesMove(pokemon: Pokemon, move?: string, source?: "all" | "levelup" | "tm" | "tutor"): boolean {
-  if (!move) return true;
-  const m = move.toLowerCase();
-  if (source === "levelup" || source === "all") {
-    if (pokemon.levelupMoves.some(([moveId]) => getMoveData(moveId)?.name.toLowerCase().includes(m))) return true;
-  }
-  if (source === "tm" || source === "all") {
-    if ((pokemon.tmMoves ?? []).some(tmIndex => getTMMove(tmIndex)?.name.toLowerCase().includes(m))) return true;
-  }
-  if (source === "tutor" || source === "all") {
-    if ((pokemon.tutorMoves ?? []).some(tutorIndex => getTutorMove(tutorIndex)?.name.toLowerCase().includes(m))) return true;
-  }
-  return false;
-}
+function matchesMove(
+  pokemon: Pokemon,
+  moveId?: number,
+  source?: "all" | "levelup" | "tm" | "tutor"
+): boolean {
+  if (!moveId) return true;
 
+  // Helper to check TM moves
+  const hasTmMove = (pokemon.tmMoves ?? []).some(tmIndex => {
+    const tmMoveId = (tmMoves as Record<string, number>)[tmIndex];
+    return tmMoveId === moveId;
+  });
+
+  // Helper to check Tutor moves
+  const hasTutorMove = (pokemon.tutorMoves ?? []).some(tutorIndex => {
+    const tutorMoveId = (tutorMoves as Record<string, number>)[tutorIndex];
+    return tutorMoveId === moveId;
+  });
+
+  switch (source) {
+    case "levelup":
+      return pokemon.levelupMoves.some(([id]) => id === moveId);
+    case "tm":
+      return hasTmMove;
+    case "tutor":
+      return hasTutorMove;
+    case "all":
+    default:
+      return (
+        pokemon.levelupMoves.some(([id]) => id === moveId) ||
+        hasTmMove ||
+        hasTutorMove
+      );
+  }
+}
 export function filterPokemon(
   pokemons: Pokemon[],
   filters: FilterOptions = {},
@@ -100,8 +117,8 @@ export function filterPokemon(
     matchesNameFilter(pokemon, filters.name) &&
     matchesTypeFilter(pokemon, filters.typeId) &&
     matchesStatFilter(pokemon, filters.minStat, filters.statType) &&
-    matchesAbilityFilter(pokemon, filters.ability) &&
-    matchesMove(pokemon, filters.moveName, filters.moveSource)
+    matchesAbilityFilter(pokemon, filters.abilityId) &&
+    matchesMove(pokemon, filters.moveId, filters.moveSource)
   );
 
   // Sort by dexID first, then by id if dexID is the same
