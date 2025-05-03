@@ -1,29 +1,33 @@
 import { getTypeName, getTypeSnapColor } from "../../utils/typeInfo";
 import { typeIcons } from "../../utils/typeIcons";
-const { innerWidth } = window;
 const replacerReg = new RegExp("[aeiouAEIOU]", "g");
-// Needs refactoring too
-const makeBackgroundStyle = (color: string) =>
-  `linear-gradient(120deg, ${color} 0 ${innerWidth > 768 ? "33%" : "43%"}, var(--color-stone-700) 35% 100%)`;
-// This should be in some hook; this is just for testing/demo rn.
-const adjustForDevice = (str: string) => {
-  if (innerWidth > 768) return str;
+const makeBackgroundStyle = (typeColor: string, screenWidth: string) =>
+  `linear-gradient(120deg, ${typeColor} 0 ${screenWidth === "md" ? "36%" : "40%"}, var(--color-stone-700) 33% 100%)`;
+
+const adjustTypeForDevice = (str: string, screenWidth: string) => {
+  if (screenWidth === "md") return str;
   if (str.length === 4) return str;
   return str.replace(replacerReg, "").slice(0, 3).toUpperCase();
 };
 
-function TypeBadge({ typeId }: { typeId: number }) {
-  const name = adjustForDevice(getTypeName(typeId));
+function TypeBadge({
+  typeId,
+  screenWidth,
+}: {
+  typeId: number;
+  screenWidth: string;
+}) {
+  const name = adjustTypeForDevice(getTypeName(typeId), screenWidth);
   const color = getTypeSnapColor(typeId);
   const icon = typeIcons[typeId];
 
   // Adjust the 40% value to match the start of the dark area in your gradient
-  const background = makeBackgroundStyle(color);
+  const spriteBackground = makeBackgroundStyle(color, screenWidth);
 
   return (
     <span
-      className="w-15 items-left relative inline-flex h-5 select-none overflow-hidden rounded-full md:w-20"
-      style={{ background }}
+      className="w-18 relative inline-flex h-[22px] md:h-[24px] select-none items-center overflow-hidden rounded-full md:w-[86px]"
+      style={{ background: spriteBackground }}
     >
       <span className="flex h-full w-full flex-row items-center">
         {/* Icon container */}
@@ -39,7 +43,7 @@ function TypeBadge({ typeId }: { typeId: number }) {
         </span>
         {/* Name container */}
         <span className="flex h-full flex-1 items-center justify-center">
-          <span className="pr-1 text-xs font-medium leading-none text-white sm:font-bold">
+          <span className="pr-1 text-xs font-bold leading-none text-white sm:font-medium">
             {name}
           </span>
         </span>
