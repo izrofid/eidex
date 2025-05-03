@@ -1,9 +1,9 @@
-import spritesData from "../data/sprites.json";
-import shinySpritesData from "../data/shinySprites.json";
+import spritesData from "../../data/sprites.json";
+import shinySpritesData from "../../data/shinySprites.json";
 
-import { TypeBadge } from "./TypeBadges/TypeBadge";
-import { getAbilityName } from "../utils/abilityData";
-import { Pokemon } from "../types";
+import { TypeBadge } from "../TypeBadges/TypeBadge";
+import { getAbilityName } from "../../utils/abilityData";
+import { Pokemon } from "../../types";
 
 type PokemonCardProps = Pokemon & {
   isShiny?: boolean;
