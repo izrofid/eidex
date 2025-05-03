@@ -1,9 +1,9 @@
-import { typeDataArray, getTypeName } from "../utils/typeInfo";
-import { FilterOptions, Move, Pokemon } from "../types";
+import { typeDataArray, getTypeName } from "../../utils/typeInfo";
+import { FilterOptions, Move, Pokemon } from "../../types";
 import { useState, useMemo, useEffect, useRef } from "react";
-import moveData from "../data/moveData.json";
-import speciesData from "../data/speciesData.json"; 
-import { abilities } from "../utils/abilityData";
+import moveData from "../../data/moveData.json";
+import speciesData from "../../data/speciesData.json"; 
+import { abilities } from "../../utils/abilityData";
 
 
 // interface SearchInputProps {
