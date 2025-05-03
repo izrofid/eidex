@@ -1,9 +1,10 @@
 import { FilterOptions } from "../../types";
-import AbilityDropdown from './AbilityDropdown';
-import NameDropdown from './NameDropdown';
-import TypeDropdown from './TypeDropdown';
-import StatFilter from './StatFilter';
-import MoveFilterGroup from './MoveFilterGroup';
+import TypeDropdown from "./TypeDropdown";
+import StatFilter from "./StatFilter";
+import MoveFilterGroup from "./MoveFilterGroup";
+import NameCombobox from "./NameCombobox";
+import { ComboBoxEntry } from "./GenericComboBox";
+import AbilityCombobox from "./AbilityCombobox";
 
 type FilterBarProps = {
   filters: FilterOptions;
@@ -13,59 +14,35 @@ type FilterBarProps = {
 function FilterBar({ filters, setFilters }: FilterBarProps) {
   const moveSource = filters.moveSource || "all";
 
-  function handleMoveChange(move: string) {
-    setFilters((prev) => {
-      if (moveSource === "levelup") {
-        return {
-          ...prev,
-          levelupMove: move,
-          tmMove: "",
-          tutorMove: "",
-          moveName: move,
-        };
-      }
-      if (moveSource === "tm") {
-        return {
-          ...prev,
-          levelupMove: "",
-          tmMove: move,
-          tutorMove: "",
-          moveName: move,
-        };
-      }
-      if (moveSource === "tutor") {
-        return {
-          ...prev,
-          levelupMove: "",
-          tmMove: "",
-          tutorMove: move,
-          moveName: move,
-        };
-      }
-      // "all"
-      return {
-        ...prev,
-        levelupMove: move,
-        tmMove: move,
-        tutorMove: move,
-        moveName: move,
-      };
-    });
+  function handleMoveChange(entry: ComboBoxEntry | null) {
+    setFilters((prev) => ({
+      ...prev,
+      moveId: entry ? entry.id : undefined, // Set moveId for filtering
+      moveName: entry ? entry.name : "",    // (Optional) Keep moveName for display
+    }));
   }
+
+  const handleNameSelect = (entry: ComboBoxEntry | null) => {
+    setFilters((prev) => ({
+      ...prev,
+      name: entry ? entry.name : "", // Use the selected name
+    }));
+  };
+
+  const handleAbilitySelect = (entry: ComboBoxEntry | null) => {
+    setFilters((prev) => ({
+      ...prev,
+      abilityId: entry ? entry.id : undefined, // Use the selected ability
+    }));
+  };
 
   return (
     <div className="flex flex-wrap items-center justify-between gap-3 rounded-t-lg bg-gray-900/90 px-3 py-2 shadow-lg">
-      <NameDropdown
-        value={filters.name || ""}
-        onChange={(name) => setFilters((prev) => ({ ...prev, name }))}
-      />
+
+      <NameCombobox onSelect={handleNameSelect} />
       <TypeDropdown
         value={filters.typeId}
         onChange={(typeId) => setFilters((prev) => ({ ...prev, typeId }))}
-      />
-      <AbilityDropdown
-        value={filters.ability || ""}
-        onChange={(ability) => setFilters((prev) => ({ ...prev, ability }))}
       />
       <StatFilter
         minStat={filters.minStat}
@@ -77,13 +54,12 @@ function FilterBar({ filters, setFilters }: FilterBarProps) {
           setFilters((prev) => ({ ...prev, statType }))
         }
       />
-      <MoveFilterGroup
+      <AbilityCombobox onSelect={handleAbilitySelect} />
+      <MoveFilterGroup 
         moveSource={moveSource}
-        onMoveSourceChange={(src) =>
-          setFilters((prev) => ({ ...prev, moveSource: src }))
-        }
-        moveName={filters.moveName || ""}
-        onMoveNameChange={handleMoveChange}
+        onMoveSourceChange={(source) => setFilters((prev) => ({ ...prev, moveSource: source }))}
+        handleMoveSelect={handleMoveChange}
+        
       />
     </div>
   );
