@@ -8,6 +8,7 @@ import { Pokemon } from "../../types";
 type PokemonCardProps = Pokemon & {
   isShiny?: boolean;
   onClick?: () => void;
+  screenWidth: string;
 };
 
 export function PokemonCard({
@@ -19,6 +20,7 @@ export function PokemonCard({
   stats,
   abilities,
   onClick,
+  screenWidth
 }: PokemonCardProps) {
   // Convert the ID to a string and pad it with leading zeros and a #
   const formattedId = `#${String(dexID).padStart(3, "0")}`;
@@ -66,10 +68,10 @@ export function PokemonCard({
             <div className="text-md font-bold">{nameKey}</div>
 
             {/* Types */}
-            <div className="mt-1 flex flex-row items-center gap-1 justify-self-end px-2">
+            <div className="mt-1 flex flex-col md:flex-row items-center gap-0 md:gap-1 justify-self-end px-2">
               {type.map((typeId: number, index: number) => (
                 <div key={index}>
-                  <TypeBadge typeId={typeId} />
+                  <TypeBadge typeId={typeId} screenWidth={screenWidth} />
                 </div>
               ))}
             </div>
@@ -106,21 +108,24 @@ export function PokemonCard({
           </div>
 
           {/* Stats here */}
-          <div className="my-2 flex flex-col">
+          <div className="my-1 flex flex-col">
             <div className="flex items-end gap-4 text-center">
               {reorderedStats.map((statValue, index) => (
-                <div
-                  key={index}
-                  className="flex min-w-[40px] flex-col items-center"
-                >
+                <div key={index} className="flex min-w-1 flex-col items-center">
                   <div className="text-sm italic">{statValue}</div>
-                  <div className="text-md font-bold">{statLabels[index]}</div>
+                  <div className="md:text-md text-sm font-bold">
+                    {statLabels[index]}
+                  </div>
                 </div>
               ))}
+              <div className="-mx-1 h-8 self-center rounded-lg border border-amber-400/50"></div>
               {/* BST box, styled identically to stat boxes */}
               <div className="flex flex-col items-center">
                 <div className="text-sm font-bold italic">{bst}</div>
-                <div className="text-md font-bold text-amber-400">BST</div>
+
+                <div className="md:text-md text-sm font-bold text-amber-400">
+                  BST
+                </div>
               </div>
             </div>
           </div>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { PokemonCard } from "./PokemonCard";
+import { useScreenWidth } from "../../hooks/useScreenWidth";
 import { Pokemon } from "../../types";
 import { PokemonModal } from "../PokemonModal/PokemonModal";
 import useBodyScrollLock from "../../hooks/useBodyScrollLock";
@@ -12,6 +13,7 @@ type PokemonListProps = {
 export function PokemonList({ pokemons, isShiny }: PokemonListProps) {
   const [visibleCount, setVisibleCount] = useState(10);
   const [selectedPokemon, setSelectedPokemon] = useState<Pokemon | null>(null);
+  const screenWidth = useScreenWidth();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,6 +40,7 @@ export function PokemonList({ pokemons, isShiny }: PokemonListProps) {
           {...pokemon}
           isShiny={isShiny}
           onClick={() => setSelectedPokemon(pokemon)}
+          screenWidth={screenWidth}
         />
       ))}
       <PokemonModal
