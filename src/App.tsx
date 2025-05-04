@@ -91,7 +91,7 @@ function App() {
           <CreditsButton />
         </div>
 
-        <PokemonList pokemons={filteredPokemon} isShiny={isShiny} />
+        <PokemonList pokemons={filteredPokemon} fullPokemons={pokemonData} isShiny={isShiny} />
       </div>
     </div>
   );
