@@ -69,7 +69,7 @@ function GenericComboBox({
   return (
     <div
       ref={parentRef}
-      className="relative flex w-full flex-1 rounded-md bg-gray-800"
+      className="relative flex w-full flex-1 rounded-md bg-neutral-800"
     >
       <span className="pointer-events-none absolute left-2 top-1/2 -translate-y-1/2 text-gray-400">
         {renderedIcon}
@@ -92,12 +92,12 @@ function GenericComboBox({
           // }}
           // // To clear input when user clicks
           placeholder={placeholder || "Select an entry..."}
-          className="h-9 w-full min-w-max rounded-md border-0 bg-gray-800 px-2 pl-9 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-blue-400"
+          className="h-9 w-full min-w-max rounded-md border-0 bg-neutral-800 px-2 pl-9 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-blue-400"
         />
         <ComboboxOptions
           anchor="bottom start"
           style={comboWidth ? { width: comboWidth } : undefined}
-          className="no-scrollbar rounded-sm border border-gray-600 bg-gray-800 text-white shadow-md [--anchor-gap:4px]"
+          className="no-scrollbar rounded-sm border border-gray-600 bg-neutral-800 text-white shadow-md [--anchor-gap:4px]"
         >
           {({ option: entry }) => (
             <ComboboxOption

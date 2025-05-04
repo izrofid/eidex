@@ -13,7 +13,7 @@ function TypeDropdown({ value, onChange }: TypeDropdownProps) {
         onChange={(e) =>
           onChange(e.target.value ? Number(e.target.value) : undefined)
         }
-        className="h-9 rounded-md w-full border-0 bg-gray-800 pl-3 pr-8 text-sm text-white focus:ring-1 focus:ring-blue-400"
+        className="h-9 rounded-md w-full border-0 bg-neutral-800 pl-3 pr-8 text-sm text-white focus:ring-1 focus:ring-blue-400"
       >
         <option value="">All</option>
         {typeDataArray.map((typeInfo) => (

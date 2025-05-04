@@ -11,7 +11,7 @@ function StatFilter({
   onStatTypeChange: (v: string) => void;
 }) {
   return (
-    <div className="group flex flex-1 items-center h-9 justify-evenly rounded-md bg-gray-800 focus-within:ring-1 focus-within:ring-blue-400">
+    <div className="group flex flex-1 items-center h-9 justify-evenly rounded-md bg-neutral-800 focus-within:ring-1 focus-within:ring-blue-400">
       <input
         type="number"
         placeholder="Min"
@@ -28,7 +28,7 @@ function StatFilter({
         <select
           value={statType || "bst"}
           onChange={(e) => onStatTypeChange(e.target.value)}
-          className="h-9 appearance-none border-0 bg-gray-800 pl-2 pr-6 text-sm text-white focus:outline-none focus:ring-0"
+          className="h-9 appearance-none border-0 bg-neutral-800 pl-2 pr-6 text-sm text-white focus:outline-none focus:ring-0"
         >
           <option value="">BST</option>
           <option value="hp">HP</option>
