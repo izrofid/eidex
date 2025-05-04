@@ -16,6 +16,13 @@ const multiplierLabels: Record<number, string> = {
   4: "x4",
 };
 
+const multiplierColors: Record<number, string> = {
+  0.25: "#16a34a", // green-600
+  0.5: "#dda144", // yellow-600
+  2: "#ef4444", // red-500
+  4: "#991b1b", // red-800
+};
+
 const nonNeutralMultipliers = [0.25, 0.5, 2, 4];
 
 const TypeMatchup: React.FC<Props> = ({ pokemon }) => {
@@ -33,11 +40,11 @@ const TypeMatchup: React.FC<Props> = ({ pokemon }) => {
   const screenWidth = useScreenWidth();
 
   return (
-    <div className="border-3 border-emerald-400/30 my-5 w-full rounded-sm px-3 py-2 flex flex-col gap-4">
+    <div className="border-3 border-neutral-600 my-5 w-full rounded-sm px-3 py-2 flex flex-col gap-4">
       {nonNeutralMultipliers.map((mult) =>
         groups[mult]?.length ? (
           <div key={mult} className="flex flex-row gap-2 p-2 select-none">
-            <div className="w-14 flex-none text-center flex items-center justify-center bg-zinc-600 rounded-md">{multiplierLabels[mult]}</div>
+            <div className={`w-14 flex-none text-center flex items-center justify-center rounded-md text-white`} style={{ backgroundColor: multiplierColors[mult] }}>{multiplierLabels[mult]}</div>
             <div className="flex gap-1 flex-wrap items-center">{groups[mult].map((typeId) => (
               <TypeBadge key={typeId} typeId={typeId} screenWidth={screenWidth} />
             ))}</div>

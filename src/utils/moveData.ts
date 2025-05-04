@@ -18,4 +18,10 @@ function getTutorMove(index: number) {
     return getMoveData(moveId);
 }
 
-export { getMoveData, getTMMove, getTutorMove };
+// Function to return move name given id
+function getMoveName(id: number) {
+    const move = getMoveData(id);
+    return move ? move.name : 'Unknown Move';
+}
+
+export { getMoveData, getTMMove, getTutorMove, getMoveName };
