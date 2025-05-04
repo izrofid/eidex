@@ -53,7 +53,7 @@ function PokemonView({
         <div className="text-md font-pixel text-gray-400">#{pokemon.ID}</div>
       </div>
       <div className="my-2 flex w-full flex-col">
-        <div className="border-3 border-fieldset-border relative flex w-full flex-row justify-evenly rounded-sm px-3 py-7 text-center">
+        <div className="border-3 border-neutral-600 relative flex w-full flex-row justify-evenly rounded-sm px-3 py-7 text-center">
           {/* Abilities Label */}
           <div className="w-19 font-pkmnem-short absolute left-6 top-0 flex translate-y-[-50%] select-none items-center justify-center rounded border border-gray-300 bg-blue-900 px-4 py-1 text-center text-xs font-bold uppercase text-gray-100">
             Abilities
@@ -78,7 +78,9 @@ function PokemonView({
             onClose={() => setSelectedAbility(null)}
           />
         </div>
-        <div><EvolutionBox pokemon={pokemon}/></div>
+        <div>
+          <EvolutionBox pokemon={pokemon} />
+        </div>
         <div className="flex flex-wrap text-gray-100">
           <TypeMatchup pokemon={pokemon} />
         </div>
