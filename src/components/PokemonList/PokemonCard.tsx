@@ -58,7 +58,7 @@ export function PokemonCard({
   if (!adjustedBg) {
     const snapColor = getTypeSnapColor(typeId);
     const bgColor = chroma(snapColor);
-    adjustedBg = bgColor.darken(1.2).mix('black', 0.7).alpha(0.13).css();
+    adjustedBg = bgColor.darken(1.2).mix("black", 0.7).alpha(0.13).css();
     adjustedBgCache[typeId] = adjustedBg;
   }
 
@@ -93,8 +93,8 @@ export function PokemonCard({
 
         {/* Card body */}
         <div className="px-5 py-6" style={{ backgroundColor: adjustedBg }}>
-          <div className="border-3 border-neutral-600 relative mt-3 mb-5 flex flex-row gap-5 rounded-md p-4 py-2">
-            <span className="font-pkmnem-short pkmnem-face-shadow bg-fieldset absolute -top-2.5 left-2 h-4 rounded-sm px-2 py-0 text-xs text-gray-200 md:-top-3 md:h-5">
+          <div className="border-3 relative mb-5 mt-3 flex flex-row gap-5 rounded-md border-neutral-600 p-4 py-2">
+            <span className="font-pixel absolute -top-2.5 left-2 h-4 rounded-sm border border-gray-300 bg-blue-900 px-2 py-0 text-xs font-bold uppercase text-gray-200 md:-top-3 md:h-5">
               <p className="ios-padding-fix -mt-[1px] p-0 md:mt-[1px]">
                 ABILITIES
               </p>
@@ -120,8 +120,8 @@ export function PokemonCard({
           </div>
 
           {/* Stats here */}
-          <div className="my-3 flex flex-col ">
-            <div className="flex items-end gap-1 sm:gap-4 text-center">
+          <div className="my-3 flex flex-col">
+            <div className="flex items-end gap-1 text-center sm:gap-4">
               {reorderedStats.map((statValue, index) => (
                 <div key={index} className="flex min-w-1 flex-col items-center">
                   <div className="text-sm italic">{statValue}</div>
