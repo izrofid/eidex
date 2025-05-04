@@ -37,7 +37,7 @@ function FilterBar({ filters, setFilters }: FilterBarProps) {
   };
 
   return (
-    <div className="flex flex-wrap items-center justify-between gap-3 rounded-t-lg bg-gray-900/90 px-3 py-2 shadow-lg">
+    <div className="flex flex-wrap items-center justify-between gap-3 rounded-t-lg bg-neutral-900/90 px-3 py-2 shadow-lg">
 
       <NameCombobox onSelect={handleNameSelect} />
       <TypeDropdown
