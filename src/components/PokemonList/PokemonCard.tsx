@@ -1,9 +1,12 @@
 import spritesData from "../../data/sprites.json";
 import shinySpritesData from "../../data/shinySprites.json";
-
+import { getTypeSnapColor } from "../../utils/typeInfo";
 import { TypeBadge } from "../TypeBadges/TypeBadge";
 import { getAbilityName } from "../../utils/abilityData";
 import { Pokemon } from "../../types";
+import chroma from "chroma-js";
+
+const adjustedBgCache: Record<number, string> = {};
 
 type PokemonCardProps = Pokemon & {
   isShiny?: boolean;
@@ -20,7 +23,7 @@ export function PokemonCard({
   stats,
   abilities,
   onClick,
-  screenWidth
+  screenWidth,
 }: PokemonCardProps) {
   // Convert the ID to a string and pad it with leading zeros and a #
   const formattedId = `#${String(dexID).padStart(3, "0")}`;
@@ -50,11 +53,20 @@ export function PokemonCard({
 
   const displaySprite = isShiny ? shinySprite : regularSprite;
 
+  const typeId = type[0];
+  let adjustedBg = adjustedBgCache[typeId];
+  if (!adjustedBg) {
+    const snapColor = getTypeSnapColor(typeId);
+    const bgColor = chroma(snapColor);
+    adjustedBg = bgColor.darken(1.2).mix('black', 0.7).alpha(0.13).css();
+    adjustedBgCache[typeId] = adjustedBg;
+  }
+
   return (
     <div onClick={onClick} className="w-full cursor-pointer">
       <div className="flex w-full flex-col text-white">
         {/* Header */}
-        <div className="flex justify-between bg-gray-900 py-1 pl-2">
+        <div className="flex justify-between bg-neutral-900/60 py-1 pl-2">
           <div className="flex items-center gap-1">
             {/* Sprite and name  */}
             <img
@@ -68,7 +80,7 @@ export function PokemonCard({
             <div className="text-md font-bold">{nameKey}</div>
 
             {/* Types */}
-            <div className="mt-1 flex flex-col md:flex-row items-center gap-0 md:gap-1 justify-self-end px-2">
+            <div className="mt-1 flex flex-col items-center gap-0 justify-self-end px-2 md:flex-row md:gap-1">
               {type.map((typeId: number, index: number) => (
                 <div key={index}>
                   <TypeBadge typeId={typeId} screenWidth={screenWidth} />
@@ -80,8 +92,8 @@ export function PokemonCard({
         </div>
 
         {/* Card body */}
-        <div className="bg-gray-800 px-5 py-3 pt-4">
-          <div className="border-3 border-fieldset-border relative mt-1.5 flex flex-row gap-5 rounded-md p-4 py-2">
+        <div className="px-5 py-3 pt-4" style={{ backgroundColor: adjustedBg }}>
+          <div className="border-3 border-neutral-600 relative mt-1.5 flex flex-row gap-5 rounded-md p-4 py-2">
             <span className="font-pkmnem-short pkmnem-face-shadow bg-fieldset absolute -top-2.5 left-2 h-4 rounded-sm px-2 py-0 text-xs text-gray-200 md:-top-3 md:h-5">
               <p className="ios-padding-fix -mt-[1px] p-0 md:mt-[1px]">
                 ABILITIES
