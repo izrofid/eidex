@@ -29,6 +29,10 @@ export interface Pokemon {
   changes?: PokemonChanges | string;
 }
 
+export interface SpeciesData {
+  [id: string]: Pokemon;
+}
+
 export interface FilterOptions {
   name?: string;
   typeId?: number;

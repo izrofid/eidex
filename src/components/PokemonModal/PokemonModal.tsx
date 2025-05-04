@@ -3,7 +3,7 @@ import spritesData from "../../data/sprites.json";
 import shinySpritesData from "../../data/shinySprites.json";
 import { useState } from "react";
 import TabbedInterface from "./TabbedInterface";
-
+import EvolutionBox from "./EvolutionBox";
 import CloseButton from "../CloseButton";
 import AbilityBadge from "./AbilityBadge";
 import AbilityDescription from "./AbiltyDescription";
@@ -78,6 +78,7 @@ function PokemonView({
             onClose={() => setSelectedAbility(null)}
           />
         </div>
+        <div><EvolutionBox pokemon={pokemon}/></div>
         <div className="flex flex-wrap text-gray-100">
           <TypeMatchup pokemon={pokemon} />
         </div>
