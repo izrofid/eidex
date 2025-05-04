@@ -8,6 +8,8 @@ import CloseButton from "../CloseButton";
 import AbilityBadge from "./AbilityBadge";
 import AbilityDescription from "./AbiltyDescription";
 import { generateTabsData } from "./tabsData";
+import { getEvolutionaryFamily } from "../../utils/evoFamily";
+import EvolutionView from "./evolutionView";
 
 import TypeMatchup from "./TypeMatchup";
 
@@ -15,14 +17,17 @@ type PokemonModalProps = {
   pokemon: Pokemon | null;
   onClose: () => void;
   isShiny?: boolean;
+  onSelectPokemon?: (pokemonId: number) => void;
 };
 
 function PokemonView({
   pokemon,
   isShiny,
+  onSelectPokemon,
 }: {
   pokemon: Pokemon;
   isShiny: boolean;
+  onSelectPokemon?: (pokemonId: number) => void;
 }) {
   const [selectedAbility, setSelectedAbility] = useState<Ability | null>(null);
 
@@ -33,11 +38,14 @@ function PokemonView({
   const reorderedAbilities = [...pokemon.abilities.slice(1)];
   const hiddenAbility = pokemon.abilities[0];
 
+  const evoFamily = getEvolutionaryFamily(pokemon.ID)
+
   const handleAbilityClick = (ability: Ability) => {
     setSelectedAbility(ability);
   };
 
   const tabsData = generateTabsData(pokemon);
+
 
   return (
     <div className="flex w-full flex-col items-center gap-1">
@@ -80,6 +88,10 @@ function PokemonView({
         </div>
         <div>
           <EvolutionBox pokemon={pokemon} />
+          <EvolutionView
+            family={evoFamily}
+            isShiny={isShiny}
+            onClickPokemon={onSelectPokemon}/>
         </div>
         <div className="flex flex-wrap text-gray-100">
           <TypeMatchup pokemon={pokemon} />
@@ -96,6 +108,7 @@ export function PokemonModal({
   pokemon,
   onClose,
   isShiny = false,
+  onSelectPokemon,
 }: PokemonModalProps) {
   if (!pokemon) return null;
 
@@ -109,7 +122,7 @@ export function PokemonModal({
         onClick={(e) => e.stopPropagation()}
       >
         <CloseButton onClick={onClose} />
-        <PokemonView pokemon={pokemon} isShiny={isShiny} />
+        <PokemonView pokemon={pokemon} isShiny={isShiny} onSelectPokemon={onSelectPokemon}/>
       </div>
     </div>
   );
