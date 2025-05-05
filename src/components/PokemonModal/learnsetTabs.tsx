@@ -2,7 +2,7 @@ import { Pokemon } from "../../types";
 import { getMoveData, getTMMove, getTutorMove } from "../../utils/moveData";
 import MoveEntry from "./MoveEntry";
 
-export const generateTabsData = (pokemon: Pokemon) => [
+export const buildPokemonMoveTabs = (pokemon: Pokemon) => [
   {
     label: "Level Up",
     content: (

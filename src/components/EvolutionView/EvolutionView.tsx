@@ -40,7 +40,7 @@ const EvolutionView: React.FC<EvolutionViewProps> = ({
         <>
           <div
             key={stage}
-            className="flex cursor-pointer flex-col items-center"
+            className="flex cursor-pointer flex-col items-center gap-1"
           >
             {stages[stage].map((member) => {
               return (
@@ -50,6 +50,7 @@ const EvolutionView: React.FC<EvolutionViewProps> = ({
                   alt={member.name}
                   onClick={() => onClickPokemon(member.id)}
                   requirements={member.requirements}
+                  details={member.details}
                 />
               );
             })}
@@ -63,7 +64,7 @@ const EvolutionView: React.FC<EvolutionViewProps> = ({
   );
 
   return (
-    <div className="border-1 flex flex-row items-center justify-evenly rounded-md border-neutral-600 bg-neutral-900/30 p-2 py-3 text-white">
+    <div className="neutral-box flex flex-row items-center justify-evenly rounded-md p-2 py-3 text-white">
       {family.members.length > 1 ? columnsWithArrows : <p>No Evolutions</p>}
     </div>
   );

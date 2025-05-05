@@ -56,8 +56,13 @@ input[type="number"] {
   }
 
   .evolution_box {
-    @apply font-pixel text-base text-shadow-lg/40 border-3 my-5 flex rounded-sm border-neutral-600 bg-zinc-800 p-2 text-white;
+    @apply font-pixel text-shadow-lg/40 border-3 my-5 flex rounded-sm border-neutral-600 bg-zinc-800 p-2 text-base text-white;
   }
+
+  .neutral-box {
+    @apply bg-neutral-900/30 border-neutral-600 border-1;
+  }
+
 }
 
 @theme inline {
