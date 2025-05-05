@@ -3,21 +3,23 @@ import spritesData from "../../data/sprites.json";
 import shinySpritesData from "../../data/shinySprites.json";
 import { useState } from "react";
 import TabbedInterface from "./TabbedInterface";
-import EvolutionBox from "./EvolutionBox";
+
 import CloseButton from "../CloseButton";
 import AbilityBadge from "./AbilityBadge";
 import AbilityDescription from "./AbiltyDescription";
 import { generateTabsData } from "./tabsData";
 import { getEvolutionaryFamily } from "../../utils/evoFamily";
-import EvolutionView from "./evolutionView";
+import EvolutionView from "../EvolutionView/evolutionView";
 
 import TypeMatchup from "./TypeMatchup";
 
-type PokemonModalProps = {
-  pokemon: Pokemon | null;
+type PokemonModalProps = PokemonViewProps & {
   onClose: () => void;
+};
+type PokemonViewProps = {
+  pokemon: Pokemon | null;
   isShiny?: boolean;
-  onSelectPokemon?: (pokemonId: number) => void;
+  onSelectPokemon: (pokemonId: number) => void;
 };
 
 function PokemonView({
@@ -27,7 +29,7 @@ function PokemonView({
 }: {
   pokemon: Pokemon;
   isShiny: boolean;
-  onSelectPokemon?: (pokemonId: number) => void;
+  onSelectPokemon: (pokemonId: number) => void;
 }) {
   const [selectedAbility, setSelectedAbility] = useState<Ability | null>(null);
 
@@ -38,14 +40,12 @@ function PokemonView({
   const reorderedAbilities = [...pokemon.abilities.slice(1)];
   const hiddenAbility = pokemon.abilities[0];
 
-  const evoFamily = getEvolutionaryFamily(pokemon.ID)
-
+  const evoFamily = getEvolutionaryFamily(pokemon.ID);
   const handleAbilityClick = (ability: Ability) => {
     setSelectedAbility(ability);
   };
 
   const tabsData = generateTabsData(pokemon);
-
 
   return (
     <div className="flex w-full flex-col items-center gap-1">
@@ -61,7 +61,7 @@ function PokemonView({
         <div className="text-md font-pixel text-gray-400">#{pokemon.ID}</div>
       </div>
       <div className="my-2 flex w-full flex-col">
-        <div className="border-3 border-neutral-600 relative flex w-full flex-row justify-evenly rounded-sm px-3 py-7 text-center">
+        <div className="border-3 relative flex w-full flex-row justify-evenly rounded-sm border-neutral-600 px-3 py-7 text-center">
           {/* Abilities Label */}
           <div className="w-19 font-pkmnem-short absolute left-6 top-0 flex translate-y-[-50%] select-none items-center justify-center rounded border border-gray-300 bg-blue-900 px-4 py-1 text-center text-xs font-bold uppercase text-gray-100">
             Abilities
@@ -87,11 +87,14 @@ function PokemonView({
           />
         </div>
         <div>
-          <EvolutionBox pokemon={pokemon} />
+          {/* this pokemon is part of a family tree */}
+
           <EvolutionView
+            pokemon={pokemon}
             family={evoFamily}
             isShiny={isShiny}
-            onClickPokemon={onSelectPokemon}/>
+            onClickPokemon={onSelectPokemon}
+          />
         </div>
         <div className="flex flex-wrap text-gray-100">
           <TypeMatchup pokemon={pokemon} />
@@ -122,7 +125,11 @@ export function PokemonModal({
         onClick={(e) => e.stopPropagation()}
       >
         <CloseButton onClick={onClose} />
-        <PokemonView pokemon={pokemon} isShiny={isShiny} onSelectPokemon={onSelectPokemon}/>
+        <PokemonView
+          pokemon={pokemon}
+          isShiny={isShiny}
+          onSelectPokemon={onSelectPokemon}
+        />
       </div>
     </div>
   );
