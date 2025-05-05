@@ -40,7 +40,7 @@ const EvolutionView: React.FC<EvolutionViewProps> = ({
         <>
           <div
             key={stage}
-            className="flex cursor-pointer flex-col items-center"
+            className="flex cursor-pointer flex-col items-center gap-1"
           >
             {stages[stage].map((member) => {
               return (
@@ -50,6 +50,7 @@ const EvolutionView: React.FC<EvolutionViewProps> = ({
                   alt={member.name}
                   onClick={() => onClickPokemon(member.id)}
                   requirements={member.requirements}
+                  details={member.details}
                 />
               );
             })}

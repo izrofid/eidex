@@ -45,4 +45,47 @@ const parseEvolutions: Record<number, (evo: number[]) => string> = {
       : `with the ${getItemName(evo[1])}`,
 };
 
-export { parseEvolutions };
+
+const parseShortEvolutions: Record<number, (evo: number[]) => string> = {
+  1: () => "Lvl + ♥",
+  2: () => "Lvl + ♥ (D)",
+  3: () => "Lvl + ♥ (N)",
+  4: (evo) => `Lvl ${evo[1]}`,
+  7: (evo) => {
+    const itemName = getItemName(evo[1]);
+    return evo[1] !== 101
+      ? `${itemName}`
+      : `${itemName} (${evo[3] === 254 ? "F" : "M"})`;
+  },
+  8: (evo) => `Lvl ${evo[1]} Atk>Def`,
+  9: (evo) => `Lvl${evo[1]} Atk=Def`,
+  10: (evo) => `Lvl ${evo[1]} Atk<Def`,
+  11: (evo) => `Lvl ${evo[1]}, 50%`,
+  12: (evo) => `Lvl ${evo[1]}, 50%`,
+  13: (evo) => `Lvl ${evo[1]}`,
+  14: () => `Special Evo`,
+  16: (evo) => `Lvl ${evo[1]} in Rain`,
+  17: (evo) =>
+    `Lvl + ♥ + ${getTypeName(evo[1])} move`,
+  18: (evo) => `Lvl ${evo[1]} + ${getTypeName(evo[3])} Type in Party`,
+  20: (evo) => `Lvl ${evo[1]} (Male)`,
+  21: (evo) => `Lvl ${evo[1]} (Female)`,
+  22: (evo) => `Lvl ${evo[1]} (Night)`,
+  23: (evo) => `Lvl ${evo[1]} (Day)`,
+  26: (evo) => `Lvl + ${getMoveName(evo[1])}`,
+  27: (evo) => `Lvl + ${getNameKey(evo[1])}`,
+  28: (evo) => {
+    const time = evo[3] === 1041 ? "Day" : evo[3] === 5144 ? "Night" : "Dusk";
+    return `Lvl ${evo[1]} (${time})`;
+  },
+  30: (evo) =>
+    `at Level ${evo[1]} + Nature`,
+  31: (evo) =>
+    `at Level ${evo[1]} Nature`,
+  254: (evo) =>
+    evo[3] === 2
+      ? `${getMoveName(evo[1])}`
+      : `${getItemName(evo[1])}`,
+};
+
+export { parseEvolutions, parseShortEvolutions };
