@@ -1,5 +1,6 @@
 import speciesData from "../data/speciesData.json";
 import { Pokemon } from "../types";
+import { parseEvolutions } from "./parseEvo";
 
 type EvolutionNode = {
   id: number;
@@ -13,6 +14,7 @@ export type EvolutionFamily = {
     id: number;
     name: string;
     stage: number;
+    requirements?: string;
   }[];
   nodeMap: Record<number, EvolutionNode>;
 };
@@ -37,19 +39,33 @@ function getEvolutionaryFamily(speciesId: number): EvolutionFamily {
 
   // Step 2: Walk forward from the root and build the tree
   const nodeMap: Record<number, EvolutionNode> = {};
-  const members: { id: number; name: string; stage: number }[] = [];
+  const members: {
+    id: number;
+    name: string;
+    stage: number;
+    // Conditions to get this mon,[condition, level/condition] pass to `parseEvo`
+    requirements?: string;
+  }[] = [];
 
-  function buildTree(id: number, stage: number): EvolutionNode {
+  function buildTree(
+    id: number,
+    stage: number,
+    requirements?: string,
+  ): EvolutionNode {
     const node: EvolutionNode = { id, children: [] };
     nodeMap[id] = node;
     const pokemon = speciesData[id.toString() as keyof typeof speciesData];
-    members.push({ id, name: pokemon.name, stage });
+    members.push({ id, name: pokemon.name, stage, requirements });
 
     const evolutions = (pokemon as Pokemon).evolutions ?? [];
     for (const evo of evolutions) {
       if (Array.isArray(evo) && evo.length >= 3 && typeof evo[2] === "number") {
         const targetId = evo[2];
-        const childNode = buildTree(targetId, stage + 1);
+        const childNode = buildTree(
+          targetId,
+          stage + 1,
+          parseEvolutions[evo[0]](evo),
+        );
         node.children.push(childNode);
       }
     }
