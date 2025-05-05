@@ -1,16 +1,14 @@
-import { Pokemon, Ability } from "../../types";
-import spritesData from "../../data/sprites.json";
-import shinySpritesData from "../../data/shinySprites.json";
 import { useState } from "react";
-import TabbedInterface from "./TabbedInterface";
-
+import shinySpritesData from "../../data/shinySprites.json";
+import spritesData from "../../data/sprites.json";
+import { Ability, Pokemon } from "../../types";
+import { getEvolutionaryFamily } from "../../utils/evoFamily";
 import CloseButton from "../CloseButton";
+import EvolutionView from "../EvolutionView/EvolutionView";
 import AbilityBox from "./AbilityBox";
 import AbilityDescription from "./AbilityDescription";
-import { generateTabsData } from "./tabsData";
-import { getEvolutionaryFamily } from "../../utils/evoFamily";
-import EvolutionView from "../EvolutionView/EvolutionView";
-
+import { buildPokemonMoveTabs } from "./learnsetTabs";
+import TabbedInterface from "./TabbedInterface";
 import TypeMatchup from "./TypeMatchup";
 
 type PokemonModalProps = PokemonViewProps & {
@@ -42,7 +40,7 @@ function PokemonView({
 
   const evoFamily = getEvolutionaryFamily(pokemon.ID);
 
-  const tabsData = generateTabsData(pokemon);
+  const tabsData = buildPokemonMoveTabs(pokemon);
 
   return (
     <div className="flex w-full flex-col items-center gap-1">
