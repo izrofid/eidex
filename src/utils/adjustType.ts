@@ -7,7 +7,7 @@ const typeAbbreviations: Record<string, string> = {
   ELECTRIC: "ELE",
   GRASS: "GRS",
   ICE: "ICE",
-  FIGHTING: "FGT",
+  FIGHTING: "FIG",
   POISON: "PSN",
   GROUND: "GRD",
   FLYING: "FLY",
