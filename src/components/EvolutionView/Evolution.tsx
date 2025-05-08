@@ -20,7 +20,7 @@ const Evolution = ({
       className="flex flex-col items-center rounded-md bg-neutral-700 p-1 text-center md:p-3"
       onClick={onClick}
     >
-      <div className="h-20 w-18">
+      <div className="h-full w-full md:w-18">
         <img
           src={sprite}
           alt={alt}
@@ -29,7 +29,7 @@ const Evolution = ({
         {details ? (
           <Tooltip>
             <TooltipTrigger asChild>
-              <p className="pkmnem-face-shadow max-w-20 text-center text-xs leading-3 cursor-help">
+              <p className="pkmnem-face-shadow max-w-20 text-center text-xs leading-3 cursor-help break-word-too-long">
                 {requirements}
               </p>
             </TooltipTrigger>
