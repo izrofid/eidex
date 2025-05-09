@@ -4,27 +4,29 @@ export interface PokemonChanges {
   abilities?: (string | number[])[];
 }
 
-export type Ability = number[];
+export type Ability = number;
 export type Abilities = Ability[];
 
 export type MoveSource = "all" | "levelup" | "tm" | "tutor";
 
 export interface Pokemon {
-  ID: number;
-  name: string; // Base pokemon name. Same name for other forms of pokemon
-  stats: number[]; // [HP, Attack, Defense, Speed, Sp. Atk, Sp. Def]
-  type: number[]; // Type IDs
-  abilities: Abilities; // [Ability ID, index]
-  eggGroup: number[]; // Egg group IDs
-  items: number[]; // Item IDs
-  levelupMoves: number[][]; // [Move ID, Level]
-  evolutions?: number[][];
-  tmMoves?: number[]; // TM IDs
-  tutorMoves?: number[]; // Tutor move IDs
-  nameKey: string; // Display name
-  dexID: number; // National Dex ID
-  ancestor: number; // Pre-evolution's ID
-  eggMoves?: number[]; // Egg move IDs
+  index: number;
+  speciesName: string;
+  types: number[];
+  stats: number[];
+  abilities: Abilities; 
+  levelUpMoves: number[][];
+  tmMoves?: number[];
+  eggMoves?: number[] | null;
+  dexId: number;
+  evolutions?: number[][] | null;
+  forms?: string[] | null;
+  formId?: number;
+  nameKey: string;
+  eggGroup?: number[];
+  items?: number[];
+  tutorMoves?: number[];
+  ancestor?: number;
   order?: number;
   changes?: PokemonChanges | string;
 }
