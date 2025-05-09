@@ -10,6 +10,7 @@ type Props = {
 };
 
 const multiplierLabels: Record<number, string> = {
+  0: "x0",
   0.25: "x¼",
   0.5: "x½",
   2: "x2",
@@ -17,16 +18,17 @@ const multiplierLabels: Record<number, string> = {
 };
 
 const multiplierColors: Record<number, string> = {
+  0: "#530b8a", // 
   0.25: "#16a34a", // green-600
   0.5: "#dda144", // yellow-600
   2: "#ef4444", // red-500
   4: "#991b1b", // red-800
 };
 
-const nonNeutralMultipliers = [0.25, 0.5, 2, 4];
+const nonNeutralMultipliers = [0, 0.25, 0.5, 2, 4];
 
 const TypeMatchup: React.FC<Props> = ({ pokemon }) => {
-  const matchup = getDefensiveMatchup(pokemon.type as [number, number?]);
+  const matchup = getDefensiveMatchup(pokemon.types as [number, number?]);
 
   // Group types by multiplier
   const groups: Record<number, number[]> = {};

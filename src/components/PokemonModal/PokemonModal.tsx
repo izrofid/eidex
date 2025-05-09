@@ -1,6 +1,4 @@
 import { useState } from "react";
-import shinySpritesData from "../../data/shinySprites.json";
-import spritesData from "../../data/sprites.json";
 import { Ability, Pokemon } from "../../types";
 import { getEvolutionaryFamily } from "../../utils/evoFamily";
 import CloseButton from "../CloseButton";
@@ -8,7 +6,7 @@ import EvolutionView from "../EvolutionView/EvolutionView";
 import AbilityBox from "./AbilityBox";
 import AbilityDescription from "./AbilityDescription";
 import { buildPokemonMoveTabs } from "./learnsetTabs";
-import TabbedInterface from "./TabbedInterface";
+// import TabbedInterface from "./TabbedInterface";
 import TypeMatchup from "./TypeMatchup";
 
 type PokemonModalProps = PokemonViewProps & {
@@ -31,35 +29,32 @@ function PokemonView({
 }) {
   const [selectedAbility, setSelectedAbility] = useState<Ability | null>(null);
 
-  const shinySprite = `data:image/png;base64,${shinySpritesData[pokemon.ID.toString() as keyof typeof shinySpritesData]}`;
-  const regularSprite = `data:image/png;base64,${spritesData[pokemon.ID.toString() as keyof typeof spritesData]}`;
+  const shinySprite = `/sprites/front_shiny/${pokemon.index}.png`;
+  const regularSprite = `/sprites/front/${pokemon.index}.png`;
 
   const displaySprite = isShiny ? shinySprite : regularSprite;
-  const reorderedAbilities = [...pokemon.abilities.slice(1)];
-  const hiddenAbility = pokemon.abilities[0];
 
-  const evoFamily = getEvolutionaryFamily(pokemon.ID);
+  // const evoFamily = getEvolutionaryFamily(pokemon.index);
 
-  const tabsData = buildPokemonMoveTabs(pokemon);
+  // const tabsData = buildPokemonMoveTabs(pokemon);
 
   return (
     <div className="flex w-full flex-col items-center gap-1">
       <img
         src={displaySprite}
-        alt={pokemon.name}
+        alt={pokemon.speciesName}
         className="h-[128px] w-[128px] object-contain py-0"
       />
       <div className="flex items-center gap-3">
         <div className="font-pixel text-xl font-bold text-gray-200">
-          {pokemon.name}
+          {pokemon.nameKey}
         </div>
-        <div className="text-md font-pixel text-gray-400">#{pokemon.ID}</div>
+        <div className="text-md font-pixel text-gray-400">#{pokemon.index}</div>
       </div>
       <div className="my-2 flex w-full flex-col">
         <AbilityBox
-          key={pokemon.ID}
-          abilities={reorderedAbilities}
-          hiddenAbility={hiddenAbility}
+          key={pokemon.index}
+          abilities={pokemon.abilities}
         />
         <div className="w-full">
           <AbilityDescription
@@ -67,21 +62,21 @@ function PokemonView({
             onClose={() => setSelectedAbility(null)}
           />
         </div>
-        <div className="my-3">
+        {/* <div className="my-3">
           <EvolutionView
             pokemon={pokemon}
             family={evoFamily}
             isShiny={isShiny}
             onClickPokemon={onSelectPokemon}
           />
-        </div>
+        </div> */}
         <div className="flex flex-wrap text-gray-100">
           <TypeMatchup pokemon={pokemon} />
         </div>
       </div>
-      <div className="flex w-full flex-grow">
+      {/* <div className="flex w-full flex-grow">
         <TabbedInterface tabs={tabsData} />
-      </div>
+      </div> */}
     </div>
   );
 }

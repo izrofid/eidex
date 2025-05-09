@@ -5,14 +5,18 @@ import AbilityBadge from "./AbilityBadge";
 
 type AbilityBoxProps = {
   abilities: Ability[];
-  hiddenAbility: Ability;
 };
 
-export default function AbilityBox({
-  abilities,
-  hiddenAbility,
-}: AbilityBoxProps) {
+export default function AbilityBox({ abilities }: AbilityBoxProps) {
   const [selectedAbility, setSelectedAbility] = useState<Ability | null>(null);
+  //If the first ability is repeated, replace repeats with 0
+    abilities.forEach((ability, index) => {
+    if (abilities.indexOf(ability) !== index) {
+      abilities[index] = 0;
+    }
+  });
+  const regularAbilities = abilities.slice(0, 2);
+  const hiddenAbility = abilities[2];
 
   return (
     <div>
@@ -20,16 +24,17 @@ export default function AbilityBox({
         <div className="w-19 font-pkmnem-short absolute left-6 top-0 flex translate-y-[-50%] select-none items-center justify-center rounded border border-gray-300 bg-blue-900 px-4 py-1 text-center text-xs font-bold uppercase text-gray-100">
           Abilities
         </div>
-        {abilities.map((ability) => (
-          <AbilityBadge
-            key={ability[0]}
-            ability={ability}
-            onClick={() => setSelectedAbility(ability)}
-          />
-        ))}
+        {regularAbilities
+          .map((ability) => (
+            <AbilityBadge
+              key={ability}
+              ability={ability}
+              onClick={() => setSelectedAbility(ability)}
+            />
+          ))}
         <AbilityBadge
           ability={hiddenAbility}
-          onClick={() => setSelectedAbility(hiddenAbility)}
+          onClick={() => setSelectedAbility(abilities[2])}
           isHidden
         />
       </div>

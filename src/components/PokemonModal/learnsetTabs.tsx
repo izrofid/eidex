@@ -7,9 +7,9 @@ export const buildPokemonMoveTabs = (pokemon: Pokemon) => [
     label: "Level Up",
     content: (
       <div className="text-center font-bold text-white">
-        {pokemon.levelupMoves.length > 0 ? (
+        {pokemon.levelUpMoves.length > 0 ? (
           <ul>
-          {pokemon.levelupMoves.map(([moveId]: number[], index) => {
+          {pokemon.levelUpMoves.map(([moveId]: number[], index) => {
             const move = getMoveData(moveId);
             return (
               <div key={`1-${index}`}>

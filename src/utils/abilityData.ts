@@ -2,13 +2,23 @@ import abilities from "../data/abilityData.json";
 
 export type AbilityObject = {
   id: number;
-  name: string;  // Changed from "names" to "name" to match JSON structure
+  name: string;
+  shortName: string;
   description: string;
 };
 
 export function getAbilityName(abilityId: number): string {
   const ability = abilities.find(ability => ability.id === abilityId);
   if (!ability) return "None";
+  return ability.name || "None";
+}
+
+export function getAbilityNameShort(abilityId: number): string {
+  const ability = abilities.find(ability => ability.id === abilityId);
+  if (!ability) return "None";
+  if (ability.shortName) {
+    return ability.shortName;
+  }
   return ability.name || "None";
 }
 

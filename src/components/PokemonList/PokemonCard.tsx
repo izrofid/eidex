@@ -45,7 +45,7 @@ export function PokemonCard({
   const fallbackSprite = "/missingno.png";
 
   const regularSprite = `/sprites/front/${index}.png`;
-  const shinySprite = `/sprites/front_shiny/${index}.png`
+  const shinySprite = `/sprites/front_shiny/${index}.png`;
 
   const displaySprite = isShiny ? shinySprite : regularSprite;
 
@@ -57,6 +57,13 @@ export function PokemonCard({
     adjustedBg = bgColor.darken(1.2).mix("black", 0.7).alpha(0.13).css();
     adjustedBgCache[typeId] = adjustedBg;
   }
+
+  //If the first ability is repeated, replace repeats with 0
+  abilities.forEach((ability, index) => {
+    if (abilities.indexOf(ability) !== index) {
+      abilities[index] = 0;
+    }
+  });
 
   return (
     <div onClick={onClick} className="w-full cursor-pointer">
