@@ -51,17 +51,18 @@ export interface FilterOptions {
 }
 
 export interface Move {
-  ID: number;
+  id: number;
   name: string;
   power: number;
   type: number;
-  accuracy: number;
-  pp: number;
-  secondaryEffectChance: number;
-  target: number;
-  priority: number;
-  split: number;
-  description: string;
+  acc: number;
+  pp?: number;
+  secondaryEffectChance?: number;
+  target?: number;
+  priority?: number;
+  split?: number;
+  description: string | null;
+  properties?: string[];
 }
 
 export type MoveData = Record<string, Move>;

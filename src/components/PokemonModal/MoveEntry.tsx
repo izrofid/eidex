@@ -22,7 +22,7 @@ const MoveEntry: React.FC<MoveEntryProps> = ({ move }) => {
             </div>
             <div className="flex items-center justify-between">
                 <span className="text-sm text-gray-400">
-                    Accuracy: {move.accuracy || "—"}%
+                    Accuracy: {move.acc || "—"}%
                 </span>
                 <span className="text-sm text-gray-400">PP: {move.pp}</span>
             </div>

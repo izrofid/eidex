@@ -5,7 +5,6 @@ import EvolutionView from "../EvolutionView/EvolutionView";
 import AbilityBox from "./AbilityBox";
 import { getEvolutionaryFamily } from "@/utils/evoFamily";
 import AbilityDescription from "./AbilityDescription";
-import { buildPokemonMoveTabs } from "./learnsetTabs";
 // import TabbedInterface from "./TabbedInterface";
 import TypeMatchup from "./TypeMatchup";
 

@@ -1,27 +1,19 @@
-import moveData from '../data/moveData.json';
-import tmMoves from '../data/tmMoves.json';
-import tutorMoves from '../data/tutorMoves.json';
-import { MoveData, MoveMap } from '../types';
+import moveDataArr from '../data/moveData.json';
+import { Move } from '../types';
 
-function getMoveData(id: number){
+// Build a map from id to move for O(1) access
+const moveDataMap: Record<number, Move> = {};
+(moveDataArr as Move[]).forEach((move, idx) => {
+    moveDataMap[move.id ?? idx] = { ...move, id: move.id ?? idx };
+});
 
-    return (moveData as MoveData)[id.toString()]
+function getMoveData(id: number): Move | undefined {
+    return moveDataMap[id];
 }
 
-function getTMMove(index: number) {
-    const moveId = (tmMoves as MoveMap)[index.toString()];
-    return getMoveData(moveId);
-}
-
-function getTutorMove(index: number) {
-    const moveId = (tutorMoves as MoveMap)[index.toString()];
-    return getMoveData(moveId);
-}
-
-// Function to return move name given id
 function getMoveName(id: number) {
     const move = getMoveData(id);
     return move ? move.name : 'Unknown Move';
 }
 
-export { getMoveData, getTMMove, getTutorMove, getMoveName };
+export { getMoveData, getMoveName };

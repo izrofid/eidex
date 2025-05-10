@@ -1,5 +1,5 @@
 import { Pokemon } from "../../types";
-import { getMoveData, getTMMove, getTutorMove } from "../../utils/moveData";
+import { getMoveData } from "../../utils/moveData";
 import MoveEntry from "./MoveEntry";
 
 export const buildPokemonMoveTabs = (pokemon: Pokemon) => [
@@ -13,7 +13,7 @@ export const buildPokemonMoveTabs = (pokemon: Pokemon) => [
             const move = getMoveData(moveId);
             return (
               <div key={`1-${index}`}>
-                <MoveEntry move={move} />
+                {move && <MoveEntry move={move} />}
               </div>
             );
           })}
@@ -31,7 +31,7 @@ export const buildPokemonMoveTabs = (pokemon: Pokemon) => [
         {pokemon.tmMoves && pokemon.tmMoves.length > 0 ? (
           <ul>
             {pokemon.tmMoves.map((moveIndex, index) => {
-              const move = getTMMove(moveIndex);
+              const move = getMoveData(moveIndex);
               return move ? <li key={`2-${index}`}><MoveEntry move={move}/></li> : null;
             })}
           </ul>
@@ -48,7 +48,7 @@ export const buildPokemonMoveTabs = (pokemon: Pokemon) => [
         {(pokemon.tutorMoves ?? []).length > 0 ? (
           <ul>
             {(pokemon.tutorMoves ?? []).map((moveIndex, index) => {
-              const move = getTutorMove(moveIndex);
+              const move = getMoveData(moveIndex);
               return move ? <li key={`3-${index}`}><MoveEntry move={move}/></li> : null;
             })}
           </ul>
