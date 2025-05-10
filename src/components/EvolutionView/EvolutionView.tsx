@@ -4,6 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 import Evolution from "./Evolution";
 import { Pokemon } from "../../types";
+import React from "react";
 
 // This is a derivative type that sets 'evolutions' to not-undefined.
 // This component wont render if 'evolutions' is undefined anyways...
@@ -37,28 +38,30 @@ const EvolutionView: React.FC<EvolutionViewProps> = ({
   const columnsWithArrows: React.ReactNode[] = sortedStages.map(
     (stage, idx) => {
       return (
-        <>
+        <React.Fragment key={stage}>
           <div
             key={stage}
             className="flex cursor-pointer flex-col items-center gap-1"
           >
             {stages[stage].map((member) => {
-                return (
-                <Evolution
-                  key={`${member.id}-${member.requirements || 'default'}`}
-                  sprite={getSprite(member.id, isShiny)}
-                  alt={member.name}
-                  onClick={() => onClickPokemon(member.id)}
-                  requirements={member.requirements}
-                  details={member.details}
-                />
-                );
+              return (
+                <span className="font-pixel" key={`${member.id}-${member.requirements || "default"}`}>
+                  <Evolution
+                    
+                    sprite={getSprite(member.id, isShiny)}
+                    alt={member.name}
+                    onClick={() => onClickPokemon(member.id)}
+                    requirements={member.requirements}
+                    details={member.details}
+                  />
+                </span>
+              );
             })}
           </div>
           {idx < sortedStages.length - 1 && (
             <FaArrowRight key={`arrow-${stage}`} className="mx-2 text-2xl" />
           )}
-        </>
+        </React.Fragment>
       );
     },
   );

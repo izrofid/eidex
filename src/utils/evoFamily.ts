@@ -36,8 +36,6 @@ function findRootSpecies(speciesId: number): number {
   return current;
 }
 
-export { findRootSpecies };
-
 //Finds the evolutionary family for a given Pokémon species ID.
 
 function getEvolutionaryFamily(speciesId: number): EvolutionFamily {
@@ -54,41 +52,54 @@ function getEvolutionaryFamily(speciesId: number): EvolutionFamily {
     details?: string;
   }[] = [];
 
+  const dedupedMemberKeys = new Set<string>();
+
   function buildTree(
     id: number,
     stage: number,
     requirements?: string,
     details?: string,
   ): EvolutionNode {
-    if (nodeMap[id]) return nodeMap[id];
-
-    const node: EvolutionNode = { id, children: [] };
+    // Always reuse or create the node
+    const existing = nodeMap[id];
+    const node: EvolutionNode = existing ?? { id, children: [] };
     nodeMap[id] = node;
 
     const pokemon = speciesData.find((p) => p.index === id);
-    members.push({ id, name: pokemon!.nameKey, stage, requirements, details });
+    if (!pokemon) {
+      console.warn(`Missing Pokémon with index ${id}`);
+      return node;
+    }
 
-    const evolutions = pokemon!.evolutions ?? [];
+    // For dedupe
+    const memberKey = `${id}|${stage}|${requirements ?? ""}|${details ?? ""}`;
+    if (!dedupedMemberKeys.has(memberKey)) {
+      members.push({
+        id,
+        name: pokemon.nameKey,
+        stage,
+        requirements,
+        details,
+      });
+      dedupedMemberKeys.add(memberKey);
+    }
+
+    const evolutions = pokemon.evolutions ?? [];
     for (const evo of evolutions) {
       if (Array.isArray(evo) && evo.length >= 3 && typeof evo[1] === "number") {
         const targetId = evo[1];
-
-        if (!nodeMap[targetId]) {
-          const childNode = buildTree(
-            targetId,
-            stage + 1,
-            parseShortEvolutions[evo[0]](evo),
-            parseEvolutions[evo[0]](evo),
-          );
-          node.children.push(childNode);
-        } else {
-          node.children.push(nodeMap[targetId]); // reuse
-        }
+        const childNode = buildTree(
+          targetId,
+          stage + 1,
+          parseShortEvolutions[evo[0]](evo),
+          parseEvolutions[evo[0]](evo),
+        );
+        node.children.push(childNode);
       }
     }
 
     console.log(
-      `[buildTree] id=${id} name=${pokemon!.nameKey} stage=${stage}` +
+      `[buildTree] id=${id} name=${pokemon.nameKey} stage=${stage}` +
         (requirements ? ` | req=${requirements}` : "") +
         (details ? ` | details=${details}` : ""),
     );

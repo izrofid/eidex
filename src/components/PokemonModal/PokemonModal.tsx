@@ -71,7 +71,6 @@ function PokemonView({
             isShiny={isShiny}
             onClickPokemon={onSelectPokemon}
           />
-          {getNameKey(findRootSpecies(pokemon.index))}
         </div>
         <div className="flex flex-wrap text-gray-100">
           <TypeMatchup pokemon={pokemon} />
