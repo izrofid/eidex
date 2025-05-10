@@ -3,6 +3,7 @@ import { TypeBadge } from "../TypeBadges/TypeBadge";
 import { getAbilityName } from "../../utils/abilityData";
 import { Pokemon } from "../../types";
 import chroma from "chroma-js";
+import getSprite from "@/utils/getSprite";
 
 const adjustedBgCache: Record<number, string> = {};
 
@@ -42,10 +43,10 @@ export function PokemonCard({
   const bst = stats.reduce((sum, stat) => sum + stat, 0);
 
   // If the sprite is "", then use the default sprite
-  const fallbackSprite = `${import.meta.env.BASE_URL}missingno.png`;
+  const fallbackSprite = `missingno.png`;
 
-  const regularSprite = `${import.meta.env.BASE_URL}sprites/front/${index}.png`;
-  const shinySprite = `${import.meta.env.BASE_URL}sprites/front_shiny/${index}.png`;
+  const regularSprite = getSprite(index, false)
+  const shinySprite = getSprite(index, true)
 
   const displaySprite = isShiny ? shinySprite : regularSprite;
 
