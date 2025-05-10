@@ -11,7 +11,7 @@ function matchesNameFilter(pokemon: Pokemon, name?: string): boolean {
 
 function matchesTypeFilter(pokemon: Pokemon, typeId?: number): boolean {
   return typeId !== undefined
-    ? pokemon.type.includes(typeId)
+    ? pokemon.types.includes(typeId)
     : true;
 }
 
@@ -44,7 +44,7 @@ function matchesAbilityFilter(
   abilityId?: number,
 ): boolean {
   if (!abilityId) return true;
-  return pokemon.abilities.some(([id]) => id === abilityId);
+  return pokemon.abilities.some(id => id === abilityId);
 }
 
 // function matchesLevelupMove(pokemon: Pokemon, move?: string): boolean {
@@ -95,7 +95,7 @@ function matchesMove(
 
   switch (source) {
     case "levelup":
-      return pokemon.levelupMoves.some(([id]) => id === moveId);
+      return pokemon.levelUpMoves.some(([id]) => id === moveId);
     case "tm":
       return hasTmMove;
     case "tutor":
@@ -103,7 +103,7 @@ function matchesMove(
     case "all":
     default:
       return (
-        pokemon.levelupMoves.some(([id]) => id === moveId) ||
+        pokemon.levelUpMoves.some(([id]) => id === moveId) ||
         hasTmMove ||
         hasTutorMove
       );
@@ -123,9 +123,9 @@ export function filterPokemon(
 
   // Sort by dexID first, then by id if dexID is the same
   return filtered.sort((a, b) => {
-    if (a.dexID !== b.dexID) {
-      return a.dexID - b.dexID; // Primary sort by dexID
+    if (a.dexId !== b.dexId) {
+      return a.dexId - b.dexId; // Primary sort by dexID
     }
-    return a.ID - b.ID; // Secondary sort by id
+    return a.index - b.index; // Secondary sort by id
   });
 }

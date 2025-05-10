@@ -7,7 +7,7 @@ import { MdSearch } from "react-icons/md";
 const speciesIDMap: ComboBoxEntry[] = Object.values(speciesData)
   .filter((p) => typeof p === "object" && !!p && "nameKey" in p)
   .map((p) => ({
-    id: (p as Pokemon).ID,
+    id: (p as Pokemon).index,
     name: (p as Pokemon).nameKey,
   }));
 

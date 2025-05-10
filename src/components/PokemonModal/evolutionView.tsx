@@ -28,7 +28,7 @@ const EvolutionView: React.FC<EvolutionViewProps> = ({ family, isShiny = false, 
     columnsWithArrows.push(
       <div key={stage} className="flex flex-col items-center cursor-pointer">
         {stages[stage].map(member => (
-          <div key={member.id} className="text-center bg-neutral-700 p-3 my-1 rounded-md" 
+          <div key={`${member.id}-${member.requirements}`} className="text-center bg-neutral-700 p-3 my-1 rounded-md" 
           onClick={() => onClickPokemon?.(member.id)}>
             <img
               src={getSprite(member.id, isShiny)}
