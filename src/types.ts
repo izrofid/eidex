@@ -4,6 +4,8 @@ export interface PokemonChanges {
   abilities?: (string | number[])[];
 }
 
+export type SortBy = "dexId" | "name" | "stat" | "index";
+
 export type Ability = number;
 export type Abilities = Ability[];
 
@@ -39,7 +41,9 @@ export interface FilterOptions {
   name?: string;
   typeId?: number;
   minStat?: number;
+  sortBy?: SortBy;
   statType?: string;
+  sortStat?: string;
   ability?: string;
   abilityId?: number;
   levelupMove?: string;
