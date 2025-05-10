@@ -1,15 +1,13 @@
 import { useState } from "react";
 import { Ability, Pokemon } from "../../types";
-import { findRootSpecies, getEvolutionaryFamily } from "../../utils/evoFamily";
 import CloseButton from "../CloseButton";
 import EvolutionView from "../EvolutionView/EvolutionView";
 import AbilityBox from "./AbilityBox";
+import { getEvolutionaryFamily } from "@/utils/evoFamily";
 import AbilityDescription from "./AbilityDescription";
 import { buildPokemonMoveTabs } from "./learnsetTabs";
 // import TabbedInterface from "./TabbedInterface";
 import TypeMatchup from "./TypeMatchup";
-import EvolutionBox from "./EvolutionBox";
-import { getNameKey } from "@/utils/speciesData";
 
 type PokemonModalProps = PokemonViewProps & {
   onClose: () => void;
