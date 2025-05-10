@@ -117,4 +117,4 @@ function getEvolutionaryFamily(speciesId: number): EvolutionFamily {
   };
 }
 
-export { getEvolutionaryFamily };
+export { findRootSpecies , getEvolutionaryFamily };

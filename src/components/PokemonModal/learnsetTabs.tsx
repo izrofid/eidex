@@ -1,6 +1,8 @@
+import { findRootSpecies } from "@/utils/evoFamily";
 import { Pokemon } from "../../types";
 import { getMoveData } from "../../utils/moveData";
 import MoveEntry from "./MoveEntry";
+import { getSpeciesData } from "@/utils/speciesData";
 
 export const buildPokemonMoveTabs = (pokemon: Pokemon) => [
   {
@@ -42,36 +44,23 @@ export const buildPokemonMoveTabs = (pokemon: Pokemon) => [
     ),
   },
   {
-    label: "Tutor",
-    content: (
-      <div className="text-center font-bold text-white">
-        {(pokemon.tutorMoves ?? []).length > 0 ? (
-          <ul>
-            {(pokemon.tutorMoves ?? []).map((moveIndex, index) => {
-              const move = getMoveData(moveIndex);
-              return move ? <li key={`3-${index}`}><MoveEntry move={move}/></li> : null;
-            })}
-          </ul>
-        ) : (
-          "No Tutor Moves Available"
-        )}
-      </div>
-    ),
-  },
-  {
     label: "Egg Moves",
     content: (
       <div className="text-center font-bold text-white">
-        {(pokemon.eggMoves ?? []).length > 0 ? (
-          <ul>
-        {(pokemon.eggMoves ?? []).map((moveId, index) => {
-          const move = getMoveData(moveId);
-          return move ? <li key={`4-${index}`}><MoveEntry move={move}/></li> : null;
-        })}
-          </ul>
-        ) : (
-          "No Egg Moves Available"
-        )}
+        {(() => {
+          const rootSpeciesId = findRootSpecies(pokemon.index);
+          const rootSpecies = getSpeciesData(rootSpeciesId)
+          return (rootSpecies.eggMoves ?? []).length > 0 ? (
+            <ul>
+              {(rootSpecies.eggMoves ?? []).map((moveId, index) => {
+                const move = getMoveData(moveId);
+                return move ? <li key={`3-${index}`}><MoveEntry move={move}/></li> : null;
+              })}
+            </ul>
+          ) : (
+            "No Egg Moves Available"
+          );
+        })()}
       </div>
     ),
   },

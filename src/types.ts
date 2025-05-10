@@ -14,7 +14,7 @@ export interface Pokemon {
   speciesName: string;
   types: number[];
   stats: number[];
-  abilities: Abilities; 
+  abilities: Abilities;
   levelUpMoves: number[][];
   tmMoves?: number[];
   eggMoves?: number[] | null;
@@ -41,7 +41,7 @@ export interface FilterOptions {
   minStat?: number;
   statType?: string;
   ability?: string;
-  abilityId?: number
+  abilityId?: number;
   levelupMove?: string;
   tmMove?: string;
   tutorMove?: string;
@@ -53,15 +53,15 @@ export interface FilterOptions {
 export interface Move {
   id: number;
   name: string;
+  description: string | null;
   power: number;
   type: number;
+  cat: number;
   acc: number;
   pp?: number;
   secondaryEffectChance?: number;
   target?: number;
   priority?: number;
-  split?: number;
-  description: string | null;
   properties?: string[];
 }
 

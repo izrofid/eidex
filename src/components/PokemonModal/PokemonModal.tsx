@@ -5,9 +5,10 @@ import EvolutionView from "../EvolutionView/EvolutionView";
 import AbilityBox from "./AbilityBox";
 import { getEvolutionaryFamily } from "@/utils/evoFamily";
 import AbilityDescription from "./AbilityDescription";
-// import TabbedInterface from "./TabbedInterface";
+import TabbedInterface from "./TabbedInterface";
 import TypeMatchup from "./TypeMatchup";
 import getSprite from "@/utils/getSprite";
+import { buildPokemonMoveTabs } from "./learnsetTabs";
 
 type PokemonModalProps = PokemonViewProps & {
   onClose: () => void;
@@ -33,7 +34,7 @@ function PokemonView({
 
   const evoFamily = getEvolutionaryFamily(pokemon.index);
 
-  // const tabsData = buildPokemonMoveTabs(pokemon);
+  const tabsData = buildPokemonMoveTabs(pokemon);
 
   return (
     <div className="flex w-full flex-col items-center gap-1">
@@ -76,9 +77,9 @@ function PokemonView({
         pokemon={pokemon}
         />
       </div> */}
-      {/* <div className="flex w-full flex-grow">
+      <div className="flex w-full flex-grow">
         <TabbedInterface tabs={tabsData} />
-      </div> */}
+      </div>
     </div>
   );
 }
