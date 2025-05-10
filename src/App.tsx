@@ -71,7 +71,7 @@ function App() {
         <div className="flex items-center justify-between gap-2 bg-neutral-800/30 px-3 py-2">
           <div className="flex flex-row items-center">
             <img
-              src="/shinycharm.png"
+              src="shinycharm.png"
               alt="Shiny Mode"
               className="h-6.5 w-6.5 object-contain"
               title="Shiny Mode"

@@ -7,6 +7,7 @@ import { getEvolutionaryFamily } from "@/utils/evoFamily";
 import AbilityDescription from "./AbilityDescription";
 // import TabbedInterface from "./TabbedInterface";
 import TypeMatchup from "./TypeMatchup";
+import getSprite from "@/utils/getSprite";
 
 type PokemonModalProps = PokemonViewProps & {
   onClose: () => void;
@@ -28,10 +29,7 @@ function PokemonView({
 }) {
   const [selectedAbility, setSelectedAbility] = useState<Ability | null>(null);
 
-  const shinySprite = `/sprites/front_shiny/${pokemon.index}.png`;
-  const regularSprite = `/sprites/front/${pokemon.index}.png`;
-
-  const displaySprite = isShiny ? shinySprite : regularSprite;
+  const displaySprite = getSprite(pokemon.index, isShiny)
 
   const evoFamily = getEvolutionaryFamily(pokemon.index);
 
