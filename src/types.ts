@@ -78,7 +78,7 @@ export interface TypeData {
 export interface Item {
   ID: number;
   name: string;
-  description: string;
+  description?: string;
 }
 
 export type ItemData = Record<string, Item>;

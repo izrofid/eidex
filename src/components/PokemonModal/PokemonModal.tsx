@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Ability, Pokemon } from "../../types";
-import { getEvolutionaryFamily } from "../../utils/evoFamily";
+import { findRootSpecies, getEvolutionaryFamily } from "../../utils/evoFamily";
 import CloseButton from "../CloseButton";
 import EvolutionView from "../EvolutionView/EvolutionView";
 import AbilityBox from "./AbilityBox";
@@ -8,6 +8,8 @@ import AbilityDescription from "./AbilityDescription";
 import { buildPokemonMoveTabs } from "./learnsetTabs";
 // import TabbedInterface from "./TabbedInterface";
 import TypeMatchup from "./TypeMatchup";
+import EvolutionBox from "./EvolutionBox";
+import { getNameKey } from "@/utils/speciesData";
 
 type PokemonModalProps = PokemonViewProps & {
   onClose: () => void;
@@ -34,7 +36,7 @@ function PokemonView({
 
   const displaySprite = isShiny ? shinySprite : regularSprite;
 
-  // const evoFamily = getEvolutionaryFamily(pokemon.index);
+  const evoFamily = getEvolutionaryFamily(pokemon.index);
 
   // const tabsData = buildPokemonMoveTabs(pokemon);
 
@@ -62,18 +64,24 @@ function PokemonView({
             onClose={() => setSelectedAbility(null)}
           />
         </div>
-        {/* <div className="my-3">
+        <div className="my-3">
           <EvolutionView
             pokemon={pokemon}
             family={evoFamily}
             isShiny={isShiny}
             onClickPokemon={onSelectPokemon}
           />
-        </div> */}
+          {getNameKey(findRootSpecies(pokemon.index))}
+        </div>
         <div className="flex flex-wrap text-gray-100">
           <TypeMatchup pokemon={pokemon} />
         </div>
       </div>
+      {/* <div className="w-full">
+        <EvolutionBox
+        pokemon={pokemon}
+        />
+      </div> */}
       {/* <div className="flex w-full flex-grow">
         <TabbedInterface tabs={tabsData} />
       </div> */}

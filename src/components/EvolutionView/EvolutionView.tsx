@@ -43,16 +43,16 @@ const EvolutionView: React.FC<EvolutionViewProps> = ({
             className="flex cursor-pointer flex-col items-center gap-1"
           >
             {stages[stage].map((member) => {
-              return (
+                return (
                 <Evolution
-                  key={member.id}
+                  key={`${member.id}-${member.requirements || 'default'}`}
                   sprite={getSprite(member.id, isShiny)}
                   alt={member.name}
                   onClick={() => onClickPokemon(member.id)}
                   requirements={member.requirements}
                   details={member.details}
                 />
-              );
+                );
             })}
           </div>
           {idx < sortedStages.length - 1 && (
