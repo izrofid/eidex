@@ -5,7 +5,7 @@ import { GiEnergySword } from "react-icons/gi";
 import { Move } from "../../types";
 
 const moveIDMap: ComboBoxEntry[] = Object.values(moveData)
-  .filter((m) => typeof m === "object" && !!m && "ID" in m)
+  .filter((m) => typeof m === "object" && !!m && "id" in m)
   .map((m) => ({
     id: (m as Move).id,
     name: (m as Move).name,

@@ -30,6 +30,7 @@ jobs:
       - name: Deploy to Preview Repo
         uses: peaceiris/actions-gh-pages@v3
         with:
+          # yamllint disable-line rule:truthy
           deploy_key: ${{ secrets.PREVIEW_DEPLOY_KEY }}
           external_repository: izrofid/eidex-preview
           publish_dir: ./dist

@@ -1,14 +1,15 @@
 import GenericComboBox, { ComboBoxEntry } from "./GenericComboBox";
 import abilities from "../../data/abilityData.json";
-import {getAbilityName} from "../../utils/abilityData";
+import { getAbilityName } from "../../utils/abilityData";
 import { useMemo } from "react";
 import { IoRibbon } from "react-icons/io5";
 
-
-const abilityIDMap: ComboBoxEntry[] = abilities.map((ability) => ({
-  id: ability.id,
-  name: getAbilityName(ability.id),
-}));
+const abilityIDMap: ComboBoxEntry[] = abilities
+  .map((ability) => ({
+    id: ability.id,
+    name: getAbilityName(ability.id),
+  }))
+  .sort((a, b) => a.name.localeCompare(b.name));
 
 type ComboBoxDemoProps = {
   onSelect: (entry: ComboBoxEntry | null) => void;
