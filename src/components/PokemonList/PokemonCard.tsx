@@ -42,10 +42,10 @@ export function PokemonCard({
   const bst = stats.reduce((sum, stat) => sum + stat, 0);
 
   // If the sprite is "", then use the default sprite
-  const fallbackSprite = "/missingno.png";
+  const fallbackSprite = `${import.meta.env.BASE_URL}missingno.png`;
 
-  const regularSprite = `/sprites/front/${index}.png`;
-  const shinySprite = `/sprites/front_shiny/${index}.png`;
+  const regularSprite = `${import.meta.env.BASE_URL}sprites/front/${index}.png`;
+  const shinySprite = `${import.meta.env.BASE_URL}sprites/front_shiny/${index}.png`;
 
   const displaySprite = isShiny ? shinySprite : regularSprite;
 
