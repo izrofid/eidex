@@ -1,12 +1,21 @@
 import itemData from "../data/itemData.json";
-import { ItemData } from "../types";
 
-export function getItemData(id: number) {
-  return (itemData as ItemData)[id.toString()];
+interface Item {
+  itemId: number;
+  Name: string;
+}
+
+const itemMap = new Map<number, Item>();
+for (const item of itemData) {
+  if (item) itemMap.set(item.itemId, item);
+}
+
+export function getItemData(itemId: number): Item | undefined {
+  return itemMap.get(itemId);
 }
 
 // Function to return item name given id
-export function getItemName(id: number) {
+export function getItemName(id: number): string {
   const item = getItemData(id);
-  return item ? item.name : "Unknown Item";
+  return item ? item.Name : "Unknown Item";
 }

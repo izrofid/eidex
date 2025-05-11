@@ -1,23 +1,26 @@
+import { findRootSpecies } from "@/utils/evoFamily";
 import { Pokemon } from "../../types";
-import { getMoveData, getTMMove, getTutorMove } from "../../utils/moveData";
+import { getMoveData } from "../../utils/moveData";
 import MoveEntry from "./MoveEntry";
+import { getSpeciesData } from "@/utils/speciesData";
 
 export const buildPokemonMoveTabs = (pokemon: Pokemon) => [
   {
     label: "Level Up",
     content: (
       <div className="text-center font-bold text-white">
-        {pokemon.levelupMoves.length > 0 ? (
+        {pokemon.levelUpMoves.length > 0 ? (
           <ul>
-          {pokemon.levelupMoves.map(([moveId]: number[], index) => {
-            const move = getMoveData(moveId);
-            return (
-              <div key={`1-${index}`}>
-                <MoveEntry move={move} />
-              </div>
-            );
-          })}
-        </ul>
+            {pokemon.levelUpMoves.map((arr, index) => {
+              const [moveId, level] = arr;
+              const move = getMoveData(moveId);
+              return move ? (
+                <li key={`1-${index}`}>
+                  <MoveEntry move={move} level={level} />
+                </li>
+              ) : null;
+            })}
+          </ul>
         ) : (
           "No Level-Up Moves Available"
         )}
@@ -31,8 +34,12 @@ export const buildPokemonMoveTabs = (pokemon: Pokemon) => [
         {pokemon.tmMoves && pokemon.tmMoves.length > 0 ? (
           <ul>
             {pokemon.tmMoves.map((moveIndex, index) => {
-              const move = getTMMove(moveIndex);
-              return move ? <li key={`2-${index}`}><MoveEntry move={move}/></li> : null;
+              const move = getMoveData(moveIndex);
+              return move ? (
+                <li key={`2-${index}`}>
+                  <MoveEntry move={move} />
+                </li>
+              ) : null;
             })}
           </ul>
         ) : (
@@ -42,36 +49,27 @@ export const buildPokemonMoveTabs = (pokemon: Pokemon) => [
     ),
   },
   {
-    label: "Tutor",
-    content: (
-      <div className="text-center font-bold text-white">
-        {(pokemon.tutorMoves ?? []).length > 0 ? (
-          <ul>
-            {(pokemon.tutorMoves ?? []).map((moveIndex, index) => {
-              const move = getTutorMove(moveIndex);
-              return move ? <li key={`3-${index}`}><MoveEntry move={move}/></li> : null;
-            })}
-          </ul>
-        ) : (
-          "No Tutor Moves Available"
-        )}
-      </div>
-    ),
-  },
-  {
     label: "Egg Moves",
     content: (
       <div className="text-center font-bold text-white">
-        {(pokemon.eggMoves ?? []).length > 0 ? (
-          <ul>
-        {(pokemon.eggMoves ?? []).map((moveId, index) => {
-          const move = getMoveData(moveId);
-          return move ? <li key={`4-${index}`}><MoveEntry move={move}/></li> : null;
-        })}
-          </ul>
-        ) : (
-          "No Egg Moves Available"
-        )}
+        {(() => {
+          const rootSpeciesId = findRootSpecies(pokemon.index);
+          const rootSpecies = getSpeciesData(rootSpeciesId);
+          return (rootSpecies.eggMoves ?? []).length > 0 ? (
+            <ul>
+              {(rootSpecies.eggMoves ?? []).map((moveId, index) => {
+                const move = getMoveData(moveId);
+                return move ? (
+                  <li key={`3-${index}`}>
+                    <MoveEntry move={move} />
+                  </li>
+                ) : null;
+              })}
+            </ul>
+          ) : (
+            "No Egg Moves Available"
+          );
+        })()}
       </div>
     ),
   },

@@ -1,7 +1,5 @@
-import { Pokemon, FilterOptions } from "../types";
+import { Pokemon, FilterOptions, SortBy } from "../types";
 // import { getMoveData, getTMMove, getTutorMove } from "./moveData";
-import tmMoves from "../data/tmMoves.json";
-import tutorMoves from "../data/tutorMoves.json";
 
 function matchesNameFilter(pokemon: Pokemon, name?: string): boolean {
   return name
@@ -10,15 +8,13 @@ function matchesNameFilter(pokemon: Pokemon, name?: string): boolean {
 }
 
 function matchesTypeFilter(pokemon: Pokemon, typeId?: number): boolean {
-  return typeId !== undefined
-    ? pokemon.type.includes(typeId)
-    : true;
+  return typeId !== undefined ? pokemon.types.includes(typeId) : true;
 }
 
 function matchesStatFilter(
   pokemon: Pokemon,
   minStat?: number,
-  statType?: string
+  statType?: string,
 ): boolean {
   if (minStat === undefined) return true;
 
@@ -39,12 +35,9 @@ function matchesStatFilter(
   return idx !== undefined ? pokemon.stats[idx] >= minStat : true;
 }
 
-function matchesAbilityFilter(
-  pokemon: Pokemon,
-  abilityId?: number,
-): boolean {
+function matchesAbilityFilter(pokemon: Pokemon, abilityId?: number): boolean {
   if (!abilityId) return true;
-  return pokemon.abilities.some(([id]) => id === abilityId);
+  return pokemon.abilities.some((id) => id === abilityId);
 }
 
 // function matchesLevelupMove(pokemon: Pokemon, move?: string): boolean {
@@ -77,38 +70,70 @@ function matchesAbilityFilter(
 function matchesMove(
   pokemon: Pokemon,
   moveId?: number,
-  source?: "all" | "levelup" | "tm" | "tutor"
+  source?: "all" | "levelup" | "tm" | "egg",
 ): boolean {
   if (!moveId) return true;
 
   // Helper to check TM moves
-  const hasTmMove = (pokemon.tmMoves ?? []).some(tmIndex => {
-    const tmMoveId = (tmMoves as Record<string, number>)[tmIndex];
-    return tmMoveId === moveId;
-  });
+  const hasTmMove = pokemon.tmMoves ? pokemon.tmMoves.some((id) => id ===moveId): false
+  const hasEggMove = pokemon.eggMoves ? pokemon.eggMoves.some((id) => id ===moveId): false
 
   // Helper to check Tutor moves
-  const hasTutorMove = (pokemon.tutorMoves ?? []).some(tutorIndex => {
-    const tutorMoveId = (tutorMoves as Record<string, number>)[tutorIndex];
-    return tutorMoveId === moveId;
-  });
 
   switch (source) {
     case "levelup":
-      return pokemon.levelupMoves.some(([id]) => id === moveId);
+      return pokemon.levelUpMoves.some(([id]) => id === moveId);
     case "tm":
       return hasTmMove;
-    case "tutor":
-      return hasTutorMove;
+    case "egg":
+      return hasEggMove;
     case "all":
     default:
       return (
-        pokemon.levelupMoves.some(([id]) => id === moveId) ||
-        hasTmMove ||
-        hasTutorMove
+        pokemon.levelUpMoves.some(([id]) => id === moveId) ||
+        hasTmMove
       );
   }
 }
+
+function sortPokemon(
+  pokemons: Pokemon[],
+  sortBy: SortBy = "dexId",
+  sortStat?: string,
+  descending: boolean = false // Default to true
+): Pokemon[] {
+  return [...pokemons].sort((a, b) => {
+    let result = 0;
+    switch (sortBy) {
+      case "name":
+        result = a.nameKey.localeCompare(b.nameKey);
+        break;
+      case "stat":
+        if (!sortStat || sortStat === "bst") {
+          const bstA = a.stats.reduce((x, y) => x + y, 0);
+          const bstB = b.stats.reduce((x, y) => x + y, 0);
+          result = bstA - bstB;
+        } else {
+          const statIndex: Record<string, number> = {
+            hp: 0, attack: 1, defense: 2, speed: 3, spAtk: 4, spDef: 5,
+          };
+          const idx = statIndex[sortStat];
+          result = (a.stats[idx] ?? 0) - (b.stats[idx] ?? 0);
+        }
+        break;
+      case "index":
+        result = a.index - b.index;
+        break;
+      case "dexId":
+      default:
+        if (a.dexId !== b.dexId) result = a.dexId - b.dexId;
+        else result = a.index - b.index;
+        break;
+    }
+    return descending ? -result : result;
+  });
+}
+
 export function filterPokemon(
   pokemons: Pokemon[],
   filters: FilterOptions = {},
@@ -121,11 +146,6 @@ export function filterPokemon(
     matchesMove(pokemon, filters.moveId, filters.moveSource)
   );
 
-  // Sort by dexID first, then by id if dexID is the same
-  return filtered.sort((a, b) => {
-    if (a.dexID !== b.dexID) {
-      return a.dexID - b.dexID; // Primary sort by dexID
-    }
-    return a.ID - b.ID; // Secondary sort by id
-  });
+  // Default to true if filters.ascending is undefined
+  return sortPokemon(filtered, filters.sortBy, filters.sortStat, filters.descending !== undefined ? filters.descending : true);
 }

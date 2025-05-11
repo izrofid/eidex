@@ -1,15 +1,16 @@
 import { useState } from "react";
-import shinySpritesData from "../../data/shinySprites.json";
-import spritesData from "../../data/sprites.json";
-import { Ability, Pokemon } from "../../types";
-import { getEvolutionaryFamily } from "../../utils/evoFamily";
+import { Ability, Pokemon, StatArray } from "../../types";
 import CloseButton from "../CloseButton";
 import EvolutionView from "../EvolutionView/EvolutionView";
 import AbilityBox from "./AbilityBox";
+import { getEvolutionaryFamily } from "@/utils/evoFamily";
 import AbilityDescription from "./AbilityDescription";
-import { buildPokemonMoveTabs } from "./learnsetTabs";
 import TabbedInterface from "./TabbedInterface";
 import TypeMatchup from "./TypeMatchup";
+import getSprite from "@/utils/getSprite";
+import { buildPokemonMoveTabs } from "./learnsetTabs";
+import { TypeBadge } from "../TypeBadges/TypeBadge";
+import StatBars from "./StatBars";
 
 type PokemonModalProps = PokemonViewProps & {
   onClose: () => void;
@@ -17,50 +18,55 @@ type PokemonModalProps = PokemonViewProps & {
 type PokemonViewProps = {
   pokemon: Pokemon | null;
   isShiny?: boolean;
+  screenWidth: string;
   onSelectPokemon: (pokemonId: number) => void;
 };
 
 function PokemonView({
   pokemon,
   isShiny,
+  screenWidth,
   onSelectPokemon,
 }: {
   pokemon: Pokemon;
   isShiny: boolean;
+  screenWidth: string;
   onSelectPokemon: (pokemonId: number) => void;
 }) {
   const [selectedAbility, setSelectedAbility] = useState<Ability | null>(null);
 
-  const shinySprite = `data:image/png;base64,${shinySpritesData[pokemon.ID.toString() as keyof typeof shinySpritesData]}`;
-  const regularSprite = `data:image/png;base64,${spritesData[pokemon.ID.toString() as keyof typeof spritesData]}`;
+  const displaySprite = getSprite(pokemon.index, isShiny);
 
-  const displaySprite = isShiny ? shinySprite : regularSprite;
-  const reorderedAbilities = [...pokemon.abilities.slice(1)];
-  const hiddenAbility = pokemon.abilities[0];
-
-  const evoFamily = getEvolutionaryFamily(pokemon.ID);
+  const evoFamily = getEvolutionaryFamily(pokemon.index);
 
   const tabsData = buildPokemonMoveTabs(pokemon);
 
   return (
-    <div className="flex w-full flex-col items-center gap-1">
+    <div className="flex w-full flex-col items-center">
       <img
         src={displaySprite}
-        alt={pokemon.name}
-        className="h-[128px] w-[128px] object-contain py-0"
+        alt={pokemon.speciesName}
+        className="h-[128px] w-[128px] object-contain"
       />
+      <div className="flex flex-row gap-1 mt-2">
+        {pokemon.types.map((typeId: number, index: number) => (
+          <div key={index}>
+            <TypeBadge typeId={typeId} screenWidth={screenWidth} />
+          </div>
+        ))}
+      </div>
+
       <div className="flex items-center gap-3">
         <div className="font-pixel text-xl font-bold text-gray-200">
-          {pokemon.name}
+          {pokemon.nameKey}
         </div>
-        <div className="text-md font-pixel text-gray-400">#{pokemon.ID}</div>
+        <div className="text-md font-pixel text-gray-400">#{pokemon.index}</div>
       </div>
-      <div className="my-2 flex w-full flex-col">
-        <AbilityBox
-          key={pokemon.ID}
-          abilities={reorderedAbilities}
-          hiddenAbility={hiddenAbility}
-        />
+      <div className="mt-2 flex w-full">
+        <StatBars stats={pokemon.stats as StatArray} />
+      </div>
+      <div className="my-2 mt-6 flex w-full flex-col">
+        <AbilityBox key={pokemon.index} abilities={pokemon.abilities} />
         <div className="w-full">
           <AbilityDescription
             selectedAbility={selectedAbility}
@@ -79,6 +85,11 @@ function PokemonView({
           <TypeMatchup pokemon={pokemon} />
         </div>
       </div>
+      {/* <div className="w-full">
+        <EvolutionBox
+        pokemon={pokemon}
+        />
+      </div> */}
       <div className="flex w-full flex-grow">
         <TabbedInterface tabs={tabsData} />
       </div>
@@ -90,6 +101,7 @@ export function PokemonModal({
   pokemon,
   onClose,
   isShiny = false,
+  screenWidth,
   onSelectPokemon,
 }: PokemonModalProps) {
   if (!pokemon) return null;
@@ -107,6 +119,7 @@ export function PokemonModal({
         <PokemonView
           pokemon={pokemon}
           isShiny={isShiny}
+          screenWidth={screenWidth}
           onSelectPokemon={onSelectPokemon}
         />
       </div>

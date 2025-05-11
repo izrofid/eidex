@@ -1,20 +1,45 @@
 import { useEffect, useState } from "react";
 import { PokemonCard } from "./PokemonCard";
 import { useScreenWidth } from "../../hooks/useScreenWidth";
-import { Pokemon } from "../../types";
+import { Pokemon, SortBy } from "../../types";
 import { PokemonModal } from "../PokemonModal/PokemonModal";
 import useBodyScrollLock from "../../hooks/useBodyScrollLock";
+import { SortBar } from "./PokemonSortBar";
 
 type PokemonListProps = {
   pokemons: Pokemon[];
   fullPokemons: Pokemon[];
   isShiny?: boolean;
+  sortBy: SortBy;
+  sortStat?: string;
+  setSortBy: (sortBy: SortBy) => void;
+  setSortStat: (statType?: string) => void;
+  descending: boolean;
+  setDescending: (descending: boolean) => void;
 };
 
-export function PokemonList({ pokemons, fullPokemons, isShiny }: PokemonListProps) {
+export function PokemonList({
+  pokemons,
+  fullPokemons,
+  isShiny,
+  sortBy,
+  sortStat,
+  setSortBy,
+  setSortStat,
+  descending,
+  setDescending: setDescending,
+}: PokemonListProps) {
   const [visibleCount, setVisibleCount] = useState(10);
   const [selectedPokemon, setSelectedPokemon] = useState<Pokemon | null>(null);
   const screenWidth = useScreenWidth();
+
+  const ignoreList: number[] = [1435];
+
+  const excludeForms = (forms: string[] | null | undefined): boolean => {
+    const bannedForms = ["totem", "gigantamax"];
+    if (!forms) return false;
+    return forms.some((form) => bannedForms.includes(form));
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,25 +60,43 @@ export function PokemonList({ pokemons, fullPokemons, isShiny }: PokemonListProp
 
   return (
     <div className="flex w-full flex-col items-center">
-      {pokemons.slice(0, visibleCount).map((pokemon) => (
-        <PokemonCard
-          key={pokemon.ID}
-          {...pokemon}
-          isShiny={isShiny}
-          onClick={() => setSelectedPokemon(pokemon)}
-          screenWidth={screenWidth}
-        />
-      ))}
+      <SortBar
+        sortBy={sortBy}
+        statType={sortStat}
+        onChange={(newSortBy, newStatType) => {
+          setSortBy(newSortBy);
+          setSortStat(newStatType);
+        }}
+        descending={descending}
+        onDirectionChange={setDescending}
+      />
+      <div className="w-full">
+        {pokemons
+          .slice(0, visibleCount)
+          .filter(
+            (pokemon) =>
+              !ignoreList.includes(pokemon.index) &&
+              !excludeForms(pokemon.forms),
+          )
+          .map((pokemon) => (
+            <PokemonCard
+              key={pokemon.index}
+              {...pokemon}
+              isShiny={isShiny}
+              onClick={() => setSelectedPokemon(pokemon)}
+              screenWidth={screenWidth}
+            />
+          ))}
+      </div>
       <PokemonModal
         pokemon={selectedPokemon}
         onClose={() => setSelectedPokemon(null)}
         isShiny={isShiny}
+        screenWidth={screenWidth}
         onSelectPokemon={(id) => {
-          const selected = fullPokemons.find((p) => p.ID === id);
+          const selected = fullPokemons.find((p) => p.index === id);
           setSelectedPokemon(selected || null);
-        }
-
-        }
+        }}
       />
     </div>
   );

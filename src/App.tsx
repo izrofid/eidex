@@ -3,13 +3,16 @@ import { PokemonList } from "./components/PokemonList/PokemonList";
 import { filterPokemon } from "./utils/filterPokemon";
 import FilterBar from "./components/Filter/FilterBar";
 import { useState, useMemo, useEffect } from "react";
-import { FilterOptions } from "./types";
+import { FilterOptions, SortBy } from "./types";
 import CreditsButton from "./components/CreditsButton";
 
 const pokemonData = Object.values(speciesData);
 
 function App() {
-  // State for the actual filters used for searching (debounced)
+  const [sortBy, setSortBy] = useState<SortBy>("dexId");
+  const [sortStat, setSortStat] = useState<string | undefined>(undefined);
+  const [descending, setDescending] = useState(false);
+
   const [filters, setFilters] = useState<FilterOptions>({
     name: "",
     typeId: undefined,
@@ -17,6 +20,9 @@ function App() {
     levelupMove: "",
     tmMove: "",
     tutorMove: "",
+    sortBy,
+    sortStat,
+    descending,
   });
 
   // Retrieve the shiny state from localStorage or default to false
@@ -33,6 +39,9 @@ function App() {
     levelupMove: "",
     tmMove: "",
     tutorMove: "",
+    sortBy,
+    sortStat,
+    descending,
   });
 
   // Debounce delay in milliseconds
@@ -61,9 +70,14 @@ function App() {
     localStorage.setItem("isShiny", isShiny.toString());
   }, [isShiny]);
 
+  useEffect(() => {
+    setFilters((prev) => ({ ...prev, sortBy, sortStat, descending }));
+    setRawFilters((prev) => ({ ...prev, sortBy, sortStat, descending }));
+  }, [sortBy, sortStat, descending]);
+
   return (
     <div className="flex min-h-screen justify-center bg-zinc-800">
-      <div className="flex w-full max-w-3xl flex-col border-neutral-900/50 border-1 rounded-lg shadow-2xl/60 mt-4">
+      <div className="border-1 shadow-2xl/60 mt-4 flex w-full max-w-3xl flex-col rounded-lg border-neutral-900/50">
         {/* Pass rawFilters and setRawFilters to FilterBar for immediate UI updates */}
         <FilterBar filters={rawFilters} setFilters={setRawFilters} />
 
@@ -71,7 +85,7 @@ function App() {
         <div className="flex items-center justify-between gap-2 bg-neutral-800/30 px-3 py-2">
           <div className="flex flex-row items-center">
             <img
-              src="/shinycharm.png"
+              src="shinycharm.png"
               alt="Shiny Mode"
               className="h-6.5 w-6.5 object-contain"
               title="Shiny Mode"
@@ -91,7 +105,17 @@ function App() {
           <CreditsButton />
         </div>
 
-        <PokemonList pokemons={filteredPokemon} fullPokemons={pokemonData} isShiny={isShiny} />
+        <PokemonList
+          pokemons={filteredPokemon}
+          fullPokemons={pokemonData}
+          isShiny={isShiny}
+          sortStat={sortStat}
+          sortBy={sortBy}
+          setSortBy={setSortBy}
+          setSortStat={setSortStat}
+          descending={descending}
+          setDescending={setDescending}
+        />
       </div>
     </div>
   );

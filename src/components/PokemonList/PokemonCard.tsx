@@ -1,10 +1,9 @@
-import spritesData from "../../data/sprites.json";
-import shinySpritesData from "../../data/shinySprites.json";
 import { getTypeSnapColor } from "../../utils/typeInfo";
 import { TypeBadge } from "../TypeBadges/TypeBadge";
 import { getAbilityName } from "../../utils/abilityData";
 import { Pokemon } from "../../types";
 import chroma from "chroma-js";
+import getSprite from "@/utils/getSprite";
 
 const adjustedBgCache: Record<number, string> = {};
 
@@ -15,10 +14,10 @@ type PokemonCardProps = Pokemon & {
 };
 
 export function PokemonCard({
-  ID,
-  dexID,
+  index,
+  dexId,
   nameKey,
-  type,
+  types,
   isShiny,
   stats,
   abilities,
@@ -26,7 +25,7 @@ export function PokemonCard({
   screenWidth,
 }: PokemonCardProps) {
   // Convert the ID to a string and pad it with leading zeros and a #
-  const formattedId = `#${String(dexID).padStart(3, "0")}`;
+  const formattedId = `#${String(dexId).padStart(3, "0")}`;
 
   const statLabels = ["HP", "Atk", "Def", "SpA", "SpD", "Spe"];
 
@@ -43,17 +42,15 @@ export function PokemonCard({
   // Calculate the BST (Base Stat Total)
   const bst = stats.reduce((sum, stat) => sum + stat, 0);
 
-  const reorderedAbilities = [...abilities.slice(1), abilities[0]];
-
   // If the sprite is "", then use the default sprite
-  const fallbackSprite = "/missingno.png";
+  const fallbackSprite = `missingno.png`;
 
-  const shinySprite = `data:image/png;base64,${shinySpritesData[ID.toString() as keyof typeof shinySpritesData]}`;
-  const regularSprite = `data:image/png;base64,${spritesData[ID.toString() as keyof typeof spritesData]}`;
+  const regularSprite = getSprite(index, false)
+  const shinySprite = getSprite(index, true)
 
   const displaySprite = isShiny ? shinySprite : regularSprite;
 
-  const typeId = type[0];
+  const typeId = types[0];
   let adjustedBg = adjustedBgCache[typeId];
   if (!adjustedBg) {
     const snapColor = getTypeSnapColor(typeId);
@@ -62,11 +59,18 @@ export function PokemonCard({
     adjustedBgCache[typeId] = adjustedBg;
   }
 
+  //If the first ability is repeated, replace repeats with 0
+  abilities.forEach((ability, index) => {
+    if (abilities.indexOf(ability) !== index) {
+      abilities[index] = 0;
+    }
+  });
+
   return (
     <div onClick={onClick} className="w-full cursor-pointer">
       <div className="flex w-full flex-col text-white">
         {/* Header */}
-        <div className="flex justify-between bg-neutral-900/60 py-1 pl-2">
+        <div className="flex justify-between bg-neutral-900/20 py-1 pl-2">
           <div className="flex items-center gap-1">
             {/* Sprite and name  */}
             <img
@@ -81,7 +85,7 @@ export function PokemonCard({
 
             {/* Types */}
             <div className="mt-1 flex flex-col items-center gap-0 justify-self-end px-2 md:flex-row md:gap-1">
-              {type.map((typeId: number, index: number) => (
+              {types.map((typeId: number, index: number) => (
                 <div key={index}>
                   <TypeBadge typeId={typeId} screenWidth={screenWidth} />
                 </div>
@@ -100,23 +104,22 @@ export function PokemonCard({
               </p>
             </span>
             {/* Abilities */}
-            {reorderedAbilities.map(
-              ([abilityId, abilityIndex], index: number) => {
-                const name = getAbilityName([abilityId, abilityIndex]);
-                const isHidden = index === reorderedAbilities.length - 1; // last one = Hidden
+            {/* Abilities */}
+            {abilities.map((abilityId: number, index: number) => {
+              const name = getAbilityName(abilityId);
+              const isHidden = index === abilities.length - 1; // last one = Hidden
 
-                return (
-                  <div
-                    key={index}
-                    className={`text-left italic ${
-                      isHidden ? "font-semibold text-pink-400" : ""
-                    }`}
-                  >
-                    {name}
-                  </div>
-                );
-              },
-            )}
+              return (
+                <div
+                  key={index}
+                  className={`text-left italic ${
+                    isHidden ? "font-semibold text-pink-400" : ""
+                  }`}
+                >
+                  {name}
+                </div>
+              );
+            })}
           </div>
 
           {/* Stats here */}

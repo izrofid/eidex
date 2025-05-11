@@ -12,7 +12,7 @@ Object.entries(typeData).forEach(([id, data]) => {
 });
 
 const validTypes = [
-  0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 23,
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18,
 ];
 
 export function getTypeName(typeID: number): string {
@@ -34,9 +34,9 @@ function codeToMult(code: number): number {
       return 2;
     case 5:
       return 0.5;
-    case 1:
-      return 0;
     case 0:
+      return 0;
+    case 10:
       return 1;
     default:
       return 1;
@@ -76,24 +76,24 @@ export const adjustColor = (color: string, amount: number): string => {
 };
 
 const typeColors: Record<number, string> = {
-  0: '#cecac5',
-  1: '#d69e9c',
-  2: '#adc6ef',
-  3: '#bd8ec5',
-  4: '#debe8c',
-  5: '#ce966b',
-  6: '#bdd25a',
-  7: '#a5aade',
-  8: '#adc2bd',
-  10: '#ef8263',
-  11: '#7bcee6',
-  12: '#84c28c',
-  13: '#efe363',
-  14: '#f792ad',
-  15: '#9cdfd6',
-  16: '#7bb2e6',
-  17: '#a5aaad',
-  23: '#f7b6ef',
+  1: '#cecac5',
+  2: '#d69e9c',
+  3: '#adc6ef',
+  4: '#bd8ec5',
+  5: '#debe8c',
+  6: '#ce966b',
+  7: '#bdd25a',
+  8: '#a5aade',
+  9: '#adc2bd',
+  11: '#ef8263',
+  12: '#7bcee6',
+  13: '#84c28c',
+  14: '#efe363',
+  15: '#f792ad',
+  16: '#9cdfd6',
+  17: '#7bb2e6',
+  18: '#a5aaad',
+  19: '#f7b6ef',
 };
 
 export function getTypeSnapColor(typeID: number): string {

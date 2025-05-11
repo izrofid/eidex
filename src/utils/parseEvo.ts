@@ -1,91 +1,126 @@
 import { getItemName } from "./itemData";
 import { getTypeName } from "./typeInfo";
 import { getMoveName } from "./moveData";
-import { getNameKey } from "./pokemonData";
+import { getNameKey } from "./speciesData";
 
-const parseEvolutions: Record<number, (evo: number[]) => string> = {
-  1: () => "on Level Up with Friendship",
-  2: () => "on Level Up with Friendship (Day)",
-  3: () => "on Level Up with Friendship (Night)",
-  4: (evo) => `at Level ${evo[1]}`,
-  7: (evo) => {
-    const itemName = getItemName(evo[1]);
-    return evo[1] !== 101
-      ? `with a ${itemName}`
-      : `with a ${itemName} (${evo[3] === 254 ? "Female" : "Male"})`;
-  },
-  8: (evo) => `at Level ${evo[1]} when Attack > Defense`,
-  9: (evo) => `at Level ${evo[1]} when Attack = Defense`,
-  10: (evo) => `at Level ${evo[1]} when Attack < Defense`,
-  11: (evo) => `at Level ${evo[1]}, with a 50% chance`,
-  12: (evo) => `at Level ${evo[1]}, with a 50% chance`,
-  13: (evo) => `at Level ${evo[1]}`,
-  14: () => `when evolving to Ninjask with Open Party Slot & Poke Ball`,
-  16: (evo) => `at Level ${evo[1]} with Overworld Rain`,
-  17: (evo) =>
-    `on Level Up with Friendship and knowing a ${getTypeName(evo[1])} Type move`,
-  18: (evo) => `at Level ${evo[1]} with ${getTypeName(evo[3])} Type in Party`,
-  20: (evo) => `at Level ${evo[1]} (Male)`,
-  21: (evo) => `at Level ${evo[1]} (Female)`,
-  22: (evo) => `at Level ${evo[1]} (Night)`,
-  23: (evo) => `at Level ${evo[1]} (Day)`,
-  26: (evo) => `on Level Up with the move ${getMoveName(evo[1])}`,
-  27: (evo) => `on Level Up with ${getNameKey(evo[1])} in Party`,
-  28: (evo) => {
-    const time = evo[3] === 1041 ? "Day" : evo[3] === 5144 ? "Night" : "Dusk";
-    return `at Level ${evo[1]} (${time})`;
-  },
-  30: (evo) =>
-    `at Level ${evo[1]} with Adamant, Brave, Docile, Hardy, Hasty, Impish, Jolly, Lax, Naive, Naughty, Rash, Quirky, or Sassy Nature`,
-  31: (evo) =>
-    `at Level ${evo[1]} with Bashful, Bold, Calm, Careful, Gentle, Lonely, Mild, Modest, Quiet, Relaxed, Serious, or Timid Nature`,
-  254: (evo) =>
-    evo[3] === 2
-      ? `with the move ${getMoveName(evo[1])}`
-      : `with the ${getItemName(evo[1])}`,
+export const parseEvolutions: Record<number, (evo: number[]) => string> = {
+  0: () => `None`,
+  1: () => `Level up with friendship ≥ 220`,
+  2: () => `Level up during the day with friendship ≥ 220`,
+  3: () => `Level up at night with friendship ≥ 220`,
+  4: (evo) => `Lvl ${evo[2]}`,
+  5: () => `Pokémon is traded`,
+  6: () => `Pokémon is traded while it's holding the specified item`,
+  7: (evo) => `${getItemName(evo[2])}`,
+  8: (evo) => `Lvl ${evo[2]} + Atk>Def`,
+  9: (evo) => `Lvl ${evo[2]} with Atk=Def`,
+  10: (evo) => `Lvl ${evo[2]} with Atk<Def`,
+  11: (evo) => `Lvl ${evo[2]} with a  pid`,
+  12: (evo) => `Lvl ${evo[2]} with a Cascoon pid`,
+  13: (evo) => `Lvl ${evo[2]}`,
+  14: (evo) => `Lvl ${evo[2]}`,
+  15: (evo) => `Level up with beauty ≥ ${evo[2]}`,
+  16: (evo) => `Lvl ${evo[2]}, is female`,
+  17: (evo) => `Lvl ${evo[2]}, is male`,
+  18: (evo) => `Lvl ${evo[2]}, is night`,
+  19: (evo) => `Lvl ${evo[2]}, is day`,
+  20: (evo) => `Lvl ${evo[2]}, is dusk`,
+  21: (evo) => `Level up, with ${getItemName(evo[2])} at day`,
+  22: (evo) => `Level up, with ${getItemName(evo[2])} at night`,
+  23: (evo) => `Level up, knowing ${getMoveName(evo[2])}`,
+  24: (evo) =>
+    `Level up with friendship ≥ 220, knows ${getTypeName(evo[2])} move`,
+  25: (evo) => `Level up in ${evo[2]}`,
+  26: (evo) => `${evo[2]} on male`,
+  27: (evo) => `${evo[2]} on female`,
+  28: (evo) => `Lvl ${evo[2]} with overworld rain`,
+  29: (evo) => `Level up with ${getNameKey(evo[2])} in party`,
+  30: (evo) => `Lvl ${evo[2]} with a Dark Type in party`,
+  31: (evo) => `Traded for ${evo[2]}`,
+  32: () => `Level up at specific place`,
+  33: (evo) => `Lvl ${evo[2]}, with Amped nature`,
+  34: (evo) => `Lvl ${evo[2]}, with Low Key nature`,
+  35: (evo) => `${evo[2]} crits in battle`,
+  36: () => `Pokémon has specified HP below max, then player interacts trigger`,
+  37: () => `Scroll of Darkness`,
+  38: () => `Scroll of Waters`,
+  39: (evo) => `use ${evo[2]}, at nightime`,
+  40: (evo) => `use ${evo[2]}, in daytime`,
+  41: (evo) => `Level up, with ${evo[2]}`,
+  42: (evo) => `Lvl ${evo[2]} during fog in the overworld`,
+  43: () =>
+    `Level up, knows specified move, has a personality value with a modulus of 0`,
+  44: () =>
+    `Level up, knows specified move, has a personality value with a modulus of 1-99`,
+  45: (evo) =>
+    `Lvl ${evo[2]} in battle with a personality value with a modulus of 0`,
+  46: (evo) =>
+    `Lvl ${evo[2]} in battle with a personality value with a modulus of 1-99`,
+  47: (evo) => `Level up after using ${evo[2]} 20 times`,
+  48: (evo) => `Level up after ${evo[2]}% recoil if male`,
+  49: (evo) => `Level up after ${evo[2]}% recoil if female`,
+  50: (evo) => `Level up after getting ${evo[2]} x999`,
+  51: (evo) => `Level up after KOing 3 of same species, holding ${evo[2]}`,
+  52: (evo) => `Level up after ${evo[2]} steps`,
 };
 
-
-const parseShortEvolutions: Record<number, (evo: number[]) => string> = {
-  1: () => "Lvl + ♥",
-  2: () => "Lvl + ♥ (D)",
-  3: () => "Lvl + ♥ (N)",
-  4: (evo) => `Lvl ${evo[1]}`,
-  7: (evo) => {
-    const itemName = getItemName(evo[1]);
-    return evo[1] !== 101
-      ? `${itemName}`
-      : `${itemName} (${evo[3] === 254 ? "F" : "M"})`;
-  },
-  8: (evo) => `Lvl ${evo[1]} Atk>Def`,
-  9: (evo) => `Lvl${evo[1]} Atk=Def`,
-  10: (evo) => `Lvl ${evo[1]} Atk<Def`,
-  11: (evo) => `Lvl ${evo[1]}, 50%`,
-  12: (evo) => `Lvl ${evo[1]}, 50%`,
-  13: (evo) => `Lvl ${evo[1]}`,
-  14: () => `Special Evo`,
-  16: (evo) => `Lvl ${evo[1]} in Rain`,
-  17: (evo) =>
-    `Lvl + ♥ + ${getTypeName(evo[1])} move`,
-  18: (evo) => `Lvl ${evo[1]} + ${getTypeName(evo[3])} Type in Party`,
-  20: (evo) => `Lvl ${evo[1]} (Male)`,
-  21: (evo) => `Lvl ${evo[1]} (Female)`,
-  22: (evo) => `Lvl ${evo[1]} (Night)`,
-  23: (evo) => `Lvl ${evo[1]} (Day)`,
-  26: (evo) => `Lvl + ${getMoveName(evo[1])}`,
-  27: (evo) => `Lvl + ${getNameKey(evo[1])}`,
-  28: (evo) => {
-    const time = evo[3] === 1041 ? "Day" : evo[3] === 5144 ? "Night" : "Dusk";
-    return `Lvl ${evo[1]} (${time})`;
-  },
-  30: (evo) =>
-    `at Level ${evo[1]} + Nature`,
-  31: (evo) =>
-    `at Level ${evo[1]} Nature`,
-  254: (evo) =>
-    evo[3] === 2
-      ? `${getMoveName(evo[1])}`
-      : `${getItemName(evo[1])}`,
+export const parseShortEvolutions: Record<number, (evo: number[]) => string> = {
+  0: () => `None`,
+  1: () => `Lvl + ♥`,
+  2: () => `Lvl + ♥ (Day)`,
+  3: () => `Lvl + ♥ (Night)`,
+  4: (evo) => `Lvl ${evo[2]}`,
+  5: () => `Trade`,
+  6: (evo) => `Trade + ${getItemName(evo[2])}`,
+  7: (evo) => `${getItemName(evo[2])}`,
+  8: (evo) => `Lvl ${evo[2]} Atk>Def`,
+  9: (evo) => `Lvl ${evo[2]} Atk=Def`,
+  10: (evo) => `Lvl ${evo[2]} Atk<Def`,
+  11: (evo) => `Lvl ${evo[2]}`,
+  12: (evo) => `Lvl ${evo[2]}`,
+  13: (evo) => `Lvl ${evo[2]}`,
+  14: (evo) => `Lvl ${evo[2]}`,
+  15: () => `Lvl + Beaut`,
+  16: (evo) => `Lvl ${evo[2]} (F)`,
+  17: (evo) => `Lvl ${evo[2]}, (M)`,
+  18: (evo) => `Lvl ${evo[2]} (Night)`,
+  19: (evo) => `Lvl ${evo[2]} (Day)`,
+  20: (evo) => `Lvl ${evo[2]} (Dusk)`,
+  21: (evo) => `Level up, with ${getItemName(evo[2])} (Day)`,
+  22: (evo) => `Level up, with ${getItemName(evo[2])} (Night)`,
+  23: (evo) => `Level up, knowing ${getMoveName(evo[2])}`,
+  24: (evo) =>
+    `Lvl + ♥ + ${getTypeName(evo[2])} move`,
+  25: (evo) => `Lvl + ${evo[2]}`,
+  26: (evo) => `${evo[2]} (Male)`,
+  27: (evo) => `${evo[2]} (Female)`,
+  28: (evo) => `Lvl ${evo[2]} with overworld rain`,
+  29: (evo) => `Level up with ${getNameKey(evo[2])} in party`,
+  30: (evo) => `Lvl ${evo[2]} with a Dark Type in party`,
+  31: (evo) => `Trade w/ ${evo[2]}`,
+  32: () => `Level up at specific place`,
+  33: (evo) => `Lvl ${evo[2]}, with Amped nature`,
+  34: (evo) => `Lvl ${evo[2]}, with Low Key nature`,
+  35: (evo) => `${evo[2]} crits in battle`,
+  36: () => `Pokémon has specified HP below max, then player interacts trigger`,
+  37: () => `Scroll of Darkness`,
+  38: () => `Scroll of Waters`,
+  39: (evo) => `use ${evo[2]}, at nightime`,
+  40: (evo) => `use ${evo[2]}, in daytime`,
+  41: (evo) => `Level up, with ${evo[2]}`,
+  42: (evo) => `Lvl ${evo[2]} during fog in the overworld`,
+  43: () =>
+    `Level up, knows specified move, has a personality value with a modulus of 0`,
+  44: () =>
+    `Level up, knows specified move, has a personality value with a modulus of 1-99`,
+  45: (evo) =>
+    `Lvl ${evo[2]} in battle with a personality value with a modulus of 0`,
+  46: (evo) =>
+    `Lvl ${evo[2]} in battle with a personality value with a modulus of 1-99`,
+  47: (evo) => `Level up after using ${evo[2]} 20 times`,
+  48: (evo) => `Level up after ${evo[2]}% recoil if male`,
+  49: (evo) => `Level up after ${evo[2]}% recoil if female`,
+  50: (evo) => `Level up after getting ${evo[2]} x999`,
+  51: (evo) => `Level up after KOing 3 of same species, holding ${evo[2]}`,
+  52: (evo) => `Level up after ${evo[2]} steps`,
 };
-
-export { parseEvolutions, parseShortEvolutions };
