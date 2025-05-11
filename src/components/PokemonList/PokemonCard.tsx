@@ -70,7 +70,7 @@ export function PokemonCard({
     <div onClick={onClick} className="w-full cursor-pointer">
       <div className="flex w-full flex-col text-white">
         {/* Header */}
-        <div className="flex justify-between bg-neutral-900/60 py-1 pl-2">
+        <div className="flex justify-between bg-neutral-900/20 py-1 pl-2">
           <div className="flex items-center gap-1">
             {/* Sprite and name  */}
             <img
