@@ -46,25 +46,26 @@ function PokemonView({
       <img
         src={displaySprite}
         alt={pokemon.speciesName}
-        className="h-[128px] w-[128px] object-contain py-0"
+        className="h-[128px] w-[128px] object-contain"
       />
-      <div className="flex flex-row gap-1">
+      <div className="flex flex-row gap-1 mt-2">
         {pokemon.types.map((typeId: number, index: number) => (
           <div key={index}>
             <TypeBadge typeId={typeId} screenWidth={screenWidth} />
           </div>
         ))}
       </div>
-      <div className="flex w-full">
-        <StatBars stats={pokemon.stats as StatArray}/>
-      </div>
+
       <div className="flex items-center gap-3">
         <div className="font-pixel text-xl font-bold text-gray-200">
           {pokemon.nameKey}
         </div>
         <div className="text-md font-pixel text-gray-400">#{pokemon.index}</div>
       </div>
-      <div className="my-2 flex w-full flex-col">
+      <div className="mt-2 flex w-full">
+        <StatBars stats={pokemon.stats as StatArray} />
+      </div>
+      <div className="my-2 mt-6 flex w-full flex-col">
         <AbilityBox key={pokemon.index} abilities={pokemon.abilities} />
         <div className="w-full">
           <AbilityDescription
