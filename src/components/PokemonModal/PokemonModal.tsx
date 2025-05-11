@@ -11,6 +11,7 @@ import getSprite from "@/utils/getSprite";
 import { buildPokemonMoveTabs } from "./learnsetTabs";
 import { TypeBadge } from "../TypeBadges/TypeBadge";
 import StatBars from "./StatBars";
+import { FormeView } from "../FormeView/FormeView";
 
 type PokemonModalProps = PokemonViewProps & {
   onClose: () => void;
@@ -79,6 +80,13 @@ function PokemonView({
             family={evoFamily}
             isShiny={isShiny}
             onClickPokemon={onSelectPokemon}
+          />
+        </div>
+        <div className="mb-3">
+          <FormeView
+          pokemon={pokemon}
+          isShiny={isShiny}
+          onClickPokemon={onSelectPokemon}
           />
         </div>
         <div className="flex flex-wrap text-gray-100">

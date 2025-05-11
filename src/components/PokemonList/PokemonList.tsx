@@ -5,6 +5,7 @@ import { Pokemon, SortBy } from "../../types";
 import { PokemonModal } from "../PokemonModal/PokemonModal";
 import useBodyScrollLock from "../../hooks/useBodyScrollLock";
 import { SortBar } from "./PokemonSortBar";
+import excludeForms from "@/utils/excludeForms";
 
 type PokemonListProps = {
   pokemons: Pokemon[];
@@ -34,12 +35,6 @@ export function PokemonList({
   const screenWidth = useScreenWidth();
 
   const ignoreList: number[] = [1435];
-
-  const excludeForms = (forms: string[] | null | undefined): boolean => {
-    const bannedForms = ["totem", "gigantamax"];
-    if (!forms) return false;
-    return forms.some((form) => bannedForms.includes(form));
-  };
 
   useEffect(() => {
     const handleScroll = () => {
