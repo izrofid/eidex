@@ -44,7 +44,7 @@ export const SortBar: React.FC<SortBarProps> = ({
             onChange(val as SortBy, undefined);
           }
         }}
-        className="mt-1 flex w-full text-nowrap border-transparent pt-2 text-sm"
+        className="mt-1 flex w-full text-nowrap border-transparent pt-2 text-sm justify-evenly"
         aria-label="List sort"
       >
         {sortOptions.map((option) => {
