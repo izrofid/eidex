@@ -11,15 +11,16 @@ export const buildPokemonMoveTabs = (pokemon: Pokemon) => [
       <div className="text-center font-bold text-white">
         {pokemon.levelUpMoves.length > 0 ? (
           <ul>
-          {pokemon.levelUpMoves.map(([moveId]: number[], index) => {
-            const move = getMoveData(moveId);
-            return (
-              <div key={`1-${index}`}>
-                {move && <MoveEntry move={move} />}
-              </div>
-            );
-          })}
-        </ul>
+            {pokemon.levelUpMoves.map((arr, index) => {
+              const [moveId, level] = arr;
+              const move = getMoveData(moveId);
+              return move ? (
+                <li key={`1-${index}`}>
+                  <MoveEntry move={move} level={level} />
+                </li>
+              ) : null;
+            })}
+          </ul>
         ) : (
           "No Level-Up Moves Available"
         )}
@@ -34,7 +35,11 @@ export const buildPokemonMoveTabs = (pokemon: Pokemon) => [
           <ul>
             {pokemon.tmMoves.map((moveIndex, index) => {
               const move = getMoveData(moveIndex);
-              return move ? <li key={`2-${index}`}><MoveEntry move={move}/></li> : null;
+              return move ? (
+                <li key={`2-${index}`}>
+                  <MoveEntry move={move} />
+                </li>
+              ) : null;
             })}
           </ul>
         ) : (
@@ -49,12 +54,16 @@ export const buildPokemonMoveTabs = (pokemon: Pokemon) => [
       <div className="text-center font-bold text-white">
         {(() => {
           const rootSpeciesId = findRootSpecies(pokemon.index);
-          const rootSpecies = getSpeciesData(rootSpeciesId)
+          const rootSpecies = getSpeciesData(rootSpeciesId);
           return (rootSpecies.eggMoves ?? []).length > 0 ? (
             <ul>
               {(rootSpecies.eggMoves ?? []).map((moveId, index) => {
                 const move = getMoveData(moveId);
-                return move ? <li key={`3-${index}`}><MoveEntry move={move}/></li> : null;
+                return move ? (
+                  <li key={`3-${index}`}>
+                    <MoveEntry move={move} />
+                  </li>
+                ) : null;
               })}
             </ul>
           ) : (
