@@ -11,6 +11,7 @@ const pokemonData = Object.values(speciesData);
 function App() {
   const [sortBy, setSortBy] = useState<SortBy>("dexId");
   const [sortStat, setSortStat] = useState<string | undefined>(undefined);
+  const [descending, setDescending] = useState(false);
 
   const [filters, setFilters] = useState<FilterOptions>({
     name: "",
@@ -21,6 +22,7 @@ function App() {
     tutorMove: "",
     sortBy,
     sortStat,
+    descending,
   });
 
   // Retrieve the shiny state from localStorage or default to false
@@ -39,6 +41,7 @@ function App() {
     tutorMove: "",
     sortBy,
     sortStat,
+    descending,
   });
 
   // Debounce delay in milliseconds
@@ -68,9 +71,9 @@ function App() {
   }, [isShiny]);
 
   useEffect(() => {
-    setFilters((prev) => ({ ...prev, sortBy, sortStat }));
-    setRawFilters((prev) => ({ ...prev, sortBy, sortStat }));
-  }, [sortBy, sortStat]);
+    setFilters((prev) => ({ ...prev, sortBy, sortStat, descending }));
+    setRawFilters((prev) => ({ ...prev, sortBy, sortStat, descending }));
+  }, [sortBy, sortStat, descending]);
 
   return (
     <div className="flex min-h-screen justify-center bg-zinc-800">
@@ -110,6 +113,8 @@ function App() {
           sortBy={sortBy}
           setSortBy={setSortBy}
           setSortStat={setSortStat}
+          descending={descending}
+          setDescending={setDescending}
         />
       </div>
     </div>

@@ -48,6 +48,7 @@ export interface FilterOptions {
   abilityId?: number;
   levelupMove?: string;
   tmMove?: string;
+  descending?: boolean;
   tutorMove?: string;
   moveName?: string;
   moveId?: number;

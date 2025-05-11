@@ -14,6 +14,8 @@ type PokemonListProps = {
   sortStat?: string;
   setSortBy: (sortBy: SortBy) => void;
   setSortStat: (statType?: string) => void;
+  descending: boolean;
+  setDescending: (descending: boolean) => void;
 };
 
 export function PokemonList({
@@ -24,6 +26,8 @@ export function PokemonList({
   sortStat,
   setSortBy,
   setSortStat,
+  descending,
+  setDescending: setDescending,
 }: PokemonListProps) {
   const [visibleCount, setVisibleCount] = useState(10);
   const [selectedPokemon, setSelectedPokemon] = useState<Pokemon | null>(null);
@@ -63,6 +67,8 @@ export function PokemonList({
           setSortBy(newSortBy);
           setSortStat(newStatType);
         }}
+        descending={descending}
+        onDirectionChange={setDescending}
       />
       <div className="w-full">
         {pokemons

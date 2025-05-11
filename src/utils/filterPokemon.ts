@@ -105,36 +105,41 @@ function matchesMove(
   }
 }
 
-
-
 function sortPokemon(
   pokemons: Pokemon[],
   sortBy: SortBy = "dexId",
-  sortStat?: string
+  sortStat?: string,
+  descending: boolean = false // Default to true
 ): Pokemon[] {
   return [...pokemons].sort((a, b) => {
+    let result = 0;
     switch (sortBy) {
       case "name":
-        return a.nameKey.localeCompare(b.nameKey);
+        result = a.nameKey.localeCompare(b.nameKey);
+        break;
       case "stat":
         if (!sortStat || sortStat === "bst") {
           const bstA = a.stats.reduce((x, y) => x + y, 0);
           const bstB = b.stats.reduce((x, y) => x + y, 0);
-          return bstB - bstA; // Descending
+          result = bstA - bstB;
         } else {
           const statIndex: Record<string, number> = {
             hp: 0, attack: 1, defense: 2, speed: 3, spAtk: 4, spDef: 5,
           };
           const idx = statIndex[sortStat];
-          return (b.stats[idx] ?? 0) - (a.stats[idx] ?? 0);
+          result = (a.stats[idx] ?? 0) - (b.stats[idx] ?? 0);
         }
+        break;
       case "index":
-        return a.index - b.index;
+        result = a.index - b.index;
+        break;
       case "dexId":
       default:
-        if (a.dexId !== b.dexId) return a.dexId - b.dexId;
-        return a.index - b.index;
+        if (a.dexId !== b.dexId) result = a.dexId - b.dexId;
+        else result = a.index - b.index;
+        break;
     }
+    return descending ? -result : result;
   });
 }
 
@@ -150,5 +155,6 @@ export function filterPokemon(
     matchesMove(pokemon, filters.moveId, filters.moveSource)
   );
 
-  return sortPokemon(filtered, filters.sortBy, filters.sortStat);
+  // Default to true if filters.ascending is undefined
+  return sortPokemon(filtered, filters.sortBy, filters.sortStat, filters.descending !== undefined ? filters.descending : true);
 }
