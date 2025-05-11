@@ -6,6 +6,8 @@ export interface PokemonChanges {
 
 export type SortBy = "dexId" | "name" | "stat" | "index";
 
+export type StatArray = [number, number, number, number, number, number]
+
 export type Ability = number;
 export type Abilities = Ability[];
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Ability, Pokemon } from "../../types";
+import { Ability, Pokemon, StatArray } from "../../types";
 import CloseButton from "../CloseButton";
 import EvolutionView from "../EvolutionView/EvolutionView";
 import AbilityBox from "./AbilityBox";
@@ -10,6 +10,7 @@ import TypeMatchup from "./TypeMatchup";
 import getSprite from "@/utils/getSprite";
 import { buildPokemonMoveTabs } from "./learnsetTabs";
 import { TypeBadge } from "../TypeBadges/TypeBadge";
+import StatBars from "./StatBars";
 
 type PokemonModalProps = PokemonViewProps & {
   onClose: () => void;
@@ -53,6 +54,9 @@ function PokemonView({
             <TypeBadge typeId={typeId} screenWidth={screenWidth} />
           </div>
         ))}
+      </div>
+      <div className="flex w-full">
+        <StatBars stats={pokemon.stats as StatArray}/>
       </div>
       <div className="flex items-center gap-3">
         <div className="font-pixel text-xl font-bold text-gray-200">
