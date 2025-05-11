@@ -11,6 +11,8 @@ import getSprite from "@/utils/getSprite";
 import { buildPokemonMoveTabs } from "./learnsetTabs";
 import { TypeBadge } from "../TypeBadges/TypeBadge";
 import StatBars from "./StatBars";
+import { FormeView } from "../FormeView/FormeView";
+import { hasForms } from "@/utils/speciesData";
 
 type PokemonModalProps = PokemonViewProps & {
   onClose: () => void;
@@ -48,7 +50,7 @@ function PokemonView({
         alt={pokemon.speciesName}
         className="h-[128px] w-[128px] object-contain"
       />
-      <div className="flex flex-row gap-1 mt-2">
+      <div className="mt-2 flex flex-row gap-1">
         {pokemon.types.map((typeId: number, index: number) => (
           <div key={index}>
             <TypeBadge typeId={typeId} screenWidth={screenWidth} />
@@ -81,6 +83,15 @@ function PokemonView({
             onClickPokemon={onSelectPokemon}
           />
         </div>
+        {hasForms(pokemon) && (
+          <div className="mb-3">
+            <FormeView
+              pokemon={pokemon}
+              isShiny={isShiny}
+              onClickPokemon={onSelectPokemon}
+            />
+          </div>
+        )}
         <div className="flex flex-wrap text-gray-100">
           <TypeMatchup pokemon={pokemon} />
         </div>

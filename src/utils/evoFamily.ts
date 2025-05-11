@@ -30,7 +30,7 @@ function findRootSpecies(speciesId: number): number {
     );
 
     if (!parent) break;
-    current = parent.dexId;
+    current = parent.index;
   }
 
   return current;
