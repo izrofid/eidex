@@ -33,7 +33,7 @@ export const SortBar: React.FC<SortBarProps> = ({
   const selected = statType ? `${sortBy}:${statType}` : sortBy;
 
   return (
-    <div className="flex w-full items-center bg-neutral-900/60">
+    <div className="flex w-full items-center justify-between bg-neutral-900/60">
       <RadioGroup
         value={selected}
         onChange={(val) => {
@@ -52,7 +52,7 @@ export const SortBar: React.FC<SortBarProps> = ({
             ? `${option.value}:${option.statType}`
             : option.value;
           return (
-            <Field className="w-14" key={option.label}>
+            <Field className="w-6 text-xs sm:text-base md:text-lg sm:w-10 md:w-14" key={option.label}>
               <Radio
                 value={value}
                 className="data-checked:border-b-emerald-400 data-checked:border-b-4 flex w-full select-none items-center justify-center border-b-4 border-transparent text-center text-gray-200 transition-colors"
