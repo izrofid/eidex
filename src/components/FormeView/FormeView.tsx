@@ -20,7 +20,7 @@ export const FormeView: React.FC<FormeViewProps> = ({
   );
 
   return (
-    <div className="neutral-box flex flex-row justify-evenly gap-2 rounded-md p-2">
+    <div className="neutral-box flex flex-row flex-wrap justify-evenly gap-2 rounded-md p-2">
       {altFormes.map((form: Pokemon) => (
         <div
           key={form.index}
