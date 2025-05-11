@@ -28,7 +28,7 @@ export default function StatBars({ stats }: StatBarsProps) {
   };
 
   return (
-    <div className="neutral-box flex w-full flex-col gap-1 rounded-sm p-2">
+    <div className="neutral-box flex w-full flex-col gap-1 rounded-sm p-2 select-none">
       {reorderedStats.map((value, i) => (
         <div
           key={STAT_LABELS[i]}
