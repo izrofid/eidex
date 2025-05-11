@@ -12,6 +12,7 @@ import { buildPokemonMoveTabs } from "./learnsetTabs";
 import { TypeBadge } from "../TypeBadges/TypeBadge";
 import StatBars from "./StatBars";
 import { FormeView } from "../FormeView/FormeView";
+import { hasForms } from "@/utils/speciesData";
 
 type PokemonModalProps = PokemonViewProps & {
   onClose: () => void;
@@ -82,7 +83,7 @@ function PokemonView({
             onClickPokemon={onSelectPokemon}
           />
         </div>
-        {pokemon.forms && (
+        {hasForms(pokemon) && (
           <div className="mb-3">
             <FormeView
               pokemon={pokemon}

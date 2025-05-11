@@ -18,3 +18,8 @@ export function getSpeciesData(speciesId: number): Pokemon {
   if (!species) throw new Error(`Species ${speciesId} not found`);
   return species
 }
+
+export function hasForms(pokemon: Pokemon): boolean {
+  const forms = speciesData.filter((species) => species.dexId === pokemon.dexId);
+  return forms.length > 1;
+}
