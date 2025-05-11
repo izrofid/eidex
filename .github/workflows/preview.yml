@@ -28,7 +28,7 @@ jobs:
         run: BASE_PATH='/' npm run build
 
       - name: Set CNAME for Preview
-        run : echo 'dex.emeraldimperium.net' > ./dist/CNAME
+        run : echo 'eidex.info' > ./dist/CNAME
 
       - name: Deploy to Preview Repo
         uses: peaceiris/actions-gh-pages@v3
