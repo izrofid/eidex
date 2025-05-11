@@ -1,4 +1,4 @@
-type MoveSource = "all" | "levelup" | "tm" | "tutor";
+type MoveSource = "all" | "levelup" | "tm" | "egg";
 
 interface MoveSourceDropdownProps {
   value: MoveSource;
@@ -15,7 +15,7 @@ const MoveSourceDropdown: React.FC<MoveSourceDropdownProps> = ({ value, onChange
       <option value="all">All</option>
       <option value="levelup">Lvl</option>
       <option value="tm">TM</option>
-      <option value="tutor">Tutor</option>
+      <option value="egg">Egg</option>
     </select>
   );
 };

@@ -9,7 +9,7 @@ export type SortBy = "dexId" | "name" | "stat" | "index";
 export type Ability = number;
 export type Abilities = Ability[];
 
-export type MoveSource = "all" | "levelup" | "tm" | "tutor";
+export type MoveSource = "all" | "levelup" | "tm" | "egg";
 
 export interface Pokemon {
   index: number;

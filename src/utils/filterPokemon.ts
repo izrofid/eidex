@@ -1,7 +1,5 @@
 import { Pokemon, FilterOptions, SortBy } from "../types";
 // import { getMoveData, getTMMove, getTutorMove } from "./moveData";
-import tmMoves from "../data/tmMoves.json";
-import tutorMoves from "../data/tutorMoves.json";
 
 function matchesNameFilter(pokemon: Pokemon, name?: string): boolean {
   return name
@@ -72,35 +70,28 @@ function matchesAbilityFilter(pokemon: Pokemon, abilityId?: number): boolean {
 function matchesMove(
   pokemon: Pokemon,
   moveId?: number,
-  source?: "all" | "levelup" | "tm" | "tutor",
+  source?: "all" | "levelup" | "tm" | "egg",
 ): boolean {
   if (!moveId) return true;
 
   // Helper to check TM moves
-  const hasTmMove = (pokemon.tmMoves ?? []).some((tmIndex) => {
-    const tmMoveId = (tmMoves as Record<string, number>)[tmIndex];
-    return tmMoveId === moveId;
-  });
+  const hasTmMove = pokemon.tmMoves ? pokemon.tmMoves.some((id) => id ===moveId): false
+  const hasEggMove = pokemon.eggMoves ? pokemon.eggMoves.some((id) => id ===moveId): false
 
   // Helper to check Tutor moves
-  const hasTutorMove = (pokemon.tutorMoves ?? []).some((tutorIndex) => {
-    const tutorMoveId = (tutorMoves as Record<string, number>)[tutorIndex];
-    return tutorMoveId === moveId;
-  });
 
   switch (source) {
     case "levelup":
       return pokemon.levelUpMoves.some(([id]) => id === moveId);
     case "tm":
       return hasTmMove;
-    case "tutor":
-      return hasTutorMove;
+    case "egg":
+      return hasEggMove;
     case "all":
     default:
       return (
         pokemon.levelUpMoves.some(([id]) => id === moveId) ||
-        hasTmMove ||
-        hasTutorMove
+        hasTmMove
       );
   }
 }
