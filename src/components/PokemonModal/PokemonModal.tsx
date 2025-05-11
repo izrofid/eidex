@@ -9,6 +9,7 @@ import TabbedInterface from "./TabbedInterface";
 import TypeMatchup from "./TypeMatchup";
 import getSprite from "@/utils/getSprite";
 import { buildPokemonMoveTabs } from "./learnsetTabs";
+import { TypeBadge } from "../TypeBadges/TypeBadge";
 
 type PokemonModalProps = PokemonViewProps & {
   onClose: () => void;
@@ -16,33 +17,43 @@ type PokemonModalProps = PokemonViewProps & {
 type PokemonViewProps = {
   pokemon: Pokemon | null;
   isShiny?: boolean;
+  screenWidth: string;
   onSelectPokemon: (pokemonId: number) => void;
 };
 
 function PokemonView({
   pokemon,
   isShiny,
+  screenWidth,
   onSelectPokemon,
 }: {
   pokemon: Pokemon;
   isShiny: boolean;
+  screenWidth: string;
   onSelectPokemon: (pokemonId: number) => void;
 }) {
   const [selectedAbility, setSelectedAbility] = useState<Ability | null>(null);
 
-  const displaySprite = getSprite(pokemon.index, isShiny)
+  const displaySprite = getSprite(pokemon.index, isShiny);
 
   const evoFamily = getEvolutionaryFamily(pokemon.index);
 
   const tabsData = buildPokemonMoveTabs(pokemon);
 
   return (
-    <div className="flex w-full flex-col items-center gap-1">
+    <div className="flex w-full flex-col items-center">
       <img
         src={displaySprite}
         alt={pokemon.speciesName}
         className="h-[128px] w-[128px] object-contain py-0"
       />
+      <div className="flex flex-row gap-1">
+        {pokemon.types.map((typeId: number, index: number) => (
+          <div key={index}>
+            <TypeBadge typeId={typeId} screenWidth={screenWidth} />
+          </div>
+        ))}
+      </div>
       <div className="flex items-center gap-3">
         <div className="font-pixel text-xl font-bold text-gray-200">
           {pokemon.nameKey}
@@ -50,10 +61,7 @@ function PokemonView({
         <div className="text-md font-pixel text-gray-400">#{pokemon.index}</div>
       </div>
       <div className="my-2 flex w-full flex-col">
-        <AbilityBox
-          key={pokemon.index}
-          abilities={pokemon.abilities}
-        />
+        <AbilityBox key={pokemon.index} abilities={pokemon.abilities} />
         <div className="w-full">
           <AbilityDescription
             selectedAbility={selectedAbility}
@@ -88,6 +96,7 @@ export function PokemonModal({
   pokemon,
   onClose,
   isShiny = false,
+  screenWidth,
   onSelectPokemon,
 }: PokemonModalProps) {
   if (!pokemon) return null;
@@ -105,6 +114,7 @@ export function PokemonModal({
         <PokemonView
           pokemon={pokemon}
           isShiny={isShiny}
+          screenWidth={screenWidth}
           onSelectPokemon={onSelectPokemon}
         />
       </div>

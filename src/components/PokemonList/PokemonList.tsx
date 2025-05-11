@@ -92,6 +92,7 @@ export function PokemonList({
         pokemon={selectedPokemon}
         onClose={() => setSelectedPokemon(null)}
         isShiny={isShiny}
+        screenWidth={screenWidth}
         onSelectPokemon={(id) => {
           const selected = fullPokemons.find((p) => p.index === id);
           setSelectedPokemon(selected || null);
