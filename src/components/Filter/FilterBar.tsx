@@ -5,6 +5,9 @@ import FilterMenu from "./FilterMenu";
 import abilities from "../../data/abilityData.json";
 import { getAbilityName } from "../../utils/abilityData";
 import { MoveSource } from "../../types";
+import { BsFillEraserFill } from "react-icons/bs";
+import { useState } from "react";
+import CurrentFilters from "./CurrentFilters";
 
 type FilterBarProps = {
   setFilters: React.Dispatch<React.SetStateAction<FilterOptions>>;
@@ -13,24 +16,41 @@ type FilterBarProps = {
 
 function FilterBar({ setFilters, filters }: FilterBarProps) {
   const handleNameSelect = (entry: ComboBoxEntry | null) => {
-    setFilters(prev => ({
+    setFilters((prev) => ({
       ...prev,
       name: entry ? entry.name : "",
     }));
   };
 
   const handleAbilitySelect = (entry: ComboBoxEntry | null) => {
-    setFilters(prev => ({
+    setFilters((prev) => ({
       ...prev,
       abilityId: entry ? entry.id : undefined,
     }));
   };
 
   const handleTypeSelect = (typeId: number | undefined) => {
-    setFilters(prev => ({
+    setFilters((prev) => ({
       ...prev,
       typeId,
     }));
+  };
+
+  // State to force remount of NameCombobox for clearing
+  const [nameComboKey, setNameComboKey] = useState(0);
+
+  // Add a handler to clear all filters (matches FilterMenu's handleClearFilters)
+  const handleClearAllFilters = () => {
+    setFilters((prev) => ({
+      ...prev,
+      name: "",
+      typeId: undefined,
+      abilityId: undefined,
+      moveId: undefined,
+      moveName: undefined,
+      moveSource: "all",
+    }));
+    setNameComboKey((k) => k + 1);
   };
 
   // Find the current ability ComboBoxEntry from abilityId, using the same reference as AbilityCombobox
@@ -44,10 +64,10 @@ function FilterBar({ setFilters, filters }: FilterBarProps) {
   // Move filter state and handlers
   const moveSource = (filters.moveSource as MoveSource) || "all";
   const handleMoveSourceChange = (source: MoveSource) => {
-    setFilters(prev => ({ ...prev, moveSource: source }));
+    setFilters((prev) => ({ ...prev, moveSource: source }));
   };
   const handleMoveSelect = (entry: ComboBoxEntry | null) => {
-    setFilters(prev => ({
+    setFilters((prev) => ({
       ...prev,
       moveId: entry ? entry.id : undefined,
       moveName: entry ? entry.name : undefined,
@@ -61,19 +81,49 @@ function FilterBar({ setFilters, filters }: FilterBarProps) {
       : null;
 
   return (
-    <div className="flex flex-wrap items-center justify-between gap-3 rounded-t-lg bg-neutral-900/90 px-3 py-2 shadow-lg">
-      <NameCombobox onSelect={handleNameSelect} />
-      <FilterMenu
-        onAbilitySelect={handleAbilitySelect}
-        onTypeSelect={handleTypeSelect}
-        typeValue={filters.typeId}
-        abilityValue={abilityValue}
-        nameValue={filters.name ?? ""}
-        moveSource={moveSource}
-        onMoveSourceChange={handleMoveSourceChange}
-        onMoveSelect={handleMoveSelect}
-        moveValue={moveValue}
-      />
+    <div className="flex flex-col">
+      <div className="flex flex-wrap items-center justify-between gap-3 rounded-t-lg bg-neutral-900/90 px-3 py-2 shadow-lg">
+        <NameCombobox key={nameComboKey} onSelect={handleNameSelect} />
+        <span
+          className="cursor-pointer rounded-sm p-1 text-white hover:bg-neutral-600/80"
+          onClick={handleClearAllFilters}
+          title="Clear all filters"
+        >
+          <BsFillEraserFill size={20} />
+        </span>
+        <FilterMenu
+          onAbilitySelect={handleAbilitySelect}
+          onTypeSelect={handleTypeSelect}
+          typeValue={filters.typeId}
+          abilityValue={abilityValue}
+          nameValue={filters.name ?? ""}
+          moveSource={moveSource}
+          onMoveSourceChange={handleMoveSourceChange}
+          onMoveSelect={handleMoveSelect}
+          moveValue={moveValue}
+        />
+      </div>
+      <div
+        className={`px-3 ${
+          !filters.name &&
+          filters.typeId === undefined &&
+          !abilityValue &&
+          !moveValue
+            ? "hidden"
+            : ""
+        }`}
+      >
+        <CurrentFilters
+          name={filters.name}
+          onClearName={() => handleNameSelect(null)}
+          typeId={filters.typeId}
+          onClearType={() => handleTypeSelect(undefined)}
+          abilityValue={abilityValue}
+          onClearAbility={() => handleAbilitySelect(null)}
+          moveValue={moveValue}
+          onClearMove={() => handleMoveSelect(null)}
+        />
+      </div>
     </div>
   );
 }

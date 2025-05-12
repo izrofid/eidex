@@ -4,10 +4,9 @@ import { useState, useEffect } from "react";
 import { ComboBoxEntry } from "./GenericComboBox";
 import AbilityCombobox from "./AbilityCombobox";
 import TypeDropdown from "./TypeDropdown";
-import { getTypeName } from "@/utils/typeInfo";
-import FilterPill from "./FilterPill";
 import MoveFilterGroup from "./MoveFilterGroup";
 import { MoveSource } from "@/types";
+import CurrentFilters from "./CurrentFilters";
 
 function FilterMenu({
   onAbilitySelect,
@@ -100,40 +99,16 @@ function FilterMenu({
                 handleMoveSelect={setStagedMove}
               />
             </div>
-            <div className="my-2 mb-4 flex flex-wrap gap-2">
-              {nameValue && (
-                <FilterPill
-                  bg="bg-emerald-700"
-                  onClick={onNameClear}
-                >
-                  Name: {nameValue}
-                </FilterPill>
-              )}
-              {stagedType !== undefined && (
-                <FilterPill
-                  bg="bg-blue-700"
-                  onClick={() => setStagedType(undefined)}
-                >
-                  Type: {stagedType === undefined ? "All" : getTypeName(stagedType)}
-                </FilterPill>
-              )}
-              {stagedAbility && (
-                <FilterPill
-                  bg="bg-purple-700"
-                  onClick={() => setStagedAbility(null)}
-                >
-                  Ability: {stagedAbility.name}
-                </FilterPill>
-              )}
-              {stagedMove && (
-                <FilterPill
-                  bg="bg-orange-700"
-                  onClick={() => setStagedMove(null)}
-                >
-                  Move: {stagedMove.name}
-                </FilterPill>
-              )}
-            </div>
+            <CurrentFilters
+              name={nameValue}
+              onClearName={onNameClear}
+              typeId={stagedType}
+              onClearType={() => setStagedType(undefined)}
+              abilityValue={stagedAbility}
+              onClearAbility={() => setStagedAbility(null)}
+              moveValue={stagedMove}
+              onClearMove={() => setStagedMove(null)}
+            />
             <div className="flex items-center gap-2">
               <button
                 onClick={handleApplyFilters}
