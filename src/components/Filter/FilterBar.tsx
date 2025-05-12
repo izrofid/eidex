@@ -101,6 +101,10 @@ function FilterBar({ setFilters, filters }: FilterBarProps) {
           onMoveSourceChange={handleMoveSourceChange}
           onMoveSelect={handleMoveSelect}
           moveValue={moveValue}
+          onNameClear={() => {
+            handleNameSelect(null);
+            setNameComboKey((k) => k + 1);
+          }}
         />
       </div>
       <div
@@ -115,11 +119,12 @@ function FilterBar({ setFilters, filters }: FilterBarProps) {
       >
         <CurrentFilters
           name={filters.name}
-          onClearName={() => handleNameSelect(null)}
+          onClearName={() => {handleNameSelect(null); setNameComboKey((k) => k + 1)}}
           typeId={filters.typeId}
           onClearType={() => handleTypeSelect(undefined)}
           abilityValue={abilityValue}
           onClearAbility={() => handleAbilitySelect(null)}
+          moveSource={moveSource}
           moveValue={moveValue}
           onClearMove={() => handleMoveSelect(null)}
         />

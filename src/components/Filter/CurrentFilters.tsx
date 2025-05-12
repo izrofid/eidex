@@ -1,6 +1,7 @@
 import FilterPill from "./FilterPill";
 import { getTypeName } from "../../utils/typeInfo";
 import { ComboBoxEntry } from "./GenericComboBox";
+import { MoveSource } from "@/types";
 
 type CurrentFiltersProps = {
   name?: string;
@@ -9,6 +10,7 @@ type CurrentFiltersProps = {
   onClearType?: () => void;
   abilityValue?: ComboBoxEntry | null;
   onClearAbility?: () => void;
+  moveSource?: MoveSource;
   moveValue?: ComboBoxEntry | null;
   onClearMove?: () => void;
 };
@@ -20,11 +22,25 @@ export default function CurrentFilters({
   onClearType,
   abilityValue,
   onClearAbility,
+  moveSource,
   moveValue,
   onClearMove,
 }: CurrentFiltersProps) {
+
+
+  const moveLabelMap: Record<string, string> = {
+    tm: "TM",
+    levelup: "Lvl",
+    egg: "Egg",
+    all: "All",
+  };
+
+  const movePillLabel: string = moveSource && moveLabelMap[moveSource]
+    ? `${moveLabelMap[moveSource]} Move`
+    : "Move";
+
   return (
-    <div className="flex flex-wrap gap-2 my-2">
+    <div className="my-2 flex flex-wrap gap-2">
       {name && (
         <FilterPill bg="bg-emerald-700" onClick={onClearName}>
           Name: {name}
@@ -42,7 +58,7 @@ export default function CurrentFilters({
       )}
       {moveValue && (
         <FilterPill bg="bg-orange-700" onClick={onClearMove}>
-          Move: {moveValue.name}
+          {movePillLabel}: {moveValue.name}
         </FilterPill>
       )}
     </div>

@@ -26,7 +26,7 @@ function FilterMenu({
   abilityValue: ComboBoxEntry | null;
   nameValue: string;
   onNameClear?: () => void;
-  moveSource: string;
+  moveSource: MoveSource;
   onMoveSourceChange: (source: MoveSource) => void;
   onMoveSelect: (entry: ComboBoxEntry | null) => void;
   moveValue: ComboBoxEntry | null;
@@ -38,6 +38,7 @@ function FilterMenu({
     abilityValue,
   );
   const [stagedMove, setStagedMove] = useState<ComboBoxEntry | null>(moveValue);
+  const [stagedMoveSource, setStagedMoveSource] = useState<MoveSource>(moveSource);
 
   // Keep stagedType in sync with prop
   useEffect(() => {
@@ -54,9 +55,21 @@ function FilterMenu({
     setStagedMove(moveValue);
   }, [moveValue]);
 
+  // Keep stagedMoveSource in sync with prop
+  useEffect(() => {
+    setStagedMoveSource(moveSource);
+  }, [moveSource]);
+
+  // Handler to apply stagedMoveSource when a move is selected
+  const handleMoveSelect = (entry: ComboBoxEntry | null) => {
+    setStagedMove(entry);
+    onMoveSourceChange(stagedMoveSource); // Immediately apply the current staged move source
+  };
+
   const handleApplyFilters = () => {
     onTypeSelect(stagedType);
     onAbilitySelect(stagedAbility);
+    onMoveSourceChange(stagedMoveSource);
     onMoveSelect(stagedMove);
     setIsOpen(false);
   };
@@ -65,8 +78,10 @@ function FilterMenu({
     setStagedType(undefined);
     setStagedAbility(null);
     setStagedMove(null);
+    setStagedMoveSource("all");
     onTypeSelect(undefined);
     onAbilitySelect(null);
+    onMoveSourceChange("all");
     onMoveSelect(null);
     setIsOpen(false);
   };
@@ -94,9 +109,9 @@ function FilterMenu({
                 value={stagedAbility}
               />
               <MoveFilterGroup
-                moveSource={moveSource as MoveSource}
-                onMoveSourceChange={onMoveSourceChange}
-                handleMoveSelect={setStagedMove}
+                moveSource={stagedMoveSource}
+                onMoveSourceChange={setStagedMoveSource}
+                handleMoveSelect={handleMoveSelect}
               />
             </div>
             <CurrentFilters
@@ -106,6 +121,7 @@ function FilterMenu({
               onClearType={() => setStagedType(undefined)}
               abilityValue={stagedAbility}
               onClearAbility={() => setStagedAbility(null)}
+              moveSource={moveSource as MoveSource}
               moveValue={stagedMove}
               onClearMove={() => setStagedMove(null)}
             />
