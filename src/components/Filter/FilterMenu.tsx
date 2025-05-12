@@ -85,9 +85,9 @@ function FilterMenu({
         className="relative z-50"
       >
         <div className="backdrop-blur-xs fixed inset-0 flex w-screen items-center justify-center bg-neutral-900/70 p-4">
-          <DialogPanel className="w-full max-w-2xl space-y-4 border bg-neutral-900 p-12 text-white">
+          <DialogPanel className="w-full max-w-xl space-y-2 border-1 border-zinc-500/80 rounded-md bg-neutral-900 p-4 text-white">
             <DialogTitle className="font-bold">Choose Filters</DialogTitle>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-2 justify-center">
               <TypeDropdown value={stagedType} onChange={setStagedType} />
               <AbilityCombobox
                 onSelect={setStagedAbility}

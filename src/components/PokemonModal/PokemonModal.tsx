@@ -13,15 +13,18 @@ import { TypeBadge } from "../TypeBadges/TypeBadge";
 import StatBars from "./StatBars";
 import { FormeView } from "../FormeView/FormeView";
 import { hasForms } from "@/utils/speciesData";
+import { Switch } from "@headlessui/react";
 
 type PokemonModalProps = PokemonViewProps & {
   onClose: () => void;
+  onChangeShiny: () => void;
 };
 type PokemonViewProps = {
   pokemon: Pokemon | null;
   isShiny?: boolean;
   screenWidth: string;
   onSelectPokemon: (pokemonId: number) => void;
+
 };
 
 function PokemonView({
@@ -114,6 +117,7 @@ export function PokemonModal({
   isShiny = false,
   screenWidth,
   onSelectPokemon,
+  onChangeShiny,
 }: PokemonModalProps) {
   if (!pokemon) return null;
 
@@ -126,7 +130,18 @@ export function PokemonModal({
         className="w-xl no-scrollbar relative my-5 h-[95dvh] max-h-screen justify-normal overflow-y-auto rounded-lg border border-gray-100 bg-zinc-800 p-6"
         onClick={(e) => e.stopPropagation()}
       >
-        <CloseButton onClick={onClose} />
+        <span className="self-center absolute left-3 flex flex-row gap-1 items-center">
+          {" "}
+          <img src="shinycharm.png" className="object-contain h-7 w-7"></img>
+          <Switch
+            checked={isShiny}
+            onChange={onChangeShiny}
+            className="data-checked:bg-emerald-500 group inline-flex h-5 w-10 items-center rounded-full bg-gray-500 transition cursor-pointer"
+          >
+            <span className="group-data-checked:translate-x-6 size-3 translate-x-1 rounded-full bg-white transition" />
+          </Switch>
+        </span>
+        <span className="self-center absolute right-3 flex flex-row gap-1 items-center"><CloseButton onClick={onClose} /></span>
         <PokemonView
           pokemon={pokemon}
           isShiny={isShiny}

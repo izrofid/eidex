@@ -5,6 +5,7 @@ import FilterBar from "./components/Filter/FilterBar";
 import { useState, useMemo, useEffect } from "react";
 import { FilterOptions, SortBy } from "./types";
 import CreditsButton from "./components/CreditsButton";
+import { Switch } from "@headlessui/react";
 
 const pokemonData = Object.values(speciesData);
 
@@ -83,25 +84,16 @@ function App() {
 
         {/* Shiny toggle UI */}
         <div className="flex items-center justify-between gap-2 bg-neutral-800/30 px-3 py-2">
-          <div className="flex flex-row items-center">
-            <img
-              src="shinycharm.png"
-              alt="Shiny Mode"
-              className="h-6.5 w-6.5 object-contain"
-              title="Shiny Mode"
-            />
-            <button
-              type="button"
-              role="switch"
-              aria-checked={isShiny}
-              onClick={() => setIsShiny((prev) => !prev)}
-              className={`relative inline-flex h-5 w-10 items-center rounded-full transition-colors duration-200 focus:outline-none ${isShiny ? "bg-blue-600" : "bg-zinc-600"}`}
-            >
-              <span
-                className={`inline-block h-3 w-3 transform rounded-full bg-white shadow transition-transform duration-200 ${isShiny ? "translate-x-5" : "translate-x-1"}`}
-              />
-            </button>
-          </div>
+            <span className="flex flex-row gap-1 items-center">
+          <img src="shinycharm.png" className="object-contain h-7 w-7"></img>
+          <Switch
+            checked={isShiny}
+            onChange={()=>setIsShiny((prev) => !prev)}
+            className="data-checked:bg-emerald-500 group inline-flex h-5 w-10 items-center rounded-full bg-gray-500 transition cursor-pointer"
+          >
+            <span className="group-data-checked:translate-x-6 size-3 translate-x-1 rounded-full bg-white transition" />
+          </Switch>
+          </span>
           <CreditsButton />
         </div>
 
@@ -115,6 +107,7 @@ function App() {
           setSortStat={setSortStat}
           descending={descending}
           setDescending={setDescending}
+          onChangeShiny={() => setIsShiny((prev) => !prev)}
         />
       </div>
     </div>

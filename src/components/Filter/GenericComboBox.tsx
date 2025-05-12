@@ -77,7 +77,7 @@ function GenericComboBox({
   return (
     <div
       ref={parentRef}
-      className="relative flex w-full min-w-[160px] flex-1 rounded-md bg-neutral-800"
+      className="relative flex flex-1 rounded-md bg-neutral-800"
     >
       <span className="pointer-events-none absolute left-2 top-1/2 -translate-y-1/2 text-gray-400">
         {renderedIcon}

@@ -17,6 +17,7 @@ type PokemonListProps = {
   setSortStat: (statType?: string) => void;
   descending: boolean;
   setDescending: (descending: boolean) => void;
+  onChangeShiny: () => void;
 };
 
 export function PokemonList({
@@ -29,6 +30,7 @@ export function PokemonList({
   setSortStat,
   descending,
   setDescending: setDescending,
+  onChangeShiny,
 }: PokemonListProps) {
   const [visibleCount, setVisibleCount] = useState(10);
   const [selectedPokemon, setSelectedPokemon] = useState<Pokemon | null>(null);
@@ -92,6 +94,7 @@ export function PokemonList({
           const selected = fullPokemons.find((p) => p.index === id);
           setSelectedPokemon(selected || null);
         }}
+        onChangeShiny={onChangeShiny}
       />
     </div>
   );
