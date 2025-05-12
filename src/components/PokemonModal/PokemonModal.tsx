@@ -8,7 +8,7 @@ import AbilityDescription from "./AbilityDescription";
 import TabbedInterface from "./TabbedInterface";
 import TypeMatchup from "./TypeMatchup";
 import getSprite from "@/utils/getSprite";
-import { buildPokemonMoveTabs } from "./learnsetTabs";
+import { buildPokemonMoveTabs } from "./Learnset/learnsetTabs";
 import { TypeBadge } from "../TypeBadges/TypeBadge";
 import StatBars from "./StatBars";
 import { FormeView } from "../FormeView/FormeView";
