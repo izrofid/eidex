@@ -7,7 +7,6 @@ import {
 import {
   useState,
   useRef,
-  useLayoutEffect,
   ReactNode,
   ReactElement,
   isValidElement,
@@ -37,13 +36,16 @@ function GenericComboBox({
   const [query, setQuery] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
   const parentRef = useRef<HTMLDivElement>(null);
-  const [comboWidth, setComboWidth] = useState<number>();
+  // const [comboWidth, setComboWidth] = useState<number>();
 
-  useLayoutEffect(() => {
-    if (parentRef.current) {
-      setComboWidth(parentRef.current.offsetWidth);
-    }
-  }, []);
+  // useLayoutEffect(() => {
+  //   // Only set comboWidth if the parent is visible and has a reasonable width
+  //   if (parentRef.current) {
+  //     const width = parentRef.current.offsetWidth;
+  //     // Use a sensible default if width is 0 or very small (e.g., on initial modal render)
+  //     setComboWidth(width && width > 40 ? width : 200);
+  //   }
+  // }, []);
 
   useEffect(() => {
     setSelected(value);
@@ -93,12 +95,22 @@ function GenericComboBox({
           displayValue={(entry: ComboBoxEntry) => entry?.name}
           onChange={(event) => setQuery(event.target.value)}
           placeholder={placeholder || "Select an entry..."}
-          className="h-9 w-full min-w-[120px] rounded-md border-0 bg-neutral-800 px-2 pl-9 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-blue-400"
+          className="relative h-9 w-full min-w-max rounded-md border-0 bg-neutral-800 px-2 pl-9 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-blue-400"
         />
+        <span
+          className="absolute right-2 self-center inline-flex select-none items-center text-center text-gray-100 transition-colors hover:text-red-400 active:text-fuchsia-600"
+          onClick={() => {
+            setSelected(null);
+            setQuery("");
+            onSelect(null);
+          }}
+        >
+          <MdClose size={20} />
+        </span>
         <ComboboxOptions
           anchor="bottom start"
-          style={comboWidth ? { width: comboWidth } : { minWidth: 160 }}
-          className="no-scrollbar rounded-sm border border-gray-600 bg-neutral-800 text-white shadow-md [--anchor-gap:4px]"
+          // style={comboWidth && comboWidth > 40 ? { width: comboWidth } : { minWidth: 200 }}
+          className="w-(--input-width) no-scrollbar rounded-sm border border-gray-600 bg-neutral-800 text-white shadow-md [--anchor-gap:4px]"
         >
           {({ option: entry }) => (
             <ComboboxOption
@@ -111,16 +123,6 @@ function GenericComboBox({
           )}
         </ComboboxOptions>
       </Combobox>
-      <span
-        className="inline-flex select-none items-center px-1 text-center align-middle text-gray-100 transition-colors hover:text-red-400 active:text-fuchsia-600"
-        onClick={() => {
-          setSelected(null);
-          setQuery("");
-          onSelect(null);
-        }}
-      >
-        <MdClose size={20} />
-      </span>
     </div>
   );
 }
