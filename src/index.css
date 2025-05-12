@@ -62,6 +62,18 @@ input[type="number"] {
   .neutral-box {
     @apply bg-neutral-900/30 border-neutral-600 border-1;
   }
+  .pokemon-sprite {
+    width: calc(32px * 5);
+    position: absolute;
+    image-rendering: pixelated;
+  }
+
+  .sprite-box {
+    width: calc(32px * 5);
+    height: calc(32px * 5);
+    overflow: hidden;
+    position: relative;
+  }
 
 }
 

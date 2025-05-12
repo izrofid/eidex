@@ -11,7 +11,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: process.env.BASE_PATH || '/',
+  base: process.env.BASE_PATH || '/eidex',
   css: {
     postcss: {
       plugins: [tailwindcss()],
