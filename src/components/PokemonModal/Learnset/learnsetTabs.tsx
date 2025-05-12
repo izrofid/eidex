@@ -1,6 +1,6 @@
 import { findRootSpecies } from "@/utils/evoFamily";
-import { Pokemon } from "../../types";
-import { getMoveData } from "../../utils/moveData";
+import { Pokemon } from "../../../types";
+import { getMoveData } from "../../../utils/moveData";
 import MoveEntry from "./MoveEntry";
 import { getSpeciesData } from "@/utils/speciesData";
 

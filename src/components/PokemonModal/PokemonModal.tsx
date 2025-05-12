@@ -7,7 +7,7 @@ import { getEvolutionaryFamily } from "@/utils/evoFamily";
 import AbilityDescription from "./AbilityDescription";
 import TabbedInterface from "./TabbedInterface";
 import TypeMatchup from "./TypeMatchup";
-import { buildPokemonMoveTabs } from "./learnsetTabs";
+import { buildPokemonMoveTabs } from "./Learnset/learnsetTabs";
 import { TypeBadge } from "../TypeBadges/TypeBadge";
 import StatBars from "./StatBars";
 import { FormeView } from "../FormeView/FormeView";
@@ -36,8 +36,6 @@ function PokemonView({
   onSelectPokemon: (pokemonId: number) => void;
 }) {
   const [selectedAbility, setSelectedAbility] = useState<Ability | null>(null);
-
-  // const displaySprite = getSprite(pokemon.index, isShiny);
 
   const evoFamily = getEvolutionaryFamily(pokemon.index);
 
