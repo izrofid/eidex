@@ -10,7 +10,7 @@ const MoveSourceDropdown: React.FC<MoveSourceDropdownProps> = ({ value, onChange
     <select
       value={value}
       onChange={(e) => onChange(e.target.value as MoveSource)}
-      className="h-9 w-24 rounded-md border-0 bg-neutral-800 pl-2 pr-6 text-sm text-white focus:ring-1 focus:ring-blue-400"
+      className="h-9 w-17 rounded-md border-0 bg-neutral-800 pl-2 pr-6 text-sm text-white focus:ring-1 focus:ring-blue-400"
     >
       <option value="all">All</option>
       <option value="levelup">Lvl</option>

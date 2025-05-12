@@ -12,6 +12,7 @@ import {
   ReactElement,
   isValidElement,
   cloneElement,
+  useEffect,
 } from "react";
 import { MdSearch, MdClose } from "react-icons/md";
 
@@ -22,6 +23,7 @@ type GenericComboBoxProps = {
   onSelect: (entry: ComboBoxEntry | null) => void;
   placeholder?: string;
   icon?: ReactNode;
+  value?: ComboBoxEntry | null;
 };
 
 function GenericComboBox({
@@ -29,23 +31,23 @@ function GenericComboBox({
   onSelect,
   placeholder,
   icon = <MdSearch size={20} />,
+  value = null,
 }: GenericComboBoxProps) {
-  const [selected, setSelected] = useState<ComboBoxEntry | null>(null);
+  const [selected, setSelected] = useState<ComboBoxEntry | null>(value);
   const [query, setQuery] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
   const parentRef = useRef<HTMLDivElement>(null);
   const [comboWidth, setComboWidth] = useState<number>();
-
-  const renderedIcon =
-    isValidElement(icon) && typeof icon.type === "function"
-      ? cloneElement(icon as ReactElement<{ size?: number }>, { size: 20 })
-      : icon;
 
   useLayoutEffect(() => {
     if (parentRef.current) {
       setComboWidth(parentRef.current.offsetWidth);
     }
   }, []);
+
+  useEffect(() => {
+    setSelected(value);
+  }, [value]);
 
   const filteredEntries =
     query === ""
@@ -56,15 +58,19 @@ function GenericComboBox({
 
   const handleChange = (entry: ComboBoxEntry | null) => {
     setSelected(entry);
-    onSelect(entry); // Notify parent immediately on selection
+    onSelect(entry);
   };
 
   const handleClose = () => {
     setTimeout(() => {
       inputRef.current?.blur();
-      // If nothing is selected, notify parent now
     }, 0);
   };
+
+  const renderedIcon =
+    isValidElement(icon) && typeof icon.type === "function"
+      ? cloneElement(icon as ReactElement<{ size?: number }>, { size: 20 })
+      : icon;
 
   return (
     <div
@@ -86,11 +92,6 @@ function GenericComboBox({
           aria-label="Enter something"
           displayValue={(entry: ComboBoxEntry) => entry?.name}
           onChange={(event) => setQuery(event.target.value)}
-          // onFocus={() => {
-          //   setQuery("");
-          //   setSelected(null);
-          // }}
-          // // To clear input when user clicks
           placeholder={placeholder || "Select an entry..."}
           className="h-9 w-full min-w-max rounded-md border-0 bg-neutral-800 px-2 pl-9 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-blue-400"
         />

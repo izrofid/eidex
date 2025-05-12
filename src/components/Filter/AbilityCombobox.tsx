@@ -11,19 +11,20 @@ const abilityIDMap: ComboBoxEntry[] = abilities
   }))
   .sort((a, b) => a.name.localeCompare(b.name));
 
-type ComboBoxDemoProps = {
+type AbilityComboboxProps = {
   onSelect: (entry: ComboBoxEntry | null) => void;
+  value?: ComboBoxEntry | null;
 };
 
-function AbilityCombobox({ onSelect }: ComboBoxDemoProps) {
+function AbilityCombobox({ onSelect, value }: AbilityComboboxProps) {
   const abilityEntries: ComboBoxEntry[] = useMemo(() => abilityIDMap, []);
-
   return (
     <GenericComboBox
       entries={abilityEntries}
       onSelect={onSelect}
       placeholder="Select an ability..."
       icon={<IoRibbon />}
+      value={value ?? null}
     />
   );
 }

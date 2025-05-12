@@ -1,65 +1,78 @@
 import { FilterOptions } from "../../types";
-import TypeDropdown from "./TypeDropdown";
-import StatFilter from "./StatFilter";
-import MoveFilterGroup from "./MoveFilterGroup";
 import NameCombobox from "./NameCombobox";
 import { ComboBoxEntry } from "./GenericComboBox";
-import AbilityCombobox from "./AbilityCombobox";
+import FilterMenu from "./FilterMenu";
+import abilities from "../../data/abilityData.json";
+import { getAbilityName } from "../../utils/abilityData";
+import { MoveSource } from "../../types";
 
 type FilterBarProps = {
-  filters: FilterOptions;
   setFilters: React.Dispatch<React.SetStateAction<FilterOptions>>;
+  filters: FilterOptions;
 };
 
-function FilterBar({ filters, setFilters }: FilterBarProps) {
-  const moveSource = filters.moveSource || "all";
-
-  function handleMoveChange(entry: ComboBoxEntry | null) {
-    setFilters((prev) => ({
-      ...prev,
-      moveId: entry ? entry.id : undefined, // Set moveId for filtering
-      moveName: entry ? entry.name : "",    // (Optional) Keep moveName for display
-    }));
-  }
-
+function FilterBar({ setFilters, filters }: FilterBarProps) {
   const handleNameSelect = (entry: ComboBoxEntry | null) => {
-    setFilters((prev) => ({
+    setFilters(prev => ({
       ...prev,
-      name: entry ? entry.name : "", // Use the selected name
+      name: entry ? entry.name : "",
     }));
   };
 
   const handleAbilitySelect = (entry: ComboBoxEntry | null) => {
-    setFilters((prev) => ({
+    setFilters(prev => ({
       ...prev,
-      abilityId: entry ? entry.id : undefined, // Use the selected ability
+      abilityId: entry ? entry.id : undefined,
     }));
   };
 
+  const handleTypeSelect = (typeId: number | undefined) => {
+    setFilters(prev => ({
+      ...prev,
+      typeId,
+    }));
+  };
+
+  // Find the current ability ComboBoxEntry from abilityId, using the same reference as AbilityCombobox
+  const abilityId = filters.abilityId;
+  const abilityValue = abilityId
+    ? abilities
+        .map((a) => ({ id: a.id, name: getAbilityName(a.id) }))
+        .find((entry) => entry.id === abilityId) || null
+    : null;
+
+  // Move filter state and handlers
+  const moveSource = (filters.moveSource as MoveSource) || "all";
+  const handleMoveSourceChange = (source: MoveSource) => {
+    setFilters(prev => ({ ...prev, moveSource: source }));
+  };
+  const handleMoveSelect = (entry: ComboBoxEntry | null) => {
+    setFilters(prev => ({
+      ...prev,
+      moveId: entry ? entry.id : undefined,
+      moveName: entry ? entry.name : undefined,
+    }));
+  };
+
+  // Derive moveValue from filters.moveId and filters.moveName
+  const moveValue: ComboBoxEntry | null =
+    filters.moveId && filters.moveName
+      ? { id: filters.moveId, name: filters.moveName }
+      : null;
+
   return (
     <div className="flex flex-wrap items-center justify-between gap-3 rounded-t-lg bg-neutral-900/90 px-3 py-2 shadow-lg">
-
       <NameCombobox onSelect={handleNameSelect} />
-      <TypeDropdown
-        value={filters.typeId}
-        onChange={(typeId) => setFilters((prev) => ({ ...prev, typeId }))}
-      />
-      <StatFilter
-        minStat={filters.minStat}
-        statType={filters.statType}
-        onMinStatChange={(minStat) =>
-          setFilters((prev) => ({ ...prev, minStat }))
-        }
-        onStatTypeChange={(statType) =>
-          setFilters((prev) => ({ ...prev, statType }))
-        }
-      />
-      <AbilityCombobox onSelect={handleAbilitySelect} />
-      <MoveFilterGroup 
+      <FilterMenu
+        onAbilitySelect={handleAbilitySelect}
+        onTypeSelect={handleTypeSelect}
+        typeValue={filters.typeId}
+        abilityValue={abilityValue}
+        nameValue={filters.name ?? ""}
         moveSource={moveSource}
-        onMoveSourceChange={(source) => setFilters((prev) => ({ ...prev, moveSource: source }))}
-        handleMoveSelect={handleMoveChange}
-        
+        onMoveSourceChange={handleMoveSourceChange}
+        onMoveSelect={handleMoveSelect}
+        moveValue={moveValue}
       />
     </div>
   );
