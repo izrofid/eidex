@@ -46,7 +46,7 @@ export const SortBar: React.FC<SortBarProps> = ({
             <Button
               key={option.label}
               data-selected={isSelected}
-              className="font-pixel md:text-md border-b-3 flex w-8 md:w-10 cursor-pointer items-center justify-center md:gap-2 border-transparent text-center text-xs md:text-sm text-gray-300 data-[selected=true]:border-emerald-400 lg:text-lg"
+              className="font-pixel md:text-md border-b-3 flex w-8 cursor-pointer items-center justify-center border-transparent text-center text-xs text-gray-300 data-[selected=true]:border-emerald-400 md:w-10 md:gap-2 md:text-sm lg:text-lg"
               onClick={() => {
                 if (isSelected) {
                   if (onDirectionChange) onDirectionChange(!descending);
@@ -65,7 +65,14 @@ export const SortBar: React.FC<SortBarProps> = ({
         })}
       </div>
       {/* Direction marker */}
-      <div className="pr-1 text-emerald-300">
+      <div
+        className="select-none pr-1 text-emerald-300"
+        onClick={() => {
+          if (onDirectionChange) {
+            onDirectionChange(!descending);
+          }
+        }}
+      >
         {descending ? (
           <PiSortAscending size={24} />
         ) : (
