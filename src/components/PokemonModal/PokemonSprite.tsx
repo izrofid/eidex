@@ -1,4 +1,4 @@
-import { useEffect,  useState } from "react";
+import { useEffect, useState } from "react";
 import { animated } from "react-spring";
 import { useAnimConfig } from "@/utils/animConfigs";
 import getSprite from "@/utils/getSprite";
@@ -13,9 +13,9 @@ const PokemonSprite = ({
   isOpen: boolean;
   isShiny: boolean;
 }) => {
-  const [displaySprite, setDisplaySprite] = useState(
-    `sprites/anim/${spriteIndex}/anim_front.webp`,
-  );
+  const imgDir = `sprites/${isShiny ? "anim_shiny" : "anim"}/${spriteIndex}/anim_front.webp`;
+
+  const [displaySprite, setDisplaySprite] = useState(imgDir);
   const [frame, setFrame] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -26,20 +26,19 @@ const PokemonSprite = ({
     setIsRunning(true);
     setFrame(0); // Reset to first state
   };
-  
+
   const handleSpriteError = ({
     currentTarget,
   }: React.SyntheticEvent<HTMLImageElement, Event>) => {
     currentTarget.onerror = null; // prevents looping
-    setIsRunning(false)
+    setIsRunning(false);
     setDisplaySprite(getSprite(spriteIndex, isShiny));
   };
+  /**
+   * Need this incase user clicks Evo form so `displaySprite` changes
+   */
   useEffect(() => {
-    if (isShiny) {
-      setDisplaySprite(getSprite(spriteIndex, isShiny));
-      return;
-    }
-    setDisplaySprite(`sprites/anim/${spriteIndex}/anim_front.webp`);
+    setDisplaySprite(imgDir);
   }, [spriteIndex, isShiny]);
 
   useEffect(() => {
@@ -77,14 +76,10 @@ const PokemonSprite = ({
         className="pokemon-sprite"
         onError={handleSpriteError}
         onLoad={() => setImageLoaded(true)}
-        style={
-          isShiny === true
-            ? {}
-            : {
-                ...animeConfig,
-                y: frame === 0 ? "0px" : "-50%",
-              }
-        }
+        style={{
+          ...animeConfig,
+          y: frame === 0 ? "0px" : "-50%",
+        }}
       />
     </div>
   );
