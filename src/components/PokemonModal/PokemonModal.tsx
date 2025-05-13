@@ -12,39 +12,24 @@ import { buildPokemonMoveTabs } from "./Learnset/learnsetTabs";
 import { TypeBadge } from "../TypeBadges/TypeBadge";
 import StatBars from "./StatBars";
 import { FormeView } from "../FormeView/FormeView";
-import { hasForms } from "@/utils/speciesData";
+import { getSpeciesData, hasForms } from "@/utils/speciesData";
 import { Switch } from "@headlessui/react";
+import { useUIStore } from "@/stores/uiStore";
+import { useScreenWidth } from "@/hooks/useScreenWidth";
 
-type PokemonModalProps = PokemonViewProps & {
-  onClose: () => void;
-  onChangeShiny: () => void;
-};
-type PokemonViewProps = {
-  pokemon: Pokemon | null;
-  isShiny?: boolean;
-  screenWidth: string;
-  onSelectPokemon: (pokemonId: number) => void;
-
-};
-
-function PokemonView({
-  pokemon,
-  isShiny,
-  screenWidth,
-  onSelectPokemon,
-}: {
-  pokemon: Pokemon;
-  isShiny: boolean;
-  screenWidth: string;
-  onSelectPokemon: (pokemonId: number) => void;
-}) {
+function PokemonView({ pokemon }: { pokemon: Pokemon }) {
+  const { isShiny, setSelectedPokemon } = useUIStore();
+  const screenWidth = useScreenWidth();
   const [selectedAbility, setSelectedAbility] = useState<Ability | null>(null);
 
   const displaySprite = getSprite(pokemon.index, isShiny);
-
   const evoFamily = getEvolutionaryFamily(pokemon.index);
-
   const tabsData = buildPokemonMoveTabs(pokemon);
+
+  const handleSelectPokemon = (pokemonId: number) => {
+    const pokemon: Pokemon = getSpeciesData(pokemonId);
+    setSelectedPokemon(pokemon);
+  };
 
   return (
     <div className="flex w-full flex-col items-center">
@@ -83,7 +68,7 @@ function PokemonView({
             pokemon={pokemon}
             family={evoFamily}
             isShiny={isShiny}
-            onClickPokemon={onSelectPokemon}
+            onClickPokemon={handleSelectPokemon}
           />
         </div>
         {hasForms(pokemon) && (
@@ -91,7 +76,7 @@ function PokemonView({
             <FormeView
               pokemon={pokemon}
               isShiny={isShiny}
-              onClickPokemon={onSelectPokemon}
+              onClickPokemon={handleSelectPokemon}
             />
           </div>
         )}
@@ -99,11 +84,6 @@ function PokemonView({
           <TypeMatchup pokemon={pokemon} />
         </div>
       </div>
-      {/* <div className="w-full">
-        <EvolutionBox
-        pokemon={pokemon}
-        />
-      </div> */}
       <div className="flex w-full flex-grow">
         <TabbedInterface tabs={tabsData} />
       </div>
@@ -111,44 +91,42 @@ function PokemonView({
   );
 }
 
-export function PokemonModal({
-  pokemon,
-  onClose,
-  isShiny = false,
-  screenWidth,
-  onSelectPokemon,
-  onChangeShiny,
-}: PokemonModalProps) {
-  if (!pokemon) return null;
+function PokemonModal() {
+  const { selectedPokemon, isShiny, toggleShiny, closeModal } = useUIStore();
+
+  if (!selectedPokemon) return null;
 
   return (
     <div
       className="fixed inset-0 flex items-center justify-center bg-black/30 backdrop-blur-md"
-      onClick={onClose}
+      onClick={closeModal}
     >
       <div
         className="w-xl no-scrollbar relative my-5 h-[95dvh] max-h-screen justify-normal overflow-y-auto rounded-lg border border-gray-100 bg-zinc-800 p-6"
         onClick={(e) => e.stopPropagation()}
       >
-        <span className="self-center absolute left-3 flex flex-row gap-1 items-center">
+        <span className="absolute left-3 flex flex-row items-center gap-1 self-center">
           {" "}
-          <img src="shinycharm.png" className="object-contain h-7 w-7"></img>
+          <img
+            src="shinycharm.png"
+            className="h-7 w-7 object-contain"
+            alt="Shiny charm"
+          />
           <Switch
             checked={isShiny}
-            onChange={onChangeShiny}
-            className="data-checked:bg-emerald-500 group inline-flex h-5 w-10 items-center rounded-full bg-gray-500 transition cursor-pointer"
+            onChange={toggleShiny}
+            className="data-checked:bg-emerald-500 group inline-flex h-5 w-10 cursor-pointer items-center rounded-full bg-gray-500 transition"
           >
             <span className="group-data-checked:translate-x-6 size-3 translate-x-1 rounded-full bg-white transition" />
           </Switch>
         </span>
-        <span className="self-center absolute right-3 flex flex-row gap-1 items-center"><CloseButton onClick={onClose} /></span>
-        <PokemonView
-          pokemon={pokemon}
-          isShiny={isShiny}
-          screenWidth={screenWidth}
-          onSelectPokemon={onSelectPokemon}
-        />
+        <span className="absolute right-3 flex flex-row items-center gap-1 self-center">
+          <CloseButton onClick={closeModal} />
+        </span>
+        <PokemonView pokemon={selectedPokemon} />
       </div>
     </div>
   );
 }
+
+export default PokemonModal;

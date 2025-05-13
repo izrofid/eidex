@@ -67,7 +67,7 @@ function GenericComboBox({
   return (
     <div
       ref={parentRef}
-      className="relative flex flex-1 items-center rounded-md bg-neutral-800 px-2"
+      className="relative flex w-full items-center rounded-md bg-neutral-800 px-2"
     >
       <span className="pointer-events-none absolute inset-y-0 left-2 flex items-center text-gray-400">
         {renderedIcon}
@@ -85,7 +85,7 @@ function GenericComboBox({
           displayValue={(entry: ComboBoxEntry) => entry?.name}
           onChange={(event) => setQuery(event.target.value)}
           placeholder={placeholder || "Select an entry..."}
-          className="h-9 w-full min-w-max rounded-md border-0 bg-neutral-800 pl-8 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-blue-400"
+          className="h-9 w-full rounded-md border-0 bg-neutral-800 pl-8 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-blue-400"
         />
         <span
           className="ml-2 inline-flex cursor-pointer select-none items-center text-gray-100 transition-colors hover:text-red-400 active:text-fuchsia-600"

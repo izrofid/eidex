@@ -3,6 +3,7 @@ import moveData from "../../data/moveData.json";
 import { useMemo } from "react";
 import { GiEnergySword } from "react-icons/gi";
 import { Move } from "../../types";
+import { useFilterStore } from "@/stores/filterStore";
 
 const moveIDMap: ComboBoxEntry[] = Object.values(moveData)
   .filter((m) => typeof m === "object" && !!m && "id" in m)
@@ -11,19 +12,16 @@ const moveIDMap: ComboBoxEntry[] = Object.values(moveData)
     name: (m as Move).name,
   }));
 
-type ComboBoxDemoProps = {
-  onSelect: (entry: ComboBoxEntry | null) => void;
-  value?: ComboBoxEntry | null;
-};
-
-function MoveCombobox({ onSelect, value }: ComboBoxDemoProps) {
+function MoveCombobox() {
   const moveEntries: ComboBoxEntry[] = useMemo(() => moveIDMap, []);
+  const moveValue = useFilterStore((state) => state.moveValue);
+  const setMoveValue = useFilterStore((state) => state.setMoveValue);
 
   return (
     <GenericComboBox
       entries={moveEntries}
-      onSelect={onSelect}
-      value={value ?? null}
+      onSelect={setMoveValue}
+      value={moveValue}
       placeholder="Pick a move..."
       icon={<GiEnergySword />}
     />

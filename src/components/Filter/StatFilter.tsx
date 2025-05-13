@@ -6,22 +6,19 @@ import {
 } from "@headlessui/react";
 import { IoChevronUpCircle, IoChevronDownCircle } from "react-icons/io5";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { useFilterStore } from "@/stores/filterStore";
 
-function StatFilter({
-  chosenStat,
-  statType,
-  isMaxStat,
-  onToggleStatMax,
-  onChosenStatChange,
-  onStatTypeChange,
-}: {
-  chosenStat: number | undefined;
-  statType: string | undefined;
-  isMaxStat: boolean;
-  onToggleStatMax?: () => void;
-  onChosenStatChange: (v: number | undefined) => void;
-  onStatTypeChange: (v: string | undefined) => void;
-}) {
+function StatFilter() {
+
+  const {
+    chosenStat,
+    statType,
+    isStatMax,
+    setChosenStat,
+    setStatType,
+    toggleStatMax,
+  } = useFilterStore();
+
   const statOptions = [
     { value: "", label: "BST" },
     { value: "hp", label: "HP" },
@@ -34,22 +31,20 @@ function StatFilter({
   const selected =
     statOptions.find((o) => (statType || "") === o.value) || statOptions[0];
 
+
   return (
-    <div className="flex h-9 flex-1 items-center justify-between gap-2 rounded-md bg-neutral-800 px-2">
+    <div className="flex h-9 w-full items-center justify-between gap-2 rounded-md bg-neutral-800 px-2">
       <input
         type="number"
         placeholder="Min"
         value={chosenStat ?? ""}
-        onChange={(e) =>
-          onChosenStatChange(
-            e.target.value ? Number(e.target.value) : undefined,
-          )
+        onChange={(e) => setChosenStat(e.target.value ? Number(e.target.value): undefined)
         }
         className="h-8 w-14 rounded-md border-0 bg-transparent px-2 text-sm text-white focus:outline-none focus:ring-0"
       />
       <span className="mx-1 text-xs text-gray-400">in</span>
       <div className="">
-        <Listbox value={selected} onChange={(o) => onStatTypeChange(o.value)}>
+        <Listbox value={selected} onChange={(o) => setStatType(o.value)}>
           <ListboxButton className="flex h-9 flex-row items-center rounded-md border-0 bg-neutral-800 px-2 text-sm text-white">
             {selected.label}
             <MdOutlineKeyboardArrowDown className="ml-1" size={18} />
@@ -71,10 +66,10 @@ function StatFilter({
         </Listbox>
       </div>
       <span
-        className={isMaxStat ? "text-emerald-400" : "text-red-400"}
-        onClick={onToggleStatMax}
+        className={isStatMax ? "text-emerald-400" : "text-red-400"}
+        onClick={toggleStatMax}
       >
-        {isMaxStat ? (
+        {isStatMax ? (
           <IoChevronUpCircle size={20} />
         ) : (
           <IoChevronDownCircle size={20} />

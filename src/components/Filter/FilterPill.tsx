@@ -1,17 +1,73 @@
-import { ReactNode } from "react";
-import { MdClose } from "react-icons/md";
+import { IoCloseCircle } from "react-icons/io5";
+import { FilterPill as FilterPillType } from "../../stores/filterPillStore";
+import { getTypeName } from "../../utils/typeInfo";
+import { capitalize } from "@/utils/miscUtils";
 
 interface FilterPillProps {
-  bg?: string;
-  children: ReactNode;
-  onClick?: () => void;
+  pill: FilterPillType;
+  onRemove: (id: string) => void;
 }
 
-export default function FilterPill({ bg = "bg-gray-700", children, onClick }: FilterPillProps) {
+// Map of pill types to background colors
+const bgColorMap: Record<string, string> = {
+  name: "bg-emerald-700",
+  type: "bg-blue-700",
+  ability: "bg-purple-700",
+  move: "bg-orange-700",
+  stat: "bg-yellow-700",
+  sort: "bg-pink-700",
+};
+
+function FilterPill({ pill, onRemove }: FilterPillProps) {
+  // Get the appropriate background color for this pill type
+  const bgColor = bgColorMap[pill.type] || "bg-neutral-700";
+
+  // Format display value based on pill type
+  const getDisplayValue = () => {
+    // First check the pill type to determine which branch of the union we're in
+    switch (pill.value.type) {
+      case "name":
+        return `Name: ${pill.value.value}`;
+      case "type":
+        return `Type: ${
+          pill.value.value !== undefined ? getTypeName(pill.value.value) : "All"
+        }`;
+      case "ability":
+        return `Ability: ${pill.value.value.name}`;
+      case "stat": {
+        const { stat, type, isMax } = pill.value.value;
+        const statType = type ? capitalize(type) : "BST";
+        const operator = isMax ? "≤" : "≥";
+        return `${statType} ${operator} ${stat}`;
+      }
+      case "move": {
+        const { name, source } = pill.value.value;
+        const sourceMap: Record<string, string> = {
+          tm: "TM",
+          levelup: "Lvl",
+          egg: "Egg",
+          all: "",
+        };
+        const sourceLabel = sourceMap[source] ? `${sourceMap[source]} ` : "";
+        return `${sourceLabel}Move: ${name}`;
+      }
+      default:
+        return pill.label;
+    }
+  };
+
   return (
-    <span className={`inline-flex items-center gap-2 rounded-full ${bg} pl-3 pr-2 py-1 text-xs font-semibold text-white`}>
-      {children}
-      {onClick && <MdClose className="self-center cursor-pointer" onClick={onClick} />}
-    </span>
+    <div
+      className={`flex items-center justify-between gap-1 rounded-full ${bgColor} px-2 py-1 text-xs text-white`}
+    >
+      <span>{getDisplayValue()}</span>
+      <IoCloseCircle
+        className="cursor-pointer text-gray-300 hover:text-white"
+        onClick={() => onRemove(pill.id)}
+        size={16}
+      />
+    </div>
   );
 }
+
+export default FilterPill;
