@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { ComboBoxEntry } from "./GenericComboBox";
 import AbilityCombobox from "./AbilityCombobox";
 import TypeDropdown from "./TypeDropdown";
+import StatFilter from "./StatFilter";
 import MoveFilterGroup from "./MoveFilterGroup";
 import { MoveSource } from "@/types";
 import CurrentFilters from "./CurrentFilters";
@@ -19,6 +20,11 @@ function FilterMenu({
   onMoveSourceChange,
   onMoveSelect,
   moveValue,
+  onStatTypeChange,
+  statType,
+  isMaxStat = false,
+  onStatMaxChange,
+  onChosenStatChange,
 }: {
   onAbilitySelect: (entry: ComboBoxEntry | null) => void;
   onTypeSelect: (typeId: number | undefined) => void;
@@ -30,6 +36,11 @@ function FilterMenu({
   onMoveSourceChange: (source: MoveSource) => void;
   onMoveSelect: (entry: ComboBoxEntry | null) => void;
   moveValue: ComboBoxEntry | null;
+  onStatTypeChange?: (type: string | undefined) => void;
+  statType?: string;
+  isMaxStat?: boolean;
+  onStatMaxChange?: (isMax: boolean) => void;
+  onChosenStatChange?: (stat: number | undefined) => void;
 }) {
   const [isOpen, setIsOpen] = useState(false);
   // Local state for staged filter values
@@ -40,6 +51,15 @@ function FilterMenu({
   const [stagedMove, setStagedMove] = useState<ComboBoxEntry | null>(moveValue);
   const [stagedMoveSource, setStagedMoveSource] =
     useState<MoveSource>(moveSource);
+  const [stagedChosenStat, setStagedChosenStat] = useState<number | undefined>(
+    undefined,
+  );
+  const [stagedStatType, setStagedStatType] = useState<string | undefined>(
+    statType,
+  );
+  const [stagedIsMaxStat, setStagedIsMaxStat] = useState<boolean>(
+    isMaxStat ?? false,
+  );
 
   // Keep stagedType in sync with prop
   useEffect(() => {
@@ -61,6 +81,16 @@ function FilterMenu({
     setStagedMoveSource(moveSource);
   }, [moveSource]);
 
+  // Keep stagedIsMaxStat in sync with prop
+  useEffect(() => {
+    setStagedIsMaxStat(isMaxStat ?? false);
+  }, [isMaxStat]);
+
+  // Keep stagedStatType in sync with prop
+  useEffect(() => {
+    setStagedStatType(statType);
+  }, [statType]);
+
   // Handler to apply stagedMoveSource when a move is selected
   const handleMoveSelect = (entry: ComboBoxEntry | null) => {
     setStagedMove(entry);
@@ -72,6 +102,15 @@ function FilterMenu({
     onAbilitySelect(stagedAbility);
     onMoveSourceChange(stagedMoveSource);
     onMoveSelect(stagedMove);
+    if (typeof onStatTypeChange === "function") {
+      onStatTypeChange(stagedStatType);
+    }
+    if (typeof onStatMaxChange === "function") {
+      onStatMaxChange(stagedIsMaxStat);
+    }
+    if (typeof onChosenStatChange === "function") {
+      onChosenStatChange(stagedChosenStat);
+    }
     setIsOpen(false);
   };
 
@@ -80,6 +119,9 @@ function FilterMenu({
     setStagedAbility(null);
     setStagedMove(null);
     setStagedMoveSource("all");
+    setStagedChosenStat(undefined);
+    setStagedStatType(undefined);
+    setStagedIsMaxStat(false);
     onTypeSelect(undefined);
     onAbilitySelect(null);
     onMoveSourceChange("all");
@@ -114,6 +156,14 @@ function FilterMenu({
                 onMoveSourceChange={setStagedMoveSource}
                 handleMoveSelect={handleMoveSelect}
                 moveValue={stagedMove}
+              />
+              <StatFilter
+                chosenStat={stagedChosenStat}
+                statType={stagedStatType}
+                isMaxStat={stagedIsMaxStat}
+                onChosenStatChange={setStagedChosenStat}
+                onStatTypeChange={setStagedStatType}
+                onToggleStatMax={() => setStagedIsMaxStat((v) => !v)}
               />
             </div>
             <CurrentFilters

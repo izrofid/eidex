@@ -17,7 +17,7 @@ function App() {
   const [filters, setFilters] = useState<FilterOptions>({
     name: "",
     typeId: undefined,
-    minStat: undefined,
+    chosenStat: undefined,
     levelupMove: "",
     tmMove: "",
     tutorMove: "",
@@ -36,7 +36,7 @@ function App() {
   const [rawFilters, setRawFilters] = useState<FilterOptions>({
     name: "",
     typeId: undefined,
-    minStat: undefined,
+    chosenStat: undefined,
     levelupMove: "",
     tmMove: "",
     tutorMove: "",

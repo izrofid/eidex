@@ -80,6 +80,19 @@ function FilterBar({ setFilters, filters }: FilterBarProps) {
       ? { id: filters.moveId, name: filters.moveName }
       : null;
 
+  // Add handlers for statType and isStatMax
+  const handleStatTypeChange = (type: string | undefined) => {
+    setFilters((prev) => ({ ...prev, statType: type }));
+  };
+  const handleStatMaxChange = (isMax: boolean) => {
+    setFilters((prev) => ({ ...prev, isStatMax: isMax }));
+  };
+
+  // Add handler for chosenStat
+  const handleChosenStatChange = (stat: number | undefined) => {
+    setFilters((prev) => ({ ...prev, chosenStat: stat }));
+  };
+
   return (
     <div className="flex flex-col">
       <div className="flex flex-wrap items-center justify-between gap-3 rounded-t-lg bg-neutral-900/90 px-3 py-2 shadow-lg">
@@ -105,6 +118,11 @@ function FilterBar({ setFilters, filters }: FilterBarProps) {
             handleNameSelect(null);
             setNameComboKey((k) => k + 1);
           }}
+          onStatTypeChange={handleStatTypeChange}
+          statType={filters.statType}
+          isMaxStat={filters.isStatMax ?? false}
+          onStatMaxChange={handleStatMaxChange}
+          onChosenStatChange={handleChosenStatChange}
         />
       </div>
       <div
@@ -119,7 +137,10 @@ function FilterBar({ setFilters, filters }: FilterBarProps) {
       >
         <CurrentFilters
           name={filters.name}
-          onClearName={() => {handleNameSelect(null); setNameComboKey((k) => k + 1)}}
+          onClearName={() => {
+            handleNameSelect(null);
+            setNameComboKey((k) => k + 1);
+          }}
           typeId={filters.typeId}
           onClearType={() => handleTypeSelect(undefined)}
           abilityValue={abilityValue}

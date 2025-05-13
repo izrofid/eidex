@@ -42,9 +42,10 @@ export interface SpeciesData {
 export interface FilterOptions {
   name?: string;
   typeId?: number;
-  minStat?: number;
+  chosenStat?: number;
   sortBy?: SortBy;
   statType?: string;
+  isStatMax?: boolean;
   sortStat?: string;
   ability?: string;
   abilityId?: number;
