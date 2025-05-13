@@ -46,7 +46,7 @@ export const SortBar: React.FC<SortBarProps> = ({
             <Button
               key={option.label}
               data-selected={isSelected}
-              className="font-pixel md:text-md border-b-3 flex w-10 cursor-pointer items-center justify-center gap-2 border-transparent text-center text-sm text-gray-300 data-[selected=true]:border-emerald-400 lg:text-lg"
+              className="font-pixel md:text-md border-b-3 flex w-8 md:w-10 cursor-pointer items-center justify-center md:gap-2 border-transparent text-center text-xs md:text-sm text-gray-300 data-[selected=true]:border-emerald-400 lg:text-lg"
               onClick={() => {
                 if (isSelected) {
                   if (onDirectionChange) onDirectionChange(!descending);
