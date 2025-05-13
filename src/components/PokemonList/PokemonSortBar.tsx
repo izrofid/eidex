@@ -66,7 +66,7 @@ export const SortBar: React.FC<SortBarProps> = ({
       </div>
       {/* Direction marker */}
       <div
-        className="text-emerald-300 pr-1 select-none cursor-pointer pr-3"
+        className="text-emerald-300 select-none cursor-pointer pr-3"
         onClick={() => {
           if (onDirectionChange) {
             onDirectionChange(!descending);
