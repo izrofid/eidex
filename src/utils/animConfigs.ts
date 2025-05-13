@@ -256,7 +256,7 @@ const createConfig = (weight: number = 30): AnimationMap => {
     },
     grow: {
       config: (frame: number) => ({
-        config: {
+        config:(key) => key === 'scale' ? {...config.slow} :{
           mass: Math.log(weight),
           precision: 0.1,
         },
@@ -266,11 +266,11 @@ const createConfig = (weight: number = 30): AnimationMap => {
       //@ts-ignore
       interpolations: (s: SpringValues) => ({
         transform: s.val?.to([0, 1], [1, 1.02]).to((s: number) => `scale(${s})`),
-        filter: s.val
-          ?.to([0, 1], [1, 4])
+        filter: s.scale
+          ?.to([0, 1], [2, 8])
           .to(
             (shadow: number) =>
-              `drop-shadow(1px ${shadow * 3}px ${shadow}px var(--color-gray-700))`,
+              `drop-shadow(${shadow}px ${shadow * 1.5}px ${shadow}px var(--color-gray-700))`,
           ),
       }),
     },

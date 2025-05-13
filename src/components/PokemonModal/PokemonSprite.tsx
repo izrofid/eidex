@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useEffect,  useState } from "react";
 import { animated } from "react-spring";
 import { useAnimConfig } from "@/utils/animConfigs";
 import getSprite from "@/utils/getSprite";
@@ -31,6 +31,7 @@ const PokemonSprite = ({
     currentTarget,
   }: React.SyntheticEvent<HTMLImageElement, Event>) => {
     currentTarget.onerror = null; // prevents looping
+    setIsRunning(false)
     setDisplaySprite(getSprite(spriteIndex, isShiny));
   };
   useEffect(() => {
@@ -41,7 +42,7 @@ const PokemonSprite = ({
     setDisplaySprite(`sprites/anim/${spriteIndex}/anim_front.webp`);
   }, [spriteIndex, isShiny]);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     let timeoutId: NodeJS.Timeout;
     let isMounted = true;
 
