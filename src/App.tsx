@@ -78,7 +78,7 @@ function App() {
 
   return (
     <div className="flex min-h-screen justify-center bg-zinc-800">
-      <div className="border-1 shadow-2xl/60 mt-4 flex w-full max-w-3xl flex-col rounded-lg border-neutral-900/50">
+      <div className="border-1 shadow-2xl/60 flex w-full max-w-3xl flex-col rounded-lg border-neutral-900/50">
         {/* Pass rawFilters and setRawFilters to FilterBar for immediate UI updates */}
         <FilterBar filters={rawFilters} setFilters={setRawFilters} />
 
