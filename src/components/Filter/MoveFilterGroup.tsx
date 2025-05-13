@@ -7,15 +7,17 @@ function MoveFilterGroup({
   moveSource,
   onMoveSourceChange,
   handleMoveSelect,
+  moveValue, 
 }: {
   moveSource: MoveSource;
   onMoveSourceChange: (v: MoveSource) => void;
   handleMoveSelect: (entry: ComboBoxEntry | null) => void;
+  moveValue: ComboBoxEntry | null; // 
 }) {
   return (
     <div className="flex flex-1 items-center gap-2 rounded-md bg-neutral-800 focus-within:ring-1 focus-within:ring-blue-400 sm:h-9">
       <MoveSourceDropdown value={moveSource} onChange={onMoveSourceChange} />
-      <MoveCombobox onSelect={handleMoveSelect} />
+      <MoveCombobox onSelect={handleMoveSelect} value={moveValue} />
     </div>
   );
 }

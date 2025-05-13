@@ -13,15 +13,17 @@ const moveIDMap: ComboBoxEntry[] = Object.values(moveData)
 
 type ComboBoxDemoProps = {
   onSelect: (entry: ComboBoxEntry | null) => void;
+  value?: ComboBoxEntry | null;
 };
 
-function MoveCombobox({ onSelect }: ComboBoxDemoProps) {
+function MoveCombobox({ onSelect, value }: ComboBoxDemoProps) {
   const moveEntries: ComboBoxEntry[] = useMemo(() => moveIDMap, []);
 
   return (
     <GenericComboBox
       entries={moveEntries}
       onSelect={onSelect}
+      value={value ?? null}
       placeholder="Pick a move..."
       icon={<GiEnergySword />}
     />

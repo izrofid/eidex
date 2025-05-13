@@ -38,7 +38,8 @@ function FilterMenu({
     abilityValue,
   );
   const [stagedMove, setStagedMove] = useState<ComboBoxEntry | null>(moveValue);
-  const [stagedMoveSource, setStagedMoveSource] = useState<MoveSource>(moveSource);
+  const [stagedMoveSource, setStagedMoveSource] =
+    useState<MoveSource>(moveSource);
 
   // Keep stagedType in sync with prop
   useEffect(() => {
@@ -100,9 +101,9 @@ function FilterMenu({
         className="relative z-50"
       >
         <div className="backdrop-blur-xs fixed inset-0 flex w-screen items-center justify-center bg-neutral-900/70 p-4">
-          <DialogPanel className="w-full max-w-xl space-y-2 border-1 border-zinc-500/80 rounded-md bg-neutral-900 p-4 text-white">
+          <DialogPanel className="border-1 w-full max-w-xl space-y-2 rounded-md border-zinc-500/80 bg-neutral-900 p-4 text-white">
             <DialogTitle className="font-bold">Choose Filters</DialogTitle>
-            <div className="flex flex-col sm:flex-row flex-wrap gap-2 justify-center">
+            <div className="flex flex-col flex-wrap justify-center gap-2 sm:flex-row">
               <TypeDropdown value={stagedType} onChange={setStagedType} />
               <AbilityCombobox
                 onSelect={setStagedAbility}
@@ -112,6 +113,7 @@ function FilterMenu({
                 moveSource={stagedMoveSource}
                 onMoveSourceChange={setStagedMoveSource}
                 handleMoveSelect={handleMoveSelect}
+                moveValue={stagedMove}
               />
             </div>
             <CurrentFilters
@@ -123,18 +125,21 @@ function FilterMenu({
               onClearAbility={() => setStagedAbility(null)}
               moveSource={moveSource as MoveSource}
               moveValue={stagedMove}
-              onClearMove={() => setStagedMove(null)}
+              onClearMove={() => {
+                setStagedMove(null);
+                onMoveSelect(null);
+              }}
             />
             <div className="flex items-center gap-2">
               <button
                 onClick={handleApplyFilters}
-                className="shadow-md/60 text-xs/2 h-7 w-16 rounded bg-emerald-600 p-2 text-center cursor-pointer"
+                className="shadow-md/60 text-xs/2 h-7 w-16 cursor-pointer rounded bg-emerald-600 p-2 text-center"
               >
                 Filter
               </button>
               <button
                 onClick={handleClearFilters}
-                className="shadow-md/60 text-xs/2 h-7 w-16 rounded bg-red-600 p-2 text-center cursor-pointer"
+                className="shadow-md/60 text-xs/2 h-7 w-16 cursor-pointer rounded bg-red-600 p-2 text-center"
               >
                 Close
               </button>
