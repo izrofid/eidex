@@ -36,16 +36,6 @@ function GenericComboBox({
   const [query, setQuery] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
   const parentRef = useRef<HTMLDivElement>(null);
-  // const [comboWidth, setComboWidth] = useState<number>();
-
-  // useLayoutEffect(() => {
-  //   // Only set comboWidth if the parent is visible and has a reasonable width
-  //   if (parentRef.current) {
-  //     const width = parentRef.current.offsetWidth;
-  //     // Use a sensible default if width is 0 or very small (e.g., on initial modal render)
-  //     setComboWidth(width && width > 40 ? width : 200);
-  //   }
-  // }, []);
 
   useEffect(() => {
     setSelected(value);
@@ -77,9 +67,9 @@ function GenericComboBox({
   return (
     <div
       ref={parentRef}
-      className="relative flex flex-1 rounded-md bg-neutral-800"
+      className="relative flex flex-1 items-center rounded-md bg-neutral-800 px-2"
     >
-      <span className="pointer-events-none absolute z-10 top-1/2 -translate-1/2 left-4 text-gray-400">
+      <span className="pointer-events-none absolute inset-y-0 left-2 flex items-center text-gray-400">
         {renderedIcon}
       </span>
       <Combobox
@@ -95,10 +85,10 @@ function GenericComboBox({
           displayValue={(entry: ComboBoxEntry) => entry?.name}
           onChange={(event) => setQuery(event.target.value)}
           placeholder={placeholder || "Select an entry..."}
-          className="relative h-9 w-full min-w-max rounded-md border-0 bg-neutral-800 px-2 pl-9 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-blue-400"
+          className="h-9 w-full min-w-max rounded-md border-0 bg-neutral-800 pl-8 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-blue-400"
         />
         <span
-          className="absolute right-2 self-center inline-flex select-none items-center text-center text-gray-100 transition-colors hover:text-red-400 active:text-fuchsia-600"
+          className="ml-2 inline-flex cursor-pointer select-none items-center text-gray-100 transition-colors hover:text-red-400 active:text-fuchsia-600"
           onClick={() => {
             setSelected(null);
             setQuery("");
@@ -109,7 +99,6 @@ function GenericComboBox({
         </span>
         <ComboboxOptions
           anchor="bottom start"
-          // style={comboWidth && comboWidth > 40 ? { width: comboWidth } : { minWidth: 200 }}
           className="w-(--input-width) no-scrollbar rounded-sm border border-gray-600 bg-neutral-800 text-white shadow-md [--anchor-gap:4px]"
         >
           {({ option: entry }) => (
