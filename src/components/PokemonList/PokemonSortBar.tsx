@@ -34,9 +34,9 @@ export const SortBar: React.FC<SortBarProps> = ({
   const selected = statType ? `${sortBy}:${statType}` : sortBy;
 
   return (
-    <div className="border-b-3 flex h-9 w-full items-center justify-between border-transparent bg-neutral-900/60">
+    <div className="flex w-full items-center justify-between bg-neutral-900/90 pt-2">
       {/* Sort buttons group */}
-      <div className="mt-2 flex items-center gap-2 text-nowrap text-sm">
+      <div className="flex items-center gap-2 text-nowrap text-sm">
         {sortOptions.map((option) => {
           const value = option.statType
             ? `${option.value}:${option.statType}`
@@ -46,7 +46,7 @@ export const SortBar: React.FC<SortBarProps> = ({
             <Button
               key={option.label}
               data-selected={isSelected}
-              className="font-pixel md:text-md border-b-3 flex w-8 cursor-pointer items-center justify-center border-transparent text-center text-xs text-gray-300 data-[selected=true]:border-emerald-400 md:w-10 md:gap-2 md:text-sm lg:text-lg"
+              className="font-pixel md:text-md border-b-3 flex w-7 cursor-pointer items-center justify-center border-transparent text-center text-xs text-gray-300 data-[selected=true]:border-emerald-400 md:w-10 md:gap-2 md:text-sm lg:text-lg"
               onClick={() => {
                 if (isSelected) {
                   if (onDirectionChange) onDirectionChange(!descending);
@@ -66,7 +66,7 @@ export const SortBar: React.FC<SortBarProps> = ({
       </div>
       {/* Direction marker */}
       <div
-        className="select-none pr-1 text-emerald-300"
+        className="text-emerald-300 pr-1 select-none"
         onClick={() => {
           if (onDirectionChange) {
             onDirectionChange(!descending);
@@ -74,9 +74,9 @@ export const SortBar: React.FC<SortBarProps> = ({
         }}
       >
         {descending ? (
-          <PiSortAscending size={24} />
+          <PiSortAscending size={22} />
         ) : (
-          <PiSortDescending size={24} />
+          <PiSortDescending size={22} />
         )}
       </div>
     </div>
