@@ -1,4 +1,8 @@
-import { Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip";
+import {
+  Tooltip,
+  TooltipTrigger,
+  TooltipContent,
+} from "@/components/ui/tooltip";
 
 type EvolutionProps = {
   onClick: () => void;
@@ -20,27 +24,25 @@ const Evolution = ({
       className="flex flex-col items-center rounded-md bg-neutral-700 p-1 text-center md:p-3"
       onClick={onClick}
     >
-      <div className="h-22 w-18">
+      <div className="h-23 w-20">
         <img
           src={sprite}
           alt={alt}
-          className="md: m-auto aspect-square object-contain"
+          className="aspect-square object-contain md:m-auto"
         />
         {details ? (
           <Tooltip>
             <TooltipTrigger asChild>
-              <p className="pkmnem-face-shadow max-w-20 text-center text-xs leading-3 cursor-help">
+              <span className="font-pixel inline-flex cursor-help text-center text-xs/3">
                 {requirements}
-              </p>
+              </span>
             </TooltipTrigger>
             <TooltipContent>
               <span>{details}</span>
             </TooltipContent>
           </Tooltip>
         ) : (
-          <span className="max-w-20 text-center text-xs text-wrap">
-            {requirements}
-          </span>
+          <span className="font-pixel max-w-20 cursor-help text-center text-sm"></span>
         )}
       </div>
     </div>
