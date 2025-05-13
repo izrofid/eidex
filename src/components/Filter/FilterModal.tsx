@@ -13,11 +13,6 @@ function FilterModal() {
   const [isOpen, setIsOpen] = useState(false);
 
   const {
-    nameValue,
-    typeValue,
-    abilityValue,
-    moveValue,
-    moveSource,
     resetFilters,
   } = useFilterStore();
 
@@ -35,23 +30,17 @@ function FilterModal() {
       <Dialog open={isOpen} onClose={() => setIsOpen(false)}>
         <div className="fixed inset-0 bg-black/80" aria-hidden="true" />
         <div className="fixed inset-0 flex items-center justify-center p-4">
-          <DialogPanel className="w-full max-w-md rounded-lg bg-zinc-900 p-4 border-1 border-gray-400/40">
+          <DialogPanel className="w-full max-w-xl rounded-lg bg-zinc-900 p-4 border-1 border-gray-400/40">
             <DialogTitle className="pb-2 text-xl font-bold text-gray-200">
               Filter Options
             </DialogTitle>
-            <div className="mb-4 flex flex-col gap-1">
-              <TypeDropdown />
-              <AbilityCombobox />
-              <MoveFilterGroup />
-              <StatFilter />
+            <div className="flex flex-wrap gap-2">
+              <div className="flex-1 min-w-max"><TypeDropdown /></div>
+              <div className="flex-1 min-w-max"><AbilityCombobox /></div>
+              <div className="flex-1 min-w-max"><MoveFilterGroup /></div>
+              <div className="flex-1 min-w-max"><StatFilter /></div>
             </div>
-            <CurrentFilters
-              name={nameValue}
-              typeId={typeValue}
-              abilityValue={abilityValue}
-              moveValue={moveValue}
-              moveSource={moveSource}
-            />
+            <div className="flex my-2"><CurrentFilters/></div>
             <div className="flex items-center gap-2">
               <Button
                 onClick={() => setIsOpen(false)}

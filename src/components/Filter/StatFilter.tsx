@@ -33,7 +33,7 @@ function StatFilter() {
 
 
   return (
-    <div className="flex h-9 flex-1 items-center justify-between gap-2 rounded-md bg-neutral-800 px-2">
+    <div className="flex h-9 w-full items-center justify-between gap-2 rounded-md bg-neutral-800 px-2">
       <input
         type="number"
         placeholder="Min"

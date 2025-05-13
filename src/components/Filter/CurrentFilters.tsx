@@ -1,66 +1,47 @@
-import FilterPill from "./FilterPill";
-import { getTypeName } from "../../utils/typeInfo";
-import { ComboBoxEntry } from "./GenericComboBox";
-import { MoveSource } from "@/types";
+import { useEffect } from 'react';
+import FilterPill from './FilterPill';
 
-type CurrentFiltersProps = {
-  name?: string;
-  onClearName?: () => void;
-  typeId?: number;
-  onClearType?: () => void;
-  abilityValue?: ComboBoxEntry | null;
-  onClearAbility?: () => void;
-  moveSource?: MoveSource;
-  moveValue?: ComboBoxEntry | null;
-  onClearMove?: () => void;
-};
+import { useFilterPillStore } from '../../stores/filterPillStore';
+import { useFilterStore } from '@/stores/filterStore';
+import { Button } from '@headlessui/react';
 
-export default function CurrentFilters({
-  name,
-  onClearName,
-  typeId,
-  onClearType,
-  abilityValue,
-  onClearAbility,
-  moveSource,
-  moveValue,
-  onClearMove,
-}: CurrentFiltersProps) {
+function CurrentFilters() {
+  const { 
+    activePills, 
+    syncWithFilters,
+    removePill,
+    clearAllPills 
+  } = useFilterPillStore();
 
+  const { filters } = useFilterStore();
 
-  const moveLabelMap: Record<string, string> = {
-    tm: "TM",
-    levelup: "Lvl",
-    egg: "Egg",
-    all: "All",
-  };
+  // Sync with filter state whenever the component renders
+  useEffect(() => {
+    syncWithFilters();
+  }, [syncWithFilters, filters]);
 
-  const movePillLabel: string = moveSource && moveLabelMap[moveSource]
-    ? `${moveLabelMap[moveSource]} Move`
-    : "Move";
+  // Don't render if no active filters
+  if (activePills.length === 0) return null;
 
   return (
-    <div className="my-2 flex flex-wrap gap-2">
-      {name && (
-        <FilterPill bg="bg-emerald-700" onClick={onClearName}>
-          Name: {name}
-        </FilterPill>
-      )}
-      {typeId !== undefined && (
-        <FilterPill bg="bg-blue-700" onClick={onClearType}>
-          Type: {getTypeName(typeId)}
-        </FilterPill>
-      )}
-      {abilityValue && (
-        <FilterPill bg="bg-purple-700" onClick={onClearAbility}>
-          Ability: {abilityValue.name}
-        </FilterPill>
-      )}
-      {moveValue && (
-        <FilterPill bg="bg-orange-700" onClick={onClearMove}>
-          {movePillLabel}: {moveValue.name}
-        </FilterPill>
+    <div className="flex w-full flex-wrap gap-2 py-2">
+      {activePills.map((pill) => (
+        <FilterPill 
+          key={pill.id} 
+          pill={pill} 
+          onRemove={removePill} 
+        />
+      ))}
+      {activePills.length > 1 && (
+        <Button
+          onClick={clearAllPills}
+          className="text-xs rounded-full bg-zinc-600 hover:bg-rose-500 px-3 py-1 text-white self-center"
+        >
+          Clear All
+        </Button>
       )}
     </div>
   );
 }
+
+export default CurrentFilters;

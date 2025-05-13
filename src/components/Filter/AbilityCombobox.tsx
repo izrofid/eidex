@@ -15,17 +15,19 @@ const abilityIDMap: ComboBoxEntry[] = abilities
 function AbilityCombobox() {
   const abilityValue = useFilterStore((state) => state.abilityValue);
   const setAbilityValue = useFilterStore((state) => state.setAbilityValue);
-  
+
   const abilityEntries: ComboBoxEntry[] = useMemo(() => abilityIDMap, []);
-  
+
   return (
-    <GenericComboBox
-      entries={abilityEntries}
-      onSelect={setAbilityValue}
-      placeholder="Select an ability..."
-      icon={<IoRibbon />}
-      value={abilityValue}
-    />
+    <div className="w-full">
+      <GenericComboBox
+        entries={abilityEntries}
+        onSelect={setAbilityValue}
+        placeholder="Select an ability..."
+        icon={<IoRibbon />}
+        value={abilityValue}
+      />
+    </div>
   );
 }
 
