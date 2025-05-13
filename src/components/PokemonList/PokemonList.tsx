@@ -55,7 +55,7 @@ export default function PokemonList({
   useBodyScrollLock(isModalOpen);
 
   return (
-    <div className="flex w-full flex-col items-center">
+    <div className="flex w-full flex-col items-center select-none">
       <SortBar
         sortBy={sortBy}
         statType={sortStat}

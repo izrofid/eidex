@@ -28,7 +28,7 @@ function FilterBar() {
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col select-none">
       <div className="flex flex-1 items-center justify-between gap-3 rounded-t-lg bg-neutral-900/90 px-3 py-2 shadow-lg">
         <NameCombobox key={nameComboKey} onSelect={handleNameSelect} />
         <Button

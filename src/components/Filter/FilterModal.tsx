@@ -29,7 +29,7 @@ function FilterModal() {
 
       <Dialog open={isOpen} onClose={() => setIsOpen(false)}>
         <div className="fixed inset-0 bg-black/80" aria-hidden="true" />
-        <div className="fixed inset-0 flex items-center justify-center p-4">
+        <div className="fixed inset-0 flex items-center justify-center p-4 select-none">
           <DialogPanel className="w-full max-w-xl rounded-lg bg-zinc-900 p-4 border-1 border-gray-400/40">
             <DialogTitle className="pb-2 text-xl font-bold text-gray-200">
               Filter Options

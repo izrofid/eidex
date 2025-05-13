@@ -30,7 +30,7 @@ function App() {
         <FilterBar />
 
         {/* Shiny toggle UI */}
-        <div className="flex items-center justify-between gap-2 bg-neutral-800/30 px-3 py-2">
+        <div className="flex items-center justify-between gap-2 bg-neutral-800/30 px-3 py-2 select-none">
           <span className="flex flex-row items-center gap-1">
             <img
               src="shinycharm.png"
