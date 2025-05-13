@@ -28,7 +28,7 @@ function TypeDropdown({ value, onChange }: TypeDropdownProps) {
         </ListboxButton>
         <ListboxOptions
           anchor="bottom start"
-          className="no-scrollbar w-(--button-width) !max-h-80 rounded-md bg-neutral-800 shadow-lg ring-1 ring-black ring-opacity-5 [--anchor-gap:4px] focus:outline-none"
+          className="no-scrollbar w-(--button-width) rounded-md bg-neutral-800 shadow-lg ring-1 ring-gray-500 ring-opacity-5 [--anchor-gap:4px] focus:outline-none"
         >
           {options.map((typeInfo) => (
             <ListboxOption

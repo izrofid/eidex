@@ -128,13 +128,13 @@ function FilterMenu({
             <div className="flex items-center gap-2">
               <button
                 onClick={handleApplyFilters}
-                className="shadow-md/60 text-xs/2 h-7 w-16 rounded bg-emerald-600 p-2 text-center"
+                className="shadow-md/60 text-xs/2 h-7 w-16 rounded bg-emerald-600 p-2 text-center cursor-pointer"
               >
                 Filter
               </button>
               <button
                 onClick={handleClearFilters}
-                className="shadow-md/60 text-xs/2 h-7 w-16 rounded bg-red-600 p-2 text-center"
+                className="shadow-md/60 text-xs/2 h-7 w-16 rounded bg-red-600 p-2 text-center cursor-pointer"
               >
                 Close
               </button>
