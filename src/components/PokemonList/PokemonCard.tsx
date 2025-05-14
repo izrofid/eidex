@@ -4,26 +4,22 @@ import { getAbilityName } from "../../utils/abilityData";
 import { Pokemon } from "../../types";
 import chroma from "chroma-js";
 import getSprite from "@/utils/getSprite";
+import { useUIStore } from "@/stores/uiStore";
+import { useScreenWidth } from "@/hooks/useScreenWidth";
+
+type PokemonCardProps = {
+  pokemon: Pokemon;
+};
 
 const adjustedBgCache: Record<number, string> = {};
 
-type PokemonCardProps = Pokemon & {
-  isShiny?: boolean;
-  onClick?: () => void;
-  screenWidth: string;
-};
+export function PokemonCard({pokemon}: PokemonCardProps) {
+  // Get UI State from store
+  const { isShiny, openModal } = useUIStore();
+  const screenWidth = useScreenWidth();
 
-export function PokemonCard({
-  index,
-  dexId,
-  nameKey,
-  types,
-  isShiny,
-  stats,
-  abilities,
-  onClick,
-  screenWidth,
-}: PokemonCardProps) {
+  const { index, dexId, nameKey, types, stats, abilities } = pokemon;
+
   // Convert the ID to a string and pad it with leading zeros and a #
   const formattedId = `#${String(dexId).padStart(3, "0")}`;
 
@@ -45,10 +41,7 @@ export function PokemonCard({
   // If the sprite is "", then use the default sprite
   const fallbackSprite = `missingno.png`;
 
-  const regularSprite = getSprite(index, false)
-  const shinySprite = getSprite(index, true)
-
-  const displaySprite = isShiny ? shinySprite : regularSprite;
+  const displaySprite = getSprite(index, isShiny);
 
   const typeId = types[0];
   let adjustedBg = adjustedBgCache[typeId];
@@ -67,7 +60,7 @@ export function PokemonCard({
   });
 
   return (
-    <div onClick={onClick} className="w-full cursor-pointer">
+    <div onClick={() => openModal(pokemon)} className="w-full cursor-pointer">
       <div className="flex w-full flex-col text-white">
         {/* Header */}
         <div className="flex justify-between bg-neutral-900/20 py-1 pl-2">
