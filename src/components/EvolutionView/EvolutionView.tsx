@@ -1,24 +1,23 @@
 import { EvolutionFamily } from "../../utils/evoFamily";
-import getSprite from "../../utils/getSprite";
 import { FaArrowRight } from "react-icons/fa";
 
 import Evolution from "./Evolution";
 import { Pokemon } from "../../types";
 import React from "react";
+import { getSpeciesData } from "@/utils/speciesData";
+import EvolutionDetails from "./EvolutionDetails";
 
 // This is a derivative type that sets 'evolutions' to not-undefined.
 // This component wont render if 'evolutions' is undefined anyways...
 
 interface EvolutionViewProps {
   family: EvolutionFamily;
-  isShiny: boolean;
   pokemon: Pokemon;
   onClickPokemon: (pokemonId: number) => void;
 }
 
 const EvolutionView: React.FC<EvolutionViewProps> = ({
   family,
-  isShiny = false,
   onClickPokemon,
 }) => {
   // Group members by stage
@@ -45,11 +44,12 @@ const EvolutionView: React.FC<EvolutionViewProps> = ({
           >
             {stages[stage].map((member) => {
               return (
-                <span className="font-pixel" key={`${member.id}-${member.requirements || "default"}`}>
+                <span
+                  className="font-pixel"
+                  key={`${member.id}-${member.requirements || "default"}`}
+                >
                   <Evolution
-                    
-                    sprite={getSprite(member.id, isShiny)}
-                    alt={member.name}
+                    pokemon={getSpeciesData(member.id)}
                     onClick={() => onClickPokemon(member.id)}
                     requirements={member.requirements}
                     details={member.details}
@@ -67,9 +67,12 @@ const EvolutionView: React.FC<EvolutionViewProps> = ({
   );
 
   return (
-    <div className="neutral-box flex flex-row items-center justify-evenly rounded-md p-2 py-3 text-white">
-      {family.members.length > 1 ? columnsWithArrows : <p>No Evolutions</p>}
-    </div>
+    <>
+      <div className="neutral-box flex flex-row items-center justify-evenly rounded-md p-2 py-3 text-white">
+        {family.members.length > 1 ? columnsWithArrows : <p>No Evolutions</p>}
+      </div>
+      <div className="mt-3"><EvolutionDetails evoFamily={family} /></div>
+    </>
   );
 };
 
