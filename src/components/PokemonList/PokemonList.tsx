@@ -1,60 +1,61 @@
 import { useEffect, useState } from "react";
 import { PokemonCard } from "./PokemonCard";
-import { useScreenWidth } from "../../hooks/useScreenWidth";
-import { Pokemon, SortBy } from "../../types";
-import { PokemonModal } from "../PokemonModal/PokemonModal";
+import { Pokemon } from "../../types";
+import PokemonModal from "../PokemonModal/PokemonModal";
 import useBodyScrollLock from "../../hooks/useBodyScrollLock";
 import { SortBar } from "./PokemonSortBar";
 import excludeForms from "@/utils/excludeForms";
+import { useUIStore } from "@/stores/uiStore";
+import { useFilterStore } from "@/stores/filterStore";
 
 type PokemonListProps = {
-  pokemons: Pokemon[];
-  fullPokemons: Pokemon[];
-  isShiny?: boolean;
-  sortBy: SortBy;
-  sortStat?: string;
-  setSortBy: (sortBy: SortBy) => void;
-  setSortStat: (statType?: string) => void;
-  descending: boolean;
-  setDescending: (descending: boolean) => void;
+  pokemonToShow: Pokemon[];
+  allPokemon: Pokemon[];
 };
 
-export function PokemonList({
-  pokemons,
-  fullPokemons,
-  isShiny,
-  sortBy,
-  sortStat,
-  setSortBy,
-  setSortStat,
-  descending,
-  setDescending: setDescending,
+export default function PokemonList({
+  pokemonToShow,
 }: PokemonListProps) {
   const [visibleCount, setVisibleCount] = useState(10);
-  const [selectedPokemon, setSelectedPokemon] = useState<Pokemon | null>(null);
-  const screenWidth = useScreenWidth();
+
+  // Get UI State from store
+  const {
+    selectedPokemon,
+    isModalOpen,
+  } = useUIStore();
+
+  //Get filter state from store
+  const {
+    sortBy,
+    sortStat,
+    descending,
+    setSortBy,
+    setSortStat,
+    toggleSortDirection,
+  } = useFilterStore();
 
   const ignoreList: number[] = [1435];
 
+  //Infinite Scroll
   useEffect(() => {
     const handleScroll = () => {
       if (
         window.innerHeight + window.scrollY >=
         document.body.offsetHeight - 300
       ) {
-        setVisibleCount((prev) => Math.min(prev + 10, pokemons.length));
+        setVisibleCount((prev) => Math.min(prev + 10, pokemonToShow.length));
       }
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [pokemons.length]);
+  }, [pokemonToShow.length]);
 
   // Prevent background scroll when modal is open
-  useBodyScrollLock(!!selectedPokemon);
+  useBodyScrollLock(isModalOpen);
 
   return (
-    <div className="flex w-full flex-col items-center">
+    <div className="flex w-full flex-col items-center select-none">
       <SortBar
         sortBy={sortBy}
         statType={sortStat}
@@ -63,10 +64,10 @@ export function PokemonList({
           setSortStat(newStatType);
         }}
         descending={descending}
-        onDirectionChange={setDescending}
+        onDirectionChange={toggleSortDirection}
       />
       <div className="w-full">
-        {pokemons
+        {pokemonToShow
           .slice(0, visibleCount)
           .filter(
             (pokemon) =>
@@ -74,25 +75,10 @@ export function PokemonList({
               !excludeForms(pokemon.forms),
           )
           .map((pokemon) => (
-            <PokemonCard
-              key={pokemon.index}
-              {...pokemon}
-              isShiny={isShiny}
-              onClick={() => setSelectedPokemon(pokemon)}
-              screenWidth={screenWidth}
-            />
+            <PokemonCard key={pokemon.index} pokemon={pokemon} />
           ))}
       </div>
-      <PokemonModal
-        pokemon={selectedPokemon}
-        onClose={() => setSelectedPokemon(null)}
-        isShiny={isShiny}
-        screenWidth={screenWidth}
-        onSelectPokemon={(id) => {
-          const selected = fullPokemons.find((p) => p.index === id);
-          setSelectedPokemon(selected || null);
-        }}
-      />
+      {selectedPokemon && isModalOpen && <PokemonModal />}
     </div>
   );
 }

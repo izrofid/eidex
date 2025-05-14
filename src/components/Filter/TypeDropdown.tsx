@@ -1,28 +1,46 @@
-import { typeDataArray, getTypeName } from "../../utils/typeInfo";
+import {
+  Listbox,
+  ListboxButton,
+  ListboxOption,
+  ListboxOptions,
+} from "@headlessui/react";
+import { getTypeName } from "../../utils/typeInfo";
+import { MdCheck, MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { useFilterStore } from "../../stores/filterStore";
 
-interface TypeDropdownProps {
-  value: number | undefined;
-  onChange: (v: number | undefined) => void;
-}
+function TypeDropdown() {
+  const setTypeValue = useFilterStore((state) => state.setTypeValue);
+  const options = useFilterStore((state) => state.typeOptions);
+  const selected = useFilterStore((state) => state.getSelectedType());
 
-function TypeDropdown({ value, onChange }: TypeDropdownProps) {
   return (
-    <div className="relative flex-1 min-w-32">
-      <select
-        value={value ?? ""}
-        onChange={(e) =>
-          onChange(e.target.value ? Number(e.target.value) : undefined)
-        }
-        className="h-9 rounded-md w-full border-0 bg-neutral-800 pl-3 pr-8 text-sm text-white focus:ring-1 focus:ring-blue-400"
-      >
-        <option value="">All</option>
-        {typeDataArray.map((typeInfo) => (
-          <option key={typeInfo.typeID} value={typeInfo.typeID}>
-            {getTypeName(typeInfo.typeID)}
-          </option>
-        ))}
-      </select>
-    </div>
+    <Listbox value={selected} onChange={(t) => setTypeValue(t.typeID)}>
+      <div className="w-full">
+        <ListboxButton className="flex h-9 w-full flex-row items-center justify-between rounded-md border-0 bg-neutral-800 pl-2 pr-1 text-left text-sm text-white">
+          {selected.typeID === undefined ? "All" : getTypeName(selected.typeID)}
+          <MdOutlineKeyboardArrowDown size={18} />
+        </ListboxButton>
+        <ListboxOptions
+          anchor="bottom start"
+          className="no-scrollbar w-(--button-width) rounded-md bg-neutral-900 shadow-lg ring-1 ring-gray-500 ring-opacity-5 [--anchor-gap:4px] focus:outline-none"
+        >
+          {options.map((typeInfo) => (
+            <ListboxOption
+              key={typeInfo.typeID ?? "all"}
+              value={typeInfo}
+              className="data-active:bg-blue-600 data-selected:font-bold group flex cursor-pointer select-none flex-row justify-between py-2 pl-4 pr-4 text-sm text-white"
+            >
+              {typeInfo.typeID === undefined
+                ? "All"
+                : getTypeName(typeInfo.typeID)}
+              <span className="group-data-selected:block hidden">
+                <MdCheck />
+              </span>
+            </ListboxOption>
+          ))}
+        </ListboxOptions>
+      </div>
+    </Listbox>
   );
 }
 

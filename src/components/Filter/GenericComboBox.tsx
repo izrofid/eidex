@@ -7,11 +7,11 @@ import {
 import {
   useState,
   useRef,
-  useLayoutEffect,
   ReactNode,
   ReactElement,
   isValidElement,
   cloneElement,
+  useEffect,
 } from "react";
 import { MdSearch, MdClose } from "react-icons/md";
 
@@ -22,6 +22,7 @@ type GenericComboBoxProps = {
   onSelect: (entry: ComboBoxEntry | null) => void;
   placeholder?: string;
   icon?: ReactNode;
+  value?: ComboBoxEntry | null;
 };
 
 function GenericComboBox({
@@ -29,23 +30,16 @@ function GenericComboBox({
   onSelect,
   placeholder,
   icon = <MdSearch size={20} />,
+  value = null,
 }: GenericComboBoxProps) {
-  const [selected, setSelected] = useState<ComboBoxEntry | null>(null);
+  const [selected, setSelected] = useState<ComboBoxEntry | null>(value);
   const [query, setQuery] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
   const parentRef = useRef<HTMLDivElement>(null);
-  const [comboWidth, setComboWidth] = useState<number>();
 
-  const renderedIcon =
-    isValidElement(icon) && typeof icon.type === "function"
-      ? cloneElement(icon as ReactElement<{ size?: number }>, { size: 20 })
-      : icon;
-
-  useLayoutEffect(() => {
-    if (parentRef.current) {
-      setComboWidth(parentRef.current.offsetWidth);
-    }
-  }, []);
+  useEffect(() => {
+    setSelected(value);
+  }, [value]);
 
   const filteredEntries =
     query === ""
@@ -56,22 +50,26 @@ function GenericComboBox({
 
   const handleChange = (entry: ComboBoxEntry | null) => {
     setSelected(entry);
-    onSelect(entry); // Notify parent immediately on selection
+    onSelect(entry);
   };
 
   const handleClose = () => {
     setTimeout(() => {
       inputRef.current?.blur();
-      // If nothing is selected, notify parent now
     }, 0);
   };
+
+  const renderedIcon =
+    isValidElement(icon) && typeof icon.type === "function"
+      ? cloneElement(icon as ReactElement<{ size?: number }>, { size: 20 })
+      : icon;
 
   return (
     <div
       ref={parentRef}
-      className="relative flex w-full flex-1 rounded-md bg-neutral-800"
+      className="relative flex w-full items-center rounded-md bg-neutral-800 px-2"
     >
-      <span className="pointer-events-none absolute left-2 top-1/2 -translate-y-1/2 text-gray-400">
+      <span className="pointer-events-none absolute inset-y-0 left-2 flex items-center text-gray-400">
         {renderedIcon}
       </span>
       <Combobox
@@ -86,18 +84,22 @@ function GenericComboBox({
           aria-label="Enter something"
           displayValue={(entry: ComboBoxEntry) => entry?.name}
           onChange={(event) => setQuery(event.target.value)}
-          // onFocus={() => {
-          //   setQuery("");
-          //   setSelected(null);
-          // }}
-          // // To clear input when user clicks
           placeholder={placeholder || "Select an entry..."}
-          className="h-9 w-full min-w-max rounded-md border-0 bg-neutral-800 px-2 pl-9 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-blue-400"
+          className="h-9 w-full rounded-md border-0 bg-neutral-800 pl-8 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-blue-400"
         />
+        <span
+          className="ml-2 inline-flex cursor-pointer select-none items-center text-gray-100 transition-colors hover:text-red-400 active:text-fuchsia-600"
+          onClick={() => {
+            setSelected(null);
+            setQuery("");
+            onSelect(null);
+          }}
+        >
+          <MdClose size={20} />
+        </span>
         <ComboboxOptions
           anchor="bottom start"
-          style={comboWidth ? { width: comboWidth } : undefined}
-          className="no-scrollbar rounded-sm border border-gray-600 bg-neutral-800 text-white shadow-md [--anchor-gap:4px]"
+          className="w-(--input-width) no-scrollbar rounded-sm border border-gray-600 bg-neutral-800 text-white shadow-md [--anchor-gap:4px]"
         >
           {({ option: entry }) => (
             <ComboboxOption
@@ -110,16 +112,6 @@ function GenericComboBox({
           )}
         </ComboboxOptions>
       </Combobox>
-      <span
-        className="inline-flex select-none items-center px-1 text-center align-middle text-gray-100 transition-colors hover:text-red-400 active:text-fuchsia-600"
-        onClick={() => {
-          setSelected(null);
-          setQuery("");
-          onSelect(null);
-        }}
-      >
-        <MdClose size={20} />
-      </span>
     </div>
   );
 }

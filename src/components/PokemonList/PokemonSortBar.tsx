@@ -1,6 +1,7 @@
 import { SortBy } from "@/types";
-import { Field, Label, Radio, RadioGroup, Switch } from "@headlessui/react";
-import { BiSort } from "react-icons/bi";
+import { PiSortAscending } from "react-icons/pi";
+import { PiSortDescending } from "react-icons/pi";
+import { Button } from "@headlessui/react";
 import React from "react";
 
 const sortOptions: { label: string; value: SortBy; statType?: string }[] = [
@@ -33,51 +34,50 @@ export const SortBar: React.FC<SortBarProps> = ({
   const selected = statType ? `${sortBy}:${statType}` : sortBy;
 
   return (
-    <div className="flex w-full items-center justify-between bg-neutral-900/60">
-      <RadioGroup
-        value={selected}
-        onChange={(val) => {
-          if (val.includes(":")) {
-            const [sortBy, statType] = val.split(":");
-            onChange(sortBy as SortBy, statType);
-          } else {
-            onChange(val as SortBy, undefined);
-          }
-        }}
-        className="mt-1 flex w-full text-nowrap border-transparent pt-2 text-sm justify-evenly"
-        aria-label="List sort"
-      >
+    <div className="flex w-full items-center justify-between bg-neutral-900/90">
+      {/* Sort buttons group */}
+      <div className="flex items-center gap-2 text-nowrap text-sm">
         {sortOptions.map((option) => {
           const value = option.statType
             ? `${option.value}:${option.statType}`
             : option.value;
+          const isSelected = selected === value;
           return (
-            <Field className="w-6 text-xs sm:text-base md:text-lg sm:w-10 md:w-14" key={option.label}>
-              <Radio
-                value={value}
-                className="data-checked:border-b-emerald-400 data-checked:border-b-4 flex w-full select-none items-center justify-center border-b-4 border-transparent text-center text-gray-200 transition-colors"
-              >
-                <Label className="font-pixel w-full cursor-pointer text-center">
-                  {option.label}
-                </Label>
-              </Radio>
-            </Field>
+            <Button
+              key={option.label}
+              data-selected={isSelected}
+              className="font-pixel md:text-md md:w-13 flex w-7 cursor-pointer items-center justify-center border-transparent text-center text-xs text-gray-300 data-[selected=true]:bg-emerald-600/50 md:gap-2 md:text-sm lg:text-lg"
+              onClick={() => {
+                if (isSelected) {
+                  if (onDirectionChange) onDirectionChange(!descending);
+                } else {
+                  if (option.statType) {
+                    onChange(option.value, option.statType);
+                  } else {
+                    onChange(option.value);
+                  }
+                }
+              }}
+            >
+              {option.label}
+            </Button>
           );
         })}
-      </RadioGroup>
-      {/* Ascending/Descending toggle using Headless UI Switch */}
-      <div className="px-3 flex items-center pt-2 mb-1">
-        <span className="mr-1 text-gray-200">
-          <BiSort size={16} />
-        </span>
-
-        <Switch
-          checked={descending}
-          onChange={onDirectionChange}
-          className="data-checked:bg-emerald-500 group inline-flex h-5 w-10 items-center rounded-full bg-gray-500 transition"
-        >
-          <span className="group-data-checked:translate-x-6 size-3 translate-x-1 rounded-full bg-white transition" />
-        </Switch>
+      </div>
+      {/* Direction marker */}
+      <div
+        className="cursor-pointer select-none pr-3 text-emerald-300"
+        onClick={() => {
+          if (onDirectionChange) {
+            onDirectionChange(!descending);
+          }
+        }}
+      >
+        {descending ? (
+          <PiSortAscending size={22} />
+        ) : (
+          <PiSortDescending size={22} />
+        )}
       </div>
     </div>
   );
