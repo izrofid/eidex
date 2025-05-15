@@ -1,7 +1,7 @@
 import GenericComboBox, { ComboBoxEntry } from "./GenericComboBox";
 import moveData from "../../data/moveData.json";
 import { useMemo } from "react";
-import { GiEnergySword } from "react-icons/gi";
+import { LuSword } from "react-icons/lu";
 import { Move } from "../../types";
 import { useFilterStore } from "@/stores/filterStore";
 
@@ -23,7 +23,7 @@ function MoveCombobox() {
       onSelect={setMoveValue}
       value={moveValue}
       placeholder="Pick a move..."
-      icon={<GiEnergySword />}
+      icon={<LuSword />}
     />
   );
 }

@@ -14,7 +14,7 @@ const bgColorMap: Record<string, string> = {
   type: "bg-blue-700",
   ability: "bg-purple-700",
   move: "bg-orange-700",
-  stat: "bg-yellow-700",
+  stat: "bg-amber-600",
   sort: "bg-pink-700",
 };
 
@@ -62,7 +62,7 @@ function FilterPill({ pill, onRemove }: FilterPillProps) {
     >
       <span>{getDisplayValue()}</span>
       <IoCloseCircle
-        className="cursor-pointer text-gray-300 hover:text-white"
+        className="cursor-pointer text-white hover:animate-pulse"
         onClick={() => onRemove(pill.id)}
         size={16}
       />
