@@ -1,6 +1,6 @@
 import { useFilterStore } from "../../stores/filterStore";
 import { Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/react';
-import { MdOutlineKeyboardArrowDown, MdCheck } from "react-icons/md";
+import { MdOutlineKeyboardArrowDown} from "react-icons/md";
 
 function MoveSourceDropdown() {
   const moveSource = useFilterStore(state => state.moveSource);
@@ -16,9 +16,9 @@ function MoveSourceDropdown() {
   return (
     <Listbox value={moveSource} onChange={setMoveSource}>
       <div className="relative">
-        <ListboxButton className="flex h-9 items-center justify-between gap-1 rounded-md border-0 bg-neutral-800 px-2 text-sm text-white">
+        <ListboxButton className="flex h-9 w-12 pl-2 items-center justify-between rounded-md bg-neutral-800 text-sm text-white">
           {options.find(opt => opt.id === moveSource)?.label || "All"}
-          <MdOutlineKeyboardArrowDown size={18} />
+          <MdOutlineKeyboardArrowDown/>
         </ListboxButton>
         <ListboxOptions
           anchor="bottom start"
@@ -28,12 +28,9 @@ function MoveSourceDropdown() {
             <ListboxOption
               key={option.id}
               value={option.id}
-              className="data-active:bg-blue-600 data-selected:font-bold group flex cursor-pointer select-none flex-row justify-between py-2 pl-4 pr-4 text-sm text-white"
+              className="data-active:bg-gray-600 data-selected:font-bold data-selected:text-emerald-500 cursor-pointer select-none py-2 text-center text-sm text-white"
             >
               {option.label}
-              <span className="group-data-selected:block hidden">
-                <MdCheck />
-              </span>
             </ListboxOption>
           ))}
         </ListboxOptions>

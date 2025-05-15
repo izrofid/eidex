@@ -36,7 +36,7 @@ export const SortBar: React.FC<SortBarProps> = ({
   return (
     <div className="flex w-full items-center justify-between bg-neutral-900/90">
       {/* Sort buttons group */}
-      <div className="flex items-center gap-2 text-nowrap text-sm">
+      <div className="ml-3 flex h-9 flex-1 text-nowrap">
         {sortOptions.map((option) => {
           const value = option.statType
             ? `${option.value}:${option.statType}`
@@ -46,7 +46,7 @@ export const SortBar: React.FC<SortBarProps> = ({
             <Button
               key={option.label}
               data-selected={isSelected}
-              className="font-pixel md:text-md md:w-13 flex w-7 cursor-pointer items-center justify-center border-transparent text-center text-xs text-gray-300 data-[selected=true]:bg-emerald-600/50 md:gap-2 md:text-sm lg:text-lg"
+              className="min-w-max px-2 text-xs font-medium text-gray-300 border-b-4 border-transparent data-[selected=true]:border-emerald-500 data-[selected=true]:text-emerald-500"
               onClick={() => {
                 if (isSelected) {
                   if (onDirectionChange) onDirectionChange(!descending);

@@ -60,7 +60,7 @@ input[type="number"] {
   }
 
   .neutral-box {
-    @apply bg-neutral-900/30 border-neutral-600 border-1;
+    @apply border-1 border-neutral-600 bg-neutral-900/30;
   }
   .pokemon-sprite {
     width: calc(32px * 5);
@@ -74,7 +74,12 @@ input[type="number"] {
     overflow: hidden;
     position: relative;
   }
+}
+@layer utilities{
+  .rendering-pixelated {
+    image-rendering: pixelated;
 
+  }
 }
 
 @theme inline {
@@ -185,9 +190,9 @@ input[type="number"] {
 }
 
 @layer base {
-  * {
+  /* * {
     @apply border-border outline-ring/50;
-  }
+  } */
   body {
     @apply bg-background text-foreground;
   }

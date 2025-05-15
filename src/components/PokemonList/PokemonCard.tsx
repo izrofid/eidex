@@ -3,9 +3,9 @@ import { TypeBadge } from "../TypeBadges/TypeBadge";
 import { getAbilityName } from "../../utils/abilityData";
 import { Pokemon } from "../../types";
 import chroma from "chroma-js";
-import getSprite from "@/utils/getSprite";
 import { useUIStore } from "@/stores/uiStore";
 import { useScreenWidth } from "@/hooks/useScreenWidth";
+import SpriteImage from "../SpriteImage";
 
 type PokemonCardProps = {
   pokemon: Pokemon;
@@ -13,12 +13,12 @@ type PokemonCardProps = {
 
 const adjustedBgCache: Record<number, string> = {};
 
-export function PokemonCard({pokemon}: PokemonCardProps) {
+export function PokemonCard({ pokemon }: PokemonCardProps) {
   // Get UI State from store
-  const { isShiny, openModal } = useUIStore();
+  const openModal = useUIStore((state) => state.openModal);
   const screenWidth = useScreenWidth();
 
-  const { index, dexId, nameKey, types, stats, abilities } = pokemon;
+  const { dexId, nameKey, types, stats, abilities } = pokemon;
 
   // Convert the ID to a string and pad it with leading zeros and a #
   const formattedId = `#${String(dexId).padStart(3, "0")}`;
@@ -37,11 +37,6 @@ export function PokemonCard({pokemon}: PokemonCardProps) {
 
   // Calculate the BST (Base Stat Total)
   const bst = stats.reduce((sum, stat) => sum + stat, 0);
-
-  // If the sprite is "", then use the default sprite
-  const fallbackSprite = `missingno.png`;
-
-  const displaySprite = getSprite(index, isShiny);
 
   const typeId = types[0];
   let adjustedBg = adjustedBgCache[typeId];
@@ -66,14 +61,7 @@ export function PokemonCard({pokemon}: PokemonCardProps) {
         <div className="flex justify-between bg-neutral-900/20 py-1 pl-2">
           <div className="flex items-center gap-1">
             {/* Sprite and name  */}
-            <img
-              src={displaySprite || fallbackSprite}
-              className="h-[64px] w-[64px] object-contain"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.src = fallbackSprite;
-              }}
-            />
+            <SpriteImage pokemon={pokemon}/>
             <div className="text-md font-bold">{nameKey}</div>
 
             {/* Types */}
