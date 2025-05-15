@@ -16,7 +16,6 @@ import { getSpeciesData, hasForms } from "@/utils/speciesData";
 import { Switch } from "@headlessui/react";
 import { useUIStore } from "@/stores/uiStore";
 import { useScreenWidth } from "@/hooks/useScreenWidth";
-import SpriteImage from "../SpriteImage";
 
 function PokemonView({ pokemon }: { pokemon: Pokemon }) {
   const { isShiny, setSelectedPokemon } = useUIStore();

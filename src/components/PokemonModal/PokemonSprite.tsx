@@ -32,7 +32,7 @@ const PokemonSprite = ({
   }: React.SyntheticEvent<HTMLImageElement, Event>) => {
     currentTarget.onerror = null; // prevents looping
     setIsRunning(false);
-    setDisplaySprite(getSprite(spriteIndex, isShiny));
+    getSprite(spriteIndex, isShiny).then((sprite) => setDisplaySprite(sprite));
   };
   /**
    * Need this incase user clicks Evo form so `displaySprite` changes
