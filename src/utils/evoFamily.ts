@@ -97,13 +97,6 @@ function getEvolutionaryFamily(speciesId: number): EvolutionFamily {
         node.children.push(childNode);
       }
     }
-
-    console.log(
-      `[buildTree] id=${id} name=${pokemon.nameKey} stage=${stage}` +
-        (requirements ? ` | req=${requirements}` : "") +
-        (details ? ` | details=${details}` : ""),
-    );
-
     return node;
   }
 

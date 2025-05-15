@@ -5,7 +5,7 @@ import CurrentFilters from "./CurrentFilters";
 import TypeDropdown from "./TypeDropdown";
 import AbilityCombobox from "./AbilityCombobox";
 import MoveFilterGroup from "./MoveFilterGroup";
-import StatFilter from "./StatFilter";
+import StatFilter from "./StatFilter/StatFilter";
 import useBodyScrollLock from "../../hooks/useBodyScrollLock";
 import { useFilterStore } from "../../stores/filterStore";
 
@@ -21,17 +21,17 @@ function FilterModal() {
   return (
     <>
       <Button
-        className="flex h-9 items-center gap-2 rounded-md bg-neutral-700 px-3 text-gray-200 hover:text-emerald-400  active:text-emerald-600"
+        className="text-gray-200 hover:text-emerald-400 active:text-emerald-600 focus:outline-none"
         onClick={() => setIsOpen(true)}
       >
-        <FaSliders />
+        <FaSliders size={20} />
       </Button>
 
       <Dialog open={isOpen} onClose={() => setIsOpen(false)}>
         <div className="fixed inset-0 bg-black/80" aria-hidden="true" />
-        <div className="fixed inset-0 flex items-center justify-center p-4 select-none">
-          <DialogPanel className="w-full max-w-xl rounded-lg bg-zinc-900 p-4 border-1 border-gray-400/40">
-            <DialogTitle className="pb-2 text-xl font-bold text-gray-200">
+        <div className="fixed inset-0 flex justify-center select-none">
+          <DialogPanel className="w-full sm:max-w-3xl bg-zinc-900 transition px-5">
+            <DialogTitle className="pt-4 pb-3 text-xl font-bold text-gray-200">
               Filter Options
             </DialogTitle>
             <div className="flex flex-wrap gap-2">

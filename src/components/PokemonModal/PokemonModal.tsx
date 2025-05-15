@@ -7,7 +7,6 @@ import { getEvolutionaryFamily } from "@/utils/evoFamily";
 import AbilityDescription from "./AbilityDescription";
 import TabbedInterface from "./TabbedInterface";
 import TypeMatchup from "./TypeMatchup";
-import getSprite from "@/utils/getSprite";
 import { buildPokemonMoveTabs } from "./Learnset/learnsetTabs";
 import { TypeBadge } from "../TypeBadges/TypeBadge";
 import StatBars from "./StatBars";
@@ -16,13 +15,12 @@ import { getSpeciesData, hasForms } from "@/utils/speciesData";
 import { Switch } from "@headlessui/react";
 import { useUIStore } from "@/stores/uiStore";
 import { useScreenWidth } from "@/hooks/useScreenWidth";
+import SpriteImage from "../SpriteImage";
 
 function PokemonView({ pokemon }: { pokemon: Pokemon }) {
   const { isShiny, setSelectedPokemon } = useUIStore();
   const screenWidth = useScreenWidth();
   const [selectedAbility, setSelectedAbility] = useState<Ability | null>(null);
-
-  const displaySprite = getSprite(pokemon.index, isShiny);
   const evoFamily = getEvolutionaryFamily(pokemon.index);
   const tabsData = buildPokemonMoveTabs(pokemon);
 
@@ -33,11 +31,7 @@ function PokemonView({ pokemon }: { pokemon: Pokemon }) {
 
   return (
     <div className="flex w-full flex-col items-center">
-      <img
-        src={displaySprite}
-        alt={pokemon.speciesName}
-        className="h-[128px] w-[128px] object-contain"
-      />
+      <SpriteImage pokemon={pokemon} mult={2} className="rendering-pixelated"/>
       <div className="mt-2 flex flex-row gap-1">
         {pokemon.types.map((typeId: number, index: number) => (
           <div key={index}>
@@ -67,7 +61,6 @@ function PokemonView({ pokemon }: { pokemon: Pokemon }) {
           <EvolutionView
             pokemon={pokemon}
             family={evoFamily}
-            isShiny={isShiny}
             onClickPokemon={handleSelectPokemon}
           />
         </div>

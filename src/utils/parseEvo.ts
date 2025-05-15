@@ -5,9 +5,9 @@ import { getNameKey } from "./speciesData";
 
 export const parseEvolutions: Record<number, (evo: number[]) => string> = {
   0: () => `None`,
-  1: () => `Level up with friendship ≥ 220`,
-  2: () => `Level up during the day with friendship ≥ 220`,
-  3: () => `Level up at night with friendship ≥ 220`,
+  1: () => `Lvl + ♥ ≥ 220`,
+  2: () => `Lvl during the day with ♥ ≥ 220`,
+  3: () => `Lvl at night with ♥ ≥ 220`,
   4: (evo) => `Lvl ${evo[2]}`,
   5: () => `Pokémon is traded`,
   6: () => `Pokémon is traded while it's holding the specified item`,
@@ -19,25 +19,25 @@ export const parseEvolutions: Record<number, (evo: number[]) => string> = {
   12: (evo) => `Lvl ${evo[2]} with a Cascoon pid`,
   13: (evo) => `Lvl ${evo[2]}`,
   14: (evo) => `Lvl ${evo[2]}`,
-  15: (evo) => `Level up with beauty ≥ ${evo[2]}`,
+  15: (evo) => `Lvl with beauty ≥ ${evo[2]}`,
   16: (evo) => `Lvl ${evo[2]}, is female`,
   17: (evo) => `Lvl ${evo[2]}, is male`,
   18: (evo) => `Lvl ${evo[2]}, is night`,
   19: (evo) => `Lvl ${evo[2]}, is day`,
   20: (evo) => `Lvl ${evo[2]}, is dusk`,
-  21: (evo) => `Level up, with ${getItemName(evo[2])} at day`,
-  22: (evo) => `Level up, with ${getItemName(evo[2])} at night`,
-  23: (evo) => `Level up, knowing ${getMoveName(evo[2])}`,
+  21: (evo) => `Lvl, with ${getItemName(evo[2])} at day`,
+  22: (evo) => `Lvl, with ${getItemName(evo[2])} at night`,
+  23: (evo) => `Lvl, knowing ${getMoveName(evo[2])}`,
   24: (evo) =>
-    `Level up with friendship ≥ 220, knows ${getTypeName(evo[2])} move`,
-  25: (evo) => `Level up in ${evo[2]}`,
+    `Lvl with ♥ ≥ 220, knows ${getTypeName(evo[2])} move`,
+  25: (evo) => `Lvl in ${evo[2]}`,
   26: (evo) => `${evo[2]} on male`,
   27: (evo) => `${evo[2]} on female`,
   28: (evo) => `Lvl ${evo[2]} with overworld rain`,
-  29: (evo) => `Level up with ${getNameKey(evo[2])} in party`,
+  29: (evo) => `Lvl with ${getNameKey(evo[2])} in party`,
   30: (evo) => `Lvl ${evo[2]} with a Dark Type in party`,
   31: (evo) => `Traded for ${evo[2]}`,
-  32: () => `Level up at specific place`,
+  32: () => `Lvl at specific place`,
   33: (evo) => `Lvl ${evo[2]} + Hardy, Brave, Adamant, Naughty, Docile, Impish, Lax, Hasty, Jolly, Naive, Rash, Sassy, or Quirky`,
   34: (evo) => `Lvl ${evo[2]} + Lonely, Bold, Relaxed, Timid, Serious, Modest, Mild, Quiet, Bashful, Calm, Gentle, or Careful`,
   35: (evo) => `${evo[2]} crits in battle`,
@@ -48,10 +48,10 @@ export const parseEvolutions: Record<number, (evo: number[]) => string> = {
   40: (evo) => `use ${evo[2]}, in daytime`,
   41: (evo) => `Level up, with ${evo[2]}`,
   42: (evo) => `Lvl ${evo[2]} during fog in the overworld`,
-  43: () =>
-    `Level up, knows specified move, has a personality value with a modulus of 0`,
-  44: () =>
-    `Level up, knows specified move, has a personality value with a modulus of 1-99`,
+  43: (evo) =>
+    `Level up, knows ${getMoveName(evo[2])} and PID % 100 is 0`,
+  44: (evo) =>
+    `Level up, knows ${getMoveName(evo[2])},  PID % 100 is not 0`,
   45: (evo) =>
     `Lvl ${evo[2]} in battle with a personality value with a modulus of 0`,
   46: (evo) =>
@@ -109,10 +109,10 @@ export const parseShortEvolutions: Record<number, (evo: number[]) => string> = {
   40: (evo) => `use ${evo[2]}, in daytime`,
   41: (evo) => `Level up, with ${evo[2]}`,
   42: (evo) => `Lvl ${evo[2]} during fog in the overworld`,
-  43: () =>
-    `Level up, knows specified move, has a personality value with a modulus of 0`,
-  44: () =>
-    `Level up, knows specified move, has a personality value with a modulus of 1-99`,
+  43: (evo) =>
+    `Level up, knows ${getMoveName(evo[2])} and PID % 100 is 0`,
+  44: (evo) =>
+    `Level up, knows ${getMoveName(evo[2])},  PID % 100 is not 0`,
   45: (evo) =>
     `Lvl ${evo[2]} in battle with a personality value with a modulus of 0`,
   46: (evo) =>
