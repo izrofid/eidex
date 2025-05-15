@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Button, Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
 import { FaSliders } from "react-icons/fa6";
-import CurrentFilters from "./CurrentFilters";
-import TypeDropdown from "./TypeDropdown";
-import AbilityCombobox from "./AbilityCombobox";
-import MoveFilterGroup from "./MoveFilterGroup";
+import CurrentFilters from "./CurrentFilters/CurrentFilters";
+import TypeDropdown from "./FilterComponents/TypeDropdown";
+import AbilityCombobox from "./FilterComponents/AbilityCombobox";
+import MoveFilterGroup from "./FilterComponents/MoveFilterGroup";
 import StatFilter from "./StatFilter/StatFilter";
 import useBodyScrollLock from "../../hooks/useBodyScrollLock";
 import { useFilterStore } from "../../stores/filterStore";

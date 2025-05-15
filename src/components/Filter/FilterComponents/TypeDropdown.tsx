@@ -4,9 +4,9 @@ import {
   ListboxOption,
   ListboxOptions,
 } from "@headlessui/react";
-import { getTypeName } from "../../utils/typeInfo";
+import { getTypeName } from "../../../utils/typeInfo";
 import { MdCheck, MdOutlineKeyboardArrowDown } from "react-icons/md";
-import { useFilterStore } from "../../stores/filterStore";
+import { useFilterStore } from "../../../stores/filterStore";
 
 function TypeDropdown() {
   const setTypeValue = useFilterStore((state) => state.setTypeValue);

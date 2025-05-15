@@ -1,9 +1,9 @@
 import GenericComboBox, { ComboBoxEntry } from "./GenericComboBox";
-import speciesData from "../../data/speciesData.json";
-import { Pokemon } from "../../types";
+import speciesData from "../../../data/speciesData.json";
+import { Pokemon } from "../../../types";
 import { useMemo, useState, useEffect } from "react";
 import { MdSearch } from "react-icons/md";
-import { useFilterStore } from "../../stores/filterStore";
+import { useFilterStore } from "../../../stores/filterStore";
 
 const speciesIDMap: ComboBoxEntry[] = Object.values(speciesData)
   .filter((p) => typeof p === "object" && !!p && "nameKey" in p)

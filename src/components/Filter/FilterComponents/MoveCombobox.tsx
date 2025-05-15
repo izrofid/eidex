@@ -1,8 +1,8 @@
 import GenericComboBox, { ComboBoxEntry } from "./GenericComboBox";
-import moveData from "../../data/moveData.json";
+import moveData from "../../../data/moveData.json";
 import { useMemo } from "react";
 import { LuSword } from "react-icons/lu";
-import { Move } from "../../types";
+import { Move } from "../../../types";
 import { useFilterStore } from "@/stores/filterStore";
 
 const moveIDMap: ComboBoxEntry[] = Object.values(moveData)

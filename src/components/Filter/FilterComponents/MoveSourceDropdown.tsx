@@ -1,4 +1,4 @@
-import { useFilterStore } from "../../stores/filterStore";
+import { useFilterStore } from "../../../stores/filterStore";
 import { Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/react';
 import { MdOutlineKeyboardArrowDown} from "react-icons/md";
 

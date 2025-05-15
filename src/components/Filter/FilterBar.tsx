@@ -1,7 +1,7 @@
-import NameCombobox from "./NameCombobox";
-import { ComboBoxEntry } from "./GenericComboBox";
+import NameCombobox from "./FilterComponents/NameCombobox";
+import { ComboBoxEntry } from "./FilterComponents/GenericComboBox";
 import FilterModal from "./FilterModal";
-import CurrentFilters from "./CurrentFilters";
+import CurrentFilters from "./CurrentFilters/CurrentFilters";
 import { useFilterStore } from "@/stores/filterStore";
 
 function FilterBar() {
