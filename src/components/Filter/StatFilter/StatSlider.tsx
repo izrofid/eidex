@@ -1,5 +1,6 @@
 import { Slider } from "@/components/ui/slider";
 import StatInputBox from "./StatInputBox";
+import { useFilterStore } from "@/stores/filterStore";
 
 interface StatSliderProps {
   max: number;
@@ -14,6 +15,10 @@ function StatSlider({
   min,
   setChosenStat,
 }: StatSliderProps) {
+
+  const isStatMax = useFilterStore((state) => state.isStatMax)
+  const barColor:string = isStatMax ? "bg-rose-400" : "bg-emerald-400"
+
   return (
     <div className="flex flex-1 flex-row items-center gap-2 cursor-pointer">
       <Slider
@@ -22,7 +27,7 @@ function StatSlider({
         value={chosenStat !== undefined ? [chosenStat] : [min]}
         onValueChange={([val]) => setChosenStat(val)}
         className="flex-1"
-        colorPrimary="bg-emerald-400"
+        colorPrimary={barColor}
       />
      <StatInputBox max={max}/>
     </div>
