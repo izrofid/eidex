@@ -31,7 +31,7 @@ function PokemonView({ pokemon }: { pokemon: Pokemon }) {
 
   return (
     <div className="flex w-full flex-col items-center">
-      <SpriteImage pokemon={pokemon} mult={2} />
+      <SpriteImage pokemon={pokemon} mult={2} className="rendering-pixelated"/>
       <div className="mt-2 flex flex-row gap-1">
         {pokemon.types.map((typeId: number, index: number) => (
           <div key={index}>
