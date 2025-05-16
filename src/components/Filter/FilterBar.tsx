@@ -19,12 +19,12 @@ function FilterBar() {
 
 
   return (
-    <div className="flex flex-col select-none">
+    <div className="select-none">
       <div className="flex flex-1 items-center justify-between gap-3 rounded-t-lg bg-neutral-900/90 px-3 py-2 shadow-lg">
         <NameCombobox onSelect={handleNameSelect} />
         <FilterModal />
       </div>
-      <div className="px-3">
+      <div className="px-3 bg-gray-600/20 shadow-x-md">
         <CurrentFilters />
       </div>
     </div>

@@ -16,7 +16,7 @@ function TypeDropdown() {
   return (
     <Listbox value={selected} onChange={(t) => setTypeValue(t.typeID)}>
       <div className="w-full">
-        <ListboxButton className="flex h-9 w-full flex-row items-center justify-between rounded-md border-0 bg-neutral-800 pl-2 pr-1 text-left text-sm text-white">
+        <ListboxButton className="flex h-9 w-full min-w-20 flex-row items-center justify-between rounded-md border-0 bg-neutral-800 pl-2 pr-1 text-left text-sm text-white">
           {selected.typeID === undefined ? "Type" : getTypeName(selected.typeID)}
           <MdOutlineKeyboardArrowDown size={18} />
         </ListboxButton>

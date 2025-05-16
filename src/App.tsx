@@ -1,59 +1,45 @@
 import { useMemo } from "react";
 import "./App.css";
 import FilterBar from "./components/Filter/FilterBar";
+import FilterSidebar from "@/components/Filter/FilterSidebar";
 import PokemonList from "./components/PokemonList/PokemonList";
 import PokemonModal from "./components/PokemonModal/PokemonModal";
-import CreditsButton from "./components/CreditsButton";
-import { Switch } from "@headlessui/react";
 import { filterPokemon } from "./utils/filterPokemon";
 import pokemonData from "./data/speciesData.json";
 import { useFilterStore } from "./stores/filterStore";
-import { useUIStore } from "./stores/uiStore";
 import { Pokemon } from "./types";
+import SecondaryBar from "./components/AppHeader/SecondaryBar";
+import { useUIStore } from "./stores/uiStore";
 
 function App() {
   // Get filter state from Zustand store
   const { filters } = useFilterStore();
-
-  // Get UI state from Zustand store
-  const { isShiny, toggleShiny, selectedPokemon, isModalOpen } =
-    useUIStore();
 
   // Memoized filtered Pokémon list (only updates when filters change)
   const filteredPokemon = useMemo(() => {
     return filterPokemon(pokemonData as Pokemon[], filters);
   }, [filters]);
 
+
+  const selectedPokemon = useUIStore((state => state.selectedPokemon))
+  const isModalOpen = useUIStore((state) => state.isModalOpen)
+
   return (
-    <div className="flex min-h-screen justify-center bg-zinc-800">
-      <div className="border-1 shadow-2xl/60 flex w-full max-w-3xl flex-col rounded-lg border-neutral-900/50">
-        <FilterBar />
+    <div className="flex">
+      <div className="w-(--sidebar-width) fixed max-sm:hidden">
+        <FilterSidebar></FilterSidebar>
+        <SecondaryBar/>
+      </div>
+      <div className="sm:ml-(--sidebar-width) items-center flex flex-col min-h-screen w-full bg-zinc-800">
+        <div className="w-full max-w-3xl"><FilterBar/></div>
+        <div className="border-1 shadow-2xl/60 flex w-full h-full max-w-3xl flex-col rounded-lg border-neutral-900/50">
+          <PokemonList
+            pokemonToShow={filteredPokemon}
+            allPokemon={pokemonData as Pokemon[]}
+          />
 
-        {/* Shiny toggle UI */}
-        <div className="flex items-center justify-between gap-2 bg-neutral-800/30 px-3 py-2 select-none">
-          <span className="flex flex-row items-center gap-1">
-            <img
-              src="shinycharm.png"
-              className="h-7 w-7 object-contain"
-              alt="Shiny charm"
-            />
-            <Switch
-              checked={isShiny}
-              onChange={toggleShiny}
-              className="data-checked:bg-emerald-500 group inline-flex h-5 w-10 cursor-pointer items-center rounded-full bg-gray-500 transition"
-            >
-              <span className="group-data-checked:translate-x-6 size-3 translate-x-1 rounded-full bg-white transition" />
-            </Switch>
-          </span>
-          <CreditsButton />
+          {selectedPokemon && isModalOpen && <PokemonModal />}
         </div>
-
-        <PokemonList
-          pokemonToShow={filteredPokemon}
-          allPokemon={pokemonData as Pokemon[]}
-        />
-
-        {selectedPokemon && isModalOpen && <PokemonModal />}
       </div>
     </div>
   );
