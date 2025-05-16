@@ -30,7 +30,7 @@ const TabbedInterface: React.FC<TabbedInterfaceProps> = ({ tabs }) => {
         {tabsData.map((tab, index) => (
           <button
             key={index}
-            className={`flex-1 py-2 px-4 text-center font-medium ${
+            className={`flex-1 py-2 px-4 text-center text-sm font-medium ${
               index === activeTab
                 ? "border-b-2 border-emerald-500 text-emerald-500"
                 : "text-gray-500 hover:text-emerald-300"
