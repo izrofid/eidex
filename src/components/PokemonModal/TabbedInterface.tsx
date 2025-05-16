@@ -1,40 +1,47 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from "react";
 
-type TabProps = {
+type Tab = {
   label: string;
-  content: React.ReactNode;
+  content?: React.ReactNode;
+  contentFn?: () => React.ReactNode;
 };
 
 type TabbedInterfaceProps = {
-  tabs: TabProps[];
+  tabs: () => Tab[] | Tab[];
 };
 
 const TabbedInterface: React.FC<TabbedInterfaceProps> = ({ tabs }) => {
   const [activeTab, setActiveTab] = useState(0);
+  const [tabsData, setTabsData] = useState<Tab[]>([]);
+
+  useEffect(() => {
+    const resolvedTabs = typeof tabs === "function" ? tabs() : tabs;
+    setTabsData(resolvedTabs);
+  }, [tabs]);
+
+  if (!tabsData.length) return null;
+
+  const currentTab = tabsData[activeTab];
+  const content = currentTab.contentFn ? currentTab.contentFn() : currentTab.content;
 
   return (
-    <div className="tabbed-interface w-full">
-      <div className="flex justify-between border-b border-gray-600 mb-4">
-        {tabs.map((tab, index) => (
+    <div className="w-full">
+      <div className="flex border-gray-200">
+        {tabsData.map((tab, index) => (
           <button
             key={index}
-            className={`px-4 py-2 text-sm font-medium focus:outline-none transition-colors
-              ${
-                activeTab === index
-                  ? 'border-b-2 border-pink-500 text-pink-300 '
-                  : 'text-gray-300 hover:text-pink-200'
-              }
-            `}
-            style={{ marginBottom: '-1px' }}
+            className={`flex-1 py-2 px-4 text-center font-medium ${
+              index === activeTab
+                ? "border-b-2 border-emerald-500 text-emerald-500"
+                : "text-gray-500 hover:text-emerald-300"
+            }`}
             onClick={() => setActiveTab(index)}
           >
             {tab.label}
           </button>
         ))}
       </div>
-      <div className="tab-content w-full">
-        {tabs[activeTab].content}
-      </div>
+      <div className="pt-4">{content}</div>
     </div>
   );
 };
