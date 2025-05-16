@@ -41,7 +41,7 @@ function App() {
       >
         <FilterSidebar/>
       </div>
-      <div className="sm:ml-(--sidebar-width) flex min-h-screen w-full flex-col items-center bg-zinc-950">
+      <div className="sm:ml-(--sidebar-width) flex min-h-screen w-full flex-col items-center bg-neutral-900">
         <div className="w-full max-w-3xl bg-zinc-900">
           <FilterBar />
         </div>
