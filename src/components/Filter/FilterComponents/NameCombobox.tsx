@@ -12,15 +12,17 @@ const speciesIDMap: ComboBoxEntry[] = Object.values(speciesData)
     name: (p as Pokemon).nameKey,
   }));
 
-  type ComboBoxDemoProps = {
-    onSelect: (entry: ComboBoxEntry | null) => void;
-  };
-
-function NameCombobox({onSelect}: ComboBoxDemoProps) {
-  const nameValue = useFilterStore(state => state.nameValue);
+function NameCombobox() {
+  const nameValue = useFilterStore((state) => state.nameValue);
+  const setNameValue = useFilterStore((state) => state.setNameValue);
   const [selectedEntry, setSelectedEntry] = useState<ComboBoxEntry | null>(null);
   const pokemonEntries: ComboBoxEntry[] = useMemo(() => speciesIDMap, []);
-  
+
+  const handleNameSelect = (entry: ComboBoxEntry | null) => {
+    setSelectedEntry(entry);
+    setNameValue(entry ? entry.name : "");
+  };
+
   // Reset the component when nameValue is cleared
   useEffect(() => {
     if (!nameValue && selectedEntry) {
@@ -28,20 +30,14 @@ function NameCombobox({onSelect}: ComboBoxDemoProps) {
     }
   }, [nameValue, selectedEntry]);
 
-  // Custom wrapper around onSelect that also updates our local state
-  const handleSelect = (entry: ComboBoxEntry | null) => {
-    setSelectedEntry(entry);
-    onSelect(entry);
-  };
-
   return (
-      <GenericComboBox
-        entries={pokemonEntries}
-        onSelect={handleSelect}
-        placeholder="Pick a pokemon..."
-        icon={<MdSearch/>}
-        value={selectedEntry}
-      />
+    <GenericComboBox
+      entries={pokemonEntries}
+      onSelect={handleNameSelect}
+      placeholder="Pick a pokemon..."
+      icon={<MdSearch />}
+      value={selectedEntry}
+    />
   );
 }
 

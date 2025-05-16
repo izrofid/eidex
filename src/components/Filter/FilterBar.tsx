@@ -1,27 +1,13 @@
 import NameCombobox from "./FilterComponents/NameCombobox";
-import { ComboBoxEntry } from "./FilterComponents/GenericComboBox";
 import CurrentFilters from "./CurrentFilters/CurrentFilters";
-import { useFilterStore } from "@/stores/filterStore";
 import SidebarButton from "./SidebarButton";
 
 function FilterBar() {
-  // Use the filter store directly
-  const {
-    setNameValue,
-  } = useFilterStore();
-
-  // State to force remount of NameCombobox for clearing
-
-  const handleNameSelect = (entry: ComboBoxEntry | null) => {
-    setNameValue(entry ? entry.name : "");
-  };
-
-
 
   return (
     <div className="select-none">
       <div className="flex flex-1 items-center justify-between gap-3 rounded-t-lg px-3 py-2 shadow-lg">
-        <NameCombobox onSelect={handleNameSelect} />
+        <NameCombobox/>
         <SidebarButton></SidebarButton>
       </div>
       <div className="px-3 bg-gray-600/20 shadow-x-md">

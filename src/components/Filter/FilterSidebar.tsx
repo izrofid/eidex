@@ -8,6 +8,7 @@ import TypePanel from "./TypePanel";
 import { useScreenWidth } from "@/hooks/useScreenWidth";
 import { useUIStore } from "@/stores/uiStore";
 import useBodyScrollLock from "@/hooks/useBodyScrollLock";
+import NameCombobox from "./FilterComponents/NameCombobox";
 
 function FilterSidebar() {
   const isSidebarOpen = useUIStore((state) => state.isSidebarOpen);
@@ -26,6 +27,7 @@ function FilterSidebar() {
         <span className="text-xl font-bold text-gray-200">Filter Options</span>
       </div>
       <div className="flex flex-1 flex-col gap-3">
+        <NameCombobox/>
         <AbilityCombobox />
         <MoveFilterGroup />
         <TypePanel />
