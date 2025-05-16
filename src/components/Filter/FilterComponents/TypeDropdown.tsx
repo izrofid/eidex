@@ -4,9 +4,9 @@ import {
   ListboxOption,
   ListboxOptions,
 } from "@headlessui/react";
-import { getTypeName } from "../../utils/typeInfo";
+import { getTypeName } from "../../../utils/typeInfo";
 import { MdCheck, MdOutlineKeyboardArrowDown } from "react-icons/md";
-import { useFilterStore } from "../../stores/filterStore";
+import { useFilterStore } from "../../../stores/filterStore";
 
 function TypeDropdown() {
   const setTypeValue = useFilterStore((state) => state.setTypeValue);
@@ -16,13 +16,13 @@ function TypeDropdown() {
   return (
     <Listbox value={selected} onChange={(t) => setTypeValue(t.typeID)}>
       <div className="w-full">
-        <ListboxButton className="flex h-9 w-full flex-row items-center justify-between rounded-md border-0 bg-neutral-800 pl-2 pr-1 text-left text-sm text-white">
+        <ListboxButton className="flex h-9 w-full min-w-20 flex-row items-center justify-between rounded-md border-0 bg-filterbox pl-2 pr-1 text-left text-sm text-white">
           {selected.typeID === undefined ? "Type" : getTypeName(selected.typeID)}
           <MdOutlineKeyboardArrowDown size={18} />
         </ListboxButton>
         <ListboxOptions
           anchor="bottom start"
-          className="no-scrollbar w-(--button-width) rounded-md bg-neutral-900 shadow-lg ring-1 ring-gray-500 ring-opacity-5 [--anchor-gap:4px] focus:outline-none"
+          className="no-scrollbar w-(--button-width) rounded-md bg-zinc-800 shadow-lg ring-1 ring-gray-500 ring-opacity-5 [--anchor-gap:4px] focus:outline-none"
         >
           {options.map((typeInfo) => (
             <ListboxOption

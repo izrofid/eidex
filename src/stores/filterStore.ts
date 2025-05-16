@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import { FilterOptions, MoveSource, SortBy } from "@/types";
-import { ComboBoxEntry } from "@/components/Filter/GenericComboBox";
+import { ComboBoxEntry } from "@/components/Filter/FilterComponents/GenericComboBox";
 import { typeDataArray } from "@/utils/typeInfo";
 
 interface FilterState {

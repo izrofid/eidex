@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Button, Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
 import { FaSliders } from "react-icons/fa6";
-import CurrentFilters from "./CurrentFilters";
-import TypeDropdown from "./TypeDropdown";
-import AbilityCombobox from "./AbilityCombobox";
-import MoveFilterGroup from "./MoveFilterGroup";
+import CurrentFilters from "./CurrentFilters/CurrentFilters";
+import TypeDropdown from "./FilterComponents/TypeDropdown";
+import AbilityCombobox from "./FilterComponents/AbilityCombobox";
+import MoveFilterGroup from "./FilterComponents/MoveFilterGroup";
 import StatFilter from "./StatFilter/StatFilter";
 import useBodyScrollLock from "../../hooks/useBodyScrollLock";
 import { useFilterStore } from "../../stores/filterStore";
@@ -28,9 +28,8 @@ function FilterModal() {
       </Button>
 
       <Dialog open={isOpen} onClose={() => setIsOpen(false)}>
-        <div className="fixed inset-0 bg-black/80" aria-hidden="true" />
-        <div className="fixed inset-0 flex justify-center select-none">
-          <DialogPanel className="w-full sm:max-w-3xl bg-zinc-900 transition px-5">
+        <div className="fixed inset-0 flex select-none justify-start">
+          <DialogPanel className="w-[90%] sm:max-w-3xl bg-zinc-900 px-5 transition-discrete">
             <DialogTitle className="pt-4 pb-3 text-xl font-bold text-gray-200">
               Filter Options
             </DialogTitle>

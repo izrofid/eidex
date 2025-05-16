@@ -20,7 +20,7 @@ function StatSlider({
   const barColor:string = isStatMax ? "bg-rose-400" : "bg-emerald-400"
 
   return (
-    <div className="flex flex-1 flex-row items-center gap-2 cursor-pointer">
+    <div className="flex flex-1 flex-row-reverse items-center gap-2 cursor-pointer">
       <Slider
         max={max}
         step={1}

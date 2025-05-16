@@ -23,19 +23,21 @@ type GenericComboBoxProps = {
   placeholder?: string;
   icon?: ReactNode;
   value?: ComboBoxEntry | null;
+  bg?: string;
 };
 
 function GenericComboBox({
   entries,
   onSelect,
-  placeholder,
+  placeholder = "Select an entry...",
   icon = <MdSearch size={20} />,
   value = null,
+  bg = "bg-filterbox",
 }: GenericComboBoxProps) {
+  // Track the actual selected value separately from what's shown in the combobox
   const [selected, setSelected] = useState<ComboBoxEntry | null>(value);
   const [query, setQuery] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
-  const parentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setSelected(value);
@@ -49,11 +51,22 @@ function GenericComboBox({
         );
 
   const handleChange = (entry: ComboBoxEntry | null) => {
-    setSelected(entry);
+    // Pass the selected entry to the parent
     onSelect(entry);
+
+    // Clear the selected state and query
+    setSelected(null);
+    setQuery("");
+  };
+
+  const handleClear = () => {
+    setSelected(null);
+    setQuery("");
+    onSelect(null);
   };
 
   const handleClose = () => {
+    // Blur on close
     setTimeout(() => {
       inputRef.current?.blur();
     }, 0);
@@ -65,10 +78,7 @@ function GenericComboBox({
       : icon;
 
   return (
-    <div
-      ref={parentRef}
-      className="relative flex w-full items-center rounded-md bg-neutral-800 px-2"
-    >
+    <div className={`relative flex w-full items-center rounded-full ${bg} px-2`}>
       <span className="pointer-events-none absolute inset-y-0 left-2 flex items-center text-gray-400">
         {renderedIcon}
       </span>
@@ -78,28 +88,25 @@ function GenericComboBox({
         onClose={handleClose}
         immediate={true}
         virtual={{ options: filteredEntries }}
+        nullable
       >
         <ComboboxInput
           ref={inputRef}
           aria-label="Enter something"
-          displayValue={(entry: ComboBoxEntry) => entry?.name}
+          displayValue={() => query}
           onChange={(event) => setQuery(event.target.value)}
-          placeholder={placeholder || "Select an entry..."}
-          className="h-9 w-full rounded-md border-0 bg-neutral-800 pl-8 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-blue-400"
+          placeholder={placeholder}
+          className="h-9 w-full rounded-md border-0 pl-8 text-sm text-white placeholder-gray-100 focus:ring-1 focus:ring-blue-400"
         />
         <span
           className="ml-2 inline-flex cursor-pointer select-none items-center text-gray-100 transition-colors hover:text-red-400 active:text-fuchsia-600"
-          onClick={() => {
-            setSelected(null);
-            setQuery("");
-            onSelect(null);
-          }}
+          onClick={handleClear}
         >
           <MdClose size={20} />
         </span>
         <ComboboxOptions
           anchor="bottom start"
-          className="w-(--input-width) no-scrollbar rounded-sm border border-gray-600 bg-neutral-800 text-white shadow-md [--anchor-gap:4px]"
+          className="w-(--input-width) no-scrollbar z-50 rounded-sm border border-gray-600 bg-zinc-800 text-white shadow-md [--anchor-gap:4px]"
         >
           {({ option: entry }) => (
             <ComboboxOption

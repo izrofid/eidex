@@ -31,7 +31,7 @@ function PokemonView({ pokemon }: { pokemon: Pokemon }) {
 
   return (
     <div className="flex w-full flex-col items-center">
-      <SpriteImage pokemon={pokemon} mult={2} className="rendering-pixelated"/>
+      <SpriteImage pokemon={pokemon} mult={2} className="rendering-pixelated" />
       <div className="mt-2 flex flex-row gap-1">
         {pokemon.types.map((typeId: number, index: number) => (
           <div key={index}>
@@ -78,7 +78,7 @@ function PokemonView({ pokemon }: { pokemon: Pokemon }) {
         </div>
       </div>
       <div className="flex w-full flex-grow">
-        <TabbedInterface tabs={tabsData} />
+        <TabbedInterface tabs={() => tabsData} />
       </div>
     </div>
   );
@@ -95,8 +95,11 @@ function PokemonModal() {
       onClick={closeModal}
     >
       <div
-        className="w-xl no-scrollbar relative my-5 h-[95dvh] max-h-screen justify-normal overflow-y-auto rounded-lg border border-gray-100 bg-zinc-800 p-6"
+        className="w-xl no-scrollbar relative mx-2 my-5 h-[95dvh] max-h-screen justify-normal overflow-y-auto rounded-lg border border-gray-100 bg-zinc-800 p-6"
         onClick={(e) => e.stopPropagation()}
+        style={{
+          scrollBehavior: "smooth"
+        }}
       >
         <span className="absolute left-3 flex flex-row items-center gap-1 self-center">
           {" "}

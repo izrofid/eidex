@@ -78,7 +78,7 @@ export default function PokemonList({
             <PokemonCard key={pokemon.index} pokemon={pokemon} />
           ))}
       </div>
-      {selectedPokemon && isModalOpen && <PokemonModal />}
+      <div className="z-50">{selectedPokemon && isModalOpen && <PokemonModal />}</div>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { getTypeSnapColor } from "../../utils/typeInfo";
+import { getTypeColor} from "../../utils/typeInfo";
 import { TypeBadge } from "../TypeBadges/TypeBadge";
 import { getAbilityName } from "../../utils/abilityData";
 import { Pokemon } from "../../types";
@@ -41,9 +41,9 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
   const typeId = types[0];
   let adjustedBg = adjustedBgCache[typeId];
   if (!adjustedBg) {
-    const snapColor = getTypeSnapColor(typeId);
+    const snapColor = getTypeColor(typeId)[1];
     const bgColor = chroma(snapColor);
-    adjustedBg = bgColor.darken(1.2).mix("black", 0.7).alpha(0.13).css();
+    adjustedBg = bgColor.darken(1.2).mix("black", 0.05).alpha(0.15).css();
     adjustedBgCache[typeId] = adjustedBg;
   }
 
@@ -56,12 +56,12 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
 
   return (
     <div onClick={() => openModal(pokemon)} className="w-full cursor-pointer">
-      <div className="flex w-full flex-col text-white">
+      <div className="border-b-1 flex w-full flex-col border-neutral-500/50 bg-neutral-800 text-white">
         {/* Header */}
-        <div className="flex justify-between bg-neutral-900/20 py-1 pl-2">
+        <div className="flex justify-between bg-zinc-800 py-2 pl-2">
           <div className="flex items-center gap-1">
             {/* Sprite and name  */}
-            <SpriteImage pokemon={pokemon}/>
+            <SpriteImage pokemon={pokemon} />
             <div className="text-md font-bold">{nameKey}</div>
 
             {/* Types */}
@@ -85,12 +85,12 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
               </p>
             </span>
             {/* Abilities */}
-            {/* Abilities */}
             {abilities.map((abilityId: number, index: number) => {
               const name = getAbilityName(abilityId);
               const isHidden = index === abilities.length - 1; // last one = Hidden
 
               return (
+                name !=="None" &&
                 <div
                   key={index}
                   className={`text-left italic ${
@@ -104,12 +104,12 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
           </div>
 
           {/* Stats here */}
-          <div className="my-3 flex flex-col">
-            <div className="flex items-end gap-1 text-center sm:gap-4">
+          <div className="my-3 flex w-full  flex-col">
+            <div className="flex items-end gap-2 justify-evenly sm:max-w-[70%] text-center sm:gap-4">
               {reorderedStats.map((statValue, index) => (
                 <div key={index} className="flex min-w-1 flex-col items-center">
                   <div className="text-sm italic">{statValue}</div>
-                  <div className="md:text-md text-sm font-bold">
+                  <div className="text-sm font-bold">
                     {statLabels[index]}
                   </div>
                 </div>
