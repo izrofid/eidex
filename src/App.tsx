@@ -39,7 +39,7 @@ function App() {
       <div
         className={`w-(--sidebar-width) z-20 fixed max-sm:w-[90%] ${isSidebarOpen ? "" : "max-sm:hidden"}`}
       >
-        <FilterSidebar></FilterSidebar>
+        <FilterSidebar/>
       </div>
       <div className="sm:ml-(--sidebar-width) flex min-h-screen w-full flex-col items-center bg-zinc-950">
         <div className="w-full max-w-3xl bg-zinc-900">
