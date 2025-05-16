@@ -104,12 +104,12 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
           </div>
 
           {/* Stats here */}
-          <div className="my-3 flex flex-col">
-            <div className="flex items-end gap-1 text-center sm:gap-4">
+          <div className="my-3 flex w-full  flex-col">
+            <div className="flex items-end gap-2 justify-evenly sm:max-w-[70%] text-center sm:gap-4">
               {reorderedStats.map((statValue, index) => (
                 <div key={index} className="flex min-w-1 flex-col items-center">
                   <div className="text-sm italic">{statValue}</div>
-                  <div className="md:text-md text-sm font-bold">
+                  <div className="text-sm font-bold">
                     {statLabels[index]}
                   </div>
                 </div>
