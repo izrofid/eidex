@@ -85,12 +85,12 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
               </p>
             </span>
             {/* Abilities */}
-            {/* Abilities */}
             {abilities.map((abilityId: number, index: number) => {
               const name = getAbilityName(abilityId);
               const isHidden = index === abilities.length - 1; // last one = Hidden
 
               return (
+                name !=="None" &&
                 <div
                   key={index}
                   className={`text-left italic ${
