@@ -16,13 +16,13 @@ function MoveSourceDropdown() {
   return (
     <Listbox value={moveSource} onChange={setMoveSource}>
       <div className="relative">
-        <ListboxButton className="flex h-9 w-12 pl-2 items-center justify-between rounded-md bg-neutral-800 text-sm text-white">
+        <ListboxButton className="flex h-9 w-12 pl-2 items-center justify-between rounded-md bg-transparent text-sm text-white">
           {options.find(opt => opt.id === moveSource)?.label || "All"}
           <MdOutlineKeyboardArrowDown/>
         </ListboxButton>
         <ListboxOptions
           anchor="bottom start"
-          className="no-scrollbar w-(--button-width) rounded-md bg-neutral-800 shadow-lg ring-1 ring-gray-500 ring-opacity-5 [--anchor-gap:4px] focus:outline-none"
+          className="no-scrollbar w-(--button-width) rounded-md shadow-lg ring-1 ring-gray-500 ring-opacity-5 [--anchor-gap:4px] focus:outline-none"
         >
           {options.map((option) => (
             <ListboxOption

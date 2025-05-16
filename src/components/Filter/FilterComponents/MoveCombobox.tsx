@@ -24,6 +24,7 @@ function MoveCombobox() {
       value={moveValue}
       placeholder="Pick a move..."
       icon={<LuSword />}
+      bg="bg-transparent"
     />
   );
 }

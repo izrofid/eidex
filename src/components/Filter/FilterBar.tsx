@@ -20,7 +20,7 @@ function FilterBar() {
 
   return (
     <div className="select-none">
-      <div className="flex flex-1 items-center justify-between gap-3 rounded-t-lg bg-neutral-900/90 px-3 py-2 shadow-lg">
+      <div className="flex flex-1 items-center justify-between gap-3 rounded-t-lg px-3 py-2 shadow-lg">
         <NameCombobox onSelect={handleNameSelect} />
         <FilterModal />
       </div>

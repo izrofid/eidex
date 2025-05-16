@@ -10,6 +10,7 @@ import { useFilterStore } from "./stores/filterStore";
 import { Pokemon } from "./types";
 import SecondaryBar from "./components/AppHeader/SecondaryBar";
 import { useUIStore } from "./stores/uiStore";
+import CreditsPanel from "./components/CreditsPanel";
 
 function App() {
   // Get filter state from Zustand store
@@ -25,14 +26,15 @@ function App() {
   const isModalOpen = useUIStore((state) => state.isModalOpen)
 
   return (
-    <div className="flex">
+    <div className="flex h-full w-[100%]">
       <div className="w-(--sidebar-width) fixed max-sm:hidden">
         <FilterSidebar></FilterSidebar>
         <SecondaryBar/>
       </div>
-      <div className="sm:ml-(--sidebar-width) items-center flex flex-col min-h-screen w-full bg-zinc-800">
-        <div className="w-full max-w-3xl"><FilterBar/></div>
-        <div className="border-1 shadow-2xl/60 flex w-full h-full max-w-3xl flex-col rounded-lg border-neutral-900/50">
+      <div className="sm:ml-(--sidebar-width) items-center flex flex-col min-h-screen w-full bg-zinc-950">
+        <div className="w-full max-w-3xl bg-zinc-900"><FilterBar/></div>
+        <div className="border-x-1 border-b-1 shadow-2xl/60 flex w-full h-full max-w-3xl flex-col">
+        <CreditsPanel/>
           <PokemonList
             pokemonToShow={filteredPokemon}
             allPokemon={pokemonData as Pokemon[]}

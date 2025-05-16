@@ -9,6 +9,10 @@
   --color-fieldset-border: #414a6a;
 }
 
+@theme {
+  --color-filterbox: --alpha(var(--color-zinc-700) / 70%);
+}
+
 body {
   @apply bg-zinc-700;
 }

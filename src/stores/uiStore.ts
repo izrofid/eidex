@@ -6,10 +6,13 @@ interface UIState {
   isShiny: boolean;
   selectedPokemon: Pokemon | null;
   isModalOpen: boolean;
+  isCreditsOpen: boolean;
   toggleShiny: () => void;
   setSelectedPokemon: (pokemon: Pokemon | null) => void;
   openModal: (pokemon: Pokemon) => void;
   closeModal: () => void;
+  openCredits: () => void;
+  closeCredits: () => void;
 }
 
 export const useUIStore = create<UIState>()(
@@ -19,6 +22,7 @@ export const useUIStore = create<UIState>()(
       isShiny: false,
       selectedPokemon: null,
       isModalOpen: false,
+      isCreditsOpen: false,
 
       //Actions
       toggleShiny: () => set((state) => ({ isShiny: !state.isShiny })),
@@ -26,7 +30,10 @@ export const useUIStore = create<UIState>()(
       openModal: (pokemon) =>
         set({ selectedPokemon: pokemon, isModalOpen: true }),
       closeModal: () => set({ isModalOpen: false }),
+      openCredits: () => set({ isCreditsOpen: true }),
+      closeCredits: () => set({ isCreditsOpen: false }),
     }),
+
     {
       name: "eidex-ui-storage",
       // Only persist the shiny state

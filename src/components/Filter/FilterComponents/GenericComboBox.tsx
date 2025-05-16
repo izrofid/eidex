@@ -23,6 +23,7 @@ type GenericComboBoxProps = {
   placeholder?: string;
   icon?: ReactNode;
   value?: ComboBoxEntry | null;
+  bg?:string;
 };
 
 function GenericComboBox({
@@ -31,6 +32,7 @@ function GenericComboBox({
   placeholder,
   icon = <MdSearch size={20} />,
   value = null,
+  bg = "bg-filterbox",
 }: GenericComboBoxProps) {
   const [selected, setSelected] = useState<ComboBoxEntry | null>(value);
   const [query, setQuery] = useState("");
@@ -67,7 +69,7 @@ function GenericComboBox({
   return (
     <div
       ref={parentRef}
-      className="relative flex w-full items-center rounded-md bg-neutral-800 px-2"
+      className={`relative flex w-full items-center rounded-md ${bg} px-2`}
     >
       <span className="pointer-events-none absolute inset-y-0 left-2 flex items-center text-gray-400">
         {renderedIcon}
@@ -85,7 +87,7 @@ function GenericComboBox({
           displayValue={(entry: ComboBoxEntry) => entry?.name}
           onChange={(event) => setQuery(event.target.value)}
           placeholder={placeholder || "Select an entry..."}
-          className="h-9 w-full rounded-md border-0 bg-neutral-800 pl-8 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-blue-400"
+          className="h-9 w-full rounded-md border-0 pl-8 text-sm text-white placeholder-gray-100 focus:ring-1 focus:ring-blue-400"
         />
         <span
           className="ml-2 inline-flex cursor-pointer select-none items-center text-gray-100 transition-colors hover:text-red-400 active:text-fuchsia-600"
@@ -99,7 +101,7 @@ function GenericComboBox({
         </span>
         <ComboboxOptions
           anchor="bottom start"
-          className="w-(--input-width) no-scrollbar rounded-sm border border-gray-600 bg-neutral-800 text-white shadow-md [--anchor-gap:4px]"
+          className="w-(--input-width) no-scrollbar rounded-sm border bg-zinc-800 border-gray-600 text-white shadow-md [--anchor-gap:4px]"
         >
           {({ option: entry }) => (
             <ComboboxOption
