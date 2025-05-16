@@ -101,7 +101,7 @@ function GenericComboBox({
         </span>
         <ComboboxOptions
           anchor="bottom start"
-          className="w-(--input-width) no-scrollbar rounded-sm border bg-zinc-800 border-gray-600 text-white shadow-md [--anchor-gap:4px]"
+          className="w-(--input-width) z-50 no-scrollbar rounded-sm border bg-zinc-800 border-gray-600 text-white shadow-md [--anchor-gap:4px]"
         >
           {({ option: entry }) => (
             <ComboboxOption

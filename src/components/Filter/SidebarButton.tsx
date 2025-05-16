@@ -8,7 +8,7 @@ const SidebarButton: React.FC = () => {
 
   return (
     <Button
-      className="text-gray-200 hover:text-emerald-400 focus:outline-none active:text-emerald-600"
+      className="text-gray-200 hover:text-emerald-400 focus:outline-none active:text-emerald-600 sm:hidden"
       onClick={() => toggleSidebar()}
     >
       <FaSliders size={20} />
