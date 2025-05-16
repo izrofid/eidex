@@ -16,7 +16,7 @@ const TypePanel: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-wrap gap-2 rounded-md border-2 border-zinc-500 p-3">
+    <div className="flex flex-wrap max-sm:justify-evenly gap-2 rounded-md border-2 border-zinc-500 p-3">
       {validTypes.map((type) => (
         <TypeBadgeSimple
           key={type}

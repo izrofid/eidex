@@ -1,8 +1,8 @@
 import NameCombobox from "./FilterComponents/NameCombobox";
 import { ComboBoxEntry } from "./FilterComponents/GenericComboBox";
-import FilterModal from "./FilterModal";
 import CurrentFilters from "./CurrentFilters/CurrentFilters";
 import { useFilterStore } from "@/stores/filterStore";
+import SidebarButton from "./SidebarButton";
 
 function FilterBar() {
   // Use the filter store directly
@@ -22,7 +22,7 @@ function FilterBar() {
     <div className="select-none">
       <div className="flex flex-1 items-center justify-between gap-3 rounded-t-lg px-3 py-2 shadow-lg">
         <NameCombobox onSelect={handleNameSelect} />
-        <FilterModal />
+        <SidebarButton></SidebarButton>
       </div>
       <div className="px-3 bg-gray-600/20 shadow-x-md">
         <CurrentFilters />

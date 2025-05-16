@@ -5,8 +5,20 @@ import MoveFilterGroup from "./FilterComponents/MoveFilterGroup";
 import StatFilter from "./StatFilter/StatFilter";
 import SecondaryBar from "../AppHeader/SecondaryBar";
 import TypePanel from "./TypePanel";
+import { useScreenWidth } from "@/hooks/useScreenWidth";
+import { useUIStore } from "@/stores/uiStore";
+import useBodyScrollLock from "@/hooks/useBodyScrollLock";
 
 function FilterSidebar() {
+  const isSidebarOpen = useUIStore((state) => state.isSidebarOpen);
+  const screenWidth = useScreenWidth();
+
+  const isSmallScreen = screenWidth !== "md";
+
+  const isScrollLock = isSmallScreen && isSidebarOpen;
+
+  useBodyScrollLock(isScrollLock);
+
   return (
     <aside className="relative flex h-screen w-full flex-col justify-between border-r border-neutral-800 bg-zinc-800 px-5 py-6">
       <div className="mb-4 flex items-center gap-2">

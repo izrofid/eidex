@@ -8,7 +8,6 @@ import { filterPokemon } from "./utils/filterPokemon";
 import pokemonData from "./data/speciesData.json";
 import { useFilterStore } from "./stores/filterStore";
 import { Pokemon } from "./types";
-import SecondaryBar from "./components/AppHeader/SecondaryBar";
 import { useUIStore } from "./stores/uiStore";
 import CreditsPanel from "./components/CreditsPanel";
 
@@ -21,20 +20,33 @@ function App() {
     return filterPokemon(pokemonData as Pokemon[], filters);
   }, [filters]);
 
+  const selectedPokemon = useUIStore((state) => state.selectedPokemon);
+  const isModalOpen = useUIStore((state) => state.isModalOpen);
 
-  const selectedPokemon = useUIStore((state => state.selectedPokemon))
-  const isModalOpen = useUIStore((state) => state.isModalOpen)
+  const isSidebarOpen = useUIStore((state) => state.isSidebarOpen);
+
+  const toggleSidebar = useUIStore((state) => state.toggleSidebar);
 
   return (
     <div className="flex h-full w-[100%]">
-      <div className="w-(--sidebar-width) fixed max-sm:hidden">
+      {/* Overlay for small screens */}
+      {isSidebarOpen && (
+        <div
+          className="fixed inset-0 z-10 bg-transparent sm:hidden"
+          onClick={() => toggleSidebar()}
+        />
+      )}
+      <div
+        className={`w-(--sidebar-width) z-20 fixed max-sm:w-[90%] ${isSidebarOpen ? "" : "max-sm:hidden"}`}
+      >
         <FilterSidebar></FilterSidebar>
-        <SecondaryBar/>
       </div>
-      <div className="sm:ml-(--sidebar-width) items-center flex flex-col min-h-screen w-full bg-zinc-950">
-        <div className="w-full max-w-3xl bg-zinc-900"><FilterBar/></div>
-        <div className="border-x-1 border-b-1 shadow-2xl/60 flex w-full h-full max-w-3xl flex-col">
-        <CreditsPanel/>
+      <div className="sm:ml-(--sidebar-width) flex min-h-screen w-full flex-col items-center bg-zinc-950">
+        <div className="w-full max-w-3xl bg-zinc-900">
+          <FilterBar />
+        </div>
+        <div className="border-x-1 border-b-1 shadow-2xl/60 flex h-full w-full max-w-3xl flex-col">
+          <CreditsPanel />
           <PokemonList
             pokemonToShow={filteredPokemon}
             allPokemon={pokemonData as Pokemon[]}
