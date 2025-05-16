@@ -95,7 +95,7 @@ function PokemonModal() {
       onClick={closeModal}
     >
       <div
-        className="w-xl no-scrollbar relative my-5 h-[95dvh] max-h-screen justify-normal overflow-y-auto rounded-lg border border-gray-100 bg-zinc-800 p-6"
+        className="w-xl no-scrollbar relative my-5 mx-2 h-[95dvh] max-h-screen justify-normal overflow-y-auto rounded-lg border border-gray-100 bg-zinc-800 p-6"
         onClick={(e) => e.stopPropagation()}
       >
         <span className="absolute left-3 flex flex-row items-center gap-1 self-center">
