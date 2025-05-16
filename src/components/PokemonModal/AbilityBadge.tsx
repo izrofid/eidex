@@ -18,7 +18,7 @@ const AbilityBadge: React.FC<AbilityBadgeProps> = ({
   return (
     <div
       className={`ability_badge cursor-pointer ${
-        isHidden ? "bg-pink-700 font-bold" : ""
+        isHidden ? "bg-pink-700" : ""
       }`}
       onClick={() => onClick(ability)}
     >
