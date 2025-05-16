@@ -21,7 +21,7 @@ function FilterSidebar() {
   useBodyScrollLock(isScrollLock);
 
   return (
-    <aside className="relative flex h-screen w-full flex-col justify-between border-r border-neutral-800 bg-zinc-800 px-5 py-6">
+    <aside className="relative flex h-[100dvh] w-full flex-col justify-between border-r border-neutral-800 bg-zinc-800 px-5 py-6">
       <div className="mb-4 flex items-center gap-2">
         <FaSliders size={20} className="text-emerald-400" />
         <span className="text-xl font-bold text-gray-200">Filter Options</span>
