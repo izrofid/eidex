@@ -36,7 +36,7 @@ function StatFilter() {
   }, [statType, max]);
 
   return (
-    <div className="flex w-full flex-col lg:flex-wrap-reverse gap-2">
+    <div className="flex w-full flex-col lg:flex-wrap-reverse gap-3">
       <StatSlider
         max={max}
         chosenStat={chosenStat}

@@ -78,7 +78,7 @@ function GenericComboBox({
       : icon;
 
   return (
-    <div className={`relative flex w-full items-center rounded-md ${bg} px-2`}>
+    <div className={`relative flex w-full items-center rounded-full ${bg} px-2`}>
       <span className="pointer-events-none absolute inset-y-0 left-2 flex items-center text-gray-400">
         {renderedIcon}
       </span>

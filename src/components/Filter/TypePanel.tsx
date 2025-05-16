@@ -16,14 +16,22 @@ const TypePanel: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-wrap max-sm:justify-evenly gap-2 rounded-md border-2 border-zinc-500 p-3">
-      {validTypes.map((type) => (
-        <TypeBadgeSimple
-          key={type}
-          typeId={type}
-          onClick={() => toggleType(type)}
-        />
-      ))}
+    <div className="w-full overflow-hidden rounded-md border-2 border-zinc-500 p-3">
+      <div 
+        className="grid gap-2"
+        style={{ 
+          gridTemplateColumns: `repeat(auto-fit, minmax(80px, 1fr))`,
+          width: '100%'
+        }}
+      >
+        {validTypes.map((type) => (
+          <TypeBadgeSimple
+            key={type}
+            typeId={type}
+            onClick={() => toggleType(type)}
+          />
+        ))}
+      </div>
     </div>
   );
 };
