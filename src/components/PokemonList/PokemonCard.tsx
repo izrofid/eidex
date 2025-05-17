@@ -1,11 +1,15 @@
-import { getTypeColor} from "../../utils/typeInfo";
+import { getTypeColor } from "../../utils/typeInfo";
 import { TypeBadge } from "../TypeBadges/TypeBadge";
 import { getAbilityName } from "../../utils/abilityData";
 import { Pokemon } from "../../types";
 import chroma from "chroma-js";
 import { useUIStore } from "@/stores/uiStore";
+
 import { useScreenWidth } from "@/hooks/useScreenWidth";
 import SpriteImage from "../SpriteImage";
+import { randomizeAbility } from "@/randomiser/randomiser";
+import { abilityWhitelist } from "@/randomiser/abilityWhitelist";
+import { useRandomiserStore } from "@/stores/randomiserStore";
 
 type PokemonCardProps = {
   pokemon: Pokemon;
@@ -18,7 +22,18 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
   const openModal = useUIStore((state) => state.openModal);
   const screenWidth = useScreenWidth();
 
-  const { dexId, nameKey, types, stats, abilities } = pokemon;
+  const {
+    index,
+    dexId,
+    nameKey,
+    types,
+    stats,
+    abilities: origAbilities,
+  } = pokemon;
+
+  const isRandomiserActive = useRandomiserStore(state => state.isRandomiserActive)
+
+  const abilities = origAbilities.map((_, i) => randomizeAbility(index, i, abilityWhitelist, isRandomiserActive));
 
   // Convert the ID to a string and pad it with leading zeros and a #
   const formattedId = `#${String(dexId).padStart(3, "0")}`;
@@ -90,28 +105,27 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
               const isHidden = index === abilities.length - 1; // last one = Hidden
 
               return (
-                name !=="None" &&
-                <div
-                  key={index}
-                  className={`text-left italic ${
-                    isHidden ? "font-semibold text-pink-400" : ""
-                  }`}
-                >
-                  {name}
-                </div>
+                name !== "None" && (
+                  <div
+                    key={index}
+                    className={`text-left italic ${
+                      isHidden ? "font-semibold text-pink-400" : ""
+                    }`}
+                  >
+                    {name}
+                  </div>
+                )
               );
             })}
           </div>
 
           {/* Stats here */}
-          <div className="my-3 flex w-full  flex-col">
-            <div className="flex items-end gap-2 justify-evenly sm:max-w-[70%] text-center sm:gap-4">
+          <div className="my-3 flex w-full flex-col">
+            <div className="flex items-end justify-evenly gap-2 text-center sm:max-w-[70%] sm:gap-4">
               {reorderedStats.map((statValue, index) => (
                 <div key={index} className="flex min-w-1 flex-col items-center">
                   <div className="text-sm italic">{statValue}</div>
-                  <div className="text-sm font-bold">
-                    {statLabels[index]}
-                  </div>
+                  <div className="text-sm font-bold">{statLabels[index]}</div>
                 </div>
               ))}
               {/* BST box, styled identically to stat boxes */}

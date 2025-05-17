@@ -1,4 +1,6 @@
 import { Pokemon, FilterOptions, SortBy } from "../types";
+import { randomizeAbility } from "@/randomiser/randomiser";
+import { abilityWhitelist } from "@/randomiser/abilityWhitelist";
 // import { getMoveData, getTMMove, getTutorMove } from "./moveData";
 
 function matchesNameFilter(pokemon: Pokemon, name?: string): boolean {
@@ -40,9 +42,16 @@ function matchesStatFilter(
   return isStatMax ? pokemon.stats[idx] <= chosenStat : pokemon.stats[idx] >= chosenStat;
 }
 
-function matchesAbilityFilter(pokemon: Pokemon, abilityId?: number): boolean {
+function matchesAbilityFilter(
+  pokemon: Pokemon, 
+  isRandomiserActive: boolean, 
+  abilityId?: number
+): boolean {
   if (!abilityId) return true;
-  return pokemon.abilities.some((id) => id === abilityId);
+  const randomisedAbilities = pokemon.abilities.map((_,i) => 
+    randomizeAbility(pokemon.index, i, abilityWhitelist, isRandomiserActive)
+  );
+  return randomisedAbilities.some((id) => id === abilityId);
 }
 
 // function matchesLevelupMove(pokemon: Pokemon, move?: string): boolean {
@@ -148,6 +157,7 @@ function sortPokemon(
 export function filterPokemon(
   pokemons: Pokemon[],
   filters: FilterOptions = {},
+  isRandomiserActive: boolean,
 ): Pokemon[] {
   const filtered = pokemons.filter(
     (pokemon) =>
@@ -159,7 +169,7 @@ export function filterPokemon(
         filters.statType,
         filters.isStatMax,
       ) &&
-      matchesAbilityFilter(pokemon, filters.abilityId) &&
+      matchesAbilityFilter(pokemon, isRandomiserActive, filters.abilityId) &&
       matchesMove(pokemon, filters.moveId, filters.moveSource),
   );
 

@@ -19,6 +19,7 @@ export interface Pokemon {
   types: number[];
   stats: number[];
   abilities: Abilities;
+  randomisedAbilities?: Abilities;
   levelUpMoves: number[][];
   tmMoves?: number[];
   eggMoves?: number[] | null;

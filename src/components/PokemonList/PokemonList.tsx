@@ -36,6 +36,32 @@ export default function PokemonList({
 
   const ignoreList: number[] = [1435];
 
+  // Reset visible count when the list changes
+  useEffect(() => {
+    // Reset to initial count or screen height adjusted count
+    const initialCount = Math.max(
+      10,
+      Math.ceil((window.innerHeight / 100) * 1.5) // Approximate number of items to fill screen
+    );
+    setVisibleCount(Math.min(initialCount, pokemonToShow.length));
+    
+    // Force scroll to top when the list changes
+    window.scrollTo({
+      top: 0,
+      behavior: "auto",
+    });
+
+    // After scrolling to top and initial render, check if we need more items
+    const timeoutId = setTimeout(() => {
+      if (document.body.offsetHeight < window.innerHeight && 
+          initialCount < pokemonToShow.length) {
+        setVisibleCount(prev => Math.min(prev + 10, pokemonToShow.length));
+      }
+    }, 100);
+    
+    return () => clearTimeout(timeoutId);
+  }, [pokemonToShow.length]);
+
   //Infinite Scroll
   useEffect(() => {
     const handleScroll = () => {

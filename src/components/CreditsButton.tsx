@@ -8,7 +8,7 @@ const CreditsButton: React.FC = () => {
   return (
     <Button
       onClick={openCredits}
-      className="font-pixel shadow-md/40 select-none items-center rounded bg-neutral-700 px-2 text-white hover:bg-gray-700"
+      className="font-pixel shadow-md/40 w-15 select-none rounded bg-neutral-700 px-2 text-white hover:bg-gray-700"
     >
       Credits
     </Button>

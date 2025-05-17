@@ -12,22 +12,42 @@ import { useFilterStore } from "./stores/filterStore";
 import { useUIStore } from "./stores/uiStore";
 import { Pokemon } from "./types";
 import { filterPokemon } from "./utils/filterPokemon";
+import { useRandomiserState } from "./utils/randomiserState";
 
 function App() {
   // Get filter state from Zustand store
   const { filters } = useFilterStore();
+  const randomiserState = useRandomiserState();
 
-  // Memoized filtered Pokémon list (only updates when filters change)
+  // Memoized filtered Pokémon list (only updates when filters or randomizer state changes)
   const filteredPokemon = useMemo(() => {
-    return filterPokemon(pokemonData as Pokemon[], filters);
-  }, [filters]);
+    return filterPokemon(pokemonData as Pokemon[], filters, randomiserState.isActive);
+  }, [filters, randomiserState]);
 
+  // Create ref to store previous randomiser state for comparison
+  const prevRandomiserStateRef = useRef(randomiserState);
+  
+  // Scroll to top when filters change, or when randomiser state changes with relevant filters active
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "auto",
-    });
-  }, [filters]);
+    const isAbilityFilterActive = filters.abilityId !== undefined;
+    
+    // Check if we should scroll due to randomiser state change
+    const shouldScrollForRandomiser = 
+      (isAbilityFilterActive) && // Ability or move filter is active
+      (prevRandomiserStateRef.current.isActive !== randomiserState.isActive || 
+       prevRandomiserStateRef.current.trainerId !== randomiserState.trainerId);
+    
+    // Always scroll if filters change, or conditionally for randomiser changes
+    if (shouldScrollForRandomiser) {
+      window.scrollTo({
+        top: 0,
+        behavior: "auto",
+      });
+    }
+    
+    // Update ref with current state for next comparison
+    prevRandomiserStateRef.current = randomiserState;
+  }, [filters, randomiserState]);
 
   const selectedPokemon = useUIStore((state) => state.selectedPokemon);
   const isModalOpen = useUIStore((state) => state.isModalOpen);
