@@ -3,33 +3,48 @@ import { useRandomiserStore } from "../stores/randomiserStore";
 
 function SaveInfo() {
   const trainerIdInfo = useRandomiserStore((state) => state.trainerIdInfo);
-
-  if (!trainerIdInfo) {
-    return <div className="text-sm text-neutral-500">No trainer ID loaded</div>;
-  }
+  const setTrainerIdInfo = useRandomiserStore((state) => state.setTrainerIdInfo);
+  const disableRandomiserActive = useRandomiserStore((state)=> state.disableRandomiserActive);
 
   return (
-    <div className="border-1 select-none shadow-xl/65 items-center flex justify-between rounded-md border-neutral-800 bg-zinc-700/70 px-3 py-2 text-sm text-gray-200">
+    <div className="border-1 shadow-xl/65 flex select-none items-center justify-between rounded-md border-neutral-800 bg-zinc-700/70 px-3 py-2 text-sm text-gray-200">
       <div className="flex gap-3">
-        <div>
-          <span className="text-emerald-400">
-            {trainerIdInfo.trainerId.toString().padStart(5, "0")}
-          </span>
-        </div>
-        <div>
-          <span className="text-purple-300">
-            {trainerIdInfo.secretId.toString().padStart(5, "0")}
-          </span>
-        </div>
-        <div>
-          <span className="text-amber-400">
-            0x{trainerIdInfo.fullId.toString(16).toUpperCase().padStart(8, "0")}
-          </span>
-        </div>
+        {trainerIdInfo && (
+          <>
+            <div>
+              <span className="text-emerald-400">
+                {trainerIdInfo.trainerId.toString().padStart(5, "0")}
+              </span>
+            </div>
+            <div>
+              <span className="text-purple-300">
+                {trainerIdInfo.secretId.toString().padStart(5, "0")}
+              </span>
+            </div>
+            <div>
+              <span className="text-amber-400">
+                0x
+                {trainerIdInfo.fullId
+                  .toString(16)
+                  .toUpperCase()
+                  .padStart(8, "0")}
+              </span>
+            </div>
+          </>
+        )}
+        {!trainerIdInfo && <span className="text-gray-100">Save file not uploaded</span>}
       </div>
-      <div className="text-gray-200 hover:text-red-500 active:text-fuchsia-500 transition-colors">
-        <MdClose size={20} />
-      </div>
+      {trainerIdInfo && (
+        <div
+          className="text-gray-200 transition-colors hover:text-red-500 active:text-fuchsia-500"
+          onClick={() => {
+            disableRandomiserActive();
+            setTrainerIdInfo(undefined);
+          }}
+        >
+          <MdClose size={20} />
+        </div>
+      )}
     </div>
   );
 }

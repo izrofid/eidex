@@ -10,9 +10,10 @@ export type TrainerIdInfo = {
 
 interface RandomiserStore {
   trainerIdInfo: TrainerIdInfo | null;
-  setTrainerIdInfo: (info: TrainerIdInfo | null) => void;
+  setTrainerIdInfo: (info: TrainerIdInfo | null | undefined) => void;
   isRandomiserActive: boolean;
   toggleRandomiserActive: () => void;
+  disableRandomiserActive: () => void;
 }
 
 export const useRandomiserStore = create<RandomiserStore>()(
@@ -22,6 +23,7 @@ export const useRandomiserStore = create<RandomiserStore>()(
       setTrainerIdInfo: (info) => set({ trainerIdInfo: info }),
       isRandomiserActive: false,
       toggleRandomiserActive: () => set((state) => ({ isRandomiserActive: !state.isRandomiserActive })),
+      disableRandomiserActive: () => set(() => ({ isRandomiserActive: false })),
     }),
     {
       name: "eidex-trainer-id", // storage key

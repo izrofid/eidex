@@ -1,5 +1,5 @@
 import { Button } from "@headlessui/react";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { MdCloudUpload } from "react-icons/md";
 import { getTrainerIdFromSectors, MGBA_SIZE, splitSaveIntoChunks, TOTAL_SIZE } from "../randomiser/trainerIdExtractor";
 import { useRandomiserStore } from "../stores/randomiserStore";
@@ -10,7 +10,15 @@ export function SaveFileButton({
   onSaveRead: (buf: ArrayBuffer) => void;
 }) {
   const setTrainerIdInfo = useRandomiserStore((state) => state.setTrainerIdInfo);
+  const trainerIdInfo = useRandomiserStore((state) => state.trainerIdInfo);
   const inputRef = useRef<HTMLInputElement>(null);
+  
+  // Reset file input when trainerIdInfo changes to null
+  useEffect(() => {
+    if (!trainerIdInfo && inputRef.current) {
+      inputRef.current.value = '';
+    }
+  }, [trainerIdInfo]);
 
   function handleClick() {
     inputRef.current?.click(); // trigger the hidden file input
