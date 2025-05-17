@@ -20,6 +20,7 @@ import { randomizeAbility } from "@/randomiser/randomiser";
 import ShinyToggle from "../AppHeader/ShinyToggle";
 import RandomiserSwitch from "../AppHeader/RandomiserSwitch";
 import { useRandomiserStore } from "@/stores/randomiserStore";
+import PokemonLocations from "./PokemonLocations"
 
 function PokemonView({ pokemon }: { pokemon: Pokemon }) {
   const { isShiny, setSelectedPokemon } = useUIStore();
@@ -68,6 +69,9 @@ function PokemonView({ pokemon }: { pokemon: Pokemon }) {
             selectedAbility={selectedAbility}
             onClose={() => setSelectedAbility(null)}
           />
+        </div>
+        <div className="">
+          <PokemonLocations pokemonId={pokemon.index}/>
         </div>
         <div className="my-3">
           <EvolutionView
