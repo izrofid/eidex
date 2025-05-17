@@ -9,6 +9,7 @@ import { useScreenWidth } from "@/hooks/useScreenWidth";
 import { useUIStore } from "@/stores/uiStore";
 import useBodyScrollLock from "@/hooks/useBodyScrollLock";
 import NameCombobox from "./FilterComponents/NameCombobox";
+import SaveInfo from "../SaveInfo";
 
 function FilterSidebar() {
   const isSidebarOpen = useUIStore((state) => state.isSidebarOpen);
@@ -38,7 +39,8 @@ function FilterSidebar() {
         </div>
       </div>
 
-      <div className="mt-5">
+      <div className="flex flex-col gap-3">
+        <SaveInfo/>
         <SecondaryBar />
       </div>
     </aside>

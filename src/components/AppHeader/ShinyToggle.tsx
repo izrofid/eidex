@@ -7,7 +7,7 @@ interface ShinyToggleProps {
 
 function ShinyToggle({ isShiny, toggleShiny }: ShinyToggleProps) {
   return (
-    <span className="flex flex-row items-center gap-1">
+    <span className="flex flex-row items-center justify-start gap-1">
       <img
         src="shinycharm.png"
         className="h-7 w-7 object-contain"

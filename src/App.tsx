@@ -12,15 +12,17 @@ import { useFilterStore } from "./stores/filterStore";
 import { useUIStore } from "./stores/uiStore";
 import { Pokemon } from "./types";
 import { filterPokemon } from "./utils/filterPokemon";
+import { useRandomiserState } from "./utils/randomiserState";
 
 function App() {
   // Get filter state from Zustand store
   const { filters } = useFilterStore();
+  const randomiserState = useRandomiserState();
 
-  // Memoized filtered Pokémon list (only updates when filters change)
+  // Memoized filtered Pokémon list (only updates when filters or randomizer state changes)
   const filteredPokemon = useMemo(() => {
-    return filterPokemon(pokemonData as Pokemon[], filters);
-  }, [filters]);
+    return filterPokemon(pokemonData as Pokemon[], filters, randomiserState.isActive);
+  }, [filters, randomiserState]);
 
   useEffect(() => {
     window.scrollTo({
