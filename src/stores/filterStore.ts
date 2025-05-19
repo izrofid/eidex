@@ -82,10 +82,13 @@ export const useFilterStore = create<FilterState>((set, get) => ({
 
   // Actions
   setChosenStat: (stat) =>
-    set((state) => ({
-      chosenStat: stat,
-      filters: { ...state.filters, chosenStat: stat },
-    })),
+    set((state) => {
+      const chosenStat = stat === 0 ? undefined : stat;
+      return {
+        chosenStat,
+        filters: { ...state.filters, chosenStat },
+      };
+    }),
 
   setStatType: (type) =>
     set((state) => ({

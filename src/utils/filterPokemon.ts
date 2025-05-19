@@ -19,7 +19,7 @@ function matchesStatFilter(
   statType?: string,
   isStatMax?: boolean,
 ): boolean {
-  if (chosenStat === undefined) return true;
+  if (!chosenStat) return true;
 
   if (statType === "bst" || !statType) {
     const bst = pokemon.stats.reduce((a, b) => a + b, 0);
@@ -53,33 +53,6 @@ function matchesAbilityFilter(
   );
   return randomisedAbilities.some((id) => id === abilityId);
 }
-
-// function matchesLevelupMove(pokemon: Pokemon, move?: string): boolean {
-//   if (!move) return true;
-//   // Each entry in levelupMoves is [moveId, level]
-//   return pokemon.levelupMoves.some(([moveId]) => {
-//     const moveData = getMoveData(moveId);
-//     return moveData?.name.toLowerCase().includes(move.toLowerCase());
-//   });
-// }
-
-// function matchesTmMove(pokemon: Pokemon, move?: string): boolean {
-//   if (!move) return true;
-//   if (!pokemon.tmMoves) return false;
-//   return pokemon.tmMoves.some((tmIndex) => {
-//     const tmMove = getTMMove(tmIndex);
-//     return tmMove?.name.toLowerCase().includes(move.toLowerCase());
-//   });
-// }
-
-// function matchesTutorMove(pokemon: Pokemon, move?: string): boolean {
-//   if (!move) return true;
-//   if (!pokemon.tutorMoves) return false;
-//   return pokemon.tutorMoves.some((tutorIndex) => {
-//     const tutorMove = getTutorMove(tutorIndex);
-//     return tutorMove?.name.toLowerCase().includes(move.toLowerCase());
-//   });
-// }
 
 function matchesMove(
   pokemon: Pokemon,
