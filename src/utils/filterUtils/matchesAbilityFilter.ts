@@ -11,5 +11,5 @@ export function matchesAbilityFilter(
   const randomisedAbilities = pokemon.abilities.map((_, i) =>
     randomizeAbility(pokemon.index, i, abilityWhitelist, isRandomiserActive)
   );
-  return randomisedAbilities.some((id) => id === abilityId);
+  return randomisedAbilities.some((ability) => ability[0] === abilityId);
 }
