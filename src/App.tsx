@@ -1,4 +1,4 @@
-import FilterSidebar from "@/components/Filter/FilterSidebar";
+import FilterSidebar from "@/components/Sidebar/FilterSidebar";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import "./App.css";

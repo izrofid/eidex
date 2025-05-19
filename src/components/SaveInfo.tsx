@@ -7,7 +7,7 @@ function SaveInfo() {
   const disableRandomiserActive = useRandomiserStore((state)=> state.disableRandomiserActive);
 
   return (
-    <div className="border-1 shadow-xl/65 flex select-none items-center justify-between rounded-md border-neutral-800 bg-zinc-700/70 px-3 py-2 text-sm text-gray-200">
+    <div className="border-1 flex select-none items-center justify-between rounded-md border-neutral-500 bg-zinc-700/70 px-3 py-2 text-sm text-gray-200">
       <div className="flex gap-3">
         {trainerIdInfo && (
           <>
