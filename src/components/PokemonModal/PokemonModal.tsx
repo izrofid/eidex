@@ -11,10 +11,11 @@ import { buildPokemonMoveTabs } from "./Learnset/learnsetTabs";
 import { TypeBadge } from "../TypeBadges/TypeBadge";
 import StatBars from "./StatBars";
 import { FormeView } from "../FormeView/FormeView";
+import PokemonSprite from "./PokemonSprite";
 import { getSpeciesData, hasForms } from "@/utils/speciesData";
 import { useUIStore } from "@/stores/uiStore";
 import { useScreenWidth } from "@/hooks/useScreenWidth";
-import SpriteImage from "../SpriteImage";
+
 import { abilityWhitelist } from "@/randomiser/abilityWhitelist";
 import { randomizeAbility } from "@/randomiser/randomiser";
 import ShinyToggle from "../AppHeader/ShinyToggle";
@@ -44,7 +45,15 @@ function PokemonView({ pokemon }: { pokemon: Pokemon }) {
 
   return (
     <div className="flex w-full flex-col items-center">
-      <SpriteImage pokemon={pokemon} mult={2} className="rendering-pixelated" />
+      <PokemonSprite
+        isShiny={isShiny}
+        isOpen={pokemon !== null}
+        spriteIndex={pokemon.index}
+        alt={pokemon.speciesName}
+      />
+
+      <div className="mt-0 flex flex-row gap-1">
+      {/* <SpriteImage pokemon={pokemon} mult={2} className="rendering-pixelated" /> */}
       <div className="mt-2 flex flex-row gap-1">
         {pokemon.types.map((typeId: number, index: number) => (
           <div key={index}>
@@ -97,6 +106,7 @@ function PokemonView({ pokemon }: { pokemon: Pokemon }) {
         <TabbedInterface tabs={() => tabsData} />
       </div>
     </div>
+    </div>
   );
 }
 
@@ -111,7 +121,7 @@ function PokemonModal() {
       onClick={closeModal}
     >
       <div
-        className="w-xl no-scrollbar relative mx-2 my-5 h-[95dvh] max-h-screen justify-normal overflow-y-auto rounded-lg border border-gray-100 bg-zinc-800 p-6"
+        className="w-xl no-scrollbar relative my-0 h-[95dvh] max-h-screen justify-normal overflow-y-auto rounded-lg border border-gray-100 bg-zinc-800 px-6 py-3"
         onClick={(e) => e.stopPropagation()}
         style={{
           scrollBehavior: "smooth",

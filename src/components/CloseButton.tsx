@@ -9,7 +9,7 @@ function CloseButton({
   }) {
     return (
       <button
-        className={`text-gray-400 hover:text-red-800 focus:outline-none ${className}`}
+        className={`text-gray-400 absolute p-2 right-5 md:left-5 top-5 hover:text-red-800 focus:outline-none ${className}`}
         onClick={onClick}
         aria-label="Close"
         type="button"
