@@ -43,6 +43,7 @@ interface FilterState {
   setSortBy: (sortBy: SortBy) => void;
   setSortStat: (stat: string | undefined) => void;
   toggleSortDirection: () => void;
+  setSortDirection: (direction: boolean) => void;
   setNameValue: (name: string) => void;
   resetFilters: () => void;
 }
@@ -174,6 +175,12 @@ export const useFilterStore = create<FilterState>((set, get) => ({
   toggleSortDirection: () =>
     set((state) => ({
       descending: !state.descending,
+      filters: { ...state.filters, descending: !state.descending },
+    })),
+
+  setSortDirection: (direction) =>
+    set((state) => ({
+      descending: direction,
       filters: { ...state.filters, descending: !state.descending },
     })),
 

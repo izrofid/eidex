@@ -28,10 +28,8 @@ export default function PokemonList({
   const {
     sortBy,
     sortStat,
-    descending,
     setSortBy,
     setSortStat,
-    toggleSortDirection,
   } = useFilterStore();
 
   const ignoreList: number[] = [1435];
@@ -81,28 +79,28 @@ export default function PokemonList({
   useBodyScrollLock(isModalOpen);
 
   return (
-    <div className="flex w-full flex-col items-center select-none">
+    <div className="flex flex-1 w-full flex-col items-center select-none">
+      <div className="w-full sticky top-0 z-10 border-neutral-800">
       <SortBar
         sortBy={sortBy}
         statType={sortStat}
         onChange={(newSortBy, newStatType) => {
-          setSortBy(newSortBy);
-          setSortStat(newStatType);
+        setSortBy(newSortBy);
+        setSortStat(newStatType);
         }}
-        descending={descending}
-        onDirectionChange={toggleSortDirection}
       />
+      </div>
       <div className="w-full">
-        {pokemonToShow
-          .slice(0, visibleCount)
-          .filter(
-            (pokemon) =>
-              !ignoreList.includes(pokemon.index) &&
-              !excludeForms(pokemon.forms),
-          )
-          .map((pokemon) => (
-            <PokemonCard key={pokemon.index} pokemon={pokemon} />
-          ))}
+      {pokemonToShow
+        .slice(0, visibleCount)
+        .filter(
+        (pokemon) =>
+          !ignoreList.includes(pokemon.index) &&
+          !excludeForms(pokemon.forms),
+        )
+        .map((pokemon) => (
+        <PokemonCard key={pokemon.index} pokemon={pokemon} />
+        ))}
       </div>
       <div className="z-50">{selectedPokemon && isModalOpen && <PokemonModal />}</div>
     </div>
