@@ -79,7 +79,7 @@ function GenericComboBox({
 
   return (
     <div className={`relative flex w-full items-center rounded-full ${bg} px-2`}>
-      <span className="pointer-events-none absolute inset-y-0 left-2 flex items-center text-gray-400">
+      <span className="pointer-events-none absolute inset-y-0 left-2 flex items-center text-gray-300">
         {renderedIcon}
       </span>
       <Combobox
@@ -96,7 +96,7 @@ function GenericComboBox({
           displayValue={() => query}
           onChange={(event) => setQuery(event.target.value)}
           placeholder={placeholder}
-          className="h-9 w-full rounded-md border-0 pl-8 text-sm text-white placeholder-gray-100 focus:ring-1 focus:ring-blue-400"
+          className="h-9 w-full rounded-md border-0 pl-8 text-sm text-white placeholder-gray-400 focus:ring-1 focus:ring-blue-400"
         />
         <span
           className="ml-2 inline-flex cursor-pointer select-none items-center text-gray-100 transition-colors hover:text-red-400 active:text-fuchsia-600"

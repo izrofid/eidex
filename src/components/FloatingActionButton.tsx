@@ -9,7 +9,7 @@ const FloatingButton: React.FC = () => {
 
     return (
     <Button
-      className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-emerald-500 object-contain"
+      className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-blue-500 object-contain"
       onClick={toggleSidebar}
     >
       <FaSliders size={20} />

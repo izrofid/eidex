@@ -1,9 +1,8 @@
-import { useScreenWidth } from "../../../hooks/useScreenWidth";
 import { Move } from "../../../types";
-import { TypeBadge } from "../../TypeBadges/TypeBadge";
 import { getTypeColor } from "@/utils/typeInfo";
 import MovePropBox from "./MovePropRow";
 import chroma from "chroma-js";
+import { TypeIcon } from "@/components/TypeBadges/TypeIcon";
 
 type MoveEntryProps = {
   move: Move;
@@ -13,9 +12,8 @@ type MoveEntryProps = {
 const adjustedBgCache: Record<number, string> = {};
 
 const MoveEntry: React.FC<MoveEntryProps> = ({ move, level }) => {
-  const screenWidth = useScreenWidth();
 
-  const typeId =move.type
+  const typeId = move.type;
   let adjustedBg = adjustedBgCache[typeId];
   if (!adjustedBg) {
     const snapColor = getTypeColor(typeId)[1];
@@ -25,43 +23,52 @@ const MoveEntry: React.FC<MoveEntryProps> = ({ move, level }) => {
   }
 
   return (
-    <div className="border-b-1 relative flex select-none flex-col gap-2 border-gray-500 px-2 py-5"
-      style={{backgroundColor: adjustedBg}}>
-      <div className="flex flex-col gap-2">
-        <div className="flex items-center justify-between">
-          <span>
+    <div
+      className="border-b-1 relative flex select-none flex-col gap-2 border-gray-600 px-2 py-6 shadow-sm transition-shadow hover:backdrop-brightness-120 sm:px-4"
+      style={{ backgroundColor: adjustedBg }}
+    >
+        {level !== undefined && (
             <span
-              className="text-base font-bold"
-              style={{ color: getTypeColor(move.type)[0] }}
+              className="absolute top-0 left-0 inline-flex h-6 w-12 justify-center font-regular items-center bg-gray-950/20 px-1 py-[1px] text-xs font-semibold"
             >
-              {move.name}
+              {level !== 0 ? `Lvl ${level}` : "Evo"}
             </span>
-            <span className="text-sm" style={{color: getTypeColor(move.type)[0]}}>
-              {level ? ` @ ${level}` : ""}
-            </span>
+          )}
+      {/* Row 1: Move name/level and category/type */}
+      <div className="flex flex-row justify-between items-center w-full mb-1">
+        <div className="flex items-center gap-2">
+          <span
+            className="text-lg font-bold"
+            style={{ color: getTypeColor(move.type)[0] }}
+          >
+            {move.name}
           </span>
-          <span className="mr-3 h-6 w-6 object-contain">
-            <img src={`icons/category/${move.cat}.png`}></img>
-          </span>
-          <TypeBadge typeId={move.type} screenWidth={screenWidth} />
         </div>
-        <div className="flex justify-between">
-          <div className="flex flex-row gap-5">
-            <span className="text-xs text-gray-100">
-              Power: {move.power || "—"}
-            </span>
-            <span className="text-xs text-gray-100">
-              Acc: {move.acc || "—"}%
-            </span>
-            <span className="absolute bottom-2 right-3">
-              <MovePropBox move={move} />
-            </span>
-          </div>
+        <div className="flex flex-row items-center gap-2">
+          <span className="flex size-8 items-center justify-center">
+            <img className="size-[28px]" src={`icons/category/${move.cat}.png`} />
+          </span>
+          <TypeIcon typeId={move.type} size={28} />
         </div>
       </div>
-      <span className="mt-1 text-left text-xs font-normal italic text-gray-300">
+      {/* Row 2: Power/Acc and MovePropBox */}
+      <div className="flex flex-row justify-between items-center w-full mb-1">
+        <div className="flex flex-row items-center gap-2">
+          <span className="w-14 rounded-full border border-gray-500 bg-white/10 px-1 text-sm font-semibold text-gray-100 shadow-sm">
+            {move.power ? `${move.power}` : "—"}
+          </span>
+          <span className="w-14 rounded-full border border-gray-500 bg-white/10 px-1 text-sm font-semibold text-gray-100 shadow-sm">
+            {move.acc ? `${move.acc}%` : "—"}
+          </span>
+        </div>
+        <div className="flex flex-row items-center">
+          <MovePropBox move={move} />
+        </div>
+      </div>
+      {/* Row 3: Description */}
+      <div className="mt-2 text-center text-xs italic text-gray-300 w-full">
         {move.description}
-      </span>
+      </div>
     </div>
   );
 };

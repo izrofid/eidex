@@ -17,7 +17,7 @@ interface FilterState {
   moveValue: ComboBoxEntry | null;
 
   // Type
-  typeValue: number | undefined;
+  typeValue: [number?, number?];
   typeOptions: { typeID: number | undefined; typeName: string }[];
 
   //Ability filter
@@ -43,15 +43,17 @@ interface FilterState {
   setSortBy: (sortBy: SortBy) => void;
   setSortStat: (stat: string | undefined) => void;
   toggleSortDirection: () => void;
+  setSortDirection: (direction: boolean) => void;
   setNameValue: (name: string) => void;
   resetFilters: () => void;
 }
 
 export const useFilterStore = create<FilterState>((set, get) => ({
   // Initial state
+  typeValue: [undefined, undefined] as [number?, number?],
   filters: {
     name: "",
-    typeId: undefined,
+    typeIds: undefined,
     chosenStat: undefined,
     statType: undefined,
     isStatMax: false,
@@ -73,7 +75,6 @@ export const useFilterStore = create<FilterState>((set, get) => ({
   isStatMax: false,
   moveSource: "all",
   moveValue: null,
-  typeValue: undefined,
   abilityValue: null,
   sortBy: "dexId",
   sortStat: undefined,
@@ -82,10 +83,13 @@ export const useFilterStore = create<FilterState>((set, get) => ({
 
   // Actions
   setChosenStat: (stat) =>
-    set((state) => ({
-      chosenStat: stat,
-      filters: { ...state.filters, chosenStat: stat },
-    })),
+    set((state) => {
+      const chosenStat = stat === 0 ? undefined : stat;
+      return {
+        chosenStat,
+        filters: { ...state.filters, chosenStat },
+      };
+    }),
 
   setStatType: (type) =>
     set((state) => ({
@@ -115,11 +119,36 @@ export const useFilterStore = create<FilterState>((set, get) => ({
       },
     })),
 
-  setTypeValue: (typeId) =>
-    set((state) => ({
-      typeValue: typeId,
-      filters: { ...state.filters, typeId },
-    })),
+  setTypeValue: (id?: number) =>
+    set((state) => {
+      // start with only the defined selections
+      if (!state.typeValue){state.typeValue = [undefined, undefined]}
+      let selected = state.typeValue.filter(
+        (t): t is number => t !== undefined,
+      );
+
+      if (!id) {
+        // “All” clicked → clear
+        selected = [];
+      } else if (selected.includes(id)) {
+        // toggle off
+        selected = selected.filter((x) => x !== id);
+      } else if (selected.length >= 2) {
+        // already two → reset to new
+        selected = [id];
+      } else {
+        // under two → add
+        selected.push(id);
+      }
+
+      // back to a fixed 2-tuple
+      const next: [number?, number?] = [selected[0], selected[1]];
+
+      return {
+        typeValue: next,
+        filters: { ...state.filters, typeIds: next },
+      };
+    }),
 
   setAbilityValue: (ability) =>
     set((state) => ({
@@ -149,6 +178,12 @@ export const useFilterStore = create<FilterState>((set, get) => ({
       filters: { ...state.filters, descending: !state.descending },
     })),
 
+  setSortDirection: (direction) =>
+    set((state) => ({
+      descending: direction,
+      filters: { ...state.filters, descending: !state.descending },
+    })),
+
   setNameValue: (name) =>
     set((state) => ({
       nameValue: name,
@@ -159,7 +194,7 @@ export const useFilterStore = create<FilterState>((set, get) => ({
     set({
       filters: {
         name: "",
-        typeId: undefined,
+        typeIds: undefined,
         chosenStat: undefined,
         statType: undefined,
         isStatMax: false,
@@ -173,7 +208,7 @@ export const useFilterStore = create<FilterState>((set, get) => ({
       isStatMax: false,
       moveSource: "all",
       moveValue: null,
-      typeValue: undefined,
+      typeValue: [undefined, undefined] as [number?, number?],
       abilityValue: null,
       nameValue: "",
     }),
@@ -182,7 +217,7 @@ export const useFilterStore = create<FilterState>((set, get) => ({
   getSelectedType: () => {
     const state = get();
     return (
-      state.typeOptions.find((t) => t.typeID === state.typeValue) ||
+      state.typeOptions.find((t) => state.typeValue.includes(t.typeID)) ||
       state.typeOptions[0]
     );
   },

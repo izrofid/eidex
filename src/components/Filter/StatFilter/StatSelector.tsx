@@ -15,7 +15,7 @@ export default function StatSelector(props: StatSelectorProps) {
 
   const colorScheme = isStatMax ? "group-data-checked:text-rose-400 group-data-checked:border-b-rose-400" : "group-data-checked:text-emerald-400 group-data-checked:border-b-emerald-400"
   return (
-    <div className="border-1 flex h-max min-h-8 min-w-max flex-1 justify-between gap-0 rounded-md overflow-hidden border-gray-200">
+    <div className="border-1 flex h-max min-h-8 min-w-max flex-1 justify-between gap-0 rounded-md overflow-hidden border-gray-200 select-none">
       <RadioGroup
         value={statType || ""}
         onChange={setStatType}

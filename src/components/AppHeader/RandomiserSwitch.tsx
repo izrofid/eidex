@@ -19,7 +19,7 @@ const RandomiserSwitch = () => {
   );
 
   const setRandomiserActive = () => {
-    if (trainerIdInfo !== null) {
+    if (trainerIdInfo) {
       toggleRandomiserActive();
     } else {
       disableRandomiserActive();

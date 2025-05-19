@@ -1,6 +1,6 @@
 import { getTypeColor } from "../../utils/typeInfo";
 import { TypeBadge } from "../TypeBadges/TypeBadge";
-import { getAbilityName } from "../../utils/abilityData";
+import { getAbilityName, isAbilityAvialable } from "../../utils/abilityData";
 import { Pokemon } from "../../types";
 import chroma from "chroma-js";
 import { useUIStore } from "@/stores/uiStore";
@@ -62,12 +62,6 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
     adjustedBgCache[typeId] = adjustedBg;
   }
 
-  //If the first ability is repeated, replace repeats with 0
-  abilities.forEach((ability, index) => {
-    if (abilities.indexOf(ability) !== index) {
-      abilities[index] = 0;
-    }
-  });
 
   return (
     <div onClick={() => openModal(pokemon)} className="w-full cursor-pointer">
@@ -100,8 +94,10 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
               </p>
             </span>
             {/* Abilities */}
-            {abilities.map((abilityId: number, index: number) => {
+            {abilities.map((abilityTuple: [number, boolean], index: number) => {
+              const abilityId: number = abilityTuple[0]
               const name = getAbilityName(abilityId);
+              const isAvailable = isAbilityAvialable(pokemon.index, index, isRandomiserActive)
               const isHidden = index === abilities.length - 1; // last one = Hidden
 
               return (
@@ -110,7 +106,7 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
                     key={index}
                     className={`text-left italic ${
                       isHidden ? "font-semibold text-pink-400" : ""
-                    }`}
+                    } ${isAvailable ? "" : "line-through"}`}
                   >
                     {name}
                   </div>

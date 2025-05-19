@@ -1,4 +1,4 @@
-import FilterSidebar from "@/components/Filter/FilterSidebar";
+import FilterSidebar from "@/components/Sidebar/FilterSidebar";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import "./App.css";
@@ -11,8 +11,9 @@ import pokemonData from "./data/speciesData.json";
 import { useFilterStore } from "./stores/filterStore";
 import { useUIStore } from "./stores/uiStore";
 import { Pokemon } from "./types";
-import { filterPokemon } from "./utils/filterPokemon";
+import { filterPokemon } from "./utils/filterUtils/filterPokemon";
 import { useRandomiserState } from "./utils/randomiserState";
+import HeaderBar from "./components/AppHeader/HeaderBar";
 
 function App() {
   // Get filter state from Zustand store
@@ -94,12 +95,14 @@ function App() {
         <FilterSidebar />
       </div>
       <div className="sm:ml-(--sidebar-width) flex min-h-screen w-full flex-col items-center bg-neutral-800">
-        <div ref={ref} className="w-full max-w-3xl bg-zinc-900">
+
+        <div ref={ref} className="w-full sm:max-w-[60%] bg-zinc-900">
+        <HeaderBar/>
           <FilterBar />
         </div>
         <div
           ref={containerRef}
-          className="border-x-1 border-b-1 shadow-2xl/60 relative flex h-full w-full max-w-3xl flex-col"
+          className="border-b-1 shadow-2xl/60 relative flex h-full w-full sm:max-w-[60%] flex-col"
         >
           <CreditsPanel />
           <PokemonList
