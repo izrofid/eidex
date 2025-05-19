@@ -3,40 +3,47 @@ import { PiSortAscending } from "react-icons/pi";
 import { PiSortDescending } from "react-icons/pi";
 import { Button } from "@headlessui/react";
 import React from "react";
+import { useFilterStore } from "@/stores/filterStore";
 
-const sortOptions: { label: string; value: SortBy; statType?: string }[] = [
-  { label: "ID", value: "dexId" },
-  { label: "Name", value: "name" },
-  { label: "BST", value: "stat", statType: "bst" },
-  { label: "HP", value: "stat", statType: "hp" },
-  { label: "Atk", value: "stat", statType: "attack" },
-  { label: "Def", value: "stat", statType: "defense" },
-  { label: "SpA", value: "stat", statType: "spAtk" },
-  { label: "SpD", value: "stat", statType: "spDef" },
-  { label: "Spe", value: "stat", statType: "speed" },
+const sortOptions: {
+  label: string;
+  value: SortBy;
+  statType?: string;
+  defaultDescending: boolean;
+}[] = [
+  { label: "#", value: "dexId", defaultDescending: false },
+  { label: "Name", value: "name", defaultDescending: false },
+  { label: "HP", value: "stat", statType: "hp", defaultDescending: true },
+  { label: "Atk", value: "stat", statType: "attack", defaultDescending: true },
+  { label: "Def", value: "stat", statType: "defense", defaultDescending: true },
+  { label: "SpA", value: "stat", statType: "spAtk", defaultDescending: true },
+  { label: "SpD", value: "stat", statType: "spDef", defaultDescending: true },
+  { label: "Spe", value: "stat", statType: "speed", defaultDescending: true },
+  { label: "BST", value: "stat", statType: "bst", defaultDescending: true },
 ];
 
 interface SortBarProps {
   sortBy: SortBy;
   statType?: string;
   onChange: (sortBy: SortBy, statType?: string) => void;
-  descending?: boolean;
-  onDirectionChange?: (descending: boolean) => void;
 }
 
 export const SortBar: React.FC<SortBarProps> = ({
   sortBy,
   statType,
   onChange,
-  descending = false,
-  onDirectionChange,
 }) => {
   const selected = statType ? `${sortBy}:${statType}` : sortBy;
+  const descending = useFilterStore((state) => state.descending);
+  const toggleSortDirection = useFilterStore(
+    (state) => state.toggleSortDirection,
+  );
+  const setSortDirection = useFilterStore((state) => state.setSortDirection);
 
   return (
-    <div className="flex w-full items-center justify-between bg-neutral-900/90">
+    <div className="border-b-1 flex w-full items-center justify-between border-neutral-600/50 bg-zinc-900">
       {/* Sort buttons group */}
-      <div className="ml-3 flex h-9 flex-1 text-nowrap">
+      <div className="ml-3 flex h-11 flex-1 text-nowrap">
         {sortOptions.map((option) => {
           const value = option.statType
             ? `${option.value}:${option.statType}`
@@ -45,16 +52,17 @@ export const SortBar: React.FC<SortBarProps> = ({
           return (
             <Button
               key={option.label}
-              data-selected={isSelected}
-              className="min-w-max px-2 text-xs font-medium text-gray-300 border-b-4 border-transparent data-[selected=true]:border-emerald-500 data-[selected=true]:text-emerald-500"
+              data-selected={isSelected && !descending}
+              data-descending={isSelected && descending}
+              className="min-w-max border-b-4 border-transparent px-2 text-xs font-bold text-gray-300 data-[selected=true]:border-emerald-500 data-[descending=true]:border-rose-500 data-[descending=true]:text-rose-500 data-[selected=true]:text-emerald-500 sm:text-sm"
               onClick={() => {
                 if (isSelected) {
-                  if (onDirectionChange) onDirectionChange(!descending);
+                  toggleSortDirection?.();
                 } else {
-                  if (option.statType) {
-                    onChange(option.value, option.statType);
-                  } else {
-                    onChange(option.value);
+                  onChange(option.value, option.statType);
+                  if(descending !== option.defaultDescending)
+                  {
+                    setSortDirection?.(option.defaultDescending);
                   }
                 }
               }}
@@ -66,17 +74,17 @@ export const SortBar: React.FC<SortBarProps> = ({
       </div>
       {/* Direction marker */}
       <div
-        className="cursor-pointer select-none pr-3 text-emerald-300"
+        className="cursor-pointer select-none pr-3"
         onClick={() => {
-          if (onDirectionChange) {
-            onDirectionChange(!descending);
+          if (toggleSortDirection) {
+            toggleSortDirection();
           }
         }}
       >
         {descending ? (
-          <PiSortAscending size={22} />
+          <PiSortAscending size={24} className="text-rose-500" />
         ) : (
-          <PiSortDescending size={22} />
+          <PiSortDescending size={24} className="text-emerald-500" />
         )}
       </div>
     </div>

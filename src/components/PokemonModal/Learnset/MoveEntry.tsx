@@ -1,52 +1,74 @@
-import { useScreenWidth } from "../../../hooks/useScreenWidth";
 import { Move } from "../../../types";
-import { TypeBadge } from "../../TypeBadges/TypeBadge";
-import { getTypeSnapColor } from "@/utils/typeInfo";
+import { getTypeColor } from "@/utils/typeInfo";
 import MovePropBox from "./MovePropRow";
+import chroma from "chroma-js";
+import { TypeIcon } from "@/components/TypeBadges/TypeIcon";
 
 type MoveEntryProps = {
   move: Move;
   level?: number;
 };
 
-const MoveEntry: React.FC<MoveEntryProps> = ({ move, level }) => {
-  const screenWidth = useScreenWidth();
-  return (
-    <div className="relative border-b-1 flex select-none flex-col gap-2 border-gray-500 bg-zinc-700/20 px-2 py-5">
-      <div className="flex flex-col gap-2">
-        <div className="flex items-center justify-between">
-          <span>
-            <span
-              className="text-base font-bold text-white"
-              style={{ color: getTypeSnapColor(move.type) }}
-            >
-              {move.name}
-            </span>
-            <span className="font-semibold italic text-neutral-100/80">
-              {level ? ` @ ${level}` : ""}
-            </span>
-          </span>
+const adjustedBgCache: Record<number, string> = {};
 
-          <TypeBadge typeId={move.type} screenWidth={screenWidth} />
-        </div>
-        <div className="flex justify-between">
-          <div className="flex flex-row gap-5">
-            <span className="text-xs text-gray-400">
-              Power: {move.power || "—"}
+const MoveEntry: React.FC<MoveEntryProps> = ({ move, level }) => {
+
+  const typeId = move.type;
+  let adjustedBg = adjustedBgCache[typeId];
+  if (!adjustedBg) {
+    const snapColor = getTypeColor(typeId)[1];
+    const bgColor = chroma(snapColor);
+    adjustedBg = bgColor.darken(1.2).mix("white", 0.05).alpha(0.12).css();
+    adjustedBgCache[typeId] = adjustedBg;
+  }
+
+  return (
+    <div
+      className="border-b-1 relative flex select-none flex-col gap-2 border-gray-600 px-2 py-6 shadow-sm transition-shadow hover:backdrop-brightness-120 sm:px-4"
+      style={{ backgroundColor: adjustedBg }}
+    >
+        {level !== undefined && (
+            <span
+              className="absolute top-0 left-0 inline-flex h-6 w-12 justify-center font-regular items-center bg-gray-950/20 px-1 py-[1px] text-xs font-semibold"
+            >
+              {level !== 0 ? `Lvl ${level}` : "Evo"}
             </span>
-            <span className="text-xs text-gray-400">
-              Acc: {move.acc || "—"}%
-            </span>
-            <span className="absolute bottom-2 right-3"><MovePropBox move={move}/></span>
-          </div>
-          <span className="h-6 w-6 object-contain mr-3">
-            <img src={`icons/category/${move.cat}.png`}></img>
+          )}
+      {/* Row 1: Move name/level and category/type */}
+      <div className="flex flex-row justify-between items-center w-full mb-1">
+        <div className="flex items-center gap-2">
+          <span
+            className="text-lg font-bold"
+            style={{ color: getTypeColor(move.type)[0] }}
+          >
+            {move.name}
           </span>
+        </div>
+        <div className="flex flex-row items-center gap-2">
+          <span className="flex size-8 items-center justify-center">
+            <img className="size-[28px]" src={`icons/category/${move.cat}.png`} />
+          </span>
+          <TypeIcon typeId={move.type} size={28} />
         </div>
       </div>
-      <span className="mt-1 text-left text-xs font-normal italic text-gray-300">
+      {/* Row 2: Power/Acc and MovePropBox */}
+      <div className="flex flex-row justify-between items-center w-full mb-1">
+        <div className="flex flex-row items-center gap-2">
+          <span className="w-14 rounded-full border border-gray-500 bg-white/10 px-1 text-sm font-semibold text-gray-100 shadow-sm">
+            {move.power ? `${move.power}` : "—"}
+          </span>
+          <span className="w-14 rounded-full border border-gray-500 bg-white/10 px-1 text-sm font-semibold text-gray-100 shadow-sm">
+            {move.acc ? `${move.acc}%` : "—"}
+          </span>
+        </div>
+        <div className="flex flex-row items-center">
+          <MovePropBox move={move} />
+        </div>
+      </div>
+      {/* Row 3: Description */}
+      <div className="mt-2 text-center text-xs italic text-gray-300 w-full">
         {move.description}
-      </span>
+      </div>
     </div>
   );
 };

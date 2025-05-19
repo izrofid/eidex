@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import FilterPill from './FilterPill';
 
-import { useFilterPillStore } from '../../stores/filterPillStore';
+import { useFilterPillStore } from '../../../stores/filterPillStore';
 import { useFilterStore } from '@/stores/filterStore';
 import { Button } from '@headlessui/react';
 

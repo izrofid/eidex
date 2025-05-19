@@ -20,6 +20,7 @@ import {
   MdTouchApp,
   MdVolumeUp,
 } from "react-icons/md";
+import { BsDashLg } from "react-icons/bs";
 
 function MovePropBox({ move }: { move: Move }) {
   const moveAttr: string[] = move.properties ? move.properties : ["None"];
@@ -43,21 +44,21 @@ function MovePropBox({ move }: { move: Move }) {
 
   return (
     <TooltipProvider>
-      <div className="flex text-white cursor-pointer">
-        {moveAttr.map((attr) => {
-          const Icon = moveAttrIconMap[attr];
-          return Icon ? (
-            <Tooltip key={attr}>
+      <div className="flex text-white cursor-pointer rounded-full border-1 border-neutral-500 min-w-[3em] justify-center">
+        {moveAttr.map((attr, i) => {
+          const Icon = moveAttrIconMap[attr] || BsDashLg;
+          return (
+            <Tooltip key={attr + i}>
               <TooltipTrigger asChild>
-                <span className="h-6 w-6 items-center object-contain p-1">
+                <span className="h-6 w-6 flex items-center justify-center object-contain p-1">
                   <Icon size={15} />
                 </span>
               </TooltipTrigger>
               <TooltipContent className="bg-neutral-900/90 text-white px-2 py-1 border-1 border-gray-500 rounded shadow-lg text-xs">
-                {capitalize(attr)}
+                {attr && moveAttrIconMap[attr] ? capitalize(attr) : "—"}
               </TooltipContent>
             </Tooltip>
-          ) : null;
+          );
         })}
       </div>
     </TooltipProvider>

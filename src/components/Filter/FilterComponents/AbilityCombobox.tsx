@@ -1,9 +1,9 @@
 import GenericComboBox, { ComboBoxEntry } from "./GenericComboBox";
-import abilities from "../../data/abilityData.json";
-import { getAbilityName } from "../../utils/abilityData";
+import abilities from "../../../data/abilityData.json";
+import { getAbilityName } from "../../../utils/abilityData";
 import { useMemo } from "react";
 import { IoRibbon } from "react-icons/io5";
-import { useFilterStore } from "../../stores/filterStore";
+import { useFilterStore } from "../../../stores/filterStore";
 
 const abilityIDMap: ComboBoxEntry[] = abilities
   .map((ability) => ({

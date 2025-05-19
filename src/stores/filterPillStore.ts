@@ -86,7 +86,7 @@ export const useFilterPillStore = create<FilterPillsState>((set, get) => ({
         break;
 
       case "type":
-        filterStore.setTypeValue(undefined);
+        filterStore.setTypeValue(pillToRemove.value.value);
         break;
 
       case "ability":
@@ -119,7 +119,7 @@ export const useFilterPillStore = create<FilterPillsState>((set, get) => ({
 
   syncWithFilters: () => {
     const filterStore = useFilterStore.getState();
-    const { filters } = filterStore;
+    const { filters, typeOptions } = filterStore;
     const newPills: FilterPill[] = [];
 
     // Convert each active filter to a pill
@@ -132,14 +132,21 @@ export const useFilterPillStore = create<FilterPillsState>((set, get) => ({
       });
     }
 
-    if (filters.typeId !== undefined) {
+    const selectedTypes = (filters.typeIds ?? []).filter(
+      (t): t is number => t !== undefined,
+    );
+
+    selectedTypes.forEach((typeId) => {
+      const typeName =
+        typeOptions.find((t) => t.typeID === typeId)?.typeName ?? "Type";
+
       newPills.push({
-        id: "type",
+        id: `type-${typeId}`,
         type: "type",
-        label: "Type",
-        value: { type: "type", value: filters.typeId },
+        label: typeName,
+        value: { type: "type", value: typeId },
       });
-    }
+    });
 
     if (filters.abilityId !== undefined) {
       newPills.push({

@@ -19,6 +19,7 @@ export interface Pokemon {
   types: number[];
   stats: number[];
   abilities: Abilities;
+  randomisedAbilities?: Abilities;
   levelUpMoves: number[][];
   tmMoves?: number[];
   eggMoves?: number[] | null;
@@ -41,7 +42,7 @@ export interface SpeciesData {
 
 export interface FilterOptions {
   name?: string;
-  typeId?: number;
+  typeIds?: [number?, number?];
   chosenStat?: number;
   sortBy?: SortBy;
   statType?: string;

@@ -1,11 +1,15 @@
-import { getTypeSnapColor } from "../../utils/typeInfo";
+import { getTypeColor } from "../../utils/typeInfo";
 import { TypeBadge } from "../TypeBadges/TypeBadge";
-import { getAbilityName } from "../../utils/abilityData";
+import { getAbilityName, isAbilityAvialable } from "../../utils/abilityData";
 import { Pokemon } from "../../types";
 import chroma from "chroma-js";
 import { useUIStore } from "@/stores/uiStore";
+
 import { useScreenWidth } from "@/hooks/useScreenWidth";
 import SpriteImage from "../SpriteImage";
+import { randomizeAbility } from "@/randomiser/randomiser";
+import { abilityWhitelist } from "@/randomiser/abilityWhitelist";
+import { useRandomiserStore } from "@/stores/randomiserStore";
 
 type PokemonCardProps = {
   pokemon: Pokemon;
@@ -18,7 +22,18 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
   const openModal = useUIStore((state) => state.openModal);
   const screenWidth = useScreenWidth();
 
-  const { dexId, nameKey, types, stats, abilities } = pokemon;
+  const {
+    index,
+    dexId,
+    nameKey,
+    types,
+    stats,
+    abilities: origAbilities,
+  } = pokemon;
+
+  const isRandomiserActive = useRandomiserStore(state => state.isRandomiserActive)
+
+  const abilities = origAbilities.map((_, i) => randomizeAbility(index, i, abilityWhitelist, isRandomiserActive));
 
   // Convert the ID to a string and pad it with leading zeros and a #
   const formattedId = `#${String(dexId).padStart(3, "0")}`;
@@ -41,27 +56,21 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
   const typeId = types[0];
   let adjustedBg = adjustedBgCache[typeId];
   if (!adjustedBg) {
-    const snapColor = getTypeSnapColor(typeId);
+    const snapColor = getTypeColor(typeId)[1];
     const bgColor = chroma(snapColor);
-    adjustedBg = bgColor.darken(1.2).mix("black", 0.7).alpha(0.13).css();
+    adjustedBg = bgColor.darken(1.2).mix("black", 0.05).alpha(0.15).css();
     adjustedBgCache[typeId] = adjustedBg;
   }
 
-  //If the first ability is repeated, replace repeats with 0
-  abilities.forEach((ability, index) => {
-    if (abilities.indexOf(ability) !== index) {
-      abilities[index] = 0;
-    }
-  });
 
   return (
     <div onClick={() => openModal(pokemon)} className="w-full cursor-pointer">
-      <div className="flex w-full flex-col text-white">
+      <div className="border-b-1 flex w-full flex-col border-neutral-500/50 bg-neutral-800 text-white">
         {/* Header */}
-        <div className="flex justify-between bg-neutral-900/20 py-1 pl-2">
+        <div className="flex justify-between bg-zinc-800 py-2 pl-2">
           <div className="flex items-center gap-1">
             {/* Sprite and name  */}
-            <SpriteImage pokemon={pokemon}/>
+            <SpriteImage pokemon={pokemon} />
             <div className="text-md font-bold">{nameKey}</div>
 
             {/* Types */}
@@ -85,33 +94,34 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
               </p>
             </span>
             {/* Abilities */}
-            {/* Abilities */}
-            {abilities.map((abilityId: number, index: number) => {
+            {abilities.map((abilityTuple: [number, boolean], index: number) => {
+              const abilityId: number = abilityTuple[0]
               const name = getAbilityName(abilityId);
+              const isAvailable = isAbilityAvialable(pokemon.index, index, isRandomiserActive)
               const isHidden = index === abilities.length - 1; // last one = Hidden
 
               return (
-                <div
-                  key={index}
-                  className={`text-left italic ${
-                    isHidden ? "font-semibold text-pink-400" : ""
-                  }`}
-                >
-                  {name}
-                </div>
+                name !== "None" && (
+                  <div
+                    key={index}
+                    className={`text-left italic ${
+                      isHidden ? "font-semibold text-pink-400" : ""
+                    } ${isAvailable ? "" : "line-through"}`}
+                  >
+                    {name}
+                  </div>
+                )
               );
             })}
           </div>
 
           {/* Stats here */}
-          <div className="my-3 flex flex-col">
-            <div className="flex items-end gap-1 text-center sm:gap-4">
+          <div className="my-3 flex w-full flex-col">
+            <div className="flex items-end justify-evenly gap-2 text-center sm:max-w-[70%] sm:gap-4">
               {reorderedStats.map((statValue, index) => (
                 <div key={index} className="flex min-w-1 flex-col items-center">
                   <div className="text-sm italic">{statValue}</div>
-                  <div className="md:text-md text-sm font-bold">
-                    {statLabels[index]}
-                  </div>
+                  <div className="text-sm font-bold">{statLabels[index]}</div>
                 </div>
               ))}
               {/* BST box, styled identically to stat boxes */}

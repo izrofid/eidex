@@ -1,6 +1,6 @@
 import { IoCloseCircle } from "react-icons/io5";
-import { FilterPill as FilterPillType } from "../../stores/filterPillStore";
-import { getTypeName } from "../../utils/typeInfo";
+import { FilterPill as FilterPillType } from "../../../stores/filterPillStore";
+import { getTypeName } from "../../../utils/typeInfo";
 import { capitalize } from "@/utils/miscUtils";
 
 interface FilterPillProps {

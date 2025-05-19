@@ -13,9 +13,15 @@ import StatBars from "./StatBars";
 import { FormeView } from "../FormeView/FormeView";
 import PokemonSprite from "./PokemonSprite";
 import { getSpeciesData, hasForms } from "@/utils/speciesData";
-import { Switch } from "@headlessui/react";
 import { useUIStore } from "@/stores/uiStore";
 import { useScreenWidth } from "@/hooks/useScreenWidth";
+
+import { abilityWhitelist } from "@/randomiser/abilityWhitelist";
+import { randomizeAbility } from "@/randomiser/randomiser";
+import ShinyToggle from "../AppHeader/ShinyToggle";
+import RandomiserSwitch from "../AppHeader/RandomiserSwitch";
+import { useRandomiserStore } from "@/stores/randomiserStore";
+import PokemonLocations from "./PokemonLocations"
 
 function PokemonView({ pokemon }: { pokemon: Pokemon }) {
   const { isShiny, setSelectedPokemon } = useUIStore();
@@ -29,6 +35,14 @@ function PokemonView({ pokemon }: { pokemon: Pokemon }) {
     setSelectedPokemon(pokemon);
   };
 
+  const isRandomiserActive = useRandomiserStore(
+    (state) => state.isRandomiserActive,
+  );
+
+  const randomisedAbilities = pokemon.abilities.map((_, i) =>
+    randomizeAbility(pokemon.index, i, abilityWhitelist, isRandomiserActive),
+  );
+
   return (
     <div className="flex w-full flex-col items-center">
       <PokemonSprite
@@ -39,6 +53,8 @@ function PokemonView({ pokemon }: { pokemon: Pokemon }) {
       />
 
       <div className="mt-0 flex flex-row gap-1">
+      {/* <SpriteImage pokemon={pokemon} mult={2} className="rendering-pixelated" /> */}
+      <div className="mt-2 flex flex-row gap-1">
         {pokemon.types.map((typeId: number, index: number) => (
           <div key={index}>
             <TypeBadge typeId={typeId} screenWidth={screenWidth} />
@@ -56,12 +72,15 @@ function PokemonView({ pokemon }: { pokemon: Pokemon }) {
         <StatBars stats={pokemon.stats as StatArray} />
       </div>
       <div className="my-2 mt-6 flex w-full flex-col">
-        <AbilityBox key={pokemon.index} abilities={pokemon.abilities} />
+        <AbilityBox key={pokemon.index} abilities={randomisedAbilities} />
         <div className="w-full">
           <AbilityDescription
             selectedAbility={selectedAbility}
             onClose={() => setSelectedAbility(null)}
           />
+        </div>
+        <div className="">
+          <PokemonLocations pokemonId={pokemon.index}/>
         </div>
         <div className="my-3">
           <EvolutionView
@@ -84,8 +103,9 @@ function PokemonView({ pokemon }: { pokemon: Pokemon }) {
         </div>
       </div>
       <div className="flex w-full flex-grow">
-        <TabbedInterface tabs={tabsData} />
+        <TabbedInterface tabs={() => tabsData} />
       </div>
+    </div>
     </div>
   );
 }
@@ -103,23 +123,19 @@ function PokemonModal() {
       <div
         className="w-xl no-scrollbar relative my-0 h-[95dvh] max-h-screen justify-normal overflow-y-auto rounded-lg border border-gray-100 bg-zinc-800 px-6 py-3"
         onClick={(e) => e.stopPropagation()}
+        style={{
+          scrollBehavior: "smooth",
+        }}
       >
-        <span className="absolute left-3 flex flex-row items-center gap-1 self-center">
-          {" "}
-          <img
-            src="shinycharm.png"
-            className="h-7 w-7 object-contain"
-            alt="Shiny charm"
-          />
-          <Switch
-            checked={isShiny}
-            onChange={toggleShiny}
-            className="data-checked:bg-emerald-500 group inline-flex h-5 w-10 cursor-pointer items-center rounded-full bg-gray-500 transition"
-          >
-            <span className="group-data-checked:translate-x-6 size-3 translate-x-1 rounded-full bg-white transition" />
-          </Switch>
-        </span>
-        <span className="absolute right-3 flex flex-row items-center gap-1 self-center">
+        <span className="flex flex-row justify-between">
+          <span className="flex flex-row gap-2">
+            <ShinyToggle
+              isShiny={isShiny}
+              toggleShiny={toggleShiny}
+            ></ShinyToggle>
+            <RandomiserSwitch />
+          </span>
+          <span className="flex flex-row items-center gap-1 self-center"></span>
           <CloseButton onClick={closeModal} />
         </span>
         <PokemonView pokemon={selectedPokemon} />
