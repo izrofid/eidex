@@ -102,7 +102,7 @@ function randomizeAbility(
   const newAbility =
     abilityWhitelist[randomizerNextRange(state, abilityWhitelist.length)];
 
-  const isAvailable: boolean = isAbilityAvialable(species, abilityNum)
+  const isAvailable: boolean = isAbilityAvialable(species, abilityNum, isRandomiserActive)
 
   const result: [number, boolean] = [newAbility, isAvailable]
 

@@ -48,7 +48,10 @@ export function getAbilityDescription(abilityId: number): string {
 }
 
 
-export function isAbilityAvialable(speciesId: number, slot: number): boolean {
+export function isAbilityAvialable(speciesId: number, slot: number, isRandomiserActive: boolean = false): boolean {
+  if(!isRandomiserActive){
+    return true
+  }
   const pokemon = getSpeciesData(speciesId)
 
   if(pokemon.forms?.includes("mega")){
