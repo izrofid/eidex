@@ -1,4 +1,5 @@
 import { useRandomiserStore } from "@/stores/randomiserStore";
+import { isAbilityAvialable } from "@/utils/abilityData";
 import { getSpeciesData } from "@/utils/speciesData";
 
 class Sfc32State {
@@ -78,10 +79,10 @@ function randomizeAbility(
   abilityNum: number,
   abilityWhitelist: number[],
   isRandomiserActive: boolean,
-): number {
+): [number, boolean] {
   // Check if randomiser is active
   if (!isRandomiserActive) {
-    return getSpeciesData(species).abilities[abilityNum];
+    return [getSpeciesData(species).abilities[abilityNum], true]
   }
 
   const trainerId = useRandomiserStore.getState().trainerIdInfo?.fullId ?? 0;
@@ -98,8 +99,12 @@ function randomizeAbility(
   );
 
   // Pick random ability from whitelist
-  const result =
+  const newAbility =
     abilityWhitelist[randomizerNextRange(state, abilityWhitelist.length)];
+
+  const isAvailable: boolean = isAbilityAvialable(species, abilityNum)
+
+  const result: [number, boolean] = [newAbility, isAvailable]
 
   return result;
 }

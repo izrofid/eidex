@@ -1,8 +1,9 @@
 import abilities from "../data/abilityData.json";
-import { abilityWhitelist } from "@/randomiser/abilityWhitelist";
-import { randomizeAbility } from "@/randomiser/randomiser";
-import { useRandomiserStore } from "@/stores/randomiserStore";
-import { getSpeciesData } from "./speciesData";
+import { getBaseForm, getSpeciesData } from "./speciesData";
+// import { abilityWhitelist } from "@/randomiser/abilityWhitelist";
+// import { randomizeAbility } from "@/randomiser/randomiser";
+// import { useRandomiserStore } from "@/stores/randomiserStore";
+// import { getSpeciesData } from "./speciesData";
 
 export type AbilityObject = {
   id: number;
@@ -18,12 +19,12 @@ abilities.forEach((ability) => {
 });
 
 // Default ability for when nothing is found
-const defaultAbility: AbilityObject = {
-  id: 0,
-  name: "None",
-  shortName: "None",
-  description: "No ability found",
-};
+// const defaultAbility: AbilityObject = {
+//   id: 0,
+//   name: "None",
+//   shortName: "None",
+//   description: "No ability found",
+// };
 
 export function getAbilityName(abilityId: number): string {
   const ability = abilityLookup.get(abilityId);
@@ -46,21 +47,34 @@ export function getAbilityDescription(abilityId: number): string {
   return ability.description || "None";
 }
 
-export function getRandomisedAbility(
-  species: number,
-  abilityNum: number = 0,
-): AbilityObject {
-  const isRandomiserActive = useRandomiserStore((state) => state.isRandomiserActive);
-  const randomAbilityId = randomizeAbility(
-    species,
-    abilityNum,
-    abilityWhitelist,
-    isRandomiserActive,
-  );
 
-  const abilityId = getSpeciesData(species).abilities[abilityNum];
+export function isAbilityAvialable(speciesId: number, slot: number): boolean {
+  const pokemon = getSpeciesData(speciesId)
 
-  const idToUse = isRandomiserActive ? randomAbilityId : abilityId;
-  const ability = abilityLookup.get(idToUse);
-  return ability || defaultAbility;
+  if(pokemon.forms?.includes("mega")){
+    const baseForm = getBaseForm(pokemon)
+    return baseForm.abilities[slot] !== 0;
+  }
+
+  return pokemon.abilities[slot] !== 0;
+
 }
+
+// export function getRandomisedAbility(
+//   species: number,
+//   abilityNum: number = 0,
+// ): AbilityObject {
+//   const isRandomiserActive = useRandomiserStore((state) => state.isRandomiserActive);
+//   const randomAbilityId = randomizeAbility(
+//     species,
+//     abilityNum,
+//     abilityWhitelist,
+//     isRandomiserActive,
+//   );
+
+//   const abilityId = getSpeciesData(species).abilities[abilityNum];
+
+//   const idToUse = isRandomiserActive ? randomAbilityId : abilityId;
+//   const ability = abilityLookup.get(idToUse);
+//   return ability || defaultAbility;
+// }
