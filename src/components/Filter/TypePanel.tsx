@@ -6,15 +6,6 @@ const TypePanel: React.FC = () => {
   const setTypeValue = useFilterStore((state) => state.setTypeValue);
   const typeValue = useFilterStore((state) => state.typeValue);
 
-  const toggleType = (type: number) => {
-    if (type === typeValue) {
-        setTypeValue(undefined)
-    }
-    else{
-        setTypeValue(type)
-    }
-  };
-
   return (
     <div className="w-full overflow-hidden rounded-md border-2 border-zinc-500 p-3">
       <div 
@@ -24,11 +15,12 @@ const TypePanel: React.FC = () => {
           width: '100%'
         }}
       >
-        {validTypes.map((type) => (
+        {validTypes.map((typeId) => (
           <TypeBadgeSimple
-            key={type}
-            typeId={type}
-            onClick={() => toggleType(type)}
+            key={typeId}
+            typeId={typeId}
+            isSelected={typeValue.includes(typeId)}
+            onClick={() => setTypeValue(typeId)}
           />
         ))}
       </div>

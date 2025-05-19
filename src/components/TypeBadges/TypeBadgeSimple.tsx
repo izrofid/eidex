@@ -1,21 +1,17 @@
-import { useFilterStore } from "@/stores/filterStore";
 import { getTypeColor, getTypeName, adjustColor } from "../../utils/typeInfo";
 
 function TypeBadgeSimple({
   typeId,
   onClick,
+  isSelected,
 }: {
   typeId: number;
+  isSelected?: boolean;
   onClick: () => void;
 }) {
   // Type ID is passed as a prop
   const typeColor = getTypeColor(typeId)[0];
   const typeName = getTypeName(typeId);
-
-  // Use shallow equality to ensure component rerenders when typeValue changes
-  const selectedType = useFilterStore((state) => state.typeValue);
-
-  const isSelected = typeId === selectedType; // Use strict equality
 
   // Set the background color with transparency (e.g., 0.7 alpha)
   const bgColor = adjustColor(typeColor, -20);

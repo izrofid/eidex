@@ -17,7 +17,7 @@ interface FilterState {
   moveValue: ComboBoxEntry | null;
 
   // Type
-  typeValue: number | undefined;
+  typeValue: [number?, number?];
   typeOptions: { typeID: number | undefined; typeName: string }[];
 
   //Ability filter
@@ -49,9 +49,10 @@ interface FilterState {
 
 export const useFilterStore = create<FilterState>((set, get) => ({
   // Initial state
+  typeValue: [undefined, undefined] as [number?, number?],
   filters: {
     name: "",
-    typeId: undefined,
+    typeIds: undefined,
     chosenStat: undefined,
     statType: undefined,
     isStatMax: false,
@@ -73,7 +74,6 @@ export const useFilterStore = create<FilterState>((set, get) => ({
   isStatMax: false,
   moveSource: "all",
   moveValue: null,
-  typeValue: undefined,
   abilityValue: null,
   sortBy: "dexId",
   sortStat: undefined,
@@ -118,11 +118,35 @@ export const useFilterStore = create<FilterState>((set, get) => ({
       },
     })),
 
-  setTypeValue: (typeId) =>
-    set((state) => ({
-      typeValue: typeId,
-      filters: { ...state.filters, typeId },
-    })),
+  setTypeValue: (id?: number) =>
+    set((state) => {
+      // start with only the defined selections
+      let selected = state.typeValue.filter(
+        (t): t is number => t !== undefined,
+      );
+
+      if (!id) {
+        // “All” clicked → clear
+        selected = [];
+      } else if (selected.includes(id)) {
+        // toggle off
+        selected = selected.filter((x) => x !== id);
+      } else if (selected.length >= 2) {
+        // already two → reset to new
+        selected = [id];
+      } else {
+        // under two → add
+        selected.push(id);
+      }
+
+      // back to a fixed 2-tuple
+      const next: [number?, number?] = [selected[0], selected[1]];
+
+      return {
+        typeValue: next,
+        filters: { ...state.filters, typeIds: next },
+      };
+    }),
 
   setAbilityValue: (ability) =>
     set((state) => ({
@@ -162,7 +186,7 @@ export const useFilterStore = create<FilterState>((set, get) => ({
     set({
       filters: {
         name: "",
-        typeId: undefined,
+        typeIds: undefined,
         chosenStat: undefined,
         statType: undefined,
         isStatMax: false,
@@ -185,7 +209,7 @@ export const useFilterStore = create<FilterState>((set, get) => ({
   getSelectedType: () => {
     const state = get();
     return (
-      state.typeOptions.find((t) => t.typeID === state.typeValue) ||
+      state.typeOptions.find((t) => state.typeValue.includes(t.typeID)) ||
       state.typeOptions[0]
     );
   },

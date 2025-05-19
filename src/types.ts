@@ -42,7 +42,7 @@ export interface SpeciesData {
 
 export interface FilterOptions {
   name?: string;
-  typeId?: number;
+  typeIds?: [number?, number?];
   chosenStat?: number;
   sortBy?: SortBy;
   statType?: string;
