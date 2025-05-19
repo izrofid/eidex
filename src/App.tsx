@@ -11,7 +11,7 @@ import pokemonData from "./data/speciesData.json";
 import { useFilterStore } from "./stores/filterStore";
 import { useUIStore } from "./stores/uiStore";
 import { Pokemon } from "./types";
-import { filterPokemon } from "./utils/filterPokemon";
+import { filterPokemon } from "./utils/filterUtils/filterPokemon";
 import { useRandomiserState } from "./utils/randomiserState";
 
 function App() {
