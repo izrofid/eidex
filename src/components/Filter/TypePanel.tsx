@@ -19,7 +19,7 @@ const TypePanel: React.FC = () => {
           <TypeBadgeSimple
             key={typeId}
             typeId={typeId}
-            isSelected={typeValue.includes(typeId)}
+            isSelected={typeValue ? typeValue.includes(typeId) : false}
             onClick={() => setTypeValue(typeId)}
           />
         ))}

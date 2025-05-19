@@ -121,6 +121,7 @@ export const useFilterStore = create<FilterState>((set, get) => ({
   setTypeValue: (id?: number) =>
     set((state) => {
       // start with only the defined selections
+      if (!state.typeValue){state.typeValue = [undefined, undefined]}
       let selected = state.typeValue.filter(
         (t): t is number => t !== undefined,
       );
@@ -200,7 +201,7 @@ export const useFilterStore = create<FilterState>((set, get) => ({
       isStatMax: false,
       moveSource: "all",
       moveValue: null,
-      typeValue: undefined,
+      typeValue: [undefined, undefined] as [number?, number?],
       abilityValue: null,
       nameValue: "",
     }),
