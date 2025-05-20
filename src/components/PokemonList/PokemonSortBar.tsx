@@ -54,7 +54,7 @@ export const SortBar: React.FC<SortBarProps> = ({
               key={option.label}
               data-selected={isSelected && !descending}
               data-descending={isSelected && descending}
-              className="min-w-max border-b-4 border-transparent px-2 text-xs font-bold text-gray-300 data-[selected=true]:border-emerald-500 data-[descending=true]:border-rose-500 data-[descending=true]:text-rose-500 data-[selected=true]:text-emerald-500 sm:text-sm"
+              className="min-w-max border-b-4 border-transparent px-2 text-xs font-bold text-gray-300 data-[selected=true]:border-emerald-500 data-[descending=true]:border-rose-500 data-[descending=true]:text-rose-500 data-[selected=true]:text-emerald-500 sm:text-sm cursor-pointer"
               onClick={() => {
                 if (isSelected) {
                   toggleSortDirection?.();
