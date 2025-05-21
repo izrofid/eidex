@@ -74,7 +74,7 @@ export const SortBar: React.FC<SortBarProps> = ({
       </div>
       {/* Direction marker */}
       <div
-        className="cursor-pointer select-none p-1 sm:background-zinc-700"
+        className="cursor-pointer select-none p-1 max-sm:bg-zinc-700"
         onClick={() => {
           if (toggleSortDirection) {
             toggleSortDirection();
