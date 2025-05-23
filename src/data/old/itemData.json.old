@@ -1,4002 +1,4002 @@
-{
-  "1": {
+[
+  {
     "itemId": 1,
     "Name": "Poké Ball"
   },
-  "2": {
+  {
     "itemId": 2,
     "Name": "Great Ball"
   },
-  "3": {
+  {
     "itemId": 3,
     "Name": "Ultra Ball"
   },
-  "4": {
+  {
     "itemId": 4,
     "Name": "Master Ball"
   },
-  "5": {
+  {
     "itemId": 5,
     "Name": "Premier Ball"
   },
-  "6": {
+  {
     "itemId": 6,
     "Name": "Heal Ball"
   },
-  "7": {
+  {
     "itemId": 7,
     "Name": "Net Ball"
   },
-  "8": {
+  {
     "itemId": 8,
     "Name": "Nest Ball"
   },
-  "9": {
+  {
     "itemId": 9,
     "Name": "Dive Ball"
   },
-  "10": {
+  {
     "itemId": 10,
     "Name": "Dusk Ball"
   },
-  "11": {
+  {
     "itemId": 11,
     "Name": "Timer Ball"
   },
-  "12": {
+  {
     "itemId": 12,
     "Name": "Quick Ball"
   },
-  "13": {
+  {
     "itemId": 13,
     "Name": "Repeat Ball"
   },
-  "14": {
+  {
     "itemId": 14,
     "Name": "Luxury Ball"
   },
-  "15": {
+  {
     "itemId": 15,
     "Name": "Level Ball"
   },
-  "16": {
+  {
     "itemId": 16,
     "Name": "Lure Ball"
   },
-  "17": {
+  {
     "itemId": 17,
     "Name": "Moon Ball"
   },
-  "18": {
+  {
     "itemId": 18,
     "Name": "Friend Ball"
   },
-  "19": {
+  {
     "itemId": 19,
     "Name": "Love Ball"
   },
-  "20": {
+  {
     "itemId": 20,
     "Name": "Fast Ball"
   },
-  "21": {
+  {
     "itemId": 21,
     "Name": "Heavy Ball"
   },
-  "22": {
+  {
     "itemId": 22,
     "Name": "Dream Ball"
   },
-  "23": {
+  {
     "itemId": 23,
     "Name": "Safari Ball"
   },
-  "24": {
+  {
     "itemId": 24,
     "Name": "Sport Ball"
   },
-  "25": {
+  {
     "itemId": 25,
     "Name": "Park Ball"
   },
-  "26": {
+  {
     "itemId": 26,
     "Name": "Beast Ball"
   },
-  "27": {
+  {
     "itemId": 27,
     "Name": "Cherish Ball"
   },
-  "28": {
+  {
     "itemId": 28,
     "Name": "Potion"
   },
-  "29": {
+  {
     "itemId": 29,
     "Name": "Super Potion"
   },
-  "30": {
+  {
     "itemId": 30,
     "Name": "Hyper Potion"
   },
-  "31": {
+  {
     "itemId": 31,
     "Name": "Max Potion"
   },
-  "32": {
+  {
     "itemId": 32,
     "Name": "Full Restore"
   },
-  "33": {
+  {
     "itemId": 33,
     "Name": "Revive"
   },
-  "34": {
+  {
     "itemId": 34,
     "Name": "Max Revive"
   },
-  "35": {
+  {
     "itemId": 35,
     "Name": "Fresh Water"
   },
-  "36": {
+  {
     "itemId": 36,
     "Name": "Soda Pop"
   },
-  "37": {
+  {
     "itemId": 37,
     "Name": "Lemonade"
   },
-  "38": {
+  {
     "itemId": 38,
     "Name": "Moomoo Milk"
   },
-  "39": {
+  {
     "itemId": 39,
     "Name": "Energy Powder"
   },
-  "40": {
+  {
     "itemId": 40,
     "Name": "Energy Root"
   },
-  "41": {
+  {
     "itemId": 41,
     "Name": "Heal Powder"
   },
-  "42": {
+  {
     "itemId": 42,
     "Name": "Revival Herb"
   },
-  "43": {
+  {
     "itemId": 43,
     "Name": "Antidote"
   },
-  "44": {
+  {
     "itemId": 44,
     "Name": "Paralyze Heal"
   },
-  "45": {
+  {
     "itemId": 45,
     "Name": "Burn Heal"
   },
-  "46": {
+  {
     "itemId": 46,
     "Name": "Ice Heal"
   },
-  "47": {
+  {
     "itemId": 47,
     "Name": "Awakening"
   },
-  "48": {
+  {
     "itemId": 48,
     "Name": "Full Heal"
   },
-  "49": {
+  {
     "itemId": 49,
     "Name": "Ether"
   },
-  "50": {
+  {
     "itemId": 50,
     "Name": "Max Ether"
   },
-  "51": {
+  {
     "itemId": 51,
     "Name": "Elixir"
   },
-  "52": {
+  {
     "itemId": 52,
     "Name": "Max Elixir"
   },
-  "53": {
+  {
     "itemId": 53,
     "Name": "Berry Juice"
   },
-  "54": {
+  {
     "itemId": 54,
     "Name": "Sacred Ash"
   },
-  "55": {
+  {
     "itemId": 55,
     "Name": "Sweet Heart"
   },
-  "56": {
+  {
     "itemId": 56,
     "Name": "Max Honey"
   },
-  "57": {
+  {
     "itemId": 57,
     "Name": "PewtrCrnches"
   },
-  "58": {
+  {
     "itemId": 58,
     "Name": "RageCandyBar"
   },
-  "59": {
+  {
     "itemId": 59,
     "Name": "Lava Cookie"
   },
-  "60": {
+  {
     "itemId": 60,
     "Name": "Old Gateau"
   },
-  "61": {
+  {
     "itemId": 61,
     "Name": "Casteliacone"
   },
-  "62": {
+  {
     "itemId": 62,
     "Name": "LumioseGlete"
   },
-  "63": {
+  {
     "itemId": 63,
     "Name": "ShalourSable"
   },
-  "64": {
+  {
     "itemId": 64,
     "Name": "Big Malasada"
   },
-  "65": {
+  {
     "itemId": 65,
     "Name": "HP Up"
   },
-  "66": {
+  {
     "itemId": 66,
     "Name": "Protein"
   },
-  "67": {
+  {
     "itemId": 67,
     "Name": "Iron"
   },
-  "68": {
+  {
     "itemId": 68,
     "Name": "Calcium"
   },
-  "69": {
+  {
     "itemId": 69,
     "Name": "Zinc"
   },
-  "70": {
+  {
     "itemId": 70,
     "Name": "Carbos"
   },
-  "71": {
+  {
     "itemId": 71,
     "Name": "PP Up"
   },
-  "72": {
+  {
     "itemId": 72,
     "Name": "PP Max"
   },
-  "73": {
+  {
     "itemId": 73,
     "Name": "HealthFeather"
   },
-  "74": {
+  {
     "itemId": 74,
     "Name": "MuscleFeather"
   },
-  "75": {
+  {
     "itemId": 75,
     "Name": "ResistFeather"
   },
-  "76": {
+  {
     "itemId": 76,
     "Name": "GeniusFeather"
   },
-  "77": {
+  {
     "itemId": 77,
     "Name": "CleverFeather"
   },
-  "78": {
+  {
     "itemId": 78,
     "Name": "SwiftFeather"
   },
-  "79": {
+  {
     "itemId": 79,
     "Name": "AbilityCapsle"
   },
-  "80": {
+  {
     "itemId": 80,
     "Name": "AbilityPatch"
   },
-  "81": {
+  {
     "itemId": 81,
     "Name": "Lonely Mint"
   },
-  "82": {
+  {
     "itemId": 82,
     "Name": "Adamant Mint"
   },
-  "83": {
+  {
     "itemId": 83,
     "Name": "Naughty Mint"
   },
-  "84": {
+  {
     "itemId": 84,
     "Name": "Brave Mint"
   },
-  "85": {
+  {
     "itemId": 85,
     "Name": "Bold Mint"
   },
-  "86": {
+  {
     "itemId": 86,
     "Name": "Impish Mint"
   },
-  "87": {
+  {
     "itemId": 87,
     "Name": "Lax Mint"
   },
-  "88": {
+  {
     "itemId": 88,
     "Name": "Relaxed Mint"
   },
-  "89": {
+  {
     "itemId": 89,
     "Name": "Modest Mint"
   },
-  "90": {
+  {
     "itemId": 90,
     "Name": "Mild Mint"
   },
-  "91": {
+  {
     "itemId": 91,
     "Name": "Rash Mint"
   },
-  "92": {
+  {
     "itemId": 92,
     "Name": "Quiet Mint"
   },
-  "93": {
+  {
     "itemId": 93,
     "Name": "Calm Mint"
   },
-  "94": {
+  {
     "itemId": 94,
     "Name": "Gentle Mint"
   },
-  "95": {
+  {
     "itemId": 95,
     "Name": "Careful Mint"
   },
-  "96": {
+  {
     "itemId": 96,
     "Name": "Sassy Mint"
   },
-  "97": {
+  {
     "itemId": 97,
     "Name": "Timid Mint"
   },
-  "98": {
+  {
     "itemId": 98,
     "Name": "Hasty Mint"
   },
-  "99": {
+  {
     "itemId": 99,
     "Name": "Jolly Mint"
   },
-  "100": {
+  {
     "itemId": 100,
     "Name": "Naive Mint"
   },
-  "101": {
+  {
     "itemId": 101,
     "Name": "Serious Mint"
   },
-  "102": {
+  {
     "itemId": 102,
     "Name": "Rare Candy"
   },
-  "103": {
+  {
     "itemId": 103,
     "Name": "Exp.Candy XS"
   },
-  "104": {
+  {
     "itemId": 104,
     "Name": "Exp.Candy S"
   },
-  "105": {
+  {
     "itemId": 105,
     "Name": "Exp.Candy M"
   },
-  "106": {
+  {
     "itemId": 106,
     "Name": "Exp.Candy L"
   },
-  "107": {
+  {
     "itemId": 107,
     "Name": "Exp.Candy XL"
   },
-  "108": {
+  {
     "itemId": 108,
     "Name": "DynamaxCandy"
   },
-  "109": {
+  {
     "itemId": 109,
     "Name": "Blue Flute"
   },
-  "110": {
+  {
     "itemId": 110,
     "Name": "Yellow Flute"
   },
-  "111": {
+  {
     "itemId": 111,
     "Name": "Red Flute"
   },
-  "112": {
+  {
     "itemId": 112,
     "Name": "Black Flute"
   },
-  "113": {
+  {
     "itemId": 113,
     "Name": "White Flute"
   },
-  "114": {
+  {
     "itemId": 114,
     "Name": "Repel"
   },
-  "115": {
+  {
     "itemId": 115,
     "Name": "Super Repel"
   },
-  "116": {
+  {
     "itemId": 116,
     "Name": "Max Repel"
   },
-  "117": {
+  {
     "itemId": 117,
     "Name": "Lure"
   },
-  "118": {
+  {
     "itemId": 118,
     "Name": "Super Lure"
   },
-  "119": {
+  {
     "itemId": 119,
     "Name": "Max Lure"
   },
-  "120": {
+  {
     "itemId": 120,
     "Name": "Escape Rope"
   },
-  "121": {
+  {
     "itemId": 121,
     "Name": "X Attack"
   },
-  "122": {
+  {
     "itemId": 122,
     "Name": "X Defense"
   },
-  "123": {
+  {
     "itemId": 123,
     "Name": "X Sp. Atk"
   },
-  "124": {
+  {
     "itemId": 124,
     "Name": "X Sp. Def"
   },
-  "125": {
+  {
     "itemId": 125,
     "Name": "X Speed"
   },
-  "126": {
+  {
     "itemId": 126,
     "Name": "X Accuracy"
   },
-  "127": {
+  {
     "itemId": 127,
     "Name": "Dire Hit"
   },
-  "128": {
+  {
     "itemId": 128,
     "Name": "Guard Spec."
   },
-  "129": {
+  {
     "itemId": 129,
     "Name": "Poké Doll"
   },
-  "130": {
+  {
     "itemId": 130,
     "Name": "Fluffy Tail"
   },
-  "131": {
+  {
     "itemId": 131,
     "Name": "Poké Toy"
   },
-  "132": {
+  {
     "itemId": 132,
     "Name": "MaxMushrooms"
   },
-  "133": {
+  {
     "itemId": 133,
     "Name": "Bottle Cap"
   },
-  "134": {
+  {
     "itemId": 134,
     "Name": "GoldBottlCap"
   },
-  "135": {
+  {
     "itemId": 135,
     "Name": "Nugget"
   },
-  "136": {
+  {
     "itemId": 136,
     "Name": "Big Nugget"
   },
-  "137": {
+  {
     "itemId": 137,
     "Name": "Tiny Mushroom"
   },
-  "138": {
+  {
     "itemId": 138,
     "Name": "Big Mushroom"
   },
-  "139": {
+  {
     "itemId": 139,
     "Name": "Balm Mushroom"
   },
-  "140": {
+  {
     "itemId": 140,
     "Name": "Pearl"
   },
-  "141": {
+  {
     "itemId": 141,
     "Name": "Big Pearl"
   },
-  "142": {
+  {
     "itemId": 142,
     "Name": "Pearl String"
   },
-  "143": {
+  {
     "itemId": 143,
     "Name": "Stardust"
   },
-  "144": {
+  {
     "itemId": 144,
     "Name": "Star Piece"
   },
-  "145": {
+  {
     "itemId": 145,
     "Name": "Comet Shard"
   },
-  "146": {
+  {
     "itemId": 146,
     "Name": "Shoal Salt"
   },
-  "147": {
+  {
     "itemId": 147,
     "Name": "Shoal Shell"
   },
-  "148": {
+  {
     "itemId": 148,
     "Name": "Red Shard"
   },
-  "149": {
+  {
     "itemId": 149,
     "Name": "Blue Shard"
   },
-  "150": {
+  {
     "itemId": 150,
     "Name": "Yellow Shard"
   },
-  "151": {
+  {
     "itemId": 151,
     "Name": "Green Shard"
   },
-  "152": {
+  {
     "itemId": 152,
     "Name": "Heart Scale"
   },
-  "153": {
+  {
     "itemId": 153,
     "Name": "Honey"
   },
-  "154": {
+  {
     "itemId": 154,
     "Name": "Rare Bone"
   },
-  "155": {
+  {
     "itemId": 155,
     "Name": "Odd Keystone"
   },
-  "156": {
+  {
     "itemId": 156,
     "Name": "PrettyFeather"
   },
-  "157": {
+  {
     "itemId": 157,
     "Name": "Relic Copper"
   },
-  "158": {
+  {
     "itemId": 158,
     "Name": "Relic Silver"
   },
-  "159": {
+  {
     "itemId": 159,
     "Name": "Relic Gold"
   },
-  "160": {
+  {
     "itemId": 160,
     "Name": "Relic Vase"
   },
-  "161": {
+  {
     "itemId": 161,
     "Name": "Relic Band"
   },
-  "162": {
+  {
     "itemId": 162,
     "Name": "Relic Statue"
   },
-  "163": {
+  {
     "itemId": 163,
     "Name": "Relic Crown"
   },
-  "164": {
+  {
     "itemId": 164,
     "Name": "StrngeSouvnr"
   },
-  "165": {
+  {
     "itemId": 165,
     "Name": "Helix Fossil"
   },
-  "166": {
+  {
     "itemId": 166,
     "Name": "Dome Fossil"
   },
-  "167": {
+  {
     "itemId": 167,
     "Name": "Old Amber"
   },
-  "168": {
+  {
     "itemId": 168,
     "Name": "Root Fossil"
   },
-  "169": {
+  {
     "itemId": 169,
     "Name": "Claw Fossil"
   },
-  "170": {
+  {
     "itemId": 170,
     "Name": "Armor Fossil"
   },
-  "171": {
+  {
     "itemId": 171,
     "Name": "Skull Fossil"
   },
-  "172": {
+  {
     "itemId": 172,
     "Name": "Cover Fossil"
   },
-  "173": {
+  {
     "itemId": 173,
     "Name": "Plume Fossil"
   },
-  "174": {
+  {
     "itemId": 174,
     "Name": "Jaw Fossil"
   },
-  "175": {
+  {
     "itemId": 175,
     "Name": "Sail Fossil"
   },
-  "176": {
+  {
     "itemId": 176,
     "Name": "FosslzedBird"
   },
-  "177": {
+  {
     "itemId": 177,
     "Name": "FosslzedFish"
   },
-  "178": {
+  {
     "itemId": 178,
     "Name": "FosslzedDrke"
   },
-  "179": {
+  {
     "itemId": 179,
     "Name": "FosslzedDino"
   },
-  "180": {
+  {
     "itemId": 180,
     "Name": "Growth Mulch"
   },
-  "181": {
+  {
     "itemId": 181,
     "Name": "Damp Mulch"
   },
-  "182": {
+  {
     "itemId": 182,
     "Name": "Stable Mulch"
   },
-  "183": {
+  {
     "itemId": 183,
     "Name": "Gooey Mulch"
   },
-  "184": {
+  {
     "itemId": 184,
     "Name": "Rich Mulch"
   },
-  "185": {
+  {
     "itemId": 185,
     "Name": "SurprseMulch"
   },
-  "186": {
+  {
     "itemId": 186,
     "Name": "Boost Mulch"
   },
-  "187": {
+  {
     "itemId": 187,
     "Name": "Amaze Mulch"
   },
-  "188": {
+  {
     "itemId": 188,
     "Name": "Red Apricorn"
   },
-  "189": {
+  {
     "itemId": 189,
     "Name": "Blue Apricorn"
   },
-  "190": {
+  {
     "itemId": 190,
     "Name": "YellwApricorn"
   },
-  "191": {
+  {
     "itemId": 191,
     "Name": "GreenApricorn"
   },
-  "192": {
+  {
     "itemId": 192,
     "Name": "Pink Apricorn"
   },
-  "193": {
+  {
     "itemId": 193,
     "Name": "WhiteApricorn"
   },
-  "194": {
+  {
     "itemId": 194,
     "Name": "BlackApricorn"
   },
-  "195": {
+  {
     "itemId": 195,
     "Name": "WishingPiece"
   },
-  "196": {
+  {
     "itemId": 196,
     "Name": "GalaricaTwig"
   },
-  "197": {
+  {
     "itemId": 197,
     "Name": "Armorite Ore"
   },
-  "198": {
+  {
     "itemId": 198,
     "Name": "Dynite Ore"
   },
-  "199": {
+  {
     "itemId": 199,
     "Name": "Orange Mail"
   },
-  "200": {
+  {
     "itemId": 200,
     "Name": "Harbor Mail"
   },
-  "201": {
+  {
     "itemId": 201,
     "Name": "Glitter Mail"
   },
-  "202": {
+  {
     "itemId": 202,
     "Name": "Mech Mail"
   },
-  "203": {
+  {
     "itemId": 203,
     "Name": "Wood Mail"
   },
-  "204": {
+  {
     "itemId": 204,
     "Name": "Wave Mail"
   },
-  "205": {
+  {
     "itemId": 205,
     "Name": "Bead Mail"
   },
-  "206": {
+  {
     "itemId": 206,
     "Name": "Shadow Mail"
   },
-  "207": {
+  {
     "itemId": 207,
     "Name": "Tropic Mail"
   },
-  "208": {
+  {
     "itemId": 208,
     "Name": "Dream Mail"
   },
-  "209": {
+  {
     "itemId": 209,
     "Name": "Fab Mail"
   },
-  "210": {
+  {
     "itemId": 210,
     "Name": "Retro Mail"
   },
-  "211": {
+  {
     "itemId": 211,
     "Name": "Fire Stone"
   },
-  "212": {
+  {
     "itemId": 212,
     "Name": "Water Stone"
   },
-  "213": {
+  {
     "itemId": 213,
     "Name": "Thunder Stone"
   },
-  "214": {
+  {
     "itemId": 214,
     "Name": "Leaf Stone"
   },
-  "215": {
+  {
     "itemId": 215,
     "Name": "Ice Stone"
   },
-  "216": {
+  {
     "itemId": 216,
     "Name": "Sun Stone"
   },
-  "217": {
+  {
     "itemId": 217,
     "Name": "Moon Stone"
   },
-  "218": {
+  {
     "itemId": 218,
     "Name": "Shiny Stone"
   },
-  "219": {
+  {
     "itemId": 219,
     "Name": "Dusk Stone"
   },
-  "220": {
+  {
     "itemId": 220,
     "Name": "Dawn Stone"
   },
-  "221": {
+  {
     "itemId": 221,
     "Name": "Sweet Apple"
   },
-  "222": {
+  {
     "itemId": 222,
     "Name": "Tart Apple"
   },
-  "223": {
+  {
     "itemId": 223,
     "Name": "Cracked Pot"
   },
-  "224": {
+  {
     "itemId": 224,
     "Name": "Chipped Pot"
   },
-  "225": {
+  {
     "itemId": 225,
     "Name": "GalaricaCuff"
   },
-  "226": {
+  {
     "itemId": 226,
     "Name": "GalrcaWreath"
   },
-  "227": {
+  {
     "itemId": 227,
     "Name": "Dragon Scale"
   },
-  "228": {
+  {
     "itemId": 228,
     "Name": "Upgrade"
   },
-  "229": {
+  {
     "itemId": 229,
     "Name": "Protector"
   },
-  "230": {
+  {
     "itemId": 230,
     "Name": "Electirizer"
   },
-  "231": {
+  {
     "itemId": 231,
     "Name": "Magmarizer"
   },
-  "232": {
+  {
     "itemId": 232,
     "Name": "Dubious Disc"
   },
-  "233": {
+  {
     "itemId": 233,
     "Name": "Reaper Cloth"
   },
-  "234": {
+  {
     "itemId": 234,
     "Name": "Prism Scale"
   },
-  "235": {
+  {
     "itemId": 235,
     "Name": "Whipped Dream"
   },
-  "236": {
+  {
     "itemId": 236,
     "Name": "Sachet"
   },
-  "237": {
+  {
     "itemId": 237,
     "Name": "Oval Stone"
   },
-  "238": {
+  {
     "itemId": 238,
     "Name": "StrwbrySweet"
   },
-  "239": {
+  {
     "itemId": 239,
     "Name": "Love Sweet"
   },
-  "240": {
+  {
     "itemId": 240,
     "Name": "Berry Sweet"
   },
-  "241": {
+  {
     "itemId": 241,
     "Name": "Clover Sweet"
   },
-  "242": {
+  {
     "itemId": 242,
     "Name": "Flower Sweet"
   },
-  "243": {
+  {
     "itemId": 243,
     "Name": "Star Sweet"
   },
-  "244": {
+  {
     "itemId": 244,
     "Name": "Ribbon Sweet"
   },
-  "245": {
+  {
     "itemId": 245,
     "Name": "Everstone"
   },
-  "246": {
+  {
     "itemId": 246,
     "Name": "Red Nectar"
   },
-  "247": {
+  {
     "itemId": 247,
     "Name": "Yellow Nectar"
   },
-  "248": {
+  {
     "itemId": 248,
     "Name": "Pink Nectar"
   },
-  "249": {
+  {
     "itemId": 249,
     "Name": "Purple Nectar"
   },
-  "250": {
+  {
     "itemId": 250,
     "Name": "Flame Plate"
   },
-  "251": {
+  {
     "itemId": 251,
     "Name": "Splash Plate"
   },
-  "252": {
+  {
     "itemId": 252,
     "Name": "Zap Plate"
   },
-  "253": {
+  {
     "itemId": 253,
     "Name": "Meadow Plate"
   },
-  "254": {
+  {
     "itemId": 254,
     "Name": "Icicle Plate"
   },
-  "255": {
+  {
     "itemId": 255,
     "Name": "Fist Plate"
   },
-  "256": {
+  {
     "itemId": 256,
     "Name": "Toxic Plate"
   },
-  "257": {
+  {
     "itemId": 257,
     "Name": "Earth Plate"
   },
-  "258": {
+  {
     "itemId": 258,
     "Name": "Sky Plate"
   },
-  "259": {
+  {
     "itemId": 259,
     "Name": "Mind Plate"
   },
-  "260": {
+  {
     "itemId": 260,
     "Name": "Insect Plate"
   },
-  "261": {
+  {
     "itemId": 261,
     "Name": "Stone Plate"
   },
-  "262": {
+  {
     "itemId": 262,
     "Name": "Spooky Plate"
   },
-  "263": {
+  {
     "itemId": 263,
     "Name": "Draco Plate"
   },
-  "264": {
+  {
     "itemId": 264,
     "Name": "Dread Plate"
   },
-  "265": {
+  {
     "itemId": 265,
     "Name": "Iron Plate"
   },
-  "266": {
+  {
     "itemId": 266,
     "Name": "Pixie Plate"
   },
-  "267": {
+  {
     "itemId": 267,
     "Name": "Douse Drive"
   },
-  "268": {
+  {
     "itemId": 268,
     "Name": "Shock Drive"
   },
-  "269": {
+  {
     "itemId": 269,
     "Name": "Burn Drive"
   },
-  "270": {
+  {
     "itemId": 270,
     "Name": "Chill Drive"
   },
-  "271": {
+  {
     "itemId": 271,
     "Name": "Fire Memory"
   },
-  "272": {
+  {
     "itemId": 272,
     "Name": "Water Memory"
   },
-  "273": {
+  {
     "itemId": 273,
     "Name": "ElectrcMemory"
   },
-  "274": {
+  {
     "itemId": 274,
     "Name": "Grass Memory"
   },
-  "275": {
+  {
     "itemId": 275,
     "Name": "Ice Memory"
   },
-  "276": {
+  {
     "itemId": 276,
     "Name": "FightngMemory"
   },
-  "277": {
+  {
     "itemId": 277,
     "Name": "Poison Memory"
   },
-  "278": {
+  {
     "itemId": 278,
     "Name": "Ground Memory"
   },
-  "279": {
+  {
     "itemId": 279,
     "Name": "Flying Memory"
   },
-  "280": {
+  {
     "itemId": 280,
     "Name": "PsychicMemory"
   },
-  "281": {
+  {
     "itemId": 281,
     "Name": "Bug Memory"
   },
-  "282": {
+  {
     "itemId": 282,
     "Name": "Rock Memory"
   },
-  "283": {
+  {
     "itemId": 283,
     "Name": "Ghost Memory"
   },
-  "284": {
+  {
     "itemId": 284,
     "Name": "Dragon Memory"
   },
-  "285": {
+  {
     "itemId": 285,
     "Name": "Dark Memory"
   },
-  "286": {
+  {
     "itemId": 286,
     "Name": "Steel Memory"
   },
-  "287": {
+  {
     "itemId": 287,
     "Name": "Fairy Memory"
   },
-  "288": {
+  {
     "itemId": 288,
     "Name": "RustedSword"
   },
-  "289": {
+  {
     "itemId": 289,
     "Name": "RustedShield"
   },
-  "290": {
+  {
     "itemId": 290,
     "Name": "Red Orb"
   },
-  "291": {
+  {
     "itemId": 291,
     "Name": "Blue Orb"
   },
-  "292": {
+  {
     "itemId": 292,
     "Name": "Venusaurite"
   },
-  "293": {
+  {
     "itemId": 293,
     "Name": "CharizarditeX"
   },
-  "294": {
+  {
     "itemId": 294,
     "Name": "CharizarditeY"
   },
-  "295": {
+  {
     "itemId": 295,
     "Name": "Blastoisinite"
   },
-  "296": {
+  {
     "itemId": 296,
     "Name": "Beedrillite"
   },
-  "297": {
+  {
     "itemId": 297,
     "Name": "Pidgeotite"
   },
-  "298": {
+  {
     "itemId": 298,
     "Name": "Alakazite"
   },
-  "299": {
+  {
     "itemId": 299,
     "Name": "Slowbronite"
   },
-  "300": {
+  {
     "itemId": 300,
     "Name": "Gengarite"
   },
-  "301": {
+  {
     "itemId": 301,
     "Name": "Kangaskhanite"
   },
-  "302": {
+  {
     "itemId": 302,
     "Name": "Pinsirite"
   },
-  "303": {
+  {
     "itemId": 303,
     "Name": "Gyaradosite"
   },
-  "304": {
+  {
     "itemId": 304,
     "Name": "Aerodactylite"
   },
-  "305": {
+  {
     "itemId": 305,
     "Name": "Mewtwonite X"
   },
-  "306": {
+  {
     "itemId": 306,
     "Name": "Mewtwonite Y"
   },
-  "307": {
+  {
     "itemId": 307,
     "Name": "Ampharosite"
   },
-  "308": {
+  {
     "itemId": 308,
     "Name": "Steelixite"
   },
-  "309": {
+  {
     "itemId": 309,
     "Name": "Scizorite"
   },
-  "310": {
+  {
     "itemId": 310,
     "Name": "Heracronite"
   },
-  "311": {
+  {
     "itemId": 311,
     "Name": "Houndoominite"
   },
-  "312": {
+  {
     "itemId": 312,
     "Name": "Tyranitarite"
   },
-  "313": {
+  {
     "itemId": 313,
     "Name": "Sceptilite"
   },
-  "314": {
+  {
     "itemId": 314,
     "Name": "Blazikenite"
   },
-  "315": {
+  {
     "itemId": 315,
     "Name": "Swampertite"
   },
-  "316": {
+  {
     "itemId": 316,
     "Name": "Gardevoirite"
   },
-  "317": {
+  {
     "itemId": 317,
     "Name": "Sablenite"
   },
-  "318": {
+  {
     "itemId": 318,
     "Name": "Mawilite"
   },
-  "319": {
+  {
     "itemId": 319,
     "Name": "Aggronite"
   },
-  "320": {
+  {
     "itemId": 320,
     "Name": "Medichamite"
   },
-  "321": {
+  {
     "itemId": 321,
     "Name": "Manectite"
   },
-  "322": {
+  {
     "itemId": 322,
     "Name": "Sharpedonite"
   },
-  "323": {
+  {
     "itemId": 323,
     "Name": "Cameruptite"
   },
-  "324": {
+  {
     "itemId": 324,
     "Name": "Altarianite"
   },
-  "325": {
+  {
     "itemId": 325,
     "Name": "Banettite"
   },
-  "326": {
+  {
     "itemId": 326,
     "Name": "Absolite"
   },
-  "327": {
+  {
     "itemId": 327,
     "Name": "Glalitite"
   },
-  "328": {
+  {
     "itemId": 328,
     "Name": "Salamencite"
   },
-  "329": {
+  {
     "itemId": 329,
     "Name": "Metagrossite"
   },
-  "330": {
+  {
     "itemId": 330,
     "Name": "Latiasite"
   },
-  "331": {
+  {
     "itemId": 331,
     "Name": "Latiosite"
   },
-  "332": {
+  {
     "itemId": 332,
     "Name": "Lopunnite"
   },
-  "333": {
+  {
     "itemId": 333,
     "Name": "Garchompite"
   },
-  "334": {
+  {
     "itemId": 334,
     "Name": "Lucarionite"
   },
-  "335": {
+  {
     "itemId": 335,
     "Name": "Abomasite"
   },
-  "336": {
+  {
     "itemId": 336,
     "Name": "Galladite"
   },
-  "337": {
+  {
     "itemId": 337,
     "Name": "Audinite"
   },
-  "338": {
+  {
     "itemId": 338,
     "Name": "Diancite"
   },
-  "339": {
+  {
     "itemId": 339,
     "Name": "Normal Gem"
   },
-  "340": {
+  {
     "itemId": 340,
     "Name": "Fire Gem"
   },
-  "341": {
+  {
     "itemId": 341,
     "Name": "Water Gem"
   },
-  "342": {
+  {
     "itemId": 342,
     "Name": "Electric Gem"
   },
-  "343": {
+  {
     "itemId": 343,
     "Name": "Grass Gem"
   },
-  "344": {
+  {
     "itemId": 344,
     "Name": "Ice Gem"
   },
-  "345": {
+  {
     "itemId": 345,
     "Name": "Fighting Gem"
   },
-  "346": {
+  {
     "itemId": 346,
     "Name": "Poison Gem"
   },
-  "347": {
+  {
     "itemId": 347,
     "Name": "Ground Gem"
   },
-  "348": {
+  {
     "itemId": 348,
     "Name": "Flying Gem"
   },
-  "349": {
+  {
     "itemId": 349,
     "Name": "Psychic Gem"
   },
-  "350": {
+  {
     "itemId": 350,
     "Name": "Bug Gem"
   },
-  "351": {
+  {
     "itemId": 351,
     "Name": "Rock Gem"
   },
-  "352": {
+  {
     "itemId": 352,
     "Name": "Ghost Gem"
   },
-  "353": {
+  {
     "itemId": 353,
     "Name": "Dragon Gem"
   },
-  "354": {
+  {
     "itemId": 354,
     "Name": "Dark Gem"
   },
-  "355": {
+  {
     "itemId": 355,
     "Name": "Steel Gem"
   },
-  "356": {
+  {
     "itemId": 356,
     "Name": "Fairy Gem"
   },
-  "357": {
+  {
     "itemId": 357,
     "Name": "Normalium Z"
   },
-  "358": {
+  {
     "itemId": 358,
     "Name": "Firium Z"
   },
-  "359": {
+  {
     "itemId": 359,
     "Name": "Waterium Z"
   },
-  "360": {
+  {
     "itemId": 360,
     "Name": "Electrium Z"
   },
-  "361": {
+  {
     "itemId": 361,
     "Name": "Grassium Z"
   },
-  "362": {
+  {
     "itemId": 362,
     "Name": "Icium Z"
   },
-  "363": {
+  {
     "itemId": 363,
     "Name": "Fightinium Z"
   },
-  "364": {
+  {
     "itemId": 364,
     "Name": "Poisonium Z"
   },
-  "365": {
+  {
     "itemId": 365,
     "Name": "Groundium Z"
   },
-  "366": {
+  {
     "itemId": 366,
     "Name": "Flyinium Z"
   },
-  "367": {
+  {
     "itemId": 367,
     "Name": "Psychium Z"
   },
-  "368": {
+  {
     "itemId": 368,
     "Name": "Buginium Z"
   },
-  "369": {
+  {
     "itemId": 369,
     "Name": "Rockium Z"
   },
-  "370": {
+  {
     "itemId": 370,
     "Name": "Ghostium Z"
   },
-  "371": {
+  {
     "itemId": 371,
     "Name": "Dragonium Z"
   },
-  "372": {
+  {
     "itemId": 372,
     "Name": "Darkinium Z"
   },
-  "373": {
+  {
     "itemId": 373,
     "Name": "Steelium Z"
   },
-  "374": {
+  {
     "itemId": 374,
     "Name": "Fairium Z"
   },
-  "375": {
+  {
     "itemId": 375,
     "Name": "Pikanium Z"
   },
-  "376": {
+  {
     "itemId": 376,
     "Name": "Eevium Z"
   },
-  "377": {
+  {
     "itemId": 377,
     "Name": "Snorlium Z"
   },
-  "378": {
+  {
     "itemId": 378,
     "Name": "Mewnium Z"
   },
-  "379": {
+  {
     "itemId": 379,
     "Name": "Decidium Z"
   },
-  "380": {
+  {
     "itemId": 380,
     "Name": "Incinium Z"
   },
-  "381": {
+  {
     "itemId": 381,
     "Name": "Primarium Z"
   },
-  "382": {
+  {
     "itemId": 382,
     "Name": "Lycanium Z"
   },
-  "383": {
+  {
     "itemId": 383,
     "Name": "Mimikium Z"
   },
-  "384": {
+  {
     "itemId": 384,
     "Name": "Kommonium Z"
   },
-  "385": {
+  {
     "itemId": 385,
     "Name": "Tapunium Z"
   },
-  "386": {
+  {
     "itemId": 386,
     "Name": "Solganium Z"
   },
-  "387": {
+  {
     "itemId": 387,
     "Name": "Lunalium Z"
   },
-  "388": {
+  {
     "itemId": 388,
     "Name": "Marshadium Z"
   },
-  "389": {
+  {
     "itemId": 389,
     "Name": "Aloraichium Z"
   },
-  "390": {
+  {
     "itemId": 390,
     "Name": "Pikashunium Z"
   },
-  "391": {
+  {
     "itemId": 391,
     "Name": "U-Necrozium Z"
   },
-  "392": {
+  {
     "itemId": 392,
     "Name": "Light Ball"
   },
-  "393": {
+  {
     "itemId": 393,
     "Name": "Leek"
   },
-  "394": {
+  {
     "itemId": 394,
     "Name": "Thick Club"
   },
-  "395": {
+  {
     "itemId": 395,
     "Name": "Lucky Punch"
   },
-  "396": {
+  {
     "itemId": 396,
     "Name": "Metal Powder"
   },
-  "397": {
+  {
     "itemId": 397,
     "Name": "Quick Powder"
   },
-  "398": {
+  {
     "itemId": 398,
     "Name": "DeepSeaScale"
   },
-  "399": {
+  {
     "itemId": 399,
     "Name": "DeepSeaTooth"
   },
-  "400": {
+  {
     "itemId": 400,
     "Name": "Soul Dew"
   },
-  "401": {
+  {
     "itemId": 401,
     "Name": "Adamant Orb"
   },
-  "402": {
+  {
     "itemId": 402,
     "Name": "Lustrous Orb"
   },
-  "403": {
+  {
     "itemId": 403,
     "Name": "Griseous Orb"
   },
-  "404": {
+  {
     "itemId": 404,
     "Name": "Sea Incense"
   },
-  "405": {
+  {
     "itemId": 405,
     "Name": "Lax Incense"
   },
-  "406": {
+  {
     "itemId": 406,
     "Name": "Odd Incense"
   },
-  "407": {
+  {
     "itemId": 407,
     "Name": "Rock Incense"
   },
-  "408": {
+  {
     "itemId": 408,
     "Name": "Full Incense"
   },
-  "409": {
+  {
     "itemId": 409,
     "Name": "Wave Incense"
   },
-  "410": {
+  {
     "itemId": 410,
     "Name": "Rose Incense"
   },
-  "411": {
+  {
     "itemId": 411,
     "Name": "Luck Incense"
   },
-  "412": {
+  {
     "itemId": 412,
     "Name": "Pure Incense"
   },
-  "413": {
+  {
     "itemId": 413,
     "Name": "Red Scarf"
   },
-  "414": {
+  {
     "itemId": 414,
     "Name": "Blue Scarf"
   },
-  "415": {
+  {
     "itemId": 415,
     "Name": "Pink Scarf"
   },
-  "416": {
+  {
     "itemId": 416,
     "Name": "Green Scarf"
   },
-  "417": {
+  {
     "itemId": 417,
     "Name": "Yellow Scarf"
   },
-  "418": {
+  {
     "itemId": 418,
     "Name": "Macho Brace"
   },
-  "419": {
+  {
     "itemId": 419,
     "Name": "Power Weight"
   },
-  "420": {
+  {
     "itemId": 420,
     "Name": "Power Bracer"
   },
-  "421": {
+  {
     "itemId": 421,
     "Name": "Power Belt"
   },
-  "422": {
+  {
     "itemId": 422,
     "Name": "Power Lens"
   },
-  "423": {
+  {
     "itemId": 423,
     "Name": "Power Band"
   },
-  "424": {
+  {
     "itemId": 424,
     "Name": "Power Anklet"
   },
-  "425": {
+  {
     "itemId": 425,
     "Name": "Silk Scarf"
   },
-  "426": {
+  {
     "itemId": 426,
     "Name": "Charcoal"
   },
-  "427": {
+  {
     "itemId": 427,
     "Name": "Mystic Water"
   },
-  "428": {
+  {
     "itemId": 428,
     "Name": "Magnet"
   },
-  "429": {
+  {
     "itemId": 429,
     "Name": "Miracle Seed"
   },
-  "430": {
+  {
     "itemId": 430,
     "Name": "Never-MeltIce"
   },
-  "431": {
+  {
     "itemId": 431,
     "Name": "Black Belt"
   },
-  "432": {
+  {
     "itemId": 432,
     "Name": "Poison Barb"
   },
-  "433": {
+  {
     "itemId": 433,
     "Name": "Soft Sand"
   },
-  "434": {
+  {
     "itemId": 434,
     "Name": "Sharp Beak"
   },
-  "435": {
+  {
     "itemId": 435,
     "Name": "Twisted Spoon"
   },
-  "436": {
+  {
     "itemId": 436,
     "Name": "Silver Powder"
   },
-  "437": {
+  {
     "itemId": 437,
     "Name": "Hard Stone"
   },
-  "438": {
+  {
     "itemId": 438,
     "Name": "Spell Tag"
   },
-  "439": {
+  {
     "itemId": 439,
     "Name": "Dragon Fang"
   },
-  "440": {
+  {
     "itemId": 440,
     "Name": "Black Glasses"
   },
-  "441": {
+  {
     "itemId": 441,
     "Name": "Metal Coat"
   },
-  "442": {
+  {
     "itemId": 442,
     "Name": "Choice Band"
   },
-  "443": {
+  {
     "itemId": 443,
     "Name": "Choice Specs"
   },
-  "444": {
+  {
     "itemId": 444,
     "Name": "Choice Scarf"
   },
-  "445": {
+  {
     "itemId": 445,
     "Name": "Flame Orb"
   },
-  "446": {
+  {
     "itemId": 446,
     "Name": "Toxic Orb"
   },
-  "447": {
+  {
     "itemId": 447,
     "Name": "Damp Rock"
   },
-  "448": {
+  {
     "itemId": 448,
     "Name": "Heat Rock"
   },
-  "449": {
+  {
     "itemId": 449,
     "Name": "Smooth Rock"
   },
-  "450": {
+  {
     "itemId": 450,
     "Name": "Icy Rock"
   },
-  "451": {
+  {
     "itemId": 451,
     "Name": "Electric Seed"
   },
-  "452": {
+  {
     "itemId": 452,
     "Name": "Psychic Seed"
   },
-  "453": {
+  {
     "itemId": 453,
     "Name": "Misty Seed"
   },
-  "454": {
+  {
     "itemId": 454,
     "Name": "Grassy Seed"
   },
-  "455": {
+  {
     "itemId": 455,
     "Name": "Absorb Bulb"
   },
-  "456": {
+  {
     "itemId": 456,
     "Name": "Cell Battery"
   },
-  "457": {
+  {
     "itemId": 457,
     "Name": "Luminous Moss"
   },
-  "458": {
+  {
     "itemId": 458,
     "Name": "Snowball"
   },
-  "459": {
+  {
     "itemId": 459,
     "Name": "Bright Powder"
   },
-  "460": {
+  {
     "itemId": 460,
     "Name": "White Herb"
   },
-  "461": {
+  {
     "itemId": 461,
     "Name": "Exp. Share"
   },
-  "462": {
+  {
     "itemId": 462,
     "Name": "Quick Claw"
   },
-  "463": {
+  {
     "itemId": 463,
     "Name": "Soothe Bell"
   },
-  "464": {
+  {
     "itemId": 464,
     "Name": "Mental Herb"
   },
-  "465": {
+  {
     "itemId": 465,
     "Name": "King's Rock"
   },
-  "466": {
+  {
     "itemId": 466,
     "Name": "Amulet Coin"
   },
-  "467": {
+  {
     "itemId": 467,
     "Name": "Cleanse Tag"
   },
-  "468": {
+  {
     "itemId": 468,
     "Name": "Smoke Ball"
   },
-  "469": {
+  {
     "itemId": 469,
     "Name": "Focus Band"
   },
-  "470": {
+  {
     "itemId": 470,
     "Name": "Lucky Egg"
   },
-  "471": {
+  {
     "itemId": 471,
     "Name": "Scope Lens"
   },
-  "472": {
+  {
     "itemId": 472,
     "Name": "Leftovers"
   },
-  "473": {
+  {
     "itemId": 473,
     "Name": "Shell Bell"
   },
-  "474": {
+  {
     "itemId": 474,
     "Name": "Wide Lens"
   },
-  "475": {
+  {
     "itemId": 475,
     "Name": "Muscle Band"
   },
-  "476": {
+  {
     "itemId": 476,
     "Name": "Wise Glasses"
   },
-  "477": {
+  {
     "itemId": 477,
     "Name": "Expert Belt"
   },
-  "478": {
+  {
     "itemId": 478,
     "Name": "Light Clay"
   },
-  "479": {
+  {
     "itemId": 479,
     "Name": "Life Orb"
   },
-  "480": {
+  {
     "itemId": 480,
     "Name": "Power Herb"
   },
-  "481": {
+  {
     "itemId": 481,
     "Name": "Focus Sash"
   },
-  "482": {
+  {
     "itemId": 482,
     "Name": "Zoom Lens"
   },
-  "483": {
+  {
     "itemId": 483,
     "Name": "Metronome"
   },
-  "484": {
+  {
     "itemId": 484,
     "Name": "Iron Ball"
   },
-  "485": {
+  {
     "itemId": 485,
     "Name": "Lagging Tail"
   },
-  "486": {
+  {
     "itemId": 486,
     "Name": "Destiny Knot"
   },
-  "487": {
+  {
     "itemId": 487,
     "Name": "Black Sludge"
   },
-  "488": {
+  {
     "itemId": 488,
     "Name": "Grip Claw"
   },
-  "489": {
+  {
     "itemId": 489,
     "Name": "Sticky Barb"
   },
-  "490": {
+  {
     "itemId": 490,
     "Name": "Shed Shell"
   },
-  "491": {
+  {
     "itemId": 491,
     "Name": "Big Root"
   },
-  "492": {
+  {
     "itemId": 492,
     "Name": "Razor Claw"
   },
-  "493": {
+  {
     "itemId": 493,
     "Name": "Razor Fang"
   },
-  "494": {
+  {
     "itemId": 494,
     "Name": "Eviolite"
   },
-  "495": {
+  {
     "itemId": 495,
     "Name": "Float Stone"
   },
-  "496": {
+  {
     "itemId": 496,
     "Name": "Rocky Helmet"
   },
-  "497": {
+  {
     "itemId": 497,
     "Name": "Air Balloon"
   },
-  "498": {
+  {
     "itemId": 498,
     "Name": "Red Card"
   },
-  "499": {
+  {
     "itemId": 499,
     "Name": "Ring Target"
   },
-  "500": {
+  {
     "itemId": 500,
     "Name": "Binding Band"
   },
-  "501": {
+  {
     "itemId": 501,
     "Name": "Eject Button"
   },
-  "502": {
+  {
     "itemId": 502,
     "Name": "WeaknssPolicy"
   },
-  "503": {
+  {
     "itemId": 503,
     "Name": "Assault Vest"
   },
-  "504": {
+  {
     "itemId": 504,
     "Name": "SafetyGoggles"
   },
-  "505": {
+  {
     "itemId": 505,
     "Name": "AdrenalineOrb"
   },
-  "506": {
+  {
     "itemId": 506,
     "Name": "TerainExtendr"
   },
-  "507": {
+  {
     "itemId": 507,
     "Name": "ProtectvePads"
   },
-  "508": {
+  {
     "itemId": 508,
     "Name": "Throat Spray"
   },
-  "509": {
+  {
     "itemId": 509,
     "Name": "Eject Pack"
   },
-  "510": {
+  {
     "itemId": 510,
     "Name": "Heavy-DtyBts"
   },
-  "511": {
+  {
     "itemId": 511,
     "Name": "BlundrPolicy"
   },
-  "512": {
+  {
     "itemId": 512,
     "Name": "Room Service"
   },
-  "513": {
+  {
     "itemId": 513,
     "Name": "UtltyUmbrlla"
   },
-  "514": {
+  {
     "itemId": 514,
     "Name": "Cheri Berry"
   },
-  "515": {
+  {
     "itemId": 515,
     "Name": "Chesto Berry"
   },
-  "516": {
+  {
     "itemId": 516,
     "Name": "Pecha Berry"
   },
-  "517": {
+  {
     "itemId": 517,
     "Name": "Rawst Berry"
   },
-  "518": {
+  {
     "itemId": 518,
     "Name": "Aspear Berry"
   },
-  "519": {
+  {
     "itemId": 519,
     "Name": "Leppa Berry"
   },
-  "520": {
+  {
     "itemId": 520,
     "Name": "Oran Berry"
   },
-  "521": {
+  {
     "itemId": 521,
     "Name": "Persim Berry"
   },
-  "522": {
+  {
     "itemId": 522,
     "Name": "Lum Berry"
   },
-  "523": {
+  {
     "itemId": 523,
     "Name": "Sitrus Berry"
   },
-  "524": {
+  {
     "itemId": 524,
     "Name": "Figy Berry"
   },
-  "525": {
+  {
     "itemId": 525,
     "Name": "Wiki Berry"
   },
-  "526": {
+  {
     "itemId": 526,
     "Name": "Mago Berry"
   },
-  "527": {
+  {
     "itemId": 527,
     "Name": "Aguav Berry"
   },
-  "528": {
+  {
     "itemId": 528,
     "Name": "Iapapa Berry"
   },
-  "529": {
+  {
     "itemId": 529,
     "Name": "Razz Berry"
   },
-  "530": {
+  {
     "itemId": 530,
     "Name": "Bluk Berry"
   },
-  "531": {
+  {
     "itemId": 531,
     "Name": "Nanab Berry"
   },
-  "532": {
+  {
     "itemId": 532,
     "Name": "Wepear Berry"
   },
-  "533": {
+  {
     "itemId": 533,
     "Name": "Pinap Berry"
   },
-  "534": {
+  {
     "itemId": 534,
     "Name": "Pomeg Berry"
   },
-  "535": {
+  {
     "itemId": 535,
     "Name": "Kelpsy Berry"
   },
-  "536": {
+  {
     "itemId": 536,
     "Name": "Qualot Berry"
   },
-  "537": {
+  {
     "itemId": 537,
     "Name": "Hondew Berry"
   },
-  "538": {
+  {
     "itemId": 538,
     "Name": "Grepa Berry"
   },
-  "539": {
+  {
     "itemId": 539,
     "Name": "Tamato Berry"
   },
-  "540": {
+  {
     "itemId": 540,
     "Name": "Cornn Berry"
   },
-  "541": {
+  {
     "itemId": 541,
     "Name": "Magost Berry"
   },
-  "542": {
+  {
     "itemId": 542,
     "Name": "Rabuta Berry"
   },
-  "543": {
+  {
     "itemId": 543,
     "Name": "Nomel Berry"
   },
-  "544": {
+  {
     "itemId": 544,
     "Name": "Spelon Berry"
   },
-  "545": {
+  {
     "itemId": 545,
     "Name": "Pamtre Berry"
   },
-  "546": {
+  {
     "itemId": 546,
     "Name": "Watmel Berry"
   },
-  "547": {
+  {
     "itemId": 547,
     "Name": "Durin Berry"
   },
-  "548": {
+  {
     "itemId": 548,
     "Name": "Belue Berry"
   },
-  "549": {
+  {
     "itemId": 549,
     "Name": "Chilan Berry"
   },
-  "550": {
+  {
     "itemId": 550,
     "Name": "Occa Berry"
   },
-  "551": {
+  {
     "itemId": 551,
     "Name": "Passho Berry"
   },
-  "552": {
+  {
     "itemId": 552,
     "Name": "Wacan Berry"
   },
-  "553": {
+  {
     "itemId": 553,
     "Name": "Rindo Berry"
   },
-  "554": {
+  {
     "itemId": 554,
     "Name": "Yache Berry"
   },
-  "555": {
+  {
     "itemId": 555,
     "Name": "Chople Berry"
   },
-  "556": {
+  {
     "itemId": 556,
     "Name": "Kebia Berry"
   },
-  "557": {
+  {
     "itemId": 557,
     "Name": "Shuca Berry"
   },
-  "558": {
+  {
     "itemId": 558,
     "Name": "Coba Berry"
   },
-  "559": {
+  {
     "itemId": 559,
     "Name": "Payapa Berry"
   },
-  "560": {
+  {
     "itemId": 560,
     "Name": "Tanga Berry"
   },
-  "561": {
+  {
     "itemId": 561,
     "Name": "Charti Berry"
   },
-  "562": {
+  {
     "itemId": 562,
     "Name": "Kasib Berry"
   },
-  "563": {
+  {
     "itemId": 563,
     "Name": "Haban Berry"
   },
-  "564": {
+  {
     "itemId": 564,
     "Name": "Colbur Berry"
   },
-  "565": {
+  {
     "itemId": 565,
     "Name": "Babiri Berry"
   },
-  "566": {
+  {
     "itemId": 566,
     "Name": "Roseli Berry"
   },
-  "567": {
+  {
     "itemId": 567,
     "Name": "Liechi Berry"
   },
-  "568": {
+  {
     "itemId": 568,
     "Name": "Ganlon Berry"
   },
-  "569": {
+  {
     "itemId": 569,
     "Name": "Salac Berry"
   },
-  "570": {
+  {
     "itemId": 570,
     "Name": "Petaya Berry"
   },
-  "571": {
+  {
     "itemId": 571,
     "Name": "Apicot Berry"
   },
-  "572": {
+  {
     "itemId": 572,
     "Name": "Lansat Berry"
   },
-  "573": {
+  {
     "itemId": 573,
     "Name": "Starf Berry"
   },
-  "574": {
+  {
     "itemId": 574,
     "Name": "Enigma Berry"
   },
-  "575": {
+  {
     "itemId": 575,
     "Name": "Micle Berry"
   },
-  "576": {
+  {
     "itemId": 576,
     "Name": "Custap Berry"
   },
-  "577": {
+  {
     "itemId": 577,
     "Name": "Jaboca Berry"
   },
-  "578": {
+  {
     "itemId": 578,
     "Name": "Rowap Berry"
   },
-  "579": {
+  {
     "itemId": 579,
     "Name": "Kee Berry"
   },
-  "580": {
+  {
     "itemId": 580,
     "Name": "Maranga Berry"
   },
-  "581": {
+  {
     "itemId": 581,
     "Name": "Enigma Berry"
   },
-  "582": {
+  {
     "itemId": 582,
     "Name": "TM01"
   },
-  "583": {
+  {
     "itemId": 583,
     "Name": "TM02"
   },
-  "584": {
+  {
     "itemId": 584,
     "Name": "TM03"
   },
-  "585": {
+  {
     "itemId": 585,
     "Name": "TM04"
   },
-  "586": {
+  {
     "itemId": 586,
     "Name": "TM05"
   },
-  "587": {
+  {
     "itemId": 587,
     "Name": "TM06"
   },
-  "588": {
+  {
     "itemId": 588,
     "Name": "TM07"
   },
-  "589": {
+  {
     "itemId": 589,
     "Name": "TM08"
   },
-  "590": {
+  {
     "itemId": 590,
     "Name": "TM09"
   },
-  "591": {
+  {
     "itemId": 591,
     "Name": "TM10"
   },
-  "592": {
+  {
     "itemId": 592,
     "Name": "TM11"
   },
-  "593": {
+  {
     "itemId": 593,
     "Name": "TM12"
   },
-  "594": {
+  {
     "itemId": 594,
     "Name": "TM13"
   },
-  "595": {
+  {
     "itemId": 595,
     "Name": "TM14"
   },
-  "596": {
+  {
     "itemId": 596,
     "Name": "TM15"
   },
-  "597": {
+  {
     "itemId": 597,
     "Name": "TM16"
   },
-  "598": {
+  {
     "itemId": 598,
     "Name": "TM17"
   },
-  "599": {
+  {
     "itemId": 599,
     "Name": "TM18"
   },
-  "600": {
+  {
     "itemId": 600,
     "Name": "TM19"
   },
-  "601": {
+  {
     "itemId": 601,
     "Name": "TM20"
   },
-  "602": {
+  {
     "itemId": 602,
     "Name": "TM21"
   },
-  "603": {
+  {
     "itemId": 603,
     "Name": "TM22"
   },
-  "604": {
+  {
     "itemId": 604,
     "Name": "TM23"
   },
-  "605": {
+  {
     "itemId": 605,
     "Name": "TM24"
   },
-  "606": {
+  {
     "itemId": 606,
     "Name": "TM25"
   },
-  "607": {
+  {
     "itemId": 607,
     "Name": "TM26"
   },
-  "608": {
+  {
     "itemId": 608,
     "Name": "TM27"
   },
-  "609": {
+  {
     "itemId": 609,
     "Name": "TM28"
   },
-  "610": {
+  {
     "itemId": 610,
     "Name": "TM29"
   },
-  "611": {
+  {
     "itemId": 611,
     "Name": "TM30"
   },
-  "612": {
+  {
     "itemId": 612,
     "Name": "TM31"
   },
-  "613": {
+  {
     "itemId": 613,
     "Name": "TM32"
   },
-  "614": {
+  {
     "itemId": 614,
     "Name": "TM33"
   },
-  "615": {
+  {
     "itemId": 615,
     "Name": "TM34"
   },
-  "616": {
+  {
     "itemId": 616,
     "Name": "TM35"
   },
-  "617": {
+  {
     "itemId": 617,
     "Name": "TM36"
   },
-  "618": {
+  {
     "itemId": 618,
     "Name": "TM37"
   },
-  "619": {
+  {
     "itemId": 619,
     "Name": "TM38"
   },
-  "620": {
+  {
     "itemId": 620,
     "Name": "TM39"
   },
-  "621": {
+  {
     "itemId": 621,
     "Name": "TM40"
   },
-  "622": {
+  {
     "itemId": 622,
     "Name": "TM41"
   },
-  "623": {
+  {
     "itemId": 623,
     "Name": "TM42"
   },
-  "624": {
+  {
     "itemId": 624,
     "Name": "TM43"
   },
-  "625": {
+  {
     "itemId": 625,
     "Name": "TM44"
   },
-  "626": {
+  {
     "itemId": 626,
     "Name": "TM45"
   },
-  "627": {
+  {
     "itemId": 627,
     "Name": "TM46"
   },
-  "628": {
+  {
     "itemId": 628,
     "Name": "TM47"
   },
-  "629": {
+  {
     "itemId": 629,
     "Name": "TM48"
   },
-  "630": {
+  {
     "itemId": 630,
     "Name": "TM49"
   },
-  "631": {
+  {
     "itemId": 631,
     "Name": "TM50"
   },
-  "632": {
+  {
     "itemId": 632,
     "Name": "TM51"
   },
-  "633": {
+  {
     "itemId": 633,
     "Name": "TM52"
   },
-  "634": {
+  {
     "itemId": 634,
     "Name": "TM53"
   },
-  "635": {
+  {
     "itemId": 635,
     "Name": "TM54"
   },
-  "636": {
+  {
     "itemId": 636,
     "Name": "TM55"
   },
-  "637": {
+  {
     "itemId": 637,
     "Name": "TM56"
   },
-  "638": {
+  {
     "itemId": 638,
     "Name": "TM57"
   },
-  "639": {
+  {
     "itemId": 639,
     "Name": "TM58"
   },
-  "640": {
+  {
     "itemId": 640,
     "Name": "TM59"
   },
-  "641": {
+  {
     "itemId": 641,
     "Name": "TM60"
   },
-  "642": {
+  {
     "itemId": 642,
     "Name": "TM61"
   },
-  "643": {
+  {
     "itemId": 643,
     "Name": "TM62"
   },
-  "644": {
+  {
     "itemId": 644,
     "Name": "TM63"
   },
-  "645": {
+  {
     "itemId": 645,
     "Name": "TM64"
   },
-  "646": {
+  {
     "itemId": 646,
     "Name": "TM65"
   },
-  "647": {
+  {
     "itemId": 647,
     "Name": "TM66"
   },
-  "648": {
+  {
     "itemId": 648,
     "Name": "TM67"
   },
-  "649": {
+  {
     "itemId": 649,
     "Name": "TM68"
   },
-  "650": {
+  {
     "itemId": 650,
     "Name": "TM69"
   },
-  "651": {
+  {
     "itemId": 651,
     "Name": "TM70"
   },
-  "652": {
+  {
     "itemId": 652,
     "Name": "TM71"
   },
-  "653": {
+  {
     "itemId": 653,
     "Name": "TM72"
   },
-  "654": {
+  {
     "itemId": 654,
     "Name": "TM73"
   },
-  "655": {
+  {
     "itemId": 655,
     "Name": "TM74"
   },
-  "656": {
+  {
     "itemId": 656,
     "Name": "TM75"
   },
-  "657": {
+  {
     "itemId": 657,
     "Name": "TM76"
   },
-  "658": {
+  {
     "itemId": 658,
     "Name": "TM77"
   },
-  "659": {
+  {
     "itemId": 659,
     "Name": "TM78"
   },
-  "660": {
+  {
     "itemId": 660,
     "Name": "TM79"
   },
-  "661": {
+  {
     "itemId": 661,
     "Name": "TM80"
   },
-  "662": {
+  {
     "itemId": 662,
     "Name": "TM81"
   },
-  "663": {
+  {
     "itemId": 663,
     "Name": "TM82"
   },
-  "664": {
+  {
     "itemId": 664,
     "Name": "TM83"
   },
-  "665": {
+  {
     "itemId": 665,
     "Name": "TM84"
   },
-  "666": {
+  {
     "itemId": 666,
     "Name": "TM85"
   },
-  "667": {
+  {
     "itemId": 667,
     "Name": "TM86"
   },
-  "668": {
+  {
     "itemId": 668,
     "Name": "TM87"
   },
-  "669": {
+  {
     "itemId": 669,
     "Name": "TM88"
   },
-  "670": {
+  {
     "itemId": 670,
     "Name": "TM89"
   },
-  "671": {
+  {
     "itemId": 671,
     "Name": "TM90"
   },
-  "672": {
+  {
     "itemId": 672,
     "Name": "TM91"
   },
-  "673": {
+  {
     "itemId": 673,
     "Name": "TM92"
   },
-  "674": {
+  {
     "itemId": 674,
     "Name": "TM93"
   },
-  "675": {
+  {
     "itemId": 675,
     "Name": "TM94"
   },
-  "676": {
+  {
     "itemId": 676,
     "Name": "TM95"
   },
-  "677": {
+  {
     "itemId": 677,
     "Name": "TM96"
   },
-  "678": {
+  {
     "itemId": 678,
     "Name": "TM97"
   },
-  "679": {
+  {
     "itemId": 679,
     "Name": "TM98"
   },
-  "680": {
+  {
     "itemId": 680,
     "Name": "TM99"
   },
-  "681": {
+  {
     "itemId": 681,
     "Name": "TM100"
   },
-  "682": {
+  {
     "itemId": 682,
     "Name": "TM101"
   },
-  "683": {
+  {
     "itemId": 683,
     "Name": "TM102"
   },
-  "684": {
+  {
     "itemId": 684,
     "Name": "TM103"
   },
-  "685": {
+  {
     "itemId": 685,
     "Name": "TM104"
   },
-  "686": {
+  {
     "itemId": 686,
     "Name": "TM105"
   },
-  "687": {
+  {
     "itemId": 687,
     "Name": "TM106"
   },
-  "688": {
+  {
     "itemId": 688,
     "Name": "TM107"
   },
-  "689": {
+  {
     "itemId": 689,
     "Name": "TM108"
   },
-  "690": {
+  {
     "itemId": 690,
     "Name": "TM109"
   },
-  "691": {
+  {
     "itemId": 691,
     "Name": "TM110"
   },
-  "692": {
+  {
     "itemId": 692,
     "Name": "TM111"
   },
-  "693": {
+  {
     "itemId": 693,
     "Name": "TM112"
   },
-  "694": {
+  {
     "itemId": 694,
     "Name": "TM113"
   },
-  "695": {
+  {
     "itemId": 695,
     "Name": "TM114"
   },
-  "696": {
+  {
     "itemId": 696,
     "Name": "TM115"
   },
-  "697": {
+  {
     "itemId": 697,
     "Name": "TM116"
   },
-  "698": {
+  {
     "itemId": 698,
     "Name": "TM117"
   },
-  "699": {
+  {
     "itemId": 699,
     "Name": "TM118"
   },
-  "700": {
+  {
     "itemId": 700,
     "Name": "TM119"
   },
-  "701": {
+  {
     "itemId": 701,
     "Name": "TM120"
   },
-  "702": {
+  {
     "itemId": 702,
     "Name": "TM121"
   },
-  "703": {
+  {
     "itemId": 703,
     "Name": "TM122"
   },
-  "704": {
+  {
     "itemId": 704,
     "Name": "TM123"
   },
-  "705": {
+  {
     "itemId": 705,
     "Name": "TM124"
   },
-  "706": {
+  {
     "itemId": 706,
     "Name": "TM125"
   },
-  "707": {
+  {
     "itemId": 707,
     "Name": "TM126"
   },
-  "708": {
+  {
     "itemId": 708,
     "Name": "TM127"
   },
-  "709": {
+  {
     "itemId": 709,
     "Name": "TM128"
   },
-  "710": {
+  {
     "itemId": 710,
     "Name": "TM129"
   },
-  "711": {
+  {
     "itemId": 711,
     "Name": "TM130"
   },
-  "712": {
+  {
     "itemId": 712,
     "Name": "TM131"
   },
-  "713": {
+  {
     "itemId": 713,
     "Name": "TM132"
   },
-  "714": {
+  {
     "itemId": 714,
     "Name": "TM133"
   },
-  "715": {
+  {
     "itemId": 715,
     "Name": "TM134"
   },
-  "716": {
+  {
     "itemId": 716,
     "Name": "TM135"
   },
-  "717": {
+  {
     "itemId": 717,
     "Name": "TM136"
   },
-  "718": {
+  {
     "itemId": 718,
     "Name": "TM137"
   },
-  "719": {
+  {
     "itemId": 719,
     "Name": "TM138"
   },
-  "720": {
+  {
     "itemId": 720,
     "Name": "TM139"
   },
-  "721": {
+  {
     "itemId": 721,
     "Name": "TM140"
   },
-  "722": {
+  {
     "itemId": 722,
     "Name": "TM141"
   },
-  "723": {
+  {
     "itemId": 723,
     "Name": "TM142"
   },
-  "724": {
+  {
     "itemId": 724,
     "Name": "TM143"
   },
-  "725": {
+  {
     "itemId": 725,
     "Name": "TM144"
   },
-  "726": {
+  {
     "itemId": 726,
     "Name": "TM145"
   },
-  "727": {
+  {
     "itemId": 727,
     "Name": "TM146"
   },
-  "728": {
+  {
     "itemId": 728,
     "Name": "TM147"
   },
-  "729": {
+  {
     "itemId": 729,
     "Name": "TM148"
   },
-  "730": {
+  {
     "itemId": 730,
     "Name": "TM149"
   },
-  "731": {
+  {
     "itemId": 731,
     "Name": "TM150"
   },
-  "732": {
+  {
     "itemId": 732,
     "Name": "TM151"
   },
-  "733": {
+  {
     "itemId": 733,
     "Name": "TM152"
   },
-  "734": {
+  {
     "itemId": 734,
     "Name": "TM153"
   },
-  "735": {
+  {
     "itemId": 735,
     "Name": "TM154"
   },
-  "736": {
+  {
     "itemId": 736,
     "Name": "TM155"
   },
-  "737": {
+  {
     "itemId": 737,
     "Name": "TM156"
   },
-  "738": {
+  {
     "itemId": 738,
     "Name": "TM157"
   },
-  "739": {
+  {
     "itemId": 739,
     "Name": "TM158"
   },
-  "740": {
+  {
     "itemId": 740,
     "Name": "TM159"
   },
-  "741": {
+  {
     "itemId": 741,
     "Name": "TM160"
   },
-  "742": {
+  {
     "itemId": 742,
     "Name": "TM161"
   },
-  "743": {
+  {
     "itemId": 743,
     "Name": "TM162"
   },
-  "744": {
+  {
     "itemId": 744,
     "Name": "TM163"
   },
-  "745": {
+  {
     "itemId": 745,
     "Name": "TM164"
   },
-  "746": {
+  {
     "itemId": 746,
     "Name": "TM165"
   },
-  "747": {
+  {
     "itemId": 747,
     "Name": "TM166"
   },
-  "748": {
+  {
     "itemId": 748,
     "Name": "TM167"
   },
-  "749": {
+  {
     "itemId": 749,
     "Name": "TM168"
   },
-  "750": {
+  {
     "itemId": 750,
     "Name": "TM169"
   },
-  "751": {
+  {
     "itemId": 751,
     "Name": "TM170"
   },
-  "752": {
+  {
     "itemId": 752,
     "Name": "TM171"
   },
-  "753": {
+  {
     "itemId": 753,
     "Name": "TM172"
   },
-  "754": {
+  {
     "itemId": 754,
     "Name": "TM173"
   },
-  "755": {
+  {
     "itemId": 755,
     "Name": "TM174"
   },
-  "756": {
+  {
     "itemId": 756,
     "Name": "TM175"
   },
-  "757": {
+  {
     "itemId": 757,
     "Name": "TM176"
   },
-  "758": {
+  {
     "itemId": 758,
     "Name": "TM177"
   },
-  "759": {
+  {
     "itemId": 759,
     "Name": "TM178"
   },
-  "760": {
+  {
     "itemId": 760,
     "Name": "TM179"
   },
-  "761": {
+  {
     "itemId": 761,
     "Name": "TM180"
   },
-  "762": {
+  {
     "itemId": 762,
     "Name": "TM181"
   },
-  "763": {
+  {
     "itemId": 763,
     "Name": "TM182"
   },
-  "764": {
+  {
     "itemId": 764,
     "Name": "TM183"
   },
-  "765": {
+  {
     "itemId": 765,
     "Name": "TM184"
   },
-  "766": {
+  {
     "itemId": 766,
     "Name": "TM185"
   },
-  "767": {
+  {
     "itemId": 767,
     "Name": "TM186"
   },
-  "768": {
+  {
     "itemId": 768,
     "Name": "TM187"
   },
-  "769": {
+  {
     "itemId": 769,
     "Name": "TM188"
   },
-  "770": {
+  {
     "itemId": 770,
     "Name": "TM189"
   },
-  "771": {
+  {
     "itemId": 771,
     "Name": "TM190"
   },
-  "772": {
+  {
     "itemId": 772,
     "Name": "TM191"
   },
-  "773": {
+  {
     "itemId": 773,
     "Name": "TM192"
   },
-  "774": {
+  {
     "itemId": 774,
     "Name": "TM193"
   },
-  "775": {
+  {
     "itemId": 775,
     "Name": "TM194"
   },
-  "776": {
+  {
     "itemId": 776,
     "Name": "TM195"
   },
-  "777": {
+  {
     "itemId": 777,
     "Name": "TM196"
   },
-  "778": {
+  {
     "itemId": 778,
     "Name": "TM197"
   },
-  "779": {
+  {
     "itemId": 779,
     "Name": "TM198"
   },
-  "780": {
+  {
     "itemId": 780,
     "Name": "TM199"
   },
-  "781": {
+  {
     "itemId": 781,
     "Name": "TM200"
   },
-  "782": {
+  {
     "itemId": 782,
     "Name": "TM201"
   },
-  "783": {
+  {
     "itemId": 783,
     "Name": "TM202"
   },
-  "784": {
+  {
     "itemId": 784,
     "Name": "TM203"
   },
-  "785": {
+  {
     "itemId": 785,
     "Name": "TM204"
   },
-  "786": {
+  {
     "itemId": 786,
     "Name": "TM205"
   },
-  "787": {
+  {
     "itemId": 787,
     "Name": "TM206"
   },
-  "788": {
+  {
     "itemId": 788,
     "Name": "TM207"
   },
-  "789": {
+  {
     "itemId": 789,
     "Name": "TM208"
   },
-  "790": {
+  {
     "itemId": 790,
     "Name": "TM209"
   },
-  "791": {
+  {
     "itemId": 791,
     "Name": "TM210"
   },
-  "792": {
+  {
     "itemId": 792,
     "Name": "TM211"
   },
-  "793": {
+  {
     "itemId": 793,
     "Name": "TM212"
   },
-  "794": {
+  {
     "itemId": 794,
     "Name": "TM213"
   },
-  "795": {
+  {
     "itemId": 795,
     "Name": "TM214"
   },
-  "796": {
+  {
     "itemId": 796,
     "Name": "TM215"
   },
-  "797": {
+  {
     "itemId": 797,
     "Name": "TM216"
   },
-  "798": {
+  {
     "itemId": 798,
     "Name": "TM217"
   },
-  "799": {
+  {
     "itemId": 799,
     "Name": "TM218"
   },
-  "800": {
+  {
     "itemId": 800,
     "Name": "TM219"
   },
-  "801": {
+  {
     "itemId": 801,
     "Name": "TM220"
   },
-  "802": {
+  {
     "itemId": 802,
     "Name": "TM221"
   },
-  "803": {
+  {
     "itemId": 803,
     "Name": "TM222"
   },
-  "804": {
+  {
     "itemId": 804,
     "Name": "TM223"
   },
-  "805": {
+  {
     "itemId": 805,
     "Name": "TM224"
   },
-  "806": {
+  {
     "itemId": 806,
     "Name": "TM225"
   },
-  "807": {
+  {
     "itemId": 807,
     "Name": "TM226"
   },
-  "808": {
+  {
     "itemId": 808,
     "Name": "TM227"
   },
-  "809": {
+  {
     "itemId": 809,
     "Name": "TM228"
   },
-  "810": {
+  {
     "itemId": 810,
     "Name": "TM229"
   },
-  "811": {
+  {
     "itemId": 811,
     "Name": "TM230"
   },
-  "812": {
+  {
     "itemId": 812,
     "Name": "TM231"
   },
-  "813": {
+  {
     "itemId": 813,
     "Name": "TM232"
   },
-  "814": {
+  {
     "itemId": 814,
     "Name": "TM233"
   },
-  "815": {
+  {
     "itemId": 815,
     "Name": "TM234"
   },
-  "816": {
+  {
     "itemId": 816,
     "Name": "TM235"
   },
-  "817": {
+  {
     "itemId": 817,
     "Name": "TM236"
   },
-  "818": {
+  {
     "itemId": 818,
     "Name": "TM237"
   },
-  "819": {
+  {
     "itemId": 819,
     "Name": "TM238"
   },
-  "820": {
+  {
     "itemId": 820,
     "Name": "TM239"
   },
-  "821": {
+  {
     "itemId": 821,
     "Name": "TM240"
   },
-  "822": {
+  {
     "itemId": 822,
     "Name": "TM241"
   },
-  "823": {
+  {
     "itemId": 823,
     "Name": "TM242"
   },
-  "824": {
+  {
     "itemId": 824,
     "Name": "HM01"
   },
-  "825": {
+  {
     "itemId": 825,
     "Name": "HM02"
   },
-  "826": {
+  {
     "itemId": 826,
     "Name": "HM03"
   },
-  "827": {
+  {
     "itemId": 827,
     "Name": "HM04"
   },
-  "828": {
+  {
     "itemId": 828,
     "Name": "HM05"
   },
-  "829": {
+  {
     "itemId": 829,
     "Name": "HM06"
   },
-  "830": {
+  {
     "itemId": 830,
     "Name": "HM07"
   },
-  "831": {
+  {
     "itemId": 831,
     "Name": "HM08"
   },
-  "832": {
+  {
     "itemId": 832,
     "Name": "Oval Charm"
   },
-  "833": {
+  {
     "itemId": 833,
     "Name": "Shiny Charm"
   },
-  "834": {
+  {
     "itemId": 834,
     "Name": "CatchngCharm"
   },
-  "835": {
+  {
     "itemId": 835,
     "Name": "Exp. Charm"
   },
-  "836": {
+  {
     "itemId": 836,
     "Name": "RotomCatalog"
   },
-  "837": {
+  {
     "itemId": 837,
     "Name": "Gracidea"
   },
-  "838": {
+  {
     "itemId": 838,
     "Name": "Reveal Glass"
   },
-  "839": {
+  {
     "itemId": 839,
     "Name": "DNA Splicers"
   },
-  "840": {
+  {
     "itemId": 840,
     "Name": "Zygarde Cube"
   },
-  "841": {
+  {
     "itemId": 841,
     "Name": "Prison Bottle"
   },
-  "842": {
+  {
     "itemId": 842,
     "Name": "N-Solarizer"
   },
-  "843": {
+  {
     "itemId": 843,
     "Name": "N-Lunarizer"
   },
-  "844": {
+  {
     "itemId": 844,
     "Name": "ReinsOfUnity"
   },
-  "845": {
+  {
     "itemId": 845,
     "Name": "Mega Ring"
   },
-  "846": {
+  {
     "itemId": 846,
     "Name": "Z-Power Ring"
   },
-  "847": {
+  {
     "itemId": 847,
     "Name": "Dynamax Band"
   },
-  "848": {
+  {
     "itemId": 848,
     "Name": "Bicycle"
   },
-  "849": {
+  {
     "itemId": 849,
     "Name": "Mach Bike"
   },
-  "850": {
+  {
     "itemId": 850,
     "Name": "Acro Bike"
   },
-  "851": {
+  {
     "itemId": 851,
     "Name": "Old Rod"
   },
-  "852": {
+  {
     "itemId": 852,
     "Name": "Good Rod"
   },
-  "853": {
+  {
     "itemId": 853,
     "Name": "Super Rod"
   },
-  "854": {
+  {
     "itemId": 854,
     "Name": "Dowsing MCHN"
   },
-  "855": {
+  {
     "itemId": 855,
     "Name": "Town Map"
   },
-  "856": {
+  {
     "itemId": 856,
     "Name": "Vs. Seeker"
   },
-  "857": {
+  {
     "itemId": 857,
     "Name": "TM Case"
   },
-  "858": {
+  {
     "itemId": 858,
     "Name": "Berry Pouch"
   },
-  "859": {
+  {
     "itemId": 859,
     "Name": "PKMN Box Link"
   },
-  "860": {
+  {
     "itemId": 860,
     "Name": "Coin Case"
   },
-  "861": {
+  {
     "itemId": 861,
     "Name": "Powder Jar"
   },
-  "862": {
+  {
     "itemId": 862,
     "Name": "Wailmer Pail"
   },
-  "863": {
+  {
     "itemId": 863,
     "Name": "Poké Radar"
   },
-  "864": {
+  {
     "itemId": 864,
     "Name": "Pokéblock Case"
   },
-  "865": {
+  {
     "itemId": 865,
     "Name": "Soot Sack"
   },
-  "866": {
+  {
     "itemId": 866,
     "Name": "Poké Flute"
   },
-  "867": {
+  {
     "itemId": 867,
     "Name": "Fame Checker"
   },
-  "868": {
+  {
     "itemId": 868,
     "Name": "Teachy TV"
   },
-  "869": {
+  {
     "itemId": 869,
     "Name": "S.S. Ticket"
   },
-  "870": {
+  {
     "itemId": 870,
     "Name": "Eon Ticket"
   },
-  "871": {
+  {
     "itemId": 871,
     "Name": "Mystic Ticket"
   },
-  "872": {
+  {
     "itemId": 872,
     "Name": "Aurora Ticket"
   },
-  "873": {
+  {
     "itemId": 873,
     "Name": "Old Sea Map"
   },
-  "874": {
+  {
     "itemId": 874,
     "Name": "Letter"
   },
-  "875": {
+  {
     "itemId": 875,
     "Name": "Devon Parts"
   },
-  "876": {
+  {
     "itemId": 876,
     "Name": "Go-Goggles"
   },
-  "877": {
+  {
     "itemId": 877,
     "Name": "Devon Scope"
   },
-  "878": {
+  {
     "itemId": 878,
     "Name": "Basement Key"
   },
-  "879": {
+  {
     "itemId": 879,
     "Name": "Scanner"
   },
-  "880": {
+  {
     "itemId": 880,
     "Name": "Storage Key"
   },
-  "881": {
+  {
     "itemId": 881,
     "Name": "Key to Room 1"
   },
-  "882": {
+  {
     "itemId": 882,
     "Name": "Key to Room 2"
   },
-  "883": {
+  {
     "itemId": 883,
     "Name": "Key to Room 4"
   },
-  "884": {
+  {
     "itemId": 884,
     "Name": "Key to Room 6"
   },
-  "885": {
+  {
     "itemId": 885,
     "Name": "Meteorite"
   },
-  "886": {
+  {
     "itemId": 886,
     "Name": "Magma Emblem"
   },
-  "887": {
+  {
     "itemId": 887,
     "Name": "Contest Pass"
   },
-  "888": {
+  {
     "itemId": 888,
     "Name": "Parcel"
   },
-  "889": {
+  {
     "itemId": 889,
     "Name": "Secret Key"
   },
-  "890": {
+  {
     "itemId": 890,
     "Name": "Bike Voucher"
   },
-  "891": {
+  {
     "itemId": 891,
     "Name": "Gold Teeth"
   },
-  "892": {
+  {
     "itemId": 892,
     "Name": "Card Key"
   },
-  "893": {
+  {
     "itemId": 893,
     "Name": "Lift Key"
   },
-  "894": {
+  {
     "itemId": 894,
     "Name": "Silph Scope"
   },
-  "895": {
+  {
     "itemId": 895,
     "Name": "Tri-Pass"
   },
-  "896": {
+  {
     "itemId": 896,
     "Name": "Rainbow Pass"
   },
-  "897": {
+  {
     "itemId": 897,
     "Name": "Tea"
   },
-  "898": {
+  {
     "itemId": 898,
     "Name": "Ruby"
   },
-  "899": {
+  {
     "itemId": 899,
     "Name": "Sapphire"
   },
-  "900": {
+  {
     "itemId": 900,
     "Name": "AbilityShield"
   },
-  "901": {
+  {
     "itemId": 901,
     "Name": "Clear Amulet"
   },
-  "902": {
+  {
     "itemId": 902,
     "Name": "PunchingGlove"
   },
-  "903": {
+  {
     "itemId": 903,
     "Name": "Covert Cloak"
   },
-  "904": {
+  {
     "itemId": 904,
     "Name": "Loaded Dice"
   },
-  "905": {
+  {
     "itemId": 905,
     "Name": "AuspciousArmr"
   },
-  "906": {
+  {
     "itemId": 906,
     "Name": "BoosterEnergy"
   },
-  "907": {
+  {
     "itemId": 907,
     "Name": "BigBmbooShoot"
   },
-  "908": {
+  {
     "itemId": 908,
     "Name": "GimighoulCoin"
   },
-  "909": {
+  {
     "itemId": 909,
     "Name": "Leader'sCrest"
   },
-  "910": {
+  {
     "itemId": 910,
     "Name": "MaliciousArmr"
   },
-  "911": {
+  {
     "itemId": 911,
     "Name": "Mirror Herb"
   },
-  "912": {
+  {
     "itemId": 912,
     "Name": "ScrllOfDrknss"
   },
-  "913": {
+  {
     "itemId": 913,
     "Name": "ScrollOfWatrs"
   },
-  "914": {
+  {
     "itemId": 914,
     "Name": "Tera Orb"
   },
-  "915": {
+  {
     "itemId": 915,
     "Name": "TinyBmbooShot"
   },
-  "916": {
+  {
     "itemId": 916,
     "Name": "Bug TeraShard"
   },
-  "917": {
+  {
     "itemId": 917,
     "Name": "DarkTeraShard"
   },
-  "918": {
+  {
     "itemId": 918,
     "Name": "DragnTeraShrd"
   },
-  "919": {
+  {
     "itemId": 919,
     "Name": "EltrcTeraShrd"
   },
-  "920": {
+  {
     "itemId": 920,
     "Name": "FairyTeraShrd"
   },
-  "921": {
+  {
     "itemId": 921,
     "Name": "FghtngTerShrd"
   },
-  "922": {
+  {
     "itemId": 922,
     "Name": "FireTeraShard"
   },
-  "923": {
+  {
     "itemId": 923,
     "Name": "FlyngTeraShrd"
   },
-  "924": {
+  {
     "itemId": 924,
     "Name": "GhostTeraShrd"
   },
-  "925": {
+  {
     "itemId": 925,
     "Name": "GrassTeraShrd"
   },
-  "926": {
+  {
     "itemId": 926,
     "Name": "GrondTeraShrd"
   },
-  "927": {
+  {
     "itemId": 927,
     "Name": "Ice TeraShard"
   },
-  "928": {
+  {
     "itemId": 928,
     "Name": "NormlTeraShrd"
   },
-  "929": {
+  {
     "itemId": 929,
     "Name": "PoisnTeraShrd"
   },
-  "930": {
+  {
     "itemId": 930,
     "Name": "PschcTeraShrd"
   },
-  "931": {
+  {
     "itemId": 931,
     "Name": "RockTeraShard"
   },
-  "932": {
+  {
     "itemId": 932,
     "Name": "SteelTeraShrd"
   },
-  "933": {
+  {
     "itemId": 933,
     "Name": "WaterTeraShrd"
   },
-  "934": {
+  {
     "itemId": 934,
     "Name": "AdamantCrystl"
   },
-  "935": {
+  {
     "itemId": 935,
     "Name": "Griseous Core"
   },
-  "936": {
+  {
     "itemId": 936,
     "Name": "LustrousGlobe"
   },
-  "937": {
+  {
     "itemId": 937,
     "Name": "BlackAugurite"
   },
-  "938": {
+  {
     "itemId": 938,
     "Name": "Linking Cord"
   },
-  "939": {
+  {
     "itemId": 939,
     "Name": "Peat Block"
   },
-  "940": {
+  {
     "itemId": 940,
     "Name": "Berserk Gene"
   },
-  "941": {
+  {
     "itemId": 941,
     "Name": "Fairy Feather"
   },
-  "942": {
+  {
     "itemId": 942,
     "Name": "Syrupy Apple"
   },
-  "943": {
+  {
     "itemId": 943,
     "Name": "UnrmkblTeacup"
   },
-  "944": {
+  {
     "itemId": 944,
     "Name": "MstrpceTeacup"
   },
-  "945": {
+  {
     "itemId": 945,
     "Name": "CornrstneMask"
   },
-  "946": {
+  {
     "itemId": 946,
     "Name": "WellsprngMask"
   },
-  "947": {
+  {
     "itemId": 947,
     "Name": "HrthflameMask"
   },
-  "948": {
+  {
     "itemId": 948,
     "Name": "Health Mochi"
   },
-  "949": {
+  {
     "itemId": 949,
     "Name": "Muscle Mochi"
   },
-  "950": {
+  {
     "itemId": 950,
     "Name": "Resist Mochi"
   },
-  "951": {
+  {
     "itemId": 951,
     "Name": "Genius Mochi"
   },
-  "952": {
+  {
     "itemId": 952,
     "Name": "Clever Mochi"
   },
-  "953": {
+  {
     "itemId": 953,
     "Name": "Swift Mochi"
   },
-  "954": {
+  {
     "itemId": 954,
     "Name": "FrshStrtMochi"
   },
-  "955": {
+  {
     "itemId": 955,
     "Name": "GlmmringCharm"
   },
-  "956": {
+  {
     "itemId": 956,
     "Name": "PokéVial"
   },
-  "957": {
+  {
     "itemId": 957,
     "Name": "PokéVial"
   },
-  "958": {
+  {
     "itemId": 958,
     "Name": "PokéVial"
   },
-  "959": {
+  {
     "itemId": 959,
     "Name": "InfiniteCandy"
   },
-  "960": {
+  {
     "itemId": 960,
     "Name": "InfiniteRepel"
   },
-  "961": {
+  {
     "itemId": 961,
     "Name": "Metal Alloy"
   },
-  "962": {
+  {
     "itemId": 962,
     "Name": "StllrTeraShrd"
   },
-  "963": {
+  {
     "itemId": 963,
     "Name": "JublifeMuffin"
   },
-  "964": {
+  {
     "itemId": 964,
     "Name": "Remedy"
   },
-  "965": {
+  {
     "itemId": 965,
     "Name": "Fine Remedy"
   },
-  "966": {
+  {
     "itemId": 966,
     "Name": "Superb Remedy"
   },
-  "967": {
+  {
     "itemId": 967,
     "Name": "Aux Evasion"
   },
-  "968": {
+  {
     "itemId": 968,
     "Name": "Aux Guard"
   },
-  "969": {
+  {
     "itemId": 969,
     "Name": "Aux Power"
   },
-  "970": {
+  {
     "itemId": 970,
     "Name": "AuxPowerguard"
   },
-  "971": {
+  {
     "itemId": 971,
     "Name": "ChoiceDumplng"
   },
-  "972": {
+  {
     "itemId": 972,
     "Name": "Swap Snack"
   },
-  "973": {
+  {
     "itemId": 973,
     "Name": "2xSpicedRadsh"
   },
-  "974": {
+  {
     "itemId": 974,
     "Name": "Pokéshi Doll"
   },
-  "975": {
+  {
     "itemId": 975,
     "Name": "Luxrite"
   },
-  "976": {
+  {
     "itemId": 976,
     "Name": "Torterrite"
   },
-  "977": {
+  {
     "itemId": 977,
     "Name": "EmpoleoniteO"
   },
-  "978": {
+  {
     "itemId": 978,
     "Name": "EmpoleoniteD"
   },
-  "979": {
+  {
     "itemId": 979,
     "Name": "Infernapite"
   },
-  "980": {
+  {
     "itemId": 980,
     "Name": "KickingShoes"
   },
-  "981": {
+  {
     "itemId": 981,
     "Name": "Kinglerite"
   },
-  "982": {
+  {
     "itemId": 982,
     "Name": "Butterfrite"
   },
-  "983": {
+  {
     "itemId": 983,
     "Name": "Machampite"
   },
-  "984": {
+  {
     "itemId": 984,
     "Name": "Laprasite"
   },
-  "985": {
+  {
     "itemId": 985,
     "Name": "Snorlaxite"
   },
-  "986": {
+  {
     "itemId": 986,
     "Name": "Garbodorite"
   },
-  "987": {
+  {
     "itemId": 987,
     "Name": "Orbeetlite"
   },
-  "988": {
+  {
     "itemId": 988,
     "Name": "Drednawite"
   },
-  "989": {
+  {
     "itemId": 989,
     "Name": "Coalossite"
   },
-  "990": {
+  {
     "itemId": 990,
     "Name": "Applite"
   },
-  "991": {
+  {
     "itemId": 991,
     "Name": "Sandacondite"
   },
-  "992": {
+  {
     "itemId": 992,
     "Name": "Toxtricitite"
   },
-  "993": {
+  {
     "itemId": 993,
     "Name": "Centiskite"
   },
-  "994": {
+  {
     "itemId": 994,
     "Name": "Grimmite"
   },
-  "995": {
+  {
     "itemId": 995,
     "Name": "Copperajite"
   },
-  "996": {
+  {
     "itemId": 996,
     "Name": "Slakite"
   },
-  "997": {
+  {
     "itemId": 997,
     "Name": "Roseradite"
   },
-  "998": {
+  {
     "itemId": 998,
     "Name": "Strange Ball"
   },
-  "999": {
+  {
     "itemId": 999,
     "Name": "Dusknoirite"
   },
-  "1000": {
+  {
     "itemId": 1000,
     "Name": "Steel Feather"
   }
-}
+]

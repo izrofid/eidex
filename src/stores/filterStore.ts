@@ -31,6 +31,10 @@ interface FilterState {
   // Name filter
   nameValue: string;
 
+  // Filter toggles state
+  filterToggles: [boolean, boolean, boolean]; // [Evolved, Legend, Mega]
+  toggleState: "Include" | "Only";
+
   // Actions
   setChosenStat: (stat: number | undefined) => void;
   setStatType: (type: string | undefined) => void;
@@ -45,6 +49,8 @@ interface FilterState {
   toggleSortDirection: () => void;
   setSortDirection: (direction: boolean) => void;
   setNameValue: (name: string) => void;
+  setFilterToggle: (idx: number, value: boolean) => void;
+  setToggleState: (toggleState: "Include" | "Only") => void;
   resetFilters: () => void;
 }
 
@@ -80,6 +86,8 @@ export const useFilterStore = create<FilterState>((set, get) => ({
   sortStat: undefined,
   descending: false,
   nameValue: "",
+  filterToggles: [false, false, false] as [boolean, boolean, boolean], // [Evolved, Legend, Mega]
+  toggleState: "Include" as "Include" | "Only",
 
   // Actions
   setChosenStat: (stat) =>
@@ -181,13 +189,27 @@ export const useFilterStore = create<FilterState>((set, get) => ({
   setSortDirection: (direction) =>
     set((state) => ({
       descending: direction,
-      filters: { ...state.filters, descending: !state.descending },
+      filters: { ...state.filters, descending: direction },
     })),
 
   setNameValue: (name) =>
     set((state) => ({
       nameValue: name,
       filters: { ...state.filters, name },
+    })),
+
+  setFilterToggle: (idx, value) =>
+    set((state) => {
+      const next: [boolean, boolean, boolean] = [...state.filterToggles] as [boolean, boolean, boolean];
+      next[idx] = value;
+      return {
+        filterToggles: next,
+      };
+    }),
+
+  setToggleState: (toggleState) =>
+    set(() => ({
+      toggleState,
     })),
 
   resetFilters: () =>
@@ -211,6 +233,8 @@ export const useFilterStore = create<FilterState>((set, get) => ({
       typeValue: [undefined, undefined] as [number?, number?],
       abilityValue: null,
       nameValue: "",
+      filterToggles: [false, false, false] as [boolean, boolean, boolean],
+      toggleState: "Include" as "Include" | "Only",
     }),
 
   // Selector function for getting selected type

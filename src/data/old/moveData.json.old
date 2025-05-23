@@ -1,5 +1,5 @@
-{
-  "1": {
+[
+  {
     "moveId": 1,
     "name": "Pound",
     "type": 1,
@@ -11,7 +11,7 @@
       "contact"
     ]
   },
-  "2": {
+  {
     "moveId": 2,
     "name": "Karate Chop",
     "type": 2,
@@ -23,7 +23,7 @@
       "contact"
     ]
   },
-  "3": {
+  {
     "moveId": 3,
     "name": "Double Slap",
     "type": 1,
@@ -35,7 +35,7 @@
       "contact"
     ]
   },
-  "4": {
+  {
     "moveId": 4,
     "name": "Comet Punch",
     "type": 1,
@@ -48,7 +48,7 @@
       "punching"
     ]
   },
-  "5": {
+  {
     "moveId": 5,
     "name": "Mega Punch",
     "type": 1,
@@ -61,7 +61,7 @@
       "punching"
     ]
   },
-  "6": {
+  {
     "moveId": 6,
     "name": "Pay Day",
     "type": 1,
@@ -71,7 +71,7 @@
     "cat": 0,
     "properties": []
   },
-  "7": {
+  {
     "moveId": 7,
     "name": "Fire Punch",
     "type": 11,
@@ -84,7 +84,7 @@
       "punching"
     ]
   },
-  "8": {
+  {
     "moveId": 8,
     "name": "Ice Punch",
     "type": 16,
@@ -97,7 +97,7 @@
       "punching"
     ]
   },
-  "9": {
+  {
     "moveId": 9,
     "name": "Thunder Punch",
     "type": 14,
@@ -110,7 +110,7 @@
       "punching"
     ]
   },
-  "10": {
+  {
     "moveId": 10,
     "name": "Scratch",
     "type": 1,
@@ -122,7 +122,7 @@
       "contact"
     ]
   },
-  "11": {
+  {
     "moveId": 11,
     "name": "Vise Grip",
     "type": 1,
@@ -134,7 +134,7 @@
       "contact"
     ]
   },
-  "12": {
+  {
     "moveId": 12,
     "name": "Guillotine",
     "type": 1,
@@ -146,7 +146,7 @@
       "contact"
     ]
   },
-  "13": {
+  {
     "moveId": 13,
     "name": "Razor Wind",
     "type": 1,
@@ -158,7 +158,7 @@
       "wind"
     ]
   },
-  "14": {
+  {
     "moveId": 14,
     "name": "Swords Dance",
     "type": 1,
@@ -170,7 +170,7 @@
       "dance"
     ]
   },
-  "15": {
+  {
     "moveId": 15,
     "name": "Cut",
     "type": 9,
@@ -183,7 +183,7 @@
       "slicing"
     ]
   },
-  "16": {
+  {
     "moveId": 16,
     "name": "Gust",
     "type": 3,
@@ -195,7 +195,7 @@
       "wind"
     ]
   },
-  "17": {
+  {
     "moveId": 17,
     "name": "Wing Attack",
     "type": 3,
@@ -207,7 +207,7 @@
       "contact"
     ]
   },
-  "18": {
+  {
     "moveId": 18,
     "name": "Whirlwind",
     "type": 1,
@@ -219,7 +219,7 @@
       "wind"
     ]
   },
-  "19": {
+  {
     "moveId": 19,
     "name": "Fly",
     "type": 3,
@@ -231,7 +231,7 @@
       "contact"
     ]
   },
-  "20": {
+  {
     "moveId": 20,
     "name": "Bind",
     "type": 1,
@@ -243,7 +243,7 @@
       "contact"
     ]
   },
-  "21": {
+  {
     "moveId": 21,
     "name": "Slam",
     "type": 1,
@@ -255,7 +255,7 @@
       "contact"
     ]
   },
-  "22": {
+  {
     "moveId": 22,
     "name": "Vine Whip",
     "type": 13,
@@ -267,7 +267,7 @@
       "contact"
     ]
   },
-  "23": {
+  {
     "moveId": 23,
     "name": "Stomp",
     "type": 1,
@@ -280,7 +280,7 @@
       "kicking"
     ]
   },
-  "24": {
+  {
     "moveId": 24,
     "name": "Double Kick",
     "type": 2,
@@ -293,7 +293,7 @@
       "kicking"
     ]
   },
-  "25": {
+  {
     "moveId": 25,
     "name": "Mega Kick",
     "type": 1,
@@ -306,7 +306,7 @@
       "kicking"
     ]
   },
-  "26": {
+  {
     "moveId": 26,
     "name": "Jump Kick",
     "type": 2,
@@ -319,7 +319,7 @@
       "kicking"
     ]
   },
-  "27": {
+  {
     "moveId": 27,
     "name": "Rolling Kick",
     "type": 2,
@@ -332,7 +332,7 @@
       "kicking"
     ]
   },
-  "28": {
+  {
     "moveId": 28,
     "name": "Sand Attack",
     "type": 5,
@@ -342,7 +342,7 @@
     "cat": 2,
     "properties": []
   },
-  "29": {
+  {
     "moveId": 29,
     "name": "Headbutt",
     "type": 1,
@@ -354,7 +354,7 @@
       "contact"
     ]
   },
-  "30": {
+  {
     "moveId": 30,
     "name": "Horn Attack",
     "type": 1,
@@ -366,7 +366,7 @@
       "contact"
     ]
   },
-  "31": {
+  {
     "moveId": 31,
     "name": "Fury Attack",
     "type": 1,
@@ -378,7 +378,7 @@
       "contact"
     ]
   },
-  "32": {
+  {
     "moveId": 32,
     "name": "Horn Drill",
     "type": 1,
@@ -390,7 +390,7 @@
       "contact"
     ]
   },
-  "33": {
+  {
     "moveId": 33,
     "name": "Tackle",
     "type": 1,
@@ -402,7 +402,7 @@
       "contact"
     ]
   },
-  "34": {
+  {
     "moveId": 34,
     "name": "Body Slam",
     "type": 1,
@@ -414,7 +414,7 @@
       "contact"
     ]
   },
-  "35": {
+  {
     "moveId": 35,
     "name": "Wrap",
     "type": 1,
@@ -426,7 +426,7 @@
       "contact"
     ]
   },
-  "36": {
+  {
     "moveId": 36,
     "name": "Take Down",
     "type": 1,
@@ -438,7 +438,7 @@
       "contact"
     ]
   },
-  "37": {
+  {
     "moveId": 37,
     "name": "Thrash",
     "type": 1,
@@ -450,7 +450,7 @@
       "contact"
     ]
   },
-  "38": {
+  {
     "moveId": 38,
     "name": "Double-Edge",
     "type": 1,
@@ -462,7 +462,7 @@
       "contact"
     ]
   },
-  "39": {
+  {
     "moveId": 39,
     "name": "Tail Whip",
     "type": 1,
@@ -472,7 +472,7 @@
     "cat": 2,
     "properties": []
   },
-  "40": {
+  {
     "moveId": 40,
     "name": "Poison Sting",
     "type": 4,
@@ -482,7 +482,7 @@
     "cat": 0,
     "properties": []
   },
-  "41": {
+  {
     "moveId": 41,
     "name": "Twineedle",
     "type": 7,
@@ -492,7 +492,7 @@
     "cat": 0,
     "properties": []
   },
-  "42": {
+  {
     "moveId": 42,
     "name": "Pin Missile",
     "type": 7,
@@ -502,7 +502,7 @@
     "cat": 0,
     "properties": []
   },
-  "43": {
+  {
     "moveId": 43,
     "name": "Leer",
     "type": 1,
@@ -512,7 +512,7 @@
     "cat": 2,
     "properties": []
   },
-  "44": {
+  {
     "moveId": 44,
     "name": "Bite",
     "type": 18,
@@ -525,7 +525,7 @@
       "biting"
     ]
   },
-  "45": {
+  {
     "moveId": 45,
     "name": "Growl",
     "type": 1,
@@ -537,7 +537,7 @@
       "sound"
     ]
   },
-  "46": {
+  {
     "moveId": 46,
     "name": "Roar",
     "type": 1,
@@ -549,7 +549,7 @@
       "sound"
     ]
   },
-  "47": {
+  {
     "moveId": 47,
     "name": "Sing",
     "type": 1,
@@ -561,7 +561,7 @@
       "sound"
     ]
   },
-  "48": {
+  {
     "moveId": 48,
     "name": "Supersonic",
     "type": 1,
@@ -573,7 +573,7 @@
       "sound"
     ]
   },
-  "49": {
+  {
     "moveId": 49,
     "name": "Sonic Boom",
     "type": 1,
@@ -583,7 +583,7 @@
     "cat": 1,
     "properties": []
   },
-  "50": {
+  {
     "moveId": 50,
     "name": "Disable",
     "type": 1,
@@ -593,7 +593,7 @@
     "cat": 2,
     "properties": []
   },
-  "51": {
+  {
     "moveId": 51,
     "name": "Acid",
     "type": 4,
@@ -603,7 +603,7 @@
     "cat": 1,
     "properties": []
   },
-  "52": {
+  {
     "moveId": 52,
     "name": "Ember",
     "type": 11,
@@ -613,7 +613,7 @@
     "cat": 1,
     "properties": []
   },
-  "53": {
+  {
     "moveId": 53,
     "name": "Flamethrower",
     "type": 11,
@@ -623,7 +623,7 @@
     "cat": 1,
     "properties": []
   },
-  "54": {
+  {
     "moveId": 54,
     "name": "Mist",
     "type": 16,
@@ -633,7 +633,7 @@
     "cat": 2,
     "properties": []
   },
-  "55": {
+  {
     "moveId": 55,
     "name": "Water Gun",
     "type": 12,
@@ -643,7 +643,7 @@
     "cat": 1,
     "properties": []
   },
-  "56": {
+  {
     "moveId": 56,
     "name": "Hydro Pump",
     "type": 12,
@@ -653,7 +653,7 @@
     "cat": 1,
     "properties": []
   },
-  "57": {
+  {
     "moveId": 57,
     "name": "Surf",
     "type": 12,
@@ -663,7 +663,7 @@
     "cat": 1,
     "properties": []
   },
-  "58": {
+  {
     "moveId": 58,
     "name": "Ice Beam",
     "type": 16,
@@ -673,7 +673,7 @@
     "cat": 1,
     "properties": []
   },
-  "59": {
+  {
     "moveId": 59,
     "name": "Blizzard",
     "type": 16,
@@ -685,7 +685,7 @@
       "wind"
     ]
   },
-  "60": {
+  {
     "moveId": 60,
     "name": "Psybeam",
     "type": 15,
@@ -695,7 +695,7 @@
     "cat": 1,
     "properties": []
   },
-  "61": {
+  {
     "moveId": 61,
     "name": "Bubble Beam",
     "type": 12,
@@ -705,7 +705,7 @@
     "cat": 1,
     "properties": []
   },
-  "62": {
+  {
     "moveId": 62,
     "name": "Aurora Beam",
     "type": 16,
@@ -715,7 +715,7 @@
     "cat": 1,
     "properties": []
   },
-  "63": {
+  {
     "moveId": 63,
     "name": "Hyper Beam",
     "type": 1,
@@ -725,7 +725,7 @@
     "cat": 1,
     "properties": []
   },
-  "64": {
+  {
     "moveId": 64,
     "name": "Peck",
     "type": 3,
@@ -737,7 +737,7 @@
       "contact"
     ]
   },
-  "65": {
+  {
     "moveId": 65,
     "name": "Drill Peck",
     "type": 3,
@@ -749,7 +749,7 @@
       "contact"
     ]
   },
-  "66": {
+  {
     "moveId": 66,
     "name": "Submission",
     "type": 2,
@@ -761,7 +761,7 @@
       "contact"
     ]
   },
-  "67": {
+  {
     "moveId": 67,
     "name": "Low Kick",
     "type": 2,
@@ -774,7 +774,7 @@
       "kicking"
     ]
   },
-  "68": {
+  {
     "moveId": 68,
     "name": "Counter",
     "type": 2,
@@ -786,7 +786,7 @@
       "contact"
     ]
   },
-  "69": {
+  {
     "moveId": 69,
     "name": "Seismic Toss",
     "type": 2,
@@ -798,7 +798,7 @@
       "contact"
     ]
   },
-  "70": {
+  {
     "moveId": 70,
     "name": "Strength",
     "type": 1,
@@ -810,7 +810,7 @@
       "contact"
     ]
   },
-  "71": {
+  {
     "moveId": 71,
     "name": "Absorb",
     "type": 13,
@@ -822,7 +822,7 @@
       "healing"
     ]
   },
-  "72": {
+  {
     "moveId": 72,
     "name": "Mega Drain",
     "type": 13,
@@ -834,7 +834,7 @@
       "healing"
     ]
   },
-  "73": {
+  {
     "moveId": 73,
     "name": "Leech Seed",
     "type": 13,
@@ -844,7 +844,7 @@
     "cat": 2,
     "properties": []
   },
-  "74": {
+  {
     "moveId": 74,
     "name": "Growth",
     "type": 1,
@@ -854,7 +854,7 @@
     "cat": 2,
     "properties": []
   },
-  "75": {
+  {
     "moveId": 75,
     "name": "Razor Leaf",
     "type": 13,
@@ -866,7 +866,7 @@
       "slicing"
     ]
   },
-  "76": {
+  {
     "moveId": 76,
     "name": "Solar Beam",
     "type": 13,
@@ -876,7 +876,7 @@
     "cat": 1,
     "properties": []
   },
-  "77": {
+  {
     "moveId": 77,
     "name": "Poison Powder",
     "type": 4,
@@ -888,7 +888,7 @@
       "powder"
     ]
   },
-  "78": {
+  {
     "moveId": 78,
     "name": "Stun Spore",
     "type": 13,
@@ -900,7 +900,7 @@
       "powder"
     ]
   },
-  "79": {
+  {
     "moveId": 79,
     "name": "Sleep Powder",
     "type": 13,
@@ -912,7 +912,7 @@
       "powder"
     ]
   },
-  "80": {
+  {
     "moveId": 80,
     "name": "Petal Dance",
     "type": 13,
@@ -925,7 +925,7 @@
       "dance"
     ]
   },
-  "81": {
+  {
     "moveId": 81,
     "name": "String Shot",
     "type": 7,
@@ -935,7 +935,7 @@
     "cat": 2,
     "properties": []
   },
-  "82": {
+  {
     "moveId": 82,
     "name": "Dragon Rage",
     "type": 17,
@@ -945,7 +945,7 @@
     "cat": 1,
     "properties": []
   },
-  "83": {
+  {
     "moveId": 83,
     "name": "Fire Spin",
     "type": 11,
@@ -955,7 +955,7 @@
     "cat": 1,
     "properties": []
   },
-  "84": {
+  {
     "moveId": 84,
     "name": "Thunder Shock",
     "type": 14,
@@ -965,7 +965,7 @@
     "cat": 1,
     "properties": []
   },
-  "85": {
+  {
     "moveId": 85,
     "name": "Thunderbolt",
     "type": 14,
@@ -975,7 +975,7 @@
     "cat": 1,
     "properties": []
   },
-  "86": {
+  {
     "moveId": 86,
     "name": "Thunder Wave",
     "type": 14,
@@ -985,7 +985,7 @@
     "cat": 2,
     "properties": []
   },
-  "87": {
+  {
     "moveId": 87,
     "name": "Thunder",
     "type": 14,
@@ -995,7 +995,7 @@
     "cat": 1,
     "properties": []
   },
-  "88": {
+  {
     "moveId": 88,
     "name": "Rock Throw",
     "type": 6,
@@ -1005,7 +1005,7 @@
     "cat": 0,
     "properties": []
   },
-  "89": {
+  {
     "moveId": 89,
     "name": "Earthquake",
     "type": 5,
@@ -1015,7 +1015,7 @@
     "cat": 0,
     "properties": []
   },
-  "90": {
+  {
     "moveId": 90,
     "name": "Fissure",
     "type": 5,
@@ -1025,7 +1025,7 @@
     "cat": 0,
     "properties": []
   },
-  "91": {
+  {
     "moveId": 91,
     "name": "Dig",
     "type": 5,
@@ -1037,7 +1037,7 @@
       "contact"
     ]
   },
-  "92": {
+  {
     "moveId": 92,
     "name": "Toxic",
     "type": 4,
@@ -1047,7 +1047,7 @@
     "cat": 2,
     "properties": []
   },
-  "93": {
+  {
     "moveId": 93,
     "name": "Confusion",
     "type": 15,
@@ -1057,7 +1057,7 @@
     "cat": 1,
     "properties": []
   },
-  "94": {
+  {
     "moveId": 94,
     "name": "Psychic",
     "type": 15,
@@ -1067,7 +1067,7 @@
     "cat": 1,
     "properties": []
   },
-  "95": {
+  {
     "moveId": 95,
     "name": "Hypnosis",
     "type": 15,
@@ -1077,7 +1077,7 @@
     "cat": 2,
     "properties": []
   },
-  "96": {
+  {
     "moveId": 96,
     "name": "Meditate",
     "type": 15,
@@ -1087,7 +1087,7 @@
     "cat": 2,
     "properties": []
   },
-  "97": {
+  {
     "moveId": 97,
     "name": "Agility",
     "type": 15,
@@ -1097,7 +1097,7 @@
     "cat": 2,
     "properties": []
   },
-  "98": {
+  {
     "moveId": 98,
     "name": "Quick Attack",
     "type": 1,
@@ -1109,7 +1109,7 @@
       "contact"
     ]
   },
-  "99": {
+  {
     "moveId": 99,
     "name": "Rage",
     "type": 1,
@@ -1121,7 +1121,7 @@
       "contact"
     ]
   },
-  "100": {
+  {
     "moveId": 100,
     "name": "Teleport",
     "type": 15,
@@ -1131,7 +1131,7 @@
     "cat": 2,
     "properties": []
   },
-  "101": {
+  {
     "moveId": 101,
     "name": "Night Shade",
     "type": 8,
@@ -1141,7 +1141,7 @@
     "cat": 1,
     "properties": []
   },
-  "102": {
+  {
     "moveId": 102,
     "name": "Mimic",
     "type": 1,
@@ -1151,7 +1151,7 @@
     "cat": 2,
     "properties": []
   },
-  "103": {
+  {
     "moveId": 103,
     "name": "Screech",
     "type": 1,
@@ -1163,7 +1163,7 @@
       "sound"
     ]
   },
-  "104": {
+  {
     "moveId": 104,
     "name": "Double Team",
     "type": 1,
@@ -1173,7 +1173,7 @@
     "cat": 2,
     "properties": []
   },
-  "105": {
+  {
     "moveId": 105,
     "name": "Recover",
     "type": 1,
@@ -1185,7 +1185,7 @@
       "healing"
     ]
   },
-  "106": {
+  {
     "moveId": 106,
     "name": "Harden",
     "type": 1,
@@ -1195,7 +1195,7 @@
     "cat": 2,
     "properties": []
   },
-  "107": {
+  {
     "moveId": 107,
     "name": "Minimize",
     "type": 1,
@@ -1205,7 +1205,7 @@
     "cat": 2,
     "properties": []
   },
-  "108": {
+  {
     "moveId": 108,
     "name": "Smokescreen",
     "type": 1,
@@ -1215,7 +1215,7 @@
     "cat": 2,
     "properties": []
   },
-  "109": {
+  {
     "moveId": 109,
     "name": "Confuse Ray",
     "type": 8,
@@ -1225,7 +1225,7 @@
     "cat": 2,
     "properties": []
   },
-  "110": {
+  {
     "moveId": 110,
     "name": "Withdraw",
     "type": 12,
@@ -1235,7 +1235,7 @@
     "cat": 2,
     "properties": []
   },
-  "111": {
+  {
     "moveId": 111,
     "name": "Defense Curl",
     "type": 1,
@@ -1245,7 +1245,7 @@
     "cat": 2,
     "properties": []
   },
-  "112": {
+  {
     "moveId": 112,
     "name": "Barrier",
     "type": 15,
@@ -1255,7 +1255,7 @@
     "cat": 2,
     "properties": []
   },
-  "113": {
+  {
     "moveId": 113,
     "name": "Light Screen",
     "type": 15,
@@ -1265,7 +1265,7 @@
     "cat": 2,
     "properties": []
   },
-  "114": {
+  {
     "moveId": 114,
     "name": "Haze",
     "type": 16,
@@ -1275,7 +1275,7 @@
     "cat": 2,
     "properties": []
   },
-  "115": {
+  {
     "moveId": 115,
     "name": "Reflect",
     "type": 15,
@@ -1285,7 +1285,7 @@
     "cat": 2,
     "properties": []
   },
-  "116": {
+  {
     "moveId": 116,
     "name": "Focus Energy",
     "type": 1,
@@ -1295,7 +1295,7 @@
     "cat": 2,
     "properties": []
   },
-  "117": {
+  {
     "moveId": 117,
     "name": "Bide",
     "type": 1,
@@ -1307,7 +1307,7 @@
       "contact"
     ]
   },
-  "118": {
+  {
     "moveId": 118,
     "name": "Metronome",
     "type": 1,
@@ -1317,7 +1317,7 @@
     "cat": 2,
     "properties": []
   },
-  "119": {
+  {
     "moveId": 119,
     "name": "Mirror Move",
     "type": 3,
@@ -1327,7 +1327,7 @@
     "cat": 2,
     "properties": []
   },
-  "120": {
+  {
     "moveId": 120,
     "name": "Self-Destruct",
     "type": 1,
@@ -1337,7 +1337,7 @@
     "cat": 0,
     "properties": []
   },
-  "121": {
+  {
     "moveId": 121,
     "name": "Egg Bomb",
     "type": 1,
@@ -1349,7 +1349,7 @@
       "ballistic"
     ]
   },
-  "122": {
+  {
     "moveId": 122,
     "name": "Lick",
     "type": 8,
@@ -1361,7 +1361,7 @@
       "contact"
     ]
   },
-  "123": {
+  {
     "moveId": 123,
     "name": "Smog",
     "type": 4,
@@ -1371,7 +1371,7 @@
     "cat": 1,
     "properties": []
   },
-  "124": {
+  {
     "moveId": 124,
     "name": "Sludge",
     "type": 4,
@@ -1381,7 +1381,7 @@
     "cat": 1,
     "properties": []
   },
-  "125": {
+  {
     "moveId": 125,
     "name": "Bone Club",
     "type": 5,
@@ -1391,7 +1391,7 @@
     "cat": 0,
     "properties": []
   },
-  "126": {
+  {
     "moveId": 126,
     "name": "Fire Blast",
     "type": 11,
@@ -1401,7 +1401,7 @@
     "cat": 1,
     "properties": []
   },
-  "127": {
+  {
     "moveId": 127,
     "name": "Waterfall",
     "type": 12,
@@ -1413,7 +1413,7 @@
       "contact"
     ]
   },
-  "128": {
+  {
     "moveId": 128,
     "name": "Clamp",
     "type": 12,
@@ -1425,7 +1425,7 @@
       "contact"
     ]
   },
-  "129": {
+  {
     "moveId": 129,
     "name": "Swift",
     "type": 1,
@@ -1435,7 +1435,7 @@
     "cat": 1,
     "properties": []
   },
-  "130": {
+  {
     "moveId": 130,
     "name": "Skull Bash",
     "type": 1,
@@ -1447,7 +1447,7 @@
       "contact"
     ]
   },
-  "131": {
+  {
     "moveId": 131,
     "name": "Spike Cannon",
     "type": 1,
@@ -1459,7 +1459,7 @@
       "ballistic"
     ]
   },
-  "132": {
+  {
     "moveId": 132,
     "name": "Constrict",
     "type": 1,
@@ -1471,7 +1471,7 @@
       "contact"
     ]
   },
-  "133": {
+  {
     "moveId": 133,
     "name": "Amnesia",
     "type": 15,
@@ -1481,7 +1481,7 @@
     "cat": 2,
     "properties": []
   },
-  "134": {
+  {
     "moveId": 134,
     "name": "Kinesis",
     "type": 15,
@@ -1491,7 +1491,7 @@
     "cat": 2,
     "properties": []
   },
-  "135": {
+  {
     "moveId": 135,
     "name": "Soft-Boiled",
     "type": 1,
@@ -1503,7 +1503,7 @@
       "healing"
     ]
   },
-  "136": {
+  {
     "moveId": 136,
     "name": "High Jump Kick",
     "type": 2,
@@ -1516,7 +1516,7 @@
       "kicking"
     ]
   },
-  "137": {
+  {
     "moveId": 137,
     "name": "Glare",
     "type": 1,
@@ -1526,7 +1526,7 @@
     "cat": 2,
     "properties": []
   },
-  "138": {
+  {
     "moveId": 138,
     "name": "Dream Eater",
     "type": 15,
@@ -1538,7 +1538,7 @@
       "healing"
     ]
   },
-  "139": {
+  {
     "moveId": 139,
     "name": "Poison Gas",
     "type": 4,
@@ -1548,7 +1548,7 @@
     "cat": 2,
     "properties": []
   },
-  "140": {
+  {
     "moveId": 140,
     "name": "Barrage",
     "type": 1,
@@ -1560,7 +1560,7 @@
       "ballistic"
     ]
   },
-  "141": {
+  {
     "moveId": 141,
     "name": "Leech Life",
     "type": 7,
@@ -1573,7 +1573,7 @@
       "healing"
     ]
   },
-  "142": {
+  {
     "moveId": 142,
     "name": "Lovely Kiss",
     "type": 1,
@@ -1583,7 +1583,7 @@
     "cat": 2,
     "properties": []
   },
-  "143": {
+  {
     "moveId": 143,
     "name": "Sky Attack",
     "type": 3,
@@ -1593,7 +1593,7 @@
     "cat": 0,
     "properties": []
   },
-  "144": {
+  {
     "moveId": 144,
     "name": "Transform",
     "type": 1,
@@ -1603,7 +1603,7 @@
     "cat": 2,
     "properties": []
   },
-  "145": {
+  {
     "moveId": 145,
     "name": "Bubble",
     "type": 12,
@@ -1613,7 +1613,7 @@
     "cat": 1,
     "properties": []
   },
-  "146": {
+  {
     "moveId": 146,
     "name": "Dizzy Punch",
     "type": 1,
@@ -1626,7 +1626,7 @@
       "punching"
     ]
   },
-  "147": {
+  {
     "moveId": 147,
     "name": "Spore",
     "type": 13,
@@ -1638,7 +1638,7 @@
       "powder"
     ]
   },
-  "148": {
+  {
     "moveId": 148,
     "name": "Flash",
     "type": 14,
@@ -1648,7 +1648,7 @@
     "cat": 1,
     "properties": []
   },
-  "149": {
+  {
     "moveId": 149,
     "name": "Psywave",
     "type": 15,
@@ -1658,7 +1658,7 @@
     "cat": 1,
     "properties": []
   },
-  "150": {
+  {
     "moveId": 150,
     "name": "Splash",
     "type": 1,
@@ -1668,7 +1668,7 @@
     "cat": 2,
     "properties": []
   },
-  "151": {
+  {
     "moveId": 151,
     "name": "Acid Armor",
     "type": 4,
@@ -1678,7 +1678,7 @@
     "cat": 2,
     "properties": []
   },
-  "152": {
+  {
     "moveId": 152,
     "name": "Crabhammer",
     "type": 12,
@@ -1690,7 +1690,7 @@
       "contact"
     ]
   },
-  "153": {
+  {
     "moveId": 153,
     "name": "Explosion",
     "type": 1,
@@ -1700,7 +1700,7 @@
     "cat": 0,
     "properties": []
   },
-  "154": {
+  {
     "moveId": 154,
     "name": "Fury Swipes",
     "type": 1,
@@ -1712,7 +1712,7 @@
       "contact"
     ]
   },
-  "155": {
+  {
     "moveId": 155,
     "name": "Bonemerang",
     "type": 5,
@@ -1722,7 +1722,7 @@
     "cat": 0,
     "properties": []
   },
-  "156": {
+  {
     "moveId": 156,
     "name": "Rest",
     "type": 15,
@@ -1734,7 +1734,7 @@
       "healing"
     ]
   },
-  "157": {
+  {
     "moveId": 157,
     "name": "Rock Slide",
     "type": 6,
@@ -1744,7 +1744,7 @@
     "cat": 0,
     "properties": []
   },
-  "158": {
+  {
     "moveId": 158,
     "name": "Hyper Fang",
     "type": 1,
@@ -1757,7 +1757,7 @@
       "biting"
     ]
   },
-  "159": {
+  {
     "moveId": 159,
     "name": "Sharpen",
     "type": 1,
@@ -1767,7 +1767,7 @@
     "cat": 2,
     "properties": []
   },
-  "160": {
+  {
     "moveId": 160,
     "name": "Conversion",
     "type": 1,
@@ -1777,7 +1777,7 @@
     "cat": 2,
     "properties": []
   },
-  "161": {
+  {
     "moveId": 161,
     "name": "Tri Attack",
     "type": 1,
@@ -1787,7 +1787,7 @@
     "cat": 1,
     "properties": []
   },
-  "162": {
+  {
     "moveId": 162,
     "name": "Super Fang",
     "type": 1,
@@ -1799,7 +1799,7 @@
       "contact"
     ]
   },
-  "163": {
+  {
     "moveId": 163,
     "name": "Slash",
     "type": 1,
@@ -1812,7 +1812,7 @@
       "slicing"
     ]
   },
-  "164": {
+  {
     "moveId": 164,
     "name": "Substitute",
     "type": 1,
@@ -1822,7 +1822,7 @@
     "cat": 2,
     "properties": []
   },
-  "165": {
+  {
     "moveId": 165,
     "name": "Struggle",
     "type": 1,
@@ -1834,7 +1834,7 @@
       "contact"
     ]
   },
-  "166": {
+  {
     "moveId": 166,
     "name": "Sketch",
     "type": 1,
@@ -1844,7 +1844,7 @@
     "cat": 2,
     "properties": []
   },
-  "167": {
+  {
     "moveId": 167,
     "name": "Triple Kick",
     "type": 2,
@@ -1857,7 +1857,7 @@
       "kicking"
     ]
   },
-  "168": {
+  {
     "moveId": 168,
     "name": "Thief",
     "type": 18,
@@ -1869,7 +1869,7 @@
       "contact"
     ]
   },
-  "169": {
+  {
     "moveId": 169,
     "name": "Spider Web",
     "type": 7,
@@ -1879,7 +1879,7 @@
     "cat": 2,
     "properties": []
   },
-  "170": {
+  {
     "moveId": 170,
     "name": "Mind Reader",
     "type": 1,
@@ -1889,7 +1889,7 @@
     "cat": 2,
     "properties": []
   },
-  "171": {
+  {
     "moveId": 171,
     "name": "Nightmare",
     "type": 8,
@@ -1899,7 +1899,7 @@
     "cat": 2,
     "properties": []
   },
-  "172": {
+  {
     "moveId": 172,
     "name": "Flame Wheel",
     "type": 11,
@@ -1911,7 +1911,7 @@
       "contact"
     ]
   },
-  "173": {
+  {
     "moveId": 173,
     "name": "Snore",
     "type": 1,
@@ -1923,7 +1923,7 @@
       "sound"
     ]
   },
-  "174": {
+  {
     "moveId": 174,
     "name": "Curse",
     "type": 8,
@@ -1933,7 +1933,7 @@
     "cat": 2,
     "properties": []
   },
-  "175": {
+  {
     "moveId": 175,
     "name": "Flail",
     "type": 1,
@@ -1945,7 +1945,7 @@
       "contact"
     ]
   },
-  "176": {
+  {
     "moveId": 176,
     "name": "Conversion 2",
     "type": 1,
@@ -1955,7 +1955,7 @@
     "cat": 2,
     "properties": []
   },
-  "177": {
+  {
     "moveId": 177,
     "name": "Aeroblast",
     "type": 3,
@@ -1967,7 +1967,7 @@
       "wind"
     ]
   },
-  "178": {
+  {
     "moveId": 178,
     "name": "Cotton Spore",
     "type": 13,
@@ -1979,7 +1979,7 @@
       "powder"
     ]
   },
-  "179": {
+  {
     "moveId": 179,
     "name": "Reversal",
     "type": 2,
@@ -1991,7 +1991,7 @@
       "contact"
     ]
   },
-  "180": {
+  {
     "moveId": 180,
     "name": "Spite",
     "type": 8,
@@ -2001,7 +2001,7 @@
     "cat": 2,
     "properties": []
   },
-  "181": {
+  {
     "moveId": 181,
     "name": "Powder Snow",
     "type": 16,
@@ -2011,7 +2011,7 @@
     "cat": 1,
     "properties": []
   },
-  "182": {
+  {
     "moveId": 182,
     "name": "Protect",
     "type": 1,
@@ -2021,7 +2021,7 @@
     "cat": 2,
     "properties": []
   },
-  "183": {
+  {
     "moveId": 183,
     "name": "Mach Punch",
     "type": 2,
@@ -2034,7 +2034,7 @@
       "punching"
     ]
   },
-  "184": {
+  {
     "moveId": 184,
     "name": "Scary Face",
     "type": 1,
@@ -2044,7 +2044,7 @@
     "cat": 2,
     "properties": []
   },
-  "185": {
+  {
     "moveId": 185,
     "name": "Feint Attack",
     "type": 18,
@@ -2056,7 +2056,7 @@
       "contact"
     ]
   },
-  "186": {
+  {
     "moveId": 186,
     "name": "Sweet Kiss",
     "type": 19,
@@ -2066,7 +2066,7 @@
     "cat": 2,
     "properties": []
   },
-  "187": {
+  {
     "moveId": 187,
     "name": "Belly Drum",
     "type": 1,
@@ -2076,7 +2076,7 @@
     "cat": 2,
     "properties": []
   },
-  "188": {
+  {
     "moveId": 188,
     "name": "Sludge Bomb",
     "type": 4,
@@ -2088,7 +2088,7 @@
       "ballistic"
     ]
   },
-  "189": {
+  {
     "moveId": 189,
     "name": "Mud-Slap",
     "type": 5,
@@ -2098,7 +2098,7 @@
     "cat": 1,
     "properties": []
   },
-  "190": {
+  {
     "moveId": 190,
     "name": "Octazooka",
     "type": 12,
@@ -2110,7 +2110,7 @@
       "ballistic"
     ]
   },
-  "191": {
+  {
     "moveId": 191,
     "name": "Spikes",
     "type": 5,
@@ -2120,7 +2120,7 @@
     "cat": 2,
     "properties": []
   },
-  "192": {
+  {
     "moveId": 192,
     "name": "Zap Cannon",
     "type": 14,
@@ -2132,7 +2132,7 @@
       "ballistic"
     ]
   },
-  "193": {
+  {
     "moveId": 193,
     "name": "Foresight",
     "type": 1,
@@ -2142,7 +2142,7 @@
     "cat": 2,
     "properties": []
   },
-  "194": {
+  {
     "moveId": 194,
     "name": "Destiny Bond",
     "type": 8,
@@ -2152,7 +2152,7 @@
     "cat": 2,
     "properties": []
   },
-  "195": {
+  {
     "moveId": 195,
     "name": "Perish Song",
     "type": 1,
@@ -2164,7 +2164,7 @@
       "sound"
     ]
   },
-  "196": {
+  {
     "moveId": 196,
     "name": "Icy Wind",
     "type": 16,
@@ -2176,7 +2176,7 @@
       "wind"
     ]
   },
-  "197": {
+  {
     "moveId": 197,
     "name": "Detect",
     "type": 2,
@@ -2186,7 +2186,7 @@
     "cat": 2,
     "properties": []
   },
-  "198": {
+  {
     "moveId": 198,
     "name": "Bone Rush",
     "type": 5,
@@ -2196,7 +2196,7 @@
     "cat": 0,
     "properties": []
   },
-  "199": {
+  {
     "moveId": 199,
     "name": "Lock-On",
     "type": 1,
@@ -2206,7 +2206,7 @@
     "cat": 2,
     "properties": []
   },
-  "200": {
+  {
     "moveId": 200,
     "name": "Outrage",
     "type": 17,
@@ -2218,7 +2218,7 @@
       "contact"
     ]
   },
-  "201": {
+  {
     "moveId": 201,
     "name": "Sandstorm",
     "type": 6,
@@ -2230,7 +2230,7 @@
       "wind"
     ]
   },
-  "202": {
+  {
     "moveId": 202,
     "name": "Giga Drain",
     "type": 13,
@@ -2242,7 +2242,7 @@
       "healing"
     ]
   },
-  "203": {
+  {
     "moveId": 203,
     "name": "Endure",
     "type": 1,
@@ -2252,7 +2252,7 @@
     "cat": 2,
     "properties": []
   },
-  "204": {
+  {
     "moveId": 204,
     "name": "Charm",
     "type": 19,
@@ -2262,7 +2262,7 @@
     "cat": 2,
     "properties": []
   },
-  "205": {
+  {
     "moveId": 205,
     "name": "Rollout",
     "type": 6,
@@ -2274,7 +2274,7 @@
       "contact"
     ]
   },
-  "206": {
+  {
     "moveId": 206,
     "name": "False Swipe",
     "type": 1,
@@ -2287,7 +2287,7 @@
       "slicing"
     ]
   },
-  "207": {
+  {
     "moveId": 207,
     "name": "Swagger",
     "type": 1,
@@ -2297,7 +2297,7 @@
     "cat": 2,
     "properties": []
   },
-  "208": {
+  {
     "moveId": 208,
     "name": "Milk Drink",
     "type": 1,
@@ -2309,7 +2309,7 @@
       "healing"
     ]
   },
-  "209": {
+  {
     "moveId": 209,
     "name": "Spark",
     "type": 14,
@@ -2321,7 +2321,7 @@
       "contact"
     ]
   },
-  "210": {
+  {
     "moveId": 210,
     "name": "Fury Cutter",
     "type": 7,
@@ -2334,7 +2334,7 @@
       "slicing"
     ]
   },
-  "211": {
+  {
     "moveId": 211,
     "name": "Steel Wing",
     "type": 9,
@@ -2346,7 +2346,7 @@
       "contact"
     ]
   },
-  "212": {
+  {
     "moveId": 212,
     "name": "Mean Look",
     "type": 1,
@@ -2356,7 +2356,7 @@
     "cat": 2,
     "properties": []
   },
-  "213": {
+  {
     "moveId": 213,
     "name": "Attract",
     "type": 1,
@@ -2366,7 +2366,7 @@
     "cat": 2,
     "properties": []
   },
-  "214": {
+  {
     "moveId": 214,
     "name": "Sleep Talk",
     "type": 1,
@@ -2376,7 +2376,7 @@
     "cat": 2,
     "properties": []
   },
-  "215": {
+  {
     "moveId": 215,
     "name": "Heal Bell",
     "type": 1,
@@ -2388,7 +2388,7 @@
       "sound"
     ]
   },
-  "216": {
+  {
     "moveId": 216,
     "name": "Return",
     "type": 1,
@@ -2400,7 +2400,7 @@
       "contact"
     ]
   },
-  "217": {
+  {
     "moveId": 217,
     "name": "Present",
     "type": 1,
@@ -2410,7 +2410,7 @@
     "cat": 0,
     "properties": []
   },
-  "218": {
+  {
     "moveId": 218,
     "name": "Frustration",
     "type": 1,
@@ -2422,7 +2422,7 @@
       "contact"
     ]
   },
-  "219": {
+  {
     "moveId": 219,
     "name": "Safeguard",
     "type": 1,
@@ -2432,7 +2432,7 @@
     "cat": 2,
     "properties": []
   },
-  "220": {
+  {
     "moveId": 220,
     "name": "Pain Split",
     "type": 1,
@@ -2442,7 +2442,7 @@
     "cat": 2,
     "properties": []
   },
-  "221": {
+  {
     "moveId": 221,
     "name": "Sacred Fire",
     "type": 11,
@@ -2452,7 +2452,7 @@
     "cat": 0,
     "properties": []
   },
-  "222": {
+  {
     "moveId": 222,
     "name": "Magnitude",
     "type": 5,
@@ -2462,7 +2462,7 @@
     "cat": 0,
     "properties": []
   },
-  "223": {
+  {
     "moveId": 223,
     "name": "Dynamic Punch",
     "type": 2,
@@ -2475,7 +2475,7 @@
       "punching"
     ]
   },
-  "224": {
+  {
     "moveId": 224,
     "name": "Megahorn",
     "type": 7,
@@ -2487,7 +2487,7 @@
       "contact"
     ]
   },
-  "225": {
+  {
     "moveId": 225,
     "name": "Dragon Breath",
     "type": 17,
@@ -2497,7 +2497,7 @@
     "cat": 1,
     "properties": []
   },
-  "226": {
+  {
     "moveId": 226,
     "name": "Baton Pass",
     "type": 1,
@@ -2507,7 +2507,7 @@
     "cat": 2,
     "properties": []
   },
-  "227": {
+  {
     "moveId": 227,
     "name": "Encore",
     "type": 1,
@@ -2517,7 +2517,7 @@
     "cat": 2,
     "properties": []
   },
-  "228": {
+  {
     "moveId": 228,
     "name": "Pursuit",
     "type": 18,
@@ -2529,7 +2529,7 @@
       "contact"
     ]
   },
-  "229": {
+  {
     "moveId": 229,
     "name": "Rapid Spin",
     "type": 1,
@@ -2541,7 +2541,7 @@
       "contact"
     ]
   },
-  "230": {
+  {
     "moveId": 230,
     "name": "Sweet Scent",
     "type": 1,
@@ -2551,7 +2551,7 @@
     "cat": 2,
     "properties": []
   },
-  "231": {
+  {
     "moveId": 231,
     "name": "Iron Tail",
     "type": 9,
@@ -2563,7 +2563,7 @@
       "contact"
     ]
   },
-  "232": {
+  {
     "moveId": 232,
     "name": "Metal Claw",
     "type": 9,
@@ -2575,7 +2575,7 @@
       "contact"
     ]
   },
-  "233": {
+  {
     "moveId": 233,
     "name": "Vital Throw",
     "type": 2,
@@ -2587,7 +2587,7 @@
       "contact"
     ]
   },
-  "234": {
+  {
     "moveId": 234,
     "name": "Morning Sun",
     "type": 1,
@@ -2599,7 +2599,7 @@
       "healing"
     ]
   },
-  "235": {
+  {
     "moveId": 235,
     "name": "Synthesis",
     "type": 13,
@@ -2611,7 +2611,7 @@
       "healing"
     ]
   },
-  "236": {
+  {
     "moveId": 236,
     "name": "Moonlight",
     "type": 19,
@@ -2623,7 +2623,7 @@
       "healing"
     ]
   },
-  "237": {
+  {
     "moveId": 237,
     "name": "Hidden Power",
     "type": 1,
@@ -2633,7 +2633,7 @@
     "cat": 1,
     "properties": []
   },
-  "238": {
+  {
     "moveId": 238,
     "name": "Cross Chop",
     "type": 2,
@@ -2645,7 +2645,7 @@
       "contact"
     ]
   },
-  "239": {
+  {
     "moveId": 239,
     "name": "Twister",
     "type": 17,
@@ -2657,7 +2657,7 @@
       "wind"
     ]
   },
-  "240": {
+  {
     "moveId": 240,
     "name": "Rain Dance",
     "type": 12,
@@ -2667,7 +2667,7 @@
     "cat": 2,
     "properties": []
   },
-  "241": {
+  {
     "moveId": 241,
     "name": "Sunny Day",
     "type": 11,
@@ -2677,7 +2677,7 @@
     "cat": 2,
     "properties": []
   },
-  "242": {
+  {
     "moveId": 242,
     "name": "Crunch",
     "type": 18,
@@ -2690,7 +2690,7 @@
       "biting"
     ]
   },
-  "243": {
+  {
     "moveId": 243,
     "name": "Mirror Coat",
     "type": 15,
@@ -2700,7 +2700,7 @@
     "cat": 1,
     "properties": []
   },
-  "244": {
+  {
     "moveId": 244,
     "name": "Psych Up",
     "type": 1,
@@ -2710,7 +2710,7 @@
     "cat": 2,
     "properties": []
   },
-  "245": {
+  {
     "moveId": 245,
     "name": "Extreme Speed",
     "type": 1,
@@ -2722,7 +2722,7 @@
       "contact"
     ]
   },
-  "246": {
+  {
     "moveId": 246,
     "name": "Ancient Power",
     "type": 6,
@@ -2732,7 +2732,7 @@
     "cat": 1,
     "properties": []
   },
-  "247": {
+  {
     "moveId": 247,
     "name": "Shadow Ball",
     "type": 8,
@@ -2744,7 +2744,7 @@
       "ballistic"
     ]
   },
-  "248": {
+  {
     "moveId": 248,
     "name": "Future Sight",
     "type": 15,
@@ -2754,7 +2754,7 @@
     "cat": 1,
     "properties": []
   },
-  "249": {
+  {
     "moveId": 249,
     "name": "Rock Smash",
     "type": 2,
@@ -2766,7 +2766,7 @@
       "contact"
     ]
   },
-  "250": {
+  {
     "moveId": 250,
     "name": "Whirlpool",
     "type": 12,
@@ -2776,7 +2776,7 @@
     "cat": 1,
     "properties": []
   },
-  "251": {
+  {
     "moveId": 251,
     "name": "Beat Up",
     "type": 18,
@@ -2786,7 +2786,7 @@
     "cat": 0,
     "properties": []
   },
-  "252": {
+  {
     "moveId": 252,
     "name": "Fake Out",
     "type": 1,
@@ -2798,7 +2798,7 @@
       "contact"
     ]
   },
-  "253": {
+  {
     "moveId": 253,
     "name": "Uproar",
     "type": 1,
@@ -2810,7 +2810,7 @@
       "sound"
     ]
   },
-  "254": {
+  {
     "moveId": 254,
     "name": "Stockpile",
     "type": 1,
@@ -2820,7 +2820,7 @@
     "cat": 2,
     "properties": []
   },
-  "255": {
+  {
     "moveId": 255,
     "name": "Spit Up",
     "type": 1,
@@ -2830,7 +2830,7 @@
     "cat": 1,
     "properties": []
   },
-  "256": {
+  {
     "moveId": 256,
     "name": "Swallow",
     "type": 1,
@@ -2842,7 +2842,7 @@
       "healing"
     ]
   },
-  "257": {
+  {
     "moveId": 257,
     "name": "Heat Wave",
     "type": 11,
@@ -2854,7 +2854,7 @@
       "wind"
     ]
   },
-  "258": {
+  {
     "moveId": 258,
     "name": "Hail",
     "type": 16,
@@ -2864,7 +2864,7 @@
     "cat": 2,
     "properties": []
   },
-  "259": {
+  {
     "moveId": 259,
     "name": "Torment",
     "type": 18,
@@ -2874,7 +2874,7 @@
     "cat": 2,
     "properties": []
   },
-  "260": {
+  {
     "moveId": 260,
     "name": "Flatter",
     "type": 18,
@@ -2884,7 +2884,7 @@
     "cat": 2,
     "properties": []
   },
-  "261": {
+  {
     "moveId": 261,
     "name": "Will-O-Wisp",
     "type": 11,
@@ -2894,7 +2894,7 @@
     "cat": 2,
     "properties": []
   },
-  "262": {
+  {
     "moveId": 262,
     "name": "Memento",
     "type": 18,
@@ -2904,7 +2904,7 @@
     "cat": 2,
     "properties": []
   },
-  "263": {
+  {
     "moveId": 263,
     "name": "Facade",
     "type": 1,
@@ -2916,7 +2916,7 @@
       "contact"
     ]
   },
-  "264": {
+  {
     "moveId": 264,
     "name": "Focus Punch",
     "type": 2,
@@ -2929,7 +2929,7 @@
       "punching"
     ]
   },
-  "265": {
+  {
     "moveId": 265,
     "name": "Smelling Salts",
     "type": 1,
@@ -2941,7 +2941,7 @@
       "contact"
     ]
   },
-  "266": {
+  {
     "moveId": 266,
     "name": "Follow Me",
     "type": 1,
@@ -2951,7 +2951,7 @@
     "cat": 2,
     "properties": []
   },
-  "267": {
+  {
     "moveId": 267,
     "name": "Nature Power",
     "type": 1,
@@ -2961,7 +2961,7 @@
     "cat": 2,
     "properties": []
   },
-  "268": {
+  {
     "moveId": 268,
     "name": "Charge",
     "type": 14,
@@ -2971,7 +2971,7 @@
     "cat": 2,
     "properties": []
   },
-  "269": {
+  {
     "moveId": 269,
     "name": "Taunt",
     "type": 18,
@@ -2981,7 +2981,7 @@
     "cat": 2,
     "properties": []
   },
-  "270": {
+  {
     "moveId": 270,
     "name": "Helping Hand",
     "type": 1,
@@ -2991,7 +2991,7 @@
     "cat": 2,
     "properties": []
   },
-  "271": {
+  {
     "moveId": 271,
     "name": "Trick",
     "type": 15,
@@ -3001,7 +3001,7 @@
     "cat": 2,
     "properties": []
   },
-  "272": {
+  {
     "moveId": 272,
     "name": "Role Play",
     "type": 15,
@@ -3011,7 +3011,7 @@
     "cat": 2,
     "properties": []
   },
-  "273": {
+  {
     "moveId": 273,
     "name": "Wish",
     "type": 1,
@@ -3023,7 +3023,7 @@
       "healing"
     ]
   },
-  "274": {
+  {
     "moveId": 274,
     "name": "Assist",
     "type": 1,
@@ -3033,7 +3033,7 @@
     "cat": 2,
     "properties": []
   },
-  "275": {
+  {
     "moveId": 275,
     "name": "Ingrain",
     "type": 13,
@@ -3043,7 +3043,7 @@
     "cat": 2,
     "properties": []
   },
-  "276": {
+  {
     "moveId": 276,
     "name": "Superpower",
     "type": 2,
@@ -3055,7 +3055,7 @@
       "contact"
     ]
   },
-  "277": {
+  {
     "moveId": 277,
     "name": "Magic Coat",
     "type": 15,
@@ -3065,7 +3065,7 @@
     "cat": 2,
     "properties": []
   },
-  "278": {
+  {
     "moveId": 278,
     "name": "Recycle",
     "type": 1,
@@ -3075,7 +3075,7 @@
     "cat": 2,
     "properties": []
   },
-  "279": {
+  {
     "moveId": 279,
     "name": "Revenge",
     "type": 2,
@@ -3087,7 +3087,7 @@
       "contact"
     ]
   },
-  "280": {
+  {
     "moveId": 280,
     "name": "Brick Break",
     "type": 2,
@@ -3099,7 +3099,7 @@
       "contact"
     ]
   },
-  "281": {
+  {
     "moveId": 281,
     "name": "Yawn",
     "type": 1,
@@ -3109,7 +3109,7 @@
     "cat": 2,
     "properties": []
   },
-  "282": {
+  {
     "moveId": 282,
     "name": "Knock Off",
     "type": 18,
@@ -3121,7 +3121,7 @@
       "contact"
     ]
   },
-  "283": {
+  {
     "moveId": 283,
     "name": "Endeavor",
     "type": 1,
@@ -3133,7 +3133,7 @@
       "contact"
     ]
   },
-  "284": {
+  {
     "moveId": 284,
     "name": "Eruption",
     "type": 11,
@@ -3143,7 +3143,7 @@
     "cat": 1,
     "properties": []
   },
-  "285": {
+  {
     "moveId": 285,
     "name": "Skill Swap",
     "type": 15,
@@ -3153,7 +3153,7 @@
     "cat": 2,
     "properties": []
   },
-  "286": {
+  {
     "moveId": 286,
     "name": "Imprison",
     "type": 15,
@@ -3163,7 +3163,7 @@
     "cat": 2,
     "properties": []
   },
-  "287": {
+  {
     "moveId": 287,
     "name": "Refresh",
     "type": 1,
@@ -3173,7 +3173,7 @@
     "cat": 2,
     "properties": []
   },
-  "288": {
+  {
     "moveId": 288,
     "name": "Grudge",
     "type": 8,
@@ -3183,7 +3183,7 @@
     "cat": 2,
     "properties": []
   },
-  "289": {
+  {
     "moveId": 289,
     "name": "Snatch",
     "type": 18,
@@ -3193,7 +3193,7 @@
     "cat": 2,
     "properties": []
   },
-  "290": {
+  {
     "moveId": 290,
     "name": "Secret Power",
     "type": 1,
@@ -3203,7 +3203,7 @@
     "cat": 0,
     "properties": []
   },
-  "291": {
+  {
     "moveId": 291,
     "name": "Dive",
     "type": 12,
@@ -3215,7 +3215,7 @@
       "contact"
     ]
   },
-  "292": {
+  {
     "moveId": 292,
     "name": "Arm Thrust",
     "type": 2,
@@ -3227,7 +3227,7 @@
       "contact"
     ]
   },
-  "293": {
+  {
     "moveId": 293,
     "name": "Camouflage",
     "type": 1,
@@ -3237,7 +3237,7 @@
     "cat": 2,
     "properties": []
   },
-  "294": {
+  {
     "moveId": 294,
     "name": "Tail Glow",
     "type": 7,
@@ -3247,7 +3247,7 @@
     "cat": 2,
     "properties": []
   },
-  "295": {
+  {
     "moveId": 295,
     "name": "Luster Purge",
     "type": 15,
@@ -3257,7 +3257,7 @@
     "cat": 1,
     "properties": []
   },
-  "296": {
+  {
     "moveId": 296,
     "name": "Mist Ball",
     "type": 15,
@@ -3269,7 +3269,7 @@
       "ballistic"
     ]
   },
-  "297": {
+  {
     "moveId": 297,
     "name": "Feather Dance",
     "type": 3,
@@ -3281,7 +3281,7 @@
       "dance"
     ]
   },
-  "298": {
+  {
     "moveId": 298,
     "name": "Teeter Dance",
     "type": 1,
@@ -3293,7 +3293,7 @@
       "dance"
     ]
   },
-  "299": {
+  {
     "moveId": 299,
     "name": "Blaze Kick",
     "type": 11,
@@ -3306,7 +3306,7 @@
       "kicking"
     ]
   },
-  "300": {
+  {
     "moveId": 300,
     "name": "Mud Sport",
     "type": 5,
@@ -3316,7 +3316,7 @@
     "cat": 2,
     "properties": []
   },
-  "301": {
+  {
     "moveId": 301,
     "name": "Ice Ball",
     "type": 16,
@@ -3329,7 +3329,7 @@
       "ballistic"
     ]
   },
-  "302": {
+  {
     "moveId": 302,
     "name": "Needle Arm",
     "type": 13,
@@ -3341,7 +3341,7 @@
       "contact"
     ]
   },
-  "303": {
+  {
     "moveId": 303,
     "name": "Slack Off",
     "type": 1,
@@ -3353,7 +3353,7 @@
       "healing"
     ]
   },
-  "304": {
+  {
     "moveId": 304,
     "name": "Hyper Voice",
     "type": 1,
@@ -3365,7 +3365,7 @@
       "sound"
     ]
   },
-  "305": {
+  {
     "moveId": 305,
     "name": "Poison Fang",
     "type": 4,
@@ -3378,7 +3378,7 @@
       "biting"
     ]
   },
-  "306": {
+  {
     "moveId": 306,
     "name": "Crush Claw",
     "type": 1,
@@ -3390,7 +3390,7 @@
       "contact"
     ]
   },
-  "307": {
+  {
     "moveId": 307,
     "name": "Blast Burn",
     "type": 11,
@@ -3400,7 +3400,7 @@
     "cat": 1,
     "properties": []
   },
-  "308": {
+  {
     "moveId": 308,
     "name": "Hydro Cannon",
     "type": 12,
@@ -3410,7 +3410,7 @@
     "cat": 1,
     "properties": []
   },
-  "309": {
+  {
     "moveId": 309,
     "name": "Meteor Mash",
     "type": 9,
@@ -3423,7 +3423,7 @@
       "punching"
     ]
   },
-  "310": {
+  {
     "moveId": 310,
     "name": "Astonish",
     "type": 8,
@@ -3435,7 +3435,7 @@
       "contact"
     ]
   },
-  "311": {
+  {
     "moveId": 311,
     "name": "Weather Ball",
     "type": 1,
@@ -3447,7 +3447,7 @@
       "ballistic"
     ]
   },
-  "312": {
+  {
     "moveId": 312,
     "name": "Aromatherapy",
     "type": 13,
@@ -3457,7 +3457,7 @@
     "cat": 2,
     "properties": []
   },
-  "313": {
+  {
     "moveId": 313,
     "name": "Fake Tears",
     "type": 18,
@@ -3467,7 +3467,7 @@
     "cat": 2,
     "properties": []
   },
-  "314": {
+  {
     "moveId": 314,
     "name": "Air Cutter",
     "type": 3,
@@ -3480,7 +3480,7 @@
       "wind"
     ]
   },
-  "315": {
+  {
     "moveId": 315,
     "name": "Overheat",
     "type": 11,
@@ -3490,7 +3490,7 @@
     "cat": 1,
     "properties": []
   },
-  "316": {
+  {
     "moveId": 316,
     "name": "Odor Sleuth",
     "type": 1,
@@ -3500,7 +3500,7 @@
     "cat": 2,
     "properties": []
   },
-  "317": {
+  {
     "moveId": 317,
     "name": "Rock Tomb",
     "type": 6,
@@ -3510,7 +3510,7 @@
     "cat": 0,
     "properties": []
   },
-  "318": {
+  {
     "moveId": 318,
     "name": "Silver Wind",
     "type": 7,
@@ -3522,7 +3522,7 @@
       "wind"
     ]
   },
-  "319": {
+  {
     "moveId": 319,
     "name": "Metal Sound",
     "type": 9,
@@ -3534,7 +3534,7 @@
       "sound"
     ]
   },
-  "320": {
+  {
     "moveId": 320,
     "name": "Grass Whistle",
     "type": 13,
@@ -3546,7 +3546,7 @@
       "sound"
     ]
   },
-  "321": {
+  {
     "moveId": 321,
     "name": "Tickle",
     "type": 1,
@@ -3556,7 +3556,7 @@
     "cat": 2,
     "properties": []
   },
-  "322": {
+  {
     "moveId": 322,
     "name": "Cosmic Power",
     "type": 15,
@@ -3566,7 +3566,7 @@
     "cat": 2,
     "properties": []
   },
-  "323": {
+  {
     "moveId": 323,
     "name": "Water Spout",
     "type": 12,
@@ -3576,7 +3576,7 @@
     "cat": 1,
     "properties": []
   },
-  "324": {
+  {
     "moveId": 324,
     "name": "Signal Beam",
     "type": 7,
@@ -3586,7 +3586,7 @@
     "cat": 1,
     "properties": []
   },
-  "325": {
+  {
     "moveId": 325,
     "name": "Shadow Punch",
     "type": 8,
@@ -3599,7 +3599,7 @@
       "punching"
     ]
   },
-  "326": {
+  {
     "moveId": 326,
     "name": "Extrasensory",
     "type": 15,
@@ -3609,7 +3609,7 @@
     "cat": 1,
     "properties": []
   },
-  "327": {
+  {
     "moveId": 327,
     "name": "Sky Uppercut",
     "type": 2,
@@ -3622,7 +3622,7 @@
       "punching"
     ]
   },
-  "328": {
+  {
     "moveId": 328,
     "name": "Sand Tomb",
     "type": 5,
@@ -3632,7 +3632,7 @@
     "cat": 0,
     "properties": []
   },
-  "329": {
+  {
     "moveId": 329,
     "name": "Sheer Cold",
     "type": 16,
@@ -3642,7 +3642,7 @@
     "cat": 1,
     "properties": []
   },
-  "330": {
+  {
     "moveId": 330,
     "name": "Muddy Water",
     "type": 12,
@@ -3652,7 +3652,7 @@
     "cat": 1,
     "properties": []
   },
-  "331": {
+  {
     "moveId": 331,
     "name": "Bullet Seed",
     "type": 13,
@@ -3664,7 +3664,7 @@
       "ballistic"
     ]
   },
-  "332": {
+  {
     "moveId": 332,
     "name": "Aerial Ace",
     "type": 3,
@@ -3677,7 +3677,7 @@
       "slicing"
     ]
   },
-  "333": {
+  {
     "moveId": 333,
     "name": "Icicle Spear",
     "type": 16,
@@ -3687,7 +3687,7 @@
     "cat": 0,
     "properties": []
   },
-  "334": {
+  {
     "moveId": 334,
     "name": "Iron Defense",
     "type": 9,
@@ -3697,7 +3697,7 @@
     "cat": 2,
     "properties": []
   },
-  "335": {
+  {
     "moveId": 335,
     "name": "Block",
     "type": 1,
@@ -3707,7 +3707,7 @@
     "cat": 2,
     "properties": []
   },
-  "336": {
+  {
     "moveId": 336,
     "name": "Howl",
     "type": 1,
@@ -3719,7 +3719,7 @@
       "sound"
     ]
   },
-  "337": {
+  {
     "moveId": 337,
     "name": "Dragon Claw",
     "type": 17,
@@ -3731,7 +3731,7 @@
       "contact"
     ]
   },
-  "338": {
+  {
     "moveId": 338,
     "name": "Frenzy Plant",
     "type": 13,
@@ -3741,7 +3741,7 @@
     "cat": 1,
     "properties": []
   },
-  "339": {
+  {
     "moveId": 339,
     "name": "Bulk Up",
     "type": 2,
@@ -3751,7 +3751,7 @@
     "cat": 2,
     "properties": []
   },
-  "340": {
+  {
     "moveId": 340,
     "name": "Bounce",
     "type": 3,
@@ -3763,7 +3763,7 @@
       "contact"
     ]
   },
-  "341": {
+  {
     "moveId": 341,
     "name": "Mud Shot",
     "type": 5,
@@ -3773,7 +3773,7 @@
     "cat": 1,
     "properties": []
   },
-  "342": {
+  {
     "moveId": 342,
     "name": "Poison Tail",
     "type": 4,
@@ -3785,7 +3785,7 @@
       "contact"
     ]
   },
-  "343": {
+  {
     "moveId": 343,
     "name": "Covet",
     "type": 19,
@@ -3797,7 +3797,7 @@
       "contact"
     ]
   },
-  "344": {
+  {
     "moveId": 344,
     "name": "Volt Tackle",
     "type": 14,
@@ -3809,7 +3809,7 @@
       "contact"
     ]
   },
-  "345": {
+  {
     "moveId": 345,
     "name": "Magical Leaf",
     "type": 13,
@@ -3819,7 +3819,7 @@
     "cat": 1,
     "properties": []
   },
-  "346": {
+  {
     "moveId": 346,
     "name": "Water Sport",
     "type": 12,
@@ -3829,7 +3829,7 @@
     "cat": 2,
     "properties": []
   },
-  "347": {
+  {
     "moveId": 347,
     "name": "Calm Mind",
     "type": 15,
@@ -3839,7 +3839,7 @@
     "cat": 2,
     "properties": []
   },
-  "348": {
+  {
     "moveId": 348,
     "name": "Leaf Blade",
     "type": 13,
@@ -3852,7 +3852,7 @@
       "slicing"
     ]
   },
-  "349": {
+  {
     "moveId": 349,
     "name": "Dragon Dance",
     "type": 17,
@@ -3864,7 +3864,7 @@
       "dance"
     ]
   },
-  "350": {
+  {
     "moveId": 350,
     "name": "Rock Blast",
     "type": 6,
@@ -3876,7 +3876,7 @@
       "ballistic"
     ]
   },
-  "351": {
+  {
     "moveId": 351,
     "name": "Shock Wave",
     "type": 14,
@@ -3886,7 +3886,7 @@
     "cat": 1,
     "properties": []
   },
-  "352": {
+  {
     "moveId": 352,
     "name": "Water Pulse",
     "type": 12,
@@ -3898,7 +3898,7 @@
       "pulse"
     ]
   },
-  "353": {
+  {
     "moveId": 353,
     "name": "Doom Desire",
     "type": 9,
@@ -3908,7 +3908,7 @@
     "cat": 1,
     "properties": []
   },
-  "354": {
+  {
     "moveId": 354,
     "name": "Psycho Boost",
     "type": 15,
@@ -3918,7 +3918,7 @@
     "cat": 1,
     "properties": []
   },
-  "355": {
+  {
     "moveId": 355,
     "name": "Roost",
     "type": 3,
@@ -3930,7 +3930,7 @@
       "healing"
     ]
   },
-  "356": {
+  {
     "moveId": 356,
     "name": "Gravity",
     "type": 15,
@@ -3940,7 +3940,7 @@
     "cat": 2,
     "properties": []
   },
-  "357": {
+  {
     "moveId": 357,
     "name": "Miracle Eye",
     "type": 15,
@@ -3950,7 +3950,7 @@
     "cat": 2,
     "properties": []
   },
-  "358": {
+  {
     "moveId": 358,
     "name": "Wake-Up Slap",
     "type": 2,
@@ -3962,7 +3962,7 @@
       "contact"
     ]
   },
-  "359": {
+  {
     "moveId": 359,
     "name": "Hammer Arm",
     "type": 2,
@@ -3975,7 +3975,7 @@
       "punching"
     ]
   },
-  "360": {
+  {
     "moveId": 360,
     "name": "Gyro Ball",
     "type": 9,
@@ -3988,7 +3988,7 @@
       "ballistic"
     ]
   },
-  "361": {
+  {
     "moveId": 361,
     "name": "Healing Wish",
     "type": 15,
@@ -4000,7 +4000,7 @@
       "healing"
     ]
   },
-  "362": {
+  {
     "moveId": 362,
     "name": "Brine",
     "type": 12,
@@ -4010,7 +4010,7 @@
     "cat": 1,
     "properties": []
   },
-  "363": {
+  {
     "moveId": 363,
     "name": "Natural Gift",
     "type": 1,
@@ -4020,7 +4020,7 @@
     "cat": 0,
     "properties": []
   },
-  "364": {
+  {
     "moveId": 364,
     "name": "Feint",
     "type": 1,
@@ -4030,7 +4030,7 @@
     "cat": 0,
     "properties": []
   },
-  "365": {
+  {
     "moveId": 365,
     "name": "Pluck",
     "type": 3,
@@ -4042,7 +4042,7 @@
       "contact"
     ]
   },
-  "366": {
+  {
     "moveId": 366,
     "name": "Tailwind",
     "type": 3,
@@ -4054,7 +4054,7 @@
       "wind"
     ]
   },
-  "367": {
+  {
     "moveId": 367,
     "name": "Acupressure",
     "type": 1,
@@ -4064,7 +4064,7 @@
     "cat": 2,
     "properties": []
   },
-  "368": {
+  {
     "moveId": 368,
     "name": "Metal Burst",
     "type": 9,
@@ -4074,7 +4074,7 @@
     "cat": 0,
     "properties": []
   },
-  "369": {
+  {
     "moveId": 369,
     "name": "U-turn",
     "type": 7,
@@ -4086,7 +4086,7 @@
       "contact"
     ]
   },
-  "370": {
+  {
     "moveId": 370,
     "name": "Close Combat",
     "type": 2,
@@ -4098,7 +4098,7 @@
       "contact"
     ]
   },
-  "371": {
+  {
     "moveId": 371,
     "name": "Payback",
     "type": 18,
@@ -4110,7 +4110,7 @@
       "contact"
     ]
   },
-  "372": {
+  {
     "moveId": 372,
     "name": "Assurance",
     "type": 18,
@@ -4122,7 +4122,7 @@
       "contact"
     ]
   },
-  "373": {
+  {
     "moveId": 373,
     "name": "Embargo",
     "type": 18,
@@ -4132,7 +4132,7 @@
     "cat": 2,
     "properties": []
   },
-  "374": {
+  {
     "moveId": 374,
     "name": "Fling",
     "type": 18,
@@ -4142,7 +4142,7 @@
     "cat": 0,
     "properties": []
   },
-  "375": {
+  {
     "moveId": 375,
     "name": "Psycho Shift",
     "type": 15,
@@ -4152,7 +4152,7 @@
     "cat": 2,
     "properties": []
   },
-  "376": {
+  {
     "moveId": 376,
     "name": "Trump Card",
     "type": 1,
@@ -4164,7 +4164,7 @@
       "contact"
     ]
   },
-  "377": {
+  {
     "moveId": 377,
     "name": "Heal Block",
     "type": 15,
@@ -4174,7 +4174,7 @@
     "cat": 2,
     "properties": []
   },
-  "378": {
+  {
     "moveId": 378,
     "name": "Wring Out",
     "type": 1,
@@ -4186,7 +4186,7 @@
       "contact"
     ]
   },
-  "379": {
+  {
     "moveId": 379,
     "name": "Power Trick",
     "type": 15,
@@ -4196,7 +4196,7 @@
     "cat": 2,
     "properties": []
   },
-  "380": {
+  {
     "moveId": 380,
     "name": "Gastro Acid",
     "type": 4,
@@ -4206,7 +4206,7 @@
     "cat": 2,
     "properties": []
   },
-  "381": {
+  {
     "moveId": 381,
     "name": "Lucky Chant",
     "type": 1,
@@ -4216,7 +4216,7 @@
     "cat": 2,
     "properties": []
   },
-  "382": {
+  {
     "moveId": 382,
     "name": "Me First",
     "type": 1,
@@ -4226,7 +4226,7 @@
     "cat": 2,
     "properties": []
   },
-  "383": {
+  {
     "moveId": 383,
     "name": "Copycat",
     "type": 1,
@@ -4236,7 +4236,7 @@
     "cat": 2,
     "properties": []
   },
-  "384": {
+  {
     "moveId": 384,
     "name": "Power Swap",
     "type": 15,
@@ -4246,7 +4246,7 @@
     "cat": 2,
     "properties": []
   },
-  "385": {
+  {
     "moveId": 385,
     "name": "Guard Swap",
     "type": 15,
@@ -4256,7 +4256,7 @@
     "cat": 2,
     "properties": []
   },
-  "386": {
+  {
     "moveId": 386,
     "name": "Punishment",
     "type": 18,
@@ -4268,7 +4268,7 @@
       "contact"
     ]
   },
-  "387": {
+  {
     "moveId": 387,
     "name": "Last Resort",
     "type": 1,
@@ -4280,7 +4280,7 @@
       "contact"
     ]
   },
-  "388": {
+  {
     "moveId": 388,
     "name": "Worry Seed",
     "type": 13,
@@ -4290,7 +4290,7 @@
     "cat": 2,
     "properties": []
   },
-  "389": {
+  {
     "moveId": 389,
     "name": "Sucker Punch",
     "type": 18,
@@ -4302,7 +4302,7 @@
       "contact"
     ]
   },
-  "390": {
+  {
     "moveId": 390,
     "name": "Toxic Spikes",
     "type": 4,
@@ -4312,7 +4312,7 @@
     "cat": 2,
     "properties": []
   },
-  "391": {
+  {
     "moveId": 391,
     "name": "Heart Swap",
     "type": 15,
@@ -4322,7 +4322,7 @@
     "cat": 2,
     "properties": []
   },
-  "392": {
+  {
     "moveId": 392,
     "name": "Aqua Ring",
     "type": 12,
@@ -4332,7 +4332,7 @@
     "cat": 2,
     "properties": []
   },
-  "393": {
+  {
     "moveId": 393,
     "name": "Magnet Rise",
     "type": 14,
@@ -4342,7 +4342,7 @@
     "cat": 2,
     "properties": []
   },
-  "394": {
+  {
     "moveId": 394,
     "name": "Flare Blitz",
     "type": 11,
@@ -4354,7 +4354,7 @@
       "contact"
     ]
   },
-  "395": {
+  {
     "moveId": 395,
     "name": "Force Palm",
     "type": 2,
@@ -4366,7 +4366,7 @@
       "contact"
     ]
   },
-  "396": {
+  {
     "moveId": 396,
     "name": "Aura Sphere",
     "type": 2,
@@ -4379,7 +4379,7 @@
       "ballistic"
     ]
   },
-  "397": {
+  {
     "moveId": 397,
     "name": "Rock Polish",
     "type": 6,
@@ -4389,7 +4389,7 @@
     "cat": 2,
     "properties": []
   },
-  "398": {
+  {
     "moveId": 398,
     "name": "Poison Jab",
     "type": 4,
@@ -4401,7 +4401,7 @@
       "contact"
     ]
   },
-  "399": {
+  {
     "moveId": 399,
     "name": "Dark Pulse",
     "type": 18,
@@ -4413,7 +4413,7 @@
       "pulse"
     ]
   },
-  "400": {
+  {
     "moveId": 400,
     "name": "Night Slash",
     "type": 18,
@@ -4426,7 +4426,7 @@
       "slicing"
     ]
   },
-  "401": {
+  {
     "moveId": 401,
     "name": "Aqua Tail",
     "type": 12,
@@ -4438,7 +4438,7 @@
       "contact"
     ]
   },
-  "402": {
+  {
     "moveId": 402,
     "name": "Seed Bomb",
     "type": 13,
@@ -4450,7 +4450,7 @@
       "ballistic"
     ]
   },
-  "403": {
+  {
     "moveId": 403,
     "name": "Air Slash",
     "type": 3,
@@ -4462,7 +4462,7 @@
       "slicing"
     ]
   },
-  "404": {
+  {
     "moveId": 404,
     "name": "X-Scissor",
     "type": 7,
@@ -4475,7 +4475,7 @@
       "slicing"
     ]
   },
-  "405": {
+  {
     "moveId": 405,
     "name": "Bug Buzz",
     "type": 7,
@@ -4487,7 +4487,7 @@
       "sound"
     ]
   },
-  "406": {
+  {
     "moveId": 406,
     "name": "Dragon Pulse",
     "type": 17,
@@ -4499,7 +4499,7 @@
       "pulse"
     ]
   },
-  "407": {
+  {
     "moveId": 407,
     "name": "Dragon Rush",
     "type": 17,
@@ -4511,7 +4511,7 @@
       "contact"
     ]
   },
-  "408": {
+  {
     "moveId": 408,
     "name": "Power Gem",
     "type": 6,
@@ -4521,7 +4521,7 @@
     "cat": 1,
     "properties": []
   },
-  "409": {
+  {
     "moveId": 409,
     "name": "Drain Punch",
     "type": 2,
@@ -4535,7 +4535,7 @@
       "healing"
     ]
   },
-  "410": {
+  {
     "moveId": 410,
     "name": "Vacuum Wave",
     "type": 2,
@@ -4545,7 +4545,7 @@
     "cat": 1,
     "properties": []
   },
-  "411": {
+  {
     "moveId": 411,
     "name": "Focus Blast",
     "type": 2,
@@ -4557,7 +4557,7 @@
       "ballistic"
     ]
   },
-  "412": {
+  {
     "moveId": 412,
     "name": "Energy Ball",
     "type": 13,
@@ -4569,7 +4569,7 @@
       "ballistic"
     ]
   },
-  "413": {
+  {
     "moveId": 413,
     "name": "Brave Bird",
     "type": 3,
@@ -4581,7 +4581,7 @@
       "contact"
     ]
   },
-  "414": {
+  {
     "moveId": 414,
     "name": "Earth Power",
     "type": 5,
@@ -4591,7 +4591,7 @@
     "cat": 1,
     "properties": []
   },
-  "415": {
+  {
     "moveId": 415,
     "name": "Switcheroo",
     "type": 18,
@@ -4601,7 +4601,7 @@
     "cat": 2,
     "properties": []
   },
-  "416": {
+  {
     "moveId": 416,
     "name": "Giga Impact",
     "type": 1,
@@ -4613,7 +4613,7 @@
       "contact"
     ]
   },
-  "417": {
+  {
     "moveId": 417,
     "name": "Nasty Plot",
     "type": 18,
@@ -4623,7 +4623,7 @@
     "cat": 2,
     "properties": []
   },
-  "418": {
+  {
     "moveId": 418,
     "name": "Bullet Punch",
     "type": 9,
@@ -4636,7 +4636,7 @@
       "punching"
     ]
   },
-  "419": {
+  {
     "moveId": 419,
     "name": "Avalanche",
     "type": 16,
@@ -4648,7 +4648,7 @@
       "contact"
     ]
   },
-  "420": {
+  {
     "moveId": 420,
     "name": "Ice Shard",
     "type": 16,
@@ -4658,7 +4658,7 @@
     "cat": 0,
     "properties": []
   },
-  "421": {
+  {
     "moveId": 421,
     "name": "Shadow Claw",
     "type": 8,
@@ -4671,7 +4671,7 @@
       "slicing"
     ]
   },
-  "422": {
+  {
     "moveId": 422,
     "name": "Thunder Fang",
     "type": 14,
@@ -4684,7 +4684,7 @@
       "biting"
     ]
   },
-  "423": {
+  {
     "moveId": 423,
     "name": "Ice Fang",
     "type": 16,
@@ -4697,7 +4697,7 @@
       "biting"
     ]
   },
-  "424": {
+  {
     "moveId": 424,
     "name": "Fire Fang",
     "type": 11,
@@ -4710,7 +4710,7 @@
       "biting"
     ]
   },
-  "425": {
+  {
     "moveId": 425,
     "name": "Shadow Sneak",
     "type": 8,
@@ -4722,7 +4722,7 @@
       "contact"
     ]
   },
-  "426": {
+  {
     "moveId": 426,
     "name": "Mud Bomb",
     "type": 5,
@@ -4734,7 +4734,7 @@
       "ballistic"
     ]
   },
-  "427": {
+  {
     "moveId": 427,
     "name": "Psycho Cut",
     "type": 15,
@@ -4746,7 +4746,7 @@
       "slicing"
     ]
   },
-  "428": {
+  {
     "moveId": 428,
     "name": "Zen Headbutt",
     "type": 15,
@@ -4758,7 +4758,7 @@
       "contact"
     ]
   },
-  "429": {
+  {
     "moveId": 429,
     "name": "Mirror Shot",
     "type": 9,
@@ -4768,7 +4768,7 @@
     "cat": 1,
     "properties": []
   },
-  "430": {
+  {
     "moveId": 430,
     "name": "Flash Cannon",
     "type": 9,
@@ -4780,7 +4780,7 @@
       "ballistic"
     ]
   },
-  "431": {
+  {
     "moveId": 431,
     "name": "Rock Climb",
     "type": 1,
@@ -4792,7 +4792,7 @@
       "contact"
     ]
   },
-  "432": {
+  {
     "moveId": 432,
     "name": "Defog",
     "type": 3,
@@ -4802,7 +4802,7 @@
     "cat": 2,
     "properties": []
   },
-  "433": {
+  {
     "moveId": 433,
     "name": "Trick Room",
     "type": 15,
@@ -4812,7 +4812,7 @@
     "cat": 2,
     "properties": []
   },
-  "434": {
+  {
     "moveId": 434,
     "name": "Draco Meteor",
     "type": 17,
@@ -4822,7 +4822,7 @@
     "cat": 1,
     "properties": []
   },
-  "435": {
+  {
     "moveId": 435,
     "name": "Discharge",
     "type": 14,
@@ -4832,7 +4832,7 @@
     "cat": 1,
     "properties": []
   },
-  "436": {
+  {
     "moveId": 436,
     "name": "Lava Plume",
     "type": 11,
@@ -4842,7 +4842,7 @@
     "cat": 1,
     "properties": []
   },
-  "437": {
+  {
     "moveId": 437,
     "name": "Leaf Storm",
     "type": 13,
@@ -4852,7 +4852,7 @@
     "cat": 1,
     "properties": []
   },
-  "438": {
+  {
     "moveId": 438,
     "name": "Power Whip",
     "type": 13,
@@ -4864,7 +4864,7 @@
       "contact"
     ]
   },
-  "439": {
+  {
     "moveId": 439,
     "name": "Rock Wrecker",
     "type": 6,
@@ -4876,7 +4876,7 @@
       "ballistic"
     ]
   },
-  "440": {
+  {
     "moveId": 440,
     "name": "Cross Poison",
     "type": 4,
@@ -4889,7 +4889,7 @@
       "slicing"
     ]
   },
-  "441": {
+  {
     "moveId": 441,
     "name": "Gunk Shot",
     "type": 4,
@@ -4899,7 +4899,7 @@
     "cat": 0,
     "properties": []
   },
-  "442": {
+  {
     "moveId": 442,
     "name": "Iron Head",
     "type": 9,
@@ -4911,7 +4911,7 @@
       "contact"
     ]
   },
-  "443": {
+  {
     "moveId": 443,
     "name": "Magnet Bomb",
     "type": 9,
@@ -4923,7 +4923,7 @@
       "ballistic"
     ]
   },
-  "444": {
+  {
     "moveId": 444,
     "name": "Stone Edge",
     "type": 6,
@@ -4933,7 +4933,7 @@
     "cat": 0,
     "properties": []
   },
-  "445": {
+  {
     "moveId": 445,
     "name": "Captivate",
     "type": 1,
@@ -4943,7 +4943,7 @@
     "cat": 2,
     "properties": []
   },
-  "446": {
+  {
     "moveId": 446,
     "name": "Stealth Rock",
     "type": 6,
@@ -4953,7 +4953,7 @@
     "cat": 2,
     "properties": []
   },
-  "447": {
+  {
     "moveId": 447,
     "name": "Grass Knot",
     "type": 13,
@@ -4965,7 +4965,7 @@
       "contact"
     ]
   },
-  "448": {
+  {
     "moveId": 448,
     "name": "Chatter",
     "type": 3,
@@ -4977,7 +4977,7 @@
       "sound"
     ]
   },
-  "449": {
+  {
     "moveId": 449,
     "name": "Judgment",
     "type": 1,
@@ -4987,7 +4987,7 @@
     "cat": 1,
     "properties": []
   },
-  "450": {
+  {
     "moveId": 450,
     "name": "Bug Bite",
     "type": 7,
@@ -4999,7 +4999,7 @@
       "contact"
     ]
   },
-  "451": {
+  {
     "moveId": 451,
     "name": "Charge Beam",
     "type": 14,
@@ -5009,7 +5009,7 @@
     "cat": 1,
     "properties": []
   },
-  "452": {
+  {
     "moveId": 452,
     "name": "Wood Hammer",
     "type": 13,
@@ -5021,7 +5021,7 @@
       "contact"
     ]
   },
-  "453": {
+  {
     "moveId": 453,
     "name": "Aqua Jet",
     "type": 12,
@@ -5033,7 +5033,7 @@
       "contact"
     ]
   },
-  "454": {
+  {
     "moveId": 454,
     "name": "Attack Order",
     "type": 7,
@@ -5043,7 +5043,7 @@
     "cat": 0,
     "properties": []
   },
-  "455": {
+  {
     "moveId": 455,
     "name": "Defend Order",
     "type": 7,
@@ -5053,7 +5053,7 @@
     "cat": 2,
     "properties": []
   },
-  "456": {
+  {
     "moveId": 456,
     "name": "Heal Order",
     "type": 7,
@@ -5065,7 +5065,7 @@
       "healing"
     ]
   },
-  "457": {
+  {
     "moveId": 457,
     "name": "Head Smash",
     "type": 6,
@@ -5077,7 +5077,7 @@
       "contact"
     ]
   },
-  "458": {
+  {
     "moveId": 458,
     "name": "Double Hit",
     "type": 1,
@@ -5089,7 +5089,7 @@
       "contact"
     ]
   },
-  "459": {
+  {
     "moveId": 459,
     "name": "Roar of Time",
     "type": 17,
@@ -5099,7 +5099,7 @@
     "cat": 1,
     "properties": []
   },
-  "460": {
+  {
     "moveId": 460,
     "name": "Spacial Rend",
     "type": 17,
@@ -5109,7 +5109,7 @@
     "cat": 1,
     "properties": []
   },
-  "461": {
+  {
     "moveId": 461,
     "name": "Lunar Dance",
     "type": 15,
@@ -5122,7 +5122,7 @@
       "healing"
     ]
   },
-  "462": {
+  {
     "moveId": 462,
     "name": "Crush Grip",
     "type": 1,
@@ -5134,7 +5134,7 @@
       "contact"
     ]
   },
-  "463": {
+  {
     "moveId": 463,
     "name": "Magma Storm",
     "type": 11,
@@ -5144,7 +5144,7 @@
     "cat": 1,
     "properties": []
   },
-  "464": {
+  {
     "moveId": 464,
     "name": "Dark Void",
     "type": 18,
@@ -5154,7 +5154,7 @@
     "cat": 2,
     "properties": []
   },
-  "465": {
+  {
     "moveId": 465,
     "name": "Seed Flare",
     "type": 13,
@@ -5164,7 +5164,7 @@
     "cat": 1,
     "properties": []
   },
-  "466": {
+  {
     "moveId": 466,
     "name": "Ominous Wind",
     "type": 8,
@@ -5176,7 +5176,7 @@
       "wind"
     ]
   },
-  "467": {
+  {
     "moveId": 467,
     "name": "Shadow Force",
     "type": 8,
@@ -5188,7 +5188,7 @@
       "contact"
     ]
   },
-  "468": {
+  {
     "moveId": 468,
     "name": "Hone Claws",
     "type": 18,
@@ -5198,7 +5198,7 @@
     "cat": 2,
     "properties": []
   },
-  "469": {
+  {
     "moveId": 469,
     "name": "Wide Guard",
     "type": 6,
@@ -5208,7 +5208,7 @@
     "cat": 2,
     "properties": []
   },
-  "470": {
+  {
     "moveId": 470,
     "name": "Guard Split",
     "type": 15,
@@ -5218,7 +5218,7 @@
     "cat": 2,
     "properties": []
   },
-  "471": {
+  {
     "moveId": 471,
     "name": "Power Split",
     "type": 15,
@@ -5228,7 +5228,7 @@
     "cat": 2,
     "properties": []
   },
-  "472": {
+  {
     "moveId": 472,
     "name": "Wonder Room",
     "type": 15,
@@ -5238,7 +5238,7 @@
     "cat": 2,
     "properties": []
   },
-  "473": {
+  {
     "moveId": 473,
     "name": "Psyshock",
     "type": 15,
@@ -5248,7 +5248,7 @@
     "cat": 1,
     "properties": []
   },
-  "474": {
+  {
     "moveId": 474,
     "name": "Venoshock",
     "type": 4,
@@ -5258,7 +5258,7 @@
     "cat": 1,
     "properties": []
   },
-  "475": {
+  {
     "moveId": 475,
     "name": "Autotomize",
     "type": 9,
@@ -5268,7 +5268,7 @@
     "cat": 2,
     "properties": []
   },
-  "476": {
+  {
     "moveId": 476,
     "name": "Rage Powder",
     "type": 7,
@@ -5280,7 +5280,7 @@
       "powder"
     ]
   },
-  "477": {
+  {
     "moveId": 477,
     "name": "Telekinesis",
     "type": 15,
@@ -5290,7 +5290,7 @@
     "cat": 2,
     "properties": []
   },
-  "478": {
+  {
     "moveId": 478,
     "name": "Magic Room",
     "type": 15,
@@ -5300,7 +5300,7 @@
     "cat": 2,
     "properties": []
   },
-  "479": {
+  {
     "moveId": 479,
     "name": "Smack Down",
     "type": 6,
@@ -5310,7 +5310,7 @@
     "cat": 0,
     "properties": []
   },
-  "480": {
+  {
     "moveId": 480,
     "name": "Storm Throw",
     "type": 2,
@@ -5322,7 +5322,7 @@
       "contact"
     ]
   },
-  "481": {
+  {
     "moveId": 481,
     "name": "Flame Burst",
     "type": 11,
@@ -5332,7 +5332,7 @@
     "cat": 1,
     "properties": []
   },
-  "482": {
+  {
     "moveId": 482,
     "name": "Sludge Wave",
     "type": 4,
@@ -5342,7 +5342,7 @@
     "cat": 1,
     "properties": []
   },
-  "483": {
+  {
     "moveId": 483,
     "name": "Quiver Dance",
     "type": 7,
@@ -5354,7 +5354,7 @@
       "dance"
     ]
   },
-  "484": {
+  {
     "moveId": 484,
     "name": "Heavy Slam",
     "type": 9,
@@ -5366,7 +5366,7 @@
       "contact"
     ]
   },
-  "485": {
+  {
     "moveId": 485,
     "name": "Synchronoise",
     "type": 15,
@@ -5376,7 +5376,7 @@
     "cat": 1,
     "properties": []
   },
-  "486": {
+  {
     "moveId": 486,
     "name": "Electro Ball",
     "type": 14,
@@ -5388,7 +5388,7 @@
       "ballistic"
     ]
   },
-  "487": {
+  {
     "moveId": 487,
     "name": "Soak",
     "type": 12,
@@ -5398,7 +5398,7 @@
     "cat": 2,
     "properties": []
   },
-  "488": {
+  {
     "moveId": 488,
     "name": "Flame Charge",
     "type": 11,
@@ -5410,7 +5410,7 @@
       "contact"
     ]
   },
-  "489": {
+  {
     "moveId": 489,
     "name": "Coil",
     "type": 4,
@@ -5420,7 +5420,7 @@
     "cat": 2,
     "properties": []
   },
-  "490": {
+  {
     "moveId": 490,
     "name": "Low Sweep",
     "type": 2,
@@ -5433,7 +5433,7 @@
       "kicking"
     ]
   },
-  "491": {
+  {
     "moveId": 491,
     "name": "Acid Spray",
     "type": 4,
@@ -5445,7 +5445,7 @@
       "ballistic"
     ]
   },
-  "492": {
+  {
     "moveId": 492,
     "name": "Foul Play",
     "type": 18,
@@ -5457,7 +5457,7 @@
       "contact"
     ]
   },
-  "493": {
+  {
     "moveId": 493,
     "name": "Simple Beam",
     "type": 1,
@@ -5467,7 +5467,7 @@
     "cat": 2,
     "properties": []
   },
-  "494": {
+  {
     "moveId": 494,
     "name": "Entrainment",
     "type": 1,
@@ -5477,7 +5477,7 @@
     "cat": 2,
     "properties": []
   },
-  "495": {
+  {
     "moveId": 495,
     "name": "After You",
     "type": 1,
@@ -5487,7 +5487,7 @@
     "cat": 2,
     "properties": []
   },
-  "496": {
+  {
     "moveId": 496,
     "name": "Round",
     "type": 1,
@@ -5499,7 +5499,7 @@
       "sound"
     ]
   },
-  "497": {
+  {
     "moveId": 497,
     "name": "Echoed Voice",
     "type": 1,
@@ -5511,7 +5511,7 @@
       "sound"
     ]
   },
-  "498": {
+  {
     "moveId": 498,
     "name": "Chip Away",
     "type": 1,
@@ -5523,7 +5523,7 @@
       "contact"
     ]
   },
-  "499": {
+  {
     "moveId": 499,
     "name": "Clear Smog",
     "type": 4,
@@ -5533,7 +5533,7 @@
     "cat": 1,
     "properties": []
   },
-  "500": {
+  {
     "moveId": 500,
     "name": "Stored Power",
     "type": 15,
@@ -5543,7 +5543,7 @@
     "cat": 1,
     "properties": []
   },
-  "501": {
+  {
     "moveId": 501,
     "name": "Quick Guard",
     "type": 2,
@@ -5553,7 +5553,7 @@
     "cat": 2,
     "properties": []
   },
-  "502": {
+  {
     "moveId": 502,
     "name": "Ally Switch",
     "type": 15,
@@ -5563,7 +5563,7 @@
     "cat": 2,
     "properties": []
   },
-  "503": {
+  {
     "moveId": 503,
     "name": "Scald",
     "type": 12,
@@ -5573,7 +5573,7 @@
     "cat": 1,
     "properties": []
   },
-  "504": {
+  {
     "moveId": 504,
     "name": "Shell Smash",
     "type": 1,
@@ -5583,7 +5583,7 @@
     "cat": 2,
     "properties": []
   },
-  "505": {
+  {
     "moveId": 505,
     "name": "Heal Pulse",
     "type": 15,
@@ -5596,7 +5596,7 @@
       "healing"
     ]
   },
-  "506": {
+  {
     "moveId": 506,
     "name": "Hex",
     "type": 8,
@@ -5606,7 +5606,7 @@
     "cat": 1,
     "properties": []
   },
-  "507": {
+  {
     "moveId": 507,
     "name": "Sky Drop",
     "type": 3,
@@ -5618,7 +5618,7 @@
       "contact"
     ]
   },
-  "508": {
+  {
     "moveId": 508,
     "name": "Shift Gear",
     "type": 9,
@@ -5628,7 +5628,7 @@
     "cat": 2,
     "properties": []
   },
-  "509": {
+  {
     "moveId": 509,
     "name": "Circle Throw",
     "type": 2,
@@ -5640,7 +5640,7 @@
       "contact"
     ]
   },
-  "510": {
+  {
     "moveId": 510,
     "name": "Incinerate",
     "type": 11,
@@ -5650,7 +5650,7 @@
     "cat": 1,
     "properties": []
   },
-  "511": {
+  {
     "moveId": 511,
     "name": "Quash",
     "type": 18,
@@ -5660,7 +5660,7 @@
     "cat": 2,
     "properties": []
   },
-  "512": {
+  {
     "moveId": 512,
     "name": "Acrobatics",
     "type": 3,
@@ -5672,7 +5672,7 @@
       "contact"
     ]
   },
-  "513": {
+  {
     "moveId": 513,
     "name": "Reflect Type",
     "type": 1,
@@ -5682,7 +5682,7 @@
     "cat": 2,
     "properties": []
   },
-  "514": {
+  {
     "moveId": 514,
     "name": "Retaliate",
     "type": 1,
@@ -5694,7 +5694,7 @@
       "contact"
     ]
   },
-  "515": {
+  {
     "moveId": 515,
     "name": "Final Gambit",
     "type": 2,
@@ -5704,7 +5704,7 @@
     "cat": 1,
     "properties": []
   },
-  "516": {
+  {
     "moveId": 516,
     "name": "Bestow",
     "type": 1,
@@ -5714,7 +5714,7 @@
     "cat": 2,
     "properties": []
   },
-  "517": {
+  {
     "moveId": 517,
     "name": "Inferno",
     "type": 11,
@@ -5724,7 +5724,7 @@
     "cat": 1,
     "properties": []
   },
-  "518": {
+  {
     "moveId": 518,
     "name": "Water Pledge",
     "type": 12,
@@ -5734,7 +5734,7 @@
     "cat": 1,
     "properties": []
   },
-  "519": {
+  {
     "moveId": 519,
     "name": "Fire Pledge",
     "type": 11,
@@ -5744,7 +5744,7 @@
     "cat": 1,
     "properties": []
   },
-  "520": {
+  {
     "moveId": 520,
     "name": "Grass Pledge",
     "type": 13,
@@ -5754,7 +5754,7 @@
     "cat": 1,
     "properties": []
   },
-  "521": {
+  {
     "moveId": 521,
     "name": "Volt Switch",
     "type": 14,
@@ -5764,7 +5764,7 @@
     "cat": 1,
     "properties": []
   },
-  "522": {
+  {
     "moveId": 522,
     "name": "Struggle Bug",
     "type": 7,
@@ -5774,7 +5774,7 @@
     "cat": 1,
     "properties": []
   },
-  "523": {
+  {
     "moveId": 523,
     "name": "Bulldoze",
     "type": 5,
@@ -5784,7 +5784,7 @@
     "cat": 0,
     "properties": []
   },
-  "524": {
+  {
     "moveId": 524,
     "name": "Frost Breath",
     "type": 16,
@@ -5794,7 +5794,7 @@
     "cat": 1,
     "properties": []
   },
-  "525": {
+  {
     "moveId": 525,
     "name": "Dragon Tail",
     "type": 17,
@@ -5806,7 +5806,7 @@
       "contact"
     ]
   },
-  "526": {
+  {
     "moveId": 526,
     "name": "Work Up",
     "type": 1,
@@ -5816,7 +5816,7 @@
     "cat": 2,
     "properties": []
   },
-  "527": {
+  {
     "moveId": 527,
     "name": "Electroweb",
     "type": 14,
@@ -5826,7 +5826,7 @@
     "cat": 1,
     "properties": []
   },
-  "528": {
+  {
     "moveId": 528,
     "name": "Wild Charge",
     "type": 14,
@@ -5838,7 +5838,7 @@
       "contact"
     ]
   },
-  "529": {
+  {
     "moveId": 529,
     "name": "Drill Run",
     "type": 5,
@@ -5850,7 +5850,7 @@
       "contact"
     ]
   },
-  "530": {
+  {
     "moveId": 530,
     "name": "Dual Chop",
     "type": 17,
@@ -5862,7 +5862,7 @@
       "contact"
     ]
   },
-  "531": {
+  {
     "moveId": 531,
     "name": "Heart Stamp",
     "type": 15,
@@ -5874,7 +5874,7 @@
       "contact"
     ]
   },
-  "532": {
+  {
     "moveId": 532,
     "name": "Horn Leech",
     "type": 13,
@@ -5887,7 +5887,7 @@
       "healing"
     ]
   },
-  "533": {
+  {
     "moveId": 533,
     "name": "Sacred Sword",
     "type": 2,
@@ -5900,7 +5900,7 @@
       "slicing"
     ]
   },
-  "534": {
+  {
     "moveId": 534,
     "name": "Razor Shell",
     "type": 12,
@@ -5913,7 +5913,7 @@
       "slicing"
     ]
   },
-  "535": {
+  {
     "moveId": 535,
     "name": "Heat Crash",
     "type": 11,
@@ -5925,7 +5925,7 @@
       "contact"
     ]
   },
-  "536": {
+  {
     "moveId": 536,
     "name": "Leaf Tornado",
     "type": 13,
@@ -5935,7 +5935,7 @@
     "cat": 1,
     "properties": []
   },
-  "537": {
+  {
     "moveId": 537,
     "name": "Steamroller",
     "type": 7,
@@ -5947,7 +5947,7 @@
       "contact"
     ]
   },
-  "538": {
+  {
     "moveId": 538,
     "name": "Cotton Guard",
     "type": 13,
@@ -5957,7 +5957,7 @@
     "cat": 2,
     "properties": []
   },
-  "539": {
+  {
     "moveId": 539,
     "name": "Night Daze",
     "type": 18,
@@ -5967,7 +5967,7 @@
     "cat": 1,
     "properties": []
   },
-  "540": {
+  {
     "moveId": 540,
     "name": "Psystrike",
     "type": 15,
@@ -5977,7 +5977,7 @@
     "cat": 1,
     "properties": []
   },
-  "541": {
+  {
     "moveId": 541,
     "name": "Tail Slap",
     "type": 1,
@@ -5989,7 +5989,7 @@
       "contact"
     ]
   },
-  "542": {
+  {
     "moveId": 542,
     "name": "Hurricane",
     "type": 3,
@@ -6001,7 +6001,7 @@
       "wind"
     ]
   },
-  "543": {
+  {
     "moveId": 543,
     "name": "Head Charge",
     "type": 1,
@@ -6013,7 +6013,7 @@
       "contact"
     ]
   },
-  "544": {
+  {
     "moveId": 544,
     "name": "Gear Grind",
     "type": 9,
@@ -6025,7 +6025,7 @@
       "contact"
     ]
   },
-  "545": {
+  {
     "moveId": 545,
     "name": "Searing Shot",
     "type": 11,
@@ -6037,7 +6037,7 @@
       "ballistic"
     ]
   },
-  "546": {
+  {
     "moveId": 546,
     "name": "Techno Blast",
     "type": 1,
@@ -6047,7 +6047,7 @@
     "cat": 1,
     "properties": []
   },
-  "547": {
+  {
     "moveId": 547,
     "name": "Relic Song",
     "type": 1,
@@ -6059,7 +6059,7 @@
       "sound"
     ]
   },
-  "548": {
+  {
     "moveId": 548,
     "name": "Secret Sword",
     "type": 2,
@@ -6071,7 +6071,7 @@
       "slicing"
     ]
   },
-  "549": {
+  {
     "moveId": 549,
     "name": "Glaciate",
     "type": 16,
@@ -6081,7 +6081,7 @@
     "cat": 1,
     "properties": []
   },
-  "550": {
+  {
     "moveId": 550,
     "name": "Bolt Strike",
     "type": 14,
@@ -6093,7 +6093,7 @@
       "contact"
     ]
   },
-  "551": {
+  {
     "moveId": 551,
     "name": "Blue Flare",
     "type": 11,
@@ -6103,7 +6103,7 @@
     "cat": 1,
     "properties": []
   },
-  "552": {
+  {
     "moveId": 552,
     "name": "Fiery Dance",
     "type": 11,
@@ -6115,7 +6115,7 @@
       "dance"
     ]
   },
-  "553": {
+  {
     "moveId": 553,
     "name": "Freeze Shock",
     "type": 16,
@@ -6125,7 +6125,7 @@
     "cat": 0,
     "properties": []
   },
-  "554": {
+  {
     "moveId": 554,
     "name": "Ice Burn",
     "type": 16,
@@ -6135,7 +6135,7 @@
     "cat": 1,
     "properties": []
   },
-  "555": {
+  {
     "moveId": 555,
     "name": "Snarl",
     "type": 18,
@@ -6147,7 +6147,7 @@
       "sound"
     ]
   },
-  "556": {
+  {
     "moveId": 556,
     "name": "Icicle Crash",
     "type": 16,
@@ -6157,7 +6157,7 @@
     "cat": 0,
     "properties": []
   },
-  "557": {
+  {
     "moveId": 557,
     "name": "V-create",
     "type": 11,
@@ -6169,7 +6169,7 @@
       "contact"
     ]
   },
-  "558": {
+  {
     "moveId": 558,
     "name": "Fusion Flare",
     "type": 11,
@@ -6179,7 +6179,7 @@
     "cat": 1,
     "properties": []
   },
-  "559": {
+  {
     "moveId": 559,
     "name": "Fusion Bolt",
     "type": 14,
@@ -6189,7 +6189,7 @@
     "cat": 0,
     "properties": []
   },
-  "560": {
+  {
     "moveId": 560,
     "name": "Flying Press",
     "type": 2,
@@ -6201,7 +6201,7 @@
       "contact"
     ]
   },
-  "561": {
+  {
     "moveId": 561,
     "name": "Mat Block",
     "type": 2,
@@ -6211,7 +6211,7 @@
     "cat": 2,
     "properties": []
   },
-  "562": {
+  {
     "moveId": 562,
     "name": "Belch",
     "type": 4,
@@ -6221,7 +6221,7 @@
     "cat": 1,
     "properties": []
   },
-  "563": {
+  {
     "moveId": 563,
     "name": "Rototiller",
     "type": 5,
@@ -6231,7 +6231,7 @@
     "cat": 2,
     "properties": []
   },
-  "564": {
+  {
     "moveId": 564,
     "name": "Sticky Web",
     "type": 7,
@@ -6241,7 +6241,7 @@
     "cat": 2,
     "properties": []
   },
-  "565": {
+  {
     "moveId": 565,
     "name": "Fell Stinger",
     "type": 7,
@@ -6253,7 +6253,7 @@
       "contact"
     ]
   },
-  "566": {
+  {
     "moveId": 566,
     "name": "Phantom Force",
     "type": 8,
@@ -6265,7 +6265,7 @@
       "contact"
     ]
   },
-  "567": {
+  {
     "moveId": 567,
     "name": "Trick-or-Treat",
     "type": 8,
@@ -6275,7 +6275,7 @@
     "cat": 2,
     "properties": []
   },
-  "568": {
+  {
     "moveId": 568,
     "name": "Noble Roar",
     "type": 1,
@@ -6287,7 +6287,7 @@
       "sound"
     ]
   },
-  "569": {
+  {
     "moveId": 569,
     "name": "Ion Deluge",
     "type": 14,
@@ -6297,7 +6297,7 @@
     "cat": 2,
     "properties": []
   },
-  "570": {
+  {
     "moveId": 570,
     "name": "Parabolic Charge",
     "type": 14,
@@ -6309,7 +6309,7 @@
       "healing"
     ]
   },
-  "571": {
+  {
     "moveId": 571,
     "name": "Forest's Curse",
     "type": 13,
@@ -6319,7 +6319,7 @@
     "cat": 2,
     "properties": []
   },
-  "572": {
+  {
     "moveId": 572,
     "name": "Petal Blizzard",
     "type": 13,
@@ -6331,7 +6331,7 @@
       "wind"
     ]
   },
-  "573": {
+  {
     "moveId": 573,
     "name": "Freeze-Dry",
     "type": 16,
@@ -6341,7 +6341,7 @@
     "cat": 1,
     "properties": []
   },
-  "574": {
+  {
     "moveId": 574,
     "name": "Disarming Voice",
     "type": 19,
@@ -6353,7 +6353,7 @@
       "sound"
     ]
   },
-  "575": {
+  {
     "moveId": 575,
     "name": "Parting Shot",
     "type": 18,
@@ -6365,7 +6365,7 @@
       "sound"
     ]
   },
-  "576": {
+  {
     "moveId": 576,
     "name": "Topsy-Turvy",
     "type": 18,
@@ -6375,7 +6375,7 @@
     "cat": 2,
     "properties": []
   },
-  "577": {
+  {
     "moveId": 577,
     "name": "Draining Kiss",
     "type": 19,
@@ -6388,7 +6388,7 @@
       "healing"
     ]
   },
-  "578": {
+  {
     "moveId": 578,
     "name": "Crafty Shield",
     "type": 19,
@@ -6398,7 +6398,7 @@
     "cat": 2,
     "properties": []
   },
-  "579": {
+  {
     "moveId": 579,
     "name": "Flower Shield",
     "type": 19,
@@ -6408,7 +6408,7 @@
     "cat": 2,
     "properties": []
   },
-  "580": {
+  {
     "moveId": 580,
     "name": "Grassy Terrain",
     "type": 13,
@@ -6418,7 +6418,7 @@
     "cat": 2,
     "properties": []
   },
-  "581": {
+  {
     "moveId": 581,
     "name": "Misty Terrain",
     "type": 19,
@@ -6428,7 +6428,7 @@
     "cat": 2,
     "properties": []
   },
-  "582": {
+  {
     "moveId": 582,
     "name": "Electrify",
     "type": 14,
@@ -6438,7 +6438,7 @@
     "cat": 2,
     "properties": []
   },
-  "583": {
+  {
     "moveId": 583,
     "name": "Play Rough",
     "type": 19,
@@ -6450,7 +6450,7 @@
       "contact"
     ]
   },
-  "584": {
+  {
     "moveId": 584,
     "name": "Fairy Wind",
     "type": 19,
@@ -6462,7 +6462,7 @@
       "wind"
     ]
   },
-  "585": {
+  {
     "moveId": 585,
     "name": "Moonblast",
     "type": 19,
@@ -6472,7 +6472,7 @@
     "cat": 1,
     "properties": []
   },
-  "586": {
+  {
     "moveId": 586,
     "name": "Boomburst",
     "type": 1,
@@ -6484,7 +6484,7 @@
       "sound"
     ]
   },
-  "587": {
+  {
     "moveId": 587,
     "name": "Fairy Lock",
     "type": 19,
@@ -6494,7 +6494,7 @@
     "cat": 2,
     "properties": []
   },
-  "588": {
+  {
     "moveId": 588,
     "name": "King's Shield",
     "type": 9,
@@ -6504,7 +6504,7 @@
     "cat": 2,
     "properties": []
   },
-  "589": {
+  {
     "moveId": 589,
     "name": "Play Nice",
     "type": 1,
@@ -6514,7 +6514,7 @@
     "cat": 2,
     "properties": []
   },
-  "590": {
+  {
     "moveId": 590,
     "name": "Confide",
     "type": 1,
@@ -6526,7 +6526,7 @@
       "sound"
     ]
   },
-  "591": {
+  {
     "moveId": 591,
     "name": "Diamond Storm",
     "type": 6,
@@ -6536,7 +6536,7 @@
     "cat": 1,
     "properties": []
   },
-  "592": {
+  {
     "moveId": 592,
     "name": "Steam Eruption",
     "type": 12,
@@ -6546,7 +6546,7 @@
     "cat": 1,
     "properties": []
   },
-  "593": {
+  {
     "moveId": 593,
     "name": "Hyperspace Hole",
     "type": 15,
@@ -6556,7 +6556,7 @@
     "cat": 1,
     "properties": []
   },
-  "594": {
+  {
     "moveId": 594,
     "name": "Water Shuriken",
     "type": 12,
@@ -6566,7 +6566,7 @@
     "cat": 1,
     "properties": []
   },
-  "595": {
+  {
     "moveId": 595,
     "name": "Mystical Fire",
     "type": 11,
@@ -6576,7 +6576,7 @@
     "cat": 1,
     "properties": []
   },
-  "596": {
+  {
     "moveId": 596,
     "name": "Spiky Shield",
     "type": 13,
@@ -6586,7 +6586,7 @@
     "cat": 2,
     "properties": []
   },
-  "597": {
+  {
     "moveId": 597,
     "name": "Aromatic Mist",
     "type": 19,
@@ -6596,7 +6596,7 @@
     "cat": 2,
     "properties": []
   },
-  "598": {
+  {
     "moveId": 598,
     "name": "Eerie Impulse",
     "type": 14,
@@ -6606,7 +6606,7 @@
     "cat": 2,
     "properties": []
   },
-  "599": {
+  {
     "moveId": 599,
     "name": "Venom Drench",
     "type": 4,
@@ -6616,7 +6616,7 @@
     "cat": 2,
     "properties": []
   },
-  "600": {
+  {
     "moveId": 600,
     "name": "Powder",
     "type": 7,
@@ -6628,7 +6628,7 @@
       "powder"
     ]
   },
-  "601": {
+  {
     "moveId": 601,
     "name": "Geomancy",
     "type": 19,
@@ -6638,7 +6638,7 @@
     "cat": 2,
     "properties": []
   },
-  "602": {
+  {
     "moveId": 602,
     "name": "Magnetic Flux",
     "type": 14,
@@ -6648,7 +6648,7 @@
     "cat": 2,
     "properties": []
   },
-  "603": {
+  {
     "moveId": 603,
     "name": "Happy Hour",
     "type": 1,
@@ -6658,7 +6658,7 @@
     "cat": 2,
     "properties": []
   },
-  "604": {
+  {
     "moveId": 604,
     "name": "Electric Terrain",
     "type": 14,
@@ -6668,7 +6668,7 @@
     "cat": 2,
     "properties": []
   },
-  "605": {
+  {
     "moveId": 605,
     "name": "Dazzling Gleam",
     "type": 19,
@@ -6678,7 +6678,7 @@
     "cat": 1,
     "properties": []
   },
-  "606": {
+  {
     "moveId": 606,
     "name": "Celebrate",
     "type": 1,
@@ -6688,7 +6688,7 @@
     "cat": 2,
     "properties": []
   },
-  "607": {
+  {
     "moveId": 607,
     "name": "Hold Hands",
     "type": 1,
@@ -6698,7 +6698,7 @@
     "cat": 2,
     "properties": []
   },
-  "608": {
+  {
     "moveId": 608,
     "name": "Baby-Doll Eyes",
     "type": 19,
@@ -6708,7 +6708,7 @@
     "cat": 2,
     "properties": []
   },
-  "609": {
+  {
     "moveId": 609,
     "name": "Nuzzle",
     "type": 14,
@@ -6720,7 +6720,7 @@
       "contact"
     ]
   },
-  "610": {
+  {
     "moveId": 610,
     "name": "Hold Back",
     "type": 1,
@@ -6732,7 +6732,7 @@
       "contact"
     ]
   },
-  "611": {
+  {
     "moveId": 611,
     "name": "Infestation",
     "type": 7,
@@ -6744,7 +6744,7 @@
       "contact"
     ]
   },
-  "612": {
+  {
     "moveId": 612,
     "name": "Power-Up Punch",
     "type": 2,
@@ -6757,7 +6757,7 @@
       "punching"
     ]
   },
-  "613": {
+  {
     "moveId": 613,
     "name": "Oblivion Wing",
     "type": 3,
@@ -6769,7 +6769,7 @@
       "healing"
     ]
   },
-  "614": {
+  {
     "moveId": 614,
     "name": "Thousand Arrows",
     "type": 5,
@@ -6779,7 +6779,7 @@
     "cat": 0,
     "properties": []
   },
-  "615": {
+  {
     "moveId": 615,
     "name": "Thousand Waves",
     "type": 5,
@@ -6789,7 +6789,7 @@
     "cat": 0,
     "properties": []
   },
-  "616": {
+  {
     "moveId": 616,
     "name": "Land's Wrath",
     "type": 5,
@@ -6799,7 +6799,7 @@
     "cat": 0,
     "properties": []
   },
-  "617": {
+  {
     "moveId": 617,
     "name": "Light Of Ruin",
     "type": 19,
@@ -6809,7 +6809,7 @@
     "cat": 1,
     "properties": []
   },
-  "618": {
+  {
     "moveId": 618,
     "name": "Origin Pulse",
     "type": 12,
@@ -6821,7 +6821,7 @@
       "pulse"
     ]
   },
-  "619": {
+  {
     "moveId": 619,
     "name": "Precipice Blades",
     "type": 5,
@@ -6831,7 +6831,7 @@
     "cat": 0,
     "properties": []
   },
-  "620": {
+  {
     "moveId": 620,
     "name": "Dragon Ascent",
     "type": 3,
@@ -6843,7 +6843,7 @@
       "contact"
     ]
   },
-  "621": {
+  {
     "moveId": 621,
     "name": "Hyperspace Fury",
     "type": 18,
@@ -6853,7 +6853,7 @@
     "cat": 0,
     "properties": []
   },
-  "622": {
+  {
     "moveId": 622,
     "name": "Shore Up",
     "type": 5,
@@ -6865,7 +6865,7 @@
       "healing"
     ]
   },
-  "623": {
+  {
     "moveId": 623,
     "name": "First Impression",
     "type": 7,
@@ -6877,7 +6877,7 @@
       "contact"
     ]
   },
-  "624": {
+  {
     "moveId": 624,
     "name": "Baneful Bunker",
     "type": 4,
@@ -6887,7 +6887,7 @@
     "cat": 2,
     "properties": []
   },
-  "625": {
+  {
     "moveId": 625,
     "name": "Spirit Shackle",
     "type": 8,
@@ -6897,7 +6897,7 @@
     "cat": 0,
     "properties": []
   },
-  "626": {
+  {
     "moveId": 626,
     "name": "Darkest Lariat",
     "type": 18,
@@ -6909,7 +6909,7 @@
       "contact"
     ]
   },
-  "627": {
+  {
     "moveId": 627,
     "name": "Sparkling Aria",
     "type": 12,
@@ -6921,7 +6921,7 @@
       "sound"
     ]
   },
-  "628": {
+  {
     "moveId": 628,
     "name": "Ice Hammer",
     "type": 16,
@@ -6934,7 +6934,7 @@
       "punching"
     ]
   },
-  "629": {
+  {
     "moveId": 629,
     "name": "Floral Healing",
     "type": 19,
@@ -6946,7 +6946,7 @@
       "healing"
     ]
   },
-  "630": {
+  {
     "moveId": 630,
     "name": "High Horsepower",
     "type": 5,
@@ -6959,7 +6959,7 @@
       "kicking"
     ]
   },
-  "631": {
+  {
     "moveId": 631,
     "name": "Strength Sap",
     "type": 13,
@@ -6971,7 +6971,7 @@
       "healing"
     ]
   },
-  "632": {
+  {
     "moveId": 632,
     "name": "Solar Blade",
     "type": 13,
@@ -6984,7 +6984,7 @@
       "slicing"
     ]
   },
-  "633": {
+  {
     "moveId": 633,
     "name": "Leafage",
     "type": 13,
@@ -6994,7 +6994,7 @@
     "cat": 0,
     "properties": []
   },
-  "634": {
+  {
     "moveId": 634,
     "name": "Spotlight",
     "type": 1,
@@ -7004,7 +7004,7 @@
     "cat": 2,
     "properties": []
   },
-  "635": {
+  {
     "moveId": 635,
     "name": "Toxic Thread",
     "type": 4,
@@ -7014,7 +7014,7 @@
     "cat": 2,
     "properties": []
   },
-  "636": {
+  {
     "moveId": 636,
     "name": "Laser Focus",
     "type": 1,
@@ -7024,7 +7024,7 @@
     "cat": 2,
     "properties": []
   },
-  "637": {
+  {
     "moveId": 637,
     "name": "Gear Up",
     "type": 9,
@@ -7034,7 +7034,7 @@
     "cat": 2,
     "properties": []
   },
-  "638": {
+  {
     "moveId": 638,
     "name": "Throat Chop",
     "type": 18,
@@ -7046,7 +7046,7 @@
       "contact"
     ]
   },
-  "639": {
+  {
     "moveId": 639,
     "name": "Pollen Puff",
     "type": 7,
@@ -7058,7 +7058,7 @@
       "ballistic"
     ]
   },
-  "640": {
+  {
     "moveId": 640,
     "name": "Anchor Shot",
     "type": 9,
@@ -7070,7 +7070,7 @@
       "contact"
     ]
   },
-  "641": {
+  {
     "moveId": 641,
     "name": "Psychic Terrain",
     "type": 15,
@@ -7080,7 +7080,7 @@
     "cat": 2,
     "properties": []
   },
-  "642": {
+  {
     "moveId": 642,
     "name": "Lunge",
     "type": 7,
@@ -7092,7 +7092,7 @@
       "contact"
     ]
   },
-  "643": {
+  {
     "moveId": 643,
     "name": "Fire Lash",
     "type": 11,
@@ -7104,7 +7104,7 @@
       "contact"
     ]
   },
-  "644": {
+  {
     "moveId": 644,
     "name": "Power Trip",
     "type": 18,
@@ -7116,7 +7116,7 @@
       "contact"
     ]
   },
-  "645": {
+  {
     "moveId": 645,
     "name": "Burn Up",
     "type": 11,
@@ -7126,7 +7126,7 @@
     "cat": 1,
     "properties": []
   },
-  "646": {
+  {
     "moveId": 646,
     "name": "Speed Swap",
     "type": 15,
@@ -7136,7 +7136,7 @@
     "cat": 2,
     "properties": []
   },
-  "647": {
+  {
     "moveId": 647,
     "name": "Smart Strike",
     "type": 9,
@@ -7148,7 +7148,7 @@
       "contact"
     ]
   },
-  "648": {
+  {
     "moveId": 648,
     "name": "Purify",
     "type": 4,
@@ -7160,7 +7160,7 @@
       "healing"
     ]
   },
-  "649": {
+  {
     "moveId": 649,
     "name": "Revelation Dance",
     "type": 1,
@@ -7172,7 +7172,7 @@
       "dance"
     ]
   },
-  "650": {
+  {
     "moveId": 650,
     "name": "Core Enforcer",
     "type": 17,
@@ -7182,7 +7182,7 @@
     "cat": 1,
     "properties": []
   },
-  "651": {
+  {
     "moveId": 651,
     "name": "Trop Kick",
     "type": 13,
@@ -7195,7 +7195,7 @@
       "kicking"
     ]
   },
-  "652": {
+  {
     "moveId": 652,
     "name": "Instruct",
     "type": 15,
@@ -7205,7 +7205,7 @@
     "cat": 2,
     "properties": []
   },
-  "653": {
+  {
     "moveId": 653,
     "name": "Beak Blast",
     "type": 3,
@@ -7217,7 +7217,7 @@
       "ballistic"
     ]
   },
-  "654": {
+  {
     "moveId": 654,
     "name": "Clanging Scales",
     "type": 17,
@@ -7229,7 +7229,7 @@
       "sound"
     ]
   },
-  "655": {
+  {
     "moveId": 655,
     "name": "Dragon Hammer",
     "type": 17,
@@ -7241,7 +7241,7 @@
       "contact"
     ]
   },
-  "656": {
+  {
     "moveId": 656,
     "name": "Brutal Swing",
     "type": 18,
@@ -7253,7 +7253,7 @@
       "contact"
     ]
   },
-  "657": {
+  {
     "moveId": 657,
     "name": "Aurora Veil",
     "type": 16,
@@ -7263,7 +7263,7 @@
     "cat": 2,
     "properties": []
   },
-  "658": {
+  {
     "moveId": 658,
     "name": "Shell Trap",
     "type": 11,
@@ -7273,7 +7273,7 @@
     "cat": 1,
     "properties": []
   },
-  "659": {
+  {
     "moveId": 659,
     "name": "Fleur Cannon",
     "type": 19,
@@ -7283,7 +7283,7 @@
     "cat": 1,
     "properties": []
   },
-  "660": {
+  {
     "moveId": 660,
     "name": "Psychic Fangs",
     "type": 15,
@@ -7296,7 +7296,7 @@
       "biting"
     ]
   },
-  "661": {
+  {
     "moveId": 661,
     "name": "Stomping Tantrum",
     "type": 5,
@@ -7308,7 +7308,7 @@
       "contact"
     ]
   },
-  "662": {
+  {
     "moveId": 662,
     "name": "Shadow Bone",
     "type": 8,
@@ -7318,7 +7318,7 @@
     "cat": 0,
     "properties": []
   },
-  "663": {
+  {
     "moveId": 663,
     "name": "Accelerock",
     "type": 6,
@@ -7330,7 +7330,7 @@
       "contact"
     ]
   },
-  "664": {
+  {
     "moveId": 664,
     "name": "Liquidation",
     "type": 12,
@@ -7342,7 +7342,7 @@
       "contact"
     ]
   },
-  "665": {
+  {
     "moveId": 665,
     "name": "Prismatic Laser",
     "type": 15,
@@ -7352,7 +7352,7 @@
     "cat": 1,
     "properties": []
   },
-  "666": {
+  {
     "moveId": 666,
     "name": "Spectral Thief",
     "type": 8,
@@ -7364,7 +7364,7 @@
       "contact"
     ]
   },
-  "667": {
+  {
     "moveId": 667,
     "name": "Sunsteel Strike",
     "type": 9,
@@ -7376,7 +7376,7 @@
       "contact"
     ]
   },
-  "668": {
+  {
     "moveId": 668,
     "name": "Moongeist Beam",
     "type": 8,
@@ -7386,7 +7386,7 @@
     "cat": 1,
     "properties": []
   },
-  "669": {
+  {
     "moveId": 669,
     "name": "Tearful Look",
     "type": 1,
@@ -7396,7 +7396,7 @@
     "cat": 2,
     "properties": []
   },
-  "670": {
+  {
     "moveId": 670,
     "name": "Zing Zap",
     "type": 14,
@@ -7408,7 +7408,7 @@
       "contact"
     ]
   },
-  "671": {
+  {
     "moveId": 671,
     "name": "Nature's Madness",
     "type": 19,
@@ -7418,7 +7418,7 @@
     "cat": 1,
     "properties": []
   },
-  "672": {
+  {
     "moveId": 672,
     "name": "Multi-Attack",
     "type": 1,
@@ -7430,7 +7430,7 @@
       "contact"
     ]
   },
-  "673": {
+  {
     "moveId": 673,
     "name": "Mind Blown",
     "type": 11,
@@ -7440,7 +7440,7 @@
     "cat": 1,
     "properties": []
   },
-  "674": {
+  {
     "moveId": 674,
     "name": "Plasma Fists",
     "type": 14,
@@ -7453,7 +7453,7 @@
       "punching"
     ]
   },
-  "675": {
+  {
     "moveId": 675,
     "name": "Photon Geyser",
     "type": 15,
@@ -7463,7 +7463,7 @@
     "cat": 1,
     "properties": []
   },
-  "676": {
+  {
     "moveId": 676,
     "name": "Zippy Zap",
     "type": 14,
@@ -7475,7 +7475,7 @@
       "contact"
     ]
   },
-  "677": {
+  {
     "moveId": 677,
     "name": "Splishy Splash",
     "type": 12,
@@ -7485,7 +7485,7 @@
     "cat": 1,
     "properties": []
   },
-  "678": {
+  {
     "moveId": 678,
     "name": "Floaty Fall",
     "type": 3,
@@ -7497,7 +7497,7 @@
       "contact"
     ]
   },
-  "679": {
+  {
     "moveId": 679,
     "name": "Pika Papow",
     "type": 14,
@@ -7507,7 +7507,7 @@
     "cat": 1,
     "properties": []
   },
-  "680": {
+  {
     "moveId": 680,
     "name": "Bouncy Bubble",
     "type": 12,
@@ -7519,7 +7519,7 @@
       "healing"
     ]
   },
-  "681": {
+  {
     "moveId": 681,
     "name": "Buzzy Buzz",
     "type": 14,
@@ -7529,7 +7529,7 @@
     "cat": 1,
     "properties": []
   },
-  "682": {
+  {
     "moveId": 682,
     "name": "Sizzly Slide",
     "type": 11,
@@ -7541,7 +7541,7 @@
       "contact"
     ]
   },
-  "683": {
+  {
     "moveId": 683,
     "name": "Glitzy Glow",
     "type": 15,
@@ -7551,7 +7551,7 @@
     "cat": 1,
     "properties": []
   },
-  "684": {
+  {
     "moveId": 684,
     "name": "Baddy Bad",
     "type": 18,
@@ -7561,7 +7561,7 @@
     "cat": 1,
     "properties": []
   },
-  "685": {
+  {
     "moveId": 685,
     "name": "Sappy Seed",
     "type": 13,
@@ -7571,7 +7571,7 @@
     "cat": 0,
     "properties": []
   },
-  "686": {
+  {
     "moveId": 686,
     "name": "Freezy Frost",
     "type": 16,
@@ -7581,7 +7581,7 @@
     "cat": 1,
     "properties": []
   },
-  "687": {
+  {
     "moveId": 687,
     "name": "Sparkly Swirl",
     "type": 19,
@@ -7591,7 +7591,7 @@
     "cat": 1,
     "properties": []
   },
-  "688": {
+  {
     "moveId": 688,
     "name": "Veevee Volley",
     "type": 1,
@@ -7603,7 +7603,7 @@
       "contact"
     ]
   },
-  "689": {
+  {
     "moveId": 689,
     "name": "Double Iron Bash",
     "type": 9,
@@ -7616,7 +7616,7 @@
       "punching"
     ]
   },
-  "690": {
+  {
     "moveId": 690,
     "name": "Dynamax Cannon",
     "type": 17,
@@ -7626,7 +7626,7 @@
     "cat": 1,
     "properties": []
   },
-  "691": {
+  {
     "moveId": 691,
     "name": "Snipe Shot",
     "type": 12,
@@ -7638,7 +7638,7 @@
       "ballistic"
     ]
   },
-  "692": {
+  {
     "moveId": 692,
     "name": "Jaw Lock",
     "type": 2,
@@ -7651,7 +7651,7 @@
       "biting"
     ]
   },
-  "693": {
+  {
     "moveId": 693,
     "name": "Stuff Cheeks",
     "type": 1,
@@ -7661,7 +7661,7 @@
     "cat": 2,
     "properties": []
   },
-  "694": {
+  {
     "moveId": 694,
     "name": "No Retreat",
     "type": 2,
@@ -7671,7 +7671,7 @@
     "cat": 2,
     "properties": []
   },
-  "695": {
+  {
     "moveId": 695,
     "name": "Tar Shot",
     "type": 6,
@@ -7681,7 +7681,7 @@
     "cat": 2,
     "properties": []
   },
-  "696": {
+  {
     "moveId": 696,
     "name": "Magic Powder",
     "type": 15,
@@ -7693,7 +7693,7 @@
       "powder"
     ]
   },
-  "697": {
+  {
     "moveId": 697,
     "name": "Dragon Darts",
     "type": 17,
@@ -7703,7 +7703,7 @@
     "cat": 0,
     "properties": []
   },
-  "698": {
+  {
     "moveId": 698,
     "name": "Teatime",
     "type": 1,
@@ -7713,7 +7713,7 @@
     "cat": 2,
     "properties": []
   },
-  "699": {
+  {
     "moveId": 699,
     "name": "Octolock",
     "type": 2,
@@ -7723,7 +7723,7 @@
     "cat": 2,
     "properties": []
   },
-  "700": {
+  {
     "moveId": 700,
     "name": "Bolt Beak",
     "type": 14,
@@ -7735,7 +7735,7 @@
       "contact"
     ]
   },
-  "701": {
+  {
     "moveId": 701,
     "name": "Fishious Rend",
     "type": 12,
@@ -7748,7 +7748,7 @@
       "biting"
     ]
   },
-  "702": {
+  {
     "moveId": 702,
     "name": "Court Change",
     "type": 1,
@@ -7758,7 +7758,7 @@
     "cat": 2,
     "properties": []
   },
-  "703": {
+  {
     "moveId": 703,
     "name": "Clangorous Soul",
     "type": 17,
@@ -7771,7 +7771,7 @@
       "dance"
     ]
   },
-  "704": {
+  {
     "moveId": 704,
     "name": "Body Press",
     "type": 2,
@@ -7783,7 +7783,7 @@
       "contact"
     ]
   },
-  "705": {
+  {
     "moveId": 705,
     "name": "Decorate",
     "type": 19,
@@ -7793,7 +7793,7 @@
     "cat": 2,
     "properties": []
   },
-  "706": {
+  {
     "moveId": 706,
     "name": "Drum Beating",
     "type": 13,
@@ -7803,7 +7803,7 @@
     "cat": 0,
     "properties": []
   },
-  "707": {
+  {
     "moveId": 707,
     "name": "Snap Trap",
     "type": 9,
@@ -7815,7 +7815,7 @@
       "contact"
     ]
   },
-  "708": {
+  {
     "moveId": 708,
     "name": "Pyro Ball",
     "type": 11,
@@ -7828,7 +7828,7 @@
       "ballistic"
     ]
   },
-  "709": {
+  {
     "moveId": 709,
     "name": "Behemoth Blade",
     "type": 9,
@@ -7841,7 +7841,7 @@
       "slicing"
     ]
   },
-  "710": {
+  {
     "moveId": 710,
     "name": "Behemoth Bash",
     "type": 9,
@@ -7853,7 +7853,7 @@
       "contact"
     ]
   },
-  "711": {
+  {
     "moveId": 711,
     "name": "Aura Wheel",
     "type": 14,
@@ -7863,7 +7863,7 @@
     "cat": 0,
     "properties": []
   },
-  "712": {
+  {
     "moveId": 712,
     "name": "Breaking Swipe",
     "type": 17,
@@ -7875,7 +7875,7 @@
       "contact"
     ]
   },
-  "713": {
+  {
     "moveId": 713,
     "name": "Branch Poke",
     "type": 13,
@@ -7887,7 +7887,7 @@
       "contact"
     ]
   },
-  "714": {
+  {
     "moveId": 714,
     "name": "Overdrive",
     "type": 14,
@@ -7899,7 +7899,7 @@
       "sound"
     ]
   },
-  "715": {
+  {
     "moveId": 715,
     "name": "Apple Acid",
     "type": 13,
@@ -7909,7 +7909,7 @@
     "cat": 1,
     "properties": []
   },
-  "716": {
+  {
     "moveId": 716,
     "name": "Grav Apple",
     "type": 13,
@@ -7919,7 +7919,7 @@
     "cat": 0,
     "properties": []
   },
-  "717": {
+  {
     "moveId": 717,
     "name": "Spirit Break",
     "type": 19,
@@ -7931,7 +7931,7 @@
       "contact"
     ]
   },
-  "718": {
+  {
     "moveId": 718,
     "name": "Strange Steam",
     "type": 19,
@@ -7941,7 +7941,7 @@
     "cat": 1,
     "properties": []
   },
-  "719": {
+  {
     "moveId": 719,
     "name": "Life Dew",
     "type": 12,
@@ -7953,7 +7953,7 @@
       "healing"
     ]
   },
-  "720": {
+  {
     "moveId": 720,
     "name": "Obstruct",
     "type": 18,
@@ -7963,7 +7963,7 @@
     "cat": 2,
     "properties": []
   },
-  "721": {
+  {
     "moveId": 721,
     "name": "False Surrender",
     "type": 18,
@@ -7975,7 +7975,7 @@
       "contact"
     ]
   },
-  "722": {
+  {
     "moveId": 722,
     "name": "Meteor Assault",
     "type": 2,
@@ -7985,7 +7985,7 @@
     "cat": 0,
     "properties": []
   },
-  "723": {
+  {
     "moveId": 723,
     "name": "Eternabeam",
     "type": 17,
@@ -7995,7 +7995,7 @@
     "cat": 1,
     "properties": []
   },
-  "724": {
+  {
     "moveId": 724,
     "name": "Steel Beam",
     "type": 9,
@@ -8005,7 +8005,7 @@
     "cat": 1,
     "properties": []
   },
-  "725": {
+  {
     "moveId": 725,
     "name": "Expanding Force",
     "type": 15,
@@ -8015,7 +8015,7 @@
     "cat": 1,
     "properties": []
   },
-  "726": {
+  {
     "moveId": 726,
     "name": "Steel Roller",
     "type": 9,
@@ -8027,7 +8027,7 @@
       "contact"
     ]
   },
-  "727": {
+  {
     "moveId": 727,
     "name": "Scale Shot",
     "type": 17,
@@ -8037,7 +8037,7 @@
     "cat": 0,
     "properties": []
   },
-  "728": {
+  {
     "moveId": 728,
     "name": "Meteor Beam",
     "type": 6,
@@ -8047,7 +8047,7 @@
     "cat": 1,
     "properties": []
   },
-  "729": {
+  {
     "moveId": 729,
     "name": "Shell Side Arm",
     "type": 4,
@@ -8057,7 +8057,7 @@
     "cat": 1,
     "properties": []
   },
-  "730": {
+  {
     "moveId": 730,
     "name": "Misty Explosion",
     "type": 19,
@@ -8067,7 +8067,7 @@
     "cat": 1,
     "properties": []
   },
-  "731": {
+  {
     "moveId": 731,
     "name": "Grassy Glide",
     "type": 13,
@@ -8079,7 +8079,7 @@
       "contact"
     ]
   },
-  "732": {
+  {
     "moveId": 732,
     "name": "Rising Voltage",
     "type": 14,
@@ -8089,7 +8089,7 @@
     "cat": 1,
     "properties": []
   },
-  "733": {
+  {
     "moveId": 733,
     "name": "Terrain Pulse",
     "type": 1,
@@ -8101,7 +8101,7 @@
       "pulse"
     ]
   },
-  "734": {
+  {
     "moveId": 734,
     "name": "Skitter Smack",
     "type": 7,
@@ -8113,7 +8113,7 @@
       "contact"
     ]
   },
-  "735": {
+  {
     "moveId": 735,
     "name": "Burning Jealousy",
     "type": 11,
@@ -8123,7 +8123,7 @@
     "cat": 1,
     "properties": []
   },
-  "736": {
+  {
     "moveId": 736,
     "name": "Lash Out",
     "type": 18,
@@ -8135,7 +8135,7 @@
       "contact"
     ]
   },
-  "737": {
+  {
     "moveId": 737,
     "name": "Poltergeist",
     "type": 8,
@@ -8145,7 +8145,7 @@
     "cat": 0,
     "properties": []
   },
-  "738": {
+  {
     "moveId": 738,
     "name": "Corrosive Gas",
     "type": 4,
@@ -8155,7 +8155,7 @@
     "cat": 2,
     "properties": []
   },
-  "739": {
+  {
     "moveId": 739,
     "name": "Coaching",
     "type": 2,
@@ -8165,7 +8165,7 @@
     "cat": 2,
     "properties": []
   },
-  "740": {
+  {
     "moveId": 740,
     "name": "Flip Turn",
     "type": 12,
@@ -8177,7 +8177,7 @@
       "contact"
     ]
   },
-  "741": {
+  {
     "moveId": 741,
     "name": "Triple Axel",
     "type": 16,
@@ -8190,7 +8190,7 @@
       "kicking"
     ]
   },
-  "742": {
+  {
     "moveId": 742,
     "name": "Dual Wingbeat",
     "type": 3,
@@ -8202,7 +8202,7 @@
       "contact"
     ]
   },
-  "743": {
+  {
     "moveId": 743,
     "name": "Scorching Sands",
     "type": 5,
@@ -8212,7 +8212,7 @@
     "cat": 1,
     "properties": []
   },
-  "744": {
+  {
     "moveId": 744,
     "name": "Jungle Healing",
     "type": 13,
@@ -8224,7 +8224,7 @@
       "healing"
     ]
   },
-  "745": {
+  {
     "moveId": 745,
     "name": "Wicked Blow",
     "type": 18,
@@ -8237,7 +8237,7 @@
       "punching"
     ]
   },
-  "746": {
+  {
     "moveId": 746,
     "name": "Surging Strikes",
     "type": 12,
@@ -8250,7 +8250,7 @@
       "punching"
     ]
   },
-  "747": {
+  {
     "moveId": 747,
     "name": "Thunder Cage",
     "type": 14,
@@ -8260,7 +8260,7 @@
     "cat": 1,
     "properties": []
   },
-  "748": {
+  {
     "moveId": 748,
     "name": "Dragon Energy",
     "type": 17,
@@ -8270,7 +8270,7 @@
     "cat": 1,
     "properties": []
   },
-  "749": {
+  {
     "moveId": 749,
     "name": "Freezing Glare",
     "type": 15,
@@ -8280,7 +8280,7 @@
     "cat": 1,
     "properties": []
   },
-  "750": {
+  {
     "moveId": 750,
     "name": "Fiery Wrath",
     "type": 18,
@@ -8290,7 +8290,7 @@
     "cat": 1,
     "properties": []
   },
-  "751": {
+  {
     "moveId": 751,
     "name": "Thunderous Kick",
     "type": 2,
@@ -8303,7 +8303,7 @@
       "kicking"
     ]
   },
-  "752": {
+  {
     "moveId": 752,
     "name": "Glacial Lance",
     "type": 16,
@@ -8313,7 +8313,7 @@
     "cat": 0,
     "properties": []
   },
-  "753": {
+  {
     "moveId": 753,
     "name": "Astral Barrage",
     "type": 8,
@@ -8323,7 +8323,7 @@
     "cat": 1,
     "properties": []
   },
-  "754": {
+  {
     "moveId": 754,
     "name": "Eerie Spell",
     "type": 15,
@@ -8335,7 +8335,7 @@
       "sound"
     ]
   },
-  "755": {
+  {
     "moveId": 755,
     "name": "Dire Claw",
     "type": 4,
@@ -8347,7 +8347,7 @@
       "contact"
     ]
   },
-  "756": {
+  {
     "moveId": 756,
     "name": "Psyshield Bash",
     "type": 15,
@@ -8359,7 +8359,7 @@
       "contact"
     ]
   },
-  "757": {
+  {
     "moveId": 757,
     "name": "Power Shift",
     "type": 1,
@@ -8369,7 +8369,7 @@
     "cat": 2,
     "properties": []
   },
-  "758": {
+  {
     "moveId": 758,
     "name": "Stone Axe",
     "type": 6,
@@ -8382,7 +8382,7 @@
       "slicing"
     ]
   },
-  "759": {
+  {
     "moveId": 759,
     "name": "Springtide Storm",
     "type": 19,
@@ -8394,7 +8394,7 @@
       "wind"
     ]
   },
-  "760": {
+  {
     "moveId": 760,
     "name": "Mystical Power",
     "type": 15,
@@ -8404,7 +8404,7 @@
     "cat": 1,
     "properties": []
   },
-  "761": {
+  {
     "moveId": 761,
     "name": "Raging Fury",
     "type": 11,
@@ -8414,7 +8414,7 @@
     "cat": 0,
     "properties": []
   },
-  "762": {
+  {
     "moveId": 762,
     "name": "Wave Crash",
     "type": 12,
@@ -8426,7 +8426,7 @@
       "contact"
     ]
   },
-  "763": {
+  {
     "moveId": 763,
     "name": "Chloroblast",
     "type": 13,
@@ -8436,7 +8436,7 @@
     "cat": 1,
     "properties": []
   },
-  "764": {
+  {
     "moveId": 764,
     "name": "Mountain Gale",
     "type": 16,
@@ -8446,7 +8446,7 @@
     "cat": 0,
     "properties": []
   },
-  "765": {
+  {
     "moveId": 765,
     "name": "Victory Dance",
     "type": 2,
@@ -8458,7 +8458,7 @@
       "dance"
     ]
   },
-  "766": {
+  {
     "moveId": 766,
     "name": "Headlong Rush",
     "type": 5,
@@ -8471,7 +8471,7 @@
       "punching"
     ]
   },
-  "767": {
+  {
     "moveId": 767,
     "name": "Barb Barrage",
     "type": 4,
@@ -8481,7 +8481,7 @@
     "cat": 0,
     "properties": []
   },
-  "768": {
+  {
     "moveId": 768,
     "name": "Esper Wing",
     "type": 15,
@@ -8491,7 +8491,7 @@
     "cat": 1,
     "properties": []
   },
-  "769": {
+  {
     "moveId": 769,
     "name": "Bitter Malice",
     "type": 8,
@@ -8501,7 +8501,7 @@
     "cat": 1,
     "properties": []
   },
-  "770": {
+  {
     "moveId": 770,
     "name": "Shelter",
     "type": 9,
@@ -8511,7 +8511,7 @@
     "cat": 2,
     "properties": []
   },
-  "771": {
+  {
     "moveId": 771,
     "name": "Triple Arrows",
     "type": 2,
@@ -8523,7 +8523,7 @@
       "kicking"
     ]
   },
-  "772": {
+  {
     "moveId": 772,
     "name": "Infernal Parade",
     "type": 8,
@@ -8533,7 +8533,7 @@
     "cat": 1,
     "properties": []
   },
-  "773": {
+  {
     "moveId": 773,
     "name": "Ceaseless Edge",
     "type": 18,
@@ -8546,7 +8546,7 @@
       "slicing"
     ]
   },
-  "774": {
+  {
     "moveId": 774,
     "name": "Bleakwind Storm",
     "type": 3,
@@ -8558,7 +8558,7 @@
       "wind"
     ]
   },
-  "775": {
+  {
     "moveId": 775,
     "name": "Wildbolt Storm",
     "type": 14,
@@ -8570,7 +8570,7 @@
       "wind"
     ]
   },
-  "776": {
+  {
     "moveId": 776,
     "name": "Sandsear Storm",
     "type": 5,
@@ -8582,7 +8582,7 @@
       "wind"
     ]
   },
-  "777": {
+  {
     "moveId": 777,
     "name": "Lunar Blessing",
     "type": 15,
@@ -8594,7 +8594,7 @@
       "healing"
     ]
   },
-  "778": {
+  {
     "moveId": 778,
     "name": "Take Heart",
     "type": 15,
@@ -8604,7 +8604,7 @@
     "cat": 2,
     "properties": []
   },
-  "779": {
+  {
     "moveId": 779,
     "name": "Tera Blast",
     "type": 1,
@@ -8614,7 +8614,7 @@
     "cat": 1,
     "properties": []
   },
-  "780": {
+  {
     "moveId": 780,
     "name": "Silk Trap",
     "type": 7,
@@ -8624,7 +8624,7 @@
     "cat": 2,
     "properties": []
   },
-  "781": {
+  {
     "moveId": 781,
     "name": "Axe Kick",
     "type": 2,
@@ -8637,7 +8637,7 @@
       "kicking"
     ]
   },
-  "782": {
+  {
     "moveId": 782,
     "name": "Last Respects",
     "type": 8,
@@ -8647,7 +8647,7 @@
     "cat": 0,
     "properties": []
   },
-  "783": {
+  {
     "moveId": 783,
     "name": "Lumina Crash",
     "type": 15,
@@ -8657,7 +8657,7 @@
     "cat": 1,
     "properties": []
   },
-  "784": {
+  {
     "moveId": 784,
     "name": "Order Up",
     "type": 17,
@@ -8667,7 +8667,7 @@
     "cat": 0,
     "properties": []
   },
-  "785": {
+  {
     "moveId": 785,
     "name": "Jet Punch",
     "type": 12,
@@ -8680,7 +8680,7 @@
       "punching"
     ]
   },
-  "786": {
+  {
     "moveId": 786,
     "name": "Spicy Extract",
     "type": 13,
@@ -8690,7 +8690,7 @@
     "cat": 2,
     "properties": []
   },
-  "787": {
+  {
     "moveId": 787,
     "name": "Spin Out",
     "type": 9,
@@ -8702,7 +8702,7 @@
       "contact"
     ]
   },
-  "788": {
+  {
     "moveId": 788,
     "name": "Population Bomb",
     "type": 1,
@@ -8715,7 +8715,7 @@
       "slicing"
     ]
   },
-  "789": {
+  {
     "moveId": 789,
     "name": "Ice Spinner",
     "type": 16,
@@ -8727,7 +8727,7 @@
       "contact"
     ]
   },
-  "790": {
+  {
     "moveId": 790,
     "name": "Glaive Rush",
     "type": 17,
@@ -8739,7 +8739,7 @@
       "contact"
     ]
   },
-  "791": {
+  {
     "moveId": 791,
     "name": "Revival Blessing",
     "type": 1,
@@ -8751,7 +8751,7 @@
       "healing"
     ]
   },
-  "792": {
+  {
     "moveId": 792,
     "name": "Salt Cure",
     "type": 6,
@@ -8761,7 +8761,7 @@
     "cat": 0,
     "properties": []
   },
-  "793": {
+  {
     "moveId": 793,
     "name": "Triple Dive",
     "type": 12,
@@ -8773,7 +8773,7 @@
       "contact"
     ]
   },
-  "794": {
+  {
     "moveId": 794,
     "name": "Mortal Spin",
     "type": 4,
@@ -8785,7 +8785,7 @@
       "contact"
     ]
   },
-  "795": {
+  {
     "moveId": 795,
     "name": "Doodle",
     "type": 1,
@@ -8795,7 +8795,7 @@
     "cat": 2,
     "properties": []
   },
-  "796": {
+  {
     "moveId": 796,
     "name": "Fillet Away",
     "type": 1,
@@ -8805,7 +8805,7 @@
     "cat": 2,
     "properties": []
   },
-  "797": {
+  {
     "moveId": 797,
     "name": "Kowtow Cleave",
     "type": 18,
@@ -8818,7 +8818,7 @@
       "slicing"
     ]
   },
-  "798": {
+  {
     "moveId": 798,
     "name": "Flower Trick",
     "type": 13,
@@ -8828,7 +8828,7 @@
     "cat": 0,
     "properties": []
   },
-  "799": {
+  {
     "moveId": 799,
     "name": "Torch Song",
     "type": 11,
@@ -8840,7 +8840,7 @@
       "sound"
     ]
   },
-  "800": {
+  {
     "moveId": 800,
     "name": "Aqua Step",
     "type": 12,
@@ -8854,7 +8854,7 @@
       "dance"
     ]
   },
-  "801": {
+  {
     "moveId": 801,
     "name": "Raging Bull",
     "type": 1,
@@ -8866,7 +8866,7 @@
       "contact"
     ]
   },
-  "802": {
+  {
     "moveId": 802,
     "name": "Make It Rain",
     "type": 9,
@@ -8876,7 +8876,7 @@
     "cat": 1,
     "properties": []
   },
-  "803": {
+  {
     "moveId": 803,
     "name": "Ruination",
     "type": 18,
@@ -8886,7 +8886,7 @@
     "cat": 1,
     "properties": []
   },
-  "804": {
+  {
     "moveId": 804,
     "name": "Collision Course",
     "type": 2,
@@ -8898,7 +8898,7 @@
       "contact"
     ]
   },
-  "805": {
+  {
     "moveId": 805,
     "name": "Electro Drift",
     "type": 14,
@@ -8910,7 +8910,7 @@
       "contact"
     ]
   },
-  "806": {
+  {
     "moveId": 806,
     "name": "Shed Tail",
     "type": 1,
@@ -8920,7 +8920,7 @@
     "cat": 2,
     "properties": []
   },
-  "807": {
+  {
     "moveId": 807,
     "name": "Chilly Reception",
     "type": 16,
@@ -8930,7 +8930,7 @@
     "cat": 2,
     "properties": []
   },
-  "808": {
+  {
     "moveId": 808,
     "name": "Tidy Up",
     "type": 1,
@@ -8940,7 +8940,7 @@
     "cat": 2,
     "properties": []
   },
-  "809": {
+  {
     "moveId": 809,
     "name": "Snowscape",
     "type": 16,
@@ -8950,7 +8950,7 @@
     "cat": 2,
     "properties": []
   },
-  "810": {
+  {
     "moveId": 810,
     "name": "Pounce",
     "type": 7,
@@ -8962,7 +8962,7 @@
       "contact"
     ]
   },
-  "811": {
+  {
     "moveId": 811,
     "name": "Trailblaze",
     "type": 13,
@@ -8974,7 +8974,7 @@
       "contact"
     ]
   },
-  "812": {
+  {
     "moveId": 812,
     "name": "Chilling Water",
     "type": 12,
@@ -8984,7 +8984,7 @@
     "cat": 1,
     "properties": []
   },
-  "813": {
+  {
     "moveId": 813,
     "name": "Hyper Drill",
     "type": 1,
@@ -8996,7 +8996,7 @@
       "contact"
     ]
   },
-  "814": {
+  {
     "moveId": 814,
     "name": "Twin Beam",
     "type": 15,
@@ -9006,7 +9006,7 @@
     "cat": 1,
     "properties": []
   },
-  "815": {
+  {
     "moveId": 815,
     "name": "Rage Fist",
     "type": 8,
@@ -9019,7 +9019,7 @@
       "punching"
     ]
   },
-  "816": {
+  {
     "moveId": 816,
     "name": "Armor Cannon",
     "type": 11,
@@ -9029,7 +9029,7 @@
     "cat": 1,
     "properties": []
   },
-  "817": {
+  {
     "moveId": 817,
     "name": "Bitter Blade",
     "type": 11,
@@ -9043,7 +9043,7 @@
       "healing"
     ]
   },
-  "818": {
+  {
     "moveId": 818,
     "name": "Double Shock",
     "type": 14,
@@ -9055,7 +9055,7 @@
       "contact"
     ]
   },
-  "819": {
+  {
     "moveId": 819,
     "name": "Gigaton Hammer",
     "type": 9,
@@ -9065,7 +9065,7 @@
     "cat": 0,
     "properties": []
   },
-  "820": {
+  {
     "moveId": 820,
     "name": "Comeuppance",
     "type": 18,
@@ -9077,7 +9077,7 @@
       "contact"
     ]
   },
-  "821": {
+  {
     "moveId": 821,
     "name": "Aqua Cutter",
     "type": 12,
@@ -9089,7 +9089,7 @@
       "slicing"
     ]
   },
-  "822": {
+  {
     "moveId": 822,
     "name": "Blazing Torque",
     "type": 11,
@@ -9099,7 +9099,7 @@
     "cat": 0,
     "properties": []
   },
-  "823": {
+  {
     "moveId": 823,
     "name": "Wicked Torque",
     "type": 18,
@@ -9109,7 +9109,7 @@
     "cat": 0,
     "properties": []
   },
-  "824": {
+  {
     "moveId": 824,
     "name": "Noxious Torque",
     "type": 4,
@@ -9119,7 +9119,7 @@
     "cat": 0,
     "properties": []
   },
-  "825": {
+  {
     "moveId": 825,
     "name": "Combat Torque",
     "type": 2,
@@ -9129,7 +9129,7 @@
     "cat": 0,
     "properties": []
   },
-  "826": {
+  {
     "moveId": 826,
     "name": "Magical Torque",
     "type": 19,
@@ -9139,7 +9139,7 @@
     "cat": 0,
     "properties": []
   },
-  "827": {
+  {
     "moveId": 827,
     "name": "Psyblade",
     "type": 15,
@@ -9152,7 +9152,7 @@
       "slicing"
     ]
   },
-  "828": {
+  {
     "moveId": 828,
     "name": "Hydro Steam",
     "type": 12,
@@ -9162,7 +9162,7 @@
     "cat": 1,
     "properties": []
   },
-  "829": {
+  {
     "moveId": 829,
     "name": "Blood Moon",
     "type": 1,
@@ -9172,7 +9172,7 @@
     "cat": 1,
     "properties": []
   },
-  "830": {
+  {
     "moveId": 830,
     "name": "Matcha Gotcha",
     "type": 13,
@@ -9184,7 +9184,7 @@
       "healing"
     ]
   },
-  "831": {
+  {
     "moveId": 831,
     "name": "Syrup Bomb",
     "type": 13,
@@ -9196,7 +9196,7 @@
       "ballistic"
     ]
   },
-  "832": {
+  {
     "moveId": 832,
     "name": "Ivy Cudgel",
     "type": 13,
@@ -9206,7 +9206,7 @@
     "cat": 0,
     "properties": []
   },
-  "833": {
+  {
     "moveId": 833,
     "name": "Electro Shot",
     "type": 14,
@@ -9216,7 +9216,7 @@
     "cat": 1,
     "properties": []
   },
-  "834": {
+  {
     "moveId": 834,
     "name": "Tera Starstorm",
     "type": 1,
@@ -9226,7 +9226,7 @@
     "cat": 1,
     "properties": []
   },
-  "835": {
+  {
     "moveId": 835,
     "name": "Fickle Beam",
     "type": 17,
@@ -9236,7 +9236,7 @@
     "cat": 1,
     "properties": []
   },
-  "836": {
+  {
     "moveId": 836,
     "name": "Burning Bulwark",
     "type": 11,
@@ -9246,7 +9246,7 @@
     "cat": 2,
     "properties": []
   },
-  "837": {
+  {
     "moveId": 837,
     "name": "Thunderclap",
     "type": 14,
@@ -9256,7 +9256,7 @@
     "cat": 1,
     "properties": []
   },
-  "838": {
+  {
     "moveId": 838,
     "name": "Mighty Cleave",
     "type": 6,
@@ -9269,7 +9269,7 @@
       "slicing"
     ]
   },
-  "839": {
+  {
     "moveId": 839,
     "name": "Tachyon Cutter",
     "type": 9,
@@ -9281,7 +9281,7 @@
       "slicing"
     ]
   },
-  "840": {
+  {
     "moveId": 840,
     "name": "Hard Press",
     "type": 9,
@@ -9293,7 +9293,7 @@
       "contact"
     ]
   },
-  "841": {
+  {
     "moveId": 841,
     "name": "Dragon Cheer",
     "type": 17,
@@ -9303,7 +9303,7 @@
     "cat": 2,
     "properties": []
   },
-  "842": {
+  {
     "moveId": 842,
     "name": "Alluring Voice",
     "type": 19,
@@ -9315,7 +9315,7 @@
       "sound"
     ]
   },
-  "843": {
+  {
     "moveId": 843,
     "name": "Temper Flare",
     "type": 11,
@@ -9327,7 +9327,7 @@
       "contact"
     ]
   },
-  "844": {
+  {
     "moveId": 844,
     "name": "Supercell Slam",
     "type": 14,
@@ -9339,7 +9339,7 @@
       "contact"
     ]
   },
-  "845": {
+  {
     "moveId": 845,
     "name": "Psychic Noise",
     "type": 15,
@@ -9351,7 +9351,7 @@
       "sound"
     ]
   },
-  "846": {
+  {
     "moveId": 846,
     "name": "Upper Hand",
     "type": 2,
@@ -9363,7 +9363,7 @@
       "contact"
     ]
   },
-  "847": {
+  {
     "moveId": 847,
     "name": "Malignant Chain",
     "type": 4,
@@ -9373,7 +9373,7 @@
     "cat": 1,
     "properties": []
   },
-  "848": {
+  {
     "moveId": 848,
     "name": "Aqua Fang",
     "type": 12,
@@ -9386,7 +9386,7 @@
       "biting"
     ]
   },
-  "849": {
+  {
     "moveId": 849,
     "name": "Dark Hole",
     "type": 18,
@@ -9396,7 +9396,7 @@
     "cat": 1,
     "properties": []
   },
-  "850": {
+  {
     "moveId": 850,
     "name": "Breakneck Blitz",
     "type": 1,
@@ -9406,7 +9406,7 @@
     "cat": 0,
     "properties": []
   },
-  "851": {
+  {
     "moveId": 851,
     "name": "All Out Pummeling",
     "type": 2,
@@ -9416,7 +9416,7 @@
     "cat": 0,
     "properties": []
   },
-  "852": {
+  {
     "moveId": 852,
     "name": "Supersonic Skystrike",
     "type": 3,
@@ -9426,7 +9426,7 @@
     "cat": 0,
     "properties": []
   },
-  "853": {
+  {
     "moveId": 853,
     "name": "Acid Downpour",
     "type": 4,
@@ -9436,7 +9436,7 @@
     "cat": 0,
     "properties": []
   },
-  "854": {
+  {
     "moveId": 854,
     "name": "Tectonic Rage",
     "type": 5,
@@ -9446,7 +9446,7 @@
     "cat": 0,
     "properties": []
   },
-  "855": {
+  {
     "moveId": 855,
     "name": "Continental Crush",
     "type": 6,
@@ -9456,7 +9456,7 @@
     "cat": 0,
     "properties": []
   },
-  "856": {
+  {
     "moveId": 856,
     "name": "Savage Spin Out",
     "type": 7,
@@ -9466,7 +9466,7 @@
     "cat": 0,
     "properties": []
   },
-  "857": {
+  {
     "moveId": 857,
     "name": "Never Ending Nightmare",
     "type": 8,
@@ -9476,7 +9476,7 @@
     "cat": 0,
     "properties": []
   },
-  "858": {
+  {
     "moveId": 858,
     "name": "Corkscrew Crash",
     "type": 9,
@@ -9486,7 +9486,7 @@
     "cat": 0,
     "properties": []
   },
-  "859": {
+  {
     "moveId": 859,
     "name": "Inferno Overdrive",
     "type": 11,
@@ -9496,7 +9496,7 @@
     "cat": 0,
     "properties": []
   },
-  "860": {
+  {
     "moveId": 860,
     "name": "Hydro Vortex",
     "type": 12,
@@ -9506,7 +9506,7 @@
     "cat": 0,
     "properties": []
   },
-  "861": {
+  {
     "moveId": 861,
     "name": "Bloom Doom",
     "type": 13,
@@ -9516,7 +9516,7 @@
     "cat": 0,
     "properties": []
   },
-  "862": {
+  {
     "moveId": 862,
     "name": "Gigavolt Havoc",
     "type": 14,
@@ -9526,7 +9526,7 @@
     "cat": 0,
     "properties": []
   },
-  "863": {
+  {
     "moveId": 863,
     "name": "Shattered Psyche",
     "type": 15,
@@ -9536,7 +9536,7 @@
     "cat": 0,
     "properties": []
   },
-  "864": {
+  {
     "moveId": 864,
     "name": "Subzero Slammer",
     "type": 16,
@@ -9546,7 +9546,7 @@
     "cat": 0,
     "properties": []
   },
-  "865": {
+  {
     "moveId": 865,
     "name": "Devastating Drake",
     "type": 17,
@@ -9556,7 +9556,7 @@
     "cat": 0,
     "properties": []
   },
-  "866": {
+  {
     "moveId": 866,
     "name": "Black Hole Eclipse",
     "type": 18,
@@ -9566,7 +9566,7 @@
     "cat": 0,
     "properties": []
   },
-  "867": {
+  {
     "moveId": 867,
     "name": "Twinkle Tackle",
     "type": 19,
@@ -9576,7 +9576,7 @@
     "cat": 0,
     "properties": []
   },
-  "868": {
+  {
     "moveId": 868,
     "name": "Catastropika",
     "type": 14,
@@ -9586,7 +9586,7 @@
     "cat": 0,
     "properties": []
   },
-  "869": {
+  {
     "moveId": 869,
     "name": "10,000,000 Volt Thunderbolt",
     "type": 14,
@@ -9596,7 +9596,7 @@
     "cat": 1,
     "properties": []
   },
-  "870": {
+  {
     "moveId": 870,
     "name": "Stoked Sparksurfer",
     "type": 14,
@@ -9606,7 +9606,7 @@
     "cat": 1,
     "properties": []
   },
-  "871": {
+  {
     "moveId": 871,
     "name": "Extreme Evoboost",
     "type": 1,
@@ -9616,7 +9616,7 @@
     "cat": 2,
     "properties": []
   },
-  "872": {
+  {
     "moveId": 872,
     "name": "Pulverizing Pancake",
     "type": 1,
@@ -9626,7 +9626,7 @@
     "cat": 0,
     "properties": []
   },
-  "873": {
+  {
     "moveId": 873,
     "name": "Genesis Supernova",
     "type": 15,
@@ -9636,7 +9636,7 @@
     "cat": 1,
     "properties": []
   },
-  "874": {
+  {
     "moveId": 874,
     "name": "Sinister Arrow Raid",
     "type": 8,
@@ -9646,7 +9646,7 @@
     "cat": 0,
     "properties": []
   },
-  "875": {
+  {
     "moveId": 875,
     "name": "Malicious Moonsault",
     "type": 18,
@@ -9656,7 +9656,7 @@
     "cat": 0,
     "properties": []
   },
-  "876": {
+  {
     "moveId": 876,
     "name": "Oceanic Operetta",
     "type": 12,
@@ -9666,7 +9666,7 @@
     "cat": 1,
     "properties": []
   },
-  "877": {
+  {
     "moveId": 877,
     "name": "Splintered Stormshards",
     "type": 6,
@@ -9676,7 +9676,7 @@
     "cat": 0,
     "properties": []
   },
-  "878": {
+  {
     "moveId": 878,
     "name": "Let's Snuggle Forever",
     "type": 19,
@@ -9686,7 +9686,7 @@
     "cat": 0,
     "properties": []
   },
-  "879": {
+  {
     "moveId": 879,
     "name": "Clangorous Soulblaze",
     "type": 17,
@@ -9698,7 +9698,7 @@
       "sound"
     ]
   },
-  "880": {
+  {
     "moveId": 880,
     "name": "Guardian of Alola",
     "type": 19,
@@ -9708,7 +9708,7 @@
     "cat": 1,
     "properties": []
   },
-  "881": {
+  {
     "moveId": 881,
     "name": "Searing Sunraze Smash",
     "type": 9,
@@ -9718,7 +9718,7 @@
     "cat": 0,
     "properties": []
   },
-  "882": {
+  {
     "moveId": 882,
     "name": "Menacing Moonraze Maelstrom",
     "type": 8,
@@ -9728,7 +9728,7 @@
     "cat": 1,
     "properties": []
   },
-  "883": {
+  {
     "moveId": 883,
     "name": "Light That Burns The Sky",
     "type": 15,
@@ -9738,7 +9738,7 @@
     "cat": 1,
     "properties": []
   },
-  "884": {
+  {
     "moveId": 884,
     "name": "Soul Stealing 7 Star Strike",
     "type": 8,
@@ -9748,7 +9748,7 @@
     "cat": 0,
     "properties": []
   },
-  "885": {
+  {
     "moveId": 885,
     "name": "Max Guard",
     "type": 1,
@@ -9758,7 +9758,7 @@
     "cat": 2,
     "properties": []
   },
-  "886": {
+  {
     "moveId": 886,
     "name": "Max Strike",
     "type": 1,
@@ -9768,7 +9768,7 @@
     "cat": 0,
     "properties": []
   },
-  "887": {
+  {
     "moveId": 887,
     "name": "Max Knuckle",
     "type": 2,
@@ -9778,7 +9778,7 @@
     "cat": 0,
     "properties": []
   },
-  "888": {
+  {
     "moveId": 888,
     "name": "Max Airstream",
     "type": 3,
@@ -9788,7 +9788,7 @@
     "cat": 0,
     "properties": []
   },
-  "889": {
+  {
     "moveId": 889,
     "name": "Max Ooze",
     "type": 4,
@@ -9798,7 +9798,7 @@
     "cat": 0,
     "properties": []
   },
-  "890": {
+  {
     "moveId": 890,
     "name": "Max Quake",
     "type": 5,
@@ -9808,7 +9808,7 @@
     "cat": 0,
     "properties": []
   },
-  "891": {
+  {
     "moveId": 891,
     "name": "Max Rockfall",
     "type": 6,
@@ -9818,7 +9818,7 @@
     "cat": 0,
     "properties": []
   },
-  "892": {
+  {
     "moveId": 892,
     "name": "Max Flutterby",
     "type": 7,
@@ -9828,7 +9828,7 @@
     "cat": 0,
     "properties": []
   },
-  "893": {
+  {
     "moveId": 893,
     "name": "Max Phantasm",
     "type": 8,
@@ -9838,7 +9838,7 @@
     "cat": 0,
     "properties": []
   },
-  "894": {
+  {
     "moveId": 894,
     "name": "Max Steelspike",
     "type": 9,
@@ -9848,7 +9848,7 @@
     "cat": 0,
     "properties": []
   },
-  "895": {
+  {
     "moveId": 895,
     "name": "Max Flare",
     "type": 11,
@@ -9858,7 +9858,7 @@
     "cat": 0,
     "properties": []
   },
-  "896": {
+  {
     "moveId": 896,
     "name": "Max Geyser",
     "type": 12,
@@ -9868,7 +9868,7 @@
     "cat": 0,
     "properties": []
   },
-  "897": {
+  {
     "moveId": 897,
     "name": "Max Overgrowth",
     "type": 13,
@@ -9878,7 +9878,7 @@
     "cat": 0,
     "properties": []
   },
-  "898": {
+  {
     "moveId": 898,
     "name": "Max Lightning",
     "type": 14,
@@ -9888,7 +9888,7 @@
     "cat": 0,
     "properties": []
   },
-  "899": {
+  {
     "moveId": 899,
     "name": "Max Mindstorm",
     "type": 15,
@@ -9898,7 +9898,7 @@
     "cat": 0,
     "properties": []
   },
-  "900": {
+  {
     "moveId": 900,
     "name": "Max Hailstorm",
     "type": 16,
@@ -9908,7 +9908,7 @@
     "cat": 0,
     "properties": []
   },
-  "901": {
+  {
     "moveId": 901,
     "name": "Max Wyrmwind",
     "type": 17,
@@ -9918,7 +9918,7 @@
     "cat": 0,
     "properties": []
   },
-  "902": {
+  {
     "moveId": 902,
     "name": "Max Darkness",
     "type": 18,
@@ -9928,7 +9928,7 @@
     "cat": 0,
     "properties": []
   },
-  "903": {
+  {
     "moveId": 903,
     "name": "Max Starfall",
     "type": 19,
@@ -9938,7 +9938,7 @@
     "cat": 0,
     "properties": []
   },
-  "904": {
+  {
     "moveId": 904,
     "name": "G-Max Vine Lash",
     "type": 13,
@@ -9948,7 +9948,7 @@
     "cat": 0,
     "properties": []
   },
-  "905": {
+  {
     "moveId": 905,
     "name": "G-Max Wildfire",
     "type": 11,
@@ -9958,7 +9958,7 @@
     "cat": 0,
     "properties": []
   },
-  "906": {
+  {
     "moveId": 906,
     "name": "G-Max Canonade",
     "type": 12,
@@ -9968,7 +9968,7 @@
     "cat": 0,
     "properties": []
   },
-  "907": {
+  {
     "moveId": 907,
     "name": "G-Max Befuddle",
     "type": 7,
@@ -9978,7 +9978,7 @@
     "cat": 0,
     "properties": []
   },
-  "908": {
+  {
     "moveId": 908,
     "name": "G-Max Volt Crash",
     "type": 14,
@@ -9988,7 +9988,7 @@
     "cat": 0,
     "properties": []
   },
-  "909": {
+  {
     "moveId": 909,
     "name": "G-Max Gold Rush",
     "type": 1,
@@ -9998,7 +9998,7 @@
     "cat": 0,
     "properties": []
   },
-  "910": {
+  {
     "moveId": 910,
     "name": "G-Max Chi Strike",
     "type": 2,
@@ -10008,7 +10008,7 @@
     "cat": 0,
     "properties": []
   },
-  "911": {
+  {
     "moveId": 911,
     "name": "G-Max Terror",
     "type": 8,
@@ -10018,7 +10018,7 @@
     "cat": 0,
     "properties": []
   },
-  "912": {
+  {
     "moveId": 912,
     "name": "G-Max Foam Burst",
     "type": 12,
@@ -10028,7 +10028,7 @@
     "cat": 0,
     "properties": []
   },
-  "913": {
+  {
     "moveId": 913,
     "name": "G-Max Resonance",
     "type": 16,
@@ -10038,7 +10038,7 @@
     "cat": 0,
     "properties": []
   },
-  "914": {
+  {
     "moveId": 914,
     "name": "G-Max Cuddle",
     "type": 1,
@@ -10048,7 +10048,7 @@
     "cat": 0,
     "properties": []
   },
-  "915": {
+  {
     "moveId": 915,
     "name": "G-Max Replenish",
     "type": 1,
@@ -10058,7 +10058,7 @@
     "cat": 0,
     "properties": []
   },
-  "916": {
+  {
     "moveId": 916,
     "name": "G-Max Malodor",
     "type": 4,
@@ -10068,7 +10068,7 @@
     "cat": 0,
     "properties": []
   },
-  "917": {
+  {
     "moveId": 917,
     "name": "G-Max Meltdown",
     "type": 9,
@@ -10078,7 +10078,7 @@
     "cat": 0,
     "properties": []
   },
-  "918": {
+  {
     "moveId": 918,
     "name": "G-Max Drum Solo",
     "type": 13,
@@ -10088,7 +10088,7 @@
     "cat": 0,
     "properties": []
   },
-  "919": {
+  {
     "moveId": 919,
     "name": "G-Max Fireball",
     "type": 11,
@@ -10098,7 +10098,7 @@
     "cat": 0,
     "properties": []
   },
-  "920": {
+  {
     "moveId": 920,
     "name": "G-Max Hydrosnipe",
     "type": 12,
@@ -10108,7 +10108,7 @@
     "cat": 0,
     "properties": []
   },
-  "921": {
+  {
     "moveId": 921,
     "name": "G-Max Wind Rage",
     "type": 3,
@@ -10118,7 +10118,7 @@
     "cat": 0,
     "properties": []
   },
-  "922": {
+  {
     "moveId": 922,
     "name": "G-Max Gravitas",
     "type": 15,
@@ -10128,7 +10128,7 @@
     "cat": 0,
     "properties": []
   },
-  "923": {
+  {
     "moveId": 923,
     "name": "G-Max Stonesurge",
     "type": 12,
@@ -10138,7 +10138,7 @@
     "cat": 0,
     "properties": []
   },
-  "924": {
+  {
     "moveId": 924,
     "name": "G-Max Volcalith",
     "type": 6,
@@ -10148,7 +10148,7 @@
     "cat": 0,
     "properties": []
   },
-  "925": {
+  {
     "moveId": 925,
     "name": "G-Max Tartness",
     "type": 13,
@@ -10158,7 +10158,7 @@
     "cat": 0,
     "properties": []
   },
-  "926": {
+  {
     "moveId": 926,
     "name": "G-Max Sweetness",
     "type": 13,
@@ -10168,7 +10168,7 @@
     "cat": 0,
     "properties": []
   },
-  "927": {
+  {
     "moveId": 927,
     "name": "G-Max Sandblast",
     "type": 5,
@@ -10178,7 +10178,7 @@
     "cat": 0,
     "properties": []
   },
-  "928": {
+  {
     "moveId": 928,
     "name": "G-Max Stun Shock",
     "type": 14,
@@ -10188,7 +10188,7 @@
     "cat": 0,
     "properties": []
   },
-  "929": {
+  {
     "moveId": 929,
     "name": "G-Max Centiferno",
     "type": 11,
@@ -10198,7 +10198,7 @@
     "cat": 0,
     "properties": []
   },
-  "930": {
+  {
     "moveId": 930,
     "name": "G-Max Smite",
     "type": 19,
@@ -10208,7 +10208,7 @@
     "cat": 0,
     "properties": []
   },
-  "931": {
+  {
     "moveId": 931,
     "name": "G-Max Snooze",
     "type": 18,
@@ -10218,7 +10218,7 @@
     "cat": 0,
     "properties": []
   },
-  "932": {
+  {
     "moveId": 932,
     "name": "G-Max Finale",
     "type": 19,
@@ -10228,7 +10228,7 @@
     "cat": 0,
     "properties": []
   },
-  "933": {
+  {
     "moveId": 933,
     "name": "G-Max Steelsurge",
     "type": 9,
@@ -10238,7 +10238,7 @@
     "cat": 0,
     "properties": []
   },
-  "934": {
+  {
     "moveId": 934,
     "name": "G-Max Depletion",
     "type": 17,
@@ -10248,7 +10248,7 @@
     "cat": 0,
     "properties": []
   },
-  "935": {
+  {
     "moveId": 935,
     "name": "G-Max One Blow",
     "type": 18,
@@ -10258,7 +10258,7 @@
     "cat": 0,
     "properties": []
   },
-  "936": {
+  {
     "moveId": 936,
     "name": "G-Max Rapid Flow",
     "type": 12,
@@ -10268,4 +10268,4 @@
     "cat": 0,
     "properties": []
   }
-}
+]
