@@ -26,7 +26,7 @@ function PokemonView({ pokemon }: { pokemon: Pokemon }) {
   const { isShiny, setSelectedPokemon } = useUIStore();
   const screenWidth = useScreenWidth();
   const [selectedAbility, setSelectedAbility] = useState<Ability | null>(null);
-  const evoFamily = getEvolutionaryFamily(pokemon.index);
+  const evoFamily = getEvolutionaryFamily(pokemon.speciesId);
   const tabsData = buildPokemonMoveTabs(pokemon);
 
   const handleSelectPokemon = (pokemonId: number) => {
@@ -39,7 +39,7 @@ function PokemonView({ pokemon }: { pokemon: Pokemon }) {
   );
 
   const randomisedAbilities = pokemon.abilities.map((_, i) =>
-    randomizeAbility(pokemon.index, i, abilityWhitelist, isRandomiserActive),
+    randomizeAbility(pokemon.speciesId, i, abilityWhitelist, isRandomiserActive),
   );
 
   return (
@@ -57,13 +57,13 @@ function PokemonView({ pokemon }: { pokemon: Pokemon }) {
         <div className="font-pixel text-xl font-bold text-gray-200">
           {pokemon.nameKey}
         </div>
-        <div className="text-md font-pixel text-gray-400">#{pokemon.index}</div>
+        <div className="text-md font-pixel text-gray-400">#{pokemon.dexId}</div>
       </div>
       <div className="mt-2 flex w-full">
         <StatBars stats={pokemon.stats as StatArray} />
       </div>
       <div className="my-2 mt-6 flex w-full flex-col">
-        <AbilityBox key={pokemon.index} abilities={randomisedAbilities} />
+        <AbilityBox key={pokemon.speciesId} abilities={randomisedAbilities} />
         <div className="w-full">
           <AbilityDescription
             selectedAbility={selectedAbility}
@@ -71,7 +71,7 @@ function PokemonView({ pokemon }: { pokemon: Pokemon }) {
           />
         </div>
         <div className="">
-          <PokemonLocations pokemonId={pokemon.index}/>
+          <PokemonLocations pokemonId={pokemon.speciesId}/>
         </div>
         <div className="my-3">
           <EvolutionView

@@ -5,11 +5,14 @@ import { useMemo } from "react";
 import { IoRibbon } from "react-icons/io5";
 import { useFilterStore } from "../../../stores/filterStore";
 
-const abilityIDMap: ComboBoxEntry[] = abilities
-  .map((ability) => ({
-    id: ability.id,
-    name: getAbilityName(ability.id),
-  }))
+const abilityIDMap: ComboBoxEntry[] = Object.keys(abilities)
+  .map((id) => {
+    const numId = Number(id);
+    return {
+      id: numId,
+      name: getAbilityName(numId),
+    };
+  })
   .sort((a, b) => a.name.localeCompare(b.name));
 
 function AbilityCombobox() {

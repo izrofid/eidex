@@ -15,6 +15,9 @@ export function getNameKey(speciesId: number): string {
 }
 
 export function getSpeciesData(speciesId: number): Pokemon {
+  if (speciesId === undefined || speciesId === null) {
+    throw new Error(`Invalid speciesId: ${speciesId}`);
+  }
   const s = typedSpeciesData[speciesId.toString()];
   if (!s) throw new Error(`Species ${speciesId} not found`);
   return s;

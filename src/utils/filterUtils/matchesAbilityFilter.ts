@@ -9,7 +9,7 @@ export function matchesAbilityFilter(
 ): boolean {
   if (!abilityId) return true;
   const randomisedAbilities = pokemon.abilities.map((_, i) =>
-    randomizeAbility(pokemon.index, i, abilityWhitelist, isRandomiserActive)
+    randomizeAbility(pokemon.speciesId, i, abilityWhitelist, isRandomiserActive)
   );
   return randomisedAbilities.some((ability) => ability[0] === abilityId);
 }

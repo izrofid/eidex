@@ -6,7 +6,6 @@ import CreditsPanel from "./components/CreditsPanel";
 import FilterBar from "./components/Filter/FilterBar";
 import FloatingButton from "./components/FloatingActionButton";
 import PokemonList from "./components/PokemonList/PokemonList";
-import PokemonModal from "./components/PokemonModal/PokemonModal";
 import pokemonData from "./data/speciesData.json";
 import { useFilterStore } from "./stores/filterStore";
 import { useUIStore } from "./stores/uiStore";
@@ -22,7 +21,7 @@ function App() {
 
   // Memoized filtered Pokémon list (only updates when filters or randomizer state changes)
   const filteredPokemon = useMemo(() => {
-    return filterPokemon(pokemonData as Pokemon[], filters, randomiserState.isActive);
+    return filterPokemon(pokemonData as Record<string, Pokemon>, filters, randomiserState.isActive);
   }, [filters, randomiserState]);
 
   // Create ref to store previous randomiser state for comparison
@@ -49,9 +48,6 @@ function App() {
     // Update ref with current state for next comparison
     prevRandomiserStateRef.current = randomiserState;
   }, [filters, randomiserState]);
-
-  const selectedPokemon = useUIStore((state) => state.selectedPokemon);
-  const isModalOpen = useUIStore((state) => state.isModalOpen);
 
   const isSidebarOpen = useUIStore((state) => state.isSidebarOpen);
 
@@ -107,7 +103,7 @@ function App() {
           <CreditsPanel />
           <PokemonList
             pokemonToShow={filteredPokemon}
-            allPokemon={pokemonData as Pokemon[]}
+            allPokemon={Object.values(pokemonData)}
           />
 
           {!inView && !isSidebarOpen && (
@@ -118,8 +114,6 @@ function App() {
               <FloatingButton />
             </div>
           )}
-
-          {selectedPokemon && isModalOpen && <PokemonModal />}
         </div>
       </div>
     </div>

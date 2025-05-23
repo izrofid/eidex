@@ -7,11 +7,16 @@ import { matchesMoveFilter } from "./matchesMoveFilter";
 import { sortPokemon } from "./sortPokemon";
 
 export function filterPokemon(
-  pokemons: Pokemon[],
+  pokemons: Pokemon[] | Record<string, Pokemon>,
   filters: FilterOptions = {},
   isRandomiserActive: boolean,
 ): Pokemon[] {
-  const filtered = pokemons.filter(
+  // Convert to array if pokemons is an object
+  const pokemonArray = Array.isArray(pokemons)
+    ? pokemons
+    : Object.values(pokemons);
+
+  const filtered = pokemonArray.filter(
     (pokemon) =>
       matchesNameFilter(pokemon, filters.name) &&
       matchesTypeFilter(pokemon, filters.typeIds) &&

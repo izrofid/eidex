@@ -95,11 +95,11 @@ export default function PokemonList({
         .slice(0, visibleCount)
         .filter(
         (pokemon) =>
-          !ignoreList.includes(pokemon.index) &&
+          !ignoreList.includes(pokemon.speciesId) &&
           !excludeForms(pokemon.forms),
         )
         .map((pokemon) => (
-        <PokemonCard key={pokemon.index} pokemon={pokemon} />
+        <PokemonCard key={pokemon.speciesId} pokemon={pokemon} />
         ))}
       </div>
       <div className="z-50">{selectedPokemon && isModalOpen && <PokemonModal />}</div>

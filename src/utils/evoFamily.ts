@@ -23,14 +23,15 @@ function findRootSpecies(speciesId: number): number {
   let current = speciesId;
 
   while (true) {
-    const parent = speciesData.find(
-      (p) =>
+    // speciesData is now a keyed object, so iterate over its values
+    const parent = Object.values(speciesData).find(
+      (p: any) =>
         Array.isArray(p.evolutions) &&
-        p.evolutions.some((evo) => evo[1] === current),
+        p.evolutions.some((evo: any) => evo[1] === current),
     );
 
     if (!parent) break;
-    current = parent.index;
+    current = parent.speciesId;
   }
 
   return current;
@@ -65,7 +66,7 @@ function getEvolutionaryFamily(speciesId: number): EvolutionFamily {
     const node: EvolutionNode = existing ?? { id, children: [] };
     nodeMap[id] = node;
 
-    const pokemon = speciesData.find((p) => p.index === id);
+    const pokemon = Object.values(speciesData).find((p: any) => p.index === id);
     if (!pokemon) {
       console.warn(`Missing Pokémon with index ${id}`);
       return node;

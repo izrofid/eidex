@@ -8,7 +8,7 @@ import { useFilterStore } from "@/stores/filterStore";
 const moveIDMap: ComboBoxEntry[] = Object.values(moveData)
   .filter((m) => typeof m === "object" && !!m && "id" in m)
   .map((m) => ({
-    id: (m as Move).id,
+    id: (m as Move).moveId,
     name: (m as Move).name,
   }));
 
