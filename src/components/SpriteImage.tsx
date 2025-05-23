@@ -19,7 +19,7 @@ export default function SpriteImage({
   const alt = pokemon.nameKey;
   const [imgError, setImgError] = React.useState(false);
 
-  const spriteUrl = useSprite(pokemon.index);
+  const spriteUrl = useSprite(pokemon.speciesId);
 
   const size = mult * 64
 

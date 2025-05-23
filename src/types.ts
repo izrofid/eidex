@@ -58,7 +58,7 @@ export interface FilterOptions {
 }
 
 export interface Move {
-  id: number;
+  moveId: number;
   name: string;
   description: string | null;
   power: number;

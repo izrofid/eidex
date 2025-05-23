@@ -5,13 +5,15 @@ interface Item {
   Name: string;
 }
 
-const itemMap = new Map<number, Item>();
-for (const item of itemData) {
-  if (item) itemMap.set(item.itemId, item);
-}
+type ItemLookup = {
+  [key: string]: Item;
+};
 
+const itemMap = itemData as ItemLookup;
+
+// itemData is assumed to be an object keyed by itemId as string
 export function getItemData(itemId: number): Item | undefined {
-  return itemMap.get(itemId);
+  return itemMap[itemId];
 }
 
 // Function to return item name given id
