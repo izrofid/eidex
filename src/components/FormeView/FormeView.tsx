@@ -3,6 +3,7 @@ import React from "react";
 import speciesData from "@/data/speciesData.json";
 import SpriteImage from "../SpriteImage";
 import excludeForms from "@/utils/excludeForms";
+import { hasForms } from "@/utils/speciesUtils"; // Import hasForms
 
 interface FormeViewProps {
   pokemon: Pokemon;
@@ -14,9 +15,15 @@ export const FormeView: React.FC<FormeViewProps> = ({
   pokemon,
   onClickPokemon,
 }) => {
+  // Find all alternate forms
   const altFormes: Pokemon[] = Object.values(speciesData).filter(
     (p: Pokemon) => p.dexId === pokemon.dexId && !excludeForms(p.forms),
   );
+
+  // Hide if only one form exists
+  if (!hasForms(pokemon) || altFormes.length <= 1) {
+    return null;
+  }
 
   return (
     <div className="neutral-box flex flex-row flex-wrap justify-evenly gap-2 rounded-md p-2">
