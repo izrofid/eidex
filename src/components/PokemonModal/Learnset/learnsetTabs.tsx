@@ -56,7 +56,7 @@ export const buildPokemonMoveTabs = (pokemon: Pokemon) => {
       contentFn: () => (
         <div className="text-center font-bold text-white">
           {(() => {
-            const rootSpeciesId = findRootSpecies(pokemon.index);
+            const rootSpeciesId = findRootSpecies(pokemon.speciesId);
             const rootSpecies = getSpeciesData(rootSpeciesId);
             return (rootSpecies.eggMoves ?? []).length > 0 ? (
               <ul>
