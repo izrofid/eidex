@@ -5,9 +5,8 @@ import EvolutionView from "../EvolutionView/EvolutionView";
 import AbilityBox from "./AbilityBox";
 import { getEvolutionaryFamily } from "@/utils/evoFamily";
 import AbilityDescription from "./AbilityDescription";
-import TabbedInterface from "./TabbedInterface";
 import TypeMatchup from "./TypeMatchup";
-import { buildPokemonMoveTabs } from "./Learnset/learnsetTabs";
+import PokemonLearnset from "./Learnset/PokemonLearnset";
 import { TypeBadge } from "../TypeBadges/TypeBadge";
 import StatBars from "./StatBars";
 import { FormeView } from "../FormeView/FormeView";
@@ -20,26 +19,29 @@ import { randomizeAbility } from "@/randomiser/randomiser";
 import ShinyToggle from "../AppHeader/ShinyToggle";
 import RandomiserSwitch from "../AppHeader/RandomiserSwitch";
 import { useRandomiserStore } from "@/stores/randomiserStore";
-import PokemonLocations from "./PokemonLocations"
+import PokemonLocations from "./PokemonLocations";
 
 function PokemonView({ pokemon }: { pokemon: Pokemon }) {
   const { isShiny, setSelectedPokemon } = useUIStore();
   const screenWidth = useScreenWidth();
   const [selectedAbility, setSelectedAbility] = useState<Ability | null>(null);
+  const isRandomiserActive = useRandomiserStore(
+    (state) => state.isRandomiserActive,
+  );
   const evoFamily = getEvolutionaryFamily(pokemon.speciesId);
-  const tabsData = buildPokemonMoveTabs(pokemon);
 
   const handleSelectPokemon = (pokemonId: number) => {
     const pokemon: Pokemon = getSpeciesData(pokemonId);
     setSelectedPokemon(pokemon);
   };
 
-  const isRandomiserActive = useRandomiserStore(
-    (state) => state.isRandomiserActive,
-  );
-
   const randomisedAbilities = pokemon.abilities.map((_, i) =>
-    randomizeAbility(pokemon.speciesId, i, abilityWhitelist, isRandomiserActive),
+    randomizeAbility(
+      pokemon.speciesId,
+      i,
+      abilityWhitelist,
+      isRandomiserActive,
+    ),
   );
 
   return (
@@ -71,7 +73,7 @@ function PokemonView({ pokemon }: { pokemon: Pokemon }) {
           />
         </div>
         <div className="">
-          <PokemonLocations pokemonId={pokemon.speciesId}/>
+          <PokemonLocations pokemonId={pokemon.speciesId} />
         </div>
         <div className="my-3">
           <EvolutionView
@@ -94,7 +96,7 @@ function PokemonView({ pokemon }: { pokemon: Pokemon }) {
         </div>
       </div>
       <div className="flex w-full flex-grow">
-        <TabbedInterface tabs={() => tabsData} />
+        <PokemonLearnset pokemon={pokemon} />
       </div>
     </div>
   );
@@ -113,9 +115,6 @@ function PokemonModal() {
       <div
         className="w-xl no-scrollbar relative mx-2 my-5 h-[95dvh] max-h-screen justify-normal overflow-y-auto rounded-lg border border-gray-100 bg-zinc-800 p-6"
         onClick={(e) => e.stopPropagation()}
-        style={{
-          scrollBehavior: "smooth",
-        }}
       >
         <span className="flex flex-row justify-between">
           <span className="flex flex-row gap-2">
