@@ -1,6 +1,6 @@
 import { useRandomiserStore } from "@/stores/randomiserStore";
 import { isAbilityAvialable } from "@/utils/abilityData";
-import { getSpeciesData } from "@/utils/speciesData";
+import { getSpeciesData } from "@/utils/speciesUtils";
 
 class Sfc32State {
   a: number;

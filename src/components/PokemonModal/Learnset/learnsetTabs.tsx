@@ -2,7 +2,7 @@ import { findRootSpecies } from "@/utils/evoFamily";
 import { Pokemon } from "../../../types";
 import { getMoveData } from "../../../utils/moveData";
 import MoveEntry from "./MoveEntry";
-import { getSpeciesData } from "@/utils/speciesData";
+import { getSpeciesData } from "@/utils/speciesUtils";
 
 export const buildPokemonMoveTabs = (pokemon: Pokemon) => {
   // Only create object with label and a function to generate content

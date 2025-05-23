@@ -1,5 +1,5 @@
 import abilities from "../data/abilityData.json";
-import { getBaseForm, getSpeciesData } from "./speciesData";
+import { getBaseForm, getSpeciesData } from "./speciesUtils";
 // import { abilityWhitelist } from "@/randomiser/abilityWhitelist";
 // import { randomizeAbility } from "@/randomiser/randomiser";
 // import { useRandomiserStore } from "@/stores/randomiserStore";

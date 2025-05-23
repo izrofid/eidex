@@ -11,7 +11,7 @@ import { buildPokemonMoveTabs } from "./Learnset/learnsetTabs";
 import { TypeBadge } from "../TypeBadges/TypeBadge";
 import StatBars from "./StatBars";
 import { FormeView } from "../FormeView/FormeView";
-import { getSpeciesData, hasForms } from "@/utils/speciesData";
+import { getSpeciesData, hasForms } from "@/utils/speciesUtils";
 import { useUIStore } from "@/stores/uiStore";
 import { useScreenWidth } from "@/hooks/useScreenWidth";
 import SpriteImage from "../SpriteImage";
