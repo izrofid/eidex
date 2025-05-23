@@ -6,7 +6,7 @@ import { Move } from "../../../types";
 import { useFilterStore } from "@/stores/filterStore";
 
 const moveIDMap: ComboBoxEntry[] = Object.values(moveData)
-  .filter((m) => typeof m === "object" && !!m && "id" in m)
+  .filter((m) => typeof m === "object" && !!m && "moveId" in m)
   .map((m) => ({
     id: (m as Move).moveId,
     name: (m as Move).name,
