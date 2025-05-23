@@ -31,6 +31,7 @@ function findRootSpecies(speciesId: number): number {
     );
 
     if (!parent) break;
+    // Use the correct property based on the new data structure
     current = parent.speciesId;
   }
 
@@ -66,7 +67,11 @@ function getEvolutionaryFamily(speciesId: number): EvolutionFamily {
     const node: EvolutionNode = existing ?? { id, children: [] };
     nodeMap[id] = node;
 
-    const pokemon = Object.values(speciesData).find((p: any) => p.index === id);
+    // The speciesData is now keyed by ID, so we can access it directly
+    // Convert id to string since JSON keys are strings
+    const pokemonKey = id.toString();
+    const pokemon = speciesData[pokemonKey as keyof typeof speciesData] || 
+      Object.values(speciesData).find((p: any) => p.speciesId === id);
     if (!pokemon) {
       console.warn(`Missing Pokémon with index ${id}`);
       return node;
