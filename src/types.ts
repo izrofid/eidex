@@ -4,7 +4,7 @@ export interface PokemonChanges {
   abilities?: (string | number[])[];
 }
 
-export type SortBy = "dexId" | "name" | "stat" | "index";
+export type SortBy = "dexId" | "name" | "stat" | "speciesId";
 
 export type StatArray = [number, number, number, number, number, number]
 
