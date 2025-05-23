@@ -57,10 +57,10 @@ export function SaveFileButton({
     <Button
       type="button"
       onClick={handleClick}
-      className="flex items-center min-w-15 justify-center gap-1 rounded bg-neutral-700 px-2 py-1 text-white hover:bg-gray-700 shadow-md/40"
+      className="flex items-center w-max justify-center rounded cursor-pointer text-white hover:text-emerald-500"
       title="Upload .sav File"
     >
-      <MdCloudUpload size={20} />
+      <MdCloudUpload size={21} />
       <input
         type="file"
         accept=".sav"
