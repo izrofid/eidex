@@ -41,9 +41,9 @@ export const SortBar: React.FC<SortBarProps> = ({
   const setSortDirection = useFilterStore((state) => state.setSortDirection);
 
   return (
-    <div className="border-b-1 flex w-full items-center justify-between border-neutral-600/50 bg-zinc-900">
+    <div className="border-b-1 flex w-full items-center justify-between border-neutral-600/50 bg-zinc-900 px-3">
       {/* Sort buttons group */}
-      <div className="ml-3 flex h-11 flex-1 text-nowrap">
+      <div className="flex h-11 flex-1 text-nowrap overflow-x-auto">
         {sortOptions.map((option) => {
           const value = option.statType
             ? `${option.value}:${option.statType}`
@@ -74,7 +74,7 @@ export const SortBar: React.FC<SortBarProps> = ({
       </div>
       {/* Direction marker */}
       <div
-        className="cursor-pointer select-none pr-3"
+        className="cursor-pointer select-none p-1 max-sm:bg-zinc-700"
         onClick={() => {
           if (toggleSortDirection) {
             toggleSortDirection();
