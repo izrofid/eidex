@@ -2,8 +2,13 @@ const fs = require('fs');
 const path = require('path');
 
 // Get paths from environment variables or use defaults
-const speciesDataPath = process.env.SPECIES_DATA_PATH || '../../src/data/speciesData.json';
+const speciesDataPath = process.env.SPECIES_DATA_PATH
+  ? path.resolve(process.env.SPECIES_DATA_PATH)
+  : path.resolve(__dirname, '../../src/data/speciesData.json');
 const outputDir = path.resolve(__dirname, '../../external_data');
+
+// Load ignore/mapping config
+const ignoreConfig = require(path.resolve(__dirname, './pokemon_name_ignore_config.cjs'));
 
 // Read the species data JSON file
 try {
@@ -30,7 +35,6 @@ try {
     if (sanitized === "mime jr.") return "mime-jr";
     
     // Replace apostrophes and special characters with appropriate handling
-    // For Farfetch'd (farfetchd), Sirfetch'd (sirfetchd)
     sanitized = sanitized.replace(/'d/g, 'd');
     
     // Replace spaces and other special characters with hyphens
@@ -41,6 +45,44 @@ try {
     
     // Remove leading and trailing hyphens
     sanitized = sanitized.replace(/^-|-$/g, '');
+    
+    // Apply ignore/mapping config (MapToBaseForm and others)
+    if (ignoreConfig.MapToBaseForm && ignoreConfig.MapToBaseForm[sanitized]) {
+      sanitized = ignoreConfig.MapToBaseForm[sanitized];
+    }
+    if (ignoreConfig.GenderFormMapping && ignoreConfig.GenderFormMapping[sanitized]) {
+      sanitized = ignoreConfig.GenderFormMapping[sanitized];
+    }
+    if (ignoreConfig.RegionalFormMapping && ignoreConfig.RegionalFormMapping[sanitized]) {
+      sanitized = ignoreConfig.RegionalFormMapping[sanitized];
+    }
+    if (ignoreConfig.MaskFormMapping && ignoreConfig.MaskFormMapping[sanitized]) {
+      sanitized = ignoreConfig.MaskFormMapping[sanitized];
+    }
+    if (ignoreConfig.PikachuCapMapping && ignoreConfig.PikachuCapMapping[sanitized]) {
+      sanitized = ignoreConfig.PikachuCapMapping[sanitized];
+    }
+    if (ignoreConfig.PlumageFormMapping && ignoreConfig.PlumageFormMapping[sanitized]) {
+      sanitized = ignoreConfig.PlumageFormMapping[sanitized];
+    }
+    if (ignoreConfig.NecrozmaFormMapping && ignoreConfig.NecrozmaFormMapping[sanitized]) {
+      sanitized = ignoreConfig.NecrozmaFormMapping[sanitized];
+    }
+    if (ignoreConfig.VivillonFormMapping && ignoreConfig.VivillonFormMapping[sanitized]) {
+      sanitized = ignoreConfig.VivillonFormMapping[sanitized];
+    }
+    if (ignoreConfig.MiniorMapping && ignoreConfig.MiniorMapping[sanitized]) {
+      sanitized = ignoreConfig.MiniorMapping[sanitized];
+    }
+    if (ignoreConfig.AlcremieMapping && ignoreConfig.AlcremieMapping[sanitized]) {
+      sanitized = ignoreConfig.AlcremieMapping[sanitized];
+    }
+    if (ignoreConfig.OgerponTeraMapping && ignoreConfig.OgerponTeraMapping[sanitized]) {
+      sanitized = ignoreConfig.OgerponTeraMapping[sanitized];
+    }
+    if (ignoreConfig.ZygardeFormMapping && ignoreConfig.ZygardeFormMapping[sanitized]) {
+      sanitized = ignoreConfig.ZygardeFormMapping[sanitized];
+    }
     
     return sanitized;
   });
