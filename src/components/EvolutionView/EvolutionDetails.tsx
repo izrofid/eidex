@@ -1,6 +1,6 @@
 import { EvolutionFamily } from "@/utils/evoFamily";
 import { parseEvolutions } from "../../utils/parseEvo";
-import { getNameKey, getSpeciesData } from "../../utils/speciesData";
+import { getNameKey, getSpeciesData } from "../../utils/speciesUtils";
 import { getTypeSnapColor } from "../../utils/typeInfo";
 
 interface EvolutionDetailsProps {

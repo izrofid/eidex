@@ -23,7 +23,7 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
   const screenWidth = useScreenWidth();
 
   const {
-    index,
+    speciesId,
     dexId,
     nameKey,
     types,
@@ -33,7 +33,7 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
 
   const isRandomiserActive = useRandomiserStore(state => state.isRandomiserActive)
 
-  const abilities = origAbilities.map((_, i) => randomizeAbility(index, i, abilityWhitelist, isRandomiserActive));
+  const abilities = origAbilities.map((_, i) => randomizeAbility(speciesId, i, abilityWhitelist, isRandomiserActive));
 
   // Convert the ID to a string and pad it with leading zeros and a #
   const formattedId = `#${String(dexId).padStart(3, "0")}`;
@@ -97,7 +97,7 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
             {abilities.map((abilityTuple: [number, boolean], index: number) => {
               const abilityId: number = abilityTuple[0]
               const name = getAbilityName(abilityId);
-              const isAvailable = isAbilityAvialable(pokemon.index, index, isRandomiserActive)
+              const isAvailable = isAbilityAvialable(pokemon.speciesId, index, isRandomiserActive)
               const isHidden = index === abilities.length - 1; // last one = Hidden
 
               return (

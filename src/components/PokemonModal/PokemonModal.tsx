@@ -5,13 +5,12 @@ import EvolutionView from "../EvolutionView/EvolutionView";
 import AbilityBox from "./AbilityBox";
 import { getEvolutionaryFamily } from "@/utils/evoFamily";
 import AbilityDescription from "./AbilityDescription";
-import TabbedInterface from "./TabbedInterface";
 import TypeMatchup from "./TypeMatchup";
-import { buildPokemonMoveTabs } from "./Learnset/learnsetTabs";
+import PokemonLearnset from "./Learnset/PokemonLearnset";
 import { TypeBadge } from "../TypeBadges/TypeBadge";
 import StatBars from "./StatBars";
 import { FormeView } from "../FormeView/FormeView";
-import { getSpeciesData, hasForms } from "@/utils/speciesData";
+import { getSpeciesData, hasForms } from "@/utils/speciesUtils";
 import { useUIStore } from "@/stores/uiStore";
 import { useScreenWidth } from "@/hooks/useScreenWidth";
 import SpriteImage from "../SpriteImage";
@@ -20,26 +19,29 @@ import { randomizeAbility } from "@/randomiser/randomiser";
 import ShinyToggle from "../AppHeader/ShinyToggle";
 import RandomiserSwitch from "../AppHeader/RandomiserSwitch";
 import { useRandomiserStore } from "@/stores/randomiserStore";
-import PokemonLocations from "./PokemonLocations"
+import PokemonLocations from "./PokemonLocations";
 
 function PokemonView({ pokemon }: { pokemon: Pokemon }) {
   const { isShiny, setSelectedPokemon } = useUIStore();
   const screenWidth = useScreenWidth();
   const [selectedAbility, setSelectedAbility] = useState<Ability | null>(null);
-  const evoFamily = getEvolutionaryFamily(pokemon.index);
-  const tabsData = buildPokemonMoveTabs(pokemon);
+  const isRandomiserActive = useRandomiserStore(
+    (state) => state.isRandomiserActive,
+  );
+  const evoFamily = getEvolutionaryFamily(pokemon.speciesId);
 
   const handleSelectPokemon = (pokemonId: number) => {
     const pokemon: Pokemon = getSpeciesData(pokemonId);
     setSelectedPokemon(pokemon);
   };
 
-  const isRandomiserActive = useRandomiserStore(
-    (state) => state.isRandomiserActive,
-  );
-
   const randomisedAbilities = pokemon.abilities.map((_, i) =>
-    randomizeAbility(pokemon.index, i, abilityWhitelist, isRandomiserActive),
+    randomizeAbility(
+      pokemon.speciesId,
+      i,
+      abilityWhitelist,
+      isRandomiserActive,
+    ),
   );
 
   return (
@@ -57,13 +59,13 @@ function PokemonView({ pokemon }: { pokemon: Pokemon }) {
         <div className="font-pixel text-xl font-bold text-gray-200">
           {pokemon.nameKey}
         </div>
-        <div className="text-md font-pixel text-gray-400">#{pokemon.index}</div>
+        <div className="text-md font-pixel text-gray-400">#{pokemon.dexId}</div>
       </div>
       <div className="mt-2 flex w-full">
         <StatBars stats={pokemon.stats as StatArray} />
       </div>
       <div className="my-2 mt-6 flex w-full flex-col">
-        <AbilityBox key={pokemon.index} abilities={randomisedAbilities} />
+        <AbilityBox key={pokemon.speciesId} abilities={randomisedAbilities} />
         <div className="w-full">
           <AbilityDescription
             selectedAbility={selectedAbility}
@@ -71,7 +73,7 @@ function PokemonView({ pokemon }: { pokemon: Pokemon }) {
           />
         </div>
         <div className="">
-          <PokemonLocations pokemonId={pokemon.index}/>
+          <PokemonLocations pokemonId={pokemon.speciesId} />
         </div>
         <div className="my-3">
           <EvolutionView
@@ -94,7 +96,7 @@ function PokemonView({ pokemon }: { pokemon: Pokemon }) {
         </div>
       </div>
       <div className="flex w-full flex-grow">
-        <TabbedInterface tabs={() => tabsData} />
+        <PokemonLearnset pokemon={pokemon} />
       </div>
     </div>
   );
@@ -113,9 +115,6 @@ function PokemonModal() {
       <div
         className="w-xl no-scrollbar relative mx-2 my-5 h-[95dvh] max-h-screen justify-normal overflow-y-auto rounded-lg border border-gray-100 bg-zinc-800 p-6"
         onClick={(e) => e.stopPropagation()}
-        style={{
-          scrollBehavior: "smooth",
-        }}
       >
         <span className="flex flex-row justify-between">
           <span className="flex flex-row gap-2">

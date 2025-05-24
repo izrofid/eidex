@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "totalSanitizedNames": 1533,
+    "totalPokeapiNames": 1302,
+    "namesOnlyInSanitized": 0,
+    "namesOnlyInPokeapi": 28
+  },
+  "namesOnlyInSanitized": [],
+  "namesOnlyInPokeapi": [
+    "raticate-totem-alola",
+    "mimikyu-totem-busted",
+    "marowak-totem",
+    "butterfree-gmax",
+    "machamp-gmax",
+    "kingler-gmax",
+    "lapras-gmax",
+    "snorlax-gmax",
+    "garbodor-gmax",
+    "orbeetle-gmax",
+    "drednaw-gmax",
+    "coalossal-gmax",
+    "flapple-gmax",
+    "appletun-gmax",
+    "sandaconda-gmax",
+    "toxtricity-amped-gmax",
+    "centiskorch-gmax",
+    "grimmsnarl-gmax",
+    "copperajah-gmax",
+    "toxtricity-low-key-gmax",
+    "koraidon-limited-build",
+    "koraidon-sprinting-build",
+    "koraidon-swimming-build",
+    "koraidon-gliding-build",
+    "miraidon-low-power-mode",
+    "miraidon-drive-mode",
+    "miraidon-aquatic-mode",
+    "miraidon-glide-mode"
+  ],
+  "potentialMatches": {},
+  "groupedMismatches": {}
+}

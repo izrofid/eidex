@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 import Evolution from "./Evolution";
 import { Pokemon } from "../../types";
 import React from "react";
-import { getSpeciesData } from "@/utils/speciesData";
+import { getSpeciesData } from "@/utils/speciesUtils";
 import EvolutionDetails from "./EvolutionDetails";
 
 // This is a derivative type that sets 'evolutions' to not-undefined.

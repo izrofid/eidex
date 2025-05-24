@@ -3,6 +3,7 @@ import { getTypeColor } from "@/utils/typeInfo";
 import MovePropBox from "./MovePropRow";
 import chroma from "chroma-js";
 import { TypeIcon } from "@/components/TypeBadges/TypeIcon";
+import { memo } from "react";
 
 type MoveEntryProps = {
   move: Move;
@@ -11,7 +12,7 @@ type MoveEntryProps = {
 
 const adjustedBgCache: Record<number, string> = {};
 
-const MoveEntry: React.FC<MoveEntryProps> = ({ move, level }) => {
+const MoveEntry: React.FC<MoveEntryProps> = memo(({ move, level }) => {
 
   const typeId = move.type;
   let adjustedBg = adjustedBgCache[typeId];
@@ -24,7 +25,7 @@ const MoveEntry: React.FC<MoveEntryProps> = ({ move, level }) => {
 
   return (
     <div
-      className="border-b-1 relative flex select-none flex-col gap-2 border-gray-600 px-2 py-6 shadow-sm transition-shadow hover:backdrop-brightness-120 sm:px-4"
+      className="border-b-1 relative flex select-none flex-col border-gray-600 px-2 py-6 shadow-sm transition-shadow hover:backdrop-brightness-120 sm:px-4"
       style={{ backgroundColor: adjustedBg }}
     >
         {level !== undefined && (
@@ -71,6 +72,6 @@ const MoveEntry: React.FC<MoveEntryProps> = ({ move, level }) => {
       </div>
     </div>
   );
-};
+});
 
 export default MoveEntry;

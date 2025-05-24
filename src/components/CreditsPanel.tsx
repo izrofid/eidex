@@ -1,3 +1,4 @@
+import { Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
 import CloseButton from "./CloseButton";
 import useBodyScrollLock from "../hooks/useBodyScrollLock";
 import { useUIStore } from "@/stores/uiStore";
@@ -30,24 +31,25 @@ const CreditsPanel = () => {
   const closeCredits = useUIStore((state) => state.closeCredits);
 
   return (
-    <>
-      {isCreditsOpen && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-40"
-          onClick={closeCredits}
-        >
-          <div
-            className="relative w-full max-w-md rounded bg-zinc-800 p-6 text-gray-300 shadow-lg"
-          >
-            <div className="mb-4 flex items-center justify-between">
-              <span className="text-xl font-semibold">Credits</span>
-              <CloseButton onClick={closeCredits} />
-            </div>
-            <CreditsContent />
+    <Dialog 
+      open={isCreditsOpen} 
+      onClose={closeCredits}
+      className="relative z-50"
+    >
+      {/* Background overlay */}
+      <div className="fixed inset-0 bg-black bg-opacity-40" />
+      
+      {/* Dialog positioning */}
+      <div className="fixed inset-0 flex items-center justify-center">
+        <DialogPanel className="w-full max-w-md rounded bg-zinc-800 p-6 text-gray-300 shadow-lg">
+          <div className="mb-4 flex items-center justify-between">
+            <DialogTitle className="text-xl font-semibold">Credits</DialogTitle>
+            <CloseButton onClick={closeCredits} />
           </div>
-        </div>
-      )}
-    </>
+          <CreditsContent />
+        </DialogPanel>
+      </div>
+    </Dialog>
   );
 };
 

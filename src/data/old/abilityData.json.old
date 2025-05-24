@@ -1,0 +1,1623 @@
+[
+  {
+    "abilityId": 1,
+    "name": "Stench",
+    "description": "May cause a foe to flinch."
+  },
+  {
+    "abilityId": 2,
+    "name": "Drizzle",
+    "description": "Summons Rain for 5 turns."
+  },
+  {
+    "abilityId": 3,
+    "name": "Speed Boost",
+    "description": "Gradually boosts Speed."
+  },
+  {
+    "abilityId": 4,
+    "name": "Battle Armor",
+    "description": "Blocks critical hits."
+  },
+  {
+    "abilityId": 5,
+    "name": "Sturdy",
+    "description": "Cannot be knocked out with one hit."
+  },
+  {
+    "abilityId": 6,
+    "name": "Damp",
+    "description": "Prevents self-destruction."
+  },
+  {
+    "abilityId": 7,
+    "name": "Limber",
+    "description": "Prevents paralysis."
+  },
+  {
+    "abilityId": 8,
+    "name": "Sand Veil",
+    "description": "Ups evasion in Sand."
+  },
+  {
+    "abilityId": 9,
+    "name": "Static",
+    "description": "Can paralyze on contact."
+  },
+  {
+    "abilityId": 10,
+    "name": "Volt Absorb",
+    "description": "Absorbs Electric moves to heal HP."
+  },
+  {
+    "abilityId": 11,
+    "name": "Water Absorb",
+    "description": "Absorbs Water moves to heal HP."
+  },
+  {
+    "abilityId": 12,
+    "name": "Oblivious",
+    "description": "Prevents attraction and Intimidate."
+  },
+  {
+    "abilityId": 13,
+    "name": "Cloud Nine",
+    "description": "Negates weather effects."
+  },
+  {
+    "abilityId": 14,
+    "name": "Compound Eyes",
+    "description": "Raises accuracy by 30%."
+  },
+  {
+    "abilityId": 15,
+    "name": "Insomnia",
+    "description": "Prevents sleep."
+  },
+  {
+    "abilityId": 16,
+    "name": "Color Change",
+    "description": "Changes type to foe's move."
+  },
+  {
+    "abilityId": 17,
+    "name": "Immunity",
+    "description": "Prevents poisoning."
+  },
+  {
+    "abilityId": 18,
+    "name": "Flash Fire",
+    "description": "Powers up if hit by Fire."
+  },
+  {
+    "abilityId": 19,
+    "name": "Shield Dust",
+    "description": "Prevents added effects and entry hazard damage."
+  },
+  {
+    "abilityId": 20,
+    "name": "Own Tempo",
+    "description": "Prevents confusion and Intimidate."
+  },
+  {
+    "abilityId": 21,
+    "name": "Suction Cups",
+    "description": "Firmly anchors the body."
+  },
+  {
+    "abilityId": 22,
+    "name": "Intimidate",
+    "description": "Lowers the foe's Attack."
+  },
+  {
+    "abilityId": 23,
+    "name": "Shadow Tag",
+    "description": "Prevents the foe's escape."
+  },
+  {
+    "abilityId": 24,
+    "name": "Rough Skin",
+    "description": "Hurts to touch."
+  },
+  {
+    "abilityId": 25,
+    "name": "Wonder Guard",
+    "description": "“Supereffective” hits."
+  },
+  {
+    "abilityId": 26,
+    "name": "Levitate",
+    "description": "Not hit by Ground attacks."
+  },
+  {
+    "abilityId": 27,
+    "name": "Effect Spore",
+    "description": "Leaves spores on contact."
+  },
+  {
+    "abilityId": 28,
+    "name": "Synchronize",
+    "description": "Passes on status problems."
+  },
+  {
+    "abilityId": 29,
+    "name": "Clear Body",
+    "description": "Prevents ability reduction."
+  },
+  {
+    "abilityId": 30,
+    "name": "Natural Cure",
+    "description": "Heals status upon switching out."
+  },
+  {
+    "abilityId": 31,
+    "name": "Lightning Rod",
+    "description": "Draws electrical moves."
+  },
+  {
+    "abilityId": 32,
+    "name": "Serene Grace",
+    "description": "Promotes added effects."
+  },
+  {
+    "abilityId": 33,
+    "name": "Swift Swim",
+    "description": "Doubles Speed in Rain."
+  },
+  {
+    "abilityId": 34,
+    "name": "Chlorophyll",
+    "description": "Doubles Speed in Sun."
+  },
+  {
+    "abilityId": 35,
+    "name": "Illuminate",
+    "description": "Raises accuracy by 20%."
+  },
+  {
+    "abilityId": 36,
+    "name": "Trace",
+    "description": "Copies special ability."
+  },
+  {
+    "abilityId": 37,
+    "name": "Huge Power",
+    "description": "Raises Attack."
+  },
+  {
+    "abilityId": 38,
+    "name": "Poison Point",
+    "description": "Can poison on contact."
+  },
+  {
+    "abilityId": 39,
+    "name": "Inner Focus",
+    "description": "Prevents flinching and Intimidate."
+  },
+  {
+    "abilityId": 40,
+    "name": "Magma Armor",
+    "description": "Prevents frostbite."
+  },
+  {
+    "abilityId": 41,
+    "name": "Water Veil",
+    "description": "Prevents burns."
+  },
+  {
+    "abilityId": 42,
+    "name": "Magnet Pull",
+    "description": "Traps Steel-type Pokêmon."
+  },
+  {
+    "abilityId": 43,
+    "name": "Soundproof",
+    "description": "Avoids sound-based moves."
+  },
+  {
+    "abilityId": 44,
+    "name": "Rain Dish",
+    "description": "Slight HP recovery in Rain."
+  },
+  {
+    "abilityId": 45,
+    "name": "Sand Stream",
+    "description": "Summons Sand for 5 turns."
+  },
+  {
+    "abilityId": 46,
+    "name": "Pressure",
+    "description": "Raises foe's PP usage."
+  },
+  {
+    "abilityId": 47,
+    "name": "Thick Fat",
+    "description": "Ups resistance to Fire and Ice moves by 50%."
+  },
+  {
+    "abilityId": 48,
+    "name": "Early Bird",
+    "description": "Awakens quickly from sleep."
+  },
+  {
+    "abilityId": 49,
+    "name": "Flame Body",
+    "description": "Can burn on contact."
+  },
+  {
+    "abilityId": 50,
+    "name": "Run Away",
+    "description": "Makes escaping easier."
+  },
+  {
+    "abilityId": 51,
+    "name": "Keen Eye",
+    "description": "Prevents loss of accuracy."
+  },
+  {
+    "abilityId": 52,
+    "name": "Hyper Cutter",
+    "description": "Prevents Attack reduction."
+  },
+  {
+    "abilityId": 53,
+    "name": "Pickup",
+    "description": "May pick up items."
+  },
+  {
+    "abilityId": 54,
+    "name": "Truant",
+    "description": "Moves only every two turns."
+  },
+  {
+    "abilityId": 55,
+    "name": "Hustle",
+    "description": "Reduces accuracy by 20% but boosts Atk by 50%."
+  },
+  {
+    "abilityId": 56,
+    "name": "Cute Charm",
+    "description": "Has a 30% chance to infatuate on contact."
+  },
+  {
+    "abilityId": 57,
+    "name": "Plus",
+    "description": "Boosts Sp. Atk by 50% with Minus."
+  },
+  {
+    "abilityId": 58,
+    "name": "Minus",
+    "description": "Boosts Sp. Atk by 50% with Plus."
+  },
+  {
+    "abilityId": 59,
+    "name": "Forecast",
+    "description": "Changes with the weather."
+  },
+  {
+    "abilityId": 60,
+    "name": "Sticky Hold",
+    "description": "Prevents item theft."
+  },
+  {
+    "abilityId": 61,
+    "name": "Shed Skin",
+    "description": "Has a 30% chance to heal its own status problem."
+  },
+  {
+    "abilityId": 62,
+    "name": "Guts",
+    "description": "Boosts Attack by 50% if statused."
+  },
+  {
+    "abilityId": 63,
+    "name": "Marvel Scale",
+    "description": "Boosts Defense by 50% if statused."
+  },
+  {
+    "abilityId": 64,
+    "name": "Liquid Ooze",
+    "description": "Draining causes injury."
+  },
+  {
+    "abilityId": 65,
+    "name": "Overgrow",
+    "description": "Boosts Grass moves by 50% at 1/3 or less HP."
+  },
+  {
+    "abilityId": 66,
+    "name": "Blaze",
+    "description": "Boosts Fire moves by 50% at 1/3 or less HP."
+  },
+  {
+    "abilityId": 67,
+    "name": "Torrent",
+    "description": "Boosts Water moves by 50% at 1/3 or less HP."
+  },
+  {
+    "abilityId": 68,
+    "name": "Swarm",
+    "description": "Boosts Bug moves by 50% at 1/3 or less HP."
+  },
+  {
+    "abilityId": 69,
+    "name": "Rock Head",
+    "description": "Prevents recoil damage."
+  },
+  {
+    "abilityId": 70,
+    "name": "Drought",
+    "description": "Summons Sun for 5 turns."
+  },
+  {
+    "abilityId": 71,
+    "name": "Arena Trap",
+    "description": "Prevents fleeing."
+  },
+  {
+    "abilityId": 72,
+    "name": "Vital Spirit",
+    "description": "Prevents sleep."
+  },
+  {
+    "abilityId": 73,
+    "name": "White Smoke",
+    "description": "Prevents ability reduction."
+  },
+  {
+    "abilityId": 74,
+    "name": "Pure Power",
+    "description": "Raises Attack."
+  },
+  {
+    "abilityId": 75,
+    "name": "Shell Armor",
+    "description": "Blocks critical hits."
+  },
+  {
+    "abilityId": 76,
+    "name": "Air Lock",
+    "description": "Negates weather effects."
+  },
+  {
+    "abilityId": 77,
+    "name": "Tangled Feet",
+    "description": "Ups evasion if confused."
+  },
+  {
+    "abilityId": 78,
+    "name": "Motor Drive",
+    "description": "Raises Speed if hit by an Electric-type move."
+  },
+  {
+    "abilityId": 79,
+    "name": "Rivalry",
+    "description": "Boosts moves by 1.25x if foe is of same gender."
+  },
+  {
+    "abilityId": 80,
+    "name": "Steadfast",
+    "description": "Being flinched raises Speed."
+  },
+  {
+    "abilityId": 81,
+    "name": "Snow Cloak",
+    "description": "Ups evasion in Hail or Snow."
+  },
+  {
+    "abilityId": 82,
+    "name": "Gluttony",
+    "description": "Eats Berries early."
+  },
+  {
+    "abilityId": 83,
+    "name": "Anger Point",
+    "description": "Maxes Attack after a critical hit."
+  },
+  {
+    "abilityId": 84,
+    "name": "Unburden",
+    "description": "Doubles Speed if item is lost."
+  },
+  {
+    "abilityId": 85,
+    "name": "Heatproof",
+    "description": "Weakens the power of Fire-type moves."
+  },
+  {
+    "abilityId": 86,
+    "name": "Simple",
+    "description": "Doubles stat changes."
+  },
+  {
+    "abilityId": 87,
+    "name": "Dry Skin",
+    "description": "Heat reduces HP. Water restores HP."
+  },
+  {
+    "abilityId": 88,
+    "name": "Download",
+    "description": "Adjusts power based on the foe's stats."
+  },
+  {
+    "abilityId": 89,
+    "name": "Iron Fist",
+    "description": "Boosts punching moves by 30%."
+  },
+  {
+    "abilityId": 90,
+    "name": "Poison Heal",
+    "description": "Restores 1/8 max HP if poisoned."
+  },
+  {
+    "abilityId": 91,
+    "name": "Adaptability",
+    "description": "Boosts same type attacks by 2x instead of 1.5x."
+  },
+  {
+    "abilityId": 92,
+    "name": "Skill Link",
+    "description": "Multi-hit moves hit 5 times."
+  },
+  {
+    "abilityId": 93,
+    "name": "Hydration",
+    "description": "Cures status in rain."
+  },
+  {
+    "abilityId": 94,
+    "name": "Solar Power",
+    "description": "Boosts Sp. Atk by 50% in Sun at cost of some HP."
+  },
+  {
+    "abilityId": 95,
+    "name": "Quick Feet",
+    "description": "Doubles Speed if it has a status condition."
+  },
+  {
+    "abilityId": 96,
+    "name": "Normalize",
+    "description": "Moves become Normal-type."
+  },
+  {
+    "abilityId": 97,
+    "name": "Sniper",
+    "description": "Critical hits deal 2.25x instead of 1.5x."
+  },
+  {
+    "abilityId": 98,
+    "name": "Magic Guard",
+    "description": "Only damaged by attacks."
+  },
+  {
+    "abilityId": 99,
+    "name": "No Guard",
+    "description": "Ensures that all moves hit."
+  },
+  {
+    "abilityId": 100,
+    "name": "Stall",
+    "description": "Always moves last."
+  },
+  {
+    "abilityId": 101,
+    "name": "Technician",
+    "description": "Boosts moves with less than 60 BP by 50%."
+  },
+  {
+    "abilityId": 102,
+    "name": "Leaf Guard",
+    "description": "Protects from status in sunshine."
+  },
+  {
+    "abilityId": 103,
+    "name": "Klutz",
+    "description": "Can't use hold items."
+  },
+  {
+    "abilityId": 104,
+    "name": "Mold Breaker",
+    "description": "Moves hit through abilities."
+  },
+  {
+    "abilityId": 105,
+    "name": "Super Luck",
+    "description": "Critical hits land often."
+  },
+  {
+    "abilityId": 106,
+    "name": "Aftermath",
+    "description": "Fainting damages the foe by 1/4 its max HP."
+  },
+  {
+    "abilityId": 107,
+    "name": "Anticipation",
+    "description": "Senses dangerous moves."
+  },
+  {
+    "abilityId": 108,
+    "name": "Forewarn",
+    "description": "Warns of the foe's strongest move."
+  },
+  {
+    "abilityId": 109,
+    "name": "Unaware",
+    "description": "Ignores foe's stat changes."
+  },
+  {
+    "abilityId": 110,
+    "name": "Tinted Lens",
+    "description": "Doubles the damage of not very effective moves."
+  },
+  {
+    "abilityId": 111,
+    "name": "Filter",
+    "description": "Weakens super effective moves by 25%."
+  },
+  {
+    "abilityId": 112,
+    "name": "Slow Start",
+    "description": "Takes a while to get going."
+  },
+  {
+    "abilityId": 113,
+    "name": "Scrappy",
+    "description": "Can hit Ghost-types and prevents Intimidate."
+  },
+  {
+    "abilityId": 114,
+    "name": "Storm Drain",
+    "description": "Immune to & draws in Water moves to boost SpAtk."
+  },
+  {
+    "abilityId": 115,
+    "name": "Ice Body",
+    "description": "HP recovery in Snow, can leave frostbite on hit."
+  },
+  {
+    "abilityId": 116,
+    "name": "Solid Rock",
+    "description": "Weakens super effective moves by 25%."
+  },
+  {
+    "abilityId": 117,
+    "name": "Snow Warning",
+    "description": "Summons Snow for 5 turns."
+  },
+  {
+    "abilityId": 118,
+    "name": "Honey Gather",
+    "description": "May gather Honey."
+  },
+  {
+    "abilityId": 119,
+    "name": "Frisk",
+    "description": "Reveals the foe's held item."
+  },
+  {
+    "abilityId": 120,
+    "name": "Reckless",
+    "description": "Boosts moves with recoil by 20%."
+  },
+  {
+    "abilityId": 121,
+    "name": "Multitype",
+    "description": "Changes type to its Plate."
+  },
+  {
+    "abilityId": 122,
+    "name": "Flower Gift",
+    "description": "Boosts Atk and Speed by 50% in Sun."
+  },
+  {
+    "abilityId": 123,
+    "name": "Bad Dreams",
+    "description": "Reduces sleeping foe's HP by 1/8 at end of turn."
+  },
+  {
+    "abilityId": 124,
+    "name": "Pickpocket",
+    "description": "Steals the foe's held item."
+  },
+  {
+    "abilityId": 125,
+    "name": "Sheer Force",
+    "description": "Removes added effects to boost damage by 30%."
+  },
+  {
+    "abilityId": 126,
+    "name": "Contrary",
+    "description": "Reverses stat changes."
+  },
+  {
+    "abilityId": 127,
+    "name": "Unnerve",
+    "description": "Stops foes from eating Berries."
+  },
+  {
+    "abilityId": 128,
+    "name": "Defiant",
+    "description": "Gets +2 Attack when its stats are lowered."
+  },
+  {
+    "abilityId": 129,
+    "name": "Defeatist",
+    "description": "Halves Atk/SpAtk when its HP is at 1/3 or less."
+  },
+  {
+    "abilityId": 130,
+    "name": "Cursed Body",
+    "description": "Disables moves on contact."
+  },
+  {
+    "abilityId": 131,
+    "name": "Healer",
+    "description": "Heals partner Pokêmon."
+  },
+  {
+    "abilityId": 132,
+    "name": "Friend Guard",
+    "description": "Reduces damage done to allies."
+  },
+  {
+    "abilityId": 133,
+    "name": "Weak Armor",
+    "description": "Being hit by phyiscal moves drops Def but Raises Speed."
+  },
+  {
+    "abilityId": 134,
+    "name": "Heavy Metal",
+    "description": "Doubles weight."
+  },
+  {
+    "abilityId": 135,
+    "name": "Light Metal",
+    "description": "Halves weight."
+  },
+  {
+    "abilityId": 136,
+    "name": "Multiscale",
+    "description": "Halves damage at full HP."
+  },
+  {
+    "abilityId": 137,
+    "name": "Toxic Boost",
+    "description": "Boosts Attack by 50% if poisoned."
+  },
+  {
+    "abilityId": 138,
+    "name": "Flare Boost",
+    "description": "Boosts SpAtk by 50% if burned."
+  },
+  {
+    "abilityId": 139,
+    "name": "Harvest",
+    "description": "50% chance to restore a used Berry."
+  },
+  {
+    "abilityId": 140,
+    "name": "Telepathy",
+    "description": "Protects from allies' moves."
+  },
+  {
+    "abilityId": 141,
+    "name": "Moody",
+    "description": "Stats change gradually."
+  },
+  {
+    "abilityId": 142,
+    "name": "Overcoat",
+    "description": "Immune to weather and powder."
+  },
+  {
+    "abilityId": 143,
+    "name": "Poison Touch",
+    "description": "30% chance to poison foe on contact."
+  },
+  {
+    "abilityId": 144,
+    "name": "Regenerator",
+    "description": "Heals 1/3 HP when switching out."
+  },
+  {
+    "abilityId": 145,
+    "name": "Big Pecks",
+    "description": "Prevents Defense loss."
+  },
+  {
+    "abilityId": 146,
+    "name": "Sand Rush",
+    "description": "Doubles Speed in Sand."
+  },
+  {
+    "abilityId": 147,
+    "name": "Wonder Skin",
+    "description": "Ups status move evasion."
+  },
+  {
+    "abilityId": 148,
+    "name": "Analytic",
+    "description": "Moving last boosts power by 30%."
+  },
+  {
+    "abilityId": 149,
+    "name": "Illusion",
+    "description": "Enters disguised and deals 30% more damage."
+  },
+  {
+    "abilityId": 150,
+    "name": "Imposter",
+    "description": "Transforms into the foe upon entering battle."
+  },
+  {
+    "abilityId": 151,
+    "name": "Infiltrator",
+    "description": "Passes through the foe's barriers."
+  },
+  {
+    "abilityId": 152,
+    "name": "Mummy",
+    "description": "Contact with this Pokêmon spreads this Ability."
+  },
+  {
+    "abilityId": 153,
+    "name": "Moxie",
+    "description": "Boosts Attack after knocking out a Pokêmon."
+  },
+  {
+    "abilityId": 154,
+    "name": "Justified",
+    "description": "Dark-type hits raise Attack."
+  },
+  {
+    "abilityId": 155,
+    "name": "Rattled",
+    "description": "Raises Speed when scared."
+  },
+  {
+    "abilityId": 156,
+    "name": "Magic Bounce",
+    "description": "Reflects status moves."
+  },
+  {
+    "abilityId": 157,
+    "name": "Sap Sipper",
+    "description": "Boosts attack if hit by a Grass-type move."
+  },
+  {
+    "abilityId": 158,
+    "name": "Prankster",
+    "description": "Gives +1 priority to status moves."
+  },
+  {
+    "abilityId": 159,
+    "name": "Sand Force",
+    "description": "Boosts Rock, Ground, and Steel moves in Sand."
+  },
+  {
+    "abilityId": 160,
+    "name": "Iron Barbs",
+    "description": "Inflicts damage \\1/8 HP] to a foe on contact."
+  },
+  {
+    "abilityId": 161,
+    "name": "Zen Mode",
+    "description": "Transforms into Zen Mode."
+  },
+  {
+    "abilityId": 162,
+    "name": "Victory Star",
+    "description": "Raises own and ally's accuracy by 10%."
+  },
+  {
+    "abilityId": 163,
+    "name": "Turboblaze",
+    "description": "Moves hit through abilities."
+  },
+  {
+    "abilityId": 164,
+    "name": "Teravolt",
+    "description": "Moves hit through abilities."
+  },
+  {
+    "abilityId": 165,
+    "name": "Aroma Veil",
+    "description": "Protects against mental problems."
+  },
+  {
+    "abilityId": 166,
+    "name": "Flower Veil",
+    "description": "Protects Grass-types."
+  },
+  {
+    "abilityId": 167,
+    "name": "Cheek Pouch",
+    "description": "Eating Berries restores HP by 1/3."
+  },
+  {
+    "abilityId": 168,
+    "name": "Protean",
+    "description": "Changes type to match move."
+  },
+  {
+    "abilityId": 169,
+    "name": "Fur Coat",
+    "description": "Halves physical damage."
+  },
+  {
+    "abilityId": 170,
+    "name": "Magician",
+    "description": "Can steal foe's held item after an attack."
+  },
+  {
+    "abilityId": 171,
+    "name": "Bulletproof",
+    "description": "Immune to some ball and bomb moves."
+  },
+  {
+    "abilityId": 172,
+    "name": "Competitive",
+    "description": "Gets +2 SpAtk when its stats are lowered."
+  },
+  {
+    "abilityId": 173,
+    "name": "Strong Jaw",
+    "description": "Boosts biting moves by 50%."
+  },
+  {
+    "abilityId": 174,
+    "name": "Refrigerate",
+    "description": "Normal moves become Ice & boosted by 20%."
+  },
+  {
+    "abilityId": 175,
+    "name": "Sweet Veil",
+    "description": "Keeps user and allies awake."
+  },
+  {
+    "abilityId": 176,
+    "name": "Stance Change",
+    "description": "Switches form when attacking."
+  },
+  {
+    "abilityId": 177,
+    "name": "Gale Wings",
+    "description": "Gives +1 priority to Flying moves at full HP."
+  },
+  {
+    "abilityId": 178,
+    "name": "Mega Launcher",
+    "description": "Boosts aura and pulse moves by 50%."
+  },
+  {
+    "abilityId": 179,
+    "name": "Grass Pelt",
+    "description": "Ups Defense by 50% in Grassy Terrain."
+  },
+  {
+    "abilityId": 180,
+    "name": "Symbiosis",
+    "description": "Passes its item to an ally."
+  },
+  {
+    "abilityId": 181,
+    "name": "Tough Claws",
+    "description": "Boosts moves that make contact by 30%."
+  },
+  {
+    "abilityId": 182,
+    "name": "Pixilate",
+    "description": "Normal moves become Fairy & boosted by 20%."
+  },
+  {
+    "abilityId": 183,
+    "name": "Gooey",
+    "description": "Lowers the foe's Speed if hit by a contact move."
+  },
+  {
+    "abilityId": 184,
+    "name": "Aerilate",
+    "description": "Normal moves become Flying & boosted by 20%."
+  },
+  {
+    "abilityId": 185,
+    "name": "Parental Bond",
+    "description": "Moves hit a second time for 25% damage."
+  },
+  {
+    "abilityId": 186,
+    "name": "Dark Aura",
+    "description": "Powers up all Dark-type moves by 33%."
+  },
+  {
+    "abilityId": 187,
+    "name": "Fairy Aura",
+    "description": "Powers up all Fairy-type moves by 33%."
+  },
+  {
+    "abilityId": 188,
+    "name": "Aura Break",
+    "description": "Reverse aura abilities."
+  },
+  {
+    "abilityId": 189,
+    "name": "Primordial Sea",
+    "description": "Summons Heavy Rain that nullifies Fire moves."
+  },
+  {
+    "abilityId": 190,
+    "name": "Desolate Land",
+    "description": "Summons Harsh Sun that nullifies Water moves."
+  },
+  {
+    "abilityId": 191,
+    "name": "Delta Stream",
+    "description": "Summons Strong Winds that remove Flying weaknesses."
+  },
+  {
+    "abilityId": 192,
+    "name": "Stamina",
+    "description": "Boosts Defense when hit."
+  },
+  {
+    "abilityId": 193,
+    "name": "Wimp Out",
+    "description": "Switches out below half HP."
+  },
+  {
+    "abilityId": 194,
+    "name": "Emergency Exit",
+    "description": "Switches out below half HP."
+  },
+  {
+    "abilityId": 195,
+    "name": "Water Compaction",
+    "description": "Halves Water damage and raises Defense."
+  },
+  {
+    "abilityId": 196,
+    "name": "Merciless",
+    "description": "Guarantees critical-hits on poisoned foes."
+  },
+  {
+    "abilityId": 197,
+    "name": "Shields Down",
+    "description": "Shell breaks at half HP."
+  },
+  {
+    "abilityId": 198,
+    "name": "Stakeout",
+    "description": "Doubles damage if foe switches out."
+  },
+  {
+    "abilityId": 199,
+    "name": "Water Bubble",
+    "description": "Doubles Water moves & takes half from Fire moves."
+  },
+  {
+    "abilityId": 200,
+    "name": "Steelworker",
+    "description": "Powers up Steel moves."
+  },
+  {
+    "abilityId": 201,
+    "name": "Berserk",
+    "description": "Raises SpAtk if hit lowers it below half HP."
+  },
+  {
+    "abilityId": 202,
+    "name": "Slush Rush",
+    "description": "Doubles Speed in Hail or Snow."
+  },
+  {
+    "abilityId": 203,
+    "name": "Long Reach",
+    "description": "Never makes contact."
+  },
+  {
+    "abilityId": 204,
+    "name": "Liquid Voice",
+    "description": "Sound moves become Water- type & boosted by 20%."
+  },
+  {
+    "abilityId": 205,
+    "name": "Triage",
+    "description": "Gives +3 priority to healing moves."
+  },
+  {
+    "abilityId": 206,
+    "name": "Galvanize",
+    "description": "Normal moves become Electric & boosted by 20%."
+  },
+  {
+    "abilityId": 207,
+    "name": "Surge Surfer",
+    "description": "Doubles Speed in Electric Terrain."
+  },
+  {
+    "abilityId": 208,
+    "name": "Schooling",
+    "description": "Forms a school when above 25% HP."
+  },
+  {
+    "abilityId": 209,
+    "name": "Disguise",
+    "description": "Takes one hit with no damage."
+  },
+  {
+    "abilityId": 210,
+    "name": "Battle Bond",
+    "description": "Changes form after a KO."
+  },
+  {
+    "abilityId": 211,
+    "name": "Power Construct",
+    "description": "Transforms to Complete form when below half HP."
+  },
+  {
+    "abilityId": 212,
+    "name": "Corrosion",
+    "description": "Poison can hit Steel types."
+  },
+  {
+    "abilityId": 213,
+    "name": "Comatose",
+    "description": "Acts as if asleep."
+  },
+  {
+    "abilityId": 214,
+    "name": "Queenly Majesty",
+    "description": "Protects from priority moves."
+  },
+  {
+    "abilityId": 215,
+    "name": "Innards Out",
+    "description": "Fainting damages the foe equal to its last HP."
+  },
+  {
+    "abilityId": 216,
+    "name": "Dancer",
+    "description": "Copies dance moves."
+  },
+  {
+    "abilityId": 217,
+    "name": "Battery",
+    "description": "Boosts ally's Sp. Atk."
+  },
+  {
+    "abilityId": 218,
+    "name": "Fluffy",
+    "description": "Halves contact hits. Takes 2x to Fire moves."
+  },
+  {
+    "abilityId": 219,
+    "name": "Dazzling",
+    "description": "Protects from priority moves."
+  },
+  {
+    "abilityId": 220,
+    "name": "Soul-Heart",
+    "description": "Boosts SpAtk every time a Pokêmon faints."
+  },
+  {
+    "abilityId": 221,
+    "name": "Tangling Hair",
+    "description": "Lowers the foe's Speed if hit by a contact move."
+  },
+  {
+    "abilityId": 222,
+    "name": "Receiver",
+    "description": "Takes over a KOed ally's ability."
+  },
+  {
+    "abilityId": 223,
+    "name": "Power Of Alchemy",
+    "description": "Takes over a KOed ally's ability."
+  },
+  {
+    "abilityId": 224,
+    "name": "Beast Boost",
+    "description": "KOing a foe boosts its highest stat."
+  },
+  {
+    "abilityId": 225,
+    "name": "RKS System",
+    "description": "Memories change its type."
+  },
+  {
+    "abilityId": 226,
+    "name": "Electric Surge",
+    "description": "Sets Electric Terrain for 5 turns."
+  },
+  {
+    "abilityId": 227,
+    "name": "Psychic Surge",
+    "description": "Sets Psychic Terrain for 5 turns."
+  },
+  {
+    "abilityId": 228,
+    "name": "Misty Surge",
+    "description": "Sets Misty Terrain for 5 turns."
+  },
+  {
+    "abilityId": 229,
+    "name": "Grassy Surge",
+    "description": "Sets Grassy Terrain for 5 turns."
+  },
+  {
+    "abilityId": 230,
+    "name": "Full Metal Body",
+    "description": "Prevents ability reduction."
+  },
+  {
+    "abilityId": 231,
+    "name": "Shadow Shield",
+    "description": "Halves damage at full HP."
+  },
+  {
+    "abilityId": 232,
+    "name": "Prism Armor",
+    "description": "Weakens super effective moves by 25%."
+  },
+  {
+    "abilityId": 233,
+    "name": "Neuroforce",
+    "description": "Powers up super effective hits by 25%."
+  },
+  {
+    "abilityId": 234,
+    "name": "Intrepid Sword",
+    "description": "Raises Attack on entry."
+  },
+  {
+    "abilityId": 235,
+    "name": "Dauntless Shield",
+    "description": "Raises Defense on entry."
+  },
+  {
+    "abilityId": 236,
+    "name": "Libero",
+    "description": "Changes type to match move."
+  },
+  {
+    "abilityId": 237,
+    "name": "Ball Fetch",
+    "description": "Fetches failed Pokê Ball."
+  },
+  {
+    "abilityId": 238,
+    "name": "Cotton Down",
+    "description": "Lower Speed of all when hit."
+  },
+  {
+    "abilityId": 239,
+    "name": "Propeller Tail",
+    "description": "Moves ignore redirection."
+  },
+  {
+    "abilityId": 240,
+    "name": "Mirror Armor",
+    "description": "Reflect stat decreases."
+  },
+  {
+    "abilityId": 241,
+    "name": "Gulp Missile",
+    "description": "If hit, spits prey from sea."
+  },
+  {
+    "abilityId": 242,
+    "name": "Stalwart",
+    "description": "Moves ignore redirection."
+  },
+  {
+    "abilityId": 243,
+    "name": "Steam Engine",
+    "description": "Being hit by Fire/Water moves maxes Speed."
+  },
+  {
+    "abilityId": 244,
+    "name": "Punk Rock",
+    "description": "Boosts sound moves by 30% & resists them by 50%."
+  },
+  {
+    "abilityId": 245,
+    "name": "Sand Spit",
+    "description": "Summons Sand for 5 turns if hit."
+  },
+  {
+    "abilityId": 246,
+    "name": "Ice Scales",
+    "description": "Halves Special damage."
+  },
+  {
+    "abilityId": 247,
+    "name": "Ripen",
+    "description": "Doubles effect of Berries."
+  },
+  {
+    "abilityId": 248,
+    "name": "Ice Face",
+    "description": "Takes one free physical hit and changes form."
+  },
+  {
+    "abilityId": 249,
+    "name": "Power Spot",
+    "description": "Powers up ally moves."
+  },
+  {
+    "abilityId": 250,
+    "name": "Mimicry",
+    "description": "Changes type on terrain."
+  },
+  {
+    "abilityId": 251,
+    "name": "Screen Cleaner",
+    "description": "Screens are remove on entry."
+  },
+  {
+    "abilityId": 252,
+    "name": "Steely Spirit",
+    "description": "Boosts own and ally's Steel-type moves by 50%."
+  },
+  {
+    "abilityId": 253,
+    "name": "Perish Body",
+    "description": "Gives a perish count on contact."
+  },
+  {
+    "abilityId": 254,
+    "name": "Wandering Spirit",
+    "description": "Trade abilities on contact."
+  },
+  {
+    "abilityId": 255,
+    "name": "Gorilla Tactics",
+    "description": "Ups Attack by 50% but locks move."
+  },
+  {
+    "abilityId": 256,
+    "name": "Neutralizing Gas",
+    "description": "All Abilities are nullified."
+  },
+  {
+    "abilityId": 257,
+    "name": "Pastel Veil",
+    "description": "Protects team from poison."
+  },
+  {
+    "abilityId": 258,
+    "name": "Hunger Switch",
+    "description": "Changes form each turn."
+  },
+  {
+    "abilityId": 259,
+    "name": "Quick Draw",
+    "description": "Has a 30% chance to move first."
+  },
+  {
+    "abilityId": 260,
+    "name": "Unseen Fist",
+    "description": "Contact moves bypass protection."
+  },
+  {
+    "abilityId": 261,
+    "name": "Curious Medicine",
+    "description": "Remove ally's stat changes."
+  },
+  {
+    "abilityId": 262,
+    "name": "Transistor",
+    "description": "Powers up Electric-type moves by 50%."
+  },
+  {
+    "abilityId": 263,
+    "name": "Dragon's Maw",
+    "description": "Powers up Dragon-type moves by 50%."
+  },
+  {
+    "abilityId": 264,
+    "name": "Chilling Neigh",
+    "description": "Boosts Attack after knocking out a Pokêmon."
+  },
+  {
+    "abilityId": 265,
+    "name": "Grim Neigh",
+    "description": "Boosts SpAtk after knocking out a Pokêmon."
+  },
+  {
+    "abilityId": 266,
+    "name": "As One",
+    "description": "Unnerve and Chilling Neigh."
+  },
+  {
+    "abilityId": 267,
+    "name": "As One",
+    "description": "Unnerve and Grim Neigh."
+  },
+  {
+    "abilityId": 268,
+    "name": "Lingering Aroma",
+    "description": "Contact with this Pokêmon spreads this Ability."
+  },
+  {
+    "abilityId": 269,
+    "name": "Seed Sower",
+    "description": "Summons Grassy Terrain for 5 turns when hit."
+  },
+  {
+    "abilityId": 270,
+    "name": "Thermal Exchange",
+    "description": "Fire-type hits raise Attack Immune to burn."
+  },
+  {
+    "abilityId": 271,
+    "name": "Anger Shell",
+    "description": "+Atk/SpA/Spe, -Def/SpD if hit lowers HP below 50%."
+  },
+  {
+    "abilityId": 272,
+    "name": "Purifying Salt",
+    "description": "Resists Ghost and immune to status."
+  },
+  {
+    "abilityId": 273,
+    "name": "Well-Baked Body",
+    "description": "Immune to Fire moves & gets +2 Defense instead."
+  },
+  {
+    "abilityId": 274,
+    "name": "Wind Rider",
+    "description": "Ups Attack if hit by wind."
+  },
+  {
+    "abilityId": 275,
+    "name": "Guard Dog",
+    "description": "Cannot be intimidated."
+  },
+  {
+    "abilityId": 276,
+    "name": "Rocky Payload",
+    "description": "Boosts power of Rock moves by 50%."
+  },
+  {
+    "abilityId": 277,
+    "name": "Wind Power",
+    "description": "Gets charged by wind."
+  },
+  {
+    "abilityId": 278,
+    "name": "Zero to Hero",
+    "description": "Changes form on switch out."
+  },
+  {
+    "abilityId": 279,
+    "name": "Commander",
+    "description": "Commands from Dondozo."
+  },
+  {
+    "abilityId": 280,
+    "name": "Electromorphosis",
+    "description": "Gains Charge when hit by an attack."
+  },
+  {
+    "abilityId": 281,
+    "name": "Protosynthesis",
+    "description": "Boosts highest stat in Sun."
+  },
+  {
+    "abilityId": 282,
+    "name": "Quark Drive",
+    "description": "Boosts highest stat in Electric Terrain."
+  },
+  {
+    "abilityId": 283,
+    "name": "Good as Gold",
+    "description": "Full immunity to status moves."
+  },
+  {
+    "abilityId": 284,
+    "name": "Vessel of Ruin",
+    "description": "Lowers the SpAtk of all other Pokêmon by 25%."
+  },
+  {
+    "abilityId": 285,
+    "name": "Sword of Ruin",
+    "description": "Lowers the Defense of all other Pokêmon by 25%."
+  },
+  {
+    "abilityId": 286,
+    "name": "Tablets of Ruin",
+    "description": "Lowers the Attack of all other Pokêmon by 25%."
+  },
+  {
+    "abilityId": 287,
+    "name": "Beads of Ruin",
+    "description": "Lowers the SpDef of all other Pokêmon by 25%."
+  },
+  {
+    "abilityId": 288,
+    "name": "Orichalcum Pulse",
+    "description": "Sets Sun for 5 turns. Ups Atk by 30% while in it."
+  },
+  {
+    "abilityId": 289,
+    "name": "Hadron Engine",
+    "description": "Sets E. Terrain for 5 turns. Ups SpAtk by 30% while in it."
+  },
+  {
+    "abilityId": 290,
+    "name": "Opportunist",
+    "description": "Copies foe's stat change."
+  },
+  {
+    "abilityId": 291,
+    "name": "Cud Chew",
+    "description": "Eats a used berry again."
+  },
+  {
+    "abilityId": 292,
+    "name": "Sharpness",
+    "description": "Boosts slashing moves by 50%."
+  },
+  {
+    "abilityId": 293,
+    "name": "Supreme Overlord",
+    "description": "Boosts power dependning on fainted allies."
+  },
+  {
+    "abilityId": 294,
+    "name": "Costar",
+    "description": "Copies ally's stat changes."
+  },
+  {
+    "abilityId": 295,
+    "name": "Toxic Debris",
+    "description": "Sets Toxic Spikes when hit by a physical move."
+  },
+  {
+    "abilityId": 296,
+    "name": "Armor Tail",
+    "description": "Protects from priority moves."
+  },
+  {
+    "abilityId": 297,
+    "name": "Earth Eater",
+    "description": "Absorbs Ground moves to heal HP."
+  },
+  {
+    "abilityId": 298,
+    "name": "Mycelium Might",
+    "description": "Status moves never fail."
+  },
+  {
+    "abilityId": 299,
+    "name": "Hospitality",
+    "description": "Restores ally's HP."
+  },
+  {
+    "abilityId": 300,
+    "name": "Mind's Eye",
+    "description": "Keen Eye and Scrappy."
+  },
+  {
+    "abilityId": 301,
+    "name": "Embody Aspect",
+    "description": "Raises Speed."
+  },
+  {
+    "abilityId": 302,
+    "name": "Embody Aspect",
+    "description": "Raises Attack."
+  },
+  {
+    "abilityId": 303,
+    "name": "Embody Aspect",
+    "description": "Raises Sp. Def."
+  },
+  {
+    "abilityId": 304,
+    "name": "Embody Aspect",
+    "description": "Raises Defense."
+  },
+  {
+    "abilityId": 305,
+    "name": "Toxic Chain",
+    "description": "Moves can poison."
+  },
+  {
+    "abilityId": 306,
+    "name": "Supersweet Syrup",
+    "description": "Lowers the foe's Evasion."
+  },
+  {
+    "abilityId": 307,
+    "name": "Tera Shift",
+    "description": "Terastallizes upon entry."
+  },
+  {
+    "abilityId": 308,
+    "name": "Tera Shell",
+    "description": "Resists all at full HP."
+  },
+  {
+    "abilityId": 309,
+    "name": "Teraform Zero",
+    "description": "Zeroes weather and terrain."
+  },
+  {
+    "abilityId": 310,
+    "name": "Poison Puppeteer",
+    "description": "Confuses poisoned foes."
+  },
+  {
+    "abilityId": 311,
+    "name": "Striker",
+    "description": "Boosts kicking moves by 30%."
+  },
+  {
+    "abilityId": 312,
+    "name": "Feline Prowess",
+    "description": "Doubles Sp. Atk stat."
+  },
+  {
+    "abilityId": 313,
+    "name": "Sage Power",
+    "description": "Ups SpAtk by 50% but locks move."
+  },
+  {
+    "abilityId": 314,
+    "name": "Fatal Precision",
+    "description": "Super effective moves can't miss & boosted by 20%."
+  },
+  {
+    "abilityId": 315,
+    "name": "Blazing Soul",
+    "description": "Gives +1 priority to Fire moves at full HP."
+  },
+  {
+    "abilityId": 316,
+    "name": "Ice Eater",
+    "description": "Absorbs Ice moves to heal HP."
+  },
+  {
+    "abilityId": 317,
+    "name": "Emperor's Presence",
+    "shortName": "Emp. Pres.",
+    "description": "Boosts own and ally's Water & Steel-type moves by 30%."
+  },
+  {
+    "abilityId": 318,
+    "name": "Primal Armor",
+    "description": "Weakens super effective moves by 50%."
+  },
+  {
+    "abilityId": 319,
+    "name": "Mountaineer",
+    "description": "Not hit by Rock attacks and avoids Stealth Rocks."
+  },
+  {
+    "abilityId": 320,
+    "name": "ORAORAORAORA!",
+    "description": "Punch moves hit a second time for 50% damage"
+  },
+  {
+    "abilityId": 321,
+    "name": "Self Sufficient",
+    "description": "Recover 1/16 HP at end of turn."
+  },
+  {
+    "abilityId": 322,
+    "name": "Bad Company",
+    "description": "Stops self-lowering stats and prevents recoil."
+  },
+  {
+    "abilityId": 323,
+    "name": "Bull Rush",
+    "description": "Boosts power by 20% & Speed by 50% on first turn."
+  },
+  {
+    "abilityId": 324,
+    "name": "Quill Rush",
+    "description": "Boosts power by 20% & Speed by 50% on first turn."
+  }
+]
