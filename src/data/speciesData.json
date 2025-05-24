@@ -3888,7 +3888,7 @@
   },
   "29": {
     "speciesId": 29,
-    "speciesName": "Nidoranâ™€",
+    "speciesName": "Nidoran♀",
     "types": [
       4
     ],
@@ -4022,7 +4022,7 @@
     ],
     "forms": null,
     "formId": 0,
-    "nameKey": "Nidoranâ™€"
+    "nameKey": "Nidoran♀"
   },
   "30": {
     "speciesId": 30,
@@ -4290,7 +4290,7 @@
   },
   "32": {
     "speciesId": 32,
-    "speciesName": "Nidoranâ™‚",
+    "speciesName": "Nidoran♂",
     "types": [
       4
     ],
@@ -4419,7 +4419,7 @@
     ],
     "forms": null,
     "formId": 0,
-    "nameKey": "Nidoranâ™‚"
+    "nameKey": "Nidoran♂"
   },
   "33": {
     "speciesId": 33,
@@ -18147,7 +18147,7 @@
     "evolutions": null,
     "forms": null,
     "formId": 0,
-    "nameKey": "Mr-Mime",
+    "nameKey": "Mr. Mime",
     "siblings": [
       981
     ],
@@ -99069,7 +99069,7 @@
   },
   "669": {
     "speciesId": 669,
-    "speciesName": "FlabÃ©bÃ©",
+    "speciesName": "Flabébé",
     "types": [
       19
     ],
@@ -99192,7 +99192,7 @@
     ],
     "forms": null,
     "formId": 0,
-    "nameKey": "Flabebe-Red",
+    "nameKey": "Flabébé-Red",
     "siblings": [
       1133,
       1134,
@@ -144819,7 +144819,7 @@
       "galarian"
     ],
     "formId": 1,
-    "nameKey": "Mr-Mime-Galar",
+    "nameKey": "Mr. Mime-Galar",
     "siblings": [
       122
     ],
@@ -167037,7 +167037,7 @@
   },
   "1133": {
     "speciesId": 1133,
-    "speciesName": "FlabÃ©bÃ©",
+    "speciesName": "Flabébé",
     "types": [
       19
     ],
@@ -167160,7 +167160,7 @@
     ],
     "forms": null,
     "formId": 1,
-    "nameKey": "Flabebe-Yellow",
+    "nameKey": "Flabébé-Yellow",
     "siblings": [
       669,
       1134,
@@ -167171,7 +167171,7 @@
   },
   "1134": {
     "speciesId": 1134,
-    "speciesName": "FlabÃ©bÃ©",
+    "speciesName": "Flabébé",
     "types": [
       19
     ],
@@ -167294,7 +167294,7 @@
     ],
     "forms": null,
     "formId": 2,
-    "nameKey": "Flabebe-Orange",
+    "nameKey": "Flabébé-Orange",
     "siblings": [
       669,
       1133,
@@ -167305,7 +167305,7 @@
   },
   "1135": {
     "speciesId": 1135,
-    "speciesName": "FlabÃ©bÃ©",
+    "speciesName": "Flabébé",
     "types": [
       19
     ],
@@ -167428,7 +167428,7 @@
     ],
     "forms": null,
     "formId": 3,
-    "nameKey": "Flabebe-Blue",
+    "nameKey": "Flabébé-Blue",
     "siblings": [
       669,
       1133,
@@ -167439,7 +167439,7 @@
   },
   "1136": {
     "speciesId": 1136,
-    "speciesName": "FlabÃ©bÃ©",
+    "speciesName": "Flabébé",
     "types": [
       19
     ],
@@ -167562,7 +167562,7 @@
     ],
     "forms": null,
     "formId": 4,
-    "nameKey": "Flabebe-White",
+    "nameKey": "Flabébé-White",
     "siblings": [
       669,
       1133,
