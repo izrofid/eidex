@@ -53,7 +53,7 @@ const PokemonView: React.FC<PokemonViewProps> = ({ pokemon }) => {
         </div>
         <div className="mt-2 flex flex-row gap-1">
           {pokemon.types.map((typeId: number, index: number) => (
-            <div key={index} className="transform transition-transform hover:scale-105">
+            <div key={index}>
               <TypeBadge typeId={typeId} screenWidth={screenWidth} />
             </div>
           ))}

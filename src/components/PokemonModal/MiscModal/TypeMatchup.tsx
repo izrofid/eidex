@@ -18,11 +18,11 @@ const multiplierLabels: Record<number, string> = {
 };
 
 const multiplierColors: Record<number, string> = {
-  0: "#530b8a", // 
-  0.25: "#16a34a", // green-600
-  0.5: "#dda144", // yellow-600
-  2: "#ef4444", // red-500
-  4: "#991b1b", // red-800
+  0: "bg-fuchsia-800", // Immune
+  0.25: "bg-teal-600", // Very resistant
+  0.5: "bg-green-600", // Resistant
+  2: "bg-red-700", // Weak
+  4: "bg-pink-800", // Very weak
 };
 
 const nonNeutralMultipliers = [0, 0.25, 0.5, 2, 4];
@@ -46,7 +46,11 @@ const TypeMatchup: React.FC<Props> = ({ pokemon }) => {
       {nonNeutralMultipliers.map((mult) =>
         groups[mult]?.length ? (
           <div key={mult} className="flex flex-row gap-2 p-2 select-none">
-            <div className={`w-14 flex-none text-center flex items-center justify-center rounded-md text-white`} style={{ backgroundColor: multiplierColors[mult] }}>{multiplierLabels[mult]}</div>
+            <div 
+              className={`w-14 flex-none text-center flex items-center justify-center rounded-lg font-medium text-white shadow-sm transition-all duration-200 ${multiplierColors[mult]}`}
+            >
+              {multiplierLabels[mult]}
+            </div>
             <div className="flex gap-1 flex-wrap items-center">{groups[mult].map((typeId) => (
               <TypeBadge key={typeId} typeId={typeId} screenWidth={screenWidth} />
             ))}</div>
