@@ -8,10 +8,12 @@ import SaveInfo from "../SaveInfo";
 import SecondaryBar from "../AppHeader/SecondaryBar";
 import CloseButton from "@/components/CloseButton";
 import { useUIStore } from "@/stores/uiStore";
+import FilterRadio from "../Filter/FilterRadio";
 
 const PokedexSidebarContent: React.FC = () => {
     
     const toggleSidebar = useUIStore((state) => state.toggleSidebar);
+
     return(
     <>
         <div className="mb-4 pl-1 flex items-center gap-2 justify-between">
@@ -32,6 +34,7 @@ const PokedexSidebarContent: React.FC = () => {
             <AbilityCombobox />
             <MoveFilterGroup />
             <TypePanel />
+            <FilterRadio/>
             <StatFilter />
             <div className="my-3">
                 <CurrentFilters />

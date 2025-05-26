@@ -32,7 +32,7 @@ function TypeBadge({
         }}
       />
 
-      <span className="relative z-10 flex h-full w-full flex-row items-center">
+      <span className="relative flex h-full w-full flex-row items-center">
         {/* Icon container */}
         <span className="flex h-full w-[28px] items-center">
           {icon && (

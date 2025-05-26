@@ -91,16 +91,45 @@ export default function PokemonList({
       />
       </div>
       <div className="w-full divide-y divide-zinc-700/80">
-      {pokemonToShow
-        .slice(0, visibleCount)
-        .filter(
-        (pokemon) =>
-          !ignoreList.includes(pokemon.speciesId) &&
-          !excludeForms(pokemon.forms),
-        )
-        .map((pokemon) => (
-        <PokemonCard key={pokemon.speciesId} pokemon={pokemon} />
-        ))}
+        {(() => {
+          const filteredPokemon = pokemonToShow
+            .slice(0, visibleCount)
+            .filter(
+              (pokemon) =>
+                !ignoreList.includes(pokemon.speciesId) &&
+                !excludeForms(pokemon.forms)
+            );
+
+          return filteredPokemon.length > 0 ? (
+            filteredPokemon.map((pokemon) => (
+              <PokemonCard key={pokemon.speciesId} pokemon={pokemon} />
+            ))
+          ) : (
+            <div className="flex flex-col items-center justify-center py-16 px-4">
+              <div className="rounded-full bg-zinc-700/10 p-6 mb-4">
+                <svg
+                  className="w-12 h-12 text-zinc-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-lg font-medium text-zinc-200 mb-1">
+                No Pokémon Found
+              </h3>
+              <p className="text-zinc-400 text-center max-w-sm">
+                Try adjusting your filters or search criteria to find more Pokémon
+              </p>
+            </div>
+          );
+        })()}
       </div>
       <div className="z-50">{selectedPokemon && isModalOpen && <PokemonModal />}</div>
     </div>

@@ -3,6 +3,13 @@ import { FilterOptions, MoveSource, SortBy } from "@/types";
 import { ComboBoxEntry } from "@/components/Filter/FilterComponents/GenericComboBox";
 import { typeDataArray } from "@/utils/typeInfo";
 
+// Helper function to determine the next state in the cycle
+const getNextCycleState = (state: boolean | undefined): boolean | undefined => {
+  if (state === undefined) return true;    // undefined -> true
+  else if (state === true) return false;   // true -> false
+  else return undefined;                   // false -> undefined
+};
+
 interface FilterState {
   // Core filter values
   filters: FilterOptions;
@@ -15,6 +22,13 @@ interface FilterState {
   // Move filter state
   moveSource: MoveSource;
   moveValue: ComboBoxEntry | null;
+
+  // Special Filters
+  megaCycle: boolean | undefined;
+  nfeCycle: boolean | undefined;
+  cycleMega: () => void;
+  cycleNfe: () => void;
+
 
   // Type
   typeValue: [number?, number?];
@@ -67,6 +81,8 @@ export const useFilterStore = create<FilterState>((set, get) => ({
     sortStat: undefined,
     descending: false,
     moveSource: "all",
+    megaCycle: undefined,
+    nfeCycle: undefined,
   },
 
   // Type options
@@ -81,6 +97,8 @@ export const useFilterStore = create<FilterState>((set, get) => ({
   isStatMax: false,
   moveSource: "all",
   moveValue: null,
+  megaCycle: undefined,
+  nfeCycle: undefined,
   abilityValue: null,
   sortBy: "dexId",
   sortStat: undefined,
@@ -218,6 +236,25 @@ export const useFilterStore = create<FilterState>((set, get) => ({
       toggleState,
     })),
 
+    
+  cycleMega: () =>
+    set((state) => {
+      const nextState = getNextCycleState(state.megaCycle);
+      return {
+        megaCycle: nextState,
+        filters: { ...state.filters, megaCycle: nextState },
+      };
+    }),
+    
+  cycleNfe: () =>
+    set((state) => {
+      const nextState = getNextCycleState(state.nfeCycle);
+      return {
+        nfeCycle: nextState,
+        filters: { ...state.filters, nfeCycle: nextState },
+      };
+    }),
+
   resetFilters: () =>
     set({
       filters: {
@@ -230,12 +267,16 @@ export const useFilterStore = create<FilterState>((set, get) => ({
         sortStat: undefined,
         descending: false,
         moveSource: "all",
+        megaCycle: undefined,
+        nfeCycle: undefined,
       },
       chosenStat: undefined,
       statType: undefined,
       isStatMax: false,
       moveSource: "all",
       moveValue: null,
+      megaCycle: undefined,
+      nfeCycle: undefined,
       typeValue: [undefined, undefined] as [number?, number?],
       abilityValue: null,
       nameValue: "",

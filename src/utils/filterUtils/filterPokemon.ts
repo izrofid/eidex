@@ -5,6 +5,8 @@ import { matchesStatFilter } from "./matchesStatFilter";
 import { matchesAbilityFilter } from "./matchesAbilityFilter";
 import { matchesMoveFilter } from "./matchesMoveFilter";
 import { sortPokemon } from "./sortPokemon";
+import { matchesMegaFilter } from "./matchesMegaFilter";
+import { matchesNfeFilter } from "./matchesNfeFilter";
 
 export function filterPokemon(
   pokemons: Pokemon[] | Record<string, Pokemon>,
@@ -27,7 +29,9 @@ export function filterPokemon(
         filters.isStatMax,
       ) &&
       matchesAbilityFilter(pokemon, isRandomiserActive, filters.abilityId) &&
-      matchesMoveFilter(pokemon, filters.moveId, filters.moveSource),
+      matchesMoveFilter(pokemon, filters.moveId, filters.moveSource) &&
+      matchesMegaFilter(pokemon, filters.megaCycle) &&
+      matchesNfeFilter(pokemon, filters.nfeCycle),
   );
 
   // Default to true if filters.descending is undefined
