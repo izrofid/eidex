@@ -1,4 +1,4 @@
-import { Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
+import { Dialog, DialogPanel, DialogTitle, Button} from "@headlessui/react";
 import CloseButton from "./CloseButton";
 import useBodyScrollLock from "../hooks/useBodyScrollLock";
 import { useUIStore } from "@/stores/uiStore";
@@ -9,17 +9,22 @@ type ContributorProps = {
   role: string;
   icon: React.ReactNode;
   bgColor?: string;
+  onClick?: () => void;
   textColor?: string;
 };
 
 const Contributor = ({ 
   name, 
   role, 
-  icon, 
+  icon,
+  onClick,
   bgColor = "bg-indigo-600/30", 
   textColor = "text-indigo-400" 
 }: ContributorProps) => (
-  <div className="flex items-center gap-3 rounded-lg bg-zinc-700/50 px-4 py-3 shadow-sm transition-all hover:bg-zinc-700/70">
+  <Button 
+    className={`flex w-full items-center text-left gap-3 rounded-lg bg-zinc-700/50 px-4 py-3 shadow-sm transition-all hover:bg-zinc-700/70 ${onClick ? 'cursor-pointer' : ''}`} 
+    onClick={onClick}
+  > 
     <div className={`flex h-9 w-9 items-center justify-center rounded-full ${bgColor} ${textColor}`}>
       {icon}
     </div>
@@ -27,7 +32,7 @@ const Contributor = ({
       <h3 className="font-chakra text-sm font-bold text-gray-200">{name}</h3>
       <p className="text-xs text-gray-400">{role}</p>
     </div>
-  </div>
+  </Button>
 );
 
 const CreditsContent = () => (
@@ -42,7 +47,8 @@ const CreditsContent = () => (
       <div className="space-y-2">
         <Contributor 
           name="Specker" 
-          role="Major contriutor" 
+          onClick={() => window.open("https://youtu.be/Vhh_GeBPOhs?si=3miPrNZjx8GwqHgz", "_blank", "noopener,noreferrer")}
+          role="Major contributor" 
           icon={<FaCode className="text-sm" />}
           bgColor="bg-sky-600/30"
           textColor="text-sky-400"
@@ -58,8 +64,8 @@ const CreditsContent = () => (
           name="Hedara" 
           role="Data extraction" 
           icon={<FaDatabase className="text-sm" />}
-          bgColor="bg-teal-600/30"
-          textColor="text-teal-400"
+          bgColor="bg-amber-600/30"
+          textColor="text-amber-400"
         />
       </div>
     </div>
@@ -82,8 +88,8 @@ const CreditsContent = () => (
           name="jwow" 
           role="RR Dex Dev" 
           icon={<FaCode className="text-sm" />}
-          bgColor="bg-blue-600/30"
-          textColor="text-blue-400"
+          bgColor="bg-sky-600/30"
+          textColor="text-sky-400"
         />
         
         {/* Community */}
