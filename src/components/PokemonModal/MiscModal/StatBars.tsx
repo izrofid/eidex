@@ -67,16 +67,16 @@ export default function StatBars({ stats }: StatBarsProps) {
       
       <div className="mt-5 pt-3 border-t border-zinc-700/30">
         <div className="flex items-center gap-3">
-          <span className="font-chakra w-10 text-sm font-bold text-yellow-400">BST</span>
-          <div className="h-4 flex-1 rounded-full bg-zinc-800/80 overflow-hidden">
+          <span className="font-chakra w-10 text-sm font-bold text-purple-400">BST</span>
+          <div className="h-4 flex-1 rounded-sm bg-zinc-800/80 overflow-hidden">
             <div
-              className={`h-full rounded-full transition-all duration-300 ease-in-out shadow-md ${getBstColorClass(bst)}`}
+              className={`h-full rounded-sm transition-all duration-300 ease-in-out shadow-md ${getBstColorClass(bst)}`}
               style={{
                 width: `${(bst / 790) * 100}%`
               }}
             />
           </div>
-          <span className="font-chakra w-10 text-right text-sm font-bold text-yellow-400">
+          <span className="font-chakra w-10 text-right text-sm font-bold text-purple-400">
             {bst}
           </span>
         </div>

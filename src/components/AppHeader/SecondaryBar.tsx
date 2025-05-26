@@ -1,10 +1,5 @@
 import ShinyToggle from "./ShinyToggle.tsx";
 import CreditsButton from "../CreditsButton.tsx";
-import { SaveFileButton } from "../SaveFileButton.tsx";
-import {
-  splitSaveIntoChunks,
-  getTrainerIdFromSectors,
-} from "@/randomiser/trainerIdExtractor.ts";
 import RandomiserSwitch from "./RandomiserSwitch.tsx";
 
 function SecondaryBar() {
@@ -15,17 +10,6 @@ function SecondaryBar() {
         <RandomiserSwitch />
       </div>
       <div className="flex flex-row gap-2">
-        <SaveFileButton
-          onSaveRead={(buf: ArrayBuffer) => {
-            try {
-              const sectors = splitSaveIntoChunks(buf);
-              const trainerInfo = getTrainerIdFromSectors(sectors);
-              console.log(trainerInfo);
-            } catch (e) {
-              console.error(e);
-            }
-          }}
-        />
         <CreditsButton />
       </div>
     </div>

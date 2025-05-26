@@ -20,7 +20,6 @@ const Evolution = ({
     >
       <div className="h-[64px] w-[64px] flex items-center">
         <SpriteImage pokemon={pokemon} className="mx-auto"/>
-
       </div>
     </div>
   );

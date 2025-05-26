@@ -1,21 +1,15 @@
 import { Switch } from "@headlessui/react";
 import { useUIStore } from "@/stores/uiStore";
+import { IoSparkles } from "react-icons/io5";
 
 function ShinyToggle() {
   const { isShiny, toggleShiny } = useUIStore();
   return (
-    <span className="flex flex-row items-center justify-start gap-1">
-      <img
-        src="shinycharm.png"
-        className="h-7 w-7 object-contain"
-        alt="Shiny charm"
-      />
-      <Switch
-        checked={isShiny}
-        onChange={toggleShiny}
-        className="data-checked:bg-emerald-500 group inline-flex h-5 w-10 cursor-pointer items-center rounded-full bg-gray-500 transition"
-      >
-        <span className="group-data-checked:translate-x-6 size-3 translate-x-1 rounded-full bg-white transition" />
+    <span className="flex cursor-pointer">
+      <Switch checked={isShiny} onChange={toggleShiny} className="group">
+        <span className="group-data-checked:text-cyan-500 cursor-pointer text-gray-500 transition-colors">
+          <IoSparkles size={20} />
+        </span>
       </Switch>
     </span>
   );

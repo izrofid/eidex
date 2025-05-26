@@ -44,7 +44,7 @@ const PokemonView: React.FC<PokemonViewProps> = ({ pokemon }) => {
     <div className="flex w-full flex-col items-center space-y-6">
       {/* Header section - Pokemon sprite and basic info */}
       <div className="flex flex-col items-center space-y-3">
-        <div className="rounded-full bg-card-backdrop/70 p-4 shadow-lg">
+        <div >
           <SpriteImage
             pokemon={pokemon}
             mult={2}
