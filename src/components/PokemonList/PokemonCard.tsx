@@ -57,6 +57,14 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
   // Calculate the BST (Base Stat Total)
   const bst = stats.reduce((sum, stat) => sum + stat, 0);
 
+  const getBstColorClass = (bst: number) => {
+    if (bst < 450) return "text-red-400";
+    if (bst < 500) return "text-amber-400";
+    if (bst < 600) return "text-emerald-600";
+    if (bst < 650) return "text-green-400";
+    return "text-cyan-400";
+  };
+
   const typeId = types[0];
   let adjustedBg = adjustedBgCache[typeId];
   if (!adjustedBg) {
@@ -153,7 +161,7 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
               
               {/* BST box */}
               <div className="flex flex-col items-center justify-center bg-zinc-600/50 rounded-md px-3 ml-2 shadow-sm">
-                <div className="text-md font-bold text-purple-400">{bst}</div>
+                <div className={`text-md font-bold ${getBstColorClass(bst)}`}>{bst}</div>
                 <div className="text-xs font-bold tracking-wide  pb-1">
                   BST
                 </div>

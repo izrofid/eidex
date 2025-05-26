@@ -18,10 +18,6 @@ export default function StatBars({ stats }: StatBarsProps) {
 
   const bst = reorderedStats.reduce((sum, stat) => sum + stat, 0);
 
-  const getHighestStat = (reorderedStats: StatArray) =>
-    Math.max(...reorderedStats);
-  const highestStat = Math.max(getHighestStat(reorderedStats), 150);
-
   const getStatColorClass = (stat: number) => {
     if (stat < 50) return "bg-red-500";
     if (stat < 80) return "bg-amber-400";
@@ -34,7 +30,7 @@ export default function StatBars({ stats }: StatBarsProps) {
     if (bst < 450) return "bg-red-500";
     if (bst < 500) return "bg-amber-400";
     if (bst < 600) return "bg-emerald-500";
-    if (bst < 700) return "bg-green-400";
+    if (bst < 650) return "bg-green-400";
     return "bg-cyan-400";
   };
 
