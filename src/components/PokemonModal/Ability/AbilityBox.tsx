@@ -13,8 +13,8 @@ export default function AbilityBox({ abilities }: AbilityBoxProps) {
 
   return (
     <div>
-      <div className="neutral-box relative flex w-full rounded-sm py-3 text-center">
-        <div className="flex flex-wrap gap-2 w-full justify-evenly">
+      <div className="relative flex w-full rounded-lg text-center">
+        <div className="flex flex-wrap gap-3 w-full justify-evenly">
           {regularAbilities.map((ability, idx) => (
             <AbilityBadge
               key={idx}

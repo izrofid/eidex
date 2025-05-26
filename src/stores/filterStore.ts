@@ -130,7 +130,9 @@ export const useFilterStore = create<FilterState>((set, get) => ({
   setTypeValue: (id?: number) =>
     set((state) => {
       // start with only the defined selections
-      if (!state.typeValue){state.typeValue = [undefined, undefined]}
+      if (!state.typeValue) {
+        state.typeValue = [undefined, undefined];
+      }
       let selected = state.typeValue.filter(
         (t): t is number => t !== undefined,
       );
@@ -200,7 +202,11 @@ export const useFilterStore = create<FilterState>((set, get) => ({
 
   setFilterToggle: (idx, value) =>
     set((state) => {
-      const next: [boolean, boolean, boolean] = [...state.filterToggles] as [boolean, boolean, boolean];
+      const next: [boolean, boolean, boolean] = [...state.filterToggles] as [
+        boolean,
+        boolean,
+        boolean,
+      ];
       next[idx] = value;
       return {
         filterToggles: next,

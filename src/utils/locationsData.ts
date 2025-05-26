@@ -23,6 +23,11 @@ export function getEncountersByPokemonId(pokemonId: number) {
     );
 }
 
+export function isObtainable(pokemonId: number): boolean {
+  const encounters = getEncountersByPokemonId(pokemonId);
+  return encounters.length > 0;
+}
+
 export function getAllEncounters() {
   return wildEncounters;
 }

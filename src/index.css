@@ -20,6 +20,7 @@
 
 @theme {
   --color-filterbox: --alpha(var(--color-zinc-700) / 70%);
+  --color-card-backdrop: --alpha(var(--color-zinc-700) / 50%);
 }
 
 body {

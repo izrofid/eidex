@@ -39,8 +39,9 @@ export default function StatBars({ stats }: StatBarsProps) {
   };
 
   return (
-    <div className="neutral-box w-full select-none rounded-lg p-4 shadow-md bg-zinc-800/90">
-      <div className="space-y-3">
+    <div className="w-full select-none rounded-xl p-5 bg-card-backdrop shadow-md">
+      <h3 className="font-chakra text-lg font-medium text-gray-100 mb-3">Base Stats</h3>
+      <div className="space-y-4">
         {reorderedStats.map((value, i) => (
           <div
             key={STAT_LABELS[i]}
@@ -49,11 +50,11 @@ export default function StatBars({ stats }: StatBarsProps) {
             <span className="font-chakra w-10 text-sm font-medium text-gray-200">
               {STAT_LABELS[i]}
             </span>
-            <div className="h-3 flex-1 rounded-full bg-zinc-700/60 overflow-hidden">
+            <div className="h-3 flex-1 rounded-full bg-zinc-800/80 overflow-hidden">
               <div
-                className={`h-full rounded-full transition-all duration-300 ease-in-out ${getStatColorClass(value)}`}
+                className={`h-full rounded-full transition-all duration-300 ease-in-out shadow-sm ${getStatColorClass(value)}`}
                 style={{
-                  width: `${(value / highestStat) * 100}%`,
+                  width: `${(value / highestStat) * 100}%`
                 }}
               />
             </div>
@@ -64,12 +65,12 @@ export default function StatBars({ stats }: StatBarsProps) {
         ))}
       </div>
       
-      <div className="mt-5 pt-3 border-t border-zinc-700/50">
+      <div className="mt-5 pt-3 border-t border-zinc-700/30">
         <div className="flex items-center gap-3">
           <span className="font-chakra w-10 text-sm font-bold text-yellow-400">BST</span>
-          <div className="h-4 flex-1 rounded-full bg-zinc-700/60 overflow-hidden">
+          <div className="h-4 flex-1 rounded-full bg-zinc-800/80 overflow-hidden">
             <div
-              className={`h-full rounded-full transition-all duration-300 ease-in-out ${getBstColorClass(bst)}`}
+              className={`h-full rounded-full transition-all duration-300 ease-in-out shadow-md ${getBstColorClass(bst)}`}
               style={{
                 width: `${(bst / 790) * 100}%`
               }}

@@ -19,7 +19,7 @@ const MoveEntry: React.FC<MoveEntryProps> = memo(({ move, level }) => {
   if (!adjustedBg) {
     const snapColor = getTypeColor(typeId)[1];
     const bgColor = chroma(snapColor);
-    adjustedBg = bgColor.darken(1.2).mix("white", 0.05).alpha(0.12).css();
+    adjustedBg = bgColor.darken(1.5).mix("black", 0.05).alpha(0.12).css();
     adjustedBgCache[typeId] = adjustedBg;
   }
 

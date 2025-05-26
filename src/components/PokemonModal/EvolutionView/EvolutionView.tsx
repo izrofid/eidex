@@ -78,7 +78,7 @@ const EvolutionView: React.FC<EvolutionViewProps> = ({ family }) => {
   );
 
   return (
-    <div className="neutral-box flex flex-col gap-3 rounded-md p-2 py-2">
+    <div className="flex flex-col gap-3 rounded-md p-2 py-2">
       <div className="flex items-center justify-evenly text-white py-2">
         {family.members.length > 1 ? columnsWithArrows : <span className="flex text-gray-300/50">No Evolutions</span>}
       </div>

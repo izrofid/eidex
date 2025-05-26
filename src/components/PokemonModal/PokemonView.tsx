@@ -17,6 +17,7 @@ import { FormeView } from "../FormeView/FormeView";
 import TypeMatchup from "./MiscModal/TypeMatchup";
 import PokemonLearnset from "./Learnset/PokemonLearnset";
 import React from "react";
+import { isObtainable } from "@/utils/locationsData";
 
 interface PokemonViewProps {
   pokemon: Pokemon;
@@ -40,17 +41,19 @@ const PokemonView: React.FC<PokemonViewProps> = ({ pokemon }) => {
   );
 
   return (
-    <div className="flex w-full flex-col items-center space-y-4">
+    <div className="flex w-full flex-col items-center space-y-6">
       {/* Header section - Pokemon sprite and basic info */}
-      <div className="flex flex-col items-center space-y-2">
-        <SpriteImage
-          pokemon={pokemon}
-          mult={2}
-          className="rendering-pixelated"
-        />
-        <div className="flex flex-row gap-1">
+      <div className="flex flex-col items-center space-y-3">
+        <div className="rounded-full bg-card-backdrop/70 p-4 shadow-lg">
+          <SpriteImage
+            pokemon={pokemon}
+            mult={2}
+            className="rendering-pixelated"
+          />
+        </div>
+        <div className="mt-2 flex flex-row gap-1">
           {pokemon.types.map((typeId: number, index: number) => (
-            <div key={index}>
+            <div key={index} className="transform transition-transform hover:scale-105">
               <TypeBadge typeId={typeId} screenWidth={screenWidth} />
             </div>
           ))}
@@ -71,38 +74,52 @@ const PokemonView: React.FC<PokemonViewProps> = ({ pokemon }) => {
       </div>
 
       {/* Details section */}
-      <div className="flex w-full flex-col space-y-4">
+      <div className="flex w-full flex-col space-y-6">
         {/* Abilities section */}
-        <div className="space-y-4">
+        <div className="space-y-4 bg-card-backdrop rounded-xl p-5 shadow-md">
+          <h3 className="font-chakra text-lg font-medium text-gray-100 mb-3">Abilities</h3>
           <AbilityBox key={pokemon.speciesId} abilities={randomisedAbilities} />
           {selectedAbility && <AbilityDescription />}
         </div>
 
         {/* Locations section */}
-        <PokemonLocations pokemonId={pokemon.speciesId} />
+        {isObtainable(pokemon.speciesId) && <div className="bg-card-backdrop rounded-xl p-5 shadow-md">
+          <h3 className="font-chakra text-lg font-medium text-gray-100 mb-3">Locations</h3>
+          <PokemonLocations pokemonId={pokemon.speciesId} />
+        </div>}
 
         {/* Evolution section */}
-        <EvolutionView
-          pokemon={pokemon}
-          family={evoFamily}
-        />
+        <div className="bg-card-backdrop rounded-xl p-5 shadow-md">
+          <h3 className="font-chakra text-lg font-medium text-gray-100 mb-3">Evolution</h3>
+          <EvolutionView
+            pokemon={pokemon}
+            family={evoFamily}
+          />
+        </div>
 
         {/* Forms section */}
         {hasForms(pokemon) && (
-          <FormeView
-            pokemon={pokemon}
-          />
+          <div className="bg-card-backdrop rounded-xl p-5 shadow-md">
+            <h3 className="font-chakra text-lg font-medium text-gray-100 mb-3">Forms</h3>
+            <FormeView
+              pokemon={pokemon}
+            />
+          </div>
         )}
 
         {/* Type matchup section */}
-        <div className="flex flex-wrap text-gray-100">
-          <TypeMatchup pokemon={pokemon} />
+        <div className="bg-card-backdrop rounded-xl p-5 shadow-md">
+          <h3 className="font-chakra text-lg font-medium text-gray-100 mb-3">Type Matchups</h3>
+          <div className="flex flex-wrap text-gray-100">
+            <TypeMatchup pokemon={pokemon} />
+          </div>
         </div>
-      </div>
-
-      {/* Learnset section (at bottom) */}
-      <div className="flex w-full flex-grow">
-        <PokemonLearnset pokemon={pokemon} />
+        
+        {/* Learnset section */}
+        <div className="bg-card-backdrop rounded-xl p-5 shadow-md">
+          <h3 className="font-chakra text-lg font-medium text-gray-100 mb-3">Learnset</h3>
+          <PokemonLearnset pokemon={pokemon} />
+        </div>
       </div>
     </div>
   );

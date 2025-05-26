@@ -24,8 +24,7 @@ export function getSpeciesData(speciesId: number): Pokemon {
 }
 
 export function hasForms(pokemon: Pokemon): boolean {
-  const siblings = pokemon.siblings || [];
-  return !!siblings
+  return Array.isArray(pokemon.siblings) && pokemon.siblings.length > 0;
 }
 
 export function getBaseForm(pokemon: Pokemon): Pokemon {

@@ -42,7 +42,7 @@ const CreditsContent = () => (
       <div className="space-y-2">
         <Contributor 
           name="Specker" 
-          role="Co-creator" 
+          role="Major contriutor" 
           icon={<FaCode className="text-sm" />}
           bgColor="bg-sky-600/30"
           textColor="text-sky-400"
