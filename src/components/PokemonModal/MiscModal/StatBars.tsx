@@ -22,60 +22,63 @@ export default function StatBars({ stats }: StatBarsProps) {
     Math.max(...reorderedStats);
   const highestStat = Math.max(getHighestStat(reorderedStats), 150);
 
-  const getBarColor = (stat: number) => {
-    if (stat < 50) return "#eb4034";
-    if (stat < 80) return "#e3c51b";
-    if (stat < 120) return "#21ad28";
-    if (stat < 150) return "#25f7ca";
-    return "#25c6f7";
+  const getStatColorClass = (stat: number) => {
+    if (stat < 50) return "bg-red-500";
+    if (stat < 80) return "bg-amber-400";
+    if (stat < 120) return "bg-emerald-500";
+    if (stat < 150) return "bg-green-400";
+    return "bg-cyan-400";
   };
 
-  const getBstColor = (bst: number) => {
-    if (bst < 450) return "#eb4034";
-    if (bst < 500) return "#e3c51b";
-    if (bst < 600) return "#21ad28";
-    if (bst < 700) return "#25f7ca";
-    return "#25c6f7";
+  const getBstColorClass = (bst: number) => {
+    if (bst < 450) return "bg-red-500";
+    if (bst < 500) return "bg-amber-400";
+    if (bst < 600) return "bg-emerald-500";
+    if (bst < 700) return "bg-green-400";
+    return "bg-cyan-400";
   };
 
   return (
-    <div className="neutral-box flex w-full select-none flex-col gap-1 rounded-sm p-2">
-      {reorderedStats.map((value, i) => (
-      <div
-        key={STAT_LABELS[i]}
-        className="mx-auto flex w-full items-center gap-2"
-      >
-        <span className="font-chakra w-8 text-sm text-gray-200">
-        {STAT_LABELS[i]}
-        </span>
-        <div className="h-2 flex-1 rounded">
-        <div
-          className="h-2 rounded"
-          style={{
-          width: `${(value / highestStat) * 100}%`,
-          background: getBarColor(value),
-          }}
-        />
+    <div className="neutral-box w-full select-none rounded-lg p-4 shadow-md bg-zinc-800/90">
+      <div className="space-y-3">
+        {reorderedStats.map((value, i) => (
+          <div
+            key={STAT_LABELS[i]}
+            className="flex items-center gap-3"
+          >
+            <span className="font-chakra w-10 text-sm font-medium text-gray-200">
+              {STAT_LABELS[i]}
+            </span>
+            <div className="h-3 flex-1 rounded-full bg-zinc-700/60 overflow-hidden">
+              <div
+                className={`h-full rounded-full transition-all duration-300 ease-in-out ${getStatColorClass(value)}`}
+                style={{
+                  width: `${(value / highestStat) * 100}%`,
+                }}
+              />
+            </div>
+            <span className="font-chakra w-10 text-right text-sm font-medium text-gray-300">
+              {value}
+            </span>
+          </div>
+        ))}
+      </div>
+      
+      <div className="mt-5 pt-3 border-t border-zinc-700/50">
+        <div className="flex items-center gap-3">
+          <span className="font-chakra w-10 text-sm font-bold text-yellow-400">BST</span>
+          <div className="h-4 flex-1 rounded-full bg-zinc-700/60 overflow-hidden">
+            <div
+              className={`h-full rounded-full transition-all duration-300 ease-in-out ${getBstColorClass(bst)}`}
+              style={{
+                width: `${(bst / 790) * 100}%`
+              }}
+            />
+          </div>
+          <span className="font-chakra w-10 text-right text-sm font-bold text-yellow-400">
+            {bst}
+          </span>
         </div>
-        <span className="font-chakra w-8 text-right text-sm text-gray-300">
-        {value}
-        </span>
-      </div>
-      ))}
-      <div className="mx-auto flex w-full items-center gap-2 bg-zinc-700/70  mt-2 px-2 rounded-md">
-      <span className="font-chakra w-8 text-sm font-bold text-yellow-500">BST</span>
-      <div className="h-2 flex-1 rounded">
-        <div
-        className="h-2 rounded"
-        style={{
-          width: `${(bst / 790) * 100}%`,
-          background: getBstColor(bst),
-        }}
-        />
-      </div>
-      <span className="font-chakra font-bold w-8 text-right text-sm text-yellow-500">
-        {bst}
-      </span>
       </div>
     </div>
   );
