@@ -18,7 +18,7 @@ function Sidebar({ children }: SidebarProps) {
   useBodyScrollLock(isScrollLock);
 
   return (
-    <aside className="shadow-xl/50 relative flex h-[100dvh] w-full flex-col justify-between border-r border-neutral-800 bg-zinc-900 px-5 py-6">
+    <aside className="shadow-xl/50 relative flex h-[100dvh] w-full flex-col justify-between bg-zinc-900 px-5 py-6">
       {children}
     </aside>
   );

@@ -1,4 +1,3 @@
-import pokeBall from "/icons/pokeball.svg";
 import CurrentFilters from "../Filter/CurrentFilters/CurrentFilters";
 import AbilityCombobox from "../Filter/FilterComponents/AbilityCombobox";
 import MoveFilterGroup from "../Filter/FilterComponents/MoveFilterGroup";
@@ -7,11 +6,15 @@ import StatFilter from "../Filter/StatFilter/StatFilter";
 import TypePanel from "../Filter/TypePanel";
 import SaveInfo from "../SaveInfo";
 import SecondaryBar from "../AppHeader/SecondaryBar";
+import CloseButton from "@/components/CloseButton";
+import { useUIStore } from "@/stores/uiStore";
 
-const PokedexSidebarContent: React.FC = () => (
+const PokedexSidebarContent: React.FC = () => {
+    
+    const toggleSidebar = useUIStore((state) => state.toggleSidebar);
+    return(
     <>
-        <div className="mb-4 pl-1 flex items-center gap-2">
-            <img src={pokeBall} alt="Pokéball" className="w-6 h-6" />
+        <div className="mb-4 pl-1 flex items-center gap-2 justify-between">
             <span className="inline-flex items-center select-none">
                 <span className="flex items-center">
                     <span className="text-2xl font-extrabold font-gr bg-gradient-to-r from-rose-500 to-rose-400 bg-clip-text text-transparent drop-shadow-sm tracking-tight pb-1">
@@ -22,6 +25,7 @@ const PokedexSidebarContent: React.FC = () => (
                     </span>
                 </span>
             </span>
+            <span className="sm:hidden"><CloseButton onClick={toggleSidebar}/></span>
         </div>
         <div className="flex flex-1 flex-col gap-3">
             <NameCombobox />
@@ -38,6 +42,6 @@ const PokedexSidebarContent: React.FC = () => (
             <SecondaryBar />
         </div>
     </>
-);
+);}
 
 export default PokedexSidebarContent;

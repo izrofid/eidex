@@ -68,7 +68,7 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
 
   return (
     <div onClick={() => openModal(pokemon)} className="w-full cursor-pointer">
-      <div className="border-b-1 flex w-full flex-col border-neutral-500/20 bg-neutral-800 text-white transition-colors duration-200 hover:bg-neutral-700/80">
+      <div className="border-b-1 flex w-full flex-col border-neutral-500/20 bg-neutral-800 text-white transition-colors duration-200 hover:bg-neutral-700/30">
         {/* Header */}
         <div className="flex justify-between bg-zinc-800/90 py-2 pl-2 shadow-sm">
           <div className="flex items-center gap-1">
@@ -90,7 +90,7 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
 
         {/* Card body */}
         <div className="px-5 py-6" style={{ backgroundColor: adjustedBg }}>
-          <div className="border-1 relative mb-5 mt-3 flex flex-wrap gap-x-5 rounded-md border-white/10 bg-black/5 p-4 pt-5 pb-3 shadow-inner">
+          <div className="border-1 relative mb-5 mt-3 flex flex-wrap gap-x-5 rounded-md border-white/10 bg-black/15 p-4 pt-5 pb-3 shadow-inner">
             <span className="absolute top-0 left-0 translate-y-[-50%] translate-x-5 inline-flex h-5 min-w-16 items-center justify-center rounded-full bg-gradient-to-r bg-zinc-700 px-1 text-xs font-medium uppercase text-gray-200 shadow-md">
               <p className="ios-padding-fix p-0 font-pixel">
                 Abilities
@@ -125,21 +125,36 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
           </div>
 
           {/* Stats here */}
-          <div className="my-3 flex w-full flex-col">
-            <div className="flex items-end justify-evenly gap-2 text-center sm:max-w-[70%] sm:gap-4">
-              {reorderedStats.map((statValue, index) => (
-                <div key={index} className="flex min-w-1 flex-col items-center">
-                  <div className="text-sm font-medium italic">{statValue}</div>
-                  <div className="text-sm font-bold tracking-wide">
-                    {statLabels[index]}
+          <div className="border-1 relative my-3 flex w-full flex-col rounded-md border-white/10 bg-black/15 p-4 pt-5 pb-3 shadow-inner">
+            <span className="absolute top-0 left-0 translate-y-[-50%] translate-x-5 inline-flex h-5 min-w-12 items-center justify-center rounded-full bg-zinc-700 px-3 text-xs font-medium uppercase text-gray-200 shadow-md">
+              <p className="ios-padding-fix p-0 font-pixel">Stats</p>
+            </span>
+            
+            <div className="grid" style={{ gridTemplateColumns: 'repeat(6, 1fr) auto', gap: '0.5rem', padding: '0 0.5rem' }}>
+              {reorderedStats.map((statValue, index) => {
+                const statColor = 
+                  statValue < 60 ? "text-red-400" :
+                  statValue < 80 ? "text-orange-400" :
+                  statValue < 100 ? "text-yellow-400" :
+                  statValue < 120 ? "text-emerald-400" :
+                  "text-cyan-400";
+                
+                return (
+                  <div key={index} className="flex flex-col items-center">
+                    <div className={`text-sm font-semibold ${statColor}`}>
+                      {statValue}
+                    </div>
+                    <div className="mt-1 text-xs font-medium tracking-wide">
+                      {statLabels[index]}
+                    </div>
                   </div>
-                </div>
-              ))}
-              {/* BST box, styled identically to stat boxes */}
-              <div className="flex flex-col items-center border-l border-amber-400/70 pl-3">
-                <div className="text-sm font-bold italic">{bst}</div>
-
-                <div className="md:text-md text-sm font-bold tracking-wide text-amber-400">
+                );
+              })}
+              
+              {/* BST box */}
+              <div className="flex flex-col items-center justify-center bg-zinc-600/50 rounded-md px-3 ml-2 shadow-sm">
+                <div className="text-md font-bold text-purple-400">{bst}</div>
+                <div className="text-xs font-bold tracking-wide  pb-1">
                   BST
                 </div>
               </div>
