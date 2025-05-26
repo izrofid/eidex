@@ -36,7 +36,12 @@ export const useUIStore = create<UIState>()(
       setSelectedAbility: (ability) => set({ selectedAbility: ability }),
       openModal: (pokemon) =>
         set({ selectedPokemon: pokemon, isModalOpen: true, selectedAbility: null }), // Reset ability when opening modal
-      closeModal: () => set({ isModalOpen: false, selectedAbility: null }), // Reset ability when closing modal
+      closeModal: () => {
+        // First hide the modal with animation
+        set({ isModalOpen: false });
+        // Then remove the Pokemon data after animation completes
+        setTimeout(() => set({ selectedPokemon: null }), 300);
+      },
       openCredits: () => set({ isCreditsOpen: true }),
       closeCredits: () => set({ isCreditsOpen: false }),
       toggleSidebar: () => set((state) => ({ isSidebarOpen: !state.isSidebarOpen })),

@@ -1,5 +1,4 @@
 import ShinyToggle from "./ShinyToggle.tsx";
-import { useUIStore } from "@/stores/uiStore.ts";
 import CreditsButton from "../CreditsButton.tsx";
 import { SaveFileButton } from "../SaveFileButton.tsx";
 import {
@@ -9,12 +8,10 @@ import {
 import RandomiserSwitch from "./RandomiserSwitch.tsx";
 
 function SecondaryBar() {
-  const isShiny = useUIStore((state) => state.isShiny);
-  const toggleShiny = useUIStore((state) => state.toggleShiny);
   return (
     <div className="border-1 flex select-none justify-between rounded-md border-neutral-400 px-3 py-2">
       <div className="flex flex-row items-center gap-2">
-        <ShinyToggle isShiny={isShiny} toggleShiny={toggleShiny} />
+        <ShinyToggle/>
         <RandomiserSwitch />
       </div>
       <div className="flex flex-row gap-2">

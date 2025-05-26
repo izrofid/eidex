@@ -20,14 +20,13 @@ const AbilityBadge: React.FC<AbilityBadgeProps> = ({
 
   return (
     <Button
-      className={`group relative flex min-w-[10ch] items-center justify-center bg-gradient-to-r px-2 py-1 pr-3 text-xs font-medium font-lexend tracking-wide text-white sm:text-sm ${isHidden ? "from-pink-600 to-pink-700" : "from-slate-600 to-slate-700"} rounded-md shadow-md transition-all duration-150 ${isAvailable ? "cursor-pointer" : "cursor-not-allowed line-through decoration-1 opacity-60"} skew-x-[-18deg] overflow-hidden
-      ${isAvailable
-        ? isHidden
-        ? "hover:from-pink-700 hover:to-pink-800 active:from-pink-800 active:to-pink-900"
-        : "hover:from-slate-700 hover:to-slate-800 active:from-slate-800 active:to-slate-900"
-        : ""
-      }
-      `}
+      className={`font-lexend group relative flex min-w-[10ch] items-center justify-center bg-gradient-to-r px-2 pr-3 text-xs tracking-wide text-gray-100 sm:text-sm ${isHidden ? "from-pink-600 to-pink-700" : "from-slate-600 to-slate-700"} rounded-md shadow-md transition-all duration-150 ${isAvailable ? "cursor-pointer" : "cursor-not-allowed line-through decoration-1 opacity-60"} skew-x-[-18deg] overflow-hidden ${
+        isAvailable
+          ? isHidden
+            ? "hover:from-pink-700 hover:to-pink-800 active:from-pink-800 active:to-pink-900"
+            : "hover:from-slate-700 hover:to-slate-800 active:from-slate-800 active:to-slate-900"
+          : ""
+      } `}
       onClick={() => onClick(ability)}
       disabled={false}
       aria-label={getAbilityNameShort(ability)}

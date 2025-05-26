@@ -78,13 +78,15 @@ const EvolutionView: React.FC<EvolutionViewProps> = ({ family }) => {
   );
 
   return (
-    <div className="neutral-box flex flex-col gap-3 rounded-md p-2 py-3">
-      <div className="flex items-center justify-evenly text-white">
-        {family.members.length > 1 ? columnsWithArrows : <p>No Evolutions</p>}
+    <div className="neutral-box flex flex-col gap-3 rounded-md p-2 py-2">
+      <div className="flex items-center justify-evenly text-white py-2">
+        {family.members.length > 1 ? columnsWithArrows : <span className="flex text-gray-300/50">No Evolutions</span>}
       </div>
-      <div className="mx-3 flex items-center justify-center">
-        <EvolutionDetails evoFamily={family} />
-      </div>
+      {family.members.length > 1 && (
+        <div className="mx-3 flex items-center justify-center">
+          <EvolutionDetails evoFamily={family} />
+        </div>
+      )}
     </div>
   );
 };

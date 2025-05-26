@@ -73,7 +73,7 @@ const PokemonView: React.FC<PokemonViewProps> = ({ pokemon }) => {
       {/* Details section */}
       <div className="flex w-full flex-col space-y-4">
         {/* Abilities section */}
-        <div className="space-y-2">
+        <div className="space-y-4">
           <AbilityBox key={pokemon.speciesId} abilities={randomisedAbilities} />
           {selectedAbility && <AbilityDescription />}
         </div>

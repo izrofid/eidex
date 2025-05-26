@@ -1,6 +1,5 @@
 import { Ability } from "../../../types";
 import AbilityBadge from "./AbilityBadge";
-import BoxLabel from "@/components/BoxLabel";
 import { useUIStore } from "@/stores/uiStore";
 
 type AbilityBoxProps = {
@@ -14,9 +13,8 @@ export default function AbilityBox({ abilities }: AbilityBoxProps) {
 
   return (
     <div>
-      <div className="neutral-box relative flex w-full rounded-sm py-7 text-center">
-        <BoxLabel label="Abilities"/>
-        <div className="flex flex-wrap gap-2 pl-5 w-full justify-evenly">
+      <div className="neutral-box relative flex w-full rounded-sm py-3 text-center">
+        <div className="flex flex-wrap gap-2 w-full justify-evenly">
           {regularAbilities.map((ability, idx) => (
             <AbilityBadge
               key={idx}
