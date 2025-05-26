@@ -13,52 +13,52 @@ type MoveEntryProps = {
 const adjustedBgCache: Record<number, string> = {};
 
 const MoveEntry: React.FC<MoveEntryProps> = memo(({ move, level }) => {
-
   const typeId = move.type;
   let adjustedBg = adjustedBgCache[typeId];
   if (!adjustedBg) {
     const snapColor = getTypeColor(typeId)[1];
     const bgColor = chroma(snapColor);
-    adjustedBg = bgColor.darken(1.5).mix("black", 0.05).alpha(0.12).css();
+    adjustedBg = bgColor.darken(1.5).mix("black", 0.05).alpha(0.25).css();
     adjustedBgCache[typeId] = adjustedBg;
   }
 
   return (
     <div
-      className="border-b-1 relative flex select-none flex-col border-gray-600 px-2 py-6 shadow-sm transition-shadow hover:backdrop-brightness-120 sm:px-4"
+      className={`relative mt-2 flex select-none flex-col rounded-lg px-3 pb-4 ${level !== undefined ? "pt-6" : "pt-2"} transition-all duration-200 first:mt-0 hover:bg-white/[0.02]`}
       style={{ backgroundColor: adjustedBg }}
     >
-        {level !== undefined && (
-            <span
-              className="absolute top-0 left-0 inline-flex h-6 w-12 justify-center font-regular items-center bg-gray-950/20 px-1 py-[1px] text-xs font-semibold"
-            >
-              {level !== 0 ? `Lvl ${level}` : "Evo"}
-            </span>
-          )}
+      {level !== undefined && (
+        <span className="absolute left-2 top-3 inline-flex h-5 min-w-max translate-y-[-30%] items-center justify-center rounded-full bg-black/30 px-2 text-xs font-medium text-gray-200 shadow-sm">
+          {level !== 0 ? `Lvl ${level}` : "Evo"}
+        </span>
+      )}
       {/* Row 1: Move name/level and category/type */}
-      <div className="flex flex-row justify-between items-center w-full mb-1">
+      <div className="mb-2 mt-0 flex w-full flex-row items-center justify-between">
         <div className="flex items-center gap-2">
           <span
-            className="text-lg font-bold"
+            className="text-lg font-bold tracking-wide"
             style={{ color: getTypeColor(move.type)[0] }}
           >
             {move.name}
           </span>
         </div>
-        <div className="flex flex-row items-center gap-2">
-          <span className="flex size-8 items-center justify-center">
-            <img className="size-[28px]" src={`icons/category/${move.cat}.png`} />
+        <div className="flex flex-row items-center gap-3 text-gray-200">
+          <span className="flex size-8 items-center justify-center opacity-90">
+            <img
+              className="size-[28px] drop-shadow-sm"
+              src={`icons/category/${move.cat}.png`}
+            />
           </span>
           <TypeIcon typeId={move.type} size={28} />
         </div>
       </div>
       {/* Row 2: Power/Acc and MovePropBox */}
-      <div className="flex flex-row justify-between items-center w-full mb-1">
+      <div className="mb-3 flex w-full flex-row items-center justify-between">
         <div className="flex flex-row items-center gap-2">
-          <span className="w-14 rounded-full border border-gray-500 bg-white/10 px-1 text-sm font-semibold text-gray-100 shadow-sm">
+          <span className="w-14 rounded-full bg-black/10 px-2 py-0.5 text-sm font-medium text-gray-100 shadow-sm ring-1 ring-white/20">
             {move.power ? `${move.power}` : "—"}
           </span>
-          <span className="w-14 rounded-full border border-gray-500 bg-white/10 px-1 text-sm font-semibold text-gray-100 shadow-sm">
+          <span className="w-14 rounded-full bg-black/10 px-2 py-0.5 text-sm font-medium text-gray-100 shadow-sm ring-1 ring-white/20">
             {move.acc ? `${move.acc}%` : "—"}
           </span>
         </div>
@@ -67,7 +67,7 @@ const MoveEntry: React.FC<MoveEntryProps> = memo(({ move, level }) => {
         </div>
       </div>
       {/* Row 3: Description */}
-      <div className="mt-2 text-center text-xs italic text-gray-300 w-full">
+      <div className="mt-1 w-full text-sm leading-relaxed text-gray-300/90">
         {move.description}
       </div>
     </div>

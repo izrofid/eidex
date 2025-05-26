@@ -3,6 +3,7 @@ import { getMoveData } from "../../../utils/moveData";
 import { getSpeciesData } from "@/utils/speciesUtils";
 import { findRootSpecies } from "@/utils/evoFamily";
 import MoveEntry from "./MoveEntry";
+import { MoveList } from "./MoveList";
 import { memo } from "react";
 
 type EggMovesProps = {
@@ -15,27 +16,17 @@ const EggMoves = memo(({ pokemon }: EggMovesProps) => {
   const rootSpecies = getSpeciesData(rootSpeciesId);
   const eggMoves = rootSpecies.eggMoves ?? [];
 
-  if (eggMoves.length === 0) {
-    return (
-      <div className="text-center py-3 text-zinc-400 font-lexend font-light">
-        No Egg Moves Available
-      </div>
-    );
-  }
+  const moves = eggMoves.map((moveId, index) => {
+    const move = getMoveData(moveId);
+    return move ? (
+      <MoveEntry key={`egg-${index}`} move={move} />
+    ) : null;
+  });
 
   return (
-    <div className="text-center font-bold text-white">
-      <ul>
-        {eggMoves.map((moveId, index) => {
-          const move = getMoveData(moveId);
-          return move ? (
-            <li key={`egg-${index}`}>
-              <MoveEntry move={move} />
-            </li>
-          ) : null;
-        })}
-      </ul>
-    </div>
+    <MoveList emptyMessage="No Egg Moves Available">
+      {moves}
+    </MoveList>
   );
 });
 
