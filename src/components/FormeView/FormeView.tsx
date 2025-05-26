@@ -36,17 +36,14 @@ export const FormeView: React.FC<FormeViewProps> = ({
   }
 
   return (
-    <div className="neutral-box flex flex-row flex-wrap justify-evenly gap-2 rounded-md p-2">
+    <div className="flex flex-row flex-wrap justify-evenly gap-2 rounded-md p-2">
       {altFormes.map((form: Pokemon) => (
         <div
           key={form.speciesId}
-          className="w-25 flex cursor-pointer flex-col items-center rounded-md bg-zinc-700 p-2"
+          className="flex cursor-pointer flex-col items-center rounded-md bg-zinc-700 hover:bg-zinc-600 active:bg-zinc-500 p-2"
           onClick={() => handleSelectPokemon(form.speciesId)}
         >
           <SpriteImage pokemon={form} />
-          <span className="font-pixel text-center text-xs text-gray-200">
-            {form.nameKey}
-          </span>
         </div>
       ))}
     </div>

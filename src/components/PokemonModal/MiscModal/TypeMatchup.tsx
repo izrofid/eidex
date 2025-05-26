@@ -42,7 +42,7 @@ const TypeMatchup: React.FC<Props> = ({ pokemon }) => {
   const screenWidth = useScreenWidth();
 
   return (
-    <div className="neutral-box w-full rounded-sm px-3 py-2 flex flex-col gap-4">
+    <div className="w-full rounded-sm px-3 py-2 flex flex-col gap-4">
       {nonNeutralMultipliers.map((mult) =>
         groups[mult]?.length ? (
           <div key={mult} className="flex flex-row gap-2 p-2 select-none">
