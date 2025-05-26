@@ -15,7 +15,7 @@ const CloseButton: FC<CloseButtonProps> = ({
 }) => {
   return (
     <Button
-      className={`text-gray-400 cursor-pointer hover:text-red-800 focus:outline-none ${className}`}
+      className={`text-gray-400 cursor-pointer hover:text-red-800 active:text-fuchsia-800 transition-colors focus:outline-none ${className}`}
       onClick={onClick}
       aria-label="Close"
       type="button"
