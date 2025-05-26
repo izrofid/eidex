@@ -51,7 +51,7 @@ const TypeMatchup: React.FC<Props> = ({ pokemon }) => {
               <TypeBadge key={typeId} typeId={typeId} screenWidth={screenWidth} />
             ))}</div>
           </div>
-        ) : null,
+        ) : null
       )}
     </div>
   );
