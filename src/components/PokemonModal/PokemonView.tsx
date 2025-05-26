@@ -23,7 +23,7 @@ interface PokemonViewProps {
 }
 
 const PokemonView: React.FC<PokemonViewProps> = ({ pokemon }) => {
-  const { isShiny, selectedAbility } = useUIStore();
+  const selectedAbility = useUIStore((state) => state.selectedAbility);
   const screenWidth = useScreenWidth();
   const isRandomiserActive = useRandomiserStore(
     (state) => state.isRandomiserActive,
