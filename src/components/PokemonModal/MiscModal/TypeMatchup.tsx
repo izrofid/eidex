@@ -1,9 +1,9 @@
 // Component to show a single pokemon's type matchups with data from typeInfo.ts
-import { getDefensiveMatchup} from "../../utils/typeInfo";
-import { TypeBadge } from "../TypeBadges/TypeBadge";
+import { getDefensiveMatchup} from "../../../utils/typeInfo";
+import { TypeBadge } from "../../TypeBadges/TypeBadge";
 
-import { Pokemon } from "../../types";
-import { useScreenWidth } from "../../hooks/useScreenWidth";
+import { Pokemon } from "../../../types";
+import { useScreenWidth } from "../../../hooks/useScreenWidth";
 
 type Props = {
   pokemon: Pokemon;

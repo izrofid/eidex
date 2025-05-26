@@ -1,11 +1,8 @@
 import { Switch } from "@headlessui/react";
+import { useUIStore } from "@/stores/uiStore";
 
-interface ShinyToggleProps {
-  isShiny: boolean;
-  toggleShiny: () => void;
-}
-
-function ShinyToggle({ isShiny, toggleShiny }: ShinyToggleProps) {
+function ShinyToggle() {
+  const { isShiny, toggleShiny } = useUIStore();
   return (
     <span className="flex flex-row items-center justify-start gap-1">
       <img

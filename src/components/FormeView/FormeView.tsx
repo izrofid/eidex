@@ -3,18 +3,28 @@ import React from "react";
 import speciesData from "@/data/speciesData.json";
 import SpriteImage from "../SpriteImage";
 import excludeForms from "@/utils/excludeForms";
-import { hasForms } from "@/utils/speciesUtils"; // Import hasForms
+import { hasForms, getSpeciesData } from "@/utils/speciesUtils";
+import { useUIStore } from "@/stores/uiStore";
 
 interface FormeViewProps {
   pokemon: Pokemon;
-  isShiny: boolean;
-  onClickPokemon: (pokemonId: number) => void;
 }
 
 export const FormeView: React.FC<FormeViewProps> = ({
   pokemon,
-  onClickPokemon,
 }) => {
+  const { setSelectedPokemon, setSelectedAbility } = useUIStore();
+  
+  const handleSelectPokemon = (pokemonId: number) => {
+    const newPokemon = getSpeciesData(pokemonId);
+    
+    // Reset selected ability when changing Pokémon
+    if (pokemonId !== pokemon.speciesId) {
+      setSelectedAbility(null);
+    }
+    
+    setSelectedPokemon(newPokemon);
+  };
   // Find all alternate forms
   const altFormes: Pokemon[] = Object.values(speciesData).filter(
     (p: Pokemon) => p.dexId === pokemon.dexId && !excludeForms(p.forms),
@@ -31,7 +41,7 @@ export const FormeView: React.FC<FormeViewProps> = ({
         <div
           key={form.speciesId}
           className="w-25 flex cursor-pointer flex-col items-center rounded-md bg-zinc-700 p-2"
-          onClick={() => onClickPokemon(form.speciesId)}
+          onClick={() => handleSelectPokemon(form.speciesId)}
         >
           <SpriteImage pokemon={form} />
           <span className="font-pixel text-center text-xs text-gray-200">
