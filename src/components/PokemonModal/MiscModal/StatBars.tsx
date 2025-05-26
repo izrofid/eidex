@@ -41,7 +41,7 @@ export default function StatBars({ stats }: StatBarsProps) {
   return (
     <div className="w-full select-none rounded-xl p-5 bg-card-backdrop shadow-md">
       <h3 className="font-chakra text-lg font-medium text-gray-100 mb-3">Base Stats</h3>
-      <div className="space-y-4">
+      <div className="space-y-3">
         {reorderedStats.map((value, i) => (
           <div
             key={STAT_LABELS[i]}
@@ -54,7 +54,7 @@ export default function StatBars({ stats }: StatBarsProps) {
               <div
                 className={`h-full rounded-full transition-all duration-300 ease-in-out shadow-sm ${getStatColorClass(value)}`}
                 style={{
-                  width: `${(value / highestStat) * 100}%`
+                  width: `${(value / 255) * 100}%`
                 }}
               />
             </div>
@@ -65,7 +65,7 @@ export default function StatBars({ stats }: StatBarsProps) {
         ))}
       </div>
       
-      <div className="mt-5 pt-3 border-t border-zinc-700/30">
+      <div className="mt-5 pt-3 border-t border-zinc-600/60">
         <div className="flex items-center gap-3">
           <span className="font-chakra w-10 text-sm font-bold text-purple-400">BST</span>
           <div className="h-4 flex-1 rounded-sm bg-zinc-800/80 overflow-hidden">
