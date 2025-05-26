@@ -30,13 +30,13 @@ export function sortPokemon(
           result = (a.stats[idx] ?? 0) - (b.stats[idx] ?? 0);
         }
         break;
-      case "index":
-        result = a.index - b.index;
+      case "speciesId":
+        result = a.speciesId - b.speciesId;
         break;
       case "dexId":
       default:
         if (a.dexId !== b.dexId) result = a.dexId - b.dexId;
-        else result = a.index - b.index;
+        else result = a.speciesId - b.speciesId;
         break;
     }
     return descending ? -result : result;

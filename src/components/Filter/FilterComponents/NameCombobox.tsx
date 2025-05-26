@@ -8,7 +8,7 @@ import { useFilterStore } from "../../../stores/filterStore";
 const speciesIDMap: ComboBoxEntry[] = Object.values(speciesData)
   .filter((p) => typeof p === "object" && !!p && "nameKey" in p)
   .map((p) => ({
-    id: (p as Pokemon).index,
+    id: (p as Pokemon).speciesId,
     name: (p as Pokemon).nameKey,
   }));
 

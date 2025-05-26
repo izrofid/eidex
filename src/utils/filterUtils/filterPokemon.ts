@@ -5,13 +5,20 @@ import { matchesStatFilter } from "./matchesStatFilter";
 import { matchesAbilityFilter } from "./matchesAbilityFilter";
 import { matchesMoveFilter } from "./matchesMoveFilter";
 import { sortPokemon } from "./sortPokemon";
+import { matchesMegaFilter } from "./matchesMegaFilter";
+import { matchesNfeFilter } from "./matchesNfeFilter";
 
 export function filterPokemon(
-  pokemons: Pokemon[],
+  pokemons: Pokemon[] | Record<string, Pokemon>,
   filters: FilterOptions = {},
   isRandomiserActive: boolean,
 ): Pokemon[] {
-  const filtered = pokemons.filter(
+  // Convert to array if pokemons is an object
+  const pokemonArray = Array.isArray(pokemons)
+    ? pokemons
+    : Object.values(pokemons);
+
+  const filtered = pokemonArray.filter(
     (pokemon) =>
       matchesNameFilter(pokemon, filters.name) &&
       matchesTypeFilter(pokemon, filters.typeIds) &&
@@ -22,7 +29,9 @@ export function filterPokemon(
         filters.isStatMax,
       ) &&
       matchesAbilityFilter(pokemon, isRandomiserActive, filters.abilityId) &&
-      matchesMoveFilter(pokemon, filters.moveId, filters.moveSource),
+      matchesMoveFilter(pokemon, filters.moveId, filters.moveSource) &&
+      matchesMegaFilter(pokemon, filters.megaCycle) &&
+      matchesNfeFilter(pokemon, filters.nfeCycle),
   );
 
   // Default to true if filters.descending is undefined

@@ -1,15 +1,17 @@
 import { create } from "zustand";
-import { Pokemon } from "@/types";
+import { Pokemon, Ability } from "@/types";
 import { persist } from "zustand/middleware";
 
 interface UIState {
   isShiny: boolean;
   selectedPokemon: Pokemon | null;
+  selectedAbility: Ability | null;
   isModalOpen: boolean;
   isCreditsOpen: boolean;
   isSidebarOpen: boolean;
   toggleShiny: () => void;
   setSelectedPokemon: (pokemon: Pokemon | null) => void;
+  setSelectedAbility: (ability: Ability | null) => void;
   openModal: (pokemon: Pokemon) => void;
   closeModal: () => void;
   openCredits: () => void;
@@ -23,6 +25,7 @@ export const useUIStore = create<UIState>()(
       //Properties
       isShiny: false,
       selectedPokemon: null,
+      selectedAbility: null,
       isModalOpen: false,
       isCreditsOpen: false,
       isSidebarOpen: false,
@@ -30,9 +33,15 @@ export const useUIStore = create<UIState>()(
       //Actions
       toggleShiny: () => set((state) => ({ isShiny: !state.isShiny })),
       setSelectedPokemon: (pokemon) => set({ selectedPokemon: pokemon }),
+      setSelectedAbility: (ability) => set({ selectedAbility: ability }),
       openModal: (pokemon) =>
-        set({ selectedPokemon: pokemon, isModalOpen: true }),
-      closeModal: () => set({ isModalOpen: false }),
+        set({ selectedPokemon: pokemon, isModalOpen: true, selectedAbility: null }), // Reset ability when opening modal
+      closeModal: () => {
+        // First hide the modal with animation
+        set({ isModalOpen: false });
+        // Then remove the Pokemon data after animation completes
+        setTimeout(() => set({ selectedPokemon: null }), 300);
+      },
       openCredits: () => set({ isCreditsOpen: true }),
       closeCredits: () => set({ isCreditsOpen: false }),
       toggleSidebar: () => set((state) => ({ isSidebarOpen: !state.isSidebarOpen })),

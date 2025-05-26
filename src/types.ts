@@ -4,7 +4,7 @@ export interface PokemonChanges {
   abilities?: (string | number[])[];
 }
 
-export type SortBy = "dexId" | "name" | "stat" | "index";
+export type SortBy = "dexId" | "name" | "stat" | "speciesId";
 
 export type StatArray = [number, number, number, number, number, number]
 
@@ -14,7 +14,7 @@ export type Abilities = Ability[];
 export type MoveSource = "all" | "levelup" | "tm" | "egg";
 
 export interface Pokemon {
-  index: number;
+  speciesId: number;
   speciesName: string;
   types: number[];
   stats: number[];
@@ -26,14 +26,12 @@ export interface Pokemon {
   dexId: number;
   evolutions?: number[][] | null;
   forms?: string[] | null;
+  siblings?: number[];
+  baseForm?: number;
   formId?: number;
   nameKey: string;
   eggGroup?: number[];
   items?: number[];
-  tutorMoves?: number[];
-  ancestor?: number;
-  order?: number;
-  changes?: PokemonChanges | string;
 }
 
 export interface SpeciesData {
@@ -57,10 +55,12 @@ export interface FilterOptions {
   moveName?: string;
   moveId?: number;
   moveSource?: MoveSource;
+  megaCycle?: boolean | undefined;
+  nfeCycle?: boolean | undefined;
 }
 
 export interface Move {
-  id: number;
+  moveId: number;
   name: string;
   description: string | null;
   power: number;

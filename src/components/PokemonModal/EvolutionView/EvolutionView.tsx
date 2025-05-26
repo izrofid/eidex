@@ -1,11 +1,12 @@
-import { EvolutionFamily } from "../../utils/evoFamily";
+import { EvolutionFamily } from "../../../utils/evoFamily";
 import { FaArrowRight } from "react-icons/fa";
 
 import Evolution from "./Evolution";
-import { Pokemon } from "../../types";
+import { Pokemon } from "../../../types";
 import React from "react";
-import { getSpeciesData } from "@/utils/speciesData";
+import { getSpeciesData } from "@/utils/speciesUtils";
 import EvolutionDetails from "./EvolutionDetails";
+import { useUIStore } from "@/stores/uiStore";
 
 // This is a derivative type that sets 'evolutions' to not-undefined.
 // This component wont render if 'evolutions' is undefined anyways...
@@ -13,13 +14,23 @@ import EvolutionDetails from "./EvolutionDetails";
 interface EvolutionViewProps {
   family: EvolutionFamily;
   pokemon: Pokemon;
-  onClickPokemon: (pokemonId: number) => void;
 }
 
-const EvolutionView: React.FC<EvolutionViewProps> = ({
-  family,
-  onClickPokemon,
-}) => {
+const EvolutionView: React.FC<EvolutionViewProps> = ({ family }) => {
+  const setSelectedPokemon = useUIStore((state) => state.setSelectedPokemon);
+  const setSelectedAbility = useUIStore((state) => state.setSelectedAbility);
+  const selectedPokemon = useUIStore((state) => state.selectedPokemon);
+
+  const handleSelectPokemon = (pokemonId: number) => {
+    const newPokemon = getSpeciesData(pokemonId);
+
+    // Reset ability when changing to a different Pokémon
+    if (selectedPokemon && pokemonId !== (selectedPokemon.speciesId ?? 0)) {
+      setSelectedAbility(null);
+    }
+
+    setSelectedPokemon(newPokemon);
+  };
   // Group members by stage
   const stages: Record<number, typeof family.members> = {};
   family.members.forEach((member) => {
@@ -50,7 +61,7 @@ const EvolutionView: React.FC<EvolutionViewProps> = ({
                 >
                   <Evolution
                     pokemon={getSpeciesData(member.id)}
-                    onClick={() => onClickPokemon(member.id)}
+                    onClick={() => handleSelectPokemon(member.id)}
                     requirements={member.requirements}
                     details={member.details}
                   />
@@ -67,12 +78,16 @@ const EvolutionView: React.FC<EvolutionViewProps> = ({
   );
 
   return (
-    <>
-      <div className="neutral-box flex flex-row items-center justify-evenly rounded-md p-2 py-3 text-white">
-        {family.members.length > 1 ? columnsWithArrows : <p>No Evolutions</p>}
+    <div className="flex flex-col gap-3 rounded-md p-2 py-2">
+      <div className="flex items-center justify-evenly text-white py-2">
+        {family.members.length > 1 ? columnsWithArrows : <span className="flex text-gray-300/50">No Evolutions</span>}
       </div>
-      <div className="mt-3"><EvolutionDetails evoFamily={family} /></div>
-    </>
+      {family.members.length > 1 && (
+        <div className="mx-3 flex items-center justify-center">
+          <EvolutionDetails evoFamily={family} />
+        </div>
+      )}
+    </div>
   );
 };
 

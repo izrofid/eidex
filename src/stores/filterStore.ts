@@ -3,6 +3,13 @@ import { FilterOptions, MoveSource, SortBy } from "@/types";
 import { ComboBoxEntry } from "@/components/Filter/FilterComponents/GenericComboBox";
 import { typeDataArray } from "@/utils/typeInfo";
 
+// Helper function to determine the next state in the cycle
+const getNextCycleState = (state: boolean | undefined): boolean | undefined => {
+  if (state === undefined) return true;    // undefined -> true
+  else if (state === true) return false;   // true -> false
+  else return undefined;                   // false -> undefined
+};
+
 interface FilterState {
   // Core filter values
   filters: FilterOptions;
@@ -15,6 +22,13 @@ interface FilterState {
   // Move filter state
   moveSource: MoveSource;
   moveValue: ComboBoxEntry | null;
+
+  // Special Filters
+  megaCycle: boolean | undefined;
+  nfeCycle: boolean | undefined;
+  cycleMega: () => void;
+  cycleNfe: () => void;
+
 
   // Type
   typeValue: [number?, number?];
@@ -31,6 +45,10 @@ interface FilterState {
   // Name filter
   nameValue: string;
 
+  // Filter toggles state
+  filterToggles: [boolean, boolean, boolean]; // [Evolved, Legend, Mega]
+  toggleState: "Include" | "Only";
+
   // Actions
   setChosenStat: (stat: number | undefined) => void;
   setStatType: (type: string | undefined) => void;
@@ -45,6 +63,8 @@ interface FilterState {
   toggleSortDirection: () => void;
   setSortDirection: (direction: boolean) => void;
   setNameValue: (name: string) => void;
+  setFilterToggle: (idx: number, value: boolean) => void;
+  setToggleState: (toggleState: "Include" | "Only") => void;
   resetFilters: () => void;
 }
 
@@ -61,6 +81,8 @@ export const useFilterStore = create<FilterState>((set, get) => ({
     sortStat: undefined,
     descending: false,
     moveSource: "all",
+    megaCycle: undefined,
+    nfeCycle: undefined,
   },
 
   // Type options
@@ -75,11 +97,15 @@ export const useFilterStore = create<FilterState>((set, get) => ({
   isStatMax: false,
   moveSource: "all",
   moveValue: null,
+  megaCycle: undefined,
+  nfeCycle: undefined,
   abilityValue: null,
   sortBy: "dexId",
   sortStat: undefined,
   descending: false,
   nameValue: "",
+  filterToggles: [false, false, false] as [boolean, boolean, boolean], // [Evolved, Legend, Mega]
+  toggleState: "Include" as "Include" | "Only",
 
   // Actions
   setChosenStat: (stat) =>
@@ -122,7 +148,9 @@ export const useFilterStore = create<FilterState>((set, get) => ({
   setTypeValue: (id?: number) =>
     set((state) => {
       // start with only the defined selections
-      if (!state.typeValue){state.typeValue = [undefined, undefined]}
+      if (!state.typeValue) {
+        state.typeValue = [undefined, undefined];
+      }
       let selected = state.typeValue.filter(
         (t): t is number => t !== undefined,
       );
@@ -181,7 +209,7 @@ export const useFilterStore = create<FilterState>((set, get) => ({
   setSortDirection: (direction) =>
     set((state) => ({
       descending: direction,
-      filters: { ...state.filters, descending: !state.descending },
+      filters: { ...state.filters, descending: direction },
     })),
 
   setNameValue: (name) =>
@@ -189,6 +217,43 @@ export const useFilterStore = create<FilterState>((set, get) => ({
       nameValue: name,
       filters: { ...state.filters, name },
     })),
+
+  setFilterToggle: (idx, value) =>
+    set((state) => {
+      const next: [boolean, boolean, boolean] = [...state.filterToggles] as [
+        boolean,
+        boolean,
+        boolean,
+      ];
+      next[idx] = value;
+      return {
+        filterToggles: next,
+      };
+    }),
+
+  setToggleState: (toggleState) =>
+    set(() => ({
+      toggleState,
+    })),
+
+    
+  cycleMega: () =>
+    set((state) => {
+      const nextState = getNextCycleState(state.megaCycle);
+      return {
+        megaCycle: nextState,
+        filters: { ...state.filters, megaCycle: nextState },
+      };
+    }),
+    
+  cycleNfe: () =>
+    set((state) => {
+      const nextState = getNextCycleState(state.nfeCycle);
+      return {
+        nfeCycle: nextState,
+        filters: { ...state.filters, nfeCycle: nextState },
+      };
+    }),
 
   resetFilters: () =>
     set({
@@ -202,15 +267,21 @@ export const useFilterStore = create<FilterState>((set, get) => ({
         sortStat: undefined,
         descending: false,
         moveSource: "all",
+        megaCycle: undefined,
+        nfeCycle: undefined,
       },
       chosenStat: undefined,
       statType: undefined,
       isStatMax: false,
       moveSource: "all",
       moveValue: null,
+      megaCycle: undefined,
+      nfeCycle: undefined,
       typeValue: [undefined, undefined] as [number?, number?],
       abilityValue: null,
       nameValue: "",
+      filterToggles: [false, false, false] as [boolean, boolean, boolean],
+      toggleState: "Include" as "Include" | "Only",
     }),
 
   // Selector function for getting selected type

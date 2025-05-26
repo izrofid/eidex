@@ -19,18 +19,17 @@ export default function SpriteImage({
   const alt = pokemon.nameKey;
   const [imgError, setImgError] = React.useState(false);
 
-  const spriteUrl = useSprite(pokemon.index);
+  const spriteUrl = useSprite(pokemon.speciesId);
 
   const size = mult * 64
 
   if (!spriteUrl && !imgError) {
-    // Spinner (Tailwind example)
     return (
       <div
-        className={`flex items-center justify-center rounded bg-neutral-800 ${className}`}
+        className={`flex items-center justify-center rounded ${className}`}
         style={{ width: size, height: size }}
       >
-        <div className="h-8 w-8 animate-spin rounded-full border-b-2 border-white" />
+        <div className="h-8 w-8 animate-spin bg-transparent rounded-full border-b-2 border-gray-200" />
       </div>
     );
   }

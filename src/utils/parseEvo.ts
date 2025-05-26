@@ -1,7 +1,7 @@
 import { getItemName } from "./itemData";
 import { getTypeName } from "./typeInfo";
 import { getMoveName } from "./moveData";
-import { getNameKey } from "./speciesData";
+import { getNameKey } from "./speciesUtils";
 
 export const parseEvolutions: Record<number, (evo: number[]) => string> = {
   0: () => `None`,

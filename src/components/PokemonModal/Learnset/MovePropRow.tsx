@@ -3,7 +3,7 @@
 import { Move } from "@/types";
 import { capitalize } from "@/utils/miscUtils";
 import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from "@radix-ui/react-tooltip";
-import React from "react";
+import React, { memo } from "react";
 import { BiPulse } from "react-icons/bi";
 import {
   GiBullets,
@@ -22,25 +22,26 @@ import {
 } from "react-icons/md";
 import { BsDashLg } from "react-icons/bs";
 
-function MovePropBox({ move }: { move: Move }) {
-  const moveAttr: string[] = move.properties ? move.properties : ["None"];
+// Define icon map outside the component to prevent recreation on every render
+const moveAttrIconMap: {
+  [key: string]: React.ComponentType<{ size?: number | string }>;
+} = {
+  contact: MdTouchApp,
+  kicking: GiFootprint,
+  ballistic: GiBullets,
+  biting: GiFangs,
+  healing: MdHealthAndSafety,
+  sound: MdVolumeUp,
+  punching: GiPunch,
+  powder: GiPowder,
+  slicing: GiEnergySword,
+  pulse: BiPulse,
+  wind: GiWhirlwind,
+  dance: MdSportsGymnastics,
+};
 
-  const moveAttrIconMap: {
-    [key: string]: React.ComponentType<{ size?: number | string }>;
-  } = {
-    contact: MdTouchApp,
-    kicking: GiFootprint,
-    ballistic: GiBullets,
-    biting: GiFangs,
-    healing: MdHealthAndSafety,
-    sound: MdVolumeUp,
-    punching: GiPunch,
-    powder: GiPowder,
-    slicing: GiEnergySword,
-    pulse: BiPulse,
-    wind: GiWhirlwind,
-    dance: MdSportsGymnastics,
-  };
+const MovePropBox = memo(function MovePropBox({ move }: { move: Move }) {
+  const moveAttr: string[] = move.properties ? move.properties : ["None"];
 
   return (
     <TooltipProvider>
@@ -63,6 +64,6 @@ function MovePropBox({ move }: { move: Move }) {
       </div>
     </TooltipProvider>
   );
-}
+});
 
 export default MovePropBox;

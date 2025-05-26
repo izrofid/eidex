@@ -1,7 +1,7 @@
 import { EvolutionFamily } from "@/utils/evoFamily";
-import { parseEvolutions } from "../../utils/parseEvo";
-import { getNameKey, getSpeciesData } from "../../utils/speciesData";
-import { getTypeSnapColor } from "../../utils/typeInfo";
+import { parseEvolutions } from "../../../utils/parseEvo";
+import { getNameKey, getSpeciesData } from "../../../utils/speciesUtils";
+import { getTypeSnapColor } from "../../../utils/typeInfo";
 
 interface EvolutionDetailsProps {
   evoFamily: EvolutionFamily;
@@ -13,7 +13,7 @@ const EvolutionDetails: React.FC<EvolutionDetailsProps> = ({ evoFamily }) => {
 
   return (
     <div
-      className={`neutral-box rounded-md p-2 ${noEvo ? "hidden" : ""} text-gray-200 text-sm`}
+      className={`${noEvo ? "hidden" : ""} text-gray-200 text-sm`}
     >
       {flatMembers.map((member) => {
         let pokemon;
@@ -36,7 +36,8 @@ const EvolutionDetails: React.FC<EvolutionDetailsProps> = ({ evoFamily }) => {
                         <span style={{ color: nameColor, fontWeight: 'bold' }}>{pokemon.nameKey}</span>
                         {" → "}
                         <span style={{ color: nameColor, fontWeight: 'bold' }}>{evolutionTarget}</span>
-                        <span className="italic">{evolutionDetails ? ` (${evolutionDetails})` : null}</span>
+                        <span>{" "}</span>
+                        <span className="text-gray-300">{evolutionDetails ? `${evolutionDetails}` : null}</span>
                       </span>
                     </li>
                   );

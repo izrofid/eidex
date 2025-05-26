@@ -5,7 +5,7 @@ import { Button } from "@headlessui/react";
 
 const HeaderBar: React.FC = () => (
   <header className="justify-betweeen select-none flex flex-row items-center justify-start gap-0 bg-neutral-900 px-4 py-4 font-sans tracking-tight text-gray-200 shadow-md">
-    <div className="flex w-full items-center pb-0 pl-0">
+    <div className="flex w-full items-center pb-0 pl-0 font-chakra">
       <img
         src="icons/emploeon_posing.png"
         alt="Empoleon"
@@ -34,7 +34,7 @@ const HeaderBar: React.FC = () => (
     </Button>
     <Button
       as="a"
-      href="https://discord.gg/Qw9eNGaRut"
+      href="https://discord.gg/emeraldimperium"
       target="_blank"
       rel="noopener noreferrer"
       className="active:animate-pulse"

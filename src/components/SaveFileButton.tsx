@@ -1,4 +1,4 @@
-import { Button } from "@headlessui/react";
+import { Button, Input } from "@headlessui/react";
 import React, { useEffect, useRef } from "react";
 import { MdCloudUpload } from "react-icons/md";
 import { getTrainerIdFromSectors, MGBA_SIZE, splitSaveIntoChunks, TOTAL_SIZE } from "../randomiser/trainerIdExtractor";
@@ -10,9 +10,17 @@ export function SaveFileButton({
   onSaveRead: (buf: ArrayBuffer) => void;
 }) {
   const setTrainerIdInfo = useRandomiserStore((state) => state.setTrainerIdInfo);
+  const toggleRandomiserActive = useRandomiserStore((state) => state.toggleRandomiserActive);
   const trainerIdInfo = useRandomiserStore((state) => state.trainerIdInfo);
+  const isRandomiserActive = useRandomiserStore((state) => state.isRandomiserActive);
   const inputRef = useRef<HTMLInputElement>(null);
   
+  const activateRandomiser = () => {
+    if (!isRandomiserActive) {
+      toggleRandomiserActive();
+    }
+  };
+
   // Reset file input when trainerIdInfo changes to null
   useEffect(() => {
     if (!trainerIdInfo && inputRef.current) {
@@ -43,6 +51,7 @@ export function SaveFileButton({
 
 
         setTrainerIdInfo(trainerIdInfo);
+        activateRandomiser();
         
         // Continue with whatever other processing was happening
         onSaveRead(buffer);
@@ -57,11 +66,11 @@ export function SaveFileButton({
     <Button
       type="button"
       onClick={handleClick}
-      className="flex items-center min-w-15 justify-center gap-1 rounded bg-neutral-700 px-2 py-1 text-white hover:bg-gray-700 shadow-md/40"
+      className="flex items-center w-max justify-center rounded cursor-pointer text-white hover:text-sky-400 active:text-indigo-500 transition-colors"
       title="Upload .sav File"
     >
-      <MdCloudUpload size={20} />
-      <input
+      <MdCloudUpload size={22} />
+      <Input
         type="file"
         accept=".sav"
         ref={inputRef}

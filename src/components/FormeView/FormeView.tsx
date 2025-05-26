@@ -3,33 +3,47 @@ import React from "react";
 import speciesData from "@/data/speciesData.json";
 import SpriteImage from "../SpriteImage";
 import excludeForms from "@/utils/excludeForms";
+import { hasForms, getSpeciesData } from "@/utils/speciesUtils";
+import { useUIStore } from "@/stores/uiStore";
 
 interface FormeViewProps {
   pokemon: Pokemon;
-  isShiny: boolean;
-  onClickPokemon: (pokemonId: number) => void;
 }
 
 export const FormeView: React.FC<FormeViewProps> = ({
   pokemon,
-  onClickPokemon,
 }) => {
-  const altFormes: Pokemon[] = speciesData.filter(
+  const { setSelectedPokemon, setSelectedAbility } = useUIStore();
+  
+  const handleSelectPokemon = (pokemonId: number) => {
+    const newPokemon = getSpeciesData(pokemonId);
+    
+    // Reset selected ability when changing Pokémon
+    if (pokemonId !== pokemon.speciesId) {
+      setSelectedAbility(null);
+    }
+    
+    setSelectedPokemon(newPokemon);
+  };
+  // Find all alternate forms
+  const altFormes: Pokemon[] = Object.values(speciesData).filter(
     (p: Pokemon) => p.dexId === pokemon.dexId && !excludeForms(p.forms),
   );
 
+  // Hide if only one form exists
+  if (!hasForms(pokemon) || altFormes.length <= 1) {
+    return null;
+  }
+
   return (
-    <div className="neutral-box flex flex-row flex-wrap justify-evenly gap-2 rounded-md p-2">
+    <div className="flex flex-row flex-wrap justify-evenly gap-2 rounded-md p-2">
       {altFormes.map((form: Pokemon) => (
         <div
-          key={form.index}
-          className="w-25 flex cursor-pointer flex-col items-center rounded-md bg-zinc-700 p-2"
-          onClick={() => onClickPokemon(form.index)}
+          key={form.speciesId}
+          className="flex cursor-pointer flex-col items-center rounded-md bg-zinc-700 hover:bg-zinc-600 active:bg-zinc-500 p-2"
+          onClick={() => handleSelectPokemon(form.speciesId)}
         >
           <SpriteImage pokemon={form} />
-          <span className="font-pixel text-center text-xs text-gray-200">
-            {form.nameKey}
-          </span>
         </div>
       ))}
     </div>
