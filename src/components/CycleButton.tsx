@@ -46,7 +46,7 @@ const CycleButton: React.FC<CycleButtonProps> = (props) => {
   return (
     <Button
       onClick={props.onClick}
-      className={`group flex w-max cursor-pointer ${getButtonColor()} overflow-hidden rounded-full text-xs shadow-md transition-all duration-200 ease-in-out hover:shadow-lg active:shadow-inner`}
+      className={`group flex w-max cursor-pointer ${getButtonColor()} overflow-hidden rounded-full text-xs shadow-md transition-all duration-200 ease-in-out hover:shadow-lg active:shadow-inner select-none`}
     >
       <div className="flex w-max items-center justify-center rounded-l-full px-2 py-1 text-center font-medium tracking-wide text-white/90 transition-colors duration-200 group-hover:text-white">
         {props.label}
