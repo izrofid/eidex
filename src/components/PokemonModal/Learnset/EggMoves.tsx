@@ -17,7 +17,7 @@ const EggMoves = memo(({ pokemon }: EggMovesProps) => {
 
   if (eggMoves.length === 0) {
     return (
-      <div className="text-center font-bold text-white">
+      <div className="text-center py-3 text-zinc-400 font-lexend font-light">
         No Egg Moves Available
       </div>
     );

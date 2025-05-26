@@ -1,6 +1,7 @@
 import React from "react";
 import { Ability } from "../../../types";
 import { getAbilityNameShort } from "../../../utils/abilityData";
+import { Button } from "@headlessui/react";
 
 type AbilityBadgeProps = {
   ability: Ability;
@@ -18,16 +19,15 @@ const AbilityBadge: React.FC<AbilityBadgeProps> = ({
   if (ability == 0) return null; // Skip invalid abilities
 
   return (
-    <div
-      className={`-skew-x-18 w-28 select-none items-center text-nowrap py-0.5 pl-1 text-left text-xs text-white transition-colors sm:text-sm cursor-pointer ring-1 ${
-        isHidden
-          ? "bg-pink-600 transition-colors hover:bg-pink-700 active:bg-pink-800"
-          : " hover:bg-slate-700 active:bg-slate-800  bg-slate-600"
-      } ${isAvailable ? "" : "line-through decoration-1"}`}
+    <Button
+      className={`group relative flex min-w-[10ch] items-center justify-center bg-gradient-to-r px-2 py-1 pr-3 text-xs font-medium font-lexend tracking-wide text-white sm:text-sm ${isHidden ? "from-pink-600 to-pink-700" : "from-slate-600 to-slate-700"} rounded-md shadow-md transition-all duration-150 ${isAvailable ? "hover:brightness-110 active:brightness-95 cursor-pointer" : "opacity-60 line-through decoration-1 hover:brightness-110 cursor-help"} skew-x-[-18deg] overflow-hidden`}
       onClick={() => onClick(ability)}
+      // Allow clicking for all abilities to view description
+      disabled={false}
+      aria-label={`${getAbilityNameShort(ability)}${!isAvailable ? ' (unavailable)' : ''}`}
     >
-      <div className=" pl-1 skew-x-18">{getAbilityNameShort(ability)}</div>
-    </div>
+      <span className="skew-x-[18deg]">{getAbilityNameShort(ability)}</span>
+    </Button>
   );
 };
 

@@ -10,7 +10,7 @@ type TMMovesProps = {
 const TMMoves = memo(({ pokemon }: TMMovesProps) => {
   if (!pokemon.tmMoves || pokemon.tmMoves.length === 0) {
     return (
-      <div className="text-center font-bold text-white">
+      <div className="text-center py-3 text-zinc-400 font-lexend font-light">
         No TM/HM Moves Available
       </div>
     );

@@ -45,7 +45,7 @@ export default function StatBars({ stats }: StatBarsProps) {
         key={STAT_LABELS[i]}
         className="mx-auto flex w-full items-center gap-2"
       >
-        <span className="font-pixel w-8 text-sm text-gray-200">
+        <span className="font-chakra w-8 text-sm text-gray-200">
         {STAT_LABELS[i]}
         </span>
         <div className="h-2 flex-1 rounded">
@@ -57,13 +57,13 @@ export default function StatBars({ stats }: StatBarsProps) {
           }}
         />
         </div>
-        <span className="font-pixel w-8 text-right text-sm text-gray-300">
+        <span className="font-chakra w-8 text-right text-sm text-gray-300">
         {value}
         </span>
       </div>
       ))}
-      <div className="mx-auto flex w-full items-center gap-2">
-      <span className="font-pixel w-8 text-sm font-bold text-yellow-500">BST</span>
+      <div className="mx-auto flex w-full items-center gap-2 bg-zinc-700/70  mt-2 px-2 rounded-md">
+      <span className="font-chakra w-8 text-sm font-bold text-yellow-500">BST</span>
       <div className="h-2 flex-1 rounded">
         <div
         className="h-2 rounded"
@@ -73,7 +73,7 @@ export default function StatBars({ stats }: StatBarsProps) {
         }}
         />
       </div>
-      <span className="font-pixel font-bold w-8 text-right text-sm text-yellow-500">
+      <span className="font-chakra font-bold w-8 text-right text-sm text-yellow-500">
         {bst}
       </span>
       </div>

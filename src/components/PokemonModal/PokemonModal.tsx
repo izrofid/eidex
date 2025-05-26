@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { Ability, Pokemon, StatArray } from "../../types";
+import { Pokemon, StatArray } from "../../types";
 import CloseButton from "../CloseButton";
 import EvolutionView from "./EvolutionView/EvolutionView";
 import AbilityBox from "./Ability/AbilityBox";
@@ -22,9 +21,8 @@ import { useRandomiserStore } from "@/stores/randomiserStore";
 import PokemonLocations from "./PokemonLocations";
 
 function PokemonView({ pokemon }: { pokemon: Pokemon }) {
-  const { isShiny, setSelectedPokemon } = useUIStore();
+  const { isShiny, setSelectedPokemon, selectedAbility, setSelectedAbility } = useUIStore();
   const screenWidth = useScreenWidth();
-  const [selectedAbility, setSelectedAbility] = useState<Ability | null>(null);
   const isRandomiserActive = useRandomiserStore(
     (state) => state.isRandomiserActive,
   );
@@ -45,56 +43,69 @@ function PokemonView({ pokemon }: { pokemon: Pokemon }) {
   );
 
   return (
-    <div className="flex w-full flex-col items-center">
-      <SpriteImage pokemon={pokemon} mult={2} className="rendering-pixelated" />
-      <div className="mt-2 flex flex-row gap-1">
-        {pokemon.types.map((typeId: number, index: number) => (
-          <div key={index}>
-            <TypeBadge typeId={typeId} screenWidth={screenWidth} />
+    <div className="flex w-full flex-col items-center space-y-4">
+      {/* Header section - Pokemon sprite and basic info */}
+      <div className="flex flex-col items-center space-y-2">
+        <SpriteImage pokemon={pokemon} mult={2} className="rendering-pixelated" />
+        <div className="flex flex-row gap-1">
+          {pokemon.types.map((typeId: number, index: number) => (
+            <div key={index}>
+              <TypeBadge typeId={typeId} screenWidth={screenWidth} />
+            </div>
+          ))}
+        </div>
+        <div className="flex items-center gap-3">
+          <div className="font-pixel text-xl font-bold text-gray-200">
+            {pokemon.nameKey}
           </div>
-        ))}
+          <div className="text-md font-pixel text-gray-400">#{pokemon.dexId}</div>
+        </div>
       </div>
 
-      <div className="flex items-center gap-3">
-        <div className="font-pixel text-xl font-bold text-gray-200">
-          {pokemon.nameKey}
-        </div>
-        <div className="text-md font-pixel text-gray-400">#{pokemon.dexId}</div>
-      </div>
-      <div className="mt-2 flex w-full">
+      {/* Stats section */}
+      <div className="flex w-full">
         <StatBars stats={pokemon.stats as StatArray} />
       </div>
-      <div className="mt-6 flex w-full flex-col">
-        <AbilityBox key={pokemon.speciesId} abilities={randomisedAbilities} />
-        <div className="mt-2 w-full">
-          <AbilityDescription
-            selectedAbility={selectedAbility}
-            onClose={() => setSelectedAbility(null)}
-          />
+      
+      {/* Details section */}
+      <div className="flex w-full flex-col space-y-4">
+        {/* Abilities section */}
+        <div className="space-y-2">
+          <AbilityBox key={pokemon.speciesId} abilities={randomisedAbilities} />
+          {selectedAbility && (
+            <AbilityDescription
+              selectedAbility={selectedAbility}
+              onClose={() => setSelectedAbility(null)}
+            />
+          )}
         </div>
-        <div className="mt-0">
-          <PokemonLocations pokemonId={pokemon.speciesId} />
-        </div>
-        <div className="mt-3">
-          <EvolutionView
+
+        {/* Locations section */}
+        <PokemonLocations pokemonId={pokemon.speciesId} />
+        
+        {/* Evolution section */}
+        <EvolutionView
+          pokemon={pokemon}
+          family={evoFamily}
+          onClickPokemon={handleSelectPokemon}
+        />
+        
+        {/* Forms section (conditional) */}
+        {hasForms(pokemon) && (
+          <FormeView
             pokemon={pokemon}
-            family={evoFamily}
+            isShiny={isShiny}
             onClickPokemon={handleSelectPokemon}
           />
-        </div>
-        {hasForms(pokemon) && (
-          <div className="mb-3">
-            <FormeView
-              pokemon={pokemon}
-              isShiny={isShiny}
-              onClickPokemon={handleSelectPokemon}
-            />
-          </div>
         )}
+        
+        {/* Type matchup section */}
         <div className="flex flex-wrap text-gray-100">
           <TypeMatchup pokemon={pokemon} />
         </div>
       </div>
+      
+      {/* Learnset section (at bottom) */}
       <div className="flex w-full flex-grow">
         <PokemonLearnset pokemon={pokemon} />
       </div>
