@@ -10,28 +10,39 @@ type PokemonLearnsetProps = {
 };
 
 const tabConfig = [
-  { label: "Level Up", Component: LevelUpMoves },
-  { label: "TMs & HMs", Component: TMMoves },
-  { label: "Egg Moves", Component: EggMoves },
+  { label: "Level", Component: LevelUpMoves },
+  { label: "TMs", Component: TMMoves },
+  { label: "Breed", Component: EggMoves },
 ];
 
 const PokemonLearnset = memo(({ pokemon }: PokemonLearnsetProps) => {
   return (
     <div className="w-full">
       <TabGroup>
-        <TabList className="flex gap-1 border-b-1 border-gray-500 pb-2">
+        <TabList className="relative flex rounded-md bg-zinc-800/30 overflow-clip">
           {tabConfig.map((tab) => (
             <Tab
               key={tab.label}
-              className="data-selected:bg-slate-700 my-2 flex-1 cursor-pointer rounded-xl py-2 text-center text-sm font-medium text-gray-200 outline-none transition-colors hover:bg-slate-500 active:bg-indigo-500"
+              className={({ selected }) =>
+              `relative flex-1 cursor-pointer px-3 py-2 text-sm font-medium transition-all duration-200
+              ${
+                selected
+                ? 'bg-zinc-700 text-white shadow-sm border-b-2 border-sky-400'
+                : 'text-gray-200 border-b-2 border-transparent bg-zinc-800 hover:bg-zinc-700 hover:text-white'
+              }
+              focus:outline-none`
+              }
             >
               {tab.label}
             </Tab>
           ))}
         </TabList>
-        <TabPanels className="">
+        <TabPanels className="mt-4">
           {tabConfig.map(({ label, Component }) => (
-            <TabPanel key={label}>
+            <TabPanel 
+              key={label}
+              className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/75 rounded-lg"
+            >
               <Component pokemon={pokemon} />
             </TabPanel>
           ))}
