@@ -6,11 +6,11 @@ function FilterBar() {
 
   return (
     <div className="select-none">
-      <div className="flex flex-1 items-center justify-between gap-3 rounded-t-lg px-3 py-2 shadow-lg">
+      <div className="flex flex-1 items-center justify-between gap-3 rounded-t-lg bg-zinc-800/90 px-3 py-2 shadow-md">
         <NameCombobox/>
         <SidebarButton></SidebarButton>
       </div>
-      <div className="px-3 bg-gray-600/20 shadow-x-md">
+      <div className="bg-zinc-700/30 px-3 shadow-inner">
         <CurrentFilters />
       </div>
     </div>

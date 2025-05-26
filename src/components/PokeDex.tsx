@@ -80,7 +80,7 @@ function PokeDex() {
       </div>
       <div
         ref={containerRef}
-        className="border-b-1 shadow-2xl/60 relative flex h-full w-full sm:max-w-[60%] flex-col"
+        className="relative flex h-full w-full sm:max-w-[60%] flex-col"
       >
         <CreditsPanel />
         <PokemonList

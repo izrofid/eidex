@@ -80,7 +80,7 @@ export default function PokemonList({
 
   return (
     <div className="flex flex-1 w-full flex-col items-center select-none">
-      <div className="w-full sticky top-0 z-10 border-neutral-800">
+      <div className="w-full sticky top-0 z-10">
       <SortBar
         sortBy={sortBy}
         statType={sortStat}
@@ -90,7 +90,7 @@ export default function PokemonList({
         }}
       />
       </div>
-      <div className="w-full">
+      <div className="w-full divide-y divide-zinc-700/80">
       {pokemonToShow
         .slice(0, visibleCount)
         .filter(
