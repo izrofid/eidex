@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Ability, Pokemon, StatArray } from "../../types";
 import CloseButton from "../CloseButton";
-import EvolutionView from "../EvolutionView/EvolutionView";
-import AbilityBox from "./AbilityBox";
+import EvolutionView from "./EvolutionView/EvolutionView";
+import AbilityBox from "./Ability/AbilityBox";
 import { getEvolutionaryFamily } from "@/utils/evoFamily";
-import AbilityDescription from "./AbilityDescription";
+import AbilityDescription from "./Ability/AbilityDescription";
 import TypeMatchup from "./TypeMatchup";
 import PokemonLearnset from "./Learnset/PokemonLearnset";
 import { TypeBadge } from "../TypeBadges/TypeBadge";
@@ -64,18 +64,18 @@ function PokemonView({ pokemon }: { pokemon: Pokemon }) {
       <div className="mt-2 flex w-full">
         <StatBars stats={pokemon.stats as StatArray} />
       </div>
-      <div className="my-2 mt-6 flex w-full flex-col">
+      <div className="mt-6 flex w-full flex-col">
         <AbilityBox key={pokemon.speciesId} abilities={randomisedAbilities} />
-        <div className="w-full">
+        <div className="mt-2 w-full">
           <AbilityDescription
             selectedAbility={selectedAbility}
             onClose={() => setSelectedAbility(null)}
           />
         </div>
-        <div className="">
+        <div className="mt-0">
           <PokemonLocations pokemonId={pokemon.speciesId} />
         </div>
-        <div className="my-3">
+        <div className="mt-3">
           <EvolutionView
             pokemon={pokemon}
             family={evoFamily}

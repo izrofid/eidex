@@ -1,5 +1,5 @@
 import { Pokemon } from "@/types";
-import SpriteImage from "../SpriteImage";
+import SpriteImage from "../../SpriteImage";
 
 type EvolutionProps = {
   onClick: () => void;

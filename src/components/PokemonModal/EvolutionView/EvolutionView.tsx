@@ -1,8 +1,8 @@
-import { EvolutionFamily } from "../../utils/evoFamily";
+import { EvolutionFamily } from "../../../utils/evoFamily";
 import { FaArrowRight } from "react-icons/fa";
 
 import Evolution from "./Evolution";
-import { Pokemon } from "../../types";
+import { Pokemon } from "../../../types";
 import React from "react";
 import { getSpeciesData } from "@/utils/speciesUtils";
 import EvolutionDetails from "./EvolutionDetails";

@@ -1,6 +1,6 @@
-import { Ability } from "../../types";
-import { getAbilityName, getAbilityDescription } from "../../utils/abilityData";
-import CloseButton from "../CloseButton";
+import { Ability } from "../../../types";
+import { getAbilityName, getAbilityDescription } from "../../../utils/abilityData";
+import CloseButton from "../../CloseButton";
 
 type AbilityDescriptionProps = {
   selectedAbility: Ability | null;
@@ -14,7 +14,7 @@ const AbilityDescription: React.FC<AbilityDescriptionProps> = ({
   if (!selectedAbility) return null;
 
   return (
-    <div className="neutral-box min-h-19 relative w-full rounded-sm p-2 text-gray-200 shadow-sm">
+    <div className="neutral-box min-h-19 relative w-full rounded-sm p-2 mt-3 text-gray-200 shadow-sm">
       <div className="font-bold">{getAbilityName(selectedAbility)}</div>
       {onClose && (
         <CloseButton
