@@ -92,7 +92,7 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
         <div className="px-5 py-6" style={{ backgroundColor: adjustedBg }}>
           <div className="border-1 relative mb-5 mt-3 flex flex-wrap gap-x-5 rounded-md border-white/10 bg-black/15 p-4 pt-5 pb-3 shadow-inner">
             <span className="absolute top-0 left-0 translate-y-[-50%] translate-x-5 inline-flex h-5 min-w-16 items-center justify-center rounded-full bg-gradient-to-r bg-zinc-700 px-1 text-xs font-medium uppercase text-gray-200 shadow-md">
-              <p className="ios-padding-fix p-0 font-pixel">
+              <p className="ios-padding-fix p-0 font-pixel font-bold">
                 Abilities
               </p>
             </span>
@@ -127,7 +127,7 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
           {/* Stats here */}
           <div className="border-1 relative my-3 flex w-full flex-col rounded-md border-white/10 bg-black/15 p-4 pt-5 pb-3 shadow-inner">
             <span className="absolute top-0 left-0 translate-y-[-50%] translate-x-5 inline-flex h-5 min-w-12 items-center justify-center rounded-full bg-zinc-700 px-3 text-xs font-medium uppercase text-gray-200 shadow-md">
-              <p className="ios-padding-fix p-0 font-pixel">Stats</p>
+              <p className="ios-padding-fix p-0 font-pixel font-bold">Stats</p>
             </span>
             
             <div className="grid" style={{ gridTemplateColumns: 'repeat(6, 1fr) auto', gap: '0.5rem', padding: '0 0.5rem' }}>
