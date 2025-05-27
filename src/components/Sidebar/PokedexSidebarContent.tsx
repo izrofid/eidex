@@ -29,7 +29,7 @@ const PokedexSidebarContent: React.FC = () => {
             </span>
             <span className="sm:hidden"><CloseButton onClick={toggleSidebar}/></span>
         </div>
-        <div className="flex flex-1 flex-col gap-3">
+        <div className="flex flex-1 flex-col gap-3 overflow-y-auto max-h-[calc(100vh-8rem)]">
             <NameCombobox />
             <AbilityCombobox />
             <MoveFilterGroup />

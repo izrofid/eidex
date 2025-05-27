@@ -4,6 +4,10 @@
 @import "./fonts.css";
 @import "tw-animate-css";
 
+:root {
+  color-scheme: dark;
+}
+
 @theme {
   --font-chakra: "Chakra Petch", sans-serif;
   --font-pressstart: "Press Start 2P", monospace;

@@ -35,7 +35,7 @@ function CurrentFilters() {
       {activePills.length > 1 && (
         <Button
           onClick={clearAllPills}
-          className="text-xs rounded-full hover:bg-rose-500 px-3 py-1 text-white self-center"
+          className="text-xs rounded-full hover:bg-rose-500 px-3 py-1 text-white self-center cursor-pointer"
         >
           Clear All
         </Button>

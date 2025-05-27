@@ -7,12 +7,11 @@ const TypePanel: React.FC = () => {
   const typeValue = useFilterStore((state) => state.typeValue);
 
   return (
-    <div className="w-full overflow-hidden rounded-md bg-card-backdrop p-3">
+    <div className="w-full h-max rounded-md bg-card-backdrop">
       <div 
-        className="grid gap-2"
+        className="grid gap-y-2 py-2 px-2 w-full justify-center items-center"
         style={{ 
           gridTemplateColumns: `repeat(auto-fit, minmax(80px, 1fr))`,
-          width: '100%'
         }}
       >
         {validTypes.map((typeId) => (

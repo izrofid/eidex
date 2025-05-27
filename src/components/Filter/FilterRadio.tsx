@@ -11,7 +11,7 @@ const FilterRadio: React.FC = () => {
   const nfeCycle = useFilterStore((state) => state.nfeCycle);
 
   return (
-    <div className="flex justify-start gap-3 w-full overflow-hidden rounded-md bg-card-backdrop p-3">
+    <div className="flex justify-start gap-3 w-full rounded-md bg-card-backdrop p-3">
       <CycleButton 
         label="Mega" 
         onClick={cycleMega} 
