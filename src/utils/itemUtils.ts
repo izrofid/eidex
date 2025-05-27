@@ -18,6 +18,9 @@ export function getItemData(itemId: number): Item | undefined {
 
 // Function to return item name given id
 export function getItemName(id: number): string {
+  if (id === 0) {
+    return "None";
+  }
   const item = getItemData(id);
   return item ? item.Name : "Unknown Item";
 }

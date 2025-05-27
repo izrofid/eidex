@@ -1,0 +1,27 @@
+{
+    "201": {
+        "speciesId": "201",
+        "speciesName": "Unown"
+    },
+    "664": {
+        "speciesId": "664",
+        "speciesName": "Scatterbug"
+    },
+    "665": {
+        "speciesId": "665",
+        "speciesName": "Spewpa"
+    },
+    "666": {
+        "speciesId": "869",
+        "speciesName": "Vivillon"
+    },
+    "676": {
+        "speciesId": "676",
+        "speciesName": "Furfrou"
+    },
+    "869": {
+        "speciesId": "869",
+        "speciesName": "Alcremie",
+        "nonCosmeticSiblings": [1522]
+    }
+}

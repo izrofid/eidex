@@ -1,4 +1,4 @@
-import { getItemName } from "./itemData";
+import { getItemName } from "./itemUtils";
 import { getTypeName } from "./typeInfo";
 import { getMoveName } from "./moveData";
 import { getNameKey } from "./speciesUtils";

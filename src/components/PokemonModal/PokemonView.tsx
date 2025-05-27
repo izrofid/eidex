@@ -5,8 +5,9 @@ import { TypeBadge } from "../TypeBadges/TypeBadge";
 import StatBars from "./MiscModal/StatBars";
 import SpriteImage from "../SpriteImage";
 import { getEvolutionaryFamily } from "@/utils/evoFamily";
-import { hasForms } from "@/utils/speciesUtils";
+import { hasForms, hasItems } from "@/utils/speciesUtils";
 import { useUIStore } from "@/stores/uiStore";
+import { getItemName } from "@/utils/itemUtils";
 import { useScreenWidth } from "@/hooks/useScreenWidth";
 import { abilityWhitelist } from "@/randomiser/abilityWhitelist";
 import { randomizeAbility } from "@/randomiser/randomiser";
@@ -18,6 +19,7 @@ import TypeMatchup from "./MiscModal/TypeMatchup";
 import PokemonLearnset from "./Learnset/PokemonLearnset";
 import React from "react";
 import { isObtainable } from "@/utils/locationsData";
+import ItemView from "./MiscModal/ItemView";
 
 interface PokemonViewProps {
   pokemon: Pokemon;
@@ -44,7 +46,7 @@ const PokemonView: React.FC<PokemonViewProps> = ({ pokemon }) => {
     <div className="flex w-full flex-col items-center space-y-6">
       {/* Header section - Pokemon sprite and basic info */}
       <div className="flex flex-col items-center space-y-3">
-        <div >
+        <div>
           <SpriteImage
             pokemon={pokemon}
             mult={2}
@@ -76,48 +78,67 @@ const PokemonView: React.FC<PokemonViewProps> = ({ pokemon }) => {
       {/* Details section */}
       <div className="flex w-full flex-col space-y-6">
         {/* Abilities section */}
-        <div className="space-y-4 bg-card-backdrop rounded-xl p-5 shadow-md">
-          <h3 className="font-chakra text-lg font-medium text-gray-100 mb-3">Abilities</h3>
+        <div className="bg-card-backdrop space-y-4 rounded-xl p-5 shadow-md">
+          <h3 className="font-chakra mb-3 text-lg font-medium text-gray-100">
+            Abilities
+          </h3>
           <AbilityBox key={pokemon.speciesId} abilities={randomisedAbilities} />
           {selectedAbility && <AbilityDescription />}
         </div>
 
         {/* Locations section */}
-        {isObtainable(pokemon.speciesId) && <div className="bg-card-backdrop rounded-xl p-5 shadow-md">
-          <h3 className="font-chakra text-lg font-medium text-gray-100 mb-3">Locations</h3>
-          <PokemonLocations pokemonId={pokemon.speciesId} />
-        </div>}
+        {isObtainable(pokemon.speciesId) && (
+          <div className="bg-card-backdrop rounded-xl p-5 shadow-md">
+            <h3 className="font-chakra mb-3 text-lg font-medium text-gray-100">
+              Locations
+            </h3>
+            <PokemonLocations pokemonId={pokemon.speciesId} />
+          </div>
+        )}
 
         {/* Evolution section */}
         <div className="bg-card-backdrop rounded-xl p-5 shadow-md">
-          <h3 className="font-chakra text-lg font-medium text-gray-100 mb-3">Evolution</h3>
-          <EvolutionView
-            pokemon={pokemon}
-            family={evoFamily}
-          />
+          <h3 className="font-chakra mb-3 text-lg font-medium text-gray-100">
+            Evolution
+          </h3>
+          <EvolutionView pokemon={pokemon} family={evoFamily} />
         </div>
 
         {/* Forms section */}
         {hasForms(pokemon) && (
           <div className="bg-card-backdrop rounded-xl p-5 shadow-md">
-            <h3 className="font-chakra text-lg font-medium text-gray-100 mb-3">Forms</h3>
-            <FormeView
-              pokemon={pokemon}
-            />
+            <h3 className="font-chakra mb-3 text-lg font-medium text-gray-100">
+              Forms
+            </h3>
+            <FormeView pokemon={pokemon} />
+          </div>
+        )}
+
+        {/* Held items section */}
+        {hasItems(pokemon) && (
+          <div className="bg-card-backdrop rounded-xl p-5 shadow-md">
+            <h3 className="font-chakra mb-3 text-lg font-medium text-gray-100">
+              Held Items
+            </h3>
+            <ItemView pokemon={pokemon} />
           </div>
         )}
 
         {/* Type matchup section */}
         <div className="bg-card-backdrop rounded-xl p-5 shadow-md">
-          <h3 className="font-chakra text-lg font-medium text-gray-100 mb-3">Type Matchups</h3>
+          <h3 className="font-chakra mb-3 text-lg font-medium text-gray-100">
+            Type Matchups
+          </h3>
           <div className="flex flex-wrap text-gray-100">
             <TypeMatchup pokemon={pokemon} />
           </div>
         </div>
-        
+
         {/* Learnset section */}
         <div className="bg-card-backdrop rounded-xl p-5 shadow-md">
-          <h3 className="font-chakra text-lg font-medium text-gray-100 mb-3">Learnset</h3>
+          <h3 className="font-chakra mb-3 text-lg font-medium text-gray-100">
+            Learnset
+          </h3>
           <PokemonLearnset pokemon={pokemon} />
         </div>
       </div>

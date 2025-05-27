@@ -27,6 +27,10 @@ export function hasForms(pokemon: Pokemon): boolean {
   return Array.isArray(pokemon.siblings) && pokemon.siblings.length > 0;
 }
 
+export function hasItems(pokemon: Pokemon): boolean {
+  return pokemon.heldItems?.some(item => item !== 0) ?? false;
+}
+
 export function getBaseForm(pokemon: Pokemon): Pokemon {
   if (pokemon.baseForm) return typedSpeciesData[pokemon.baseForm];
   return pokemon;

@@ -6,7 +6,7 @@ export interface PokemonChanges {
 
 export type SortBy = "dexId" | "name" | "stat" | "speciesId";
 
-export type StatArray = [number, number, number, number, number, number]
+export type StatArray = [number, number, number, number, number, number];
 
 export type Ability = number;
 export type Abilities = Ability[];
@@ -19,7 +19,7 @@ export interface Pokemon {
   types: number[];
   stats: number[];
   abilities: Abilities;
-  randomisedAbilities?: Abilities;
+  heldItems: number[];
   levelUpMoves: number[][];
   tmMoves?: number[];
   eggMoves?: number[] | null;

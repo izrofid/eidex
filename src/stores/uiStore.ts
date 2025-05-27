@@ -9,6 +9,7 @@ interface UIState {
   isModalOpen: boolean;
   isCreditsOpen: boolean;
   isSidebarOpen: boolean;
+  isHelpOpen: boolean;
   toggleShiny: () => void;
   setSelectedPokemon: (pokemon: Pokemon | null) => void;
   setSelectedAbility: (ability: Ability | null) => void;
@@ -17,6 +18,8 @@ interface UIState {
   openCredits: () => void;
   closeCredits: () => void;
   toggleSidebar: () => void;
+  openHelp: () => void;
+  closeHelp: () => void;
 }
 
 export const useUIStore = create<UIState>()(
@@ -29,6 +32,7 @@ export const useUIStore = create<UIState>()(
       isModalOpen: false,
       isCreditsOpen: false,
       isSidebarOpen: false,
+      isHelpOpen: false,
 
       //Actions
       toggleShiny: () => set((state) => ({ isShiny: !state.isShiny })),
@@ -45,6 +49,8 @@ export const useUIStore = create<UIState>()(
       openCredits: () => set({ isCreditsOpen: true }),
       closeCredits: () => set({ isCreditsOpen: false }),
       toggleSidebar: () => set((state) => ({ isSidebarOpen: !state.isSidebarOpen })),
+      openHelp: () => set({ isHelpOpen: true }),
+      closeHelp: () => set({ isHelpOpen: false }),
     }),
 
     {

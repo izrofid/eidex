@@ -11,6 +11,7 @@ import { useUIStore } from "../stores/uiStore";
 import { Pokemon } from "../types";
 import { filterPokemon } from "../utils/filterUtils/filterPokemon";
 import { useRandomiserState } from "../utils/randomiserState";
+import HelpPanel from "./HelpPanel";
 
 function PokeDex() {
   // Get filter state from Zustand store
@@ -83,6 +84,7 @@ function PokeDex() {
         className="relative flex h-full w-full sm:max-w-[60%] flex-col"
       >
         <CreditsPanel />
+        <HelpPanel />
         <PokemonList
           pokemonToShow={filteredPokemon}
           allPokemon={Object.values(pokemonData)}
