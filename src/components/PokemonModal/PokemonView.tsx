@@ -7,7 +7,6 @@ import SpriteImage from "../SpriteImage";
 import { getEvolutionaryFamily } from "@/utils/evoFamily";
 import { hasForms, hasItems } from "@/utils/speciesUtils";
 import { useUIStore } from "@/stores/uiStore";
-import { getItemName } from "@/utils/itemUtils";
 import { useScreenWidth } from "@/hooks/useScreenWidth";
 import { abilityWhitelist } from "@/randomiser/abilityWhitelist";
 import { randomizeAbility } from "@/randomiser/randomiser";

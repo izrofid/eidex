@@ -457,7 +457,8 @@
     "siblings": [
       906,
       1494
-    ]
+    ],
+    "baseForm": 3
   },
   "4": {
     "speciesId": 4,
@@ -983,7 +984,8 @@
       907,
       908,
       1496
-    ]
+    ],
+    "baseForm": 6
   },
   "7": {
     "speciesId": 7,
@@ -1480,7 +1482,8 @@
     "siblings": [
       909,
       1495
-    ]
+    ],
+    "baseForm": 9
   },
   "10": {
     "speciesId": 10,
@@ -1751,7 +1754,8 @@
     "nameKey": "Butterfree",
     "siblings": [
       1497
-    ]
+    ],
+    "baseForm": 12
   },
   "13": {
     "speciesId": 13,
@@ -2009,7 +2013,8 @@
     "nameKey": "Beedrill",
     "siblings": [
       910
-    ]
+    ],
+    "baseForm": 15
   },
   "16": {
     "speciesId": 16,
@@ -2428,7 +2433,8 @@
     "nameKey": "Pidgeot",
     "siblings": [
       911
-    ]
+    ],
+    "baseForm": 18
   },
   "19": {
     "speciesId": 19,
@@ -2573,7 +2579,8 @@
     "nameKey": "Rattata",
     "siblings": [
       956
-    ]
+    ],
+    "baseForm": 19
   },
   "20": {
     "speciesId": 20,
@@ -2721,7 +2728,8 @@
     "siblings": [
       957,
       1476
-    ]
+    ],
+    "baseForm": 20
   },
   "21": {
     "speciesId": 21,
@@ -3524,7 +3532,8 @@
       1022,
       1487,
       1498
-    ]
+    ],
+    "baseForm": 25
   },
   "26": {
     "speciesId": 26,
@@ -3650,7 +3659,8 @@
     "nameKey": "Raichu",
     "siblings": [
       958
-    ]
+    ],
+    "baseForm": 26
   },
   "27": {
     "speciesId": 27,
@@ -3820,7 +3830,8 @@
     "nameKey": "Sandshrew",
     "siblings": [
       959
-    ]
+    ],
+    "baseForm": 27
   },
   "28": {
     "speciesId": 28,
@@ -3984,7 +3995,8 @@
     "nameKey": "Sandslash",
     "siblings": [
       960
-    ]
+    ],
+    "baseForm": 28
   },
   "29": {
     "speciesId": 29,
@@ -5297,7 +5309,8 @@
     "nameKey": "Vulpix",
     "siblings": [
       961
-    ]
+    ],
+    "baseForm": 37
   },
   "38": {
     "speciesId": 38,
@@ -5405,7 +5418,8 @@
     "nameKey": "Ninetales",
     "siblings": [
       962
-    ]
+    ],
+    "baseForm": 38
   },
   "39": {
     "speciesId": 39,
@@ -7182,7 +7196,8 @@
     "nameKey": "Diglett",
     "siblings": [
       963
-    ]
+    ],
+    "baseForm": 50
   },
   "51": {
     "speciesId": 51,
@@ -7330,7 +7345,8 @@
     "nameKey": "Dugtrio",
     "siblings": [
       964
-    ]
+    ],
+    "baseForm": 51
   },
   "52": {
     "speciesId": 52,
@@ -7499,7 +7515,8 @@
       965,
       974,
       1499
-    ]
+    ],
+    "baseForm": 52
   },
   "53": {
     "speciesId": 53,
@@ -7674,7 +7691,8 @@
     "nameKey": "Persian",
     "siblings": [
       966
-    ]
+    ],
+    "baseForm": 53
   },
   "54": {
     "speciesId": 54,
@@ -8563,7 +8581,8 @@
     "nameKey": "Growlithe",
     "siblings": [
       993
-    ]
+    ],
+    "baseForm": 58
   },
   "59": {
     "speciesId": 59,
@@ -8683,7 +8702,8 @@
     "nameKey": "Arcanine",
     "siblings": [
       994
-    ]
+    ],
+    "baseForm": 59
   },
   "60": {
     "speciesId": 60,
@@ -9492,7 +9512,8 @@
     "nameKey": "Alakazam",
     "siblings": [
       912
-    ]
+    ],
+    "baseForm": 65
   },
   "66": {
     "speciesId": 66,
@@ -10014,7 +10035,8 @@
     "nameKey": "Machamp",
     "siblings": [
       1500
-    ]
+    ],
+    "baseForm": 68
   },
   "69": {
     "speciesId": 69,
@@ -10918,7 +10940,8 @@
     "nameKey": "Geodude",
     "siblings": [
       967
-    ]
+    ],
+    "baseForm": 74
   },
   "75": {
     "speciesId": 75,
@@ -11097,7 +11120,8 @@
     "nameKey": "Graveler",
     "siblings": [
       968
-    ]
+    ],
+    "baseForm": 75
   },
   "76": {
     "speciesId": 76,
@@ -11274,7 +11298,8 @@
     "nameKey": "Golem",
     "siblings": [
       969
-    ]
+    ],
+    "baseForm": 76
   },
   "77": {
     "speciesId": 77,
@@ -11424,7 +11449,8 @@
     "nameKey": "Ponyta",
     "siblings": [
       975
-    ]
+    ],
+    "baseForm": 77
   },
   "78": {
     "speciesId": 78,
@@ -11585,7 +11611,8 @@
     "nameKey": "Rapidash",
     "siblings": [
       976
-    ]
+    ],
+    "baseForm": 78
   },
   "79": {
     "speciesId": 79,
@@ -11773,7 +11800,8 @@
     "nameKey": "Slowpoke",
     "siblings": [
       977
-    ]
+    ],
+    "baseForm": 79
   },
   "80": {
     "speciesId": 80,
@@ -11951,7 +11979,8 @@
     "siblings": [
       913,
       978
-    ]
+    ],
+    "baseForm": 80
   },
   "81": {
     "speciesId": 81,
@@ -12449,7 +12478,8 @@
     "nameKey": "Farfetchd",
     "siblings": [
       979
-    ]
+    ],
+    "baseForm": 83
   },
   "84": {
     "speciesId": 84,
@@ -13200,7 +13230,8 @@
     "nameKey": "Grimer",
     "siblings": [
       970
-    ]
+    ],
+    "baseForm": 88
   },
   "89": {
     "speciesId": 89,
@@ -13362,7 +13393,8 @@
     "nameKey": "Muk",
     "siblings": [
       971
-    ]
+    ],
+    "baseForm": 89
   },
   "90": {
     "speciesId": 90,
@@ -14114,7 +14146,8 @@
     "siblings": [
       914,
       1501
-    ]
+    ],
+    "baseForm": 94
   },
   "95": {
     "speciesId": 95,
@@ -14975,7 +15008,8 @@
     "nameKey": "Kingler",
     "siblings": [
       1502
-    ]
+    ],
+    "baseForm": 99
   },
   "100": {
     "speciesId": 100,
@@ -15123,7 +15157,8 @@
     "nameKey": "Voltorb",
     "siblings": [
       995
-    ]
+    ],
+    "baseForm": 100
   },
   "101": {
     "speciesId": 101,
@@ -15282,7 +15317,8 @@
     "nameKey": "Electrode",
     "siblings": [
       996
-    ]
+    ],
+    "baseForm": 101
   },
   "102": {
     "speciesId": 102,
@@ -15573,7 +15609,8 @@
     "nameKey": "Exeggutor",
     "siblings": [
       972
-    ]
+    ],
+    "baseForm": 103
   },
   "104": {
     "speciesId": 104,
@@ -15909,7 +15946,8 @@
     "siblings": [
       973,
       1483
-    ]
+    ],
+    "baseForm": 105
   },
   "106": {
     "speciesId": 106,
@@ -16720,7 +16758,8 @@
     "nameKey": "Weezing",
     "siblings": [
       980
-    ]
+    ],
+    "baseForm": 110
   },
   "111": {
     "speciesId": 111,
@@ -17597,7 +17636,8 @@
     "nameKey": "Kangaskhan",
     "siblings": [
       915
-    ]
+    ],
+    "baseForm": 115
   },
   "116": {
     "speciesId": 116,
@@ -18598,7 +18638,8 @@
     "nameKey": "Mr. Mime",
     "siblings": [
       981
-    ]
+    ],
+    "baseForm": 122
   },
   "123": {
     "speciesId": 123,
@@ -19419,7 +19460,8 @@
     "nameKey": "Pinsir",
     "siblings": [
       916
-    ]
+    ],
+    "baseForm": 127
   },
   "128": {
     "speciesId": 128,
@@ -19570,7 +19612,8 @@
       1402,
       1403,
       1404
-    ]
+    ],
+    "baseForm": 128
   },
   "129": {
     "speciesId": 129,
@@ -19775,7 +19818,8 @@
     "nameKey": "Gyarados",
     "siblings": [
       917
-    ]
+    ],
+    "baseForm": 130
   },
   "131": {
     "speciesId": 131,
@@ -19953,7 +19997,8 @@
     "nameKey": "Lapras",
     "siblings": [
       1503
-    ]
+    ],
+    "baseForm": 131
   },
   "132": {
     "speciesId": 132,
@@ -20175,7 +20220,8 @@
     "siblings": [
       1488,
       1504
-    ]
+    ],
+    "baseForm": 133
   },
   "134": {
     "speciesId": 134,
@@ -21499,7 +21545,8 @@
     "nameKey": "Aerodactyl",
     "siblings": [
       918
-    ]
+    ],
+    "baseForm": 142
   },
   "143": {
     "speciesId": 143,
@@ -21678,7 +21725,8 @@
     "nameKey": "Snorlax",
     "siblings": [
       1505
-    ]
+    ],
+    "baseForm": 143
   },
   "144": {
     "speciesId": 144,
@@ -21827,7 +21875,8 @@
     "nameKey": "Articuno",
     "siblings": [
       982
-    ]
+    ],
+    "baseForm": 144
   },
   "145": {
     "speciesId": 145,
@@ -21975,7 +22024,8 @@
     "nameKey": "Zapdos",
     "siblings": [
       983
-    ]
+    ],
+    "baseForm": 145
   },
   "146": {
     "speciesId": 146,
@@ -22123,7 +22173,8 @@
     "nameKey": "Moltres",
     "siblings": [
       984
-    ]
+    ],
+    "baseForm": 146
   },
   "147": {
     "speciesId": 147,
@@ -22798,7 +22849,8 @@
     "siblings": [
       919,
       920
-    ]
+    ],
+    "baseForm": 150
   },
   "151": {
     "speciesId": 151,
@@ -23980,7 +24032,8 @@
     "nameKey": "Typhlosion",
     "siblings": [
       997
-    ]
+    ],
+    "baseForm": 157
   },
   "158": {
     "speciesId": 158,
@@ -26383,7 +26436,8 @@
     "nameKey": "Pichu",
     "siblings": [
       1023
-    ]
+    ],
+    "baseForm": 172
   },
   "173": {
     "speciesId": 173,
@@ -27767,7 +27821,8 @@
     "nameKey": "Ampharos",
     "siblings": [
       921
-    ]
+    ],
+    "baseForm": 181
   },
   "182": {
     "speciesId": 182,
@@ -29784,7 +29839,8 @@
     "nameKey": "Wooper",
     "siblings": [
       1405
-    ]
+    ],
+    "baseForm": 194
   },
   "195": {
     "speciesId": 195,
@@ -30549,7 +30605,8 @@
     "nameKey": "Slowking",
     "siblings": [
       985
-    ]
+    ],
+    "baseForm": 199
   },
   "200": {
     "speciesId": 200,
@@ -30776,7 +30833,8 @@
       1048,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "202": {
     "speciesId": 202,
@@ -31907,7 +31965,8 @@
     "nameKey": "Steelix",
     "siblings": [
       922
-    ]
+    ],
+    "baseForm": 208
   },
   "209": {
     "speciesId": 209,
@@ -32431,7 +32490,8 @@
     "nameKey": "Qwilfish",
     "siblings": [
       998
-    ]
+    ],
+    "baseForm": 211
   },
   "212": {
     "speciesId": 212,
@@ -32597,7 +32657,8 @@
     "nameKey": "Scizor",
     "siblings": [
       923
-    ]
+    ],
+    "baseForm": 212
   },
   "213": {
     "speciesId": 213,
@@ -32936,7 +32997,8 @@
     "nameKey": "Heracross",
     "siblings": [
       924
-    ]
+    ],
+    "baseForm": 214
   },
   "215": {
     "speciesId": 215,
@@ -33111,7 +33173,8 @@
     "nameKey": "Sneasel",
     "siblings": [
       999
-    ]
+    ],
+    "baseForm": 215
   },
   "216": {
     "speciesId": 216,
@@ -34272,7 +34335,8 @@
     "nameKey": "Corsola",
     "siblings": [
       986
-    ]
+    ],
+    "baseForm": 222
   },
   "223": {
     "speciesId": 223,
@@ -35347,7 +35411,8 @@
     "nameKey": "Houndoom",
     "siblings": [
       925
-    ]
+    ],
+    "baseForm": 229
   },
   "230": {
     "speciesId": 230,
@@ -38120,7 +38185,8 @@
     "nameKey": "Tyranitar",
     "siblings": [
       926
-    ]
+    ],
+    "baseForm": 248
   },
   "249": {
     "speciesId": 249,
@@ -39109,7 +39175,8 @@
     "nameKey": "Sceptile",
     "siblings": [
       927
-    ]
+    ],
+    "baseForm": 254
   },
   "255": {
     "speciesId": 255,
@@ -39599,7 +39666,8 @@
     "nameKey": "Blaziken",
     "siblings": [
       928
-    ]
+    ],
+    "baseForm": 257
   },
   "258": {
     "speciesId": 258,
@@ -40086,7 +40154,8 @@
     "nameKey": "Swampert",
     "siblings": [
       929
-    ]
+    ],
+    "baseForm": 260
   },
   "261": {
     "speciesId": 261,
@@ -40552,7 +40621,8 @@
     "nameKey": "Zigzagoon",
     "siblings": [
       987
-    ]
+    ],
+    "baseForm": 263
   },
   "264": {
     "speciesId": 264,
@@ -40705,7 +40775,8 @@
     "nameKey": "Linoone",
     "siblings": [
       988
-    ]
+    ],
+    "baseForm": 264
   },
   "265": {
     "speciesId": 265,
@@ -43015,7 +43086,8 @@
     "nameKey": "Gardevoir",
     "siblings": [
       930
-    ]
+    ],
+    "baseForm": 282
   },
   "283": {
     "speciesId": 283,
@@ -44047,10 +44119,11 @@
     "evolutions": null,
     "forms": null,
     "formId": 0,
-    "nameKey": "Slaking-Mega",
+    "nameKey": "Slaking",
     "siblings": [
       1527
-    ]
+    ],
+    "baseForm": 289
   },
   "290": {
     "speciesId": 290,
@@ -45974,7 +46047,8 @@
     "nameKey": "Sableye",
     "siblings": [
       931
-    ]
+    ],
+    "baseForm": 302
   },
   "303": {
     "speciesId": 303,
@@ -46156,7 +46230,8 @@
     "nameKey": "Mawile",
     "siblings": [
       932
-    ]
+    ],
+    "baseForm": 303
   },
   "304": {
     "speciesId": 304,
@@ -46669,7 +46744,8 @@
     "nameKey": "Aggron",
     "siblings": [
       933
-    ]
+    ],
+    "baseForm": 306
   },
   "307": {
     "speciesId": 307,
@@ -47030,7 +47106,8 @@
     "nameKey": "Medicham",
     "siblings": [
       934
-    ]
+    ],
+    "baseForm": 308
   },
   "309": {
     "speciesId": 309,
@@ -47323,7 +47400,8 @@
     "nameKey": "Manectric",
     "siblings": [
       935
-    ]
+    ],
+    "baseForm": 310
   },
   "311": {
     "speciesId": 311,
@@ -48749,7 +48827,8 @@
     "nameKey": "Sharpedo",
     "siblings": [
       936
-    ]
+    ],
+    "baseForm": 319
   },
   "320": {
     "speciesId": 320,
@@ -49406,7 +49485,8 @@
     "nameKey": "Camerupt",
     "siblings": [
       937
-    ]
+    ],
+    "baseForm": 323
   },
   "324": {
     "speciesId": 324,
@@ -51219,7 +51299,8 @@
     "nameKey": "Altaria",
     "siblings": [
       938
-    ]
+    ],
+    "baseForm": 334
   },
   "335": {
     "speciesId": 335,
@@ -53908,7 +53989,8 @@
       1051,
       1052,
       1053
-    ]
+    ],
+    "baseForm": 351
   },
   "352": {
     "speciesId": 352,
@@ -54411,7 +54493,8 @@
     "nameKey": "Banette",
     "siblings": [
       939
-    ]
+    ],
+    "baseForm": 354
   },
   "355": {
     "speciesId": 355,
@@ -55270,7 +55353,8 @@
     "nameKey": "Absol",
     "siblings": [
       940
-    ]
+    ],
+    "baseForm": 359
   },
   "360": {
     "speciesId": 360,
@@ -55618,7 +55702,8 @@
     "nameKey": "Glalie",
     "siblings": [
       941
-    ]
+    ],
+    "baseForm": 362
   },
   "363": {
     "speciesId": 363,
@@ -57242,7 +57327,8 @@
     "nameKey": "Salamence",
     "siblings": [
       942
-    ]
+    ],
+    "baseForm": 373
   },
   "374": {
     "speciesId": 374,
@@ -57605,7 +57691,8 @@
     "nameKey": "Metagross",
     "siblings": [
       943
-    ]
+    ],
+    "baseForm": 376
   },
   "377": {
     "speciesId": 377,
@@ -58256,7 +58343,8 @@
     "nameKey": "Latias",
     "siblings": [
       944
-    ]
+    ],
+    "baseForm": 380
   },
   "381": {
     "speciesId": 381,
@@ -58438,7 +58526,8 @@
     "nameKey": "Latios",
     "siblings": [
       945
-    ]
+    ],
+    "baseForm": 381
   },
   "382": {
     "speciesId": 382,
@@ -58567,7 +58656,8 @@
     "nameKey": "Kyogre",
     "siblings": [
       954
-    ]
+    ],
+    "baseForm": 382
   },
   "383": {
     "speciesId": 383,
@@ -58717,7 +58807,8 @@
     "nameKey": "Groudon",
     "siblings": [
       955
-    ]
+    ],
+    "baseForm": 383
   },
   "384": {
     "speciesId": 384,
@@ -58873,7 +58964,8 @@
     "nameKey": "Rayquaza",
     "siblings": [
       953
-    ]
+    ],
+    "baseForm": 384
   },
   "385": {
     "speciesId": 385,
@@ -59193,7 +59285,8 @@
       1054,
       1055,
       1056
-    ]
+    ],
+    "baseForm": 386
   },
   "387": {
     "speciesId": 387,
@@ -59639,10 +59732,11 @@
     "evolutions": null,
     "forms": null,
     "formId": 0,
-    "nameKey": "Torterra-Mega",
+    "nameKey": "Torterra",
     "siblings": [
       1490
-    ]
+    ],
+    "baseForm": 389
   },
   "390": {
     "speciesId": 390,
@@ -60144,10 +60238,11 @@
     "evolutions": null,
     "forms": null,
     "formId": 0,
-    "nameKey": "Infernape-Mega",
+    "nameKey": "Infernape",
     "siblings": [
       1493
-    ]
+    ],
+    "baseForm": 392
   },
   "393": {
     "speciesId": 393,
@@ -60642,11 +60737,12 @@
     "evolutions": null,
     "forms": null,
     "formId": 0,
-    "nameKey": "Empoleon-Mega-o-Mega-d",
+    "nameKey": "Empoleon",
     "siblings": [
       1491,
       1492
-    ]
+    ],
+    "baseForm": 395
   },
   "396": {
     "speciesId": 396,
@@ -61945,10 +62041,11 @@
     "evolutions": null,
     "forms": null,
     "formId": 0,
-    "nameKey": "Luxray-Mega",
+    "nameKey": "Luxray",
     "siblings": [
       1489
-    ]
+    ],
+    "baseForm": 405
   },
   "406": {
     "speciesId": 406,
@@ -62174,10 +62271,11 @@
     "evolutions": null,
     "forms": null,
     "formId": 0,
-    "nameKey": "Roserade-Mega",
+    "nameKey": "Roserade",
     "siblings": [
       1531
-    ]
+    ],
+    "baseForm": 407
   },
   "408": {
     "speciesId": 408,
@@ -62865,7 +62963,8 @@
     "siblings": [
       1057,
       1058
-    ]
+    ],
+    "baseForm": 412
   },
   "413": {
     "speciesId": 413,
@@ -63018,7 +63117,8 @@
     "siblings": [
       1059,
       1060
-    ]
+    ],
+    "baseForm": 413
   },
   "414": {
     "speciesId": 414,
@@ -63154,7 +63254,8 @@
     "siblings": [
       1436,
       1437
-    ]
+    ],
+    "baseForm": 414
   },
   "415": {
     "speciesId": 415,
@@ -64131,7 +64232,8 @@
     "nameKey": "Cherrim-Overcast",
     "siblings": [
       1061
-    ]
+    ],
+    "baseForm": 421
   },
   "422": {
     "speciesId": 422,
@@ -64257,7 +64359,8 @@
     "nameKey": "Shellos-West",
     "siblings": [
       1062
-    ]
+    ],
+    "baseForm": 422
   },
   "423": {
     "speciesId": 423,
@@ -64390,7 +64493,8 @@
     "nameKey": "Gastrodon-West",
     "siblings": [
       1063
-    ]
+    ],
+    "baseForm": 423
   },
   "424": {
     "speciesId": 424,
@@ -65198,7 +65302,8 @@
     "nameKey": "Lopunny",
     "siblings": [
       946
-    ]
+    ],
+    "baseForm": 428
   },
   "429": {
     "speciesId": 429,
@@ -67658,7 +67763,8 @@
     "nameKey": "Garchomp",
     "siblings": [
       947
-    ]
+    ],
+    "baseForm": 445
   },
   "446": {
     "speciesId": 446,
@@ -68173,7 +68279,8 @@
     "nameKey": "Lucario",
     "siblings": [
       948
-    ]
+    ],
+    "baseForm": 448
   },
   "449": {
     "speciesId": 449,
@@ -69959,7 +70066,8 @@
     "nameKey": "Abomasnow",
     "siblings": [
       949
-    ]
+    ],
+    "baseForm": 460
   },
   "461": {
     "speciesId": 461,
@@ -72422,7 +72530,8 @@
     "nameKey": "Gallade",
     "siblings": [
       950
-    ]
+    ],
+    "baseForm": 475
   },
   "476": {
     "speciesId": 476,
@@ -72794,10 +72903,11 @@
     "evolutions": null,
     "forms": null,
     "formId": 0,
-    "nameKey": "Dusknoir-Mega",
+    "nameKey": "Dusknoir",
     "siblings": [
       1532
-    ]
+    ],
+    "baseForm": 477
   },
   "478": {
     "speciesId": 478,
@@ -73090,7 +73200,8 @@
       1066,
       1067,
       1068
-    ]
+    ],
+    "baseForm": 479
   },
   "480": {
     "speciesId": 480,
@@ -73696,7 +73807,8 @@
     "siblings": [
       1069,
       1529
-    ]
+    ],
+    "baseForm": 483
   },
   "484": {
     "speciesId": 484,
@@ -73842,7 +73954,8 @@
     "siblings": [
       1070,
       1530
-    ]
+    ],
+    "baseForm": 484
   },
   "485": {
     "speciesId": 485,
@@ -74258,7 +74371,8 @@
     "nameKey": "Giratina-Altered",
     "siblings": [
       1071
-    ]
+    ],
+    "baseForm": 487
   },
   "488": {
     "speciesId": 488,
@@ -74902,7 +75016,8 @@
     "nameKey": "Shaymin-Land",
     "siblings": [
       1072
-    ]
+    ],
+    "baseForm": 492
   },
   "493": {
     "speciesId": 493,
@@ -75106,7 +75221,8 @@
       1087,
       1088,
       1089
-    ]
+    ],
+    "baseForm": 493
   },
   "494": {
     "speciesId": 494,
@@ -76747,7 +76863,8 @@
     "nameKey": "Samurott",
     "siblings": [
       1000
-    ]
+    ],
+    "baseForm": 503
   },
   "504": {
     "speciesId": 504,
@@ -80762,7 +80879,8 @@
     "nameKey": "Audino",
     "siblings": [
       951
-    ]
+    ],
+    "baseForm": 531
   },
   "532": {
     "speciesId": 532,
@@ -83316,7 +83434,8 @@
     "nameKey": "Lilligant",
     "siblings": [
       1001
-    ]
+    ],
+    "baseForm": 549
   },
   "550": {
     "speciesId": 550,
@@ -83485,7 +83604,8 @@
     "siblings": [
       1090,
       1091
-    ]
+    ],
+    "baseForm": 550
   },
   "551": {
     "speciesId": 551,
@@ -84130,7 +84250,8 @@
     "nameKey": "Darumaka",
     "siblings": [
       989
-    ]
+    ],
+    "baseForm": 554
   },
   "555": {
     "speciesId": 555,
@@ -84313,7 +84434,8 @@
       1092,
       1093,
       1528
-    ]
+    ],
+    "baseForm": 1528
   },
   "556": {
     "speciesId": 556,
@@ -85406,7 +85528,8 @@
     "nameKey": "Yamask",
     "siblings": [
       991
-    ]
+    ],
+    "baseForm": 562
   },
   "563": {
     "speciesId": 563,
@@ -86521,7 +86644,8 @@
     "nameKey": "Garbodor",
     "siblings": [
       1506
-    ]
+    ],
+    "baseForm": 569
   },
   "570": {
     "speciesId": 570,
@@ -86674,7 +86798,8 @@
     "nameKey": "Zorua",
     "siblings": [
       1002
-    ]
+    ],
+    "baseForm": 570
   },
   "571": {
     "speciesId": 571,
@@ -86847,7 +86972,8 @@
     "nameKey": "Zoroark",
     "siblings": [
       1003
-    ]
+    ],
+    "baseForm": 571
   },
   "572": {
     "speciesId": 572,
@@ -88916,7 +89042,8 @@
       1094,
       1095,
       1096
-    ]
+    ],
+    "baseForm": 585
   },
   "586": {
     "speciesId": 586,
@@ -89068,7 +89195,8 @@
       1097,
       1098,
       1099
-    ]
+    ],
+    "baseForm": 586
   },
   "587": {
     "speciesId": 587,
@@ -93750,7 +93878,8 @@
     "nameKey": "Stunfisk",
     "siblings": [
       992
-    ]
+    ],
+    "baseForm": 618
   },
   "619": {
     "speciesId": 619,
@@ -95409,7 +95538,8 @@
     "nameKey": "Braviary",
     "siblings": [
       1004
-    ]
+    ],
+    "baseForm": 628
   },
   "629": {
     "speciesId": 629,
@@ -97440,7 +97570,8 @@
     "nameKey": "Tornadus-Incarnate",
     "siblings": [
       1100
-    ]
+    ],
+    "baseForm": 641
   },
   "642": {
     "speciesId": 642,
@@ -97609,7 +97740,8 @@
     "nameKey": "Thundurus-Incarnate",
     "siblings": [
       1101
-    ]
+    ],
+    "baseForm": 642
   },
   "643": {
     "speciesId": 643,
@@ -98071,7 +98203,8 @@
     "nameKey": "Landorus-Incarnate",
     "siblings": [
       1102
-    ]
+    ],
+    "baseForm": 645
   },
   "646": {
     "speciesId": 646,
@@ -98227,7 +98360,8 @@
     "siblings": [
       1104,
       1105
-    ]
+    ],
+    "baseForm": 646
   },
   "647": {
     "speciesId": 647,
@@ -98371,7 +98505,8 @@
     "nameKey": "Keldeo-Ordinary",
     "siblings": [
       1106
-    ]
+    ],
+    "baseForm": 647
   },
   "648": {
     "speciesId": 648,
@@ -98553,7 +98688,8 @@
     "nameKey": "Meloetta-Aria",
     "siblings": [
       1107
-    ]
+    ],
+    "baseForm": 648
   },
   "649": {
     "speciesId": 649,
@@ -98718,7 +98854,8 @@
       1109,
       1110,
       1111
-    ]
+    ],
+    "baseForm": 649
   },
   "650": {
     "speciesId": 650,
@@ -100214,7 +100351,8 @@
     "siblings": [
       1112,
       1113
-    ]
+    ],
+    "baseForm": 658
   },
   "659": {
     "speciesId": 659,
@@ -101047,7 +101185,8 @@
       1454,
       1455,
       1456
-    ]
+    ],
+    "baseForm": 664
   },
   "665": {
     "speciesId": 665,
@@ -101123,7 +101262,8 @@
       1473,
       1474,
       1475
-    ]
+    ],
+    "baseForm": 665
   },
   "666": {
     "speciesId": 666,
@@ -101292,7 +101432,8 @@
       1130,
       1131,
       1132
-    ]
+    ],
+    "baseForm": 666
   },
   "667": {
     "speciesId": 667,
@@ -101733,7 +101874,8 @@
       1134,
       1135,
       1136
-    ]
+    ],
+    "baseForm": 669
   },
   "670": {
     "speciesId": 670,
@@ -101874,7 +102016,8 @@
       1139,
       1140,
       1141
-    ]
+    ],
+    "baseForm": 670
   },
   "671": {
     "speciesId": 671,
@@ -101999,7 +102142,8 @@
       1143,
       1144,
       1145
-    ]
+    ],
+    "baseForm": 671
   },
   "672": {
     "speciesId": 672,
@@ -102813,7 +102957,8 @@
       1152,
       1153,
       1154
-    ]
+    ],
+    "baseForm": 676
   },
   "677": {
     "speciesId": 677,
@@ -103114,7 +103259,8 @@
     "nameKey": "Meowstic-M",
     "siblings": [
       1155
-    ]
+    ],
+    "baseForm": 678
   },
   "679": {
     "speciesId": 679,
@@ -103521,7 +103667,8 @@
     "nameKey": "Aegislash-Shield",
     "siblings": [
       1156
-    ]
+    ],
+    "baseForm": 681
   },
   "682": {
     "speciesId": 682,
@@ -107094,7 +107241,8 @@
     "nameKey": "Sliggoo",
     "siblings": [
       1005
-    ]
+    ],
+    "baseForm": 705
   },
   "706": {
     "speciesId": 706,
@@ -107264,7 +107412,8 @@
     "nameKey": "Goodra",
     "siblings": [
       1006
-    ]
+    ],
+    "baseForm": 706
   },
   "707": {
     "speciesId": 707,
@@ -107873,7 +108022,8 @@
       1157,
       1158,
       1159
-    ]
+    ],
+    "baseForm": 710
   },
   "711": {
     "speciesId": 711,
@@ -108042,7 +108192,8 @@
       1160,
       1161,
       1162
-    ]
+    ],
+    "baseForm": 711
   },
   "712": {
     "speciesId": 712,
@@ -108364,7 +108515,8 @@
     "nameKey": "Avalugg",
     "siblings": [
       1007
-    ]
+    ],
+    "baseForm": 713
   },
   "714": {
     "speciesId": 714,
@@ -108844,7 +108996,8 @@
     "nameKey": "Xerneas-Neutral",
     "siblings": [
       1163
-    ]
+    ],
+    "baseForm": 716
   },
   "717": {
     "speciesId": 717,
@@ -109144,7 +109297,8 @@
       1165,
       1166,
       1167
-    ]
+    ],
+    "baseForm": 718
   },
   "719": {
     "speciesId": 719,
@@ -109298,7 +109452,8 @@
     "nameKey": "Diancie",
     "siblings": [
       952
-    ]
+    ],
+    "baseForm": 719
   },
   "720": {
     "speciesId": 720,
@@ -109466,7 +109621,8 @@
     "nameKey": "Hoopa-Confined",
     "siblings": [
       1168
-    ]
+    ],
+    "baseForm": 720
   },
   "721": {
     "speciesId": 721,
@@ -110130,7 +110286,8 @@
     "nameKey": "Decidueye",
     "siblings": [
       1008
-    ]
+    ],
+    "baseForm": 724
   },
   "725": {
     "speciesId": 725,
@@ -111820,7 +111977,8 @@
     "nameKey": "Gumshoos",
     "siblings": [
       1477
-    ]
+    ],
+    "baseForm": 735
   },
   "736": {
     "speciesId": 736,
@@ -112251,7 +112409,8 @@
     "nameKey": "Vikavolt",
     "siblings": [
       1478
-    ]
+    ],
+    "baseForm": 738
   },
   "739": {
     "speciesId": 739,
@@ -112691,7 +112850,8 @@
       1169,
       1170,
       1171
-    ]
+    ],
+    "baseForm": 741
   },
   "742": {
     "speciesId": 742,
@@ -112971,7 +113131,8 @@
     "nameKey": "Ribombee",
     "siblings": [
       1484
-    ]
+    ],
+    "baseForm": 743
   },
   "744": {
     "speciesId": 744,
@@ -113123,7 +113284,8 @@
     "nameKey": "Rockruff",
     "siblings": [
       1172
-    ]
+    ],
+    "baseForm": 744
   },
   "745": {
     "speciesId": 745,
@@ -113288,7 +113450,8 @@
     "siblings": [
       1173,
       1174
-    ]
+    ],
+    "baseForm": 745
   },
   "746": {
     "speciesId": 746,
@@ -113418,7 +113581,8 @@
     "nameKey": "Wishiwashi-Solo",
     "siblings": [
       1175
-    ]
+    ],
+    "baseForm": 746
   },
   "747": {
     "speciesId": 747,
@@ -114251,7 +114415,8 @@
     "nameKey": "Araquanid",
     "siblings": [
       1485
-    ]
+    ],
+    "baseForm": 752
   },
   "753": {
     "speciesId": 753,
@@ -114536,7 +114701,8 @@
     "nameKey": "Lurantis",
     "siblings": [
       1479
-    ]
+    ],
+    "baseForm": 754
   },
   "755": {
     "speciesId": 755,
@@ -115126,7 +115292,8 @@
     "nameKey": "Salazzle",
     "siblings": [
       1480
-    ]
+    ],
+    "baseForm": 758
   },
   "759": {
     "speciesId": 759,
@@ -117299,7 +117466,8 @@
       1190,
       1191,
       1192
-    ]
+    ],
+    "baseForm": 773
   },
   "774": {
     "speciesId": 774,
@@ -117448,7 +117616,8 @@
       1203,
       1204,
       1205
-    ]
+    ],
+    "baseForm": 774
   },
   "775": {
     "speciesId": 775,
@@ -117884,7 +118053,8 @@
     "nameKey": "Togedemaru",
     "siblings": [
       1486
-    ]
+    ],
+    "baseForm": 777
   },
   "778": {
     "speciesId": 778,
@@ -118033,7 +118203,8 @@
       1206,
       1481,
       1533
-    ]
+    ],
+    "baseForm": 778
   },
   "779": {
     "speciesId": 779,
@@ -119009,7 +119180,8 @@
     "nameKey": "Kommo-O",
     "siblings": [
       1482
-    ]
+    ],
+    "baseForm": 784
   },
   "785": {
     "speciesId": 785,
@@ -121292,7 +121464,8 @@
       1207,
       1208,
       1209
-    ]
+    ],
+    "baseForm": 800
   },
   "801": {
     "speciesId": 801,
@@ -121440,7 +121613,8 @@
     "nameKey": "Magearna",
     "siblings": [
       1210
-    ]
+    ],
+    "baseForm": 801
   },
   "802": {
     "speciesId": 802,
@@ -122469,7 +122643,8 @@
     "nameKey": "Melmetal",
     "siblings": [
       1507
-    ]
+    ],
+    "baseForm": 809
   },
   "810": {
     "speciesId": 810,
@@ -122888,7 +123063,8 @@
     "nameKey": "Rillaboom",
     "siblings": [
       1508
-    ]
+    ],
+    "baseForm": 812
   },
   "813": {
     "speciesId": 813,
@@ -123297,7 +123473,8 @@
     "nameKey": "Cinderace",
     "siblings": [
       1509
-    ]
+    ],
+    "baseForm": 815
   },
   "816": {
     "speciesId": 816,
@@ -123696,7 +123873,8 @@
     "nameKey": "Inteleon",
     "siblings": [
       1510
-    ]
+    ],
+    "baseForm": 818
   },
   "819": {
     "speciesId": 819,
@@ -124340,7 +124518,8 @@
     "nameKey": "Corviknight",
     "siblings": [
       1511
-    ]
+    ],
+    "baseForm": 823
   },
   "824": {
     "speciesId": 824,
@@ -124643,7 +124822,8 @@
     "nameKey": "Orbeetle",
     "siblings": [
       1512
-    ]
+    ],
+    "baseForm": 826
   },
   "827": {
     "speciesId": 827,
@@ -125600,7 +125780,8 @@
     "nameKey": "Drednaw",
     "siblings": [
       1513
-    ]
+    ],
+    "baseForm": 834
   },
   "835": {
     "speciesId": 835,
@@ -126270,7 +126451,8 @@
     "nameKey": "Coalossal",
     "siblings": [
       1514
-    ]
+    ],
+    "baseForm": 839
   },
   "840": {
     "speciesId": 840,
@@ -126504,7 +126686,8 @@
     "nameKey": "Flapple",
     "siblings": [
       1515
-    ]
+    ],
+    "baseForm": 841
   },
   "842": {
     "speciesId": 842,
@@ -126662,7 +126845,8 @@
     "nameKey": "Appletun",
     "siblings": [
       1516
-    ]
+    ],
+    "baseForm": 842
   },
   "843": {
     "speciesId": 843,
@@ -126921,7 +127105,8 @@
     "nameKey": "Sandaconda",
     "siblings": [
       1517
-    ]
+    ],
+    "baseForm": 844
   },
   "845": {
     "speciesId": 845,
@@ -127057,7 +127242,8 @@
     "siblings": [
       1211,
       1212
-    ]
+    ],
+    "baseForm": 845
   },
   "846": {
     "speciesId": 846,
@@ -127551,7 +127737,8 @@
     "siblings": [
       1213,
       1518
-    ]
+    ],
+    "baseForm": 849
   },
   "850": {
     "speciesId": 850,
@@ -127817,7 +128004,8 @@
     "nameKey": "Centiskorch",
     "siblings": [
       1519
-    ]
+    ],
+    "baseForm": 851
   },
   "852": {
     "speciesId": 852,
@@ -128220,7 +128408,8 @@
     "nameKey": "Sinistea-Phony",
     "siblings": [
       1214
-    ]
+    ],
+    "baseForm": 854
   },
   "855": {
     "speciesId": 855,
@@ -128354,7 +128543,8 @@
     "nameKey": "Polteageist-Phony",
     "siblings": [
       1215
-    ]
+    ],
+    "baseForm": 855
   },
   "856": {
     "speciesId": 856,
@@ -128728,7 +128918,8 @@
     "nameKey": "Hatterene",
     "siblings": [
       1520
-    ]
+    ],
+    "baseForm": 858
   },
   "859": {
     "speciesId": 859,
@@ -129163,7 +129354,8 @@
     "nameKey": "Grimmsnarl",
     "siblings": [
       1521
-    ]
+    ],
+    "baseForm": 861
   },
   "862": {
     "speciesId": 862,
@@ -130502,7 +130694,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "870": {
     "speciesId": 870,
@@ -131227,7 +131420,8 @@
     "nameKey": "Eiscue-Ice",
     "siblings": [
       1224
-    ]
+    ],
+    "baseForm": 875
   },
   "876": {
     "speciesId": 876,
@@ -131350,7 +131544,8 @@
     "nameKey": "Indeedee-M",
     "siblings": [
       1225
-    ]
+    ],
+    "baseForm": 876
   },
   "877": {
     "speciesId": 877,
@@ -131497,7 +131692,8 @@
     "nameKey": "Morpeko-Full-Belly",
     "siblings": [
       1226
-    ]
+    ],
+    "baseForm": 877
   },
   "878": {
     "speciesId": 878,
@@ -131777,7 +131973,8 @@
     "nameKey": "Copperajah",
     "siblings": [
       1523
-    ]
+    ],
+    "baseForm": 879
   },
   "880": {
     "speciesId": 880,
@@ -132442,7 +132639,8 @@
     "nameKey": "Duraludon",
     "siblings": [
       1524
-    ]
+    ],
+    "baseForm": 884
   },
   "885": {
     "speciesId": 885,
@@ -132945,7 +133143,8 @@
     "nameKey": "Zacian-Hero",
     "siblings": [
       1227
-    ]
+    ],
+    "baseForm": 888
   },
   "889": {
     "speciesId": 889,
@@ -133068,7 +133267,8 @@
     "nameKey": "Zamazenta-Hero",
     "siblings": [
       1228
-    ]
+    ],
+    "baseForm": 889
   },
   "890": {
     "speciesId": 890,
@@ -133201,7 +133401,8 @@
     "nameKey": "Eternatus",
     "siblings": [
       1229
-    ]
+    ],
+    "baseForm": 890
   },
   "891": {
     "speciesId": 891,
@@ -133502,7 +133703,8 @@
       1230,
       1525,
       1526
-    ]
+    ],
+    "baseForm": 892
   },
   "893": {
     "speciesId": 893,
@@ -133663,7 +133865,8 @@
     "nameKey": "Zarude",
     "siblings": [
       1231
-    ]
+    ],
+    "baseForm": 893
   },
   "894": {
     "speciesId": 894,
@@ -134293,7 +134496,8 @@
     "siblings": [
       1232,
       1233
-    ]
+    ],
+    "baseForm": 898
   },
   "899": {
     "speciesId": 899,
@@ -134794,7 +134998,8 @@
     "nameKey": "Ursaluna",
     "siblings": [
       1424
-    ]
+    ],
+    "baseForm": 901
   },
   "902": {
     "speciesId": 902,
@@ -134976,7 +135181,8 @@
     "nameKey": "Basculegion-M",
     "siblings": [
       1234
-    ]
+    ],
+    "baseForm": 902
   },
   "903": {
     "speciesId": 903,
@@ -135479,7 +135685,8 @@
     "nameKey": "Enamorus-Incarnate",
     "siblings": [
       1103
-    ]
+    ],
+    "baseForm": 905
   },
   "906": {
     "speciesId": 906,
@@ -135647,7 +135854,8 @@
     "siblings": [
       3,
       1494
-    ]
+    ],
+    "baseForm": 3
   },
   "907": {
     "speciesId": 907,
@@ -135862,7 +136070,8 @@
       6,
       908,
       1496
-    ]
+    ],
+    "baseForm": 6
   },
   "908": {
     "speciesId": 908,
@@ -136077,7 +136286,8 @@
       6,
       907,
       1496
-    ]
+    ],
+    "baseForm": 6
   },
   "909": {
     "speciesId": 909,
@@ -136259,7 +136469,8 @@
     "siblings": [
       9,
       1495
-    ]
+    ],
+    "baseForm": 9
   },
   "910": {
     "speciesId": 910,
@@ -136408,7 +136619,8 @@
     "nameKey": "Beedrill-Mega",
     "siblings": [
       15
-    ]
+    ],
+    "baseForm": 15
   },
   "911": {
     "speciesId": 911,
@@ -136556,7 +136768,8 @@
     "nameKey": "Pidgeot-Mega",
     "siblings": [
       18
-    ]
+    ],
+    "baseForm": 18
   },
   "912": {
     "speciesId": 912,
@@ -136700,7 +136913,8 @@
     "nameKey": "Alakazam-Mega",
     "siblings": [
       65
-    ]
+    ],
+    "baseForm": 65
   },
   "913": {
     "speciesId": 913,
@@ -136880,7 +137094,8 @@
     "siblings": [
       80,
       978
-    ]
+    ],
+    "baseForm": 80
   },
   "914": {
     "speciesId": 914,
@@ -137045,7 +137260,8 @@
     "siblings": [
       94,
       1501
-    ]
+    ],
+    "baseForm": 94
   },
   "915": {
     "speciesId": 915,
@@ -137216,7 +137432,8 @@
     "nameKey": "Kangaskhan-Mega",
     "siblings": [
       115
-    ]
+    ],
+    "baseForm": 115
   },
   "916": {
     "speciesId": 916,
@@ -137380,7 +137597,8 @@
     "nameKey": "Pinsir-Mega",
     "siblings": [
       127
-    ]
+    ],
+    "baseForm": 127
   },
   "917": {
     "speciesId": 917,
@@ -137534,7 +137752,8 @@
     "nameKey": "Gyarados-Mega",
     "siblings": [
       130
-    ]
+    ],
+    "baseForm": 130
   },
   "918": {
     "speciesId": 918,
@@ -137696,7 +137915,8 @@
     "nameKey": "Aerodactyl-Mega",
     "siblings": [
       142
-    ]
+    ],
+    "baseForm": 142
   },
   "919": {
     "speciesId": 919,
@@ -137893,7 +138113,8 @@
     "siblings": [
       150,
       920
-    ]
+    ],
+    "baseForm": 150
   },
   "920": {
     "speciesId": 920,
@@ -138089,7 +138310,8 @@
     "siblings": [
       150,
       919
-    ]
+    ],
+    "baseForm": 150
   },
   "921": {
     "speciesId": 921,
@@ -138275,7 +138497,8 @@
     "nameKey": "Ampharos-Mega",
     "siblings": [
       181
-    ]
+    ],
+    "baseForm": 181
   },
   "922": {
     "speciesId": 922,
@@ -138478,7 +138701,8 @@
     "nameKey": "Steelix-Mega",
     "siblings": [
       208
-    ]
+    ],
+    "baseForm": 208
   },
   "923": {
     "speciesId": 923,
@@ -138646,7 +138870,8 @@
     "nameKey": "Scizor-Mega",
     "siblings": [
       212
-    ]
+    ],
+    "baseForm": 212
   },
   "924": {
     "speciesId": 924,
@@ -138825,7 +139050,8 @@
     "nameKey": "Heracross-Mega",
     "siblings": [
       214
-    ]
+    ],
+    "baseForm": 214
   },
   "925": {
     "speciesId": 925,
@@ -139004,7 +139230,8 @@
     "nameKey": "Houndoom-Mega",
     "siblings": [
       229
-    ]
+    ],
+    "baseForm": 229
   },
   "926": {
     "speciesId": 926,
@@ -139200,7 +139427,8 @@
     "nameKey": "Tyranitar-Mega",
     "siblings": [
       248
-    ]
+    ],
+    "baseForm": 248
   },
   "927": {
     "speciesId": 927,
@@ -139406,7 +139634,8 @@
     "nameKey": "Sceptile-Mega",
     "siblings": [
       254
-    ]
+    ],
+    "baseForm": 254
   },
   "928": {
     "speciesId": 928,
@@ -139593,7 +139822,8 @@
     "nameKey": "Blaziken-Mega",
     "siblings": [
       257
-    ]
+    ],
+    "baseForm": 257
   },
   "929": {
     "speciesId": 929,
@@ -139763,7 +139993,8 @@
     "nameKey": "Swampert-Mega",
     "siblings": [
       260
-    ]
+    ],
+    "baseForm": 260
   },
   "930": {
     "speciesId": 930,
@@ -139940,7 +140171,8 @@
     "nameKey": "Gardevoir-Mega",
     "siblings": [
       282
-    ]
+    ],
+    "baseForm": 282
   },
   "931": {
     "speciesId": 931,
@@ -140130,7 +140362,8 @@
     "nameKey": "Sableye-Mega",
     "siblings": [
       302
-    ]
+    ],
+    "baseForm": 302
   },
   "932": {
     "speciesId": 932,
@@ -140314,7 +140547,8 @@
     "nameKey": "Mawile-Mega",
     "siblings": [
       303
-    ]
+    ],
+    "baseForm": 303
   },
   "933": {
     "speciesId": 933,
@@ -140502,7 +140736,8 @@
     "nameKey": "Aggron-Mega",
     "siblings": [
       306
-    ]
+    ],
+    "baseForm": 306
   },
   "934": {
     "speciesId": 934,
@@ -140693,7 +140928,8 @@
     "nameKey": "Medicham-Mega",
     "siblings": [
       308
-    ]
+    ],
+    "baseForm": 308
   },
   "935": {
     "speciesId": 935,
@@ -140842,7 +141078,8 @@
     "nameKey": "Manectric-Mega",
     "siblings": [
       310
-    ]
+    ],
+    "baseForm": 310
   },
   "936": {
     "speciesId": 936,
@@ -141014,7 +141251,8 @@
     "nameKey": "Sharpedo-Mega",
     "siblings": [
       319
-    ]
+    ],
+    "baseForm": 319
   },
   "937": {
     "speciesId": 937,
@@ -141195,7 +141433,8 @@
     "nameKey": "Camerupt-Mega",
     "siblings": [
       323
-    ]
+    ],
+    "baseForm": 323
   },
   "938": {
     "speciesId": 938,
@@ -141392,7 +141631,8 @@
     "nameKey": "Altaria-Mega",
     "siblings": [
       334
-    ]
+    ],
+    "baseForm": 334
   },
   "939": {
     "speciesId": 939,
@@ -141559,7 +141799,8 @@
     "nameKey": "Banette-Mega",
     "siblings": [
       354
-    ]
+    ],
+    "baseForm": 354
   },
   "940": {
     "speciesId": 940,
@@ -141742,7 +141983,8 @@
     "nameKey": "Absol-Mega",
     "siblings": [
       359
-    ]
+    ],
+    "baseForm": 359
   },
   "941": {
     "speciesId": 941,
@@ -141891,7 +142133,8 @@
     "nameKey": "Glalie-Mega",
     "siblings": [
       362
-    ]
+    ],
+    "baseForm": 362
   },
   "942": {
     "speciesId": 942,
@@ -142077,7 +142320,8 @@
     "nameKey": "Salamence-Mega",
     "siblings": [
       373
-    ]
+    ],
+    "baseForm": 373
   },
   "943": {
     "speciesId": 943,
@@ -142237,7 +142481,8 @@
     "nameKey": "Metagross-Mega",
     "siblings": [
       376
-    ]
+    ],
+    "baseForm": 376
   },
   "944": {
     "speciesId": 944,
@@ -142420,7 +142665,8 @@
     "nameKey": "Latias-Mega",
     "siblings": [
       380
-    ]
+    ],
+    "baseForm": 380
   },
   "945": {
     "speciesId": 945,
@@ -142604,7 +142850,8 @@
     "nameKey": "Latios-Mega",
     "siblings": [
       381
-    ]
+    ],
+    "baseForm": 381
   },
   "946": {
     "speciesId": 946,
@@ -142789,7 +143036,8 @@
     "nameKey": "Lopunny-Mega",
     "siblings": [
       428
-    ]
+    ],
+    "baseForm": 428
   },
   "947": {
     "speciesId": 947,
@@ -142946,7 +143194,8 @@
     "nameKey": "Garchomp-Mega",
     "siblings": [
       445
-    ]
+    ],
+    "baseForm": 445
   },
   "948": {
     "speciesId": 948,
@@ -143130,7 +143379,8 @@
     "nameKey": "Lucario-Mega",
     "siblings": [
       448
-    ]
+    ],
+    "baseForm": 448
   },
   "949": {
     "speciesId": 949,
@@ -143283,7 +143533,8 @@
     "nameKey": "Abomasnow-Mega",
     "siblings": [
       460
-    ]
+    ],
+    "baseForm": 460
   },
   "950": {
     "speciesId": 950,
@@ -143499,7 +143750,8 @@
     "nameKey": "Gallade-Mega",
     "siblings": [
       475
-    ]
+    ],
+    "baseForm": 475
   },
   "951": {
     "speciesId": 951,
@@ -143693,7 +143945,8 @@
     "nameKey": "Audino-Mega",
     "siblings": [
       531
-    ]
+    ],
+    "baseForm": 531
   },
   "952": {
     "speciesId": 952,
@@ -143849,7 +144102,8 @@
     "nameKey": "Diancie-Mega",
     "siblings": [
       719
-    ]
+    ],
+    "baseForm": 719
   },
   "953": {
     "speciesId": 953,
@@ -144007,7 +144261,8 @@
     "nameKey": "Rayquaza-Mega",
     "siblings": [
       384
-    ]
+    ],
+    "baseForm": 384
   },
   "954": {
     "speciesId": 954,
@@ -144138,7 +144393,8 @@
     "nameKey": "Kyogre-Primal",
     "siblings": [
       382
-    ]
+    ],
+    "baseForm": 382
   },
   "955": {
     "speciesId": 955,
@@ -144291,7 +144547,8 @@
     "nameKey": "Groudon-Primal",
     "siblings": [
       383
-    ]
+    ],
+    "baseForm": 383
   },
   "956": {
     "speciesId": 956,
@@ -144439,7 +144696,8 @@
     "nameKey": "Rattata-Alola",
     "siblings": [
       19
-    ]
+    ],
+    "baseForm": 19
   },
   "957": {
     "speciesId": 957,
@@ -144596,7 +144854,8 @@
     "siblings": [
       20,
       1476
-    ]
+    ],
+    "baseForm": 20
   },
   "958": {
     "speciesId": 958,
@@ -144714,7 +144973,8 @@
     "nameKey": "Raichu-Alola",
     "siblings": [
       26
-    ]
+    ],
+    "baseForm": 26
   },
   "959": {
     "speciesId": 959,
@@ -144878,7 +145138,8 @@
     "nameKey": "Sandshrew-Alola",
     "siblings": [
       27
-    ]
+    ],
+    "baseForm": 27
   },
   "960": {
     "speciesId": 960,
@@ -145002,7 +145263,8 @@
     "nameKey": "Sandslash-Alola",
     "siblings": [
       28
-    ]
+    ],
+    "baseForm": 28
   },
   "961": {
     "speciesId": 961,
@@ -145173,7 +145435,8 @@
     "nameKey": "Vulpix-Alola",
     "siblings": [
       37
-    ]
+    ],
+    "baseForm": 37
   },
   "962": {
     "speciesId": 962,
@@ -145294,7 +145557,8 @@
     "nameKey": "Ninetales-Alola",
     "siblings": [
       38
-    ]
+    ],
+    "baseForm": 38
   },
   "963": {
     "speciesId": 963,
@@ -145437,7 +145701,8 @@
     "nameKey": "Diglett-Alola",
     "siblings": [
       50
-    ]
+    ],
+    "baseForm": 50
   },
   "964": {
     "speciesId": 964,
@@ -145590,7 +145855,8 @@
     "nameKey": "Dugtrio-Alola",
     "siblings": [
       51
-    ]
+    ],
+    "baseForm": 51
   },
   "965": {
     "speciesId": 965,
@@ -145755,7 +146021,8 @@
       52,
       974,
       1499
-    ]
+    ],
+    "baseForm": 52
   },
   "966": {
     "speciesId": 966,
@@ -145932,7 +146199,8 @@
     "nameKey": "Persian-Alola",
     "siblings": [
       53
-    ]
+    ],
+    "baseForm": 53
   },
   "967": {
     "speciesId": 967,
@@ -146105,7 +146373,8 @@
     "nameKey": "Geodude-Alola",
     "siblings": [
       74
-    ]
+    ],
+    "baseForm": 74
   },
   "968": {
     "speciesId": 968,
@@ -146283,7 +146552,8 @@
     "nameKey": "Graveler-Alola",
     "siblings": [
       75
-    ]
+    ],
+    "baseForm": 75
   },
   "969": {
     "speciesId": 969,
@@ -146468,7 +146738,8 @@
     "nameKey": "Golem-Alola",
     "siblings": [
       76
-    ]
+    ],
+    "baseForm": 76
   },
   "970": {
     "speciesId": 970,
@@ -146638,7 +146909,8 @@
     "nameKey": "Grimer-Alola",
     "siblings": [
       88
-    ]
+    ],
+    "baseForm": 88
   },
   "971": {
     "speciesId": 971,
@@ -146810,7 +147082,8 @@
     "nameKey": "Muk-Alola",
     "siblings": [
       89
-    ]
+    ],
+    "baseForm": 89
   },
   "972": {
     "speciesId": 972,
@@ -146945,7 +147218,8 @@
     "nameKey": "Exeggutor-Alola",
     "siblings": [
       103
-    ]
+    ],
+    "baseForm": 103
   },
   "973": {
     "speciesId": 973,
@@ -147123,7 +147397,8 @@
     "siblings": [
       105,
       1483
-    ]
+    ],
+    "baseForm": 105
   },
   "974": {
     "speciesId": 974,
@@ -147276,7 +147551,8 @@
       52,
       965,
       1499
-    ]
+    ],
+    "baseForm": 52
   },
   "975": {
     "speciesId": 975,
@@ -147416,7 +147692,8 @@
     "nameKey": "Ponyta-Galar",
     "siblings": [
       77
-    ]
+    ],
+    "baseForm": 77
   },
   "976": {
     "speciesId": 976,
@@ -147568,7 +147845,8 @@
     "nameKey": "Rapidash-Galar",
     "siblings": [
       78
-    ]
+    ],
+    "baseForm": 78
   },
   "977": {
     "speciesId": 977,
@@ -147745,7 +148023,8 @@
     "nameKey": "Slowpoke-Galar",
     "siblings": [
       79
-    ]
+    ],
+    "baseForm": 79
   },
   "978": {
     "speciesId": 978,
@@ -147916,7 +148195,8 @@
     "siblings": [
       80,
       913
-    ]
+    ],
+    "baseForm": 80
   },
   "979": {
     "speciesId": 979,
@@ -148065,7 +148345,8 @@
     "nameKey": "Farfetchd-Galar",
     "siblings": [
       83
-    ]
+    ],
+    "baseForm": 83
   },
   "980": {
     "speciesId": 980,
@@ -148240,7 +148521,8 @@
     "nameKey": "Weezing-Galar",
     "siblings": [
       110
-    ]
+    ],
+    "baseForm": 110
   },
   "981": {
     "speciesId": 981,
@@ -148464,7 +148746,8 @@
     "nameKey": "Mr. Mime-Galar",
     "siblings": [
       122
-    ]
+    ],
+    "baseForm": 122
   },
   "982": {
     "speciesId": 982,
@@ -148611,7 +148894,8 @@
     "nameKey": "Articuno-Galar",
     "siblings": [
       144
-    ]
+    ],
+    "baseForm": 144
   },
   "983": {
     "speciesId": 983,
@@ -148757,7 +149041,8 @@
     "nameKey": "Zapdos-Galar",
     "siblings": [
       145
-    ]
+    ],
+    "baseForm": 145
   },
   "984": {
     "speciesId": 984,
@@ -148901,7 +149186,8 @@
     "nameKey": "Moltres-Galar",
     "siblings": [
       146
-    ]
+    ],
+    "baseForm": 146
   },
   "985": {
     "speciesId": 985,
@@ -149081,7 +149367,8 @@
     "nameKey": "Slowking-Galar",
     "siblings": [
       199
-    ]
+    ],
+    "baseForm": 199
   },
   "986": {
     "speciesId": 986,
@@ -149235,7 +149522,8 @@
     "nameKey": "Corsola-Galar",
     "siblings": [
       222
-    ]
+    ],
+    "baseForm": 222
   },
   "987": {
     "speciesId": 987,
@@ -149376,7 +149664,8 @@
     "nameKey": "Zigzagoon-Galar",
     "siblings": [
       263
-    ]
+    ],
+    "baseForm": 263
   },
   "988": {
     "speciesId": 988,
@@ -149543,7 +149832,8 @@
     "nameKey": "Linoone-Galar",
     "siblings": [
       264
-    ]
+    ],
+    "baseForm": 264
   },
   "989": {
     "speciesId": 989,
@@ -149694,7 +149984,8 @@
     "nameKey": "Darumaka-Galar",
     "siblings": [
       554
-    ]
+    ],
+    "baseForm": 554
   },
   "990": {
     "speciesId": 990,
@@ -149855,7 +150146,8 @@
       1092,
       1093,
       1528
-    ]
+    ],
+    "baseForm": 1528
   },
   "991": {
     "speciesId": 991,
@@ -150011,7 +150303,8 @@
     "nameKey": "Yamask-Galar",
     "siblings": [
       562
-    ]
+    ],
+    "baseForm": 562
   },
   "992": {
     "speciesId": 992,
@@ -150153,7 +150446,8 @@
     "nameKey": "Stunfisk-Galar",
     "siblings": [
       618
-    ]
+    ],
+    "baseForm": 618
   },
   "993": {
     "speciesId": 993,
@@ -150333,7 +150627,8 @@
     "nameKey": "Growlithe-Hisui",
     "siblings": [
       58
-    ]
+    ],
+    "baseForm": 58
   },
   "994": {
     "speciesId": 994,
@@ -150483,7 +150778,8 @@
     "nameKey": "Arcanine-Hisui",
     "siblings": [
       59
-    ]
+    ],
+    "baseForm": 59
   },
   "995": {
     "speciesId": 995,
@@ -150654,7 +150950,8 @@
     "nameKey": "Voltorb-Hisui",
     "siblings": [
       100
-    ]
+    ],
+    "baseForm": 100
   },
   "996": {
     "speciesId": 996,
@@ -150824,7 +151121,8 @@
     "nameKey": "Electrode-Hisui",
     "siblings": [
       101
-    ]
+    ],
+    "baseForm": 101
   },
   "997": {
     "speciesId": 997,
@@ -151010,7 +151308,8 @@
     "nameKey": "Typhlosion-Hisui",
     "siblings": [
       157
-    ]
+    ],
+    "baseForm": 157
   },
   "998": {
     "speciesId": 998,
@@ -151186,7 +151485,8 @@
     "nameKey": "Qwilfish-Hisui",
     "siblings": [
       211
-    ]
+    ],
+    "baseForm": 211
   },
   "999": {
     "speciesId": 999,
@@ -151362,7 +151662,8 @@
     "nameKey": "Sneasel-Hisui",
     "siblings": [
       215
-    ]
+    ],
+    "baseForm": 215
   },
   "1000": {
     "speciesId": 1000,
@@ -151548,7 +151849,8 @@
     "nameKey": "Samurott-Hisui",
     "siblings": [
       503
-    ]
+    ],
+    "baseForm": 503
   },
   "1001": {
     "speciesId": 1001,
@@ -151699,7 +152001,8 @@
     "nameKey": "Lilligant-Hisui",
     "siblings": [
       549
-    ]
+    ],
+    "baseForm": 549
   },
   "1002": {
     "speciesId": 1002,
@@ -151846,7 +152149,8 @@
     "nameKey": "Zorua-Hisui",
     "siblings": [
       570
-    ]
+    ],
+    "baseForm": 570
   },
   "1003": {
     "speciesId": 1003,
@@ -152028,7 +152332,8 @@
     "nameKey": "Zoroark-Hisui",
     "siblings": [
       571
-    ]
+    ],
+    "baseForm": 571
   },
   "1004": {
     "speciesId": 1004,
@@ -152210,7 +152515,8 @@
     "nameKey": "Braviary-Hisui",
     "siblings": [
       628
-    ]
+    ],
+    "baseForm": 628
   },
   "1005": {
     "speciesId": 1005,
@@ -152346,7 +152652,8 @@
     "nameKey": "Sliggoo-Hisui",
     "siblings": [
       705
-    ]
+    ],
+    "baseForm": 705
   },
   "1006": {
     "speciesId": 1006,
@@ -152516,7 +152823,8 @@
     "nameKey": "Goodra-Hisui",
     "siblings": [
       706
-    ]
+    ],
+    "baseForm": 706
   },
   "1007": {
     "speciesId": 1007,
@@ -152702,7 +153010,8 @@
     "nameKey": "Avalugg-Hisui",
     "siblings": [
       713
-    ]
+    ],
+    "baseForm": 713
   },
   "1008": {
     "speciesId": 1008,
@@ -152903,7 +153212,8 @@
     "nameKey": "Decidueye-Hisui",
     "siblings": [
       724
-    ]
+    ],
+    "baseForm": 724
   },
   "1009": {
     "speciesId": 1009,
@@ -153080,7 +153390,8 @@
       1022,
       1487,
       1498
-    ]
+    ],
+    "baseForm": 25
   },
   "1010": {
     "speciesId": 1010,
@@ -153258,7 +153569,8 @@
       1022,
       1487,
       1498
-    ]
+    ],
+    "baseForm": 25
   },
   "1011": {
     "speciesId": 1011,
@@ -153436,7 +153748,8 @@
       1022,
       1487,
       1498
-    ]
+    ],
+    "baseForm": 25
   },
   "1012": {
     "speciesId": 1012,
@@ -153614,7 +153927,8 @@
       1022,
       1487,
       1498
-    ]
+    ],
+    "baseForm": 25
   },
   "1013": {
     "speciesId": 1013,
@@ -153792,7 +154106,8 @@
       1022,
       1487,
       1498
-    ]
+    ],
+    "baseForm": 25
   },
   "1014": {
     "speciesId": 1014,
@@ -153970,7 +154285,8 @@
       1022,
       1487,
       1498
-    ]
+    ],
+    "baseForm": 25
   },
   "1015": {
     "speciesId": 1015,
@@ -154147,7 +154463,8 @@
       1022,
       1487,
       1498
-    ]
+    ],
+    "baseForm": 25
   },
   "1016": {
     "speciesId": 1016,
@@ -154324,7 +154641,8 @@
       1022,
       1487,
       1498
-    ]
+    ],
+    "baseForm": 25
   },
   "1017": {
     "speciesId": 1017,
@@ -154501,7 +154819,8 @@
       1022,
       1487,
       1498
-    ]
+    ],
+    "baseForm": 25
   },
   "1018": {
     "speciesId": 1018,
@@ -154678,7 +154997,8 @@
       1022,
       1487,
       1498
-    ]
+    ],
+    "baseForm": 25
   },
   "1019": {
     "speciesId": 1019,
@@ -154855,7 +155175,8 @@
       1022,
       1487,
       1498
-    ]
+    ],
+    "baseForm": 25
   },
   "1020": {
     "speciesId": 1020,
@@ -155032,7 +155353,8 @@
       1022,
       1487,
       1498
-    ]
+    ],
+    "baseForm": 25
   },
   "1021": {
     "speciesId": 1021,
@@ -155209,7 +155531,8 @@
       1022,
       1487,
       1498
-    ]
+    ],
+    "baseForm": 25
   },
   "1022": {
     "speciesId": 1022,
@@ -155386,7 +155709,8 @@
       1021,
       1487,
       1498
-    ]
+    ],
+    "baseForm": 25
   },
   "1023": {
     "speciesId": 1023,
@@ -155503,7 +155827,8 @@
     "nameKey": "Pichu-Spiky-Eared",
     "siblings": [
       172
-    ]
+    ],
+    "baseForm": 172
   },
   "1024": {
     "speciesId": 1024,
@@ -155579,7 +155904,8 @@
       1048,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1025": {
     "speciesId": 1025,
@@ -155655,7 +155981,8 @@
       1048,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1026": {
     "speciesId": 1026,
@@ -155731,7 +156058,8 @@
       1048,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1027": {
     "speciesId": 1027,
@@ -155807,7 +156135,8 @@
       1048,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1028": {
     "speciesId": 1028,
@@ -155883,7 +156212,8 @@
       1048,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1029": {
     "speciesId": 1029,
@@ -155959,7 +156289,8 @@
       1048,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1030": {
     "speciesId": 1030,
@@ -156035,7 +156366,8 @@
       1048,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1031": {
     "speciesId": 1031,
@@ -156111,7 +156443,8 @@
       1048,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1032": {
     "speciesId": 1032,
@@ -156187,7 +156520,8 @@
       1048,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1033": {
     "speciesId": 1033,
@@ -156263,7 +156597,8 @@
       1048,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1034": {
     "speciesId": 1034,
@@ -156339,7 +156674,8 @@
       1048,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1035": {
     "speciesId": 1035,
@@ -156415,7 +156751,8 @@
       1048,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1036": {
     "speciesId": 1036,
@@ -156491,7 +156828,8 @@
       1048,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1037": {
     "speciesId": 1037,
@@ -156567,7 +156905,8 @@
       1048,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1038": {
     "speciesId": 1038,
@@ -156643,7 +156982,8 @@
       1048,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1039": {
     "speciesId": 1039,
@@ -156719,7 +157059,8 @@
       1048,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1040": {
     "speciesId": 1040,
@@ -156795,7 +157136,8 @@
       1048,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1041": {
     "speciesId": 1041,
@@ -156871,7 +157213,8 @@
       1048,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1042": {
     "speciesId": 1042,
@@ -156947,7 +157290,8 @@
       1048,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1043": {
     "speciesId": 1043,
@@ -157022,7 +157366,8 @@
       1048,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1044": {
     "speciesId": 1044,
@@ -157097,7 +157442,8 @@
       1048,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1045": {
     "speciesId": 1045,
@@ -157172,7 +157518,8 @@
       1048,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1046": {
     "speciesId": 1046,
@@ -157247,7 +157594,8 @@
       1048,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1047": {
     "speciesId": 1047,
@@ -157322,7 +157670,8 @@
       1048,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1048": {
     "speciesId": 1048,
@@ -157397,7 +157746,8 @@
       1047,
       1049,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1049": {
     "speciesId": 1049,
@@ -157472,7 +157822,8 @@
       1047,
       1048,
       1050
-    ]
+    ],
+    "baseForm": 201
   },
   "1050": {
     "speciesId": 1050,
@@ -157547,7 +157898,8 @@
       1047,
       1048,
       1049
-    ]
+    ],
+    "baseForm": 201
   },
   "1051": {
     "speciesId": 1051,
@@ -157691,7 +158043,8 @@
       351,
       1052,
       1053
-    ]
+    ],
+    "baseForm": 351
   },
   "1052": {
     "speciesId": 1052,
@@ -157835,7 +158188,8 @@
       351,
       1051,
       1053
-    ]
+    ],
+    "baseForm": 351
   },
   "1053": {
     "speciesId": 1053,
@@ -157979,7 +158333,8 @@
       351,
       1051,
       1052
-    ]
+    ],
+    "baseForm": 351
   },
   "1054": {
     "speciesId": 1054,
@@ -158141,7 +158496,8 @@
       386,
       1055,
       1056
-    ]
+    ],
+    "baseForm": 386
   },
   "1055": {
     "speciesId": 1055,
@@ -158303,7 +158659,8 @@
       386,
       1054,
       1056
-    ]
+    ],
+    "baseForm": 386
   },
   "1056": {
     "speciesId": 1056,
@@ -158465,7 +158822,8 @@
       386,
       1054,
       1055
-    ]
+    ],
+    "baseForm": 386
   },
   "1057": {
     "speciesId": 1057,
@@ -158537,7 +158895,8 @@
     "siblings": [
       412,
       1058
-    ]
+    ],
+    "baseForm": 412
   },
   "1058": {
     "speciesId": 1058,
@@ -158609,7 +158968,8 @@
     "siblings": [
       412,
       1057
-    ]
+    ],
+    "baseForm": 412
   },
   "1059": {
     "speciesId": 1059,
@@ -158761,7 +159121,8 @@
     "siblings": [
       413,
       1060
-    ]
+    ],
+    "baseForm": 413
   },
   "1060": {
     "speciesId": 1060,
@@ -158915,7 +159276,8 @@
     "siblings": [
       413,
       1059
-    ]
+    ],
+    "baseForm": 413
   },
   "1061": {
     "speciesId": 1061,
@@ -159059,7 +159421,8 @@
     "nameKey": "Cherrim-Sunshine",
     "siblings": [
       421
-    ]
+    ],
+    "baseForm": 421
   },
   "1062": {
     "speciesId": 1062,
@@ -159185,7 +159548,8 @@
     "nameKey": "Shellos-East",
     "siblings": [
       422
-    ]
+    ],
+    "baseForm": 422
   },
   "1063": {
     "speciesId": 1063,
@@ -159318,7 +159682,8 @@
     "nameKey": "Gastrodon-East",
     "siblings": [
       423
-    ]
+    ],
+    "baseForm": 423
   },
   "1064": {
     "speciesId": 1064,
@@ -159455,7 +159820,8 @@
       1066,
       1067,
       1068
-    ]
+    ],
+    "baseForm": 479
   },
   "1065": {
     "speciesId": 1065,
@@ -159592,7 +159958,8 @@
       1066,
       1067,
       1068
-    ]
+    ],
+    "baseForm": 479
   },
   "1066": {
     "speciesId": 1066,
@@ -159729,7 +160096,8 @@
       1065,
       1067,
       1068
-    ]
+    ],
+    "baseForm": 479
   },
   "1067": {
     "speciesId": 1067,
@@ -159866,7 +160234,8 @@
       1065,
       1066,
       1068
-    ]
+    ],
+    "baseForm": 479
   },
   "1068": {
     "speciesId": 1068,
@@ -160003,7 +160372,8 @@
       1065,
       1066,
       1067
-    ]
+    ],
+    "baseForm": 479
   },
   "1069": {
     "speciesId": 1069,
@@ -160149,7 +160519,8 @@
     "siblings": [
       483,
       1529
-    ]
+    ],
+    "baseForm": 483
   },
   "1070": {
     "speciesId": 1070,
@@ -160295,7 +160666,8 @@
     "siblings": [
       484,
       1530
-    ]
+    ],
+    "baseForm": 484
   },
   "1071": {
     "speciesId": 1071,
@@ -160437,7 +160809,8 @@
     "nameKey": "Giratina-Origin",
     "siblings": [
       487
-    ]
+    ],
+    "baseForm": 487
   },
   "1072": {
     "speciesId": 1072,
@@ -160561,7 +160934,8 @@
     "nameKey": "Shaymin-Sky",
     "siblings": [
       492
-    ]
+    ],
+    "baseForm": 492
   },
   "1073": {
     "speciesId": 1073,
@@ -160765,7 +161139,8 @@
       1087,
       1088,
       1089
-    ]
+    ],
+    "baseForm": 493
   },
   "1074": {
     "speciesId": 1074,
@@ -160969,7 +161344,8 @@
       1087,
       1088,
       1089
-    ]
+    ],
+    "baseForm": 493
   },
   "1075": {
     "speciesId": 1075,
@@ -161173,7 +161549,8 @@
       1087,
       1088,
       1089
-    ]
+    ],
+    "baseForm": 493
   },
   "1076": {
     "speciesId": 1076,
@@ -161377,7 +161754,8 @@
       1087,
       1088,
       1089
-    ]
+    ],
+    "baseForm": 493
   },
   "1077": {
     "speciesId": 1077,
@@ -161581,7 +161959,8 @@
       1087,
       1088,
       1089
-    ]
+    ],
+    "baseForm": 493
   },
   "1078": {
     "speciesId": 1078,
@@ -161785,7 +162164,8 @@
       1087,
       1088,
       1089
-    ]
+    ],
+    "baseForm": 493
   },
   "1079": {
     "speciesId": 1079,
@@ -161989,7 +162369,8 @@
       1087,
       1088,
       1089
-    ]
+    ],
+    "baseForm": 493
   },
   "1080": {
     "speciesId": 1080,
@@ -162193,7 +162574,8 @@
       1087,
       1088,
       1089
-    ]
+    ],
+    "baseForm": 493
   },
   "1081": {
     "speciesId": 1081,
@@ -162397,7 +162779,8 @@
       1087,
       1088,
       1089
-    ]
+    ],
+    "baseForm": 493
   },
   "1082": {
     "speciesId": 1082,
@@ -162601,7 +162984,8 @@
       1087,
       1088,
       1089
-    ]
+    ],
+    "baseForm": 493
   },
   "1083": {
     "speciesId": 1083,
@@ -162805,7 +163189,8 @@
       1087,
       1088,
       1089
-    ]
+    ],
+    "baseForm": 493
   },
   "1084": {
     "speciesId": 1084,
@@ -163009,7 +163394,8 @@
       1087,
       1088,
       1089
-    ]
+    ],
+    "baseForm": 493
   },
   "1085": {
     "speciesId": 1085,
@@ -163213,7 +163599,8 @@
       1087,
       1088,
       1089
-    ]
+    ],
+    "baseForm": 493
   },
   "1086": {
     "speciesId": 1086,
@@ -163417,7 +163804,8 @@
       1087,
       1088,
       1089
-    ]
+    ],
+    "baseForm": 493
   },
   "1087": {
     "speciesId": 1087,
@@ -163621,7 +164009,8 @@
       1086,
       1088,
       1089
-    ]
+    ],
+    "baseForm": 493
   },
   "1088": {
     "speciesId": 1088,
@@ -163825,7 +164214,8 @@
       1086,
       1087,
       1089
-    ]
+    ],
+    "baseForm": 493
   },
   "1089": {
     "speciesId": 1089,
@@ -164029,7 +164419,8 @@
       1086,
       1087,
       1088
-    ]
+    ],
+    "baseForm": 493
   },
   "1090": {
     "speciesId": 1090,
@@ -164198,7 +164589,8 @@
     "siblings": [
       550,
       1091
-    ]
+    ],
+    "baseForm": 550
   },
   "1091": {
     "speciesId": 1091,
@@ -164355,7 +164747,8 @@
     "siblings": [
       550,
       1090
-    ]
+    ],
+    "baseForm": 550
   },
   "1092": {
     "speciesId": 1092,
@@ -164539,7 +164932,8 @@
       990,
       1093,
       1528
-    ]
+    ],
+    "baseForm": 1528
   },
   "1093": {
     "speciesId": 1093,
@@ -164701,7 +165095,8 @@
       990,
       1092,
       1528
-    ]
+    ],
+    "baseForm": 1528
   },
   "1094": {
     "speciesId": 1094,
@@ -164849,7 +165244,8 @@
       585,
       1095,
       1096
-    ]
+    ],
+    "baseForm": 585
   },
   "1095": {
     "speciesId": 1095,
@@ -164997,7 +165393,8 @@
       585,
       1094,
       1096
-    ]
+    ],
+    "baseForm": 585
   },
   "1096": {
     "speciesId": 1096,
@@ -165145,7 +165542,8 @@
       585,
       1094,
       1095
-    ]
+    ],
+    "baseForm": 585
   },
   "1097": {
     "speciesId": 1097,
@@ -165297,7 +165695,8 @@
       586,
       1098,
       1099
-    ]
+    ],
+    "baseForm": 586
   },
   "1098": {
     "speciesId": 1098,
@@ -165449,7 +165848,8 @@
       586,
       1097,
       1099
-    ]
+    ],
+    "baseForm": 586
   },
   "1099": {
     "speciesId": 1099,
@@ -165601,7 +166001,8 @@
       586,
       1097,
       1098
-    ]
+    ],
+    "baseForm": 586
   },
   "1100": {
     "speciesId": 1100,
@@ -165768,7 +166169,8 @@
     "nameKey": "Tornadus-Therian",
     "siblings": [
       641
-    ]
+    ],
+    "baseForm": 641
   },
   "1101": {
     "speciesId": 1101,
@@ -165937,7 +166339,8 @@
     "nameKey": "Thundurus-Therian",
     "siblings": [
       642
-    ]
+    ],
+    "baseForm": 642
   },
   "1102": {
     "speciesId": 1102,
@@ -166099,7 +166502,8 @@
     "nameKey": "Landorus-Therian",
     "siblings": [
       645
-    ]
+    ],
+    "baseForm": 645
   },
   "1103": {
     "speciesId": 1103,
@@ -166260,7 +166664,8 @@
     "nameKey": "Enamorus-Therian",
     "siblings": [
       905
-    ]
+    ],
+    "baseForm": 905
   },
   "1104": {
     "speciesId": 1104,
@@ -166416,7 +166821,8 @@
     "siblings": [
       646,
       1105
-    ]
+    ],
+    "baseForm": 646
   },
   "1105": {
     "speciesId": 1105,
@@ -166572,7 +166978,8 @@
     "siblings": [
       646,
       1104
-    ]
+    ],
+    "baseForm": 646
   },
   "1106": {
     "speciesId": 1106,
@@ -166716,7 +167123,8 @@
     "nameKey": "Keldeo-Resolute",
     "siblings": [
       647
-    ]
+    ],
+    "baseForm": 647
   },
   "1107": {
     "speciesId": 1107,
@@ -166898,7 +167306,8 @@
     "nameKey": "Meloetta-Pirouette",
     "siblings": [
       648
-    ]
+    ],
+    "baseForm": 648
   },
   "1108": {
     "speciesId": 1108,
@@ -167063,7 +167472,8 @@
       1109,
       1110,
       1111
-    ]
+    ],
+    "baseForm": 649
   },
   "1109": {
     "speciesId": 1109,
@@ -167228,7 +167638,8 @@
       1108,
       1110,
       1111
-    ]
+    ],
+    "baseForm": 649
   },
   "1110": {
     "speciesId": 1110,
@@ -167393,7 +167804,8 @@
       1108,
       1109,
       1111
-    ]
+    ],
+    "baseForm": 649
   },
   "1111": {
     "speciesId": 1111,
@@ -167558,7 +167970,8 @@
       1108,
       1109,
       1110
-    ]
+    ],
+    "baseForm": 649
   },
   "1112": {
     "speciesId": 1112,
@@ -167737,7 +168150,8 @@
     "siblings": [
       658,
       1113
-    ]
+    ],
+    "baseForm": 658
   },
   "1113": {
     "speciesId": 1113,
@@ -167916,7 +168330,8 @@
     "siblings": [
       658,
       1112
-    ]
+    ],
+    "baseForm": 658
   },
   "1114": {
     "speciesId": 1114,
@@ -168085,7 +168500,8 @@
       1130,
       1131,
       1132
-    ]
+    ],
+    "baseForm": 666
   },
   "1115": {
     "speciesId": 1115,
@@ -168254,7 +168670,8 @@
       1130,
       1131,
       1132
-    ]
+    ],
+    "baseForm": 666
   },
   "1116": {
     "speciesId": 1116,
@@ -168423,7 +168840,8 @@
       1130,
       1131,
       1132
-    ]
+    ],
+    "baseForm": 666
   },
   "1117": {
     "speciesId": 1117,
@@ -168592,7 +169010,8 @@
       1130,
       1131,
       1132
-    ]
+    ],
+    "baseForm": 666
   },
   "1118": {
     "speciesId": 1118,
@@ -168761,7 +169180,8 @@
       1130,
       1131,
       1132
-    ]
+    ],
+    "baseForm": 666
   },
   "1119": {
     "speciesId": 1119,
@@ -168930,7 +169350,8 @@
       1130,
       1131,
       1132
-    ]
+    ],
+    "baseForm": 666
   },
   "1120": {
     "speciesId": 1120,
@@ -169099,7 +169520,8 @@
       1130,
       1131,
       1132
-    ]
+    ],
+    "baseForm": 666
   },
   "1121": {
     "speciesId": 1121,
@@ -169268,7 +169690,8 @@
       1130,
       1131,
       1132
-    ]
+    ],
+    "baseForm": 666
   },
   "1122": {
     "speciesId": 1122,
@@ -169437,7 +169860,8 @@
       1130,
       1131,
       1132
-    ]
+    ],
+    "baseForm": 666
   },
   "1123": {
     "speciesId": 1123,
@@ -169606,7 +170030,8 @@
       1130,
       1131,
       1132
-    ]
+    ],
+    "baseForm": 666
   },
   "1124": {
     "speciesId": 1124,
@@ -169775,7 +170200,8 @@
       1130,
       1131,
       1132
-    ]
+    ],
+    "baseForm": 666
   },
   "1125": {
     "speciesId": 1125,
@@ -169944,7 +170370,8 @@
       1130,
       1131,
       1132
-    ]
+    ],
+    "baseForm": 666
   },
   "1126": {
     "speciesId": 1126,
@@ -170113,7 +170540,8 @@
       1130,
       1131,
       1132
-    ]
+    ],
+    "baseForm": 666
   },
   "1127": {
     "speciesId": 1127,
@@ -170282,7 +170710,8 @@
       1130,
       1131,
       1132
-    ]
+    ],
+    "baseForm": 666
   },
   "1128": {
     "speciesId": 1128,
@@ -170451,7 +170880,8 @@
       1130,
       1131,
       1132
-    ]
+    ],
+    "baseForm": 666
   },
   "1129": {
     "speciesId": 1129,
@@ -170620,7 +171050,8 @@
       1130,
       1131,
       1132
-    ]
+    ],
+    "baseForm": 666
   },
   "1130": {
     "speciesId": 1130,
@@ -170789,7 +171220,8 @@
       1129,
       1131,
       1132
-    ]
+    ],
+    "baseForm": 666
   },
   "1131": {
     "speciesId": 1131,
@@ -170958,7 +171390,8 @@
       1129,
       1130,
       1132
-    ]
+    ],
+    "baseForm": 666
   },
   "1132": {
     "speciesId": 1132,
@@ -171127,7 +171560,8 @@
       1129,
       1130,
       1131
-    ]
+    ],
+    "baseForm": 666
   },
   "1133": {
     "speciesId": 1133,
@@ -171264,7 +171698,8 @@
       1134,
       1135,
       1136
-    ]
+    ],
+    "baseForm": 669
   },
   "1134": {
     "speciesId": 1134,
@@ -171401,7 +171836,8 @@
       1133,
       1135,
       1136
-    ]
+    ],
+    "baseForm": 669
   },
   "1135": {
     "speciesId": 1135,
@@ -171538,7 +171974,8 @@
       1133,
       1134,
       1136
-    ]
+    ],
+    "baseForm": 669
   },
   "1136": {
     "speciesId": 1136,
@@ -171675,7 +172112,8 @@
       1133,
       1134,
       1135
-    ]
+    ],
+    "baseForm": 669
   },
   "1137": {
     "speciesId": 1137,
@@ -171816,7 +172254,8 @@
       1139,
       1140,
       1141
-    ]
+    ],
+    "baseForm": 670
   },
   "1138": {
     "speciesId": 1138,
@@ -171957,7 +172396,8 @@
       1139,
       1140,
       1141
-    ]
+    ],
+    "baseForm": 670
   },
   "1139": {
     "speciesId": 1139,
@@ -172098,7 +172538,8 @@
       1138,
       1140,
       1141
-    ]
+    ],
+    "baseForm": 670
   },
   "1140": {
     "speciesId": 1140,
@@ -172239,7 +172680,8 @@
       1138,
       1139,
       1141
-    ]
+    ],
+    "baseForm": 670
   },
   "1141": {
     "speciesId": 1141,
@@ -172370,7 +172812,8 @@
       1138,
       1139,
       1140
-    ]
+    ],
+    "baseForm": 670
   },
   "1142": {
     "speciesId": 1142,
@@ -172495,7 +172938,8 @@
       1143,
       1144,
       1145
-    ]
+    ],
+    "baseForm": 671
   },
   "1143": {
     "speciesId": 1143,
@@ -172620,7 +173064,8 @@
       1142,
       1144,
       1145
-    ]
+    ],
+    "baseForm": 671
   },
   "1144": {
     "speciesId": 1144,
@@ -172745,7 +173190,8 @@
       1142,
       1143,
       1145
-    ]
+    ],
+    "baseForm": 671
   },
   "1145": {
     "speciesId": 1145,
@@ -172870,7 +173316,8 @@
       1142,
       1143,
       1144
-    ]
+    ],
+    "baseForm": 671
   },
   "1146": {
     "speciesId": 1146,
@@ -173008,7 +173455,8 @@
       1152,
       1153,
       1154
-    ]
+    ],
+    "baseForm": 676
   },
   "1147": {
     "speciesId": 1147,
@@ -173146,7 +173594,8 @@
       1152,
       1153,
       1154
-    ]
+    ],
+    "baseForm": 676
   },
   "1148": {
     "speciesId": 1148,
@@ -173284,7 +173733,8 @@
       1152,
       1153,
       1154
-    ]
+    ],
+    "baseForm": 676
   },
   "1149": {
     "speciesId": 1149,
@@ -173422,7 +173872,8 @@
       1152,
       1153,
       1154
-    ]
+    ],
+    "baseForm": 676
   },
   "1150": {
     "speciesId": 1150,
@@ -173560,7 +174011,8 @@
       1152,
       1153,
       1154
-    ]
+    ],
+    "baseForm": 676
   },
   "1151": {
     "speciesId": 1151,
@@ -173698,7 +174150,8 @@
       1152,
       1153,
       1154
-    ]
+    ],
+    "baseForm": 676
   },
   "1152": {
     "speciesId": 1152,
@@ -173836,7 +174289,8 @@
       1151,
       1153,
       1154
-    ]
+    ],
+    "baseForm": 676
   },
   "1153": {
     "speciesId": 1153,
@@ -173974,7 +174428,8 @@
       1151,
       1152,
       1154
-    ]
+    ],
+    "baseForm": 676
   },
   "1154": {
     "speciesId": 1154,
@@ -174112,7 +174567,8 @@
       1151,
       1152,
       1153
-    ]
+    ],
+    "baseForm": 676
   },
   "1155": {
     "speciesId": 1155,
@@ -174282,7 +174738,8 @@
     "nameKey": "Meowstic-F",
     "siblings": [
       678
-    ]
+    ],
+    "baseForm": 678
   },
   "1156": {
     "speciesId": 1156,
@@ -174413,7 +174870,8 @@
     "nameKey": "Aegislash-Blade",
     "siblings": [
       681
-    ]
+    ],
+    "baseForm": 681
   },
   "1157": {
     "speciesId": 1157,
@@ -174573,7 +175031,8 @@
       710,
       1158,
       1159
-    ]
+    ],
+    "baseForm": 710
   },
   "1158": {
     "speciesId": 1158,
@@ -174733,7 +175192,8 @@
       710,
       1157,
       1159
-    ]
+    ],
+    "baseForm": 710
   },
   "1159": {
     "speciesId": 1159,
@@ -174893,7 +175353,8 @@
       710,
       1157,
       1158
-    ]
+    ],
+    "baseForm": 710
   },
   "1160": {
     "speciesId": 1160,
@@ -175062,7 +175523,8 @@
       711,
       1161,
       1162
-    ]
+    ],
+    "baseForm": 711
   },
   "1161": {
     "speciesId": 1161,
@@ -175231,7 +175693,8 @@
       711,
       1160,
       1162
-    ]
+    ],
+    "baseForm": 711
   },
   "1162": {
     "speciesId": 1162,
@@ -175400,7 +175863,8 @@
       711,
       1160,
       1161
-    ]
+    ],
+    "baseForm": 711
   },
   "1163": {
     "speciesId": 1163,
@@ -175549,7 +176013,8 @@
     "nameKey": "Xerneas-Active",
     "siblings": [
       716
-    ]
+    ],
+    "baseForm": 716
   },
   "1164": {
     "speciesId": 1164,
@@ -175702,7 +176167,8 @@
       1165,
       1166,
       1167
-    ]
+    ],
+    "baseForm": 718
   },
   "1165": {
     "speciesId": 1165,
@@ -175855,7 +176321,8 @@
       1164,
       1166,
       1167
-    ]
+    ],
+    "baseForm": 718
   },
   "1166": {
     "speciesId": 1166,
@@ -176008,7 +176475,8 @@
       1164,
       1165,
       1167
-    ]
+    ],
+    "baseForm": 718
   },
   "1167": {
     "speciesId": 1167,
@@ -176161,7 +176629,8 @@
       1164,
       1165,
       1166
-    ]
+    ],
+    "baseForm": 718
   },
   "1168": {
     "speciesId": 1168,
@@ -176321,7 +176790,8 @@
     "nameKey": "Hoopa-Unbound",
     "siblings": [
       720
-    ]
+    ],
+    "baseForm": 720
   },
   "1169": {
     "speciesId": 1169,
@@ -176466,7 +176936,8 @@
       741,
       1170,
       1171
-    ]
+    ],
+    "baseForm": 741
   },
   "1170": {
     "speciesId": 1170,
@@ -176611,7 +177082,8 @@
       741,
       1169,
       1171
-    ]
+    ],
+    "baseForm": 741
   },
   "1171": {
     "speciesId": 1171,
@@ -176756,7 +177228,8 @@
       741,
       1169,
       1170
-    ]
+    ],
+    "baseForm": 741
   },
   "1172": {
     "speciesId": 1172,
@@ -176898,7 +177371,8 @@
     "nameKey": "Rockruff-Own-Tempo",
     "siblings": [
       744
-    ]
+    ],
+    "baseForm": 744
   },
   "1173": {
     "speciesId": 1173,
@@ -177081,7 +177555,8 @@
     "siblings": [
       745,
       1174
-    ]
+    ],
+    "baseForm": 745
   },
   "1174": {
     "speciesId": 1174,
@@ -177247,7 +177722,8 @@
     "siblings": [
       745,
       1173
-    ]
+    ],
+    "baseForm": 745
   },
   "1175": {
     "speciesId": 1175,
@@ -177377,7 +177853,8 @@
     "nameKey": "Wishiwashi-School",
     "siblings": [
       746
-    ]
+    ],
+    "baseForm": 746
   },
   "1176": {
     "speciesId": 1176,
@@ -177592,7 +178069,8 @@
       1190,
       1191,
       1192
-    ]
+    ],
+    "baseForm": 773
   },
   "1177": {
     "speciesId": 1177,
@@ -177807,7 +178285,8 @@
       1190,
       1191,
       1192
-    ]
+    ],
+    "baseForm": 773
   },
   "1178": {
     "speciesId": 1178,
@@ -178022,7 +178501,8 @@
       1190,
       1191,
       1192
-    ]
+    ],
+    "baseForm": 773
   },
   "1179": {
     "speciesId": 1179,
@@ -178237,7 +178717,8 @@
       1190,
       1191,
       1192
-    ]
+    ],
+    "baseForm": 773
   },
   "1180": {
     "speciesId": 1180,
@@ -178452,7 +178933,8 @@
       1190,
       1191,
       1192
-    ]
+    ],
+    "baseForm": 773
   },
   "1181": {
     "speciesId": 1181,
@@ -178667,7 +179149,8 @@
       1190,
       1191,
       1192
-    ]
+    ],
+    "baseForm": 773
   },
   "1182": {
     "speciesId": 1182,
@@ -178882,7 +179365,8 @@
       1190,
       1191,
       1192
-    ]
+    ],
+    "baseForm": 773
   },
   "1183": {
     "speciesId": 1183,
@@ -179097,7 +179581,8 @@
       1190,
       1191,
       1192
-    ]
+    ],
+    "baseForm": 773
   },
   "1184": {
     "speciesId": 1184,
@@ -179312,7 +179797,8 @@
       1190,
       1191,
       1192
-    ]
+    ],
+    "baseForm": 773
   },
   "1185": {
     "speciesId": 1185,
@@ -179527,7 +180013,8 @@
       1190,
       1191,
       1192
-    ]
+    ],
+    "baseForm": 773
   },
   "1186": {
     "speciesId": 1186,
@@ -179742,7 +180229,8 @@
       1190,
       1191,
       1192
-    ]
+    ],
+    "baseForm": 773
   },
   "1187": {
     "speciesId": 1187,
@@ -179957,7 +180445,8 @@
       1190,
       1191,
       1192
-    ]
+    ],
+    "baseForm": 773
   },
   "1188": {
     "speciesId": 1188,
@@ -180172,7 +180661,8 @@
       1190,
       1191,
       1192
-    ]
+    ],
+    "baseForm": 773
   },
   "1189": {
     "speciesId": 1189,
@@ -180387,7 +180877,8 @@
       1190,
       1191,
       1192
-    ]
+    ],
+    "baseForm": 773
   },
   "1190": {
     "speciesId": 1190,
@@ -180602,7 +181093,8 @@
       1189,
       1191,
       1192
-    ]
+    ],
+    "baseForm": 773
   },
   "1191": {
     "speciesId": 1191,
@@ -180817,7 +181309,8 @@
       1189,
       1190,
       1192
-    ]
+    ],
+    "baseForm": 773
   },
   "1192": {
     "speciesId": 1192,
@@ -181032,7 +181525,8 @@
       1189,
       1190,
       1191
-    ]
+    ],
+    "baseForm": 773
   },
   "1193": {
     "speciesId": 1193,
@@ -181181,7 +181675,8 @@
       1203,
       1204,
       1205
-    ]
+    ],
+    "baseForm": 774
   },
   "1194": {
     "speciesId": 1194,
@@ -181330,7 +181825,8 @@
       1203,
       1204,
       1205
-    ]
+    ],
+    "baseForm": 774
   },
   "1195": {
     "speciesId": 1195,
@@ -181479,7 +181975,8 @@
       1203,
       1204,
       1205
-    ]
+    ],
+    "baseForm": 774
   },
   "1196": {
     "speciesId": 1196,
@@ -181628,7 +182125,8 @@
       1203,
       1204,
       1205
-    ]
+    ],
+    "baseForm": 774
   },
   "1197": {
     "speciesId": 1197,
@@ -181777,7 +182275,8 @@
       1203,
       1204,
       1205
-    ]
+    ],
+    "baseForm": 774
   },
   "1198": {
     "speciesId": 1198,
@@ -181926,7 +182425,8 @@
       1203,
       1204,
       1205
-    ]
+    ],
+    "baseForm": 774
   },
   "1199": {
     "speciesId": 1199,
@@ -182075,7 +182575,8 @@
       1203,
       1204,
       1205
-    ]
+    ],
+    "baseForm": 774
   },
   "1200": {
     "speciesId": 1200,
@@ -182224,7 +182725,8 @@
       1203,
       1204,
       1205
-    ]
+    ],
+    "baseForm": 774
   },
   "1201": {
     "speciesId": 1201,
@@ -182373,7 +182875,8 @@
       1203,
       1204,
       1205
-    ]
+    ],
+    "baseForm": 774
   },
   "1202": {
     "speciesId": 1202,
@@ -182522,7 +183025,8 @@
       1203,
       1204,
       1205
-    ]
+    ],
+    "baseForm": 774
   },
   "1203": {
     "speciesId": 1203,
@@ -182671,7 +183175,8 @@
       1202,
       1204,
       1205
-    ]
+    ],
+    "baseForm": 774
   },
   "1204": {
     "speciesId": 1204,
@@ -182820,7 +183325,8 @@
       1202,
       1203,
       1205
-    ]
+    ],
+    "baseForm": 774
   },
   "1205": {
     "speciesId": 1205,
@@ -182969,7 +183475,8 @@
       1202,
       1203,
       1204
-    ]
+    ],
+    "baseForm": 774
   },
   "1206": {
     "speciesId": 1206,
@@ -183118,7 +183625,8 @@
       778,
       1481,
       1533
-    ]
+    ],
+    "baseForm": 778
   },
   "1207": {
     "speciesId": 1207,
@@ -183292,7 +183800,8 @@
       800,
       1208,
       1209
-    ]
+    ],
+    "baseForm": 800
   },
   "1208": {
     "speciesId": 1208,
@@ -183466,7 +183975,8 @@
       800,
       1207,
       1209
-    ]
+    ],
+    "baseForm": 800
   },
   "1209": {
     "speciesId": 1209,
@@ -183642,7 +184152,8 @@
       800,
       1207,
       1208
-    ]
+    ],
+    "baseForm": 800
   },
   "1210": {
     "speciesId": 1210,
@@ -183790,7 +184301,8 @@
     "nameKey": "Magearna-Original",
     "siblings": [
       801
-    ]
+    ],
+    "baseForm": 801
   },
   "1211": {
     "speciesId": 1211,
@@ -183926,7 +184438,8 @@
     "siblings": [
       845,
       1212
-    ]
+    ],
+    "baseForm": 845
   },
   "1212": {
     "speciesId": 1212,
@@ -184062,7 +184575,8 @@
     "siblings": [
       845,
       1211
-    ]
+    ],
+    "baseForm": 845
   },
   "1213": {
     "speciesId": 1213,
@@ -184243,7 +184757,8 @@
     "siblings": [
       849,
       1518
-    ]
+    ],
+    "baseForm": 849
   },
   "1214": {
     "speciesId": 1214,
@@ -184365,7 +184880,8 @@
     "nameKey": "Sinistea-Antique",
     "siblings": [
       854
-    ]
+    ],
+    "baseForm": 854
   },
   "1215": {
     "speciesId": 1215,
@@ -184499,7 +185015,8 @@
     "nameKey": "Polteageist-Antique",
     "siblings": [
       855
-    ]
+    ],
+    "baseForm": 855
   },
   "1216": {
     "speciesId": 1216,
@@ -184688,7 +185205,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1217": {
     "speciesId": 1217,
@@ -184877,7 +185395,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1218": {
     "speciesId": 1218,
@@ -185066,7 +185585,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1219": {
     "speciesId": 1219,
@@ -185255,7 +185775,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1220": {
     "speciesId": 1220,
@@ -185444,7 +185965,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1221": {
     "speciesId": 1221,
@@ -185633,7 +186155,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1222": {
     "speciesId": 1222,
@@ -185822,7 +186345,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1223": {
     "speciesId": 1223,
@@ -186011,7 +186535,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1224": {
     "speciesId": 1224,
@@ -186139,7 +186664,8 @@
     "nameKey": "Eiscue-Noice",
     "siblings": [
       875
-    ]
+    ],
+    "baseForm": 875
   },
   "1225": {
     "speciesId": 1225,
@@ -186266,7 +186792,8 @@
     "nameKey": "Indeedee-F",
     "siblings": [
       876
-    ]
+    ],
+    "baseForm": 876
   },
   "1226": {
     "speciesId": 1226,
@@ -186413,7 +186940,8 @@
     "nameKey": "Morpeko-Hangry",
     "siblings": [
       877
-    ]
+    ],
+    "baseForm": 877
   },
   "1227": {
     "speciesId": 1227,
@@ -186532,7 +187060,8 @@
     "nameKey": "Zacian-Crowned",
     "siblings": [
       888
-    ]
+    ],
+    "baseForm": 888
   },
   "1228": {
     "speciesId": 1228,
@@ -186656,7 +187185,8 @@
     "nameKey": "Zamazenta-Crowned",
     "siblings": [
       889
-    ]
+    ],
+    "baseForm": 889
   },
   "1229": {
     "speciesId": 1229,
@@ -186789,7 +187319,8 @@
     "nameKey": "Eternatus-Eternamax",
     "siblings": [
       890
-    ]
+    ],
+    "baseForm": 890
   },
   "1230": {
     "speciesId": 1230,
@@ -186946,7 +187477,8 @@
       892,
       1525,
       1526
-    ]
+    ],
+    "baseForm": 892
   },
   "1231": {
     "speciesId": 1231,
@@ -187107,7 +187639,8 @@
     "nameKey": "Zarude-Dada",
     "siblings": [
       893
-    ]
+    ],
+    "baseForm": 893
   },
   "1232": {
     "speciesId": 1232,
@@ -187285,7 +187818,8 @@
     "siblings": [
       898,
       1233
-    ]
+    ],
+    "baseForm": 898
   },
   "1233": {
     "speciesId": 1233,
@@ -187458,7 +187992,8 @@
     "siblings": [
       898,
       1232
-    ]
+    ],
+    "baseForm": 898
   },
   "1234": {
     "speciesId": 1234,
@@ -187640,7 +188175,8 @@
     "nameKey": "Basculegion-F",
     "siblings": [
       902
-    ]
+    ],
+    "baseForm": 902
   },
   "1235": {
     "speciesId": 1235,
@@ -187829,7 +188365,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1236": {
     "speciesId": 1236,
@@ -188018,7 +188555,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1237": {
     "speciesId": 1237,
@@ -188207,7 +188745,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1238": {
     "speciesId": 1238,
@@ -188396,7 +188935,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1239": {
     "speciesId": 1239,
@@ -188585,7 +189125,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1240": {
     "speciesId": 1240,
@@ -188774,7 +189315,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1241": {
     "speciesId": 1241,
@@ -188963,7 +189505,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1242": {
     "speciesId": 1242,
@@ -189152,7 +189695,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1243": {
     "speciesId": 1243,
@@ -189341,7 +189885,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1244": {
     "speciesId": 1244,
@@ -189530,7 +190075,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1245": {
     "speciesId": 1245,
@@ -189719,7 +190265,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1246": {
     "speciesId": 1246,
@@ -189907,7 +190454,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1247": {
     "speciesId": 1247,
@@ -190095,7 +190643,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1248": {
     "speciesId": 1248,
@@ -190283,7 +190832,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1249": {
     "speciesId": 1249,
@@ -190471,7 +191021,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1250": {
     "speciesId": 1250,
@@ -190659,7 +191210,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1251": {
     "speciesId": 1251,
@@ -190847,7 +191399,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1252": {
     "speciesId": 1252,
@@ -191035,7 +191588,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1253": {
     "speciesId": 1253,
@@ -191223,7 +191777,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1254": {
     "speciesId": 1254,
@@ -191411,7 +191966,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1255": {
     "speciesId": 1255,
@@ -191599,7 +192155,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1256": {
     "speciesId": 1256,
@@ -191787,7 +192344,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1257": {
     "speciesId": 1257,
@@ -191975,7 +192533,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1258": {
     "speciesId": 1258,
@@ -192163,7 +192722,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1259": {
     "speciesId": 1259,
@@ -192351,7 +192911,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1260": {
     "speciesId": 1260,
@@ -192539,7 +193100,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1261": {
     "speciesId": 1261,
@@ -192727,7 +193289,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1262": {
     "speciesId": 1262,
@@ -192915,7 +193478,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1263": {
     "speciesId": 1263,
@@ -193103,7 +193667,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1264": {
     "speciesId": 1264,
@@ -193291,7 +193856,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1265": {
     "speciesId": 1265,
@@ -193479,7 +194045,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1266": {
     "speciesId": 1266,
@@ -193667,7 +194234,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1267": {
     "speciesId": 1267,
@@ -193855,7 +194423,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1268": {
     "speciesId": 1268,
@@ -194043,7 +194612,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1269": {
     "speciesId": 1269,
@@ -194231,7 +194801,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1270": {
     "speciesId": 1270,
@@ -194419,7 +194990,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1271": {
     "speciesId": 1271,
@@ -194607,7 +195179,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1272": {
     "speciesId": 1272,
@@ -194795,7 +195368,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1273": {
     "speciesId": 1273,
@@ -194983,7 +195557,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1274": {
     "speciesId": 1274,
@@ -195171,7 +195746,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1275": {
     "speciesId": 1275,
@@ -195359,7 +195935,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1276": {
     "speciesId": 1276,
@@ -195547,7 +196124,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1277": {
     "speciesId": 1277,
@@ -195735,7 +196313,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1278": {
     "speciesId": 1278,
@@ -195923,7 +196502,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1279": {
     "speciesId": 1279,
@@ -196111,7 +196691,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1280": {
     "speciesId": 1280,
@@ -196299,7 +196880,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1281": {
     "speciesId": 1281,
@@ -196487,7 +197069,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1282": {
     "speciesId": 1282,
@@ -196675,7 +197258,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1283": {
     "speciesId": 1283,
@@ -196863,7 +197447,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1284": {
     "speciesId": 1284,
@@ -197051,7 +197636,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1285": {
     "speciesId": 1285,
@@ -197239,7 +197825,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1286": {
     "speciesId": 1286,
@@ -197427,7 +198014,8 @@
       1287,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1287": {
     "speciesId": 1287,
@@ -197615,7 +198203,8 @@
       1286,
       1288,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1288": {
     "speciesId": 1288,
@@ -197803,7 +198392,8 @@
       1286,
       1287,
       1522
-    ]
+    ],
+    "baseForm": 869
   },
   "1289": {
     "speciesId": 1289,
@@ -199259,7 +199849,8 @@
     "nameKey": "Oinkologne-M",
     "siblings": [
       1300
-    ]
+    ],
+    "baseForm": 1299
   },
   "1300": {
     "speciesId": 1300,
@@ -199393,7 +199984,8 @@
     "nameKey": "Oinkologne-F",
     "siblings": [
       1299
-    ]
+    ],
+    "baseForm": 1299
   },
   "1301": {
     "speciesId": 1301,
@@ -200646,7 +201238,8 @@
     "nameKey": "Maushold-Three",
     "siblings": [
       1310
-    ]
+    ],
+    "baseForm": 1309
   },
   "1310": {
     "speciesId": 1310,
@@ -200777,7 +201370,8 @@
     "nameKey": "Maushold-Four",
     "siblings": [
       1309
-    ]
+    ],
+    "baseForm": 1309
   },
   "1311": {
     "speciesId": 1311,
@@ -201567,7 +202161,8 @@
       1317,
       1318,
       1319
-    ]
+    ],
+    "baseForm": 1316
   },
   "1317": {
     "speciesId": 1317,
@@ -201709,7 +202304,8 @@
       1316,
       1318,
       1319
-    ]
+    ],
+    "baseForm": 1316
   },
   "1318": {
     "speciesId": 1318,
@@ -201851,7 +202447,8 @@
       1316,
       1317,
       1319
-    ]
+    ],
+    "baseForm": 1316
   },
   "1319": {
     "speciesId": 1319,
@@ -201993,7 +202590,8 @@
       1316,
       1317,
       1318
-    ]
+    ],
+    "baseForm": 1316
   },
   "1320": {
     "speciesId": 1320,
@@ -206557,7 +207155,8 @@
     "nameKey": "Palafin-Zero",
     "siblings": [
       1353
-    ]
+    ],
+    "baseForm": 1352
   },
   "1353": {
     "speciesId": 1353,
@@ -206713,7 +207312,8 @@
     "nameKey": "Palafin-Hero",
     "siblings": [
       1352
-    ]
+    ],
+    "baseForm": 1352
   },
   "1354": {
     "speciesId": 1354,
@@ -208648,7 +209248,8 @@
     "siblings": [
       1368,
       1369
-    ]
+    ],
+    "baseForm": 1367
   },
   "1368": {
     "speciesId": 1368,
@@ -208770,7 +209371,8 @@
     "siblings": [
       1367,
       1369
-    ]
+    ],
+    "baseForm": 1367
   },
   "1369": {
     "speciesId": 1369,
@@ -208892,7 +209494,8 @@
     "siblings": [
       1367,
       1368
-    ]
+    ],
+    "baseForm": 1367
   },
   "1370": {
     "speciesId": 1370,
@@ -209555,7 +210158,8 @@
     "nameKey": "Dudunsparce-Two-Segment",
     "siblings": [
       1374
-    ]
+    ],
+    "baseForm": 1373
   },
   "1374": {
     "speciesId": 1374,
@@ -209758,7 +210362,8 @@
     "nameKey": "Dudunsparce-Three-Segment",
     "siblings": [
       1373
-    ]
+    ],
+    "baseForm": 1373
   },
   "1375": {
     "speciesId": 1375,
@@ -212172,7 +212777,8 @@
     "nameKey": "Gimmighoul-Chest",
     "siblings": [
       1392
-    ]
+    ],
+    "baseForm": 1391
   },
   "1392": {
     "speciesId": 1392,
@@ -212245,7 +212851,8 @@
     "nameKey": "Gimmighoul-Roaming",
     "siblings": [
       1391
-    ]
+    ],
+    "baseForm": 1391
   },
   "1393": {
     "speciesId": 1393,
@@ -213676,7 +214283,8 @@
       128,
       1403,
       1404
-    ]
+    ],
+    "baseForm": 128
   },
   "1403": {
     "speciesId": 1403,
@@ -213827,7 +214435,8 @@
       128,
       1402,
       1404
-    ]
+    ],
+    "baseForm": 128
   },
   "1404": {
     "speciesId": 1404,
@@ -213973,7 +214582,8 @@
       128,
       1402,
       1403
-    ]
+    ],
+    "baseForm": 128
   },
   "1405": {
     "speciesId": 1405,
@@ -214119,7 +214729,8 @@
     "nameKey": "Wooper-Paldea",
     "siblings": [
       194
-    ]
+    ],
+    "baseForm": 194
   },
   "1406": {
     "speciesId": 1406,
@@ -214671,7 +215282,8 @@
     "nameKey": "Poltchageist",
     "siblings": [
       1410
-    ]
+    ],
+    "baseForm": 1410
   },
   "1410": {
     "speciesId": 1410,
@@ -214802,7 +215414,8 @@
     "nameKey": "Poltchageist",
     "siblings": [
       1409
-    ]
+    ],
+    "baseForm": 1410
   },
   "1411": {
     "speciesId": 1411,
@@ -214935,7 +215548,8 @@
     "nameKey": "Sinistcha",
     "siblings": [
       1412
-    ]
+    ],
+    "baseForm": 1412
   },
   "1412": {
     "speciesId": 1412,
@@ -215068,7 +215682,8 @@
     "nameKey": "Sinistcha",
     "siblings": [
       1411
-    ]
+    ],
+    "baseForm": 1412
   },
   "1413": {
     "speciesId": 1413,
@@ -215636,7 +216251,8 @@
       1421,
       1422,
       1423
-    ]
+    ],
+    "baseForm": 1416
   },
   "1417": {
     "speciesId": 1417,
@@ -215796,7 +216412,8 @@
       1421,
       1422,
       1423
-    ]
+    ],
+    "baseForm": 1416
   },
   "1418": {
     "speciesId": 1418,
@@ -215956,7 +216573,8 @@
       1421,
       1422,
       1423
-    ]
+    ],
+    "baseForm": 1416
   },
   "1419": {
     "speciesId": 1419,
@@ -216116,7 +216734,8 @@
       1421,
       1422,
       1423
-    ]
+    ],
+    "baseForm": 1416
   },
   "1420": {
     "speciesId": 1420,
@@ -216277,7 +216896,8 @@
       1421,
       1422,
       1423
-    ]
+    ],
+    "baseForm": 1416
   },
   "1421": {
     "speciesId": 1421,
@@ -216439,7 +217059,8 @@
       1420,
       1422,
       1423
-    ]
+    ],
+    "baseForm": 1416
   },
   "1422": {
     "speciesId": 1422,
@@ -216601,7 +217222,8 @@
       1420,
       1421,
       1423
-    ]
+    ],
+    "baseForm": 1416
   },
   "1423": {
     "speciesId": 1423,
@@ -216763,7 +217385,8 @@
       1420,
       1421,
       1422
-    ]
+    ],
+    "baseForm": 1416
   },
   "1424": {
     "speciesId": 1424,
@@ -216931,7 +217554,8 @@
     "nameKey": "Ursaluna-Bloodmoon",
     "siblings": [
       901
-    ]
+    ],
+    "baseForm": 901
   },
   "1425": {
     "speciesId": 1425,
@@ -217974,7 +218598,8 @@
     "siblings": [
       1432,
       1433
-    ]
+    ],
+    "baseForm": 1431
   },
   "1432": {
     "speciesId": 1432,
@@ -218107,7 +218732,8 @@
     "siblings": [
       1431,
       1433
-    ]
+    ],
+    "baseForm": 1431
   },
   "1433": {
     "speciesId": 1433,
@@ -218242,7 +218868,8 @@
     "siblings": [
       1431,
       1432
-    ]
+    ],
+    "baseForm": 1431
   },
   "1434": {
     "speciesId": 1434,
@@ -218385,7 +219012,10 @@
       0,
       0
     ],
-    "heldItems": [0,0],
+    "heldItems": [
+      0,
+      0
+    ],
     "levelUpMoves": [],
     "tmMoves": [],
     "eggMoves": null,
@@ -218529,7 +219159,8 @@
     "siblings": [
       414,
       1437
-    ]
+    ],
+    "baseForm": 414
   },
   "1437": {
     "speciesId": 1437,
@@ -218665,7 +219296,8 @@
     "siblings": [
       414,
       1436
-    ]
+    ],
+    "baseForm": 414
   },
   "1438": {
     "speciesId": 1438,
@@ -218743,7 +219375,8 @@
       1454,
       1455,
       1456
-    ]
+    ],
+    "baseForm": 664
   },
   "1439": {
     "speciesId": 1439,
@@ -218821,7 +219454,8 @@
       1454,
       1455,
       1456
-    ]
+    ],
+    "baseForm": 664
   },
   "1440": {
     "speciesId": 1440,
@@ -218899,7 +219533,8 @@
       1454,
       1455,
       1456
-    ]
+    ],
+    "baseForm": 664
   },
   "1441": {
     "speciesId": 1441,
@@ -218977,7 +219612,8 @@
       1454,
       1455,
       1456
-    ]
+    ],
+    "baseForm": 664
   },
   "1442": {
     "speciesId": 1442,
@@ -219055,7 +219691,8 @@
       1454,
       1455,
       1456
-    ]
+    ],
+    "baseForm": 664
   },
   "1443": {
     "speciesId": 1443,
@@ -219133,7 +219770,8 @@
       1454,
       1455,
       1456
-    ]
+    ],
+    "baseForm": 664
   },
   "1444": {
     "speciesId": 1444,
@@ -219211,7 +219849,8 @@
       1454,
       1455,
       1456
-    ]
+    ],
+    "baseForm": 664
   },
   "1445": {
     "speciesId": 1445,
@@ -219289,7 +219928,8 @@
       1454,
       1455,
       1456
-    ]
+    ],
+    "baseForm": 664
   },
   "1446": {
     "speciesId": 1446,
@@ -219367,7 +220007,8 @@
       1454,
       1455,
       1456
-    ]
+    ],
+    "baseForm": 664
   },
   "1447": {
     "speciesId": 1447,
@@ -219445,7 +220086,8 @@
       1454,
       1455,
       1456
-    ]
+    ],
+    "baseForm": 664
   },
   "1448": {
     "speciesId": 1448,
@@ -219523,7 +220165,8 @@
       1454,
       1455,
       1456
-    ]
+    ],
+    "baseForm": 664
   },
   "1449": {
     "speciesId": 1449,
@@ -219601,7 +220244,8 @@
       1454,
       1455,
       1456
-    ]
+    ],
+    "baseForm": 664
   },
   "1450": {
     "speciesId": 1450,
@@ -219679,7 +220323,8 @@
       1454,
       1455,
       1456
-    ]
+    ],
+    "baseForm": 664
   },
   "1451": {
     "speciesId": 1451,
@@ -219757,7 +220402,8 @@
       1454,
       1455,
       1456
-    ]
+    ],
+    "baseForm": 664
   },
   "1452": {
     "speciesId": 1452,
@@ -219835,7 +220481,8 @@
       1454,
       1455,
       1456
-    ]
+    ],
+    "baseForm": 664
   },
   "1453": {
     "speciesId": 1453,
@@ -219913,7 +220560,8 @@
       1454,
       1455,
       1456
-    ]
+    ],
+    "baseForm": 664
   },
   "1454": {
     "speciesId": 1454,
@@ -219991,7 +220639,8 @@
       1453,
       1455,
       1456
-    ]
+    ],
+    "baseForm": 664
   },
   "1455": {
     "speciesId": 1455,
@@ -220069,7 +220718,8 @@
       1453,
       1454,
       1456
-    ]
+    ],
+    "baseForm": 664
   },
   "1456": {
     "speciesId": 1456,
@@ -220147,7 +220797,8 @@
       1453,
       1454,
       1455
-    ]
+    ],
+    "baseForm": 664
   },
   "1457": {
     "speciesId": 1457,
@@ -220223,7 +220874,8 @@
       1473,
       1474,
       1475
-    ]
+    ],
+    "baseForm": 665
   },
   "1458": {
     "speciesId": 1458,
@@ -220299,7 +220951,8 @@
       1473,
       1474,
       1475
-    ]
+    ],
+    "baseForm": 665
   },
   "1459": {
     "speciesId": 1459,
@@ -220375,7 +221028,8 @@
       1473,
       1474,
       1475
-    ]
+    ],
+    "baseForm": 665
   },
   "1460": {
     "speciesId": 1460,
@@ -220451,7 +221105,8 @@
       1473,
       1474,
       1475
-    ]
+    ],
+    "baseForm": 665
   },
   "1461": {
     "speciesId": 1461,
@@ -220527,7 +221182,8 @@
       1473,
       1474,
       1475
-    ]
+    ],
+    "baseForm": 665
   },
   "1462": {
     "speciesId": 1462,
@@ -220603,7 +221259,8 @@
       1473,
       1474,
       1475
-    ]
+    ],
+    "baseForm": 665
   },
   "1463": {
     "speciesId": 1463,
@@ -220679,7 +221336,8 @@
       1473,
       1474,
       1475
-    ]
+    ],
+    "baseForm": 665
   },
   "1464": {
     "speciesId": 1464,
@@ -220755,7 +221413,8 @@
       1473,
       1474,
       1475
-    ]
+    ],
+    "baseForm": 665
   },
   "1465": {
     "speciesId": 1465,
@@ -220831,7 +221490,8 @@
       1473,
       1474,
       1475
-    ]
+    ],
+    "baseForm": 665
   },
   "1466": {
     "speciesId": 1466,
@@ -220907,7 +221567,8 @@
       1473,
       1474,
       1475
-    ]
+    ],
+    "baseForm": 665
   },
   "1467": {
     "speciesId": 1467,
@@ -220983,7 +221644,8 @@
       1473,
       1474,
       1475
-    ]
+    ],
+    "baseForm": 665
   },
   "1468": {
     "speciesId": 1468,
@@ -221059,7 +221721,8 @@
       1473,
       1474,
       1475
-    ]
+    ],
+    "baseForm": 665
   },
   "1469": {
     "speciesId": 1469,
@@ -221135,7 +221798,8 @@
       1473,
       1474,
       1475
-    ]
+    ],
+    "baseForm": 665
   },
   "1470": {
     "speciesId": 1470,
@@ -221211,7 +221875,8 @@
       1473,
       1474,
       1475
-    ]
+    ],
+    "baseForm": 665
   },
   "1471": {
     "speciesId": 1471,
@@ -221287,7 +221952,8 @@
       1473,
       1474,
       1475
-    ]
+    ],
+    "baseForm": 665
   },
   "1472": {
     "speciesId": 1472,
@@ -221363,7 +222029,8 @@
       1473,
       1474,
       1475
-    ]
+    ],
+    "baseForm": 665
   },
   "1473": {
     "speciesId": 1473,
@@ -221439,7 +222106,8 @@
       1472,
       1474,
       1475
-    ]
+    ],
+    "baseForm": 665
   },
   "1474": {
     "speciesId": 1474,
@@ -221515,7 +222183,8 @@
       1472,
       1473,
       1475
-    ]
+    ],
+    "baseForm": 665
   },
   "1475": {
     "speciesId": 1475,
@@ -221591,7 +222260,8 @@
       1472,
       1473,
       1474
-    ]
+    ],
+    "baseForm": 665
   },
   "1476": {
     "speciesId": 1476,
@@ -221749,7 +222419,8 @@
     "siblings": [
       20,
       957
-    ]
+    ],
+    "baseForm": 20
   },
   "1477": {
     "speciesId": 1477,
@@ -221908,7 +222579,8 @@
     "nameKey": "Gumshoos-Totem",
     "siblings": [
       735
-    ]
+    ],
+    "baseForm": 735
   },
   "1478": {
     "speciesId": 1478,
@@ -222078,7 +222750,8 @@
     "nameKey": "Vikavolt-Totem",
     "siblings": [
       738
-    ]
+    ],
+    "baseForm": 738
   },
   "1479": {
     "speciesId": 1479,
@@ -222234,7 +222907,8 @@
     "nameKey": "Lurantis-Totem",
     "siblings": [
       754
-    ]
+    ],
+    "baseForm": 754
   },
   "1480": {
     "speciesId": 1480,
@@ -222408,7 +223082,8 @@
     "nameKey": "Salazzle-Totem",
     "siblings": [
       758
-    ]
+    ],
+    "baseForm": 758
   },
   "1481": {
     "speciesId": 1481,
@@ -222559,7 +223234,8 @@
       778,
       1206,
       1533
-    ]
+    ],
+    "baseForm": 778
   },
   "1482": {
     "speciesId": 1482,
@@ -222760,7 +223436,8 @@
     "nameKey": "Kommo-O-Totem",
     "siblings": [
       784
-    ]
+    ],
+    "baseForm": 784
   },
   "1483": {
     "speciesId": 1483,
@@ -222939,7 +223616,8 @@
     "siblings": [
       105,
       973
-    ]
+    ],
+    "baseForm": 105
   },
   "1484": {
     "speciesId": 1484,
@@ -223085,7 +223763,8 @@
     "nameKey": "Ribombee-Totem",
     "siblings": [
       743
-    ]
+    ],
+    "baseForm": 743
   },
   "1485": {
     "speciesId": 1485,
@@ -223234,7 +223913,8 @@
     "nameKey": "Araquanid-Totem",
     "siblings": [
       752
-    ]
+    ],
+    "baseForm": 752
   },
   "1486": {
     "speciesId": 1486,
@@ -223383,7 +224063,8 @@
     "nameKey": "Togedemaru-Totem",
     "siblings": [
       777
-    ]
+    ],
+    "baseForm": 777
   },
   "1487": {
     "speciesId": 1487,
@@ -223560,7 +224241,8 @@
       1021,
       1022,
       1498
-    ]
+    ],
+    "baseForm": 25
   },
   "1488": {
     "speciesId": 1488,
@@ -223704,7 +224386,8 @@
     "siblings": [
       133,
       1504
-    ]
+    ],
+    "baseForm": 133
   },
   "1489": {
     "speciesId": 1489,
@@ -223848,7 +224531,8 @@
     "nameKey": "Luxray-Mega",
     "siblings": [
       405
-    ]
+    ],
+    "baseForm": 405
   },
   "1490": {
     "speciesId": 1490,
@@ -224022,7 +224706,8 @@
     "nameKey": "Torterra-Mega",
     "siblings": [
       389
-    ]
+    ],
+    "baseForm": 389
   },
   "1491": {
     "speciesId": 1491,
@@ -224214,11 +224899,12 @@
       "mega"
     ],
     "formId": 1,
-    "nameKey": "Empoleon-Mega-o-Mega-d",
+    "nameKey": "Empoleon-Mega-O",
     "siblings": [
       395,
       1492
-    ]
+    ],
+    "baseForm": 395
   },
   "1492": {
     "speciesId": 1492,
@@ -224410,11 +225096,12 @@
       "mega"
     ],
     "formId": 2,
-    "nameKey": "Empoleon-Mega-o-Mega-d",
+    "nameKey": "Empoleon-Mega-D",
     "siblings": [
       395,
       1491
-    ]
+    ],
+    "baseForm": 395
   },
   "1493": {
     "speciesId": 1493,
@@ -224596,7 +225283,8 @@
     "nameKey": "Infernape-Mega",
     "siblings": [
       392
-    ]
+    ],
+    "baseForm": 392
   },
   "1494": {
     "speciesId": 1494,
@@ -224764,7 +225452,8 @@
     "siblings": [
       3,
       906
-    ]
+    ],
+    "baseForm": 3
   },
   "1495": {
     "speciesId": 1495,
@@ -224946,7 +225635,8 @@
     "siblings": [
       9,
       909
-    ]
+    ],
+    "baseForm": 9
   },
   "1496": {
     "speciesId": 1496,
@@ -225161,7 +225851,8 @@
       6,
       907,
       908
-    ]
+    ],
+    "baseForm": 6
   },
   "1497": {
     "speciesId": 1497,
@@ -225325,7 +226016,8 @@
     "nameKey": "Butterfree-Mega",
     "siblings": [
       12
-    ]
+    ],
+    "baseForm": 12
   },
   "1498": {
     "speciesId": 1498,
@@ -225504,7 +226196,8 @@
       1021,
       1022,
       1487
-    ]
+    ],
+    "baseForm": 25
   },
   "1499": {
     "speciesId": 1499,
@@ -225669,7 +226362,8 @@
       52,
       965,
       974
-    ]
+    ],
+    "baseForm": 52
   },
   "1500": {
     "speciesId": 1500,
@@ -225852,7 +226546,8 @@
     "nameKey": "Machamp-Mega",
     "siblings": [
       68
-    ]
+    ],
+    "baseForm": 68
   },
   "1501": {
     "speciesId": 1501,
@@ -226017,7 +226712,8 @@
     "siblings": [
       94,
       914
-    ]
+    ],
+    "baseForm": 94
   },
   "1502": {
     "speciesId": 1502,
@@ -226177,7 +226873,8 @@
     "nameKey": "Kingler-Mega",
     "siblings": [
       99
-    ]
+    ],
+    "baseForm": 99
   },
   "1503": {
     "speciesId": 1503,
@@ -226357,7 +227054,8 @@
     "nameKey": "Lapras-Mega",
     "siblings": [
       131
-    ]
+    ],
+    "baseForm": 131
   },
   "1504": {
     "speciesId": 1504,
@@ -226503,7 +227201,8 @@
     "siblings": [
       133,
       1488
-    ]
+    ],
+    "baseForm": 133
   },
   "1505": {
     "speciesId": 1505,
@@ -226685,7 +227384,8 @@
     "nameKey": "Snorlax-Mega",
     "siblings": [
       143
-    ]
+    ],
+    "baseForm": 143
   },
   "1506": {
     "speciesId": 1506,
@@ -226843,7 +227543,8 @@
     "nameKey": "Garbodor-Mega",
     "siblings": [
       569
-    ]
+    ],
+    "baseForm": 569
   },
   "1507": {
     "speciesId": 1507,
@@ -226982,7 +227683,8 @@
     "nameKey": "Melmetal-Gmax",
     "siblings": [
       809
-    ]
+    ],
+    "baseForm": 809
   },
   "1508": {
     "speciesId": 1508,
@@ -227143,7 +227845,8 @@
     "nameKey": "Rillaboom-Gmax",
     "siblings": [
       812
-    ]
+    ],
+    "baseForm": 812
   },
   "1509": {
     "speciesId": 1509,
@@ -227295,7 +227998,8 @@
     "nameKey": "Cinderace-Gmax",
     "siblings": [
       815
-    ]
+    ],
+    "baseForm": 815
   },
   "1510": {
     "speciesId": 1510,
@@ -227445,7 +228149,8 @@
     "nameKey": "Inteleon-Gmax",
     "siblings": [
       818
-    ]
+    ],
+    "baseForm": 818
   },
   "1511": {
     "speciesId": 1511,
@@ -227585,7 +228290,8 @@
     "nameKey": "Corviknight-Gmax",
     "siblings": [
       823
-    ]
+    ],
+    "baseForm": 823
   },
   "1512": {
     "speciesId": 1512,
@@ -227737,7 +228443,8 @@
     "nameKey": "Orbeetle-Mega",
     "siblings": [
       826
-    ]
+    ],
+    "baseForm": 826
   },
   "1513": {
     "speciesId": 1513,
@@ -227893,7 +228600,8 @@
     "nameKey": "Drednaw-Mega",
     "siblings": [
       834
-    ]
+    ],
+    "baseForm": 834
   },
   "1514": {
     "speciesId": 1514,
@@ -228056,7 +228764,8 @@
     "nameKey": "Coalossal-Mega",
     "siblings": [
       839
-    ]
+    ],
+    "baseForm": 839
   },
   "1515": {
     "speciesId": 1515,
@@ -228219,7 +228928,8 @@
     "nameKey": "Flapple-Mega",
     "siblings": [
       841
-    ]
+    ],
+    "baseForm": 841
   },
   "1516": {
     "speciesId": 1516,
@@ -228379,7 +229089,8 @@
     "nameKey": "Appletun-Mega",
     "siblings": [
       842
-    ]
+    ],
+    "baseForm": 842
   },
   "1517": {
     "speciesId": 1517,
@@ -228519,7 +229230,8 @@
     "nameKey": "Sandaconda-Mega",
     "siblings": [
       844
-    ]
+    ],
+    "baseForm": 844
   },
   "1518": {
     "speciesId": 1518,
@@ -228698,11 +229410,12 @@
       "mega"
     ],
     "formId": 2,
-    "nameKey": "Toxtricity-Amped-Low-key-Mega",
+    "nameKey": "Toxtricity-Mega",
     "siblings": [
       849,
       1213
-    ]
+    ],
+    "baseForm": 849
   },
   "1519": {
     "speciesId": 1519,
@@ -228844,7 +229557,8 @@
     "nameKey": "Centiskorch-Mega",
     "siblings": [
       851
-    ]
+    ],
+    "baseForm": 851
   },
   "1520": {
     "speciesId": 1520,
@@ -228985,7 +229699,8 @@
     "nameKey": "Hatterene-Gmax",
     "siblings": [
       858
-    ]
+    ],
+    "baseForm": 858
   },
   "1521": {
     "speciesId": 1521,
@@ -229161,7 +229876,8 @@
     "nameKey": "Grimmsnarl-Mega",
     "siblings": [
       861
-    ]
+    ],
+    "baseForm": 861
   },
   "1522": {
     "speciesId": 1522,
@@ -229351,7 +230067,8 @@
       1286,
       1287,
       1288
-    ]
+    ],
+    "baseForm": 869
   },
   "1523": {
     "speciesId": 1523,
@@ -229499,7 +230216,8 @@
     "nameKey": "Copperajah-Mega",
     "siblings": [
       879
-    ]
+    ],
+    "baseForm": 879
   },
   "1524": {
     "speciesId": 1524,
@@ -229638,7 +230356,8 @@
     "nameKey": "Duraludon-Gmax",
     "siblings": [
       884
-    ]
+    ],
+    "baseForm": 884
   },
   "1525": {
     "speciesId": 1525,
@@ -229797,7 +230516,8 @@
       892,
       1230,
       1526
-    ]
+    ],
+    "baseForm": 892
   },
   "1526": {
     "speciesId": 1526,
@@ -229956,7 +230676,8 @@
       892,
       1230,
       1525
-    ]
+    ],
+    "baseForm": 892
   },
   "1527": {
     "speciesId": 1527,
@@ -230136,7 +230857,8 @@
     "nameKey": "Slaking-Mega",
     "siblings": [
       289
-    ]
+    ],
+    "baseForm": 289
   },
   "1528": {
     "speciesId": 1528,
@@ -230296,7 +231018,8 @@
       990,
       1092,
       1093
-    ]
+    ],
+    "baseForm": 1528
   },
   "1529": {
     "speciesId": 1529,
@@ -230440,11 +231163,12 @@
       "primal"
     ],
     "formId": 2,
-    "nameKey": "Dialga-Origin-Primal",
+    "nameKey": "Dialga-Primal",
     "siblings": [
       483,
       1069
-    ]
+    ],
+    "baseForm": 483
   },
   "1530": {
     "speciesId": 1530,
@@ -230588,11 +231312,12 @@
       "primal"
     ],
     "formId": 2,
-    "nameKey": "Palkia-Origin-Primal",
+    "nameKey": "Palkia-Primal",
     "siblings": [
       484,
       1070
-    ]
+    ],
+    "baseForm": 484
   },
   "1531": {
     "speciesId": 1531,
@@ -230710,7 +231435,8 @@
     "nameKey": "Roserade-Mega",
     "siblings": [
       407
-    ]
+    ],
+    "baseForm": 407
   },
   "1532": {
     "speciesId": 1532,
@@ -230905,7 +231631,8 @@
     "nameKey": "Dusknoir-Mega",
     "siblings": [
       477
-    ]
+    ],
+    "baseForm": 477
   },
   "1533": {
     "speciesId": 1533,
@@ -231056,6 +231783,7 @@
       778,
       1206,
       1481
-    ]
+    ],
+    "baseForm": 778
   }
 }
