@@ -4,7 +4,7 @@ import { Pokemon } from "../../types";
 import PokemonModal from "../PokemonModal/PokemonModal";
 import useBodyScrollLock from "../../hooks/useBodyScrollLock";
 import { SortBar } from "./PokemonSortBar";
-import excludeForms from "@/utils/excludeForms";
+import excludeMons from "@/utils/excludeMons";
 import { useUIStore } from "@/stores/uiStore";
 import { useFilterStore } from "@/stores/filterStore";
 
@@ -97,7 +97,7 @@ export default function PokemonList({
             .filter(
               (pokemon) =>
                 !ignoreList.includes(pokemon.speciesId) &&
-                !excludeForms(pokemon.forms)
+                !excludeMons(pokemon)
             );
 
           return filteredPokemon.length > 0 ? (

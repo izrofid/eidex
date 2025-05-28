@@ -97,13 +97,8 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
         </div>
 
         {/* Card body */}
-        <div className="px-5 py-6" style={{ backgroundColor: adjustedBg }}>
-          <div className="border-1 relative mb-5 mt-3 flex flex-wrap gap-x-5 rounded-md border-white/10 bg-black/15 p-4 pt-5 pb-3 shadow-inner">
-            <span className="absolute top-0 left-0 translate-y-[-50%] translate-x-5 inline-flex h-5 min-w-16 items-center justify-center rounded-full bg-gradient-to-r bg-zinc-700 px-1 text-xs font-medium uppercase text-gray-200 shadow-md">
-              <p className="ios-padding-fix p-0 font-pixel font-bold">
-                Abilities
-              </p>
-            </span>
+        <div className="px-5 py-6 space-y-2" style={{ backgroundColor: adjustedBg }}>
+          <div className="border-1 flex flex-wrap gap-x-5 rounded-md border-white/10 bg-black/15 p-4 pt-5 pb-3 shadow-inner">
             {/* Abilities */}
             <div className="flex flex-wrap gap-x-4 gap-y-1.5 w-full ml-1">
             {abilities.map((abilityTuple: [number, boolean], index: number) => {
@@ -133,12 +128,13 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
           </div>
 
           {/* Stats here */}
-          <div className="border-1 relative my-3 flex w-full flex-col rounded-md border-white/10 bg-black/15 p-4 pt-5 pb-3 shadow-inner">
-            <span className="absolute top-0 left-0 translate-y-[-50%] translate-x-5 inline-flex h-5 min-w-12 items-center justify-center rounded-full bg-zinc-700 px-3 text-xs font-medium uppercase text-gray-200 shadow-md">
-              <p className="ios-padding-fix p-0 font-pixel font-bold">Stats</p>
-            </span>
-            
-            <div className="grid" style={{ gridTemplateColumns: 'repeat(6, 1fr) auto', gap: '0.5rem', padding: '0 0.5rem' }}>
+          <div className="border-1 space-y-2 flex flex-col w-full rounded-md border-white/10 bg-black/15 py-3 shadow-inner">
+            {/* Stats grid with BST on larger screens */}
+            <div className="grid" style={{ 
+              gridTemplateColumns: 'repeat(6, 1fr) auto', 
+              gap: '1rem', 
+              padding: '0 0.5rem' 
+            }}>
               {reorderedStats.map((statValue, index) => {
                 const statColor = 
                   statValue < 60 ? "text-red-400" :
@@ -159,10 +155,22 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
                 );
               })}
               
-              {/* BST box */}
-              <div className="flex flex-col items-center justify-center bg-zinc-600/50 rounded-md px-3 ml-2 shadow-sm">
+              {/* BST in grid for larger screens */}
+              <div className="hidden 2xs:flex items-center justify-center bg-zinc-600/50 rounded-md px-3 ml-2 shadow-sm">
+                <div className="flex flex-col items-center">
+                  <div className={`text-sm font-bold ${getBstColorClass(bst)}`}>{bst}</div>
+                  <div className="mt-1 text-xs font-medium tracking-wide pb-1">
+                    BST
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Separate BST box for small screens only */}
+            <div className="flex items-center justify-center 2xs:hidden mt-2">
+              <div className="bg-zinc-600/50 rounded-md px-4 py-1 flex items-center gap-2 shadow-sm">
                 <div className={`text-md font-bold ${getBstColorClass(bst)}`}>{bst}</div>
-                <div className="text-xs font-bold tracking-wide  pb-1">
+                <div className="text-xs font-bold tracking-wide">
                   BST
                 </div>
               </div>

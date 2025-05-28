@@ -25,7 +25,7 @@ const PokemonLocations: React.FC<PokemonLocationsProps> = ({ pokemonId }) => {
 
     // Calculate a width based on the character count, with some padding
     return longestLocation.length > 0
-      ? `${longestLocation.length * 0.5}rem`
+      ? `${longestLocation.length * 0.1}rem`
       : "auto";
   }, [encounters]);
 
@@ -43,31 +43,31 @@ const PokemonLocations: React.FC<PokemonLocationsProps> = ({ pokemonId }) => {
           }}
         >
           {/* Table header */}
-          <div className="font-chakra bg-zinc-700/50 px-3 py-2 font-medium">
+          <div className="font-chakra bg-zinc-700/50 px-2 text-sm py-2 font-medium">
             Location
           </div>
-          <div className="font-chakra bg-zinc-700/50 px-3 py-2 text-center font-medium">
+          <div className="font-chakra bg-zinc-700/50 px-2 text-sm py-2 text-center font-medium">
             Method
           </div>
-          <div className="font-chakra bg-zinc-700/50 px-3 py-2 text-center font-medium">
+          <div className="font-chakra bg-zinc-700/50 px-2 text-sm py-2 text-center font-medium">
             Level
           </div>
 
           {/* Table rows */}
           {encounters.map((encounter, idx) => (
             <React.Fragment key={`${idx}-mapName`}>
-              <div className="flex items-center bg-zinc-800/60 px-3 py-2">
+              <div className="flex items-center bg-zinc-800/60 px-2 text-sm py-2">
                 {cleanLocation(encounter.mapName)}
               </div>
               <div
-                className={`flex items-center justify-center px-3 py-2 text-center ${getConsolidatedMethodColor(
+                className={`flex items-center justify-center px-2 text-sm py-2 text-center ${getConsolidatedMethodColor(
                   encounter.method,
                   encounter.slots
                 )}`}
               >
                 {getConsolidatedMethodName(encounter.method, encounter.slots)}
               </div>
-              <div className="flex items-center justify-center bg-zinc-800/60 px-3 py-2 text-center">
+              <div className="flex items-center justify-center bg-zinc-800/60 px-2 text-sm py-2 text-center">
                 {`Lvl ${encounter.min_level}-${encounter.max_level}`}
               </div>
             </React.Fragment>

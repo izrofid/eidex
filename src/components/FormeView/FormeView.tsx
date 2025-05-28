@@ -2,7 +2,7 @@ import { Pokemon } from "@/types";
 import React from "react";
 import speciesData from "@/data/speciesData.json";
 import SpriteImage from "../SpriteImage";
-import excludeForms from "@/utils/excludeForms";
+import excludeMons from "@/utils/excludeMons";
 import { hasForms, getSpeciesData } from "@/utils/speciesUtils";
 import { useUIStore } from "@/stores/uiStore";
 
@@ -27,7 +27,7 @@ export const FormeView: React.FC<FormeViewProps> = ({
   };
   // Find all alternate forms
   const altFormes: Pokemon[] = Object.values(speciesData).filter(
-    (p: Pokemon) => p.dexId === pokemon.dexId && !excludeForms(p.forms),
+    (p: Pokemon) => p.dexId === pokemon.dexId && !excludeMons(p),
   );
 
   // Hide if only one form exists

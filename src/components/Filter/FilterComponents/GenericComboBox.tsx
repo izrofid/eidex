@@ -1,3 +1,4 @@
+import { capitalize } from "@/utils/miscUtils";
 import {
   Combobox,
   ComboboxInput,
@@ -5,15 +6,16 @@ import {
   ComboboxOptions,
 } from "@headlessui/react";
 import {
-  useState,
-  useRef,
-  ReactNode,
   ReactElement,
-  isValidElement,
+  ReactNode,
   cloneElement,
+  isValidElement,
   useEffect,
+  useRef,
+  useState,
 } from "react";
-import { MdSearch, MdClose } from "react-icons/md";
+import { MdClose, MdSearch } from "react-icons/md";
+
 
 export type ComboBoxEntry = { id: number; name: string };
 
@@ -22,6 +24,7 @@ type GenericComboBoxProps = {
   onSelect: (entry: ComboBoxEntry | null) => void;
   placeholder?: string;
   icon?: ReactNode;
+  sort?: "az" | "za" | "asc" | "desc" | "default";
   value?: ComboBoxEntry | null;
   bg?: string;
 };
@@ -33,6 +36,7 @@ function GenericComboBox({
   icon = <MdSearch size={20} />,
   value = null,
   bg = "bg-filterbox",
+  sort = "default",
 }: GenericComboBoxProps) {
   // Track the actual selected value separately from what's shown in the combobox
   const [selected, setSelected] = useState<ComboBoxEntry | null>(value);
@@ -43,12 +47,48 @@ function GenericComboBox({
     setSelected(value);
   }, [value]);
 
-  const filteredEntries =
+  // First filter by query
+  const filteredByQuery =
     query === ""
       ? entries
       : entries.filter((entry) =>
           entry.name.toLowerCase().includes(query.toLowerCase()),
         );
+
+  // Sort the filtered entries based on the sort prop
+  const sortedEntries = [...filteredByQuery];
+  if (sort === "az") {
+    sortedEntries.sort((a, b) => a.name.localeCompare(b.name));
+  } else if (sort === "za") {
+    sortedEntries.sort((a, b) => b.name.localeCompare(a.name));
+  } else if (sort === "asc") {
+    sortedEntries.sort((a, b) => {
+      const numA = parseFloat(a.name);
+      const numB = parseFloat(b.name);
+      return isNaN(numA) || isNaN(numB)
+        ? a.name.localeCompare(b.name)
+        : numA - numB;
+    });
+  } else if (sort === "desc") {
+    sortedEntries.sort((a, b) => {
+      const numA = parseFloat(a.name);
+      const numB = parseFloat(b.name);
+      return isNaN(numA) || isNaN(numB)
+        ? b.name.localeCompare(a.name)
+        : numB - numA;
+    });
+  }
+
+  const filtered = sort && sort !== "default" ? sortedEntries : filteredByQuery;
+
+  // Add query as first option if it's not a perfect match for the top item
+  const filteredEntries =
+    query === ""
+      ? filtered
+      : filtered.length === 0 ||
+          filtered[0].name.toLowerCase() !== query.toLowerCase()
+        ? [{ id: -1, name: capitalize(query) }, ...filtered]
+        : filtered;
 
   const handleChange = (entry: ComboBoxEntry | null) => {
     // Pass the selected entry to the parent
@@ -78,7 +118,9 @@ function GenericComboBox({
       : icon;
 
   return (
-    <div className={`relative flex w-full items-center rounded-full ${bg} px-2`}>
+    <div
+      className={`relative flex w-full items-center rounded-full ${bg} px-2`}
+    >
       <span className="pointer-events-none absolute inset-y-0 left-2 flex items-center text-gray-300">
         {renderedIcon}
       </span>
@@ -88,7 +130,6 @@ function GenericComboBox({
         onClose={handleClose}
         immediate={true}
         virtual={{ options: filteredEntries }}
-        nullable
       >
         <ComboboxInput
           ref={inputRef}
@@ -96,7 +137,7 @@ function GenericComboBox({
           displayValue={() => query}
           onChange={(event) => setQuery(event.target.value)}
           placeholder={placeholder}
-          className="h-9 w-full rounded-md border-0 pl-8 text-sm text-white placeholder-gray-400 focus:ring-1 focus:ring-blue-400"
+          className="h-9 w-full rounded-md border-0 pl-8 text-sm text-white placeholder-gray-400"
         />
         <span
           className="ml-2 inline-flex cursor-pointer select-none items-center text-gray-100 transition-colors hover:text-red-400 active:text-fuchsia-600"
