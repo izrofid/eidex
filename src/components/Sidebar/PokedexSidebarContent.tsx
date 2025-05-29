@@ -4,8 +4,6 @@ import MoveFilterGroup from "../Filter/FilterComponents/MoveFilterGroup";
 import NameCombobox from "../Filter/FilterComponents/NameCombobox";
 import StatFilter from "../Filter/StatFilter/StatFilter";
 import TypePanel from "../Filter/TypePanel";
-import SaveInfo from "../SaveInfo";
-import SecondaryBar from "../AppHeader/SecondaryBar";
 import FilterRadio from "../Filter/FilterRadio";
 import { SidebarTrigger } from "../ui/sidebar";
 
