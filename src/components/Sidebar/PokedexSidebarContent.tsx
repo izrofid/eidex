@@ -25,7 +25,7 @@ const PokedexSidebarContent: React.FC = () => {
                     </span>
                 </span>
             </span>
-            <span className=""><SidebarTrigger/></span>
+            <span className="sm:hidden"><SidebarTrigger/></span>
         </div>
         <div className="flex flex-1 flex-col gap-3 overflow-y-auto max-h-[calc(100vh-8rem)]">
             <NameCombobox />
@@ -37,10 +37,6 @@ const PokedexSidebarContent: React.FC = () => {
             <div className="my-3">
                 <CurrentFilters />
             </div>
-        </div>
-        <div className="flex flex-col gap-3">
-            <SaveInfo />
-            <SecondaryBar />
         </div>
     </>
 );}
