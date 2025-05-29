@@ -41,7 +41,7 @@ export const SortBar: React.FC<SortBarProps> = ({
   const setSortDirection = useFilterStore((state) => state.setSortDirection);
 
   return (
-    <div className="border-b-1 flex w-full items-center justify-between border-neutral-600/50 bg-zinc-900">
+    <div className="border-b-1 flex w-full items-center justify-between border-neutral-600/50 bg-zinc-200 dark:bg-zinc-900">
       {/* Sort buttons group */}
       <div className="mx-3 flex h-11 flex-1 justify-evenly 2xs:gap-2 2xs:justify-start text-nowrap">
         {sortOptions.map((option) => {
@@ -54,7 +54,7 @@ export const SortBar: React.FC<SortBarProps> = ({
               key={option.label}
               data-selected={isSelected && !descending}
               data-descending={isSelected && descending}
-              className="min-w-max cursor-pointer border-b-4 border-transparent px-1 text-xs font-medium 2xs:font-bold text-gray-300 data-[descending=true]:border-rose-500 data-[selected=true]:border-emerald-500 data-[descending=true]:text-rose-500 data-[selected=true]:text-emerald-500 xs:text-sm"
+              className="min-w-max cursor-pointer border-b-4 border-transparent px-1 text-xs font-medium 2xs:font-bold dark:text-gray-300 text-zinc-600 data-[descending=true]:border-rose-500 data-[selected=true]:border-emerald-500 data-[descending=true]:text-rose-500 data-[selected=true]:text-emerald-500 xs:text-sm"
               onClick={() => {
                 if (isSelected) {
                   toggleSortDirection?.();

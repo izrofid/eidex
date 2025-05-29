@@ -22,7 +22,7 @@ function TypeDropdown() {
         </ListboxButton>
         <ListboxOptions
           anchor="bottom start"
-          className="no-scrollbar w-(--button-width) rounded-md bg-zinc-800 shadow-lg ring-1 ring-gray-500 ring-opacity-5 [--anchor-gap:4px] focus:outline-none"
+          className="no-scrollbar w-(--button-width) rounded-md bg-zinc-300 dark:bg-zinc-800 shadow-lg ring-1 ring-gray-500 ring-opacity-5 [--anchor-gap:4px] focus:outline-none"
         >
           {options.map((typeInfo) => (
             <ListboxOption

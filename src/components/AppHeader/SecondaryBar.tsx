@@ -5,7 +5,7 @@ import HelpButton from "../HelpButton.tsx";
 
 function SecondaryBar() {
   return (
-    <div className="bg-card-backdrop flex select-none justify-between rounded-md px-3 py-2">
+    <div className="bg-card-backdrop dark:bg-card-backdrop-dark flex select-none justify-between rounded-md px-3 py-2">
       <div className="flex flex-row items-center gap-2">
         <ShinyToggle/>
         <RandomiserSwitch />

@@ -77,7 +77,7 @@ const PokemonView: React.FC<PokemonViewProps> = ({ pokemon }) => {
       {/* Details section */}
       <div className="flex w-full flex-col space-y-6">
         {/* Abilities section */}
-        <div className="bg-card-backdrop space-y-4 rounded-xl p-5 shadow-md">
+        <div className="bg-card-backdrop dark:bg-card-backdrop-dark space-y-4 rounded-xl p-5 shadow-md">
           <h3 className="font-chakra mb-3 text-lg font-medium text-gray-100">
             Abilities
           </h3>
@@ -87,7 +87,7 @@ const PokemonView: React.FC<PokemonViewProps> = ({ pokemon }) => {
 
         {/* Locations section */}
         {isObtainable(pokemon.speciesId) && (
-          <div className="bg-card-backdrop rounded-xl p-5 shadow-md">
+          <div className="bg-card-backdrop dark:bg-card-backdrop-dark rounded-xl p-5 shadow-md">
             <h3 className="font-chakra mb-3 text-lg font-medium text-gray-100">
               Locations
             </h3>
@@ -96,7 +96,7 @@ const PokemonView: React.FC<PokemonViewProps> = ({ pokemon }) => {
         )}
 
         {/* Evolution section */}
-        <div className="bg-card-backdrop rounded-xl p-5 shadow-md">
+        <div className="bg-card-backdrop dark:bg-card-backdrop-dark rounded-xl p-5 shadow-md">
           <h3 className="font-chakra mb-3 text-lg font-medium text-gray-100">
             Evolution
           </h3>
@@ -105,7 +105,7 @@ const PokemonView: React.FC<PokemonViewProps> = ({ pokemon }) => {
 
         {/* Forms section */}
         {hasForms(pokemon) && (
-          <div className="bg-card-backdrop rounded-xl p-5 shadow-md">
+          <div className="bg-card-backdrop dark:bg-card-backdrop-dark rounded-xl p-5 shadow-md">
             <h3 className="font-chakra mb-3 text-lg font-medium text-gray-100">
               Forms
             </h3>
@@ -115,7 +115,7 @@ const PokemonView: React.FC<PokemonViewProps> = ({ pokemon }) => {
 
         {/* Held items section */}
         {hasItems(pokemon) && (
-          <div className="bg-card-backdrop rounded-xl p-5 shadow-md">
+          <div className="bg-card-backdrop dark:bg-card-backdrop-dark rounded-xl p-5 shadow-md">
             <h3 className="font-chakra mb-3 text-lg font-medium text-gray-100">
               Held Items
             </h3>
@@ -124,7 +124,7 @@ const PokemonView: React.FC<PokemonViewProps> = ({ pokemon }) => {
         )}
 
         {/* Type matchup section */}
-        <div className="bg-card-backdrop rounded-xl p-5 shadow-md">
+        <div className="bg-card-backdrop dark:bg-card-backdrop-dark rounded-xl p-5 shadow-md">
           <h3 className="font-chakra mb-3 text-lg font-medium text-gray-100">
             Type Matchups
           </h3>
@@ -134,7 +134,7 @@ const PokemonView: React.FC<PokemonViewProps> = ({ pokemon }) => {
         </div>
 
         {/* Learnset section */}
-        <div className="bg-card-backdrop rounded-xl p-5 shadow-md">
+        <div className="bg-card-backdrop dark:bg-card-backdrop-dark rounded-xl p-5 shadow-md">
           <h3 className="font-chakra mb-3 text-lg font-medium text-gray-100">
             Learnset
           </h3>

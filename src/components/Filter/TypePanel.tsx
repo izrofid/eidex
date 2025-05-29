@@ -7,7 +7,7 @@ const TypePanel: React.FC = () => {
   const typeValue = useFilterStore((state) => state.typeValue);
 
   return (
-    <div className="w-full h-max rounded-md bg-card-backdrop">
+    <div className="w-full h-max rounded-md bg-card-backdrop dark:bg-card-backdrop-dark">
       <div 
         className="grid gap-y-2 py-2 px-2 w-full justify-center items-center"
         style={{ 

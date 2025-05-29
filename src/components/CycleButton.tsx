@@ -19,7 +19,7 @@ const CycleButton: React.FC<CycleButtonProps> = (props) => {
       return "bg-indigo-500 hover:bg-indigo-600"; // true (Only)
     else if (props.value === false)
       return "bg-rose-500 hover:bg-rose-600"; // false (Block)
-    else return "bg-gray-600 hover:bg-gray-700"; // undefined (Off)
+    else return "dark:bg-gray-600 dark:hover:bg-gray-700 bg-gray-400 hover:bg-gray-500"; // undefined (Off)
   };
 
   // Get the current icon based on state

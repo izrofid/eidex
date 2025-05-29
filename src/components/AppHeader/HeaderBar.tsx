@@ -4,7 +4,7 @@ import { FaDiscord } from "react-icons/fa6";
 import { Button } from "@headlessui/react";
 
 const HeaderBar: React.FC = () => (
-  <header className="justify-betweeen select-none flex flex-row items-center justify-start gap-0 bg-neutral-900 px-4 py-4 font-sans tracking-tight text-gray-200 shadow-md">
+  <header className="justify-betweeen select-none flex flex-row items-center justify-start gap-0 bg-neutral-200 dark:bg-neutral-900 px-4 py-4 font-sans tracking-tight text-zinc-500 dark:text-gray-200 shadow-md">
     <div className="flex w-full items-center pb-0 pl-0 font-chakra">
       <img
         src="icons/emploeon_posing.png"
@@ -13,7 +13,7 @@ const HeaderBar: React.FC = () => (
       />
       <span className="m-0 text-base font-extrabold drop-shadow-lg sm:text-3xl sm:font-bold">
         Emerald{" "}
-        <span className="bg-gradient-to-r from-blue-600 via-sky-500 to-cyan-400 bg-clip-text text-transparent">
+        <span className="bg-gradient-to-r from-blue-700 via-sky-600 to-cyan-500 dark:from-blue-600 dark:via-sky-500 dark:to-cyan-400 bg-clip-text text-transparent">
           Imperium
         </span>{" "}
         Online Dex

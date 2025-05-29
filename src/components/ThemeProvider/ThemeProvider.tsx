@@ -22,7 +22,7 @@ const ThemeProviderContext = createContext<ThemeProviderState>(initialState)
 
 export function ThemeProvider({
   children,
-  defaultTheme = "dark",
+  defaultTheme = "system",
   storageKey = "vite-ui-theme",
   ...props
 }: ThemeProviderProps) {
@@ -46,6 +46,30 @@ export function ThemeProvider({
     }
 
     root.classList.add(theme)
+  }, [theme])
+  
+  // Add listener for system theme changes
+  useEffect(() => {
+    // Only add listener if theme is set to "system"
+    if (theme !== "system") return
+    
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)")
+    
+    // This function handles theme changes from the system
+    const handleSystemThemeChange = (event: MediaQueryListEvent) => {
+      const root = window.document.documentElement
+      root.classList.remove("light", "dark")
+      const newTheme = event.matches ? "dark" : "light"
+      root.classList.add(newTheme)
+    }
+    
+    // Add the listener for system theme changes
+    mediaQuery.addEventListener("change", handleSystemThemeChange)
+    
+    // Clean up the listener when the component unmounts or theme changes
+    return () => {
+      mediaQuery.removeEventListener("change", handleSystemThemeChange)
+    }
   }, [theme])
 
   const value = {

@@ -35,7 +35,7 @@ export default function StatBars({ stats }: StatBarsProps) {
   };
 
   return (
-    <div className="w-full select-none rounded-xl p-5 bg-card-backdrop shadow-md">
+    <div className="w-full select-none rounded-xl p-5 bg-card-backdrop dark:bg-card-backdrop-dark shadow-md">
       <h3 className="font-chakra text-lg font-medium text-gray-100 mb-3">Base Stats</h3>
       <div className="space-y-3">
         {reorderedStats.map((value, i) => (

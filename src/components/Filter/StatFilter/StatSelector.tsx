@@ -15,7 +15,7 @@ export default function StatSelector(props: StatSelectorProps) {
 
   const colorScheme = isStatMax ? "group-data-checked:text-rose-400 group-data-checked:border-b-rose-400" : "group-data-checked:text-emerald-400 group-data-checked:border-b-emerald-400"
   return (
-    <div className="border-1 flex h-max min-h-8 min-w-max flex-1 justify-between gap-0 rounded-md overflow-hidden border-gray-200 select-none">
+    <div className="border-1 flex h-max min-h-8 min-w-max flex-1 justify-between gap-0 rounded-md overflow-hidden dark:border-gray-200 border-zinc-400 select-none">
       <RadioGroup
         value={statType || ""}
         onChange={setStatType}
@@ -25,7 +25,7 @@ export default function StatSelector(props: StatSelectorProps) {
           <Radio
             key={option.value || "bst"}
             value={option.value}
-            className={`group flex cursor-pointer items-center px-1 text-sm text-gray-200`}
+            className={`group flex cursor-pointer items-center px-1 text-sm text-zinc-500 dark:text-gray-200`}
           >
             <span className={`group-data-checked:font-bold group-data-checked:border-b-1 ${colorScheme}`}>
               {option.label}
@@ -34,7 +34,7 @@ export default function StatSelector(props: StatSelectorProps) {
         ))}
       </RadioGroup>
       <div
-        className="text-black-200 flex bg-gray-200 items-center px-1 cursor-pointer"
+        className="text-white dark:text-black flex dark:bg-gray-200 bg-zinc-400 items-center px-1 cursor-pointer"
         onClick={toggleStatMax}
       >
         {isStatMax ? (

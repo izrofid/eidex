@@ -16,7 +16,6 @@ import {
 } from "react";
 import { MdClose, MdSearch } from "react-icons/md";
 
-
 export type ComboBoxEntry = { id: number; name: string };
 
 type GenericComboBoxProps = {
@@ -35,7 +34,7 @@ function GenericComboBox({
   placeholder = "Select an entry...",
   icon = <MdSearch size={20} />,
   value = null,
-  bg = "bg-filterbox",
+  bg = "bg-filterbox dark:bg-filterbox-dark",
   sort = "default",
 }: GenericComboBoxProps) {
   // Track the actual selected value separately from what's shown in the combobox
@@ -121,7 +120,7 @@ function GenericComboBox({
     <div
       className={`relative flex w-full items-center rounded-full ${bg} px-2`}
     >
-      <span className="pointer-events-none absolute inset-y-0 left-2 flex items-center text-gray-300">
+      <span className="pointer-events-none absolute inset-y-0 left-2 flex items-center text-gray-200 dark:text-gray-400">
         {renderedIcon}
       </span>
       <Combobox
@@ -137,23 +136,23 @@ function GenericComboBox({
           displayValue={() => query}
           onChange={(event) => setQuery(event.target.value)}
           placeholder={placeholder}
-          className="h-9 w-full rounded-md border-0 pl-8 text-sm text-white placeholder-gray-400"
+          className="h-9 w-full rounded-md border-0 pl-8 text-sm text-black dark:text-white placeholder-zinc-200 dark:placeholder-gray-400"
         />
         <span
-          className="ml-2 inline-flex cursor-pointer select-none items-center text-gray-100 transition-colors hover:text-red-400 active:text-fuchsia-600"
+          className="ml-2 inline-flex cursor-pointer select-none items-center text-zinc-200 dark:text-gray-100 transition-colors hover:text-red-400 active:text-fuchsia-600"
           onClick={handleClear}
         >
           <MdClose size={20} />
         </span>
         <ComboboxOptions
           anchor="bottom start"
-          className="w-(--input-width) no-scrollbar z-50 rounded-sm border border-gray-600 bg-zinc-800 text-white shadow-md [--anchor-gap:4px]"
+          className="w-(--input-width) no-scrollbar z-50 rounded-sm border border-gray-600 bg-zinc-200 text-neutral-900 shadow-md [--anchor-gap:4px] dark:bg-zinc-800 dark:text-gray-100"
         >
           {({ option: entry }) => (
             <ComboboxOption
               key={entry.id}
               value={entry}
-              className="data-focus:bg-blue-600 w-full cursor-pointer px-3 py-2 text-white"
+              className="data-focus:bg-sky-600 dark:data-focus:bg-blue-600 w-full cursor-pointer px-3 py-2"
             >
               {entry.name}
             </ComboboxOption>

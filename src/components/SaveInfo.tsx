@@ -16,7 +16,7 @@ function SaveInfo() {
   );
 
   return (
-    <div className="flex select-none items-center justify-between rounded-md bg-card-backdrop px-3 py-2 text-xs text-gray-200 shadow-md">
+    <div className="flex select-none items-center justify-between rounded-md bg-card-backdrop dark:bg-card-backdrop-dark px-3 py-2 text-xs text-gray-200 shadow-md">
       <div className="flex justify-evenly gap-2 sm:gap-3">
         {trainerIdInfo ? (
           <>

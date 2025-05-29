@@ -90,7 +90,7 @@ export default function PokemonList({
         }}
       />
       </div>
-      <div className="w-full divide-y divide-zinc-700/80">
+      <div className="w-full divide-y divide-zinc-400/80 dark:divide-zinc-700/80">
         {(() => {
           const filteredPokemon = pokemonToShow
             .slice(0, visibleCount)

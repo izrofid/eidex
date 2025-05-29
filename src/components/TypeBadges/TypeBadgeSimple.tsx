@@ -33,7 +33,7 @@ function TypeBadgeSimple({
       style={isSelected ? typeStyle : deselectedTypeStyle}
       onClick={onClick}
     >
-      <p title={typeName} className={`text-sm ${isSelected ? "font-bold" : ""} text-white`}>
+      <p title={typeName} className={`text-sm ${isSelected ? "font-bold text-white" : "text-black "}   dark:text-white`}>
         {typeName}
       </p>
     </div>
