@@ -6,13 +6,11 @@ import StatFilter from "../Filter/StatFilter/StatFilter";
 import TypePanel from "../Filter/TypePanel";
 import SaveInfo from "../SaveInfo";
 import SecondaryBar from "../AppHeader/SecondaryBar";
-import CloseButton from "@/components/CloseButton";
-import { useUIStore } from "@/stores/uiStore";
 import FilterRadio from "../Filter/FilterRadio";
+import { SidebarTrigger } from "../ui/sidebar";
 
 const PokedexSidebarContent: React.FC = () => {
     
-    const toggleSidebar = useUIStore((state) => state.toggleSidebar);
 
     return(
     <>
@@ -27,7 +25,7 @@ const PokedexSidebarContent: React.FC = () => {
                     </span>
                 </span>
             </span>
-            <span className="sm:hidden"><CloseButton onClick={toggleSidebar}/></span>
+            <span className=""><SidebarTrigger/></span>
         </div>
         <div className="flex flex-1 flex-col gap-3 overflow-y-auto max-h-[calc(100vh-8rem)]">
             <NameCombobox />

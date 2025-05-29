@@ -1,11 +1,11 @@
-import { useUIStore } from "@/stores/uiStore";
 import { Button } from "@headlessui/react";
 import React from "react";
 import { FaSliders } from "react-icons/fa6";
+import { useSidebar } from "@/components/ui/sidebar"
 
 const FloatingButton: React.FC = () => {
 
-    const toggleSidebar = useUIStore(state => state.toggleSidebar)
+    const {toggleSidebar} = useSidebar()
 
     return (
     <Button
