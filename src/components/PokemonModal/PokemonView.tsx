@@ -13,7 +13,7 @@ import { randomizeAbility } from "@/randomiser/randomiser";
 import { useRandomiserStore } from "@/stores/randomiserStore";
 import EvolutionView from "./EvolutionView/EvolutionView";
 import PokemonLocations from "./MiscModal/PokemonLocations";
-import { FormeView } from "../FormeView/FormeView";
+import { FormeView } from "./FormeView/FormeView";
 import TypeMatchup from "./MiscModal/TypeMatchup";
 import PokemonLearnset from "./Learnset/PokemonLearnset";
 import React from "react";
