@@ -2,7 +2,6 @@ import GenericComboBox, { ComboBoxEntry } from "./GenericComboBox";
 import speciesData from "../../../data/speciesData.json";
 import { Pokemon } from "../../../types";
 import { useMemo, useState, useEffect } from "react";
-import { MdSearch } from "react-icons/md";
 import { useFilterStore } from "../../../stores/filterStore";
 
 const speciesIDMap: ComboBoxEntry[] = Object.values(speciesData)
@@ -35,7 +34,6 @@ function NameCombobox() {
       entries={pokemonEntries}
       onSelect={handleNameSelect}
       placeholder="Pick a pokemon..."
-      icon={<MdSearch />}
       value={selectedEntry}
     />
   );

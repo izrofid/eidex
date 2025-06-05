@@ -2,7 +2,6 @@ import GenericComboBox, { ComboBoxEntry } from "./GenericComboBox";
 import abilities from "../../../data/abilityData.json";
 import { getAbilityName } from "../../../utils/abilityData";
 import { useMemo } from "react";
-import { IoRibbon } from "react-icons/io5";
 import { useFilterStore } from "../../../stores/filterStore";
 
 const abilityIDMap: ComboBoxEntry[] = Object.keys(abilities)
@@ -27,7 +26,6 @@ function AbilityCombobox() {
         entries={abilityEntries}
         onSelect={setAbilityValue}
         placeholder="Select an ability..."
-        icon={<IoRibbon />}
         value={abilityValue}
       />
     </div>

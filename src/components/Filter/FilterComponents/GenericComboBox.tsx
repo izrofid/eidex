@@ -5,16 +5,7 @@ import {
   ComboboxOption,
   ComboboxOptions,
 } from "@headlessui/react";
-import {
-  ReactElement,
-  ReactNode,
-  cloneElement,
-  isValidElement,
-  useEffect,
-  useRef,
-  useState,
-} from "react";
-import { MdClose, MdSearch } from "react-icons/md";
+import { useEffect, useState } from "react";
 
 export type ComboBoxEntry = { id: number; name: string };
 
@@ -22,7 +13,6 @@ type GenericComboBoxProps = {
   entries: ComboBoxEntry[];
   onSelect: (entry: ComboBoxEntry | null) => void;
   placeholder?: string;
-  icon?: ReactNode;
   sort?: "az" | "za" | "asc" | "desc" | "default";
   value?: ComboBoxEntry | null;
   bg?: string;
@@ -32,15 +22,13 @@ function GenericComboBox({
   entries,
   onSelect,
   placeholder = "Select an entry...",
-  icon = <MdSearch size={20} />,
   value = null,
-  bg = "bg-filterbox dark:bg-filterbox-dark",
   sort = "default",
+  bg = "bg-filterbox dark:bg-filterbox-dark",
 }: GenericComboBoxProps) {
   // Track the actual selected value separately from what's shown in the combobox
   const [selected, setSelected] = useState<ComboBoxEntry | null>(value);
   const [query, setQuery] = useState("");
-  const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     setSelected(value);
@@ -98,68 +86,35 @@ function GenericComboBox({
     setQuery("");
   };
 
-  const handleClear = () => {
-    setSelected(null);
-    setQuery("");
-    onSelect(null);
-  };
-
-  const handleClose = () => {
-    // Blur on close
-    setTimeout(() => {
-      inputRef.current?.blur();
-    }, 0);
-  };
-
-  const renderedIcon =
-    isValidElement(icon) && typeof icon.type === "function"
-      ? cloneElement(icon as ReactElement<{ size?: number }>, { size: 20 })
-      : icon;
-
   return (
-    <div
-      className={`relative flex w-full items-center rounded-full ${bg} px-2`}
+    <Combobox
+      value={selected}
+      onChange={handleChange}
+      immediate={true}
+      virtual={{ options: filteredEntries }}
     >
-      <span className="pointer-events-none absolute inset-y-0 left-2 flex items-center text-gray-200 dark:text-gray-400">
-        {renderedIcon}
-      </span>
-      <Combobox
-        value={selected}
-        onChange={handleChange}
-        onClose={handleClose}
-        immediate={true}
-        virtual={{ options: filteredEntries }}
+      <ComboboxInput
+        aria-label="Enter something"
+        displayValue={() => query}
+        onChange={(event) => setQuery(event.target.value)}
+        placeholder={placeholder}
+        className={`${bg} h-9 w-full rounded-full px-3 text-sm text-black placeholder-zinc-200 dark:text-white dark:placeholder-gray-400`}
+      />
+      <ComboboxOptions
+        anchor="bottom start"
+        className="w-(--input-width) z-50 rounded-sm border border-gray-600 bg-zinc-200 text-neutral-900 shadow-md [--anchor-gap:4px] dark:bg-zinc-800 dark:text-gray-100 no-scrollbar"
       >
-        <ComboboxInput
-          ref={inputRef}
-          aria-label="Enter something"
-          displayValue={() => query}
-          onChange={(event) => setQuery(event.target.value)}
-          placeholder={placeholder}
-          className="h-9 w-full rounded-md border-0 pl-8 text-sm text-black dark:text-white placeholder-zinc-200 dark:placeholder-gray-400"
-        />
-        <span
-          className="ml-2 inline-flex cursor-pointer select-none items-center text-zinc-200 dark:text-gray-100 transition-colors hover:text-red-400 active:text-fuchsia-600"
-          onClick={handleClear}
-        >
-          <MdClose size={20} />
-        </span>
-        <ComboboxOptions
-          anchor="bottom start"
-          className="w-(--input-width) no-scrollbar z-50 rounded-sm border border-gray-600 bg-zinc-200 text-neutral-900 shadow-md [--anchor-gap:4px] dark:bg-zinc-800 dark:text-gray-100"
-        >
-          {({ option: entry }) => (
-            <ComboboxOption
-              key={entry.id}
-              value={entry}
-              className="data-focus:bg-sky-600 dark:data-focus:bg-blue-600 w-full cursor-pointer px-3 py-2"
-            >
-              {entry.name}
-            </ComboboxOption>
-          )}
-        </ComboboxOptions>
-      </Combobox>
-    </div>
+        {({ option: entry }) => (
+          <ComboboxOption
+            key={entry.id}
+            value={entry}
+            className="data-focus:bg-sky-600 dark:data-focus:bg-blue-600 pointer-events-auto w-full cursor-pointer px-3 py-2"
+          >
+            {entry.name}
+          </ComboboxOption>
+        )}
+      </ComboboxOptions>
+    </Combobox>
   );
 }
 
