@@ -18,14 +18,14 @@ const PokedexSidebarContent: React.FC = () => {
     <>
         <div className="mb-4 pl-1 flex items-center gap-2 justify-between">
             <span className="inline-flex items-center select-none">
-                <span className="flex items-center">
-                    <span className="text-2xl font-extrabold font-gr bg-gradient-to-r from-rose-500 to-rose-400 bg-clip-text text-transparent drop-shadow-sm tracking-tight pb-1">
-                        Poké
-                    </span>
-                    <span className="text-2xl font-bold text-gray-100 tracking-tight drop-shadow-sm pb-1">
-                        Dex
-                    </span>
+              <span className="flex items-center">
+                <span className="text-2xl font-extrabold font-gr bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 bg-clip-text text-transparent drop-shadow-sm tracking-tight pb-1">
+                  Poké
                 </span>
+                <span className="text-2xl font-bold bg-gradient-to-r from-green-500 via-blue-500 to-purple-500 bg-clip-text text-transparent drop-shadow-sm tracking-tight pb-1">
+                  Dex
+                </span>
+              </span>
             </span>
             <span className="sm:hidden"><CloseButton onClick={toggleSidebar}/></span>
         </div>
