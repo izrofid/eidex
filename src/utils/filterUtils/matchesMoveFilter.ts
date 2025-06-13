@@ -2,29 +2,37 @@ import { Pokemon } from "../../types";
 
 export function matchesMoveFilter(
   pokemon: Pokemon,
-  moveId?: number,
-  source?: "all" | "levelup" | "tm" | "egg"
+  moveIds?: number[],
+  source?: "all" | "levelup" | "tm" | "egg",
 ): boolean {
-  if (!moveId) return true;
+  if (!moveIds || moveIds.length === 0) return true;
 
-  const hasTmMove = pokemon.tmMoves
-    ? pokemon.tmMoves.some((id) => id === moveId)
-    : false;
-  const hasEggMove = pokemon.eggMoves
-    ? pokemon.eggMoves.some((id) => id === moveId)
-    : false;
+  const hasMove = (moves: number[] | undefined, moveId: number): boolean => {
+    return Array.isArray(moves) && moves.includes(moveId);
+  };
+
+  const hasTmMove = (moveId: number) => hasMove(pokemon.tmMoves, moveId);
+
+  const hasEggMove = (moveId: number) => hasMove(pokemon.eggMoves, moveId);
+
+  const hasLevelUpMove = (moveId: number): boolean => {
+    return (
+      Array.isArray(pokemon.levelUpMoves) &&
+      pokemon.levelUpMoves.some(([id]) => id === moveId)
+    );
+  };
 
   switch (source) {
     case "levelup":
-      return pokemon.levelUpMoves.some(([id]) => id === moveId);
+      return moveIds.every(hasLevelUpMove);
     case "tm":
-      return hasTmMove;
+      return moveIds.every(hasTmMove);
     case "egg":
-      return hasEggMove;
+      return moveIds.every(hasEggMove);
     case "all":
     default:
-      return (
-        pokemon.levelUpMoves.some(([id]) => id === moveId) || hasTmMove
+      return moveIds.every(
+        (moveId) => hasLevelUpMove(moveId) || hasTmMove(moveId) || hasEggMove(moveId),
       );
   }
 }

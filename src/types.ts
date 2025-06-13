@@ -22,7 +22,7 @@ export interface Pokemon {
   heldItems: number[];
   levelUpMoves: number[][];
   tmMoves?: number[];
-  eggMoves?: number[] | null;
+  eggMoves?: number[];
   dexId: number;
   evolutions?: number[][] | null;
   forms?: string[] | null;
@@ -52,8 +52,8 @@ export interface FilterOptions {
   tmMove?: string;
   descending?: boolean;
   tutorMove?: string;
-  moveName?: string;
-  moveId?: number;
+  moveNames?: string[];
+  moveIds?: number[];
   moveSource?: MoveSource;
   megaCycle?: boolean | undefined;
   nfeCycle?: boolean | undefined;

@@ -29,7 +29,7 @@ export function filterPokemon(
         filters.isStatMax,
       ) &&
       matchesAbilityFilter(pokemon, isRandomiserActive, filters.abilityId) &&
-      matchesMoveFilter(pokemon, filters.moveId, filters.moveSource) &&
+      matchesMoveFilter(pokemon, filters.moveIds, filters.moveSource) &&
       matchesMegaFilter(pokemon, filters.megaCycle) &&
       matchesNfeFilter(pokemon, filters.nfeCycle),
   );
