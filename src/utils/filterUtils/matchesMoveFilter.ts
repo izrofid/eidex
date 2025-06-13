@@ -7,7 +7,7 @@ export function matchesMoveFilter(
 ): boolean {
   if (!moveIds || moveIds.length === 0) return true;
 
-  const hasMove = (moves: number[] | undefined, moveId: number): boolean => {
+  const hasMove = (moves: number[] | undefined | null, moveId: number): boolean => {
     return Array.isArray(moves) && moves.includes(moveId);
   };
 
