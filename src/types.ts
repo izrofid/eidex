@@ -22,7 +22,7 @@ export interface Pokemon {
   heldItems: number[];
   levelUpMoves: number[][];
   tmMoves?: number[];
-  eggMoves?: number[];
+  eggMoves?: number[] | null;
   dexId: number;
   evolutions?: number[][] | null;
   forms?: string[] | null;
