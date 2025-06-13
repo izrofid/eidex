@@ -21,7 +21,7 @@ interface FilterState {
 
   // Move filter state
   moveSource: MoveSource;
-  moveValue: ComboBoxEntry | null;
+  moveValues: ComboBoxEntry[];
 
   // Special Filters
   megaCycle: boolean | undefined;
@@ -55,6 +55,7 @@ interface FilterState {
   toggleStatMax: () => void;
   setMoveSource: (source: MoveSource) => void;
   setMoveValue: (value: ComboBoxEntry | null) => void;
+  removeMoveValue: (value: ComboBoxEntry | null) => void;
   setTypeValue: (typeId: number | undefined) => void;
   getSelectedType: () => { typeID: number | undefined; typeName: string };
   setAbilityValue: (ability: ComboBoxEntry | null) => void;
@@ -81,6 +82,8 @@ export const useFilterStore = create<FilterState>((set, get) => ({
     sortStat: undefined,
     descending: false,
     moveSource: "all",
+    moveIds: [] as number[],
+    moveNames: [] as string[],
     megaCycle: undefined,
     nfeCycle: undefined,
   },
@@ -96,7 +99,7 @@ export const useFilterStore = create<FilterState>((set, get) => ({
   statType: undefined,
   isStatMax: false,
   moveSource: "all",
-  moveValue: null,
+  moveValues: [] as ComboBoxEntry[],
   megaCycle: undefined,
   nfeCycle: undefined,
   abilityValue: null,
@@ -136,16 +139,67 @@ export const useFilterStore = create<FilterState>((set, get) => ({
     })),
 
   setMoveValue: (value) =>
-    set((state) => ({
-      moveValue: value,
+    set((state) => {
+      // If value is null, remove all moves
+      if (!value) {
+        return {
+          moveValues: [],
+          filters: {
+            ...state.filters,
+            moveIds: [],
+            moveNames: [],
+          },
+        };
+      }
+
+
+
+      // Don't add if we already have 4 moves or if the move is already in the list
+      const currentMoves = state.moveValues || [];
+      if (currentMoves.length >= 4 || currentMoves.some(move => move.id === value.id)) {
+        return state;
+      }
+
+      const newMoves = [...currentMoves, value];
+      return {
+        moveValues: newMoves,
+        filters: {
+          ...state.filters,
+          moveIds: newMoves.map(move => move.id),
+          moveNames: newMoves.map(move => move.name),
+        },
+      };
+    }),
+
+    removeMoveValue: (value) =>
+    set((state) => {
+      // If value is null, remove all moves
+      if (!value) {
+      return {
+        moveValues: [],
+        filters: {
+        ...state.filters,
+        moveIds: [],
+        moveNames: [],
+        },
+      };
+      }
+
+      // Remove the given value from the moveValues if it exists
+      const currentMoves = state.moveValues || [];
+      const newMoves = currentMoves.filter(move => move.id !== value.id);
+
+      return {
+      moveValues: newMoves,
       filters: {
         ...state.filters,
-        moveId: value?.id,
-        moveName: value?.name,
+        moveIds: newMoves.map(move => move.id),
+        moveNames: newMoves.map(move => move.name),
       },
-    })),
+      };
+    }),
 
-  setTypeValue: (id?: number) =>
+    setTypeValue: (id?: number) =>
     set((state) => {
       // start with only the defined selections
       if (!state.typeValue) {
@@ -267,6 +321,8 @@ export const useFilterStore = create<FilterState>((set, get) => ({
         sortStat: undefined,
         descending: false,
         moveSource: "all",
+        moveIds: [],
+        moveNames: [],
         megaCycle: undefined,
         nfeCycle: undefined,
       },
@@ -274,7 +330,7 @@ export const useFilterStore = create<FilterState>((set, get) => ({
       statType: undefined,
       isStatMax: false,
       moveSource: "all",
-      moveValue: null,
+      moveValues: [],
       megaCycle: undefined,
       nfeCycle: undefined,
       typeValue: [undefined, undefined] as [number?, number?],

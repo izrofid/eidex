@@ -103,8 +103,7 @@ export const useFilterPillStore = create<FilterPillsState>((set, get) => ({
         break;
 
       case "move":
-        filterStore.setMoveValue(null);
-        filterStore.setMoveSource("all");
+        filterStore.removeMoveValue(pillToRemove.value.value);
         break;
     }
   },
@@ -179,21 +178,29 @@ export const useFilterPillStore = create<FilterPillsState>((set, get) => ({
       });
     }
 
-    if (filters.moveId !== undefined) {
+    const selectedMoves = (filters.moveIds ?? []).filter(
+      (m): m is number => m !== undefined,
+    );
+
+    selectedMoves.forEach((moveId) => {
+      const moveIndex = filters.moveIds?.indexOf(moveId) ?? -1;
+      const moveName = moveIndex >= 0 && filters.moveNames?.[moveIndex] ? filters.moveNames[moveIndex] : "Move";
+      const moveSource = filters.moveSource || "all";
+
       newPills.push({
-        id: "move",
+        id: `move-${moveId}`,
         type: "move",
-        label: "Move",
+        label: moveName,
         value: {
           type: "move",
           value: {
-            id: filters.moveId,
-            name: filters.moveName || "",
-            source: filters.moveSource as MoveSource,
+            id: moveId,
+            name: moveName,
+            source: moveSource,
           },
         },
       });
-    }
+    });
 
     set({ activePills: newPills });
   },

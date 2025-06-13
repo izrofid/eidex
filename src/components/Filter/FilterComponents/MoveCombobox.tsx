@@ -14,14 +14,12 @@ const moveIDMap: ComboBoxEntry[] = Object.values(moveData)
 
 function MoveCombobox() {
   const moveEntries: ComboBoxEntry[] = useMemo(() => moveIDMap, []);
-  const moveValue = useFilterStore((state) => state.moveValue);
   const setMoveValue = useFilterStore((state) => state.setMoveValue);
 
   return (
     <GenericComboBox
       entries={moveEntries}
       onSelect={setMoveValue}
-      value={moveValue}
       placeholder="Pick a move..."
       icon={<LuSword />}
       bg="bg-transparent"
