@@ -7,6 +7,7 @@ import { matchesMoveFilter } from "./matchesMoveFilter";
 import { sortPokemon } from "./sortPokemon";
 import { matchesMegaFilter } from "./matchesMegaFilter";
 import { matchesNfeFilter } from "./matchesNfeFilter";
+import { matchesItemFilter } from "./matchesItemFilter";
 
 export function filterPokemon(
   pokemons: Pokemon[] | Record<string, Pokemon>,
@@ -29,6 +30,7 @@ export function filterPokemon(
         filters.isStatMax,
       ) &&
       matchesAbilityFilter(pokemon, isRandomiserActive, filters.abilityId) &&
+      matchesItemFilter(pokemon, filters.heldItem ?? 0) &&
       matchesMoveFilter(pokemon, filters.moveIds, filters.moveSource) &&
       matchesMegaFilter(pokemon, filters.megaCycle) &&
       matchesNfeFilter(pokemon, filters.nfeCycle),

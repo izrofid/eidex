@@ -55,6 +55,7 @@ export interface FilterOptions {
   moveNames?: string[];
   moveIds?: number[];
   moveSource?: MoveSource;
+  heldItem?: number;
   megaCycle?: boolean | undefined;
   nfeCycle?: boolean | undefined;
 }

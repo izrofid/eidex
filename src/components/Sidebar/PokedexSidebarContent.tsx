@@ -9,6 +9,7 @@ import SecondaryBar from "../AppHeader/SecondaryBar";
 import CloseButton from "@/components/CloseButton";
 import { useUIStore } from "@/stores/uiStore";
 import FilterRadio from "../Filter/FilterRadio";
+import ItemCombobox from "../Filter/FilterComponents/ItemCombobox";
 
 const PokedexSidebarContent: React.FC = () => {
     
@@ -34,6 +35,7 @@ const PokedexSidebarContent: React.FC = () => {
             <AbilityCombobox />
             <MoveFilterGroup />
             <TypePanel />
+            <ItemCombobox />
             <FilterRadio/>
             <StatFilter />
             <div className="my-3">
