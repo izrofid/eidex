@@ -1,2 +1,1 @@
-- Format/Rename Types so they fit on TypesBadge (Fighting -> Fight, Psychic -> Psychic)
-- Same 'Abilities' pill on Card and Modal
+- Refactor filter store to be more maintainable

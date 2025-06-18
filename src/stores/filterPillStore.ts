@@ -3,12 +3,13 @@ import { useFilterStore } from "./filterStore";
 import { MoveSource, SortBy } from "@/types";
 
 // Define FilterType directly in this file
-export type FilterType = "name" | "type" | "move" | "ability" | "stat" | "sort";
+export type FilterType = "name" | "type" | "move" | "ability" | "stat" | "sort" | "item";
 
 export type FilterPillValue =
   | { type: "name"; value: string }
   | { type: "type"; value: number | undefined }
   | { type: "ability"; value: { id: number; name: string } }
+  | {type: "item"; value: number}
   | {
       type: "stat";
       value: {
@@ -92,6 +93,10 @@ export const useFilterPillStore = create<FilterPillsState>((set, get) => ({
       case "ability":
         filterStore.setAbilityValue(null);
         break;
+
+      case "item":
+    filterStore.setHeldItem(0);
+    break;
 
       case "stat":
         // Only reset the stat values, not other filter values
@@ -177,6 +182,19 @@ export const useFilterPillStore = create<FilterPillsState>((set, get) => ({
         },
       });
     }
+
+     if (filters.heldItem) {
+    newPills.push({
+      id: "item",
+      type: "item",
+      label: "Held Item",
+      value: {
+        type: "item",
+        value: filters.heldItem
+      }
+    });
+  }
+
 
     const selectedMoves = (filters.moveIds ?? []).filter(
       (m): m is number => m !== undefined,

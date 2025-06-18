@@ -1,6 +1,7 @@
 import { IoCloseCircle } from "react-icons/io5";
 import { FilterPill as FilterPillType } from "../../../stores/filterPillStore";
 import { getTypeName } from "../../../utils/typeInfo";
+import { getItemName } from "@/utils/itemUtils";
 import { capitalize } from "@/utils/miscUtils";
 
 interface FilterPillProps {
@@ -15,6 +16,7 @@ const bgColorMap: Record<string, string> = {
   ability: "bg-purple-700",
   move: "bg-orange-700",
   stat: "bg-amber-600",
+  item: "bg-rose-400",
   sort: "bg-pink-700",
 };
 
@@ -51,6 +53,8 @@ function FilterPill({ pill, onRemove }: FilterPillProps) {
         const sourceLabel = sourceMap[source] ? `${sourceMap[source]} ` : "";
         return `${sourceLabel}Move: ${name}`;
       }
+      case "item":
+        return `Item: ${getItemName(pill.value.value) || "???"}`;
       default:
         return pill.label;
     }

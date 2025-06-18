@@ -42,6 +42,9 @@ interface FilterState {
   sortStat: string | undefined;
   descending: boolean;
 
+  // Item filter
+  heldItem: number;
+
   // Name filter
   nameValue: string;
 
@@ -57,6 +60,7 @@ interface FilterState {
   setMoveValue: (value: ComboBoxEntry | null) => void;
   removeMoveValue: (value: ComboBoxEntry | null) => void;
   setTypeValue: (typeId: number | undefined) => void;
+  setHeldItem: (heldItem: number) => void;
   getSelectedType: () => { typeID: number | undefined; typeName: string };
   setAbilityValue: (ability: ComboBoxEntry | null) => void;
   setSortBy: (sortBy: SortBy) => void;
@@ -79,6 +83,7 @@ export const useFilterStore = create<FilterState>((set, get) => ({
     statType: undefined,
     isStatMax: false,
     sortBy: "dexId",
+    heldItem: 0,
     sortStat: undefined,
     descending: false,
     moveSource: "all",
@@ -103,6 +108,7 @@ export const useFilterStore = create<FilterState>((set, get) => ({
   megaCycle: undefined,
   nfeCycle: undefined,
   abilityValue: null,
+  heldItem: 0,
   sortBy: "dexId",
   sortStat: undefined,
   descending: false,
@@ -290,7 +296,12 @@ export const useFilterStore = create<FilterState>((set, get) => ({
       toggleState,
     })),
 
-    
+  setHeldItem: (heldItem) =>
+    set((state) => ({
+      heldItem,
+      filters: { ...state.filters, heldItem }
+    })),
+
   cycleMega: () =>
     set((state) => {
       const nextState = getNextCycleState(state.megaCycle);
@@ -321,6 +332,7 @@ export const useFilterStore = create<FilterState>((set, get) => ({
         sortStat: undefined,
         descending: false,
         moveSource: "all",
+        heldItem: 0,
         moveIds: [],
         moveNames: [],
         megaCycle: undefined,
