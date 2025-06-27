@@ -12,11 +12,11 @@ export function removeFilterPill(
             store.clearName()
             break;
 
-        // case "type": {
-        //     const typeId = pillToRemove.value as number;
-        //     removeType(typeId);
-        //     break;
-        // }
+        case "type": {
+            const typeId = pillToRemove.value as number;
+            store.setTypeValue(typeId);
+            break;
+        }
 
         case "ability":
             store.setAbility(0);

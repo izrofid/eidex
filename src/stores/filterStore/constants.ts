@@ -4,6 +4,7 @@ export const FILTER_CONSTANTS = {
   DEFAULT_NAME: "",
   DEFAULT_ITEM: 0,
   DEFAULT_ABILITY: 0,
+  DEFAULT_TYPEVAL: [undefined, undefined] as [number?, number?],
   MAX_MOVES: 4,
   DEFAULT_SORT: "dexId",
   DEFAULT_MOVE_SOURCE: "all",

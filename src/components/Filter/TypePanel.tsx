@@ -1,10 +1,10 @@
 import { validTypes } from "@/utils/typeInfo";
-import { useFilterStore } from "@/stores/filterStore";
+import { useModularFilterStore } from "@/stores/filterStore/index";
 import TypeBadgeSimple from "../TypeBadges/TypeBadgeSimple";
 
 const TypePanel: React.FC = () => {
-  const setTypeValue = useFilterStore((state) => state.setTypeValue);
-  const typeValue = useFilterStore((state) => state.typeValue);
+  const setTypeValue = useModularFilterStore((state) => state.setTypeValue);
+  const typeValue = useModularFilterStore((state) => state.filters.typeIds);
 
   return (
     <div className="w-full h-max rounded-md bg-card-backdrop">
