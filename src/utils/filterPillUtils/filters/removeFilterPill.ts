@@ -18,17 +18,17 @@ export function removeFilterPill(
         //     break;
         // }
 
-        // case "ability":
-        //     removeAbility();
-        //     break;
+        case "ability":
+            store.setAbility(0);
+            break;
 
         // case "stat":
         //     removeStat();
         //     break;
 
-        // case "item":
-        //     removeItem();
-        //     break;
+        case "item":
+            store.setHeldItem(0);
+            break;
 
         case "move": {
             const moveValue = pillToRemove.value as MoveValue;

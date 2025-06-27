@@ -1,9 +1,9 @@
 import GenericComboBox, { ComboBoxEntry } from "./GenericComboBox";
 import abilities from "../../../data/abilityData.json";
 import { getAbilityName } from "../../../utils/abilityData";
-import { useMemo } from "react";
+import { useCallback, useMemo } from "react";
 import { IoRibbon } from "react-icons/io5";
-import { useFilterStore } from "../../../stores/filterStore";
+import { useModularFilterStore } from "@/stores/filterStore/index";
 
 const abilityIDMap: ComboBoxEntry[] = Object.keys(abilities)
   .map((id) => {
@@ -16,8 +16,17 @@ const abilityIDMap: ComboBoxEntry[] = Object.keys(abilities)
   .sort((a, b) => a.name.localeCompare(b.name));
 
 function AbilityCombobox() {
-  const abilityValue = useFilterStore((state) => state.abilityValue);
-  const setAbilityValue = useFilterStore((state) => state.setAbilityValue);
+  const abilityId = useModularFilterStore((state) => state.filters.abilityId);
+  const setAbility = useModularFilterStore((state) => state.setAbility);
+  
+  // Create abilityValue only when abilityId changes, not on every render
+  const abilityValue = useMemo(() => 
+    abilityId ? { id: abilityId, name: getAbilityName(abilityId) } : null
+  , [abilityId]);
+  
+  const setAbilityValue = useCallback((entry: ComboBoxEntry | null) => 
+    setAbility(entry?.id ?? 0)
+  , [setAbility]);
 
   const abilityEntries: ComboBoxEntry[] = useMemo(() => abilityIDMap, []);
 

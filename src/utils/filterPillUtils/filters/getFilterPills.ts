@@ -3,6 +3,7 @@ import { getTypeName } from "@/utils/typeInfo";
 import { FilterPill } from "../types/types";
 import { FILTER_TYPES } from "../types/constants";
 import { createFilterPill } from "../utils/createFilterPill";
+import { getAbilityName } from "@/utils/abilityData";
 
 // Function to generate filter pills from current filter state
 export function getFilterPillsFromFilters(
@@ -38,13 +39,13 @@ export function getFilterPillsFromFilters(
     });
 
   // Ability filter
-  if (filters.abilityId !== undefined) {
+  if (filters.abilityId !== undefined && filters.abilityId !== 0) {
     pills.push(
       createFilterPill({
         id: "ability",
         type: FILTER_TYPES.ABILITY,
         label: "Ability",
-        value: { id: filters.abilityId, name: filters.ability || "" },
+        value: { id: filters.abilityId, name: getAbilityName(filters.abilityId) || "" },
       }),
     );
   }

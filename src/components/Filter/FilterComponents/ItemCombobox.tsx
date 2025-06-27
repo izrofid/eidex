@@ -2,7 +2,7 @@ import GenericComboBox, { ComboBoxEntry } from "./GenericComboBox";
 import itemData from "../../../data/itemData.json";
 import { useMemo, useState, useEffect, useCallback } from "react";
 import { MdShoppingBag} from "react-icons/md";
-import { useFilterStore } from "../../../stores/filterStore";
+import { useModularFilterStore } from "@/stores/filterStore/index";
 
 const speciesIDMap: ComboBoxEntry[] = Object.values(itemData)
   .filter((i) => typeof i === "object" && !!i && "itemId" in i)
@@ -12,8 +12,8 @@ const speciesIDMap: ComboBoxEntry[] = Object.values(itemData)
   }));
 
 function ItemCombobox() {
-  const heldItem = useFilterStore((state) => state.heldItem);
-  const setHeldItem = useFilterStore((state) => state.setHeldItem);
+  const heldItem = useModularFilterStore((state) => state.filters.heldItem);
+  const setHeldItem = useModularFilterStore((state) => state.setHeldItem);
   const [selectedEntry, setSelectedEntry] = useState<ComboBoxEntry | null>(
     null,
   );
