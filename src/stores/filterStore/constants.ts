@@ -1,6 +1,7 @@
 import { FilterOptions } from "src/stores/filterStore/types.ts";
 
 export const FILTER_CONSTANTS = {
+  DEFAULT_NAME: "",
   MAX_MOVES: 4,
   DEFAULT_SORT: "dexId",
   DEFAULT_MOVE_SOURCE: "all",

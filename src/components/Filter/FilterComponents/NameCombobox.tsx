@@ -3,7 +3,7 @@ import speciesData from "../../../data/speciesData.json";
 import { Pokemon } from "../../../types";
 import { useMemo, useState, useEffect } from "react";
 import { MdSearch } from "react-icons/md";
-import { useFilterStore } from "../../../stores/filterStore";
+import { useModularFilterStore } from "../../../stores/filterStore/index";
 
 const speciesIDMap: ComboBoxEntry[] = Object.values(speciesData)
   .filter((p) => typeof p === "object" && !!p && "nameKey" in p)
@@ -13,22 +13,22 @@ const speciesIDMap: ComboBoxEntry[] = Object.values(speciesData)
   }));
 
 function NameCombobox() {
-  const nameValue = useFilterStore((state) => state.nameValue);
-  const setNameValue = useFilterStore((state) => state.setNameValue);
+  const name = useModularFilterStore((state) => state.filters.name);
+  const setName = useModularFilterStore((state) => state.setName);
   const [selectedEntry, setSelectedEntry] = useState<ComboBoxEntry | null>(null);
   const pokemonEntries: ComboBoxEntry[] = useMemo(() => speciesIDMap, []);
 
   const handleNameSelect = (entry: ComboBoxEntry | null) => {
     setSelectedEntry(entry);
-    setNameValue(entry ? entry.name : "");
+    setName(entry ? entry.name : "");
   };
 
   // Reset the component when nameValue is cleared
   useEffect(() => {
-    if (!nameValue && selectedEntry) {
+    if (!name && selectedEntry) {
       setSelectedEntry(null);
     }
-  }, [nameValue, selectedEntry]);
+  }, [name, selectedEntry]);
 
   return (
     <GenericComboBox

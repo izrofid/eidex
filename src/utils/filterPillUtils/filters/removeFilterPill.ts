@@ -8,9 +8,9 @@ export function removeFilterPill(
     const store = useModularFilterStore.getState();
 
     switch (pillToRemove.type) {
-        // case "name":
-        //     removeName();
-        //     break;
+        case "name":
+            store.clearName()
+            break;
 
         // case "type": {
         //     const typeId = pillToRemove.value as number;
