@@ -7,7 +7,7 @@ export interface FilterOptions {
   isStatMax: boolean;
   sortBy: SortBy;
   sortStat: string | undefined;
-  descending: boolean;
+  sortDescending: boolean;
   moveSource: MoveSource;
   moveIds: number[];
   moveNames: string[];
@@ -19,8 +19,13 @@ export interface FilterOptions {
 }
 
 // Enums and specific types
-export type MoveSource = "all" | "level" | "tm" | "tutor" | "egg";
+export type MoveSource = "all" | "levelup" | "tm" | "egg";
 export type SortBy = "dexId" | "name" | "stat";
+export type MoveValue = {
+  id: number;
+  name: string;
+  source: string;
+};
 
 // Base state containing only shared properties
 export interface BaseFilterState {
@@ -35,6 +40,3 @@ export interface TypeOption {
 
 export type FilterToggleState = "Include" | "Only";
 export type FilterToggles = [boolean, boolean, boolean]; // [Evolved, Legend, Mega]
-
-// Helper type for creating slices
-export type StateCreator<T> = (set: Function, get: Function) => T;

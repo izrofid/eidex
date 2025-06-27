@@ -1,10 +1,10 @@
-import { useFilterStore } from "../../../stores/filterStore";
+import { useModularFilterStore } from "@/stores/filterStore/index";
 import { Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/react';
 import { MdOutlineKeyboardArrowDown} from "react-icons/md";
 
 function MoveSourceDropdown() {
-  const moveSource = useFilterStore(state => state.moveSource);
-  const setMoveSource = useFilterStore(state => state.setMoveSource);
+  const moveSource = useModularFilterStore(state => state.moveSource);
+  const setMoveSource = useModularFilterStore(state => state.setMoveSource);
 
   const options = [
     { id: "all", label: "All" },

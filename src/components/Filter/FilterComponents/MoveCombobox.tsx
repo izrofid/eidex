@@ -3,7 +3,7 @@ import moveData from "../../../data/moveData.json";
 import { useMemo } from "react";
 import { LuSword } from "react-icons/lu";
 import { Move } from "../../../types";
-import { useFilterStore } from "@/stores/filterStore";
+import { useModularFilterStore } from "@/stores/filterStore/index";
 
 const moveIDMap: ComboBoxEntry[] = Object.values(moveData)
   .filter((m) => typeof m === "object" && !!m && "moveId" in m)
@@ -14,7 +14,7 @@ const moveIDMap: ComboBoxEntry[] = Object.values(moveData)
 
 function MoveCombobox() {
   const moveEntries: ComboBoxEntry[] = useMemo(() => moveIDMap, []);
-  const setMoveValue = useFilterStore((state) => state.setMoveValue);
+  const setMoveValue = useModularFilterStore((state) => state.setMoveValue);
 
   return (
     <GenericComboBox

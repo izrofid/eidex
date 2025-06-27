@@ -28,7 +28,6 @@ export const createMoveSlice: StateCreator<MoveState, [], [], MoveSlice> = (set)
 
   setMoveValue: (value) =>
     set((state) => {
-      // If value is null, remove all moves
       if (!value) {
         return {
           moveValues: [],

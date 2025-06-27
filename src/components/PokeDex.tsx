@@ -6,16 +6,15 @@ import FloatingButton from "./FloatingActionButton";
 import PokemonList from "./PokemonList/PokemonList";
 import HeaderBar from "./AppHeader/HeaderBar";
 import pokemonData from "../data/speciesData.json";
-import { useFilterStore } from "../stores/filterStore";
 import { useUIStore } from "../stores/uiStore";
 import { Pokemon } from "../types";
 import { filterPokemon } from "../utils/filterUtils/filterPokemon";
 import { useRandomiserState } from "../utils/randomiserState";
 import HelpPanel from "./HelpPanel";
-
+import { useModularFilterStore } from "../stores/filterStore/index";
 function PokeDex() {
   // Get filter state from Zustand store
-  const { filters } = useFilterStore();
+  const { filters } = useModularFilterStore();
   const randomiserState = useRandomiserState();
 
   // Memoized filtered Pokémon list (only updates when filters or randomizer state changes)
@@ -59,7 +58,6 @@ function PokeDex() {
         const rect = containerRef.current.getBoundingClientRect();
         const distanceFromRight = window.innerWidth - rect.right;
         setRightOffset(distanceFromRight > 16 ? distanceFromRight : 16);
-        console.log("Distance from right:", distanceFromRight);
       }
     }
 

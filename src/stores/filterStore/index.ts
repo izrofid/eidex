@@ -9,8 +9,11 @@ export type FilterStore = BaseFilterState & MoveSlice & ResetSlice;
 
 // Create the combined store
 export const useModularFilterStore = create<FilterStore>((...a) => ({
+    
+  //Filter object with initial state
   filters: initialFilters,
 
+  // Filter slices
   ...createMoveSlice(...a),
   ...createResetSlice(...a),
 }));

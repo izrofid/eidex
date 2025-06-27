@@ -18,7 +18,7 @@ export const initialFilters: FilterOptions = {
   isStatMax: false,
   sortBy: FILTER_CONSTANTS.DEFAULT_SORT,
   sortStat: undefined,
-  descending: false,
+  sortDescending: false,
   moveSource: FILTER_CONSTANTS.DEFAULT_MOVE_SOURCE,
   moveIds: [],
   moveNames: [],

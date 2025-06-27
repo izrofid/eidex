@@ -85,7 +85,7 @@ export const useFilterStore = create<FilterState>((set, get) => ({
     sortBy: "dexId",
     heldItem: 0,
     sortStat: undefined,
-    descending: false,
+    sortDescending: false,
     moveSource: "all",
     moveIds: [] as number[],
     moveNames: [] as string[],
@@ -263,13 +263,13 @@ export const useFilterStore = create<FilterState>((set, get) => ({
   toggleSortDirection: () =>
     set((state) => ({
       descending: !state.descending,
-      filters: { ...state.filters, descending: !state.descending },
+      filters: { ...state.filters, sortDescending: !state.descending },
     })),
 
   setSortDirection: (direction) =>
     set((state) => ({
       descending: direction,
-      filters: { ...state.filters, descending: direction },
+      filters: { ...state.filters, sortDescending: direction },
     })),
 
   setNameValue: (name) =>
@@ -330,7 +330,7 @@ export const useFilterStore = create<FilterState>((set, get) => ({
         isStatMax: false,
         sortBy: "dexId",
         sortStat: undefined,
-        descending: false,
+        sortDescending: false,
         moveSource: "all",
         heldItem: 0,
         moveIds: [],

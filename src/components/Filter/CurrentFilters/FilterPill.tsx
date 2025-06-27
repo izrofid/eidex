@@ -1,5 +1,5 @@
 import { IoCloseCircle } from "react-icons/io5";
-import { FilterPill as FilterPillType } from "../../../stores/filterPillStore";
+import { FilterPill as FilterPillType } from "@/utils/filterPillUtils/types/types";
 import { getTypeName } from "../../../utils/typeInfo";
 import { getItemName } from "@/utils/itemUtils";
 import { capitalize } from "@/utils/miscUtils";
@@ -26,24 +26,39 @@ function FilterPill({ pill, onRemove }: FilterPillProps) {
 
   // Format display value based on pill type
   const getDisplayValue = () => {
-    // First check the pill type to determine which branch of the union we're in
-    switch (pill.value.type) {
+    switch (pill.type) {
       case "name":
-        return `Name: ${pill.value.value}`;
-      case "type":
-        return `Type: ${
-          pill.value.value !== undefined ? getTypeName(pill.value.value) : "All"
-        }`;
-      case "ability":
-        return `Ability: ${pill.value.value.name}`;
+        return `Name: ${pill.value as string}`;
+
+      case "type": {
+        const typeId = pill.value as number;
+        return `Type: ${typeId !== undefined ? getTypeName(typeId) : "All"}`;
+      }
+
+      case "ability": {
+        const ability = pill.value as { id: number; name: string };
+        return `Ability: ${ability.name}`;
+      }
+
       case "stat": {
-        const { stat, type, isMax } = pill.value.value;
+        const statValue = pill.value as {
+          stat: number | undefined;
+          type: string | undefined;
+          isMax: boolean;
+        };
+        const { stat, type, isMax } = statValue;
         const statType = type ? capitalize(type) : "BST";
         const operator = isMax ? "≤" : "≥";
         return `${statType} ${operator} ${stat}`;
       }
+
       case "move": {
-        const { name, source } = pill.value.value;
+        const moveValue = pill.value as {
+          id: number;
+          name: string;
+          source: string;
+        };
+        const { name, source } = moveValue;
         const sourceMap: Record<string, string> = {
           tm: "TM",
           levelup: "Lvl",
@@ -53,8 +68,24 @@ function FilterPill({ pill, onRemove }: FilterPillProps) {
         const sourceLabel = sourceMap[source] ? `${sourceMap[source]} ` : "";
         return `${sourceLabel}Move: ${name}`;
       }
-      case "item":
-        return `Item: ${getItemName(pill.value.value) || "???"}`;
+
+      case "item": {
+        const itemId = pill.value as number;
+        return `Item: ${getItemName(itemId) || "???"}`;
+      }
+
+      case "sort": {
+        const sortValue = pill.value as {
+          by: string;
+          stat: string | undefined;
+          sortDescending: boolean;
+        };
+        const { by, stat, sortDescending: descending } = sortValue;
+        const direction = descending ? "↓" : "↑";
+        const sortStat = stat ? ` (${stat})` : "";
+        return `Sort: ${capitalize(by)}${sortStat} ${direction}`;
+      }
+
       default:
         return pill.label;
     }

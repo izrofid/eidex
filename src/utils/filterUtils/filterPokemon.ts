@@ -41,6 +41,6 @@ export function filterPokemon(
     filtered,
     filters.sortBy,
     filters.sortStat,
-    filters.descending !== undefined ? filters.descending : true,
+    filters.sortDescending !== undefined ? filters.sortDescending : true,
   );
 }

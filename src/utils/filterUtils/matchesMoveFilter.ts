@@ -1,13 +1,17 @@
+import { MoveSource } from "@/stores/filterStore/types";
 import { Pokemon } from "../../types";
 
 export function matchesMoveFilter(
   pokemon: Pokemon,
   moveIds?: number[],
-  source?: "all" | "levelup" | "tm" | "egg",
+  source?: MoveSource,
 ): boolean {
   if (!moveIds || moveIds.length === 0) return true;
 
-  const hasMove = (moves: number[] | undefined | null, moveId: number): boolean => {
+  const hasMove = (
+    moves: number[] | undefined | null,
+    moveId: number,
+  ): boolean => {
     return Array.isArray(moves) && moves.includes(moveId);
   };
 
@@ -32,7 +36,8 @@ export function matchesMoveFilter(
     case "all":
     default:
       return moveIds.every(
-        (moveId) => hasLevelUpMove(moveId) || hasTmMove(moveId) || hasEggMove(moveId),
+        (moveId) =>
+          hasLevelUpMove(moveId) || hasTmMove(moveId) || hasEggMove(moveId),
       );
   }
 }
