@@ -25,7 +25,7 @@ export function filterPokemon(
       matchesTypeFilter(pokemon, filters.typeIds) &&
       matchesStatFilter(
         pokemon,
-        filters.chosenStat,
+        filters.statValue,
         filters.statType,
         filters.isStatMax,
       ) &&

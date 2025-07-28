@@ -1,10 +1,11 @@
 import { Pokemon, SortBy } from "../../types";
+import { StatType, statType } from "@/stores/filterStore/constants";
 
 export function sortPokemon(
   pokemons: Pokemon[],
   sortBy: SortBy = "dexId",
-  sortStat?: string,
-  descending: boolean = false,
+  sortStat?: StatType,
+  isDescending: boolean = false,
 ): Pokemon[] {
   return [...pokemons].sort((a, b) => {
     let result = 0;
@@ -13,18 +14,18 @@ export function sortPokemon(
         result = a.nameKey.localeCompare(b.nameKey);
         break;
       case "stat":
-        if (!sortStat || sortStat === "bst") {
+        if (!sortStat || sortStat === statType.BST) {
           const bstA = a.stats.reduce((x, y) => x + y, 0);
           const bstB = b.stats.reduce((x, y) => x + y, 0);
           result = bstA - bstB;
         } else {
           const statIndex: Record<string, number> = {
-            hp: 0,
-            attack: 1,
-            defense: 2,
-            speed: 3,
-            spAtk: 4,
-            spDef: 5,
+            HP: 0,
+            ATK: 1,
+            DEF: 2,
+            SPE: 3,
+            SPA: 4,
+            SPD: 5,
           };
           const idx = statIndex[sortStat];
           result = (a.stats[idx] ?? 0) - (b.stats[idx] ?? 0);
@@ -39,6 +40,6 @@ export function sortPokemon(
         else result = a.speciesId - b.speciesId;
         break;
     }
-    return descending ? -result : result;
+    return isDescending ? -result : result;
   });
 }

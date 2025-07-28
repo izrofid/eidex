@@ -1,68 +1,47 @@
-import { SortBy } from "@/types";
+import { sortOptions } from "@/stores/filterStore/constants";
 import { PiSortAscending } from "react-icons/pi";
 import { PiSortDescending } from "react-icons/pi";
 import { Button } from "@headlessui/react";
 import React from "react";
-import { useFilterStore } from "@/stores/filterStore";
+import { useModularFilterStore } from "@/stores/filterStore/index";
 
-const sortOptions: {
-  label: string;
-  value: SortBy;
-  statType?: string;
-  defaultDescending: boolean;
-}[] = [
-  { label: "#", value: "dexId", defaultDescending: false },
-  { label: "Name", value: "name", defaultDescending: false },
-  { label: "HP", value: "stat", statType: "hp", defaultDescending: true },
-  { label: "Atk", value: "stat", statType: "attack", defaultDescending: true },
-  { label: "Def", value: "stat", statType: "defense", defaultDescending: true },
-  { label: "SpA", value: "stat", statType: "spAtk", defaultDescending: true },
-  { label: "SpD", value: "stat", statType: "spDef", defaultDescending: true },
-  { label: "Spe", value: "stat", statType: "speed", defaultDescending: true },
-  { label: "BST", value: "stat", statType: "bst", defaultDescending: true },
-];
-
-interface SortBarProps {
-  sortBy: SortBy;
-  statType?: string;
-  onChange: (sortBy: SortBy, statType?: string) => void;
-}
-
-export const SortBar: React.FC<SortBarProps> = ({
-  sortBy,
-  statType,
-  onChange,
-}) => {
-  const selected = statType ? `${sortBy}:${statType}` : sortBy;
-  const descending = useFilterStore((state) => state.descending);
-  const toggleSortDirection = useFilterStore(
-    (state) => state.toggleSortDirection,
+export const SortBar: React.FC = () => {
+  const sortBy = useModularFilterStore((state) => state.sortBy);
+  const sortStat = useModularFilterStore((state) => state.sortStat);
+  const isDescending = useModularFilterStore((state) => state.isDescending);
+  const setSortBy = useModularFilterStore((state) => state.setSortBy);
+  const setSortStat = useModularFilterStore((state) => state.setSortStat);
+  const setIsDescending = useModularFilterStore(
+    (state) => state.setIsDescending,
   );
-  const setSortDirection = useFilterStore((state) => state.setSortDirection);
+
+  const toggleSortDirection = () => setIsDescending(!isDescending);
 
   return (
     <div className="border-b-1 flex w-full items-center justify-between border-neutral-600/50 bg-zinc-900">
       {/* Sort buttons group */}
-      <div className="mx-3 flex h-11 flex-1 justify-evenly 2xs:gap-2 2xs:justify-start text-nowrap">
+      <div className="2xs:gap-2 2xs:justify-start mx-3 flex h-11 flex-1 justify-evenly text-nowrap">
         {sortOptions.map((option) => {
-          const value = option.statType
-            ? `${option.value}:${option.statType}`
-            : option.value;
-          const isSelected = selected === value;
+          const isSelected =
+            option.value === "stat"
+              ? sortBy === "stat" && sortStat === option.statType
+              : sortBy === option.value;
+
           return (
             <Button
               key={option.label}
-              data-selected={isSelected && !descending}
-              data-descending={isSelected && descending}
-              className="min-w-max cursor-pointer border-b-4 border-transparent px-1 text-xs font-medium 2xs:font-bold text-gray-300 data-[descending=true]:border-rose-500 data-[selected=true]:border-emerald-500 data-[descending=true]:text-rose-500 data-[selected=true]:text-emerald-500 xs:text-sm"
+              data-selected={isSelected && !isDescending}
+              data-descending={isSelected && isDescending}
+              className="2xs:font-bold xs:text-sm min-w-max cursor-pointer border-b-4 border-transparent px-1 text-xs font-medium text-gray-300 data-[descending=true]:border-rose-500 data-[selected=true]:border-emerald-500 data-[descending=true]:text-rose-500 data-[selected=true]:text-emerald-500"
               onClick={() => {
                 if (isSelected) {
-                  toggleSortDirection?.();
+                  toggleSortDirection();
                 } else {
-                  onChange(option.value, option.statType);
-                  if (descending !== option.defaultDescending) {
-                    setSortDirection?.(option.defaultDescending);
+                  setSortBy(option.value);
+                  if (option.value === "stat" && option.statType) {
+                    setSortStat(option.statType);
                   }
+                  setIsDescending(option.defaultDescending);
                 }
               }}
             >
@@ -73,14 +52,10 @@ export const SortBar: React.FC<SortBarProps> = ({
       </div>
       {/* Direction marker */}
       <div
-        className="cursor-pointer select-none pr-3 hidden 2xs:inline-block"
-        onClick={() => {
-          if (toggleSortDirection) {
-            toggleSortDirection();
-          }
-        }}
+        className="2xs:inline-block hidden cursor-pointer select-none pr-3"
+        onClick={toggleSortDirection}
       >
-        {descending ? (
+        {isDescending ? (
           <PiSortAscending size={24} className="text-rose-500" />
         ) : (
           <PiSortDescending size={24} className="text-emerald-500" />

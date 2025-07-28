@@ -1,3 +1,5 @@
+import { StatType } from "./stores/filterStore/constants";
+
 export interface PokemonChanges {
   stats?: number[];
   type?: number[];
@@ -41,11 +43,11 @@ export interface SpeciesData {
 export interface FilterOptions {
   name?: string;
   typeIds?: [number?, number?];
-  chosenStat?: number;
+  statValue?: number;
   sortBy?: SortBy;
-  statType?: string;
+  statType?: StatType;
   isStatMax?: boolean;
-  sortStat?: string;
+  sortStat?: StatType;
   ability?: string;
   abilityId?: number;
   levelupMove?: string;

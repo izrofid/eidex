@@ -6,7 +6,7 @@ import useBodyScrollLock from "../../hooks/useBodyScrollLock";
 import { SortBar } from "./PokemonSortBar";
 import excludeMons from "@/utils/excludeMons";
 import { useUIStore } from "@/stores/uiStore";
-import { useFilterStore } from "@/stores/filterStore";
+
 
 type PokemonListProps = {
   pokemonToShow: Pokemon[];
@@ -24,13 +24,6 @@ export default function PokemonList({
     isModalOpen,
   } = useUIStore();
 
-  //Get filter state from store
-  const {
-    sortBy,
-    sortStat,
-    setSortBy,
-    setSortStat,
-  } = useFilterStore();
 
   const ignoreList: number[] = [1435];
 
@@ -80,15 +73,8 @@ export default function PokemonList({
 
   return (
     <div className="flex flex-1 w-full flex-col items-center select-none">
-      <div className="w-full sticky top-0 z-10">
-      <SortBar
-        sortBy={sortBy}
-        statType={sortStat}
-        onChange={(newSortBy, newStatType) => {
-        setSortBy(newSortBy);
-        setSortStat(newStatType);
-        }}
-      />
+      <div className="w-full sticky top-0 z-10 bg-neutral-900 p-3">
+      <SortBar/>
       </div>
       <div className="w-full divide-y divide-zinc-700/80">
         {(() => {

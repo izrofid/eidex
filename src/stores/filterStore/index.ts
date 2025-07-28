@@ -7,6 +7,8 @@ import { createNameSlice, NameSlice } from "./slices/nameSlice";
 import { createItemSlice, ItemSlice } from "./slices/itemSlice";
 import { AbilitySlice, createAbilitySlice } from "./slices/abilitySlice";
 import { createTypeSlice, TypeSlice } from "./slices/typeSlice";
+import { createSortSlice, SortSlice } from "./slices/sortSlice";
+import { createStatSlice, StatSlice } from "./slices/statSlice";
 
 // Define the complete store type with all slices
 export type FilterStore = BaseFilterState &
@@ -15,6 +17,8 @@ export type FilterStore = BaseFilterState &
   TypeSlice &
   ItemSlice &
   MoveSlice &
+  SortSlice &
+  StatSlice &
   ResetSlice;
 
 // Create the combined store
@@ -29,4 +33,6 @@ export const useModularFilterStore = create<FilterStore>((...a) => ({
   ...createItemSlice(...a),
   ...createAbilitySlice(...a),
   ...createTypeSlice(...a),
+  ...createSortSlice(...a),
+  ...createStatSlice(...a),
 }));

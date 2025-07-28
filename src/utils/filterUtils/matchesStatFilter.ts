@@ -1,29 +1,30 @@
+import { StatType } from "@/stores/filterStore/constants";
 import { Pokemon } from "../../types";
 
 export function matchesStatFilter(
   pokemon: Pokemon,
-  chosenStat?: number,
-  statType?: string,
+  statValue?: number,
+  statType?: StatType,
   isStatMax?: boolean,
 ): boolean {
-  if (!chosenStat) return true;
+  if (statValue === undefined) return true;
 
-  if (statType === "bst" || !statType) {
+  if (statType === "BST" || !statType) {
     const bst = pokemon.stats.reduce((a, b) => a + b, 0);
-    return isStatMax ? bst <= chosenStat : bst >= chosenStat;
+    return isStatMax ? bst <= statValue : bst >= statValue;
   }
 
   const statIndex: Record<string, number> = {
-    hp: 0,
-    attack: 1,
-    defense: 2,
-    speed: 3,
-    spAtk: 4,
-    spDef: 5,
+    HP: 0,
+    ATK: 1,
+    DEF: 2,
+    SPE: 3,
+    SPA: 4,
+    SPD: 5,
   };
   const idx = statIndex[statType!];
   if (idx === undefined) return true;
   return isStatMax
-    ? pokemon.stats[idx] <= chosenStat!
-    : pokemon.stats[idx] >= chosenStat!;
+    ? pokemon.stats[idx] <= statValue!
+    : pokemon.stats[idx] >= statValue!;
 }

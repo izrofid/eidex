@@ -2,7 +2,7 @@
 export interface FilterOptions {
   name: string;
   typeIds: [number?, number?];
-  chosenStat: number | undefined;
+  statValue: number | undefined;
   statType: string | undefined;
   isStatMax: boolean;
   sortBy: SortBy;

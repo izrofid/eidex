@@ -51,14 +51,14 @@ export function getFilterPillsFromFilters(
   }
 
   // Stat filter
-  if (filters.chosenStat !== undefined) {
+  if (filters.statValue !== undefined) {
     pills.push(
       createFilterPill({
         id: "stat",
         type: FILTER_TYPES.STAT,
         label: filters.statType ? filters.statType.toUpperCase() : "BST",
         value: {
-          stat: filters.chosenStat,
+          stat: filters.statValue,
           type: filters.statType,
           isMax: !!filters.isStatMax,
         },
