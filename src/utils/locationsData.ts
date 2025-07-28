@@ -1,6 +1,86 @@
 import speciesLabelMap from "@/data/speciesLabelMap.json";
-import wildEncounters from "@/data/wildEncounters.json";
+import wildEncountersData from "@/data/wild_encounters.json";
 import { capitalize, removeSuffix } from "./miscUtils";
+
+// Type definitions for the new wild encounters data structure
+interface WildPokemon {
+  min_level: number;
+  max_level: number;
+  species: string;
+}
+
+interface EncounterMethod {
+  encounter_rate: number;
+  mons: WildPokemon[];
+}
+
+interface WildEncounter {
+  map: string;
+  base_label: string;
+  land_mons?: EncounterMethod;
+  water_mons?: EncounterMethod;
+  rock_smash_mons?: EncounterMethod;
+  fishing_mons?: EncounterMethod;
+}
+
+interface WildEncounterGroup {
+  label: string;
+  for_maps: boolean;
+  encounters: WildEncounter[];
+}
+
+interface WildEncountersData {
+  wild_encounter_groups: WildEncounterGroup[];
+}
+
+function buildEncountersLookup() {
+  const encountersMap: Record<string, any[]> = {};
+  
+  // Type cast the imported data
+  const data = wildEncountersData as WildEncountersData;
+  
+  // Process each encounter group
+  data.wild_encounter_groups.forEach(group => {
+    if (!group.for_maps) return; // Skip battle facility encounters
+    
+    group.encounters.forEach(encounter => {
+      const mapName = encounter.map?.replace('MAP_', '').replace(/_/g, ' ') || 
+                     encounter.base_label?.replace(/^g/, '').replace(/([A-Z])/g, ' $1').trim();
+      
+      // Process each encounter type (land_mons, water_mons, fishing_mons, etc.)
+      Object.entries(encounter).forEach(([method, encounterData]) => {
+        if (method === 'map' || method === 'base_label' || !encounterData?.mons) return;
+        
+        const methodName = method.replace('_mons', '').replace('_', ' ');
+        
+        encounterData.mons.forEach((mon: WildPokemon, slot: number) => {
+          if (!mon.species) return;
+          
+          const speciesKey = mon.species;
+          if (!encountersMap[speciesKey]) {
+            encountersMap[speciesKey] = [];
+          }
+          
+          encountersMap[speciesKey].push({
+            map: encounter.map,
+            base_label: encounter.base_label,
+            method: methodName === 'land' ? 'walk' : methodName,
+            rate: encounterData.encounter_rate,
+            slot: slot,
+            min_level: mon.min_level || 1,
+            max_level: mon.max_level || mon.min_level || 1,
+            mapName: mapName
+          });
+        });
+      });
+    });
+  });
+  
+  return encountersMap;
+}
+
+// Build the encounters lookup from the new data structure
+const wildEncounters = buildEncountersLookup();
 
 // Creating a reverse lookup map where keys are species IDs and values are species labels
 const encountersLookupMap: Record<number, string> = Object.entries(
@@ -36,7 +116,7 @@ export function getAllEncounters() {
 export { encountersLookupMap };
 
 export function getMethodName(method: string, slot: number) {
-  if (method === "fishing_mons") {
+  if (method === "fishing" || method === "fishing_mons") {
     if (slot === 0 || slot === 1) {
       return "Old Rod";
     } else if (slot >= 2 && slot <= 4) {
@@ -64,6 +144,19 @@ export function cleanLocation(location: string) {
     West: "W",
   };
 
+  //Convert to title case (each word capitalized), but preserve uppercase for route/floor codes
+  location = location
+    .split(" ")
+    .map((word) => {
+      // Preserve uppercase for patterns like "1R", "B1F", "2F", etc.
+      if (/^\d+[A-Z]$|^[A-Z]\d+[A-Z]?$/.test(word.toUpperCase())) {
+        return word.toUpperCase();
+      }
+      return capitalize(word.toLowerCase());
+    })
+    .join(" ");
+
+
   // Apply replacements first
   Object.entries(replacements).forEach(([key, value]) => {
     const regex = new RegExp(key, "i"); // Create a case-insensitive regex
@@ -77,7 +170,7 @@ export function cleanLocation(location: string) {
 }
 
 export function getMethodColor(method: string, slot: number) {
-  if (method === "fishing_mons") {
+  if (method === "fishing" || method === "fishing_mons") {
     if (slot === 0 || slot === 1) {
       return "bg-blue-500"; // Old Rod
     } else if (slot >= 2 && slot <= 4) {
@@ -89,10 +182,10 @@ export function getMethodColor(method: string, slot: number) {
   if (method === "walk") {
     return "bg-emerald-700"; // Walk
   }
-  if (method === "Rock Smash") {
+  if (method === "rock smash") {
     return "bg-red-700"; // Rock Smash
   }
-  if (method === "surf") {
+  if (method === "water") {
     return "bg-blue-700"; // Surf
   }
   return "bg-gray-500"; // Default color
@@ -133,14 +226,14 @@ export function getConsolidatedEncounters(
     let methodKey = encounter.method;
 
     // For fishing, use a more specific method key that includes the rod type
-    if (methodKey === "fishing_mons") {
+    if (methodKey === "fishing") {
       const slot = encounter.slot;
       if (slot === 0 || slot === 1) {
-        methodKey = "fishing_mons_old";
+        methodKey = "fishing_old";
       } else if (slot >= 2 && slot <= 4) {
-        methodKey = "fishing_mons_good";
+        methodKey = "fishing_good";
       } else if (slot >= 5 && slot <= 9) {
-        methodKey = "fishing_mons_super";
+        methodKey = "fishing_super";
       }
     }
 
@@ -223,16 +316,16 @@ export function getConsolidatedMethodName(
   slots?: number[],
 ): string {
   // Handle specific fishing rod methods
-  if (method === "fishing_mons_old") {
+  if (method === "fishing_old") {
     return "Old Rod";
-  } else if (method === "fishing_mons_good") {
+  } else if (method === "fishing_good") {
     return "Good Rod";
-  } else if (method === "fishing_mons_super") {
+  } else if (method === "fishing_super") {
     return "Super Rod";
   }
 
   // Handle original fishing method (for backward compatibility)
-  if (method === "fishing_mons") {
+  if (method === "fishing") {
     if (!slots || slots.length === 0) {
       return "Fishing";
     }
@@ -269,15 +362,15 @@ export function getConsolidatedMethodColor(
   slots?: number[],
 ): string {
   // Handle specific fishing rod methods
-  if (method === "fishing_mons_old") {
+  if (method === "fishing_old") {
     return "bg-sky-600"; // Old Rod
-  } else if (method === "fishing_mons_good") {
+  } else if (method === "fishing_good") {
     return "bg-cyan-700"; // Good Rod
-  } else if (method === "fishing_mons_super") {
+  } else if (method === "fishing_super") {
     return "bg-teal-600"; // Super Rod
   }
 
-  if (method === "fishing_mons" && slots && slots.length > 0) {
+  if (method === "fishing" && slots && slots.length > 0) {
     const slot = slots[0]; // Just use the first slot
     return getMethodColor(method, slot);
   }
