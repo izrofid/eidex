@@ -1,13 +1,13 @@
-import { Pokemon, FilterOptions } from "../../types";
-import { matchesNameFilter } from "./matchesNameFilter";
-import { matchesTypeFilter } from "./matchesTypeFilter";
-import { matchesStatFilter } from "./matchesStatFilter";
+import { FilterOptions, Pokemon } from "../../types";
 import { matchesAbilityFilter } from "./matchesAbilityFilter";
-import { matchesMoveFilter } from "./matchesMoveFilter";
-import { sortPokemon } from "./sortPokemon";
-import { matchesMegaFilter } from "./matchesMegaFilter";
-import { matchesNfeFilter } from "./matchesNfeFilter";
 import { matchesItemFilter } from "./matchesItemFilter";
+import { matchesMegaFilter } from "./matchesMegaFilter";
+import { matchesMoveFilter } from "./matchesMoveFilter";
+import { matchesNameFilter } from "./matchesNameFilter";
+import { matchesNfeFilter } from "./matchesNfeFilter";
+import { matchesStatFilter } from "./matchesStatFilter";
+import { matchesTypeFilter } from "./matchesTypeFilter";
+import { sortPokemon } from "./sortPokemon";
 
 export function filterPokemon(
   pokemons: Pokemon[] | Record<string, Pokemon>,

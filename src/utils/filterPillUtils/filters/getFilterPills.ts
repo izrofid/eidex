@@ -1,4 +1,4 @@
-import { FilterOptions } from "@/stores/filterStore/types";
+import { FilterOptions } from "@/types";
 import { getTypeName } from "@/utils/typeInfo";
 import { FilterPill } from "../types/types";
 import { FILTER_TYPES } from "../types/constants";

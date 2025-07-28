@@ -1,4 +1,5 @@
-import { FilterOptions, SortBy } from "src/stores/filterStore/types.ts";
+import { FilterOptions } from "@/types";
+import { SortBy } from "src/stores/filterStore/types.ts";
 
 export const FILTER_CONSTANTS = {
   DEFAULT_NAME: "",

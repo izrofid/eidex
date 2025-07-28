@@ -1,22 +1,7 @@
 // Core filter options interface
-export interface FilterOptions {
-  name: string;
-  typeIds: [number?, number?];
-  statValue: number | undefined;
-  statType: string | undefined;
-  isStatMax: boolean;
-  sortBy: SortBy;
-  sortStat: string | undefined;
-  sortDescending: boolean;
-  moveSource: MoveSource;
-  moveIds: number[];
-  moveNames: string[];
-  megaCycle: boolean | undefined;
-  nfeCycle: boolean | undefined;
-  heldItem: number;
-  abilityId?: number;
-  ability?: string;
-}
+
+import { FilterOptions } from "@/types";
+
 
 // Enums and specific types
 export type MoveSource = "all" | "levelup" | "tm" | "egg";

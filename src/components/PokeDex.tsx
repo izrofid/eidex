@@ -19,22 +19,26 @@ function PokeDex() {
 
   // Memoized filtered Pokémon list (only updates when filters or randomizer state changes)
   const filteredPokemon = useMemo(() => {
-    return filterPokemon(pokemonData as Record<string, Pokemon>, filters, randomiserState.isActive);
+    return filterPokemon(
+      pokemonData as Record<string, Pokemon>,
+      filters,
+      randomiserState.isActive,
+    );
   }, [filters, randomiserState]);
 
   // Create ref to store previous randomiser state for comparison
   const prevRandomiserStateRef = useRef(randomiserState);
-  
+
   // Scroll to top when filters change, or when randomiser state changes with relevant filters active
   useEffect(() => {
     const isAbilityFilterActive = filters.abilityId !== undefined;
-    
+
     // Check if we should scroll due to randomiser state change
-    const shouldScrollForRandomiser = 
-      (isAbilityFilterActive) && // Ability or move filter is active
-      (prevRandomiserStateRef.current.isActive !== randomiserState.isActive || 
-       prevRandomiserStateRef.current.trainerId !== randomiserState.trainerId);
-    
+    const shouldScrollForRandomiser =
+      isAbilityFilterActive && // Ability or move filter is active
+      (prevRandomiserStateRef.current.isActive !== randomiserState.isActive ||
+        prevRandomiserStateRef.current.trainerId !== randomiserState.trainerId);
+
     // Always scroll if filters change, or conditionally for randomiser changes
     if (shouldScrollForRandomiser) {
       window.scrollTo({
@@ -42,7 +46,7 @@ function PokeDex() {
         behavior: "auto",
       });
     }
-    
+
     // Update ref with current state for next comparison
     prevRandomiserStateRef.current = randomiserState;
   }, [filters, randomiserState]);
@@ -73,13 +77,13 @@ function PokeDex() {
 
   return (
     <div className="sm:ml-(--sidebar-width) flex min-h-screen w-full flex-col items-center bg-neutral-800">
-      <div ref={ref} className="w-full sm:max-w-[60%] bg-zinc-900">
-        <HeaderBar/>
+      <div ref={ref} className="w-full bg-zinc-900 sm:max-w-[60%]">
+        <HeaderBar />
         <FilterBar />
       </div>
       <div
         ref={containerRef}
-        className="relative flex h-full w-full sm:max-w-[60%] flex-col"
+        className="relative flex h-full w-full flex-col sm:max-w-[60%]"
       >
         <CreditsPanel />
         <HelpPanel />

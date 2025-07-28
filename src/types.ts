@@ -43,23 +43,20 @@ export interface SpeciesData {
 export interface FilterOptions {
   name?: string;
   typeIds?: [number?, number?];
-  statValue?: number;
-  sortBy?: SortBy;
+  statValue?: number | undefined;
   statType?: StatType;
   isStatMax?: boolean;
+  sortBy?: SortBy;
   sortStat?: StatType;
-  ability?: string;
-  abilityId?: number;
-  levelupMove?: string;
-  tmMove?: string;
   sortDescending?: boolean;
-  tutorMove?: string;
-  moveNames?: string[];
-  moveIds?: number[];
   moveSource?: MoveSource;
-  heldItem?: number;
+  moveIds?: number[];
+  moveNames?: string[];
   megaCycle?: boolean | undefined;
   nfeCycle?: boolean | undefined;
+  heldItem?: number;
+  abilityId?: number;
+  ability?: string;
 }
 
 export interface Move {
