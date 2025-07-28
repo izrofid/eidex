@@ -1,14 +1,14 @@
-import { useFilterStore } from "@/stores/filterStore";
+import { useModularFilterStore } from "@/stores/filterStore/index";
 import React from "react";
 import CycleButton from "../CycleButton";
 import { MdBlock } from "react-icons/md";
 import { LuFilterX, LuFilter } from "react-icons/lu";
 
 const FilterRadio: React.FC = () => {
-  const cycleMega = useFilterStore((state) => state.cycleMega);
-  const megaCycle = useFilterStore((state) => state.megaCycle);
-  const cycleNfe = useFilterStore((state) => state.cycleNfe);
-  const nfeCycle = useFilterStore((state) => state.nfeCycle);
+  const cycleMega = useModularFilterStore((state) => state.cycleMega);
+  const megaCycle = useModularFilterStore((state) => state.megaCycle);
+  const cycleNfe = useModularFilterStore((state) => state.cycleNfe);
+  const nfeCycle = useModularFilterStore((state) => state.nfeCycle);
 
   return (
     <div className="flex justify-start gap-3 w-full rounded-md bg-card-backdrop p-3">
