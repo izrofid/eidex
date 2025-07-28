@@ -23,7 +23,7 @@ export default function StatSelector() {
   return (
     <div className="border-1 flex h-max min-h-8 min-w-max flex-1 justify-between gap-0 rounded-md overflow-hidden border-gray-200 select-none">
       <RadioGroup
-        value={statTypeValue || ""}
+        value={statTypeValue || statType.BST}
         onChange={setStatType}
         className="flex flex-row overflow-hidden"
       >

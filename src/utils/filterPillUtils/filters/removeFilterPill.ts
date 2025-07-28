@@ -22,9 +22,9 @@ export function removeFilterPill(
             store.setAbility(0);
             break;
 
-        // case "stat":
-        //     removeStat();
-        //     break;
+        case "stat":
+            store.setStatValue(undefined);
+            break;
 
         case "item":
             store.setHeldItem(0);
