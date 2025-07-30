@@ -73,7 +73,7 @@ export default function PokemonList({
 
   return (
     <div className="flex flex-1 w-full flex-col items-center select-none">
-      <div className="w-full sticky top-0 z-10 bg-neutral-900 p-3">
+      <div className="w-full sticky top-0 z-10 bg-zinc-800 border-b-1 border-neutral-700 p-3">
       <SortBar/>
       </div>
       <div className="w-full divide-y divide-zinc-700/80">

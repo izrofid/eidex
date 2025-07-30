@@ -78,7 +78,7 @@ export function PokemonCard({ pokemon }: PokemonCardProps) {
     <div onClick={() => openModal(pokemon)} className="w-full cursor-pointer">
       <div className="border-b-1 flex w-full flex-col border-neutral-500/20 bg-neutral-800 text-white transition-colors duration-200 hover:bg-neutral-700/30">
         {/* Header */}
-        <div className="flex justify-between bg-zinc-800/90 py-2 pl-2 shadow-sm">
+        <div className="flex justify-between bg-neutral-800 py-2 pl-2 shadow-sm">
           <div className="flex items-center gap-1">
             {/* Sprite and name  */}
             <SpriteImage pokemon={pokemon} />

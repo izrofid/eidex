@@ -18,7 +18,7 @@ export const SortBar: React.FC = () => {
   const toggleSortDirection = () => setIsDescending(!isDescending);
 
   return (
-    <div className="border-b-1 flex w-full items-center justify-between border-neutral-600/50 bg-zinc-900">
+    <div className="border-b-1 flex w-full items-center justify-between border-zinc-900/50 bg-zinc-900/50">
       {/* Sort buttons group */}
       <div className="2xs:gap-2 2xs:justify-start mx-3 flex h-11 flex-1 justify-evenly text-nowrap">
         {sortOptions.map((option) => {

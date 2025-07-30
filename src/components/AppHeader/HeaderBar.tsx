@@ -4,7 +4,7 @@ import { FaDiscord } from "react-icons/fa6";
 import { Button } from "@headlessui/react";
 
 const HeaderBar: React.FC = () => (
-  <header className="justify-betweeen flex select-none flex-row items-center justify-start gap-0 bg-neutral-900 px-4 py-4 font-sans tracking-tight text-gray-200 shadow-md">
+  <header className="justify-betweeen flex select-none flex-row items-center justify-start gap-0 bg-zinc-800 px-4 py-4 font-sans tracking-tight text-gray-200">
     <div className="font-chakra flex w-full items-center pb-0 pl-0 relative">
       <img
       src="icons/vivillionpride.png"
