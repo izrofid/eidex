@@ -1,6 +1,6 @@
 import { useRandomiserStore } from "../stores/randomiserStore";
-import CloseButton from "./CloseButton";
-import { SaveFileButton } from "./SaveFileButton";
+import CloseButton from "./MiscUI/CloseButton";
+import { SaveFileButton } from "./MiscUI/SaveFileButton";
 import {
   splitSaveIntoChunks,
   getTrainerIdFromSectors,

@@ -1,7 +1,7 @@
-import ShinyToggle from "./ShinyToggle.tsx";
-import CreditsButton from "../CreditsButton.tsx";
+import ShinyToggle from "./MiscUI/ShinyToggle.tsx";
+import CreditsButton from "./InfoSection/CreditsButton.tsx";
 import RandomiserSwitch from "./RandomiserSwitch.tsx";
-import HelpButton from "../HelpButton.tsx";
+import HelpButton from "./InfoSection/HelpButton.tsx";
 
 function SecondaryBar() {
   return (

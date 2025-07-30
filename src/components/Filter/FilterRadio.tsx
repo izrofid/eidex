@@ -1,6 +1,6 @@
 import { useModularFilterStore } from "@/stores/filterStore/index";
 import React from "react";
-import CycleButton from "../CycleButton";
+import CycleButton from "../MiscUI/CycleButton";
 import { MdBlock } from "react-icons/md";
 import { LuFilterX, LuFilter } from "react-icons/lu";
 

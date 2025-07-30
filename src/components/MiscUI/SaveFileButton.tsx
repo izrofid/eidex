@@ -1,8 +1,8 @@
 import { Button, Input } from "@headlessui/react";
 import React, { useEffect, useRef } from "react";
 import { MdCloudUpload } from "react-icons/md";
-import { getTrainerIdFromSectors, MGBA_SIZE, splitSaveIntoChunks, TOTAL_SIZE } from "../randomiser/trainerIdExtractor";
-import { useRandomiserStore } from "../stores/randomiserStore";
+import { getTrainerIdFromSectors, MGBA_SIZE, splitSaveIntoChunks, TOTAL_SIZE } from "../../randomiser/trainerIdExtractor";
+import { useRandomiserStore } from "../../stores/randomiserStore";
 
 export function SaveFileButton({
   onSaveRead,

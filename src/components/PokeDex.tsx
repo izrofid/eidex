@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
-import CreditsPanel from "./CreditsPanel";
+import CreditsPanel from "./InfoSection/CreditsPanel";
 import FilterBar from "./Filter/FilterBar";
-import FloatingButton from "./FloatingActionButton";
+import FloatingButton from "./MiscUI/FloatingActionButton";
 import PokemonList from "./PokemonList/PokemonList";
 import HeaderBar from "./AppHeader/HeaderBar";
 import pokemonData from "../data/speciesData.json";
@@ -10,7 +10,7 @@ import { useUIStore } from "../stores/uiStore";
 import { Pokemon } from "../types";
 import { filterPokemon } from "../utils/filterUtils/filterPokemon";
 import { useRandomiserState } from "../utils/randomiserState";
-import HelpPanel from "./HelpPanel";
+import HelpPanel from "./InfoSection/HelpPanel";
 import { useModularFilterStore } from "../stores/filterStore/index";
 function PokeDex() {
   // Get filter state from Zustand store

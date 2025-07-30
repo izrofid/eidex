@@ -6,7 +6,7 @@ import chroma from "chroma-js";
 import { useUIStore } from "@/stores/uiStore";
 
 import { useScreenWidth } from "@/hooks/useScreenWidth";
-import SpriteImage from "../SpriteImage";
+import SpriteImage from "../MiscUI/SpriteImage";
 import { randomizeAbility } from "@/randomiser/randomiser";
 import { abilityWhitelist } from "@/randomiser/abilityWhitelist";
 import { useRandomiserStore } from "@/stores/randomiserStore";

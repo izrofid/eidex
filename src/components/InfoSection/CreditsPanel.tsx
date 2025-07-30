@@ -1,6 +1,6 @@
 import { Dialog, DialogPanel, DialogTitle, Button} from "@headlessui/react";
-import CloseButton from "./CloseButton";
-import useBodyScrollLock from "../hooks/useBodyScrollLock";
+import CloseButton from "../MiscUI/CloseButton";
+import useBodyScrollLock from "../../hooks/useBodyScrollLock";
 import { useUIStore } from "@/stores/uiStore";
 import { FaGamepad, FaCode, FaUsers, FaDatabase } from "react-icons/fa";
 

@@ -1,7 +1,7 @@
 import { useUIStore } from "@/stores/uiStore";
-import ShinyToggle from "../AppHeader/ShinyToggle";
-import RandomiserSwitch from "../AppHeader/RandomiserSwitch";
-import CloseButton from "../CloseButton";
+import ShinyToggle from "../MiscUI/ShinyToggle";
+import RandomiserSwitch from "../RandomiserSwitch";
+import CloseButton from "../MiscUI/CloseButton";
 import PokemonView from "./PokemonView";
 
 function PokemonModal() {

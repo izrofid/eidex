@@ -3,7 +3,7 @@ import AbilityBox from "./Ability/AbilityBox";
 import AbilityDescription from "./Ability/AbilityDescription";
 import { TypeBadge } from "../TypeBadges/TypeBadge";
 import StatBars from "./MiscModal/StatBars";
-import SpriteImage from "../SpriteImage";
+import SpriteImage from "../MiscUI/SpriteImage";
 import { getEvolutionaryFamily } from "@/utils/evoFamily";
 import { hasForms, hasItems } from "@/utils/speciesUtils";
 import { useUIStore } from "@/stores/uiStore";

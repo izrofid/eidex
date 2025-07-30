@@ -1,5 +1,5 @@
 import { getAbilityName, getAbilityDescription } from "../../../utils/abilityData";
-import CloseButton from "../../CloseButton";
+import CloseButton from "../../MiscUI/CloseButton";
 import { useUIStore } from "@/stores/uiStore";
 
 const AbilityDescription: React.FC = () => {

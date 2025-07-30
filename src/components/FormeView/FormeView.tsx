@@ -1,7 +1,7 @@
 import { Pokemon } from "@/types";
 import React from "react";
 import speciesData from "@/data/speciesData.json";
-import SpriteImage from "../SpriteImage";
+import SpriteImage from "../MiscUI/SpriteImage";
 import excludeMons from "@/utils/excludeMons";
 import { hasForms, getSpeciesData } from "@/utils/speciesUtils";
 import { useUIStore } from "@/stores/uiStore";
