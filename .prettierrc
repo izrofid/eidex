@@ -1,1 +1,5 @@
-{ "plugins": ["prettier-plugin-tailwindcss"], "tailwindStylesheet": "./resources/css/app.css"}
+{
+  "tabWidth": 4,
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "tailwindStylesheet": "./index.css"
+}
