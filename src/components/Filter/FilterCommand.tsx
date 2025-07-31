@@ -7,7 +7,10 @@ import moveData from "../../data/moveData.json";
 import { useModularFilterStore } from "../../stores/filterStore/index";
 import { useUIStore } from "@/stores/uiStore";
 import { IoMdRibbon } from "react-icons/io";
+import { LuSword } from "react-icons/lu";
 import { MdCatchingPokemon, MdKeyboardCommandKey } from "react-icons/md";
+import { useRecentSearchesStore } from "@/stores/recentSearchStore";
+import { RecentSearches } from "./RecentSearches";
 
 // Types
 interface SearchEntry {
@@ -87,17 +90,60 @@ export const CommandMenu: React.FC = () => {
   const setAbility = useModularFilterStore((state) => state.setAbility);
   const setMove = useModularFilterStore((state) => state.setMoveValue);
 
+  // Add recent searches store
+  const addRecentSearch = useRecentSearchesStore((state) => state.addRecentSearch);
+
+
+  const handleSelection = (entry: SearchEntry, type: 'Pokemon' | 'Ability' | 'Move') => {
+    addRecentSearch({
+      id: entry.id,
+      name: entry.name,
+      type: type,
+    });
+
+    // Handle the actual selection
+    switch (type) {
+      case 'Pokemon':
+        setName(entry.name);
+        break;
+      case 'Ability':
+        setAbility(entry.id);
+        break;
+      case 'Move':
+        setMove({ id: entry.id, name: entry.name });
+        break;
+    }
+
+    setOpen(false);
+  };
+
+  const handleRecentSelection = (item: { id: number; name: string; type: string }) => {
+    switch (item.type) {
+      case 'Pokemon':
+        setName(item.name);
+        break;
+      case 'Ability':
+        setAbility(item.id);
+        break;
+      case 'Move':
+        setMove({ id: item.id, name: item.name });
+        break;
+    }
+    setOpen(false);
+  };
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (isSafeToOpen && e.key === "k" && (e.metaKey || e.ctrlKey)) {
         e.preventDefault();
         setOpen(!open);
+        setSearch("");
       }
     };
 
     document.addEventListener("keydown", handleKeyDown);
     return () => document.removeEventListener("keydown", handleKeyDown);
-  }, [isSafeToOpen]);
+  }, [isSafeToOpen, open, setOpen]);
 
   const getFilteredEntries = (
     data: DataSource,
@@ -115,7 +161,6 @@ export const CommandMenu: React.FC = () => {
           name,
           id,
           icon: icon ? icon : <FaSearch className="text-gray-500" />,
-          onSelect: () => setName(name),
         };
       });
   };
@@ -131,7 +176,7 @@ export const CommandMenu: React.FC = () => {
   );
 
   const moveEntries = useMemo(
-    () => getFilteredEntries(moveData, "name", "moveId"),
+    () => getFilteredEntries(moveData, "name", "moveId", <LuSword/>),
     [search],
   );
 
@@ -156,10 +201,10 @@ export const CommandMenu: React.FC = () => {
           open={open}
          onOpenChange={(isOpen) => {
             setOpen(isOpen);
-            if (!isOpen) setSearch("");
+            setSearch(""); // Clear search whenever dialog state changes
           }}
           label="Global Command Menu"
-          className="fixed inset-0 z-40 flex items-center justify-center bg-black/50 p-4 backdrop-blur-md"
+          className="fixed inset-0 z-40 flex items-start justify-center bg-black/50 p-4 backdrop-blur-md"
           onClick={() => setOpen(false)}
         >
           <div
@@ -180,29 +225,26 @@ export const CommandMenu: React.FC = () => {
               <Command.Empty className="py-2 px-3 text-sm text-zinc-500">
                 No results found. Try adjusting your search.
               </Command.Empty>
+              {!search.trim() && (
+                <RecentSearches
+                  onSelect={handleRecentSelection}
+                  entryTypes={entryTypes}
+                />
+              )}
               <CommandItems
                 entries={pokemonEntries}
-                onSelect={(entry) => {
-                  setName(entry.name);
-                  setOpen(!open);
-                }}
+                onSelect={(entry) => handleSelection(entry, 'Pokemon')}
                 entryType={entryTypes.Pokemon}
               />
               <CommandItems
                 entries={abilityEntries}
-                onSelect={(entry) => {
-                  setAbility(entry.id);
-                  setOpen(!open);
-                }}
+                onSelect={(entry) => handleSelection(entry, 'Ability')}
                 entryType={entryTypes.Ability}
               />
 
               <CommandItems
                 entries={moveEntries}
-                onSelect={(entry) => {
-                  setMove({ id: entry.id, name: entry.name });
-                  setOpen(!open);
-                }}
+                onSelect={(entry) => handleSelection(entry, 'Move')}
                 entryType={entryTypes.Move}
               />
             </Command.List>
