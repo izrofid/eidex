@@ -76,8 +76,8 @@ function PokeDex() {
   });
 
   return (
-    <div className="sm:ml-(--sidebar-width) flex min-h-screen w-full bg-neutral-950 flex-col items-center bg-neutral-800">
-      <div ref={ref} className="w-full bg-neutral-800 sm:max-w-[60%]">
+    <div className="sm:ml-(--sidebar-width) flex min-h-screen w-full flex-col items-center bg-neutral-900">
+      <div ref={ref} className="w-full bg-zinc-800 sm:max-w-[60%]">
         <HeaderBar />
         <FilterBar />
       </div>
