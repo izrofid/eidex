@@ -17,6 +17,7 @@ export const createResetSlice: StateCreator<
   ResetSlice
 > = (set) => ({
   resetFilters: () => set(() => ({
-    filters: initialFilters
+    filters: initialFilters,
+    moveValues: [],
   })),
 });
