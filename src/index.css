@@ -102,6 +102,19 @@
     display: none;
   }
 
+  .dark-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #333 #1a1a1a;
+  }
+  .dark-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    background: #1a1a1a;
+  }
+  .dark-scrollbar::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+  }
+
   .no-scrollbar {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
@@ -109,3 +122,6 @@
 }
 
 
+:root {
+  color-scheme: dark;
+}
