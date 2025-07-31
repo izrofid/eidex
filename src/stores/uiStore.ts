@@ -11,6 +11,7 @@ interface UIState {
   isSidebarOpen: boolean;
   isHelpOpen: boolean;
   isCmdOpen: boolean;
+  learnsetView: "list" | "card"
   toggleShiny: () => void;
   setSelectedPokemon: (pokemon: Pokemon | null) => void;
   setSelectedAbility: (ability: Ability | null) => void;
@@ -22,6 +23,7 @@ interface UIState {
   openHelp: () => void;
   closeHelp: () => void;
   setCmdOpen: (isOpen: boolean) => void;
+  setLearnsetView: (view: "list" | "card") => void;
 }
 
 export const useUIStore = create<UIState>()(
@@ -36,6 +38,7 @@ export const useUIStore = create<UIState>()(
       isSidebarOpen: false,
       isHelpOpen: false,
       isCmdOpen: false,
+      learnsetView: "card",
 
       //Actions
       toggleShiny: () => set((state) => ({ isShiny: !state.isShiny })),
@@ -54,13 +57,14 @@ export const useUIStore = create<UIState>()(
       toggleSidebar: () => set((state) => ({ isSidebarOpen: !state.isSidebarOpen })),
       openHelp: () => set({ isHelpOpen: true }),
       closeHelp: () => set({ isHelpOpen: false }),
-      setCmdOpen: (isOpen) => set({isCmdOpen: isOpen})
+      setCmdOpen: (isOpen) => set({isCmdOpen: isOpen}),
+      setLearnsetView: (view) => set({learnsetView: view})
     }),
 
     {
       name: "eidex-ui-storage",
-      // Only persist the shiny state
-      partialize: (state) => ({ isShiny: state.isShiny }),
+      // Only persist the shiny and learnset view state
+      partialize: (state) => ({ isShiny: state.isShiny, learnsetView: state.learnsetView }),
     },
   ),
 );
