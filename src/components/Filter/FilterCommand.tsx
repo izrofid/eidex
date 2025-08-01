@@ -184,7 +184,7 @@ export const CommandMenu: React.FC = () => {
     <>
       <div
         className="bg-filterbox/80 flex w-full cursor-text items-center justify-between gap-2 rounded-full px-3 py-2.5 text-sm text-zinc-400"
-        onClick={() => setOpen(true)}
+        onClick={() => {setOpen(true); setSearch("")}}
       >
         <span className="flex gap-2 items-center">
           <FaSearch />
