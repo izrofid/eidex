@@ -1,6 +1,6 @@
 {
   "1": {
-    "id": 1,
+    "moveId": 1,
     "name": "Pound",
     "type": 1,
     "description": "Pounds the foe with forelegs or tail.",
@@ -13,7 +13,7 @@
     ]
   },
   "2": {
-    "id": 2,
+    "moveId": 2,
     "name": "Karate Chop",
     "type": 2,
     "description": "A chopping attack with a high critical-hit ratio.",
@@ -26,7 +26,7 @@
     ]
   },
   "3": {
-    "id": 3,
+    "moveId": 3,
     "name": "Double Slap",
     "type": 1,
     "description": "Repeatedly slaps the foe 2 to 5 times.",
@@ -39,7 +39,7 @@
     ]
   },
   "4": {
-    "id": 4,
+    "moveId": 4,
     "name": "Comet Punch",
     "type": 1,
     "description": "Repeatedly punches the foe 2 to 5 times.",
@@ -53,7 +53,7 @@
     ]
   },
   "5": {
-    "id": 5,
+    "moveId": 5,
     "name": "Mega Punch",
     "type": 1,
     "description": "A strong punch thrown with incredible power.",
@@ -67,7 +67,7 @@
     ]
   },
   "6": {
-    "id": 6,
+    "moveId": 6,
     "name": "Pay Day",
     "type": 1,
     "description": "Throws coins at the foe. Money is recovered after.",
@@ -78,7 +78,7 @@
     "properties": []
   },
   "7": {
-    "id": 7,
+    "moveId": 7,
     "name": "Fire Punch",
     "type": 11,
     "description": "A fiery punch that may burn the foe.",
@@ -92,7 +92,7 @@
     ]
   },
   "8": {
-    "id": 8,
+    "moveId": 8,
     "name": "Ice Punch",
     "type": 16,
     "description": "An icy punch that may leave the foe with frostbite.",
@@ -106,7 +106,7 @@
     ]
   },
   "9": {
-    "id": 9,
+    "moveId": 9,
     "name": "Thunder Punch",
     "type": 14,
     "description": "An electrified punch that may paralyze the foe.",
@@ -120,7 +120,7 @@
     ]
   },
   "10": {
-    "id": 10,
+    "moveId": 10,
     "name": "Scratch",
     "type": 1,
     "description": "Scratches the foe with sharp claws.",
@@ -133,7 +133,7 @@
     ]
   },
   "11": {
-    "id": 11,
+    "moveId": 11,
     "name": "Vise Grip",
     "type": 1,
     "description": "Grips the foe with large and powerful pincers.",
@@ -146,7 +146,7 @@
     ]
   },
   "12": {
-    "id": 12,
+    "moveId": 12,
     "name": "Guillotine",
     "type": 1,
     "description": "A powerful pincer attack that may cause fainting.",
@@ -159,7 +159,7 @@
     ]
   },
   "13": {
-    "id": 13,
+    "moveId": 13,
     "name": "Razor Wind",
     "type": 1,
     "description": "A 2-turn move that strikes the foe on the 2nd turn.",
@@ -172,7 +172,7 @@
     ]
   },
   "14": {
-    "id": 14,
+    "moveId": 14,
     "name": "Swords Dance",
     "type": 1,
     "description": "A fighting dance that sharply raises Attack.",
@@ -185,7 +185,7 @@
     ]
   },
   "15": {
-    "id": 15,
+    "moveId": 15,
     "name": "Cut",
     "type": 9,
     "description": "Cuts the foe with sharp scythes, claws, etc.",
@@ -199,7 +199,7 @@
     ]
   },
   "16": {
-    "id": 16,
+    "moveId": 16,
     "name": "Gust",
     "type": 3,
     "description": "Strikes the foe with a gust of wind whipped up by wings.",
@@ -212,7 +212,7 @@
     ]
   },
   "17": {
-    "id": 17,
+    "moveId": 17,
     "name": "Wing Attack",
     "type": 3,
     "description": "Strikes the foe with wings spread wide.",
@@ -225,7 +225,7 @@
     ]
   },
   "18": {
-    "id": 18,
+    "moveId": 18,
     "name": "Whirlwind",
     "type": 1,
     "description": "Blows away the foe with wind and ends the battle.",
@@ -238,7 +238,7 @@
     ]
   },
   "19": {
-    "id": 19,
+    "moveId": 19,
     "name": "Fly",
     "type": 3,
     "description": "Flies up on the first turn, then strikes the next turn.",
@@ -251,7 +251,7 @@
     ]
   },
   "20": {
-    "id": 20,
+    "moveId": 20,
     "name": "Bind",
     "type": 1,
     "description": "Binds and squeezes the foe for 4 or 5 turns.",
@@ -264,7 +264,7 @@
     ]
   },
   "21": {
-    "id": 21,
+    "moveId": 21,
     "name": "Slam",
     "type": 1,
     "description": "Slams the foe with a long tail, vine, etc.",
@@ -277,7 +277,7 @@
     ]
   },
   "22": {
-    "id": 22,
+    "moveId": 22,
     "name": "Vine Whip",
     "type": 13,
     "description": "Strikes the foe with slender, whiplike vines.",
@@ -290,7 +290,7 @@
     ]
   },
   "23": {
-    "id": 23,
+    "moveId": 23,
     "name": "Stomp",
     "type": 1,
     "description": "Stomps the enemy with a big foot. May cause flinching.",
@@ -304,7 +304,7 @@
     ]
   },
   "24": {
-    "id": 24,
+    "moveId": 24,
     "name": "Double Kick",
     "type": 2,
     "description": "A double-kicking attack that strikes the foe twice.",
@@ -318,7 +318,7 @@
     ]
   },
   "25": {
-    "id": 25,
+    "moveId": 25,
     "name": "Mega Kick",
     "type": 1,
     "description": "An extremely powerful kick with intense force.",
@@ -332,7 +332,7 @@
     ]
   },
   "26": {
-    "id": 26,
+    "moveId": 26,
     "name": "Jump Kick",
     "type": 2,
     "description": "A strong jumping kick. May miss and hurt the kicker.",
@@ -346,7 +346,7 @@
     ]
   },
   "27": {
-    "id": 27,
+    "moveId": 27,
     "name": "Rolling Kick",
     "type": 2,
     "description": "A kick delivered from a rapid spin. May flinch.",
@@ -360,7 +360,7 @@
     ]
   },
   "28": {
-    "id": 28,
+    "moveId": 28,
     "name": "Sand Attack",
     "type": 5,
     "description": "Reduces the foe's attack by hurling sand in its face.",
@@ -371,7 +371,7 @@
     "properties": []
   },
   "29": {
-    "id": 29,
+    "moveId": 29,
     "name": "Headbutt",
     "type": 1,
     "description": "A ramming attack that may cause flinching.",
@@ -384,7 +384,7 @@
     ]
   },
   "30": {
-    "id": 30,
+    "moveId": 30,
     "name": "Horn Attack",
     "type": 1,
     "description": "Jabs the foe with sharp horns.",
@@ -397,7 +397,7 @@
     ]
   },
   "31": {
-    "id": 31,
+    "moveId": 31,
     "name": "Fury Attack",
     "type": 1,
     "description": "Jabs the foe 2 to 5 times with sharp horns, etc.",
@@ -410,7 +410,7 @@
     ]
   },
   "32": {
-    "id": 32,
+    "moveId": 32,
     "name": "Horn Drill",
     "type": 1,
     "description": "A one-hit KO attack that uses a horn like a drill.",
@@ -423,7 +423,7 @@
     ]
   },
   "33": {
-    "id": 33,
+    "moveId": 33,
     "name": "Tackle",
     "type": 1,
     "description": "Charges the foe with a full- body tackle.",
@@ -436,7 +436,7 @@
     ]
   },
   "34": {
-    "id": 34,
+    "moveId": 34,
     "name": "Body Slam",
     "type": 1,
     "description": "A full-body slam that may cause paralysis.",
@@ -449,7 +449,7 @@
     ]
   },
   "35": {
-    "id": 35,
+    "moveId": 35,
     "name": "Wrap",
     "type": 1,
     "description": "Wraps and squeezes the foe 4 or 5 times with vines, etc.",
@@ -462,7 +462,7 @@
     ]
   },
   "36": {
-    "id": 36,
+    "moveId": 36,
     "name": "Take Down",
     "type": 1,
     "description": "A reckless charge attack that also hurts the user.",
@@ -475,7 +475,7 @@
     ]
   },
   "37": {
-    "id": 37,
+    "moveId": 37,
     "name": "Thrash",
     "type": 1,
     "description": "A rampage of 2 to 3 turns that confuses the user.",
@@ -488,7 +488,7 @@
     ]
   },
   "38": {
-    "id": 38,
+    "moveId": 38,
     "name": "Double-Edge",
     "type": 1,
     "description": "A life-risking tackle that also hurts the user.",
@@ -501,7 +501,7 @@
     ]
   },
   "39": {
-    "id": 39,
+    "moveId": 39,
     "name": "Tail Whip",
     "type": 1,
     "description": "Wags the tail to lower the foe's Defense.",
@@ -512,7 +512,7 @@
     "properties": []
   },
   "40": {
-    "id": 40,
+    "moveId": 40,
     "name": "Poison Sting",
     "type": 4,
     "description": "A toxic attack with barbs, etc., that may poison.",
@@ -523,7 +523,7 @@
     "properties": []
   },
   "41": {
-    "id": 41,
+    "moveId": 41,
     "name": "Twineedle",
     "type": 7,
     "description": "Stingers on the forelegs jab the foe twice.",
@@ -534,7 +534,7 @@
     "properties": []
   },
   "42": {
-    "id": 42,
+    "moveId": 42,
     "name": "Pin Missile",
     "type": 7,
     "description": "Sharp pins are fired to strike 2 to 5 times.",
@@ -545,7 +545,7 @@
     "properties": []
   },
   "43": {
-    "id": 43,
+    "moveId": 43,
     "name": "Leer",
     "type": 1,
     "description": "Frightens the foe with a leer to lower Defense.",
@@ -556,7 +556,7 @@
     "properties": []
   },
   "44": {
-    "id": 44,
+    "moveId": 44,
     "name": "Bite",
     "type": 18,
     "description": "Bites with vicious fangs. May cause flinching.",
@@ -570,7 +570,7 @@
     ]
   },
   "45": {
-    "id": 45,
+    "moveId": 45,
     "name": "Growl",
     "type": 1,
     "description": "Growls cutely to reduce the foe's Attack.",
@@ -583,7 +583,7 @@
     ]
   },
   "46": {
-    "id": 46,
+    "moveId": 46,
     "name": "Roar",
     "type": 1,
     "description": "Makes the foe flee to end the battle.",
@@ -596,7 +596,7 @@
     ]
   },
   "47": {
-    "id": 47,
+    "moveId": 47,
     "name": "Sing",
     "type": 1,
     "description": "A soothing song lulls the foe into a deep slumber.",
@@ -609,7 +609,7 @@
     ]
   },
   "48": {
-    "id": 48,
+    "moveId": 48,
     "name": "Supersonic",
     "type": 1,
     "description": "Emits bizarre sound waves that may confuse the foe.",
@@ -622,7 +622,7 @@
     ]
   },
   "49": {
-    "id": 49,
+    "moveId": 49,
     "name": "Sonic Boom",
     "type": 1,
     "description": "Launches shock waves that always inflict 20 HP damage.",
@@ -633,7 +633,7 @@
     "properties": []
   },
   "50": {
-    "id": 50,
+    "moveId": 50,
     "name": "Disable",
     "type": 1,
     "description": "Psychically disables one of the foe's moves.",
@@ -644,7 +644,7 @@
     "properties": []
   },
   "51": {
-    "id": 51,
+    "moveId": 51,
     "name": "Acid",
     "type": 4,
     "description": "Sprays a hide-melting acid. May lower Sp. Def.",
@@ -655,7 +655,7 @@
     "properties": []
   },
   "52": {
-    "id": 52,
+    "moveId": 52,
     "name": "Ember",
     "type": 11,
     "description": "A weak fire attack that may inflict a burn.",
@@ -666,7 +666,7 @@
     "properties": []
   },
   "53": {
-    "id": 53,
+    "moveId": 53,
     "name": "Flamethrower",
     "type": 11,
     "description": "A powerful fire attack that may inflict a burn.",
@@ -677,7 +677,7 @@
     "properties": []
   },
   "54": {
-    "id": 54,
+    "moveId": 54,
     "name": "Mist",
     "type": 16,
     "description": "Creates a mist that stops reduction of abilities.",
@@ -688,7 +688,7 @@
     "properties": []
   },
   "55": {
-    "id": 55,
+    "moveId": 55,
     "name": "Water Gun",
     "type": 12,
     "description": "Squirts water to attack the foe.",
@@ -699,7 +699,7 @@
     "properties": []
   },
   "56": {
-    "id": 56,
+    "moveId": 56,
     "name": "Hydro Pump",
     "type": 12,
     "description": "Blasts water at high power to strike the foe.",
@@ -710,7 +710,7 @@
     "properties": []
   },
   "57": {
-    "id": 57,
+    "moveId": 57,
     "name": "Surf",
     "type": 12,
     "description": "Creates a huge wave, then crashes it down on the foe.",
@@ -721,7 +721,7 @@
     "properties": []
   },
   "58": {
-    "id": 58,
+    "moveId": 58,
     "name": "Ice Beam",
     "type": 16,
     "description": "Blasts the foe with an icy beam. May cause frostbite.",
@@ -732,7 +732,7 @@
     "properties": []
   },
   "59": {
-    "id": 59,
+    "moveId": 59,
     "name": "Blizzard",
     "type": 16,
     "description": "Hits the foe with an icy storm. May cause frostbite.",
@@ -745,7 +745,7 @@
     ]
   },
   "60": {
-    "id": 60,
+    "moveId": 60,
     "name": "Psybeam",
     "type": 15,
     "description": "Fires a peculiar ray that may confuse the foe.",
@@ -756,7 +756,7 @@
     "properties": []
   },
   "61": {
-    "id": 61,
+    "moveId": 61,
     "name": "Bubble Beam",
     "type": 12,
     "description": "Forcefully sprays bubbles that may lower Speed.",
@@ -767,7 +767,7 @@
     "properties": []
   },
   "62": {
-    "id": 62,
+    "moveId": 62,
     "name": "Aurora Beam",
     "type": 16,
     "description": "Fires a rainbow-colored beam that may lower Attack.",
@@ -778,7 +778,7 @@
     "properties": []
   },
   "63": {
-    "id": 63,
+    "moveId": 63,
     "name": "Hyper Beam",
     "type": 1,
     "description": "Powerful, but leaves the user immobile the next turn.",
@@ -789,7 +789,7 @@
     "properties": []
   },
   "64": {
-    "id": 64,
+    "moveId": 64,
     "name": "Peck",
     "type": 3,
     "description": "Attacks the foe with a jabbing beak, etc.",
@@ -802,7 +802,7 @@
     ]
   },
   "65": {
-    "id": 65,
+    "moveId": 65,
     "name": "Drill Peck",
     "type": 3,
     "description": "A corkscrewing attack with the beak acting as a drill.",
@@ -815,7 +815,7 @@
     ]
   },
   "66": {
-    "id": 66,
+    "moveId": 66,
     "name": "Submission",
     "type": 2,
     "description": "A reckless body slam that also hurts the user.",
@@ -828,7 +828,7 @@
     ]
   },
   "67": {
-    "id": 67,
+    "moveId": 67,
     "name": "Low Kick",
     "type": 2,
     "description": "A kick that inflicts more damage on heavier foes.",
@@ -842,7 +842,7 @@
     ]
   },
   "68": {
-    "id": 68,
+    "moveId": 68,
     "name": "Counter",
     "type": 2,
     "description": "Retaliates any physical hit with double the power.",
@@ -855,7 +855,7 @@
     ]
   },
   "69": {
-    "id": 69,
+    "moveId": 69,
     "name": "Seismic Toss",
     "type": 2,
     "description": "Inflicts damage identical to the user's level.",
@@ -868,7 +868,7 @@
     ]
   },
   "70": {
-    "id": 70,
+    "moveId": 70,
     "name": "Strength",
     "type": 1,
     "description": "Builds enormous power, then slams the foe.",
@@ -881,7 +881,7 @@
     ]
   },
   "71": {
-    "id": 71,
+    "moveId": 71,
     "name": "Absorb",
     "type": 13,
     "description": "An attack that absorbs half the damage inflicted.",
@@ -894,7 +894,7 @@
     ]
   },
   "72": {
-    "id": 72,
+    "moveId": 72,
     "name": "Mega Drain",
     "type": 13,
     "description": "An attack that absorbs half the damage inflicted.",
@@ -907,7 +907,7 @@
     ]
   },
   "73": {
-    "id": 73,
+    "moveId": 73,
     "name": "Leech Seed",
     "type": 13,
     "description": "Plants a seed on the foe to steal HP on every turn.",
@@ -918,7 +918,7 @@
     "properties": []
   },
   "74": {
-    "id": 74,
+    "moveId": 74,
     "name": "Growth",
     "type": 1,
     "description": "Forces the body to grow, raising Attack and Sp. Atk.",
@@ -929,7 +929,7 @@
     "properties": []
   },
   "75": {
-    "id": 75,
+    "moveId": 75,
     "name": "Razor Leaf",
     "type": 13,
     "description": "Cuts the enemy with leaves. High critical-hit ratio.",
@@ -942,7 +942,7 @@
     ]
   },
   "76": {
-    "id": 76,
+    "moveId": 76,
     "name": "Solar Beam",
     "type": 13,
     "description": "Absorbs light in one turn, then attacks next turn.",
@@ -953,7 +953,7 @@
     "properties": []
   },
   "77": {
-    "id": 77,
+    "moveId": 77,
     "name": "Poison Powder",
     "type": 4,
     "description": "Scatters a toxic powder that may poison the foe.",
@@ -966,7 +966,7 @@
     ]
   },
   "78": {
-    "id": 78,
+    "moveId": 78,
     "name": "Stun Spore",
     "type": 13,
     "description": "Scatters a powder that may paralyze the foe.",
@@ -979,7 +979,7 @@
     ]
   },
   "79": {
-    "id": 79,
+    "moveId": 79,
     "name": "Sleep Powder",
     "type": 13,
     "description": "Scatters a powder that may cause the foe to sleep.",
@@ -992,7 +992,7 @@
     ]
   },
   "80": {
-    "id": 80,
+    "moveId": 80,
     "name": "Petal Dance",
     "type": 13,
     "description": "A rampage of 2 to 3 turns that confuses the user.",
@@ -1006,7 +1006,7 @@
     ]
   },
   "81": {
-    "id": 81,
+    "moveId": 81,
     "name": "String Shot",
     "type": 7,
     "description": "Binds the foe with string to reduce its Speed.",
@@ -1017,7 +1017,7 @@
     "properties": []
   },
   "82": {
-    "id": 82,
+    "moveId": 82,
     "name": "Dragon Rage",
     "type": 17,
     "description": "Launches shock waves that always inflict 40 HP damage.",
@@ -1028,7 +1028,7 @@
     "properties": []
   },
   "83": {
-    "id": 83,
+    "moveId": 83,
     "name": "Fire Spin",
     "type": 11,
     "description": "Traps the foe in a ring of fire for 4 or 5 turns.",
@@ -1039,7 +1039,7 @@
     "properties": []
   },
   "84": {
-    "id": 84,
+    "moveId": 84,
     "name": "Thunder Shock",
     "type": 14,
     "description": "An electrical attack that may paralyze the foe.",
@@ -1050,7 +1050,7 @@
     "properties": []
   },
   "85": {
-    "id": 85,
+    "moveId": 85,
     "name": "Thunderbolt",
     "type": 14,
     "description": "A strong electrical attack that may paralyze the foe.",
@@ -1061,7 +1061,7 @@
     "properties": []
   },
   "86": {
-    "id": 86,
+    "moveId": 86,
     "name": "Thunder Wave",
     "type": 14,
     "description": "A weak jolt of electricity that paralyzes the foe.",
@@ -1072,7 +1072,7 @@
     "properties": []
   },
   "87": {
-    "id": 87,
+    "moveId": 87,
     "name": "Thunder",
     "type": 14,
     "description": "A lightning attack that may cause paralysis.",
@@ -1083,7 +1083,7 @@
     "properties": []
   },
   "88": {
-    "id": 88,
+    "moveId": 88,
     "name": "Rock Throw",
     "type": 6,
     "description": "Throws small rocks to strike the foe.",
@@ -1094,7 +1094,7 @@
     "properties": []
   },
   "89": {
-    "id": 89,
+    "moveId": 89,
     "name": "Earthquake",
     "type": 5,
     "description": "A powerful quake, but has no effect on flying foes.",
@@ -1105,7 +1105,7 @@
     "properties": []
   },
   "90": {
-    "id": 90,
+    "moveId": 90,
     "name": "Fissure",
     "type": 5,
     "description": "A one-hit KO move that drops the foe in a fissure.",
@@ -1116,7 +1116,7 @@
     "properties": []
   },
   "91": {
-    "id": 91,
+    "moveId": 91,
     "name": "Dig",
     "type": 5,
     "description": "Digs underground the first turn and strikes next turn.",
@@ -1129,7 +1129,7 @@
     ]
   },
   "92": {
-    "id": 92,
+    "moveId": 92,
     "name": "Toxic",
     "type": 4,
     "description": "Poisons the foe with an intensifying toxin.",
@@ -1140,7 +1140,7 @@
     "properties": []
   },
   "93": {
-    "id": 93,
+    "moveId": 93,
     "name": "Confusion",
     "type": 15,
     "description": "A psychic attack that may cause confusion.",
@@ -1151,7 +1151,7 @@
     "properties": []
   },
   "94": {
-    "id": 94,
+    "moveId": 94,
     "name": "Psychic",
     "type": 15,
     "description": "A powerful psychic attack that may lower Sp. Def.",
@@ -1162,7 +1162,7 @@
     "properties": []
   },
   "95": {
-    "id": 95,
+    "moveId": 95,
     "name": "Hypnosis",
     "type": 15,
     "description": "A hypnotizing move that may induce sleep.",
@@ -1173,7 +1173,7 @@
     "properties": []
   },
   "96": {
-    "id": 96,
+    "moveId": 96,
     "name": "Meditate",
     "type": 15,
     "description": "Meditates in a peaceful fashion to raise Attack.",
@@ -1184,7 +1184,7 @@
     "properties": []
   },
   "97": {
-    "id": 97,
+    "moveId": 97,
     "name": "Agility",
     "type": 15,
     "description": "Relaxes the body to sharply boost Speed.",
@@ -1195,7 +1195,7 @@
     "properties": []
   },
   "98": {
-    "id": 98,
+    "moveId": 98,
     "name": "Quick Attack",
     "type": 1,
     "description": "An extremely fast attack that always strikes first.",
@@ -1208,7 +1208,7 @@
     ]
   },
   "99": {
-    "id": 99,
+    "moveId": 99,
     "name": "Rage",
     "type": 1,
     "description": "Raises the user's Attack every time it is hit.",
@@ -1221,7 +1221,7 @@
     ]
   },
   "100": {
-    "id": 100,
+    "moveId": 100,
     "name": "Teleport",
     "type": 15,
     "description": "A psychic move for fleeing from battle instantly.",
@@ -1232,7 +1232,7 @@
     "properties": []
   },
   "101": {
-    "id": 101,
+    "moveId": 101,
     "name": "Night Shade",
     "type": 8,
     "description": "Inflicts damage identical to the user's level.",
@@ -1243,7 +1243,7 @@
     "properties": []
   },
   "102": {
-    "id": 102,
+    "moveId": 102,
     "name": "Mimic",
     "type": 1,
     "description": "Copies a move used by the foe during one battle.",
@@ -1254,7 +1254,7 @@
     "properties": []
   },
   "103": {
-    "id": 103,
+    "moveId": 103,
     "name": "Screech",
     "type": 1,
     "description": "Emits a screech to sharply reduce the foe's Defense.",
@@ -1267,7 +1267,7 @@
     ]
   },
   "104": {
-    "id": 104,
+    "moveId": 104,
     "name": "Double Team",
     "type": 1,
     "description": "Creates illusory copies to raise evasiveness.",
@@ -1278,7 +1278,7 @@
     "properties": []
   },
   "105": {
-    "id": 105,
+    "moveId": 105,
     "name": "Recover",
     "type": 1,
     "description": "Recovers up to half the user's maximum HP.",
@@ -1291,7 +1291,7 @@
     ]
   },
   "106": {
-    "id": 106,
+    "moveId": 106,
     "name": "Harden",
     "type": 1,
     "description": "Stiffens the body's  muscles to raise Defense.",
@@ -1302,7 +1302,7 @@
     "properties": []
   },
   "107": {
-    "id": 107,
+    "moveId": 107,
     "name": "Minimize",
     "type": 1,
     "description": "Minimizes the user's size to raise evasiveness.",
@@ -1313,7 +1313,7 @@
     "properties": []
   },
   "108": {
-    "id": 108,
+    "moveId": 108,
     "name": "Smokescreen",
     "type": 1,
     "description": "Lowers the foe's accuracy using smoke, ink, etc.",
@@ -1324,7 +1324,7 @@
     "properties": []
   },
   "109": {
-    "id": 109,
+    "moveId": 109,
     "name": "Confuse Ray",
     "type": 8,
     "description": "A sinister ray that confuses the foe.",
@@ -1335,7 +1335,7 @@
     "properties": []
   },
   "110": {
-    "id": 110,
+    "moveId": 110,
     "name": "Withdraw",
     "type": 12,
     "description": "Withdraws the body into its hard shell to raise Defense.",
@@ -1346,7 +1346,7 @@
     "properties": []
   },
   "111": {
-    "id": 111,
+    "moveId": 111,
     "name": "Defense Curl",
     "type": 1,
     "description": "Curls up to conceal weak spots and raise Defense.",
@@ -1357,7 +1357,7 @@
     "properties": []
   },
   "112": {
-    "id": 112,
+    "moveId": 112,
     "name": "Barrier",
     "type": 15,
     "description": "Creates a barrier that sharply raises Defense.",
@@ -1368,7 +1368,7 @@
     "properties": []
   },
   "113": {
-    "id": 113,
+    "moveId": 113,
     "name": "Light Screen",
     "type": 15,
     "description": "Creates a wall of light that lowers Sp. Atk damage.",
@@ -1379,7 +1379,7 @@
     "properties": []
   },
   "114": {
-    "id": 114,
+    "moveId": 114,
     "name": "Haze",
     "type": 16,
     "description": "Creates a black haze that eliminates all stat changes.",
@@ -1390,7 +1390,7 @@
     "properties": []
   },
   "115": {
-    "id": 115,
+    "moveId": 115,
     "name": "Reflect",
     "type": 15,
     "description": "Creates a wall of light that weakens physical attacks.",
@@ -1401,7 +1401,7 @@
     "properties": []
   },
   "116": {
-    "id": 116,
+    "moveId": 116,
     "name": "Focus Energy",
     "type": 1,
     "description": "Focuses power to raise the critical-hit ratio.",
@@ -1412,7 +1412,7 @@
     "properties": []
   },
   "117": {
-    "id": 117,
+    "moveId": 117,
     "name": "Bide",
     "type": 1,
     "description": "Endures attack for 2 turns to retaliate double.",
@@ -1425,7 +1425,7 @@
     ]
   },
   "118": {
-    "id": 118,
+    "moveId": 118,
     "name": "Metronome",
     "type": 1,
     "description": "Waggles a finger to use any Pokémon move at random.",
@@ -1436,7 +1436,7 @@
     "properties": []
   },
   "119": {
-    "id": 119,
+    "moveId": 119,
     "name": "Mirror Move",
     "type": 3,
     "description": "Counters the foe's attack with the same move.",
@@ -1447,7 +1447,7 @@
     "properties": []
   },
   "120": {
-    "id": 120,
+    "moveId": 120,
     "name": "Self-Destruct",
     "type": 1,
     "description": "Inflicts severe damage but makes the user faint.",
@@ -1458,7 +1458,7 @@
     "properties": []
   },
   "121": {
-    "id": 121,
+    "moveId": 121,
     "name": "Egg Bomb",
     "type": 1,
     "description": "An egg is forcibly hurled at the foe.",
@@ -1471,7 +1471,7 @@
     ]
   },
   "122": {
-    "id": 122,
+    "moveId": 122,
     "name": "Lick",
     "type": 8,
     "description": "Licks with a long tongue to injure. May also paralyze.",
@@ -1484,7 +1484,7 @@
     ]
   },
   "123": {
-    "id": 123,
+    "moveId": 123,
     "name": "Smog",
     "type": 4,
     "description": "An exhaust-gas attack that may also poison.",
@@ -1495,7 +1495,7 @@
     "properties": []
   },
   "124": {
-    "id": 124,
+    "moveId": 124,
     "name": "Sludge",
     "type": 4,
     "description": "Sludge is hurled to inflict damage. May also poison.",
@@ -1506,7 +1506,7 @@
     "properties": []
   },
   "125": {
-    "id": 125,
+    "moveId": 125,
     "name": "Bone Club",
     "type": 5,
     "description": "Clubs the foe with a bone. May cause flinching.",
@@ -1517,7 +1517,7 @@
     "properties": []
   },
   "126": {
-    "id": 126,
+    "moveId": 126,
     "name": "Fire Blast",
     "type": 11,
     "description": "Incinerates everything it strikes. May cause a burn.",
@@ -1528,7 +1528,7 @@
     "properties": []
   },
   "127": {
-    "id": 127,
+    "moveId": 127,
     "name": "Waterfall",
     "type": 12,
     "description": "Charges the foe with speed to climb waterfalls.",
@@ -1541,7 +1541,7 @@
     ]
   },
   "128": {
-    "id": 128,
+    "moveId": 128,
     "name": "Clamp",
     "type": 12,
     "description": "Traps and squeezes the foe for 4 or 5 turns.",
@@ -1554,7 +1554,7 @@
     ]
   },
   "129": {
-    "id": 129,
+    "moveId": 129,
     "name": "Swift",
     "type": 1,
     "description": "Sprays star-shaped rays that never miss.",
@@ -1565,7 +1565,7 @@
     "properties": []
   },
   "130": {
-    "id": 130,
+    "moveId": 130,
     "name": "Skull Bash",
     "type": 1,
     "description": "Tucks in the head, then attacks on the next turn.",
@@ -1578,7 +1578,7 @@
     ]
   },
   "131": {
-    "id": 131,
+    "moveId": 131,
     "name": "Spike Cannon",
     "type": 1,
     "description": "Launches sharp spikes that strike 2 to 5 times.",
@@ -1591,7 +1591,7 @@
     ]
   },
   "132": {
-    "id": 132,
+    "moveId": 132,
     "name": "Constrict",
     "type": 1,
     "description": "Constricts to inflict pain. May lower Speed.",
@@ -1604,7 +1604,7 @@
     ]
   },
   "133": {
-    "id": 133,
+    "moveId": 133,
     "name": "Amnesia",
     "type": 15,
     "description": "Forgets about something and sharply raises Sp. Def.",
@@ -1615,7 +1615,7 @@
     "properties": []
   },
   "134": {
-    "id": 134,
+    "moveId": 134,
     "name": "Kinesis",
     "type": 15,
     "description": "Distracts the foe. May lower accuracy.",
@@ -1626,7 +1626,7 @@
     "properties": []
   },
   "135": {
-    "id": 135,
+    "moveId": 135,
     "name": "Soft-Boiled",
     "type": 1,
     "description": "Recovers up to half the user's maximum HP.",
@@ -1639,7 +1639,7 @@
     ]
   },
   "136": {
-    "id": 136,
+    "moveId": 136,
     "name": "High Jump Kick",
     "type": 2,
     "description": "A jumping knee kick. If it misses, the user is hurt.",
@@ -1653,7 +1653,7 @@
     ]
   },
   "137": {
-    "id": 137,
+    "moveId": 137,
     "name": "Glare",
     "type": 1,
     "description": "Intimidates and frightens the foe into paralysis.",
@@ -1664,7 +1664,7 @@
     "properties": []
   },
   "138": {
-    "id": 138,
+    "moveId": 138,
     "name": "Dream Eater",
     "type": 15,
     "description": "Takes one half the damage inflicted on a sleeping foe.",
@@ -1677,7 +1677,7 @@
     ]
   },
   "139": {
-    "id": 139,
+    "moveId": 139,
     "name": "Poison Gas",
     "type": 4,
     "description": "Envelops the foe in a toxic gas that may poison.",
@@ -1688,7 +1688,7 @@
     "properties": []
   },
   "140": {
-    "id": 140,
+    "moveId": 140,
     "name": "Barrage",
     "type": 1,
     "description": "Hurls round objects at the foe 2 to 5 times.",
@@ -1701,7 +1701,7 @@
     ]
   },
   "141": {
-    "id": 141,
+    "moveId": 141,
     "name": "Leech Life",
     "type": 7,
     "description": "An attack that steals half the damage inflicted.",
@@ -1715,7 +1715,7 @@
     ]
   },
   "142": {
-    "id": 142,
+    "moveId": 142,
     "name": "Lovely Kiss",
     "type": 1,
     "description": "Demands a kiss with a scary face that induces sleep.",
@@ -1726,7 +1726,7 @@
     "properties": []
   },
   "143": {
-    "id": 143,
+    "moveId": 143,
     "name": "Sky Attack",
     "type": 3,
     "description": "Searches out weak spots, then strikes the next turn.",
@@ -1737,7 +1737,7 @@
     "properties": []
   },
   "144": {
-    "id": 144,
+    "moveId": 144,
     "name": "Transform",
     "type": 1,
     "description": "Alters the user's cells to become a copy of the foe.",
@@ -1748,7 +1748,7 @@
     "properties": []
   },
   "145": {
-    "id": 145,
+    "moveId": 145,
     "name": "Bubble",
     "type": 12,
     "description": "An attack using bubbles. May lower the foe's Speed.",
@@ -1759,7 +1759,7 @@
     "properties": []
   },
   "146": {
-    "id": 146,
+    "moveId": 146,
     "name": "Dizzy Punch",
     "type": 1,
     "description": "A rhythmic punch that may confuse the foe.",
@@ -1773,7 +1773,7 @@
     ]
   },
   "147": {
-    "id": 147,
+    "moveId": 147,
     "name": "Spore",
     "type": 13,
     "description": "Scatters a cloud of spores that always induce sleep.",
@@ -1786,7 +1786,7 @@
     ]
   },
   "148": {
-    "id": 148,
+    "moveId": 148,
     "name": "Flash",
     "type": 14,
     "description": "Looses a powerful blast of light that cuts attack.",
@@ -1797,7 +1797,7 @@
     "properties": []
   },
   "149": {
-    "id": 149,
+    "moveId": 149,
     "name": "Psywave",
     "type": 15,
     "description": "Attacks with a psychic wave of varying intensity.",
@@ -1808,7 +1808,7 @@
     "properties": []
   },
   "150": {
-    "id": 150,
+    "moveId": 150,
     "name": "Splash",
     "type": 1,
     "description": "It's just a splash... Has no effect whatsoever.",
@@ -1819,7 +1819,7 @@
     "properties": []
   },
   "151": {
-    "id": 151,
+    "moveId": 151,
     "name": "Acid Armor",
     "type": 4,
     "description": "Liquifies the user's body to sharply raise Defense.",
@@ -1830,7 +1830,7 @@
     "properties": []
   },
   "152": {
-    "id": 152,
+    "moveId": 152,
     "name": "Crabhammer",
     "type": 12,
     "description": "Hammers with a pincer. Has a high critical-hit ratio.",
@@ -1843,7 +1843,7 @@
     ]
   },
   "153": {
-    "id": 153,
+    "moveId": 153,
     "name": "Explosion",
     "type": 1,
     "description": "Inflicts severe damage but makes the user faint.",
@@ -1854,7 +1854,7 @@
     "properties": []
   },
   "154": {
-    "id": 154,
+    "moveId": 154,
     "name": "Fury Swipes",
     "type": 1,
     "description": "Rakes the foe with sharp claws, etc., 2 to 5 times.",
@@ -1867,7 +1867,7 @@
     ]
   },
   "155": {
-    "id": 155,
+    "moveId": 155,
     "name": "Bonemerang",
     "type": 5,
     "description": "Throws a bone boomerang that strikes twice.",
@@ -1878,7 +1878,7 @@
     "properties": []
   },
   "156": {
-    "id": 156,
+    "moveId": 156,
     "name": "Rest",
     "type": 15,
     "description": "The user sleeps for 2 turns, restoring HP and status.",
@@ -1891,7 +1891,7 @@
     ]
   },
   "157": {
-    "id": 157,
+    "moveId": 157,
     "name": "Rock Slide",
     "type": 6,
     "description": "Large boulders are hurled. May cause flinching.",
@@ -1902,7 +1902,7 @@
     "properties": []
   },
   "158": {
-    "id": 158,
+    "moveId": 158,
     "name": "Hyper Fang",
     "type": 1,
     "description": "Attacks with sharp fangs. May cause flinching.",
@@ -1916,7 +1916,7 @@
     ]
   },
   "159": {
-    "id": 159,
+    "moveId": 159,
     "name": "Sharpen",
     "type": 1,
     "description": "Reduces the polygon count and raises Attack.",
@@ -1927,7 +1927,7 @@
     "properties": []
   },
   "160": {
-    "id": 160,
+    "moveId": 160,
     "name": "Conversion",
     "type": 1,
     "description": "Changes the user's type into a known move's type.",
@@ -1938,7 +1938,7 @@
     "properties": []
   },
   "161": {
-    "id": 161,
+    "moveId": 161,
     "name": "Tri Attack",
     "type": 1,
     "description": "Fires three types of beams at the same time.",
@@ -1949,7 +1949,7 @@
     "properties": []
   },
   "162": {
-    "id": 162,
+    "moveId": 162,
     "name": "Super Fang",
     "type": 1,
     "description": "Attacks with sharp fangs and cuts half the foe's HP.",
@@ -1962,7 +1962,7 @@
     ]
   },
   "163": {
-    "id": 163,
+    "moveId": 163,
     "name": "Slash",
     "type": 1,
     "description": "Slashes with claws, etc. Has a high critical-hit ratio.",
@@ -1976,7 +1976,7 @@
     ]
   },
   "164": {
-    "id": 164,
+    "moveId": 164,
     "name": "Substitute",
     "type": 1,
     "description": "Creates a decoy using 1/4 of the user's maximum HP.",
@@ -1987,7 +1987,7 @@
     "properties": []
   },
   "165": {
-    "id": 165,
+    "moveId": 165,
     "name": "Struggle",
     "type": 1,
     "description": "Used only if all PP are gone. Also hurts the user a little.",
@@ -2000,7 +2000,7 @@
     ]
   },
   "166": {
-    "id": 166,
+    "moveId": 166,
     "name": "Sketch",
     "type": 1,
     "description": "Copies the foe's last move permanently.",
@@ -2011,7 +2011,7 @@
     "properties": []
   },
   "167": {
-    "id": 167,
+    "moveId": 167,
     "name": "Triple Kick",
     "type": 2,
     "description": "Kicks the foe 3 times in a row with rising intensity.",
@@ -2025,7 +2025,7 @@
     ]
   },
   "168": {
-    "id": 168,
+    "moveId": 168,
     "name": "Thief",
     "type": 18,
     "description": "While attacking, it may steal the foe's held item.",
@@ -2038,7 +2038,7 @@
     ]
   },
   "169": {
-    "id": 169,
+    "moveId": 169,
     "name": "Spider Web",
     "type": 7,
     "description": "Ensnares the foe to stop it from fleeing or switching.",
@@ -2049,7 +2049,7 @@
     "properties": []
   },
   "170": {
-    "id": 170,
+    "moveId": 170,
     "name": "Mind Reader",
     "type": 1,
     "description": "Senses the foe's action to ensure the next move's hit.",
@@ -2060,7 +2060,7 @@
     "properties": []
   },
   "171": {
-    "id": 171,
+    "moveId": 171,
     "name": "Nightmare",
     "type": 8,
     "description": "Inflicts 1/4 damage on a sleeping foe every turn.",
@@ -2071,7 +2071,7 @@
     "properties": []
   },
   "172": {
-    "id": 172,
+    "moveId": 172,
     "name": "Flame Wheel",
     "type": 11,
     "description": "A fiery charge attack that may inflict a burn.",
@@ -2084,7 +2084,7 @@
     ]
   },
   "173": {
-    "id": 173,
+    "moveId": 173,
     "name": "Snore",
     "type": 1,
     "description": "A loud attack that can be used only while asleep.",
@@ -2097,7 +2097,7 @@
     ]
   },
   "174": {
-    "id": 174,
+    "moveId": 174,
     "name": "Curse",
     "type": 8,
     "description": "A move that functions differently for GHOSTS.",
@@ -2108,7 +2108,7 @@
     "properties": []
   },
   "175": {
-    "id": 175,
+    "moveId": 175,
     "name": "Flail",
     "type": 1,
     "description": "Inflicts more damage when the user's HP is down.",
@@ -2121,7 +2121,7 @@
     ]
   },
   "176": {
-    "id": 176,
+    "moveId": 176,
     "name": "Conversion 2",
     "type": 1,
     "description": "Makes the user resistant to the last attack's type.",
@@ -2132,7 +2132,7 @@
     "properties": []
   },
   "177": {
-    "id": 177,
+    "moveId": 177,
     "name": "Aeroblast",
     "type": 3,
     "description": "Launches a vacuumed blast. High critical-hit ratio.",
@@ -2145,7 +2145,7 @@
     ]
   },
   "178": {
-    "id": 178,
+    "moveId": 178,
     "name": "Cotton Spore",
     "type": 13,
     "description": "Spores cling to the foe, sharply reducing Speed.",
@@ -2158,7 +2158,7 @@
     ]
   },
   "179": {
-    "id": 179,
+    "moveId": 179,
     "name": "Reversal",
     "type": 2,
     "description": "Inflicts more damage when the user's HP is down.",
@@ -2171,7 +2171,7 @@
     ]
   },
   "180": {
-    "id": 180,
+    "moveId": 180,
     "name": "Spite",
     "type": 8,
     "description": "Spitefully cuts the PP of the foe's last move.",
@@ -2182,7 +2182,7 @@
     "properties": []
   },
   "181": {
-    "id": 181,
+    "moveId": 181,
     "name": "Powder Snow",
     "type": 16,
     "description": "Blasts the foe with a snowy gust. May cause frostbite.",
@@ -2193,7 +2193,7 @@
     "properties": []
   },
   "182": {
-    "id": 182,
+    "moveId": 182,
     "name": "Protect",
     "type": 1,
     "description": "Evades attack, but may fail if used in succession.",
@@ -2204,7 +2204,7 @@
     "properties": []
   },
   "183": {
-    "id": 183,
+    "moveId": 183,
     "name": "Mach Punch",
     "type": 2,
     "description": "A punch is thrown at wicked speed to strike first.",
@@ -2218,7 +2218,7 @@
     ]
   },
   "184": {
-    "id": 184,
+    "moveId": 184,
     "name": "Scary Face",
     "type": 1,
     "description": "Frightens with a scary face to sharply reduce Speed.",
@@ -2229,7 +2229,7 @@
     "properties": []
   },
   "185": {
-    "id": 185,
+    "moveId": 185,
     "name": "Feint Attack",
     "type": 18,
     "description": "Draws the foe close, then strikes without fail.",
@@ -2242,7 +2242,7 @@
     ]
   },
   "186": {
-    "id": 186,
+    "moveId": 186,
     "name": "Sweet Kiss",
     "type": 19,
     "description": "Demands a kiss with a cute look. May cause confusion.",
@@ -2253,7 +2253,7 @@
     "properties": []
   },
   "187": {
-    "id": 187,
+    "moveId": 187,
     "name": "Belly Drum",
     "type": 1,
     "description": "Maximizes Attack while sacrificing HP.",
@@ -2264,7 +2264,7 @@
     "properties": []
   },
   "188": {
-    "id": 188,
+    "moveId": 188,
     "name": "Sludge Bomb",
     "type": 4,
     "description": "Sludge is hurled to inflict damage. May also poison.",
@@ -2277,7 +2277,7 @@
     ]
   },
   "189": {
-    "id": 189,
+    "moveId": 189,
     "name": "Mud-Slap",
     "type": 5,
     "description": "Hurls mud in the foe's face to reduce its accuracy.",
@@ -2288,7 +2288,7 @@
     "properties": []
   },
   "190": {
-    "id": 190,
+    "moveId": 190,
     "name": "Octazooka",
     "type": 12,
     "description": "Fires a lump of ink to damage and cut accuracy.",
@@ -2301,7 +2301,7 @@
     ]
   },
   "191": {
-    "id": 191,
+    "moveId": 191,
     "name": "Spikes",
     "type": 5,
     "description": "Sets spikes that hurt a  foe switching in.",
@@ -2312,7 +2312,7 @@
     "properties": []
   },
   "192": {
-    "id": 192,
+    "moveId": 192,
     "name": "Zap Cannon",
     "type": 14,
     "description": "Powerful and sure to cause paralysis, but inaccurate.",
@@ -2325,7 +2325,7 @@
     ]
   },
   "193": {
-    "id": 193,
+    "moveId": 193,
     "name": "Foresight",
     "type": 1,
     "description": "Negates the foe's efforts to heighten evasiveness.",
@@ -2336,7 +2336,7 @@
     "properties": []
   },
   "194": {
-    "id": 194,
+    "moveId": 194,
     "name": "Destiny Bond",
     "type": 8,
     "description": "If the user faints, the foe is also made to faint.",
@@ -2347,7 +2347,7 @@
     "properties": []
   },
   "195": {
-    "id": 195,
+    "moveId": 195,
     "name": "Perish Song",
     "type": 1,
     "description": "Any Pokémon hearing this song faints in 3 turns.",
@@ -2360,7 +2360,7 @@
     ]
   },
   "196": {
-    "id": 196,
+    "moveId": 196,
     "name": "Icy Wind",
     "type": 16,
     "description": "A chilling attack that lowers the foe's Speed.",
@@ -2373,7 +2373,7 @@
     ]
   },
   "197": {
-    "id": 197,
+    "moveId": 197,
     "name": "Detect",
     "type": 2,
     "description": "Evades attack, but may fail if used in succession.",
@@ -2384,7 +2384,7 @@
     "properties": []
   },
   "198": {
-    "id": 198,
+    "moveId": 198,
     "name": "Bone Rush",
     "type": 5,
     "description": "Strikes the foe with a bone in hand 2 to 5 times.",
@@ -2395,7 +2395,7 @@
     "properties": []
   },
   "199": {
-    "id": 199,
+    "moveId": 199,
     "name": "Lock-On",
     "type": 1,
     "description": "Locks on to the foe to ensure the next move hits.",
@@ -2406,7 +2406,7 @@
     "properties": []
   },
   "200": {
-    "id": 200,
+    "moveId": 200,
     "name": "Outrage",
     "type": 17,
     "description": "A rampage of 2 to 3 turns that confuses the user.",
@@ -2419,7 +2419,7 @@
     ]
   },
   "201": {
-    "id": 201,
+    "moveId": 201,
     "name": "Sandstorm",
     "type": 6,
     "description": "Causes a sandstorm that rages for several turns.",
@@ -2432,7 +2432,7 @@
     ]
   },
   "202": {
-    "id": 202,
+    "moveId": 202,
     "name": "Giga Drain",
     "type": 13,
     "description": "An attack that steals half the damage inflicted.",
@@ -2445,7 +2445,7 @@
     ]
   },
   "203": {
-    "id": 203,
+    "moveId": 203,
     "name": "Endure",
     "type": 1,
     "description": "Endures any attack for 1 turn, leaving at least 1HP.",
@@ -2456,7 +2456,7 @@
     "properties": []
   },
   "204": {
-    "id": 204,
+    "moveId": 204,
     "name": "Charm",
     "type": 19,
     "description": "Charms the foe and sharply reduces its Attack.",
@@ -2467,7 +2467,7 @@
     "properties": []
   },
   "205": {
-    "id": 205,
+    "moveId": 205,
     "name": "Rollout",
     "type": 6,
     "description": "An attack lasting 5 turns with rising intensity.",
@@ -2480,7 +2480,7 @@
     ]
   },
   "206": {
-    "id": 206,
+    "moveId": 206,
     "name": "False Swipe",
     "type": 1,
     "description": "An attack that leaves the foe with at least 1 HP.",
@@ -2494,7 +2494,7 @@
     ]
   },
   "207": {
-    "id": 207,
+    "moveId": 207,
     "name": "Swagger",
     "type": 1,
     "description": "Confuses the foe, but also sharply raises Attack.",
@@ -2505,7 +2505,7 @@
     "properties": []
   },
   "208": {
-    "id": 208,
+    "moveId": 208,
     "name": "Milk Drink",
     "type": 1,
     "description": "Recovers up to half the user's maximum HP.",
@@ -2518,7 +2518,7 @@
     ]
   },
   "209": {
-    "id": 209,
+    "moveId": 209,
     "name": "Spark",
     "type": 14,
     "description": "An electrified tackle that may paralyze the foe.",
@@ -2531,7 +2531,7 @@
     ]
   },
   "210": {
-    "id": 210,
+    "moveId": 210,
     "name": "Fury Cutter",
     "type": 7,
     "description": "An attack that intensifies on each successive hit.",
@@ -2545,7 +2545,7 @@
     ]
   },
   "211": {
-    "id": 211,
+    "moveId": 211,
     "name": "Steel Wing",
     "type": 9,
     "description": "Strikes the foe with hard wings spread wide.",
@@ -2558,7 +2558,7 @@
     ]
   },
   "212": {
-    "id": 212,
+    "moveId": 212,
     "name": "Mean Look",
     "type": 1,
     "description": "Fixes the foe with a mean look that prevents escape.",
@@ -2569,7 +2569,7 @@
     "properties": []
   },
   "213": {
-    "id": 213,
+    "moveId": 213,
     "name": "Attract",
     "type": 1,
     "description": "Makes the opposite gender less likely to attack.",
@@ -2580,7 +2580,7 @@
     "properties": []
   },
   "214": {
-    "id": 214,
+    "moveId": 214,
     "name": "Sleep Talk",
     "type": 1,
     "description": "Uses an available move randomly while asleep.",
@@ -2591,7 +2591,7 @@
     "properties": []
   },
   "215": {
-    "id": 215,
+    "moveId": 215,
     "name": "Heal Bell",
     "type": 1,
     "description": "Chimes soothingly to heal all status abnormalities.",
@@ -2604,7 +2604,7 @@
     ]
   },
   "216": {
-    "id": 216,
+    "moveId": 216,
     "name": "Return",
     "type": 1,
     "description": "An attack that increases in power with friendship.",
@@ -2617,7 +2617,7 @@
     ]
   },
   "217": {
-    "id": 217,
+    "moveId": 217,
     "name": "Present",
     "type": 1,
     "description": "A gift in the form of a bomb. May restore HP.",
@@ -2628,7 +2628,7 @@
     "properties": []
   },
   "218": {
-    "id": 218,
+    "moveId": 218,
     "name": "Frustration",
     "type": 1,
     "description": "An attack that is stronger if the Trainer is disliked.",
@@ -2641,7 +2641,7 @@
     ]
   },
   "219": {
-    "id": 219,
+    "moveId": 219,
     "name": "Safeguard",
     "type": 1,
     "description": "A mystical force prevents all status problems.",
@@ -2652,7 +2652,7 @@
     "properties": []
   },
   "220": {
-    "id": 220,
+    "moveId": 220,
     "name": "Pain Split",
     "type": 1,
     "description": "Adds the user and foe's HP, then shares them equally.",
@@ -2663,7 +2663,7 @@
     "properties": []
   },
   "221": {
-    "id": 221,
+    "moveId": 221,
     "name": "Sacred Fire",
     "type": 11,
     "description": "A mystical fire attack that may inflict a burn.",
@@ -2674,7 +2674,7 @@
     "properties": []
   },
   "222": {
-    "id": 222,
+    "moveId": 222,
     "name": "Magnitude",
     "type": 5,
     "description": "A ground-shaking attack of random intensity.",
@@ -2685,7 +2685,7 @@
     "properties": []
   },
   "223": {
-    "id": 223,
+    "moveId": 223,
     "name": "Dynamic Punch",
     "type": 2,
     "description": "Powerful and sure to cause confusion, but inaccurate.",
@@ -2699,7 +2699,7 @@
     ]
   },
   "224": {
-    "id": 224,
+    "moveId": 224,
     "name": "Megahorn",
     "type": 7,
     "description": "A brutal ramming attack using out-thrust horns.",
@@ -2712,7 +2712,7 @@
     ]
   },
   "225": {
-    "id": 225,
+    "moveId": 225,
     "name": "Dragon Breath",
     "type": 17,
     "description": "Strikes the foe with an incredible blast of breath.",
@@ -2723,7 +2723,7 @@
     "properties": []
   },
   "226": {
-    "id": 226,
+    "moveId": 226,
     "name": "Baton Pass",
     "type": 1,
     "description": "Switches out the user while keeping effects in play.",
@@ -2734,7 +2734,7 @@
     "properties": []
   },
   "227": {
-    "id": 227,
+    "moveId": 227,
     "name": "Encore",
     "type": 1,
     "description": "Makes the foe repeat its last move over 2 to 6 turns.",
@@ -2745,7 +2745,7 @@
     "properties": []
   },
   "228": {
-    "id": 228,
+    "moveId": 228,
     "name": "Pursuit",
     "type": 18,
     "description": "Inflicts bad damage if used on a foe switching out.",
@@ -2758,7 +2758,7 @@
     ]
   },
   "229": {
-    "id": 229,
+    "moveId": 229,
     "name": "Rapid Spin",
     "type": 1,
     "description": "Spins the body at high speed to strike the foe.",
@@ -2771,7 +2771,7 @@
     ]
   },
   "230": {
-    "id": 230,
+    "moveId": 230,
     "name": "Sweet Scent",
     "type": 1,
     "description": "Allures the foe to reduce evasiveness.",
@@ -2782,7 +2782,7 @@
     "properties": []
   },
   "231": {
-    "id": 231,
+    "moveId": 231,
     "name": "Iron Tail",
     "type": 9,
     "description": "Attacks with a rock-hard tail. May lower Defense.",
@@ -2795,7 +2795,7 @@
     ]
   },
   "232": {
-    "id": 232,
+    "moveId": 232,
     "name": "Metal Claw",
     "type": 9,
     "description": "A claw attack that may raise the user's Attack.",
@@ -2808,7 +2808,7 @@
     ]
   },
   "233": {
-    "id": 233,
+    "moveId": 233,
     "name": "Vital Throw",
     "type": 2,
     "description": "Makes the user's move last, but it never misses.",
@@ -2821,7 +2821,7 @@
     ]
   },
   "234": {
-    "id": 234,
+    "moveId": 234,
     "name": "Morning Sun",
     "type": 1,
     "description": "Restores HP. The amount varies with the weather.",
@@ -2834,7 +2834,7 @@
     ]
   },
   "235": {
-    "id": 235,
+    "moveId": 235,
     "name": "Synthesis",
     "type": 13,
     "description": "Restores HP. The amount varies with the weather.",
@@ -2847,7 +2847,7 @@
     ]
   },
   "236": {
-    "id": 236,
+    "moveId": 236,
     "name": "Moonlight",
     "type": 19,
     "description": "Restores HP. The amount varies with the weather.",
@@ -2860,7 +2860,7 @@
     ]
   },
   "237": {
-    "id": 237,
+    "moveId": 237,
     "name": "Hidden Power",
     "type": 1,
     "description": "The effectiveness varies with the user.",
@@ -2871,7 +2871,7 @@
     "properties": []
   },
   "238": {
-    "id": 238,
+    "moveId": 238,
     "name": "Cross Chop",
     "type": 2,
     "description": "A double-chopping attack. High critical-hit ratio.",
@@ -2884,7 +2884,7 @@
     ]
   },
   "239": {
-    "id": 239,
+    "moveId": 239,
     "name": "Twister",
     "type": 17,
     "description": "Whips up a vicious twister to tear at the foe.",
@@ -2897,7 +2897,7 @@
     ]
   },
   "240": {
-    "id": 240,
+    "moveId": 240,
     "name": "Rain Dance",
     "type": 12,
     "description": "Boosts the power of Water- type moves for 5 turns.",
@@ -2908,7 +2908,7 @@
     "properties": []
   },
   "241": {
-    "id": 241,
+    "moveId": 241,
     "name": "Sunny Day",
     "type": 11,
     "description": "Boosts the power of Fire- type moves for 5 turns.",
@@ -2919,7 +2919,7 @@
     "properties": []
   },
   "242": {
-    "id": 242,
+    "moveId": 242,
     "name": "Crunch",
     "type": 18,
     "description": "Crunches with sharp fangs. May lower Defense.",
@@ -2933,7 +2933,7 @@
     ]
   },
   "243": {
-    "id": 243,
+    "moveId": 243,
     "name": "Mirror Coat",
     "type": 15,
     "description": "Counters the foe's special attack at double the power.",
@@ -2944,7 +2944,7 @@
     "properties": []
   },
   "244": {
-    "id": 244,
+    "moveId": 244,
     "name": "Psych Up",
     "type": 1,
     "description": "Copies the foe's effect(s) and gives to the user.",
@@ -2955,7 +2955,7 @@
     "properties": []
   },
   "245": {
-    "id": 245,
+    "moveId": 245,
     "name": "Extreme Speed",
     "type": 1,
     "description": "An extremely fast and powerful attack.",
@@ -2968,7 +2968,7 @@
     ]
   },
   "246": {
-    "id": 246,
+    "moveId": 246,
     "name": "Ancient Power",
     "type": 6,
     "description": "An attack that may raise all stats.",
@@ -2979,7 +2979,7 @@
     "properties": []
   },
   "247": {
-    "id": 247,
+    "moveId": 247,
     "name": "Shadow Ball",
     "type": 8,
     "description": "Hurls a black blob that may lower the foe's Sp. Def.",
@@ -2992,7 +2992,7 @@
     ]
   },
   "248": {
-    "id": 248,
+    "moveId": 248,
     "name": "Future Sight",
     "type": 15,
     "description": "Heightens inner power to strike 2 turns later.",
@@ -3003,7 +3003,7 @@
     "properties": []
   },
   "249": {
-    "id": 249,
+    "moveId": 249,
     "name": "Rock Smash",
     "type": 2,
     "description": "A rock-crushing attack that may lower Defense.",
@@ -3016,7 +3016,7 @@
     ]
   },
   "250": {
-    "id": 250,
+    "moveId": 250,
     "name": "Whirlpool",
     "type": 12,
     "description": "Traps and hurts the foe in a whirlpool for 4 or 5 turns.",
@@ -3027,7 +3027,7 @@
     "properties": []
   },
   "251": {
-    "id": 251,
+    "moveId": 251,
     "name": "Beat Up",
     "type": 18,
     "description": "User attacks, bullying the target 2 to 5 times.",
@@ -3038,7 +3038,7 @@
     "properties": []
   },
   "252": {
-    "id": 252,
+    "moveId": 252,
     "name": "Fake Out",
     "type": 1,
     "description": "A 1st-turn, 1st-strike move that causes flinching.",
@@ -3051,7 +3051,7 @@
     ]
   },
   "253": {
-    "id": 253,
+    "moveId": 253,
     "name": "Uproar",
     "type": 1,
     "description": "Causes an uproar for 2 to 5 turns and prevents sleep.",
@@ -3064,7 +3064,7 @@
     ]
   },
   "254": {
-    "id": 254,
+    "moveId": 254,
     "name": "Stockpile",
     "type": 1,
     "description": "Charges up power for up to 3 turns.",
@@ -3075,7 +3075,7 @@
     "properties": []
   },
   "255": {
-    "id": 255,
+    "moveId": 255,
     "name": "Spit Up",
     "type": 1,
     "description": "Releases stockpiled power (the more the better).",
@@ -3086,7 +3086,7 @@
     "properties": []
   },
   "256": {
-    "id": 256,
+    "moveId": 256,
     "name": "Swallow",
     "type": 1,
     "description": "Absorbs stockpiled power and restores HP.",
@@ -3099,7 +3099,7 @@
     ]
   },
   "257": {
-    "id": 257,
+    "moveId": 257,
     "name": "Heat Wave",
     "type": 11,
     "description": "Exhales a hot breath on the foe. May inflict a burn.",
@@ -3112,7 +3112,7 @@
     ]
   },
   "258": {
-    "id": 258,
+    "moveId": 258,
     "name": "Hail",
     "type": 16,
     "description": "Summons a hailstorm that strikes every turn.",
@@ -3123,7 +3123,7 @@
     "properties": []
   },
   "259": {
-    "id": 259,
+    "moveId": 259,
     "name": "Torment",
     "type": 18,
     "description": "Torments the foe and stops successive use of a move.",
@@ -3134,7 +3134,7 @@
     "properties": []
   },
   "260": {
-    "id": 260,
+    "moveId": 260,
     "name": "Flatter",
     "type": 18,
     "description": "Confuses the foe, but raises its Sp. Atk.",
@@ -3145,7 +3145,7 @@
     "properties": []
   },
   "261": {
-    "id": 261,
+    "moveId": 261,
     "name": "Will-O-Wisp",
     "type": 11,
     "description": "Inflicts a burn on the foe with intense fire.",
@@ -3156,7 +3156,7 @@
     "properties": []
   },
   "262": {
-    "id": 262,
+    "moveId": 262,
     "name": "Memento",
     "type": 18,
     "description": "The user faints and lowers the foe's abilities.",
@@ -3167,7 +3167,7 @@
     "properties": []
   },
   "263": {
-    "id": 263,
+    "moveId": 263,
     "name": "Facade",
     "type": 1,
     "description": "Boosts Attack when burned, paralyzed, or poisoned.",
@@ -3180,7 +3180,7 @@
     ]
   },
   "264": {
-    "id": 264,
+    "moveId": 264,
     "name": "Focus Punch",
     "type": 2,
     "description": "A powerful loyalty attack. The user flinches if hit.",
@@ -3194,7 +3194,7 @@
     ]
   },
   "265": {
-    "id": 265,
+    "moveId": 265,
     "name": "Smelling Salts",
     "type": 1,
     "description": "Powerful against paralyzed foes, but also heals them.",
@@ -3207,7 +3207,7 @@
     ]
   },
   "266": {
-    "id": 266,
+    "moveId": 266,
     "name": "Follow Me",
     "type": 1,
     "description": "Draws attention to make foes attack only the user.",
@@ -3218,7 +3218,7 @@
     "properties": []
   },
   "267": {
-    "id": 267,
+    "moveId": 267,
     "name": "Nature Power",
     "type": 1,
     "description": "The type of attack varies depending on the location.",
@@ -3229,7 +3229,7 @@
     "properties": []
   },
   "268": {
-    "id": 268,
+    "moveId": 268,
     "name": "Charge",
     "type": 14,
     "description": "Charges power to boost the electric move used next.",
@@ -3240,7 +3240,7 @@
     "properties": []
   },
   "269": {
-    "id": 269,
+    "moveId": 269,
     "name": "Taunt",
     "type": 18,
     "description": "Taunts the foe into only using attack moves.",
@@ -3251,7 +3251,7 @@
     "properties": []
   },
   "270": {
-    "id": 270,
+    "moveId": 270,
     "name": "Helping Hand",
     "type": 1,
     "description": "Boosts the power of the recipient's moves.",
@@ -3262,7 +3262,7 @@
     "properties": []
   },
   "271": {
-    "id": 271,
+    "moveId": 271,
     "name": "Trick",
     "type": 15,
     "description": "Tricks the foe into trading held items.",
@@ -3273,7 +3273,7 @@
     "properties": []
   },
   "272": {
-    "id": 272,
+    "moveId": 272,
     "name": "Role Play",
     "type": 15,
     "description": "Mimics the target and copies its special ability.",
@@ -3284,7 +3284,7 @@
     "properties": []
   },
   "273": {
-    "id": 273,
+    "moveId": 273,
     "name": "Wish",
     "type": 1,
     "description": "A wish that restores HP. It takes time to work.",
@@ -3297,7 +3297,7 @@
     ]
   },
   "274": {
-    "id": 274,
+    "moveId": 274,
     "name": "Assist",
     "type": 1,
     "description": "Attacks randomly with one of the partner's moves.",
@@ -3308,7 +3308,7 @@
     "properties": []
   },
   "275": {
-    "id": 275,
+    "moveId": 275,
     "name": "Ingrain",
     "type": 13,
     "description": "Lays roots that restore HP. The user can't switch out.",
@@ -3319,7 +3319,7 @@
     "properties": []
   },
   "276": {
-    "id": 276,
+    "moveId": 276,
     "name": "Superpower",
     "type": 2,
     "description": "Boosts strength sharply, but lowers abilities.",
@@ -3332,7 +3332,7 @@
     ]
   },
   "277": {
-    "id": 277,
+    "moveId": 277,
     "name": "Magic Coat",
     "type": 15,
     "description": "Reflects special effects back to the attacker.",
@@ -3343,7 +3343,7 @@
     "properties": []
   },
   "278": {
-    "id": 278,
+    "moveId": 278,
     "name": "Recycle",
     "type": 1,
     "description": "Recycles a used item for one more use.",
@@ -3354,7 +3354,7 @@
     "properties": []
   },
   "279": {
-    "id": 279,
+    "moveId": 279,
     "name": "Revenge",
     "type": 2,
     "description": "An attack that gains power if injured by the foe.",
@@ -3367,7 +3367,7 @@
     ]
   },
   "280": {
-    "id": 280,
+    "moveId": 280,
     "name": "Brick Break",
     "type": 2,
     "description": "Destroys barriers such as REFLECT and causes damage.",
@@ -3380,7 +3380,7 @@
     ]
   },
   "281": {
-    "id": 281,
+    "moveId": 281,
     "name": "Yawn",
     "type": 1,
     "description": "Lulls the foe into yawning, then sleeping next turn.",
@@ -3391,7 +3391,7 @@
     "properties": []
   },
   "282": {
-    "id": 282,
+    "moveId": 282,
     "name": "Knock Off",
     "type": 18,
     "description": "Knocks down the foe's held item to prevent its use.",
@@ -3404,7 +3404,7 @@
     ]
   },
   "283": {
-    "id": 283,
+    "moveId": 283,
     "name": "Endeavor",
     "type": 1,
     "description": "Gains power if the user's HP is lower than the foe's HP.",
@@ -3417,7 +3417,7 @@
     ]
   },
   "284": {
-    "id": 284,
+    "moveId": 284,
     "name": "Eruption",
     "type": 11,
     "description": "The higher the user's HP, the more damage caused.",
@@ -3428,7 +3428,7 @@
     "properties": []
   },
   "285": {
-    "id": 285,
+    "moveId": 285,
     "name": "Skill Swap",
     "type": 15,
     "description": "The user swaps special abilities with the target.",
@@ -3439,7 +3439,7 @@
     "properties": []
   },
   "286": {
-    "id": 286,
+    "moveId": 286,
     "name": "Imprison",
     "type": 15,
     "description": "Prevents foes from using moves known by the user.",
@@ -3450,7 +3450,7 @@
     "properties": []
   },
   "287": {
-    "id": 287,
+    "moveId": 287,
     "name": "Refresh",
     "type": 1,
     "description": "Heals poisoning, paralysis, or a burn.",
@@ -3461,7 +3461,7 @@
     "properties": []
   },
   "288": {
-    "id": 288,
+    "moveId": 288,
     "name": "Grudge",
     "type": 8,
     "description": "If the user faints, deletes all PP of foe's last move.",
@@ -3472,7 +3472,7 @@
     "properties": []
   },
   "289": {
-    "id": 289,
+    "moveId": 289,
     "name": "Snatch",
     "type": 18,
     "description": "Steals the effects of the move the target uses next.",
@@ -3483,7 +3483,7 @@
     "properties": []
   },
   "290": {
-    "id": 290,
+    "moveId": 290,
     "name": "Secret Power",
     "type": 1,
     "description": "An attack with effects that vary by location.",
@@ -3494,7 +3494,7 @@
     "properties": []
   },
   "291": {
-    "id": 291,
+    "moveId": 291,
     "name": "Dive",
     "type": 12,
     "description": "Dives underwater the first turn and strikes next turn.",
@@ -3507,7 +3507,7 @@
     ]
   },
   "292": {
-    "id": 292,
+    "moveId": 292,
     "name": "Arm Thrust",
     "type": 2,
     "description": "Straight-arm punches that strike the foe 2 to 5 times.",
@@ -3520,7 +3520,7 @@
     ]
   },
   "293": {
-    "id": 293,
+    "moveId": 293,
     "name": "Camouflage",
     "type": 1,
     "description": "Alters the Pokémon's type depending on the location.",
@@ -3531,7 +3531,7 @@
     "properties": []
   },
   "294": {
-    "id": 294,
+    "moveId": 294,
     "name": "Tail Glow",
     "type": 7,
     "description": "Flashes a light that sharply raises Sp. Atk.",
@@ -3542,7 +3542,7 @@
     "properties": []
   },
   "295": {
-    "id": 295,
+    "moveId": 295,
     "name": "Luster Purge",
     "type": 15,
     "description": "Attacks with a burst of light. May lower Sp. Def.",
@@ -3553,7 +3553,7 @@
     "properties": []
   },
   "296": {
-    "id": 296,
+    "moveId": 296,
     "name": "Mist Ball",
     "type": 15,
     "description": "Attacks with a flurry of down. May lower Sp. Atk.",
@@ -3566,7 +3566,7 @@
     ]
   },
   "297": {
-    "id": 297,
+    "moveId": 297,
     "name": "Feather Dance",
     "type": 3,
     "description": "Envelops the foe with down to sharply reduce Attack.",
@@ -3579,7 +3579,7 @@
     ]
   },
   "298": {
-    "id": 298,
+    "moveId": 298,
     "name": "Teeter Dance",
     "type": 1,
     "description": "Confuses all Pokémon on the scene.",
@@ -3592,7 +3592,7 @@
     ]
   },
   "299": {
-    "id": 299,
+    "moveId": 299,
     "name": "Blaze Kick",
     "type": 11,
     "description": "A kick with a high critical- hit ratio. May cause a burn.",
@@ -3606,7 +3606,7 @@
     ]
   },
   "300": {
-    "id": 300,
+    "moveId": 300,
     "name": "Mud Sport",
     "type": 5,
     "description": "Covers the user in mud to raise electrical resistance.",
@@ -3617,7 +3617,7 @@
     "properties": []
   },
   "301": {
-    "id": 301,
+    "moveId": 301,
     "name": "Ice Ball",
     "type": 16,
     "description": "A 5-turn attack that gains power on successive hits.",
@@ -3631,7 +3631,7 @@
     ]
   },
   "302": {
-    "id": 302,
+    "moveId": 302,
     "name": "Needle Arm",
     "type": 13,
     "description": "Attacks with thorny arms. May cause flinching.",
@@ -3644,7 +3644,7 @@
     ]
   },
   "303": {
-    "id": 303,
+    "moveId": 303,
     "name": "Slack Off",
     "type": 1,
     "description": "Slacks off and restores half the maximum HP.",
@@ -3657,7 +3657,7 @@
     ]
   },
   "304": {
-    "id": 304,
+    "moveId": 304,
     "name": "Hyper Voice",
     "type": 1,
     "description": "A loud attack that uses sound waves to injure.",
@@ -3670,7 +3670,7 @@
     ]
   },
   "305": {
-    "id": 305,
+    "moveId": 305,
     "name": "Poison Fang",
     "type": 4,
     "description": "A sharp-fanged attack. May badly poison the foe.",
@@ -3684,7 +3684,7 @@
     ]
   },
   "306": {
-    "id": 306,
+    "moveId": 306,
     "name": "Crush Claw",
     "type": 1,
     "description": "Tears at the foe with sharp claws. May lower Defense.",
@@ -3697,7 +3697,7 @@
     ]
   },
   "307": {
-    "id": 307,
+    "moveId": 307,
     "name": "Blast Burn",
     "type": 11,
     "description": "Powerful, but leaves the user immobile the next turn.",
@@ -3708,7 +3708,7 @@
     "properties": []
   },
   "308": {
-    "id": 308,
+    "moveId": 308,
     "name": "Hydro Cannon",
     "type": 12,
     "description": "Powerful, but leaves the user immobile the next turn.",
@@ -3719,7 +3719,7 @@
     "properties": []
   },
   "309": {
-    "id": 309,
+    "moveId": 309,
     "name": "Meteor Mash",
     "type": 9,
     "description": "Fires a meteor-like punch. May raise Attack.",
@@ -3733,7 +3733,7 @@
     ]
   },
   "310": {
-    "id": 310,
+    "moveId": 310,
     "name": "Astonish",
     "type": 8,
     "description": "An attack that may shock the foe into flinching.",
@@ -3746,7 +3746,7 @@
     ]
   },
   "311": {
-    "id": 311,
+    "moveId": 311,
     "name": "Weather Ball",
     "type": 1,
     "description": "The move's type and power change with the weather.",
@@ -3759,7 +3759,7 @@
     ]
   },
   "312": {
-    "id": 312,
+    "moveId": 312,
     "name": "Aromatherapy",
     "type": 13,
     "description": "Heals all status problems with a soothing scent.",
@@ -3770,7 +3770,7 @@
     "properties": []
   },
   "313": {
-    "id": 313,
+    "moveId": 313,
     "name": "Fake Tears",
     "type": 18,
     "description": "Feigns crying to sharply lower the foe's Sp. Def.",
@@ -3781,7 +3781,7 @@
     "properties": []
   },
   "314": {
-    "id": 314,
+    "moveId": 314,
     "name": "Air Cutter",
     "type": 3,
     "description": "Hacks with razorlike wind. High critical-hit ratio.",
@@ -3795,7 +3795,7 @@
     ]
   },
   "315": {
-    "id": 315,
+    "moveId": 315,
     "name": "Overheat",
     "type": 11,
     "description": "Allows a full-power attack, but sharply lowers Sp. Atk.",
@@ -3806,7 +3806,7 @@
     "properties": []
   },
   "316": {
-    "id": 316,
+    "moveId": 316,
     "name": "Odor Sleuth",
     "type": 1,
     "description": "Negates the foe's efforts to heighten evasiveness.",
@@ -3817,7 +3817,7 @@
     "properties": []
   },
   "317": {
-    "id": 317,
+    "moveId": 317,
     "name": "Rock Tomb",
     "type": 6,
     "description": "Stops the foe from moving with rocks and cuts Speed.",
@@ -3828,7 +3828,7 @@
     "properties": []
   },
   "318": {
-    "id": 318,
+    "moveId": 318,
     "name": "Silver Wind",
     "type": 7,
     "description": "A powdery attack that may raise abilities.",
@@ -3841,7 +3841,7 @@
     ]
   },
   "319": {
-    "id": 319,
+    "moveId": 319,
     "name": "Metal Sound",
     "type": 9,
     "description": "Emits a horrible screech that sharply lowers Sp. Def.",
@@ -3854,7 +3854,7 @@
     ]
   },
   "320": {
-    "id": 320,
+    "moveId": 320,
     "name": "Grass Whistle",
     "type": 13,
     "description": "Lulls the foe into sleep with a pleasant melody.",
@@ -3867,7 +3867,7 @@
     ]
   },
   "321": {
-    "id": 321,
+    "moveId": 321,
     "name": "Tickle",
     "type": 1,
     "description": "Makes the foe laugh to lower Attack and Defense.",
@@ -3878,7 +3878,7 @@
     "properties": []
   },
   "322": {
-    "id": 322,
+    "moveId": 322,
     "name": "Cosmic Power",
     "type": 15,
     "description": "Raises Defense and Sp. Def with a mystic power.",
@@ -3889,7 +3889,7 @@
     "properties": []
   },
   "323": {
-    "id": 323,
+    "moveId": 323,
     "name": "Water Spout",
     "type": 12,
     "description": "Inflicts more damage if the user's HP is high.",
@@ -3900,7 +3900,7 @@
     "properties": []
   },
   "324": {
-    "id": 324,
+    "moveId": 324,
     "name": "Signal Beam",
     "type": 7,
     "description": "A strange beam attack that may confuse the foe.",
@@ -3911,7 +3911,7 @@
     "properties": []
   },
   "325": {
-    "id": 325,
+    "moveId": 325,
     "name": "Shadow Punch",
     "type": 8,
     "description": "An unavoidable punch that is thrown from shadows.",
@@ -3925,7 +3925,7 @@
     ]
   },
   "326": {
-    "id": 326,
+    "moveId": 326,
     "name": "Extrasensory",
     "type": 15,
     "description": "Attacks with a peculiar power. May cause flinching.",
@@ -3936,7 +3936,7 @@
     "properties": []
   },
   "327": {
-    "id": 327,
+    "moveId": 327,
     "name": "Sky Uppercut",
     "type": 2,
     "description": "An uppercut thrown as if leaping into the sky.",
@@ -3950,7 +3950,7 @@
     ]
   },
   "328": {
-    "id": 328,
+    "moveId": 328,
     "name": "Sand Tomb",
     "type": 5,
     "description": "Traps and hurts the foe in quicksand for 4 or 5 turns.",
@@ -3961,7 +3961,7 @@
     "properties": []
   },
   "329": {
-    "id": 329,
+    "moveId": 329,
     "name": "Sheer Cold",
     "type": 16,
     "description": "A chilling attack that causes fainting if it hits.",
@@ -3972,7 +3972,7 @@
     "properties": []
   },
   "330": {
-    "id": 330,
+    "moveId": 330,
     "name": "Muddy Water",
     "type": 12,
     "description": "Attacks with muddy water. May lower accuracy.",
@@ -3983,7 +3983,7 @@
     "properties": []
   },
   "331": {
-    "id": 331,
+    "moveId": 331,
     "name": "Bullet Seed",
     "type": 13,
     "description": "Shoots 2 to 5 seeds in a row to strike the foe.",
@@ -3996,7 +3996,7 @@
     ]
   },
   "332": {
-    "id": 332,
+    "moveId": 332,
     "name": "Aerial Ace",
     "type": 3,
     "description": "An extremely speedy and unavoidable attack.",
@@ -4010,7 +4010,7 @@
     ]
   },
   "333": {
-    "id": 333,
+    "moveId": 333,
     "name": "Icicle Spear",
     "type": 16,
     "description": "Attacks the foe by firing 2 to 5 icicles in a row.",
@@ -4021,7 +4021,7 @@
     "properties": []
   },
   "334": {
-    "id": 334,
+    "moveId": 334,
     "name": "Iron Defense",
     "type": 9,
     "description": "Hardens the body's surface to sharply raise Defense.",
@@ -4032,7 +4032,7 @@
     "properties": []
   },
   "335": {
-    "id": 335,
+    "moveId": 335,
     "name": "Block",
     "type": 1,
     "description": "Blocks the foe's way to prevent escape.",
@@ -4043,7 +4043,7 @@
     "properties": []
   },
   "336": {
-    "id": 336,
+    "moveId": 336,
     "name": "Howl",
     "type": 1,
     "description": "Howls to raise the spirit and boosts Attack.",
@@ -4056,7 +4056,7 @@
     ]
   },
   "337": {
-    "id": 337,
+    "moveId": 337,
     "name": "Dragon Claw",
     "type": 17,
     "description": "Slashes the foe with sharp claws.",
@@ -4069,7 +4069,7 @@
     ]
   },
   "338": {
-    "id": 338,
+    "moveId": 338,
     "name": "Frenzy Plant",
     "type": 13,
     "description": "Powerful, but leaves the user immobile the next turn.",
@@ -4080,7 +4080,7 @@
     "properties": []
   },
   "339": {
-    "id": 339,
+    "moveId": 339,
     "name": "Bulk Up",
     "type": 2,
     "description": "Bulks up the body to boost both Attack and Defense.",
@@ -4091,7 +4091,7 @@
     "properties": []
   },
   "340": {
-    "id": 340,
+    "moveId": 340,
     "name": "Bounce",
     "type": 3,
     "description": "Bounces up, then down the next turn. May paralyze.",
@@ -4104,7 +4104,7 @@
     ]
   },
   "341": {
-    "id": 341,
+    "moveId": 341,
     "name": "Mud Shot",
     "type": 5,
     "description": "Hurls mud at the foe and reduces Speed.",
@@ -4115,7 +4115,7 @@
     "properties": []
   },
   "342": {
-    "id": 342,
+    "moveId": 342,
     "name": "Poison Tail",
     "type": 4,
     "description": "Has a high critical-hit ratio. May also poison.",
@@ -4128,7 +4128,7 @@
     ]
   },
   "343": {
-    "id": 343,
+    "moveId": 343,
     "name": "Covet",
     "type": 19,
     "description": "Cutely begs to obtain an item held by the foe.",
@@ -4141,7 +4141,7 @@
     ]
   },
   "344": {
-    "id": 344,
+    "moveId": 344,
     "name": "Volt Tackle",
     "type": 14,
     "description": "A life-risking tackle that slightly hurts the user.",
@@ -4154,7 +4154,7 @@
     ]
   },
   "345": {
-    "id": 345,
+    "moveId": 345,
     "name": "Magical Leaf",
     "type": 13,
     "description": "Attacks with a strange leaf that cannot be evaded.",
@@ -4165,7 +4165,7 @@
     "properties": []
   },
   "346": {
-    "id": 346,
+    "moveId": 346,
     "name": "Water Sport",
     "type": 12,
     "description": "The user becomes soaked to raise resistance to fire.",
@@ -4176,7 +4176,7 @@
     "properties": []
   },
   "347": {
-    "id": 347,
+    "moveId": 347,
     "name": "Calm Mind",
     "type": 15,
     "description": "Raises Sp. Atk and Sp. Def by focusing the mind.",
@@ -4187,7 +4187,7 @@
     "properties": []
   },
   "348": {
-    "id": 348,
+    "moveId": 348,
     "name": "Leaf Blade",
     "type": 13,
     "description": "Slashes with a sharp leaf. High critical-hit ratio.",
@@ -4201,7 +4201,7 @@
     ]
   },
   "349": {
-    "id": 349,
+    "moveId": 349,
     "name": "Dragon Dance",
     "type": 17,
     "description": "A mystical dance that ups Attack and Speed.",
@@ -4214,7 +4214,7 @@
     ]
   },
   "350": {
-    "id": 350,
+    "moveId": 350,
     "name": "Rock Blast",
     "type": 6,
     "description": "Hurls boulders at the foe 2 to 5 times in a row.",
@@ -4227,7 +4227,7 @@
     ]
   },
   "351": {
-    "id": 351,
+    "moveId": 351,
     "name": "Shock Wave",
     "type": 14,
     "description": "A fast and unavoidable electric attack.",
@@ -4238,7 +4238,7 @@
     "properties": []
   },
   "352": {
-    "id": 352,
+    "moveId": 352,
     "name": "Water Pulse",
     "type": 12,
     "description": "Attacks with ultrasonic waves. May confuse the foe.",
@@ -4251,7 +4251,7 @@
     ]
   },
   "353": {
-    "id": 353,
+    "moveId": 353,
     "name": "Doom Desire",
     "type": 9,
     "description": "Summons strong sunlight to attack 2 turns later.",
@@ -4262,7 +4262,7 @@
     "properties": []
   },
   "354": {
-    "id": 354,
+    "moveId": 354,
     "name": "Psycho Boost",
     "type": 15,
     "description": "Allows a full-power attack, but sharply lowers Sp. Atk.",
@@ -4273,7 +4273,7 @@
     "properties": []
   },
   "355": {
-    "id": 355,
+    "moveId": 355,
     "name": "Roost",
     "type": 3,
     "description": "Restores the user's HP by half of its max HP.",
@@ -4286,7 +4286,7 @@
     ]
   },
   "356": {
-    "id": 356,
+    "moveId": 356,
     "name": "Gravity",
     "type": 15,
     "description": "Gravity is intensified negating levitation.",
@@ -4297,7 +4297,7 @@
     "properties": []
   },
   "357": {
-    "id": 357,
+    "moveId": 357,
     "name": "Miracle Eye",
     "type": 15,
     "description": "Negate evasiveness and Dark-type's immunities.",
@@ -4308,7 +4308,7 @@
     "properties": []
   },
   "358": {
-    "id": 358,
+    "moveId": 358,
     "name": "Wake-Up Slap",
     "type": 2,
     "description": "Powerful against sleeping foes, but also heals them.",
@@ -4321,7 +4321,7 @@
     ]
   },
   "359": {
-    "id": 359,
+    "moveId": 359,
     "name": "Hammer Arm",
     "type": 2,
     "description": "A swinging fist attack that also lowers Speed.",
@@ -4335,7 +4335,7 @@
     ]
   },
   "360": {
-    "id": 360,
+    "moveId": 360,
     "name": "Gyro Ball",
     "type": 9,
     "description": "A high-speed spin that does more damage to faster foes.",
@@ -4349,7 +4349,7 @@
     ]
   },
   "361": {
-    "id": 361,
+    "moveId": 361,
     "name": "Healing Wish",
     "type": 15,
     "description": "The user faints to heal up the recipient.",
@@ -4362,7 +4362,7 @@
     ]
   },
   "362": {
-    "id": 362,
+    "moveId": 362,
     "name": "Brine",
     "type": 12,
     "description": "Does double damage to foes with half HP.",
@@ -4373,7 +4373,7 @@
     "properties": []
   },
   "363": {
-    "id": 363,
+    "moveId": 363,
     "name": "Natural Gift",
     "type": 1,
     "description": "The effectiveness varies with the held Berry.",
@@ -4384,7 +4384,7 @@
     "properties": []
   },
   "364": {
-    "id": 364,
+    "moveId": 364,
     "name": "Feint",
     "type": 1,
     "description": "An attack that hits foes using moves like Protect.",
@@ -4395,7 +4395,7 @@
     "properties": []
   },
   "365": {
-    "id": 365,
+    "moveId": 365,
     "name": "Pluck",
     "type": 3,
     "description": "Eats the foe's held Berry gaining its effect.",
@@ -4408,7 +4408,7 @@
     ]
   },
   "366": {
-    "id": 366,
+    "moveId": 366,
     "name": "Tailwind",
     "type": 3,
     "description": "Whips up a turbulent breeze that raises Speed.",
@@ -4421,7 +4421,7 @@
     ]
   },
   "367": {
-    "id": 367,
+    "moveId": 367,
     "name": "Acupressure",
     "type": 1,
     "description": "The user sharply raises one of its stats.",
@@ -4432,7 +4432,7 @@
     "properties": []
   },
   "368": {
-    "id": 368,
+    "moveId": 368,
     "name": "Metal Burst",
     "type": 9,
     "description": "Retaliates any hit with greater power.",
@@ -4443,7 +4443,7 @@
     "properties": []
   },
   "369": {
-    "id": 369,
+    "moveId": 369,
     "name": "U-turn",
     "type": 7,
     "description": "Does damage then switches out the user.",
@@ -4456,7 +4456,7 @@
     ]
   },
   "370": {
-    "id": 370,
+    "moveId": 370,
     "name": "Close Combat",
     "type": 2,
     "description": "A strong attack but lowers the defensive stats.",
@@ -4469,7 +4469,7 @@
     ]
   },
   "371": {
-    "id": 371,
+    "moveId": 371,
     "name": "Payback",
     "type": 18,
     "description": "An attack that gains power if the user moves last.",
@@ -4482,7 +4482,7 @@
     ]
   },
   "372": {
-    "id": 372,
+    "moveId": 372,
     "name": "Assurance",
     "type": 18,
     "description": "An attack that gains power if the foe has been hurt.",
@@ -4495,7 +4495,7 @@
     ]
   },
   "373": {
-    "id": 373,
+    "moveId": 373,
     "name": "Embargo",
     "type": 18,
     "description": "Prevents the foe from using any items.",
@@ -4506,7 +4506,7 @@
     "properties": []
   },
   "374": {
-    "id": 374,
+    "moveId": 374,
     "name": "Fling",
     "type": 18,
     "description": "The effectiveness varies with the held item.",
@@ -4517,7 +4517,7 @@
     "properties": []
   },
   "375": {
-    "id": 375,
+    "moveId": 375,
     "name": "Psycho Shift",
     "type": 15,
     "description": "Transfers status problems to the foe.",
@@ -4528,7 +4528,7 @@
     "properties": []
   },
   "376": {
-    "id": 376,
+    "moveId": 376,
     "name": "Trump Card",
     "type": 1,
     "description": "The less PP the move has the more damage it does.",
@@ -4541,7 +4541,7 @@
     ]
   },
   "377": {
-    "id": 377,
+    "moveId": 377,
     "name": "Heal Block",
     "type": 15,
     "description": "Prevents the foe from recovering any HP.",
@@ -4552,7 +4552,7 @@
     "properties": []
   },
   "378": {
-    "id": 378,
+    "moveId": 378,
     "name": "Wring Out",
     "type": 1,
     "description": "The higher the foe's HP the more damage caused.",
@@ -4565,7 +4565,7 @@
     ]
   },
   "379": {
-    "id": 379,
+    "moveId": 379,
     "name": "Power Trick",
     "type": 15,
     "description": "The user swaps its Attack and Defense stats.",
@@ -4576,7 +4576,7 @@
     "properties": []
   },
   "380": {
-    "id": 380,
+    "moveId": 380,
     "name": "Gastro Acid",
     "type": 4,
     "description": "Stomach acid suppresses the foe's ability.",
@@ -4587,7 +4587,7 @@
     "properties": []
   },
   "381": {
-    "id": 381,
+    "moveId": 381,
     "name": "Lucky Chant",
     "type": 1,
     "description": "Prevents the foe from landing critical hits.",
@@ -4598,7 +4598,7 @@
     "properties": []
   },
   "382": {
-    "id": 382,
+    "moveId": 382,
     "name": "Me First",
     "type": 1,
     "description": "Executes the foe's attack with greater power.",
@@ -4609,7 +4609,7 @@
     "properties": []
   },
   "383": {
-    "id": 383,
+    "moveId": 383,
     "name": "Copycat",
     "type": 1,
     "description": "The user mimics the last move used by a foe.",
@@ -4620,7 +4620,7 @@
     "properties": []
   },
   "384": {
-    "id": 384,
+    "moveId": 384,
     "name": "Power Swap",
     "type": 15,
     "description": "Swaps changes to Attack and Sp. Atk with the foe.",
@@ -4631,7 +4631,7 @@
     "properties": []
   },
   "385": {
-    "id": 385,
+    "moveId": 385,
     "name": "Guard Swap",
     "type": 15,
     "description": "Swaps changes to Defense and Sp. Def with the foe.",
@@ -4642,7 +4642,7 @@
     "properties": []
   },
   "386": {
-    "id": 386,
+    "moveId": 386,
     "name": "Punishment",
     "type": 18,
     "description": "Does more damage if the foe has powered up.",
@@ -4655,7 +4655,7 @@
     ]
   },
   "387": {
-    "id": 387,
+    "moveId": 387,
     "name": "Last Resort",
     "type": 1,
     "description": "Can only be used if every other move has been used.",
@@ -4668,7 +4668,7 @@
     ]
   },
   "388": {
-    "id": 388,
+    "moveId": 388,
     "name": "Worry Seed",
     "type": 13,
     "description": "Plants a seed on the foe giving it Insomnia.",
@@ -4679,7 +4679,7 @@
     "properties": []
   },
   "389": {
-    "id": 389,
+    "moveId": 389,
     "name": "Sucker Punch",
     "type": 18,
     "description": "Strikes first if the foe is preparing an attack.",
@@ -4692,7 +4692,7 @@
     ]
   },
   "390": {
-    "id": 390,
+    "moveId": 390,
     "name": "Toxic Spikes",
     "type": 4,
     "description": "Sets spikes that poison a foe switching in.",
@@ -4703,7 +4703,7 @@
     "properties": []
   },
   "391": {
-    "id": 391,
+    "moveId": 391,
     "name": "Heart Swap",
     "type": 15,
     "description": "Swaps any stat changes with the foe.",
@@ -4714,7 +4714,7 @@
     "properties": []
   },
   "392": {
-    "id": 392,
+    "moveId": 392,
     "name": "Aqua Ring",
     "type": 12,
     "description": "Forms a veil of water that restores HP.",
@@ -4725,7 +4725,7 @@
     "properties": []
   },
   "393": {
-    "id": 393,
+    "moveId": 393,
     "name": "Magnet Rise",
     "type": 14,
     "description": "The user levitates with electromagnetism.",
@@ -4736,7 +4736,7 @@
     "properties": []
   },
   "394": {
-    "id": 394,
+    "moveId": 394,
     "name": "Flare Blitz",
     "type": 11,
     "description": "A charge that may burn the foe. Also hurts the user.",
@@ -4749,7 +4749,7 @@
     ]
   },
   "395": {
-    "id": 395,
+    "moveId": 395,
     "name": "Force Palm",
     "type": 2,
     "description": "A shock wave attack that may paralyze the foe.",
@@ -4762,7 +4762,7 @@
     ]
   },
   "396": {
-    "id": 396,
+    "moveId": 396,
     "name": "Aura Sphere",
     "type": 2,
     "description": "Attacks with an aura blast that cannot be evaded.",
@@ -4776,7 +4776,7 @@
     ]
   },
   "397": {
-    "id": 397,
+    "moveId": 397,
     "name": "Rock Polish",
     "type": 6,
     "description": "Polishes the body to sharply raise Speed.",
@@ -4787,7 +4787,7 @@
     "properties": []
   },
   "398": {
-    "id": 398,
+    "moveId": 398,
     "name": "Poison Jab",
     "type": 4,
     "description": "A stabbing attack that may poison the foe.",
@@ -4800,7 +4800,7 @@
     ]
   },
   "399": {
-    "id": 399,
+    "moveId": 399,
     "name": "Dark Pulse",
     "type": 18,
     "description": "Attacks with a horrible aura. May cause flinching.",
@@ -4813,7 +4813,7 @@
     ]
   },
   "400": {
-    "id": 400,
+    "moveId": 400,
     "name": "Night Slash",
     "type": 18,
     "description": "Hits as soon as possible. High critical-hit ratio.",
@@ -4827,7 +4827,7 @@
     ]
   },
   "401": {
-    "id": 401,
+    "moveId": 401,
     "name": "Aqua Tail",
     "type": 12,
     "description": "The user swings its tail like a wave to attack.",
@@ -4840,7 +4840,7 @@
     ]
   },
   "402": {
-    "id": 402,
+    "moveId": 402,
     "name": "Seed Bomb",
     "type": 13,
     "description": "A barrage of hard seeds is fired at the foe.",
@@ -4853,7 +4853,7 @@
     ]
   },
   "403": {
-    "id": 403,
+    "moveId": 403,
     "name": "Air Slash",
     "type": 3,
     "description": "Attacks with a blade of air. May cause flinching.",
@@ -4866,7 +4866,7 @@
     ]
   },
   "404": {
-    "id": 404,
+    "moveId": 404,
     "name": "X-Scissor",
     "type": 7,
     "description": "Slashes the foe with crossed scythes, claws, etc.",
@@ -4880,7 +4880,7 @@
     ]
   },
   "405": {
-    "id": 405,
+    "moveId": 405,
     "name": "Bug Buzz",
     "type": 7,
     "description": "A damaging sound wave that may lower Sp. Def.",
@@ -4893,7 +4893,7 @@
     ]
   },
   "406": {
-    "id": 406,
+    "moveId": 406,
     "name": "Dragon Pulse",
     "type": 17,
     "description": "Generates a shock wave to damage the foe.",
@@ -4906,7 +4906,7 @@
     ]
   },
   "407": {
-    "id": 407,
+    "moveId": 407,
     "name": "Dragon Rush",
     "type": 17,
     "description": "Tackles the foe with menace. May cause flinching.",
@@ -4919,7 +4919,7 @@
     ]
   },
   "408": {
-    "id": 408,
+    "moveId": 408,
     "name": "Power Gem",
     "type": 6,
     "description": "Attacks with rays of light that sparkle like diamonds.",
@@ -4930,7 +4930,7 @@
     "properties": []
   },
   "409": {
-    "id": 409,
+    "moveId": 409,
     "name": "Drain Punch",
     "type": 2,
     "description": "An attack that absorbs half the damage inflicted.",
@@ -4945,7 +4945,7 @@
     ]
   },
   "410": {
-    "id": 410,
+    "moveId": 410,
     "name": "Vacuum Wave",
     "type": 2,
     "description": "Whirls its fists to send a wave that strikes first.",
@@ -4956,7 +4956,7 @@
     "properties": []
   },
   "411": {
-    "id": 411,
+    "moveId": 411,
     "name": "Focus Blast",
     "type": 2,
     "description": "Attacks at full power. May lower Sp. Def.",
@@ -4969,7 +4969,7 @@
     ]
   },
   "412": {
-    "id": 412,
+    "moveId": 412,
     "name": "Energy Ball",
     "type": 13,
     "description": "Draws power from nature to attack. May lower Sp. Def.",
@@ -4982,7 +4982,7 @@
     ]
   },
   "413": {
-    "id": 413,
+    "moveId": 413,
     "name": "Brave Bird",
     "type": 3,
     "description": "A low altitude charge that also hurts the user.",
@@ -4995,7 +4995,7 @@
     ]
   },
   "414": {
-    "id": 414,
+    "moveId": 414,
     "name": "Earth Power",
     "type": 5,
     "description": "Makes the ground erupt with power. May lower Sp. Def.",
@@ -5006,7 +5006,7 @@
     "properties": []
   },
   "415": {
-    "id": 415,
+    "moveId": 415,
     "name": "Switcheroo",
     "type": 18,
     "description": "Swaps items with the foe faster than the eye can see.",
@@ -5017,7 +5017,7 @@
     "properties": []
   },
   "416": {
-    "id": 416,
+    "moveId": 416,
     "name": "Giga Impact",
     "type": 1,
     "description": "Powerful, but leaves the user immobile the next turn.",
@@ -5030,7 +5030,7 @@
     ]
   },
   "417": {
-    "id": 417,
+    "moveId": 417,
     "name": "Nasty Plot",
     "type": 18,
     "description": "Thinks bad thoughts to sharply boost Sp. Atk.",
@@ -5041,7 +5041,7 @@
     "properties": []
   },
   "418": {
-    "id": 418,
+    "moveId": 418,
     "name": "Bullet Punch",
     "type": 9,
     "description": "Punches as fast as a bul- let. It always hits first.",
@@ -5055,7 +5055,7 @@
     ]
   },
   "419": {
-    "id": 419,
+    "moveId": 419,
     "name": "Avalanche",
     "type": 16,
     "description": "An attack that gains power if injured by the foe.",
@@ -5068,7 +5068,7 @@
     ]
   },
   "420": {
-    "id": 420,
+    "moveId": 420,
     "name": "Ice Shard",
     "type": 16,
     "description": "Hurls a chunk of ice that always strike first.",
@@ -5079,7 +5079,7 @@
     "properties": []
   },
   "421": {
-    "id": 421,
+    "moveId": 421,
     "name": "Shadow Claw",
     "type": 8,
     "description": "Strikes with a shadow claw. High critical-hit ratio.",
@@ -5093,7 +5093,7 @@
     ]
   },
   "422": {
-    "id": 422,
+    "moveId": 422,
     "name": "Thunder Fang",
     "type": 14,
     "description": "May cause flinching or leave the foe paralyzed.",
@@ -5107,7 +5107,7 @@
     ]
   },
   "423": {
-    "id": 423,
+    "moveId": 423,
     "name": "Ice Fang",
     "type": 16,
     "description": "May cause flinching or leave the foe with frostbite.",
@@ -5121,7 +5121,7 @@
     ]
   },
   "424": {
-    "id": 424,
+    "moveId": 424,
     "name": "Fire Fang",
     "type": 11,
     "description": "May cause flinching or leave the foe with a burn.",
@@ -5135,7 +5135,7 @@
     ]
   },
   "425": {
-    "id": 425,
+    "moveId": 425,
     "name": "Shadow Sneak",
     "type": 8,
     "description": "Extends the user's shadow to strike first.",
@@ -5148,7 +5148,7 @@
     ]
   },
   "426": {
-    "id": 426,
+    "moveId": 426,
     "name": "Mud Bomb",
     "type": 5,
     "description": "Throws a blob of mud to damage and cut accuracy.",
@@ -5161,7 +5161,7 @@
     ]
   },
   "427": {
-    "id": 427,
+    "moveId": 427,
     "name": "Psycho Cut",
     "type": 15,
     "description": "Tears with psychic blades. High critical-hit ratio.",
@@ -5174,7 +5174,7 @@
     ]
   },
   "428": {
-    "id": 428,
+    "moveId": 428,
     "name": "Zen Headbutt",
     "type": 15,
     "description": "Hits with a strong head- butt. May cause flinching.",
@@ -5187,7 +5187,7 @@
     ]
   },
   "429": {
-    "id": 429,
+    "moveId": 429,
     "name": "Mirror Shot",
     "type": 9,
     "description": "Emits a flash of energy to damage and cut accuracy.",
@@ -5198,7 +5198,7 @@
     "properties": []
   },
   "430": {
-    "id": 430,
+    "moveId": 430,
     "name": "Flash Cannon",
     "type": 9,
     "description": "Releases a blast of light that may lower Sp. Def.",
@@ -5211,7 +5211,7 @@
     ]
   },
   "431": {
-    "id": 431,
+    "moveId": 431,
     "name": "Rock Climb",
     "type": 1,
     "description": "A charging attack that may confuse the foe.",
@@ -5224,7 +5224,7 @@
     ]
   },
   "432": {
-    "id": 432,
+    "moveId": 432,
     "name": "Defog",
     "type": 3,
     "description": "Removes obstacles and lowers evasion.",
@@ -5235,7 +5235,7 @@
     "properties": []
   },
   "433": {
-    "id": 433,
+    "moveId": 433,
     "name": "Trick Room",
     "type": 15,
     "description": "Slower Pokémon get to move first for 5 turns.",
@@ -5246,7 +5246,7 @@
     "properties": []
   },
   "434": {
-    "id": 434,
+    "moveId": 434,
     "name": "Draco Meteor",
     "type": 17,
     "description": "Casts comets onto the foe. Harshly lowers the Sp. Atk.",
@@ -5257,7 +5257,7 @@
     "properties": []
   },
   "435": {
-    "id": 435,
+    "moveId": 435,
     "name": "Discharge",
     "type": 14,
     "description": "Zaps the foes with electri- city. May paralyze them.",
@@ -5268,7 +5268,7 @@
     "properties": []
   },
   "436": {
-    "id": 436,
+    "moveId": 436,
     "name": "Lava Plume",
     "type": 11,
     "description": "Scarlet flames torch everything around the user.",
@@ -5279,7 +5279,7 @@
     "properties": []
   },
   "437": {
-    "id": 437,
+    "moveId": 437,
     "name": "Leaf Storm",
     "type": 13,
     "description": "Whips up a storm of leaves. Harshly lowers the Sp. Atk.",
@@ -5290,7 +5290,7 @@
     "properties": []
   },
   "438": {
-    "id": 438,
+    "moveId": 438,
     "name": "Power Whip",
     "type": 13,
     "description": "Violently lashes the foe with vines or tentacles.",
@@ -5303,7 +5303,7 @@
     ]
   },
   "439": {
-    "id": 439,
+    "moveId": 439,
     "name": "Rock Wrecker",
     "type": 6,
     "description": "Powerful, but leaves the user immobile the next turn.",
@@ -5316,7 +5316,7 @@
     ]
   },
   "440": {
-    "id": 440,
+    "moveId": 440,
     "name": "Cross Poison",
     "type": 4,
     "description": "A slash that may poison a foe and do critical damage.",
@@ -5330,7 +5330,7 @@
     ]
   },
   "441": {
-    "id": 441,
+    "moveId": 441,
     "name": "Gunk Shot",
     "type": 4,
     "description": "Shoots filthy garbage at the foe. May also poison.",
@@ -5341,7 +5341,7 @@
     "properties": []
   },
   "442": {
-    "id": 442,
+    "moveId": 442,
     "name": "Iron Head",
     "type": 9,
     "description": "Slams the foe with a hard head. May cause flinching.",
@@ -5354,7 +5354,7 @@
     ]
   },
   "443": {
-    "id": 443,
+    "moveId": 443,
     "name": "Magnet Bomb",
     "type": 9,
     "description": "Launches a magnet that strikes without fail.",
@@ -5367,7 +5367,7 @@
     ]
   },
   "444": {
-    "id": 444,
+    "moveId": 444,
     "name": "Stone Edge",
     "type": 6,
     "description": "Stabs the foe with stones. High critical-hit ratio.",
@@ -5378,7 +5378,7 @@
     "properties": []
   },
   "445": {
-    "id": 445,
+    "moveId": 445,
     "name": "Captivate",
     "type": 1,
     "description": "Makes the opposite gender sharply reduce its Sp. Atk.",
@@ -5389,7 +5389,7 @@
     "properties": []
   },
   "446": {
-    "id": 446,
+    "moveId": 446,
     "name": "Stealth Rock",
     "type": 6,
     "description": "Sets floating stones that hurt a foe switching in.",
@@ -5400,7 +5400,7 @@
     "properties": []
   },
   "447": {
-    "id": 447,
+    "moveId": 447,
     "name": "Grass Knot",
     "type": 13,
     "description": "A snare attack that does more damage to heavier foes.",
@@ -5413,7 +5413,7 @@
     ]
   },
   "448": {
-    "id": 448,
+    "moveId": 448,
     "name": "Chatter",
     "type": 3,
     "description": "Attacks with a sound wave that causes confusion.",
@@ -5426,7 +5426,7 @@
     ]
   },
   "449": {
-    "id": 449,
+    "moveId": 449,
     "name": "Judgment",
     "type": 1,
     "description": "The type varies with the kind of Plate held.",
@@ -5437,7 +5437,7 @@
     "properties": []
   },
   "450": {
-    "id": 450,
+    "moveId": 450,
     "name": "Bug Bite",
     "type": 7,
     "description": "Eats the foe's held Berry gaining its effect.",
@@ -5450,7 +5450,7 @@
     ]
   },
   "451": {
-    "id": 451,
+    "moveId": 451,
     "name": "Charge Beam",
     "type": 14,
     "description": "Fires a beam of electricity. May raise Sp. Atk.",
@@ -5461,7 +5461,7 @@
     "properties": []
   },
   "452": {
-    "id": 452,
+    "moveId": 452,
     "name": "Wood Hammer",
     "type": 13,
     "description": "Slams the body into a foe. The user gets hurt too.",
@@ -5474,7 +5474,7 @@
     ]
   },
   "453": {
-    "id": 453,
+    "moveId": 453,
     "name": "Aqua Jet",
     "type": 12,
     "description": "Strikes first by dashing at the foe at a high speed.",
@@ -5487,7 +5487,7 @@
     ]
   },
   "454": {
-    "id": 454,
+    "moveId": 454,
     "name": "Attack Order",
     "type": 7,
     "description": "Underlings pummel the foe. High critical-hit ratio.",
@@ -5498,7 +5498,7 @@
     "properties": []
   },
   "455": {
-    "id": 455,
+    "moveId": 455,
     "name": "Defend Order",
     "type": 7,
     "description": "Raises Defense and Sp. Def with a living shield.",
@@ -5509,7 +5509,7 @@
     "properties": []
   },
   "456": {
-    "id": 456,
+    "moveId": 456,
     "name": "Heal Order",
     "type": 7,
     "description": "The user's underlings show up to heal half its max HP.",
@@ -5522,7 +5522,7 @@
     ]
   },
   "457": {
-    "id": 457,
+    "moveId": 457,
     "name": "Head Smash",
     "type": 6,
     "description": "A life-risking headbutt that seriously hurts the user.",
@@ -5535,7 +5535,7 @@
     ]
   },
   "458": {
-    "id": 458,
+    "moveId": 458,
     "name": "Double Hit",
     "type": 1,
     "description": "Slams the foe with a tail etc. Strikes twice.",
@@ -5548,7 +5548,7 @@
     ]
   },
   "459": {
-    "id": 459,
+    "moveId": 459,
     "name": "Roar of Time",
     "type": 17,
     "description": "Knocks the foe away to end the battle.",
@@ -5559,7 +5559,7 @@
     "properties": []
   },
   "460": {
-    "id": 460,
+    "moveId": 460,
     "name": "Spacial Rend",
     "type": 17,
     "description": "Tears the foe, and space. High critical-hit ratio.",
@@ -5570,7 +5570,7 @@
     "properties": []
   },
   "461": {
-    "id": 461,
+    "moveId": 461,
     "name": "Lunar Dance",
     "type": 15,
     "description": "The user faints to heal up the recipient.",
@@ -5584,7 +5584,7 @@
     ]
   },
   "462": {
-    "id": 462,
+    "moveId": 462,
     "name": "Crush Grip",
     "type": 1,
     "description": "The higher the foe's HP the more damage caused.",
@@ -5597,7 +5597,7 @@
     ]
   },
   "463": {
-    "id": 463,
+    "moveId": 463,
     "name": "Magma Storm",
     "type": 11,
     "description": "Traps the foe in a vortex of fire for 4 or 5 turns.",
@@ -5608,7 +5608,7 @@
     "properties": []
   },
   "464": {
-    "id": 464,
+    "moveId": 464,
     "name": "Dark Void",
     "type": 18,
     "description": "Drags the foe into total darkness, inducing Sleep.",
@@ -5619,7 +5619,7 @@
     "properties": []
   },
   "465": {
-    "id": 465,
+    "moveId": 465,
     "name": "Seed Flare",
     "type": 13,
     "description": "Generates a shock wave that sharply reduces Sp. Def.",
@@ -5630,7 +5630,7 @@
     "properties": []
   },
   "466": {
-    "id": 466,
+    "moveId": 466,
     "name": "Ominous Wind",
     "type": 8,
     "description": "A repulsive attack that may raise all stats.",
@@ -5643,7 +5643,7 @@
     ]
   },
   "467": {
-    "id": 467,
+    "moveId": 467,
     "name": "Shadow Force",
     "type": 8,
     "description": "Vanishes on the first turn then strikes the next turn.",
@@ -5656,7 +5656,7 @@
     ]
   },
   "468": {
-    "id": 468,
+    "moveId": 468,
     "name": "Hone Claws",
     "type": 18,
     "description": "Sharpens its claws to raise Attack and Accuracy.",
@@ -5667,7 +5667,7 @@
     "properties": []
   },
   "469": {
-    "id": 469,
+    "moveId": 469,
     "name": "Wide Guard",
     "type": 6,
     "description": "Evades wide-ranging attacks for one turn.",
@@ -5678,7 +5678,7 @@
     "properties": []
   },
   "470": {
-    "id": 470,
+    "moveId": 470,
     "name": "Guard Split",
     "type": 15,
     "description": "Averages changes to Defense and Sp. Def with the foe.",
@@ -5689,7 +5689,7 @@
     "properties": []
   },
   "471": {
-    "id": 471,
+    "moveId": 471,
     "name": "Power Split",
     "type": 15,
     "description": "Averages changes to Attack and Sp. Atk with the foe.",
@@ -5700,7 +5700,7 @@
     "properties": []
   },
   "472": {
-    "id": 472,
+    "moveId": 472,
     "name": "Wonder Room",
     "type": 15,
     "description": "Defense and Sp. Def stats are swapped for 5 turns.",
@@ -5711,7 +5711,7 @@
     "properties": []
   },
   "473": {
-    "id": 473,
+    "moveId": 473,
     "name": "Psyshock",
     "type": 15,
     "description": "Attacks with a psychic wave that does physical damage.",
@@ -5722,7 +5722,7 @@
     "properties": []
   },
   "474": {
-    "id": 474,
+    "moveId": 474,
     "name": "Venoshock",
     "type": 4,
     "description": "Does double damage if the foe is poisoned.",
@@ -5733,7 +5733,7 @@
     "properties": []
   },
   "475": {
-    "id": 475,
+    "moveId": 475,
     "name": "Autotomize",
     "type": 9,
     "description": "Sheds additional weight to sharply boost Speed.",
@@ -5744,7 +5744,7 @@
     "properties": []
   },
   "476": {
-    "id": 476,
+    "moveId": 476,
     "name": "Rage Powder",
     "type": 7,
     "description": "Scatters powder to make foes attack only the user.",
@@ -5757,7 +5757,7 @@
     ]
   },
   "477": {
-    "id": 477,
+    "moveId": 477,
     "name": "Telekinesis",
     "type": 15,
     "description": "Makes the foe float. It is easier to hit for 3 turns.",
@@ -5768,7 +5768,7 @@
     "properties": []
   },
   "478": {
-    "id": 478,
+    "moveId": 478,
     "name": "Magic Room",
     "type": 15,
     "description": "Hold items lose their effects for 5 turns.",
@@ -5779,7 +5779,7 @@
     "properties": []
   },
   "479": {
-    "id": 479,
+    "moveId": 479,
     "name": "Smack Down",
     "type": 6,
     "description": "Throws a rock to knock the foe down to the ground.",
@@ -5790,7 +5790,7 @@
     "properties": []
   },
   "480": {
-    "id": 480,
+    "moveId": 480,
     "name": "Storm Throw",
     "type": 2,
     "description": "This attack always results in a critical hit.",
@@ -5803,7 +5803,7 @@
     ]
   },
   "481": {
-    "id": 481,
+    "moveId": 481,
     "name": "Flame Burst",
     "type": 11,
     "description": "A bursting flame that does damage to all foes.",
@@ -5814,7 +5814,7 @@
     "properties": []
   },
   "482": {
-    "id": 482,
+    "moveId": 482,
     "name": "Sludge Wave",
     "type": 4,
     "description": "Swamps the foe with a wave of sludge. May also poison.",
@@ -5825,7 +5825,7 @@
     "properties": []
   },
   "483": {
-    "id": 483,
+    "moveId": 483,
     "name": "Quiver Dance",
     "type": 7,
     "description": "Dances to raise Sp. Atk Sp. Def and Speed.",
@@ -5838,7 +5838,7 @@
     ]
   },
   "484": {
-    "id": 484,
+    "moveId": 484,
     "name": "Heavy Slam",
     "type": 9,
     "description": "Does more damage if the user outweighs the foe.",
@@ -5851,7 +5851,7 @@
     ]
   },
   "485": {
-    "id": 485,
+    "moveId": 485,
     "name": "Synchronoise",
     "type": 15,
     "description": "An odd shock wave that only damages same-type foes.",
@@ -5862,7 +5862,7 @@
     "properties": []
   },
   "486": {
-    "id": 486,
+    "moveId": 486,
     "name": "Electro Ball",
     "type": 14,
     "description": "Hurls an orb that does more damage to slower foes.",
@@ -5875,7 +5875,7 @@
     ]
   },
   "487": {
-    "id": 487,
+    "moveId": 487,
     "name": "Soak",
     "type": 12,
     "description": "Sprays water at the foe making it Water-type.",
@@ -5886,7 +5886,7 @@
     "properties": []
   },
   "488": {
-    "id": 488,
+    "moveId": 488,
     "name": "Flame Charge",
     "type": 11,
     "description": "Attacks in a cloak of flames. Raises Speed.",
@@ -5899,7 +5899,7 @@
     ]
   },
   "489": {
-    "id": 489,
+    "moveId": 489,
     "name": "Coil",
     "type": 4,
     "description": "Coils up to raise Attack, Defense and Accuracy.",
@@ -5910,7 +5910,7 @@
     "properties": []
   },
   "490": {
-    "id": 490,
+    "moveId": 490,
     "name": "Low Sweep",
     "type": 2,
     "description": "Attacks the foe's legs lowering its Speed.",
@@ -5924,7 +5924,7 @@
     ]
   },
   "491": {
-    "id": 491,
+    "moveId": 491,
     "name": "Acid Spray",
     "type": 4,
     "description": "Sprays a hide-melting acid. Sharply reduces Sp. Def.",
@@ -5937,7 +5937,7 @@
     ]
   },
   "492": {
-    "id": 492,
+    "moveId": 492,
     "name": "Foul Play",
     "type": 18,
     "description": "The higher the foe's Attack the more damage caused.",
@@ -5950,7 +5950,7 @@
     ]
   },
   "493": {
-    "id": 493,
+    "moveId": 493,
     "name": "Simple Beam",
     "type": 1,
     "description": "A beam that changes the foe's ability to Simple.",
@@ -5961,7 +5961,7 @@
     "properties": []
   },
   "494": {
-    "id": 494,
+    "moveId": 494,
     "name": "Entrainment",
     "type": 1,
     "description": "Makes the foe mimic the user, gaining its ability.",
@@ -5972,7 +5972,7 @@
     "properties": []
   },
   "495": {
-    "id": 495,
+    "moveId": 495,
     "name": "After You",
     "type": 1,
     "description": "Helps out the foe, letting it move next.",
@@ -5983,7 +5983,7 @@
     "properties": []
   },
   "496": {
-    "id": 496,
+    "moveId": 496,
     "name": "Round",
     "type": 1,
     "description": "A song that inflicts damage. Others can join in too.",
@@ -5996,7 +5996,7 @@
     ]
   },
   "497": {
-    "id": 497,
+    "moveId": 497,
     "name": "Echoed Voice",
     "type": 1,
     "description": "Does more damage every turn it is used.",
@@ -6009,7 +6009,7 @@
     ]
   },
   "498": {
-    "id": 498,
+    "moveId": 498,
     "name": "Chip Away",
     "type": 1,
     "description": "Strikes through the foe's stat changes.",
@@ -6022,7 +6022,7 @@
     ]
   },
   "499": {
-    "id": 499,
+    "moveId": 499,
     "name": "Clear Smog",
     "type": 4,
     "description": "Attacks with white haze that eliminates all stat changes.",
@@ -6033,7 +6033,7 @@
     "properties": []
   },
   "500": {
-    "id": 500,
+    "moveId": 500,
     "name": "Stored Power",
     "type": 15,
     "description": "The higher the user's stats the more damage caused.",
@@ -6044,7 +6044,7 @@
     "properties": []
   },
   "501": {
-    "id": 501,
+    "moveId": 501,
     "name": "Quick Guard",
     "type": 2,
     "description": "Evades priority attacks for one turn.",
@@ -6055,7 +6055,7 @@
     "properties": []
   },
   "502": {
-    "id": 502,
+    "moveId": 502,
     "name": "Ally Switch",
     "type": 15,
     "description": "The user switches places with its partner.",
@@ -6066,7 +6066,7 @@
     "properties": []
   },
   "503": {
-    "id": 503,
+    "moveId": 503,
     "name": "Scald",
     "type": 12,
     "description": "Shoots boiling water at the foe. May inflict a burn.",
@@ -6077,7 +6077,7 @@
     "properties": []
   },
   "504": {
-    "id": 504,
+    "moveId": 504,
     "name": "Shell Smash",
     "type": 1,
     "description": "Raises offensive stats, but lowers defensive stats.",
@@ -6088,7 +6088,7 @@
     "properties": []
   },
   "505": {
-    "id": 505,
+    "moveId": 505,
     "name": "Heal Pulse",
     "type": 15,
     "description": "Recovers up to half the target's maximum HP.",
@@ -6102,7 +6102,7 @@
     ]
   },
   "506": {
-    "id": 506,
+    "moveId": 506,
     "name": "Hex",
     "type": 8,
     "description": "Does double damage if the foe has a status problem.",
@@ -6113,7 +6113,7 @@
     "properties": []
   },
   "507": {
-    "id": 507,
+    "moveId": 507,
     "name": "Sky Drop",
     "type": 3,
     "description": "Takes the foe into the sky then drops it the next turn.",
@@ -6126,7 +6126,7 @@
     ]
   },
   "508": {
-    "id": 508,
+    "moveId": 508,
     "name": "Shift Gear",
     "type": 9,
     "description": "Rotates its gears to raise Attack and Speed.",
@@ -6137,7 +6137,7 @@
     "properties": []
   },
   "509": {
-    "id": 509,
+    "moveId": 509,
     "name": "Circle Throw",
     "type": 2,
     "description": "Knocks the foe away to end the battle.",
@@ -6150,7 +6150,7 @@
     ]
   },
   "510": {
-    "id": 510,
+    "moveId": 510,
     "name": "Incinerate",
     "type": 11,
     "description": "Burns up Berries and Gems preventing their use.",
@@ -6161,7 +6161,7 @@
     "properties": []
   },
   "511": {
-    "id": 511,
+    "moveId": 511,
     "name": "Quash",
     "type": 18,
     "description": "Suppresses the foe, making it move last.",
@@ -6172,7 +6172,7 @@
     "properties": []
   },
   "512": {
-    "id": 512,
+    "moveId": 512,
     "name": "Acrobatics",
     "type": 3,
     "description": "Does double damage if the user has no item.",
@@ -6185,7 +6185,7 @@
     ]
   },
   "513": {
-    "id": 513,
+    "moveId": 513,
     "name": "Reflect Type",
     "type": 1,
     "description": "The user reflects the foe's type, copying it.",
@@ -6196,7 +6196,7 @@
     "properties": []
   },
   "514": {
-    "id": 514,
+    "moveId": 514,
     "name": "Retaliate",
     "type": 1,
     "description": "An attack that does more damage if an ally fainted.",
@@ -6209,7 +6209,7 @@
     ]
   },
   "515": {
-    "id": 515,
+    "moveId": 515,
     "name": "Final Gambit",
     "type": 2,
     "description": "The user faints to damage the foe equal to its HP.",
@@ -6220,7 +6220,7 @@
     "properties": []
   },
   "516": {
-    "id": 516,
+    "moveId": 516,
     "name": "Bestow",
     "type": 1,
     "description": "The user gives its held item to the foe.",
@@ -6231,7 +6231,7 @@
     "properties": []
   },
   "517": {
-    "id": 517,
+    "moveId": 517,
     "name": "Inferno",
     "type": 11,
     "description": "Powerful and sure to inflict a burn, but inaccurate.",
@@ -6242,7 +6242,7 @@
     "properties": []
   },
   "518": {
-    "id": 518,
+    "moveId": 518,
     "name": "Water Pledge",
     "type": 12,
     "description": "Attacks with a column of water. May make a rainbow.",
@@ -6253,7 +6253,7 @@
     "properties": []
   },
   "519": {
-    "id": 519,
+    "moveId": 519,
     "name": "Fire Pledge",
     "type": 11,
     "description": "Attacks with a column of fire. May burn the grass.",
@@ -6264,7 +6264,7 @@
     "properties": []
   },
   "520": {
-    "id": 520,
+    "moveId": 520,
     "name": "Grass Pledge",
     "type": 13,
     "description": "Attacks with a column of grass. May create a swamp.",
@@ -6275,7 +6275,7 @@
     "properties": []
   },
   "521": {
-    "id": 521,
+    "moveId": 521,
     "name": "Volt Switch",
     "type": 14,
     "description": "Does damage then switches out the user.",
@@ -6286,7 +6286,7 @@
     "properties": []
   },
   "522": {
-    "id": 522,
+    "moveId": 522,
     "name": "Struggle Bug",
     "type": 7,
     "description": "Resisting, the user attacks the foe. Lowers Sp. Atk.",
@@ -6297,7 +6297,7 @@
     "properties": []
   },
   "523": {
-    "id": 523,
+    "moveId": 523,
     "name": "Bulldoze",
     "type": 5,
     "description": "Stomps down on the ground. Lowers Speed.",
@@ -6308,7 +6308,7 @@
     "properties": []
   },
   "524": {
-    "id": 524,
+    "moveId": 524,
     "name": "Frost Breath",
     "type": 16,
     "description": "This attack always results in a critical hit.",
@@ -6319,7 +6319,7 @@
     "properties": []
   },
   "525": {
-    "id": 525,
+    "moveId": 525,
     "name": "Dragon Tail",
     "type": 17,
     "description": "Knocks the foe away to end the battle.",
@@ -6332,7 +6332,7 @@
     ]
   },
   "526": {
-    "id": 526,
+    "moveId": 526,
     "name": "Work Up",
     "type": 1,
     "description": "The user is roused. Ups Attack and Sp. Atk.",
@@ -6343,7 +6343,7 @@
     "properties": []
   },
   "527": {
-    "id": 527,
+    "moveId": 527,
     "name": "Electroweb",
     "type": 14,
     "description": "Snares the foe with an electric net. Lowers Speed.",
@@ -6354,7 +6354,7 @@
     "properties": []
   },
   "528": {
-    "id": 528,
+    "moveId": 528,
     "name": "Wild Charge",
     "type": 14,
     "description": "An electrical tackle that also hurts the user.",
@@ -6367,7 +6367,7 @@
     ]
   },
   "529": {
-    "id": 529,
+    "moveId": 529,
     "name": "Drill Run",
     "type": 5,
     "description": "Spins its body like a drill. High critical-hit ratio.",
@@ -6380,7 +6380,7 @@
     ]
   },
   "530": {
-    "id": 530,
+    "moveId": 530,
     "name": "Dual Chop",
     "type": 17,
     "description": "Attacks with brutal hits that strike twice.",
@@ -6393,7 +6393,7 @@
     ]
   },
   "531": {
-    "id": 531,
+    "moveId": 531,
     "name": "Heart Stamp",
     "type": 15,
     "description": "A sudden blow after a cute act. May cause flinching.",
@@ -6406,7 +6406,7 @@
     ]
   },
   "532": {
-    "id": 532,
+    "moveId": 532,
     "name": "Horn Leech",
     "type": 13,
     "description": "An attack that absorbs half the damage inflicted.",
@@ -6420,7 +6420,7 @@
     ]
   },
   "533": {
-    "id": 533,
+    "moveId": 533,
     "name": "Sacred Sword",
     "type": 2,
     "description": "Strikes through the foe's stat changes.",
@@ -6434,7 +6434,7 @@
     ]
   },
   "534": {
-    "id": 534,
+    "moveId": 534,
     "name": "Razor Shell",
     "type": 12,
     "description": "Tears at the foe with sharp shells. May lower Defense.",
@@ -6448,7 +6448,7 @@
     ]
   },
   "535": {
-    "id": 535,
+    "moveId": 535,
     "name": "Heat Crash",
     "type": 11,
     "description": "Does more damage if the user outweighs the foe.",
@@ -6461,7 +6461,7 @@
     ]
   },
   "536": {
-    "id": 536,
+    "moveId": 536,
     "name": "Leaf Tornado",
     "type": 13,
     "description": "Circles the foe with leaves to damage and cut accuracy.",
@@ -6472,7 +6472,7 @@
     "properties": []
   },
   "537": {
-    "id": 537,
+    "moveId": 537,
     "name": "Steamroller",
     "type": 7,
     "description": "Crushes the foe with its body. May cause flinching.",
@@ -6485,7 +6485,7 @@
     ]
   },
   "538": {
-    "id": 538,
+    "moveId": 538,
     "name": "Cotton Guard",
     "type": 13,
     "description": "Wraps its body in cotton. Drastically raises Defense.",
@@ -6496,7 +6496,7 @@
     "properties": []
   },
   "539": {
-    "id": 539,
+    "moveId": 539,
     "name": "Night Daze",
     "type": 18,
     "description": "Looses a pitch-black shock wave.",
@@ -6507,7 +6507,7 @@
     "properties": []
   },
   "540": {
-    "id": 540,
+    "moveId": 540,
     "name": "Psystrike",
     "type": 15,
     "description": "Attacks with a psychic wave that does physical damage.",
@@ -6518,7 +6518,7 @@
     "properties": []
   },
   "541": {
-    "id": 541,
+    "moveId": 541,
     "name": "Tail Slap",
     "type": 1,
     "description": "Strikes the foe with its tail 2 to 5 times.",
@@ -6531,7 +6531,7 @@
     ]
   },
   "542": {
-    "id": 542,
+    "moveId": 542,
     "name": "Hurricane",
     "type": 3,
     "description": "Traps the foe in a fierce wind. May cause confusion.",
@@ -6544,7 +6544,7 @@
     ]
   },
   "543": {
-    "id": 543,
+    "moveId": 543,
     "name": "Head Charge",
     "type": 1,
     "description": "A charge using guard hair. It hurts the user a little.",
@@ -6557,7 +6557,7 @@
     ]
   },
   "544": {
-    "id": 544,
+    "moveId": 544,
     "name": "Gear Grind",
     "type": 9,
     "description": "Throws two steel gears that strike twice.",
@@ -6570,7 +6570,7 @@
     ]
   },
   "545": {
-    "id": 545,
+    "moveId": 545,
     "name": "Searing Shot",
     "type": 11,
     "description": "Scarlet flames torch everything around the user.",
@@ -6583,7 +6583,7 @@
     ]
   },
   "546": {
-    "id": 546,
+    "moveId": 546,
     "name": "Techno Blast",
     "type": 1,
     "description": "The type varies with the kind of Drive held.",
@@ -6594,7 +6594,7 @@
     "properties": []
   },
   "547": {
-    "id": 547,
+    "moveId": 547,
     "name": "Relic Song",
     "type": 1,
     "description": "Attacks with an ancient song. May induce sleep.",
@@ -6607,7 +6607,7 @@
     ]
   },
   "548": {
-    "id": 548,
+    "moveId": 548,
     "name": "Secret Sword",
     "type": 2,
     "description": "Cuts with a long horn that does physical damage.",
@@ -6620,7 +6620,7 @@
     ]
   },
   "549": {
-    "id": 549,
+    "moveId": 549,
     "name": "Glaciate",
     "type": 16,
     "description": "Blows very cold air at the foe. It lowers their Speed.",
@@ -6631,7 +6631,7 @@
     "properties": []
   },
   "550": {
-    "id": 550,
+    "moveId": 550,
     "name": "Bolt Strike",
     "type": 14,
     "description": "Strikes with a great amount of lightning. May paralyze.",
@@ -6644,7 +6644,7 @@
     ]
   },
   "551": {
-    "id": 551,
+    "moveId": 551,
     "name": "Blue Flare",
     "type": 11,
     "description": "Engulfs the foe in a blue flame. May inflict a burn.",
@@ -6655,7 +6655,7 @@
     "properties": []
   },
   "552": {
-    "id": 552,
+    "moveId": 552,
     "name": "Fiery Dance",
     "type": 11,
     "description": "Dances cloaked in flames. May raise Sp. Atk.",
@@ -6668,7 +6668,7 @@
     ]
   },
   "553": {
-    "id": 553,
+    "moveId": 553,
     "name": "Freeze Shock",
     "type": 16,
     "description": "A powerful 2-turn move that may paralyze the foe.",
@@ -6679,7 +6679,7 @@
     "properties": []
   },
   "554": {
-    "id": 554,
+    "moveId": 554,
     "name": "Ice Burn",
     "type": 16,
     "description": "A powerful 2-turn move that may inflict a burn.",
@@ -6690,7 +6690,7 @@
     "properties": []
   },
   "555": {
-    "id": 555,
+    "moveId": 555,
     "name": "Snarl",
     "type": 18,
     "description": "Yells and rants at the foe lowering its Sp. Atk.",
@@ -6703,7 +6703,7 @@
     ]
   },
   "556": {
-    "id": 556,
+    "moveId": 556,
     "name": "Icicle Crash",
     "type": 16,
     "description": "Drops large icicles on the foe. May cause flinching.",
@@ -6714,7 +6714,7 @@
     "properties": []
   },
   "557": {
-    "id": 557,
+    "moveId": 557,
     "name": "V-create",
     "type": 11,
     "description": "Very powerful, but lowers Defense, Sp. Def and Speed.",
@@ -6727,7 +6727,7 @@
     ]
   },
   "558": {
-    "id": 558,
+    "moveId": 558,
     "name": "Fusion Flare",
     "type": 11,
     "description": "Summons a fireball. Works well with a thunderbolt.",
@@ -6738,7 +6738,7 @@
     "properties": []
   },
   "559": {
-    "id": 559,
+    "moveId": 559,
     "name": "Fusion Bolt",
     "type": 14,
     "description": "Summons a thunderbolt. Works well with a fireball.",
@@ -6749,7 +6749,7 @@
     "properties": []
   },
   "560": {
-    "id": 560,
+    "moveId": 560,
     "name": "Flying Press",
     "type": 2,
     "description": "This attack does Fighting and Flying-type damage.",
@@ -6762,7 +6762,7 @@
     ]
   },
   "561": {
-    "id": 561,
+    "moveId": 561,
     "name": "Mat Block",
     "type": 2,
     "description": "Evades damaging moves for one turn.",
@@ -6773,7 +6773,7 @@
     "properties": []
   },
   "562": {
-    "id": 562,
+    "moveId": 562,
     "name": "Belch",
     "type": 4,
     "description": "Lets out a loud belch. Must eat a Berry to use it.",
@@ -6784,7 +6784,7 @@
     "properties": []
   },
   "563": {
-    "id": 563,
+    "moveId": 563,
     "name": "Rototiller",
     "type": 5,
     "description": "Ups the Attack and Sp. Atk of Grass-type Pokémon.",
@@ -6795,7 +6795,7 @@
     "properties": []
   },
   "564": {
-    "id": 564,
+    "moveId": 564,
     "name": "Sticky Web",
     "type": 7,
     "description": "Weaves a sticky net that slows foes switching in.",
@@ -6806,7 +6806,7 @@
     "properties": []
   },
   "565": {
-    "id": 565,
+    "moveId": 565,
     "name": "Fell Stinger",
     "type": 7,
     "description": "If it knocks out a foe the Attack stat is raised.",
@@ -6819,7 +6819,7 @@
     ]
   },
   "566": {
-    "id": 566,
+    "moveId": 566,
     "name": "Phantom Force",
     "type": 8,
     "description": "Vanishes on the first turn then strikes the next turn.",
@@ -6832,7 +6832,7 @@
     ]
   },
   "567": {
-    "id": 567,
+    "moveId": 567,
     "name": "Trick-or-Treat",
     "type": 8,
     "description": "Goes trick-or-treating making the foe Ghost-type.",
@@ -6843,7 +6843,7 @@
     "properties": []
   },
   "568": {
-    "id": 568,
+    "moveId": 568,
     "name": "Noble Roar",
     "type": 1,
     "description": "Intimidates the foe, to cut Attack and Sp. Atk.",
@@ -6856,7 +6856,7 @@
     ]
   },
   "569": {
-    "id": 569,
+    "moveId": 569,
     "name": "Ion Deluge",
     "type": 14,
     "description": "Electrifies Normal-type moves with charged atoms.",
@@ -6867,7 +6867,7 @@
     "properties": []
   },
   "570": {
-    "id": 570,
+    "moveId": 570,
     "name": "Parabolic Charge",
     "type": 14,
     "description": "Damages adjacent Pokémon and heals up by half of it.",
@@ -6880,7 +6880,7 @@
     ]
   },
   "571": {
-    "id": 571,
+    "moveId": 571,
     "name": "Forest's Curse",
     "type": 13,
     "description": "Puts a curse on the foe making the foe Grass-type.",
@@ -6891,7 +6891,7 @@
     "properties": []
   },
   "572": {
-    "id": 572,
+    "moveId": 572,
     "name": "Petal Blizzard",
     "type": 13,
     "description": "Stirs up a violent storm of petals to attack.",
@@ -6904,7 +6904,7 @@
     ]
   },
   "573": {
-    "id": 573,
+    "moveId": 573,
     "name": "Freeze-Dry",
     "type": 16,
     "description": "Super effective on Water- types. May cause frostbite.",
@@ -6915,7 +6915,7 @@
     "properties": []
   },
   "574": {
-    "id": 574,
+    "moveId": 574,
     "name": "Disarming Voice",
     "type": 19,
     "description": "Lets out a charming cry that cannot be evaded.",
@@ -6928,7 +6928,7 @@
     ]
   },
   "575": {
-    "id": 575,
+    "moveId": 575,
     "name": "Parting Shot",
     "type": 18,
     "description": "Lowers the foe's Attack and Sp. Atk, then switches out.",
@@ -6941,7 +6941,7 @@
     ]
   },
   "576": {
-    "id": 576,
+    "moveId": 576,
     "name": "Topsy-Turvy",
     "type": 18,
     "description": "Swaps all stat changes that affect the target.",
@@ -6952,7 +6952,7 @@
     "properties": []
   },
   "577": {
-    "id": 577,
+    "moveId": 577,
     "name": "Draining Kiss",
     "type": 19,
     "description": "An attack that absorbs over half the damage inflicted.",
@@ -6966,7 +6966,7 @@
     ]
   },
   "578": {
-    "id": 578,
+    "moveId": 578,
     "name": "Crafty Shield",
     "type": 19,
     "description": "Evades status moves for one turn.",
@@ -6977,7 +6977,7 @@
     "properties": []
   },
   "579": {
-    "id": 579,
+    "moveId": 579,
     "name": "Flower Shield",
     "type": 19,
     "description": "Raises the Defense of Grass-type Pokémon.",
@@ -6988,7 +6988,7 @@
     "properties": []
   },
   "580": {
-    "id": 580,
+    "moveId": 580,
     "name": "Grassy Terrain",
     "type": 13,
     "description": "The ground turns to grass for 5 turns. Restores HP.",
@@ -6999,7 +6999,7 @@
     "properties": []
   },
   "581": {
-    "id": 581,
+    "moveId": 581,
     "name": "Misty Terrain",
     "type": 19,
     "description": "Covers the ground with mist for 5 turns. Blocks status.",
@@ -7010,7 +7010,7 @@
     "properties": []
   },
   "582": {
-    "id": 582,
+    "moveId": 582,
     "name": "Electrify",
     "type": 14,
     "description": "Electrifies the foe, making its next move Electric-type.",
@@ -7021,7 +7021,7 @@
     "properties": []
   },
   "583": {
-    "id": 583,
+    "moveId": 583,
     "name": "Play Rough",
     "type": 19,
     "description": "Plays rough with the foe. May lower Attack.",
@@ -7034,7 +7034,7 @@
     ]
   },
   "584": {
-    "id": 584,
+    "moveId": 584,
     "name": "Fairy Wind",
     "type": 19,
     "description": "Stirs up a fairy wind to strike the foe.",
@@ -7047,7 +7047,7 @@
     ]
   },
   "585": {
-    "id": 585,
+    "moveId": 585,
     "name": "Moonblast",
     "type": 19,
     "description": "Attacks with the power of the moon. May lower Sp. Atk.",
@@ -7058,7 +7058,7 @@
     "properties": []
   },
   "586": {
-    "id": 586,
+    "moveId": 586,
     "name": "Boomburst",
     "type": 1,
     "description": "Attacks everything with a destructive sound wave.",
@@ -7071,7 +7071,7 @@
     ]
   },
   "587": {
-    "id": 587,
+    "moveId": 587,
     "name": "Fairy Lock",
     "type": 19,
     "description": "Locks down the battlefield preventing escape next turn.",
@@ -7082,7 +7082,7 @@
     "properties": []
   },
   "588": {
-    "id": 588,
+    "moveId": 588,
     "name": "King's Shield",
     "type": 9,
     "description": "Evades damage and changes form.",
@@ -7093,7 +7093,7 @@
     "properties": []
   },
   "589": {
-    "id": 589,
+    "moveId": 589,
     "name": "Play Nice",
     "type": 1,
     "description": "Befriend the foe, lowering its Attack without fail.",
@@ -7104,7 +7104,7 @@
     "properties": []
   },
   "590": {
-    "id": 590,
+    "moveId": 590,
     "name": "Confide",
     "type": 1,
     "description": "Shares a secret with the foe, lowering Sp. Atk.",
@@ -7117,7 +7117,7 @@
     ]
   },
   "591": {
-    "id": 591,
+    "moveId": 591,
     "name": "Diamond Storm",
     "type": 6,
     "description": "Whips up a storm of diamonds. May up Defense.",
@@ -7128,7 +7128,7 @@
     "properties": []
   },
   "592": {
-    "id": 592,
+    "moveId": 592,
     "name": "Steam Eruption",
     "type": 12,
     "description": "Immerses the foe in heated steam. May inflict a burn.",
@@ -7139,7 +7139,7 @@
     "properties": []
   },
   "593": {
-    "id": 593,
+    "moveId": 593,
     "name": "Hyperspace Hole",
     "type": 15,
     "description": "Uses a warp hole to attack. Can't be evaded.",
@@ -7150,7 +7150,7 @@
     "properties": []
   },
   "594": {
-    "id": 594,
+    "moveId": 594,
     "name": "Water Shuriken",
     "type": 12,
     "description": "Throws 2 to 5 stars that are sure to strike first.",
@@ -7161,7 +7161,7 @@
     "properties": []
   },
   "595": {
-    "id": 595,
+    "moveId": 595,
     "name": "Mystical Fire",
     "type": 11,
     "description": "Breathes a special, hot fire. Lowers Sp. Atk.",
@@ -7172,7 +7172,7 @@
     "properties": []
   },
   "596": {
-    "id": 596,
+    "moveId": 596,
     "name": "Spiky Shield",
     "type": 13,
     "description": "Evades attack, and damages the foe if struck.",
@@ -7183,7 +7183,7 @@
     "properties": []
   },
   "597": {
-    "id": 597,
+    "moveId": 597,
     "name": "Aromatic Mist",
     "type": 19,
     "description": "Raises the Sp. Def of a partner Pokémon.",
@@ -7194,7 +7194,7 @@
     "properties": []
   },
   "598": {
-    "id": 598,
+    "moveId": 598,
     "name": "Eerie Impulse",
     "type": 14,
     "description": "Exposes the foe to a pulse that sharply cuts Sp. Atk.",
@@ -7205,7 +7205,7 @@
     "properties": []
   },
   "599": {
-    "id": 599,
+    "moveId": 599,
     "name": "Venom Drench",
     "type": 4,
     "description": "Lowers the Attack, Sp. Atk and Speed of a poisoned foe.",
@@ -7216,7 +7216,7 @@
     "properties": []
   },
   "600": {
-    "id": 600,
+    "moveId": 600,
     "name": "Powder",
     "type": 7,
     "description": "Damages the foe if it uses a Fire-type move.",
@@ -7229,7 +7229,7 @@
     ]
   },
   "601": {
-    "id": 601,
+    "moveId": 601,
     "name": "Geomancy",
     "type": 19,
     "description": "Raises Sp. Atk, Sp. Def and Speed on the 2nd turn.",
@@ -7240,7 +7240,7 @@
     "properties": []
   },
   "602": {
-    "id": 602,
+    "moveId": 602,
     "name": "Magnetic Flux",
     "type": 14,
     "description": "Boosts the defenses of those with Plus or Minus.",
@@ -7251,7 +7251,7 @@
     "properties": []
   },
   "603": {
-    "id": 603,
+    "moveId": 603,
     "name": "Happy Hour",
     "type": 1,
     "description": "Doubles the amount of Prize Money received.",
@@ -7262,7 +7262,7 @@
     "properties": []
   },
   "604": {
-    "id": 604,
+    "moveId": 604,
     "name": "Electric Terrain",
     "type": 14,
     "description": "Electrifies the ground for 5 turns. Prevents sleep.",
@@ -7273,7 +7273,7 @@
     "properties": []
   },
   "605": {
-    "id": 605,
+    "moveId": 605,
     "name": "Dazzling Gleam",
     "type": 19,
     "description": "Damages foes by emitting a bright flash.",
@@ -7284,7 +7284,7 @@
     "properties": []
   },
   "606": {
-    "id": 606,
+    "moveId": 606,
     "name": "Celebrate",
     "type": 1,
     "description": "Congratulates you on your special day.",
@@ -7295,7 +7295,7 @@
     "properties": []
   },
   "607": {
-    "id": 607,
+    "moveId": 607,
     "name": "Hold Hands",
     "type": 1,
     "description": "The user and ally hold hands making them happy.",
@@ -7306,7 +7306,7 @@
     "properties": []
   },
   "608": {
-    "id": 608,
+    "moveId": 608,
     "name": "Baby-Doll Eyes",
     "type": 19,
     "description": "Lowers the foe's Attack before it can move.",
@@ -7317,7 +7317,7 @@
     "properties": []
   },
   "609": {
-    "id": 609,
+    "moveId": 609,
     "name": "Nuzzle",
     "type": 14,
     "description": "Rubs its cheeks against the foe, paralyzing it.",
@@ -7330,7 +7330,7 @@
     ]
   },
   "610": {
-    "id": 610,
+    "moveId": 610,
     "name": "Hold Back",
     "type": 1,
     "description": "An attack that leaves the foe with at least 1 HP.",
@@ -7343,7 +7343,7 @@
     ]
   },
   "611": {
-    "id": 611,
+    "moveId": 611,
     "name": "Infestation",
     "type": 7,
     "description": "The foe is infested and attacked for 4 or 5 turns.",
@@ -7356,7 +7356,7 @@
     ]
   },
   "612": {
-    "id": 612,
+    "moveId": 612,
     "name": "Power-Up Punch",
     "type": 2,
     "description": "A hard punch that raises the user's Attack.",
@@ -7370,7 +7370,7 @@
     ]
   },
   "613": {
-    "id": 613,
+    "moveId": 613,
     "name": "Oblivion Wing",
     "type": 3,
     "description": "An attack that absorbs over half the damage inflicted.",
@@ -7383,7 +7383,7 @@
     ]
   },
   "614": {
-    "id": 614,
+    "moveId": 614,
     "name": "Thousand Arrows",
     "type": 5,
     "description": "Can hit Flying foes, then knocks them to the ground.",
@@ -7394,7 +7394,7 @@
     "properties": []
   },
   "615": {
-    "id": 615,
+    "moveId": 615,
     "name": "Thousand Waves",
     "type": 5,
     "description": "Those hit by the wave can no longer escape.",
@@ -7405,7 +7405,7 @@
     "properties": []
   },
   "616": {
-    "id": 616,
+    "moveId": 616,
     "name": "Land's Wrath",
     "type": 5,
     "description": "Gathers the energy of the land to attack every foe.",
@@ -7416,7 +7416,7 @@
     "properties": []
   },
   "617": {
-    "id": 617,
+    "moveId": 617,
     "name": "Light Of Ruin",
     "type": 19,
     "description": "Fires a great beam of light that also hurts the user.",
@@ -7427,7 +7427,7 @@
     "properties": []
   },
   "618": {
-    "id": 618,
+    "moveId": 618,
     "name": "Origin Pulse",
     "type": 12,
     "description": "Beams of glowing blue light blast both foes.",
@@ -7440,7 +7440,7 @@
     ]
   },
   "619": {
-    "id": 619,
+    "moveId": 619,
     "name": "Precipice Blades",
     "type": 5,
     "description": "Fearsome blades of stone attack both foes.",
@@ -7451,7 +7451,7 @@
     "properties": []
   },
   "620": {
-    "id": 620,
+    "moveId": 620,
     "name": "Dragon Ascent",
     "type": 3,
     "description": "A strong attack but lowers the defensive stats.",
@@ -7464,7 +7464,7 @@
     ]
   },
   "621": {
-    "id": 621,
+    "moveId": 621,
     "name": "Hyperspace Fury",
     "type": 18,
     "description": "Uses a warp hole to attack. Can't be evaded.",
@@ -7475,7 +7475,7 @@
     "properties": []
   },
   "622": {
-    "id": 622,
+    "moveId": 622,
     "name": "Shore Up",
     "type": 5,
     "description": "Restores the user's HP. More HP in a sandstorm.",
@@ -7488,7 +7488,7 @@
     ]
   },
   "623": {
-    "id": 623,
+    "moveId": 623,
     "name": "First Impression",
     "type": 7,
     "description": "Hits hard and first. Only works first turn.",
@@ -7501,7 +7501,7 @@
     ]
   },
   "624": {
-    "id": 624,
+    "moveId": 624,
     "name": "Baneful Bunker",
     "type": 4,
     "description": "Protects user and poisons foes on contact.",
@@ -7512,7 +7512,7 @@
     "properties": []
   },
   "625": {
-    "id": 625,
+    "moveId": 625,
     "name": "Spirit Shackle",
     "type": 8,
     "description": "After being hit, foes can no longer escape.",
@@ -7523,7 +7523,7 @@
     "properties": []
   },
   "626": {
-    "id": 626,
+    "moveId": 626,
     "name": "Darkest Lariat",
     "type": 18,
     "description": "Swings the arms to strike It ignores stat changes.",
@@ -7536,7 +7536,7 @@
     ]
   },
   "627": {
-    "id": 627,
+    "moveId": 627,
     "name": "Sparkling Aria",
     "type": 12,
     "description": "Sings with bubbles. Cures burns on contact.",
@@ -7549,7 +7549,7 @@
     ]
   },
   "628": {
-    "id": 628,
+    "moveId": 628,
     "name": "Ice Hammer",
     "type": 16,
     "description": "Swings the fist to strike with ice.",
@@ -7563,7 +7563,7 @@
     ]
   },
   "629": {
-    "id": 629,
+    "moveId": 629,
     "name": "Floral Healing",
     "type": 19,
     "description": "Restores an ally's HP. Heals more on grass.",
@@ -7576,7 +7576,7 @@
     ]
   },
   "630": {
-    "id": 630,
+    "moveId": 630,
     "name": "High Horsepower",
     "type": 5,
     "description": "Slams hard into the foe with its entire body.",
@@ -7590,7 +7590,7 @@
     ]
   },
   "631": {
-    "id": 631,
+    "moveId": 631,
     "name": "Strength Sap",
     "type": 13,
     "description": "Saps the foe's Attack to heal HP, then drops Attack.",
@@ -7603,7 +7603,7 @@
     ]
   },
   "632": {
-    "id": 632,
+    "moveId": 632,
     "name": "Solar Blade",
     "type": 13,
     "description": "Charges first turn, then chops with a blade of light.",
@@ -7617,7 +7617,7 @@
     ]
   },
   "633": {
-    "id": 633,
+    "moveId": 633,
     "name": "Leafage",
     "type": 13,
     "description": "Attacks with a flurry of small leaves.",
@@ -7628,7 +7628,7 @@
     "properties": []
   },
   "634": {
-    "id": 634,
+    "moveId": 634,
     "name": "Spotlight",
     "type": 1,
     "description": "Makes the foe attack the spotlighted Pokémon.",
@@ -7639,7 +7639,7 @@
     "properties": []
   },
   "635": {
-    "id": 635,
+    "moveId": 635,
     "name": "Toxic Thread",
     "type": 4,
     "description": "Attacks with a thread that poisons and drops Speed.",
@@ -7650,7 +7650,7 @@
     "properties": []
   },
   "636": {
-    "id": 636,
+    "moveId": 636,
     "name": "Laser Focus",
     "type": 1,
     "description": "Guarantees the next move will be a critical hit.",
@@ -7661,7 +7661,7 @@
     "properties": []
   },
   "637": {
-    "id": 637,
+    "moveId": 637,
     "name": "Gear Up",
     "type": 9,
     "description": "Boosts the attacks of those with Plus or Minus.",
@@ -7672,7 +7672,7 @@
     "properties": []
   },
   "638": {
-    "id": 638,
+    "moveId": 638,
     "name": "Throat Chop",
     "type": 18,
     "description": "Chops the throat to disable sound moves for a while.",
@@ -7685,7 +7685,7 @@
     ]
   },
   "639": {
-    "id": 639,
+    "moveId": 639,
     "name": "Pollen Puff",
     "type": 7,
     "description": "Explodes on foes, but restores ally's HP.",
@@ -7698,7 +7698,7 @@
     ]
   },
   "640": {
-    "id": 640,
+    "moveId": 640,
     "name": "Anchor Shot",
     "type": 9,
     "description": "Strangles the foe with a chain. The foe can't escape.",
@@ -7711,7 +7711,7 @@
     ]
   },
   "641": {
-    "id": 641,
+    "moveId": 641,
     "name": "Psychic Terrain",
     "type": 15,
     "description": "The ground turns weird for 5 turns. Blocks priority.",
@@ -7722,7 +7722,7 @@
     "properties": []
   },
   "642": {
-    "id": 642,
+    "moveId": 642,
     "name": "Lunge",
     "type": 7,
     "description": "Lunges at the foe to lower its Attack stat.",
@@ -7735,7 +7735,7 @@
     ]
   },
   "643": {
-    "id": 643,
+    "moveId": 643,
     "name": "Fire Lash",
     "type": 11,
     "description": "Whips the foe with fire lowering its Defense.",
@@ -7748,7 +7748,7 @@
     ]
   },
   "644": {
-    "id": 644,
+    "moveId": 644,
     "name": "Power Trip",
     "type": 18,
     "description": "It hits harder the more stat boosts the user has.",
@@ -7761,7 +7761,7 @@
     ]
   },
   "645": {
-    "id": 645,
+    "moveId": 645,
     "name": "Burn Up",
     "type": 11,
     "description": "Burns out the user fully removing the Fire type.",
@@ -7772,7 +7772,7 @@
     "properties": []
   },
   "646": {
-    "id": 646,
+    "moveId": 646,
     "name": "Speed Swap",
     "type": 15,
     "description": "Swaps user's Speed with the target's.",
@@ -7783,7 +7783,7 @@
     "properties": []
   },
   "647": {
-    "id": 647,
+    "moveId": 647,
     "name": "Smart Strike",
     "type": 9,
     "description": "Hits with an accurate horn that never misses.",
@@ -7796,7 +7796,7 @@
     ]
   },
   "648": {
-    "id": 648,
+    "moveId": 648,
     "name": "Purify",
     "type": 4,
     "description": "Cures the foe's status to restore HP.",
@@ -7809,7 +7809,7 @@
     ]
   },
   "649": {
-    "id": 649,
+    "moveId": 649,
     "name": "Revelation Dance",
     "type": 1,
     "description": "Dances with mystical power. Matches user's first type.",
@@ -7822,7 +7822,7 @@
     ]
   },
   "650": {
-    "id": 650,
+    "moveId": 650,
     "name": "Core Enforcer",
     "type": 17,
     "description": "Hits with a ray that nullifies the foe's ability.",
@@ -7833,7 +7833,7 @@
     "properties": []
   },
   "651": {
-    "id": 651,
+    "moveId": 651,
     "name": "Trop Kick",
     "type": 13,
     "description": "An intense kick from the tropics. Lowers Attack.",
@@ -7847,7 +7847,7 @@
     ]
   },
   "652": {
-    "id": 652,
+    "moveId": 652,
     "name": "Instruct",
     "type": 15,
     "description": "Orders the target to use its last move again.",
@@ -7858,7 +7858,7 @@
     "properties": []
   },
   "653": {
-    "id": 653,
+    "moveId": 653,
     "name": "Beak Blast",
     "type": 3,
     "description": "Heats up beak to attack. Burns foe on contact.",
@@ -7871,7 +7871,7 @@
     ]
   },
   "654": {
-    "id": 654,
+    "moveId": 654,
     "name": "Clanging Scales",
     "type": 17,
     "description": "Makes a big noise with its scales. Drops Defense.",
@@ -7884,7 +7884,7 @@
     ]
   },
   "655": {
-    "id": 655,
+    "moveId": 655,
     "name": "Dragon Hammer",
     "type": 17,
     "description": "Swings its whole body like a hammer to damage.",
@@ -7897,7 +7897,7 @@
     ]
   },
   "656": {
-    "id": 656,
+    "moveId": 656,
     "name": "Brutal Swing",
     "type": 18,
     "description": "Violently swings around to hurt everyone nearby.",
@@ -7910,7 +7910,7 @@
     ]
   },
   "657": {
-    "id": 657,
+    "moveId": 657,
     "name": "Aurora Veil",
     "type": 16,
     "description": "Weakens all attacks, but only usable with hail.",
@@ -7921,7 +7921,7 @@
     "properties": []
   },
   "658": {
-    "id": 658,
+    "moveId": 658,
     "name": "Shell Trap",
     "type": 11,
     "description": "Sets a shell trap that damages on contact.",
@@ -7932,7 +7932,7 @@
     "properties": []
   },
   "659": {
-    "id": 659,
+    "moveId": 659,
     "name": "Fleur Cannon",
     "type": 19,
     "description": "A strong ray that harshly lowers Sp. Attack.",
@@ -7943,7 +7943,7 @@
     "properties": []
   },
   "660": {
-    "id": 660,
+    "moveId": 660,
     "name": "Psychic Fangs",
     "type": 15,
     "description": "Chomps with psychic fangs. Destroys any barriers.",
@@ -7957,7 +7957,7 @@
     ]
   },
   "661": {
-    "id": 661,
+    "moveId": 661,
     "name": "Stomping Tantrum",
     "type": 5,
     "description": "Stomps around angrily. Stronger after a failure.",
@@ -7970,7 +7970,7 @@
     ]
   },
   "662": {
-    "id": 662,
+    "moveId": 662,
     "name": "Shadow Bone",
     "type": 8,
     "description": "Strikes with a haunted bone. Might drop Defense.",
@@ -7981,7 +7981,7 @@
     "properties": []
   },
   "663": {
-    "id": 663,
+    "moveId": 663,
     "name": "Accelerock",
     "type": 6,
     "description": "Hits with a high-speed rock that always goes first.",
@@ -7994,7 +7994,7 @@
     ]
   },
   "664": {
-    "id": 664,
+    "moveId": 664,
     "name": "Liquidation",
     "type": 12,
     "description": "Slams the foe with water. Can lower Defense.",
@@ -8007,7 +8007,7 @@
     ]
   },
   "665": {
-    "id": 665,
+    "moveId": 665,
     "name": "Prismatic Laser",
     "type": 15,
     "description": "A high power laser that forces recharge next turn.",
@@ -8018,7 +8018,7 @@
     "properties": []
   },
   "666": {
-    "id": 666,
+    "moveId": 666,
     "name": "Spectral Thief",
     "type": 8,
     "description": "Steals the target's stat boosts, then attacks.",
@@ -8031,7 +8031,7 @@
     ]
   },
   "667": {
-    "id": 667,
+    "moveId": 667,
     "name": "Sunsteel Strike",
     "type": 9,
     "description": "A sun-fueled strike that ignores abilities.",
@@ -8044,7 +8044,7 @@
     ]
   },
   "668": {
-    "id": 668,
+    "moveId": 668,
     "name": "Moongeist Beam",
     "type": 8,
     "description": "A moon-powered beam that ignores abilities.",
@@ -8055,7 +8055,7 @@
     "properties": []
   },
   "669": {
-    "id": 669,
+    "moveId": 669,
     "name": "Tearful Look",
     "type": 1,
     "description": "The user tears up, dropping Attack and Sp. Attack.",
@@ -8066,7 +8066,7 @@
     "properties": []
   },
   "670": {
-    "id": 670,
+    "moveId": 670,
     "name": "Zing Zap",
     "type": 14,
     "description": "An electrified impact that can cause flinching.",
@@ -8079,7 +8079,7 @@
     ]
   },
   "671": {
-    "id": 671,
+    "moveId": 671,
     "name": "Nature's Madness",
     "type": 19,
     "description": "Halves the foe's HP with the power of nature.",
@@ -8090,7 +8090,7 @@
     "properties": []
   },
   "672": {
-    "id": 672,
+    "moveId": 672,
     "name": "Multi-Attack",
     "type": 1,
     "description": "An attack that changes with Memories.",
@@ -8103,7 +8103,7 @@
     ]
   },
   "673": {
-    "id": 673,
+    "moveId": 673,
     "name": "Mind Blown",
     "type": 11,
     "description": "It explodes the user's head to damage everything around.",
@@ -8114,7 +8114,7 @@
     "properties": []
   },
   "674": {
-    "id": 674,
+    "moveId": 674,
     "name": "Plasma Fists",
     "type": 14,
     "description": "Hits with electrical fists. Normal moves turn Electric.",
@@ -8128,7 +8128,7 @@
     ]
   },
   "675": {
-    "id": 675,
+    "moveId": 675,
     "name": "Photon Geyser",
     "type": 15,
     "description": "User's highest attack stat determines its category.",
@@ -8139,7 +8139,7 @@
     "properties": []
   },
   "676": {
-    "id": 676,
+    "moveId": 676,
     "name": "Zippy Zap",
     "type": 14,
     "description": "Electric bursts always go first and land a critical hit.",
@@ -8152,7 +8152,7 @@
     ]
   },
   "677": {
-    "id": 677,
+    "moveId": 677,
     "name": "Splishy Splash",
     "type": 12,
     "description": "A huge electrified wave that may paralyze the foe.",
@@ -8163,7 +8163,7 @@
     "properties": []
   },
   "678": {
-    "id": 678,
+    "moveId": 678,
     "name": "Floaty Fall",
     "type": 3,
     "description": "Floats in air and dives at angle. May cause flinching.",
@@ -8176,7 +8176,7 @@
     ]
   },
   "679": {
-    "id": 679,
+    "moveId": 679,
     "name": "Pika Papow",
     "type": 14,
     "description": "Pikachu's love increases its power. It never misses.",
@@ -8187,7 +8187,7 @@
     "properties": []
   },
   "680": {
-    "id": 680,
+    "moveId": 680,
     "name": "Bouncy Bubble",
     "type": 12,
     "description": "An attack that absorbs all the damage inflicted.",
@@ -8200,7 +8200,7 @@
     ]
   },
   "681": {
-    "id": 681,
+    "moveId": 681,
     "name": "Buzzy Buzz",
     "type": 14,
     "description": "Shoots a jolt of electricity that always paralyzes.",
@@ -8211,7 +8211,7 @@
     "properties": []
   },
   "682": {
-    "id": 682,
+    "moveId": 682,
     "name": "Sizzly Slide",
     "type": 11,
     "description": "User cloaked in fire charges. Leaves the foe with a burn.",
@@ -8224,7 +8224,7 @@
     ]
   },
   "683": {
-    "id": 683,
+    "moveId": 683,
     "name": "Glitzy Glow",
     "type": 15,
     "description": "Telekinetic force that sets wall, lowering Sp. Atk damage.",
@@ -8235,7 +8235,7 @@
     "properties": []
   },
   "684": {
-    "id": 684,
+    "moveId": 684,
     "name": "Baddy Bad",
     "type": 18,
     "description": "Acting badly, attacks. Sets wall, lowering Attack damage.",
@@ -8246,7 +8246,7 @@
     "properties": []
   },
   "685": {
-    "id": 685,
+    "moveId": 685,
     "name": "Sappy Seed",
     "type": 13,
     "description": "Giant stalk scatters seeds that drain HP every turn.",
@@ -8257,7 +8257,7 @@
     "properties": []
   },
   "686": {
-    "id": 686,
+    "moveId": 686,
     "name": "Freezy Frost",
     "type": 16,
     "description": "Crystal from cold haze hits. Eliminates all stat changes.",
@@ -8268,7 +8268,7 @@
     "properties": []
   },
   "687": {
-    "id": 687,
+    "moveId": 687,
     "name": "Sparkly Swirl",
     "type": 19,
     "description": "Wrap foe with whirlwind of scent. Heals party's status.",
@@ -8279,7 +8279,7 @@
     "properties": []
   },
   "688": {
-    "id": 688,
+    "moveId": 688,
     "name": "Veevee Volley",
     "type": 1,
     "description": "Eevee's love increases its power. It never misses.",
@@ -8292,7 +8292,7 @@
     ]
   },
   "689": {
-    "id": 689,
+    "moveId": 689,
     "name": "Double Iron Bash",
     "type": 9,
     "description": "The user spins and hits with its arms. May cause flinch.",
@@ -8306,7 +8306,7 @@
     ]
   },
   "690": {
-    "id": 690,
+    "moveId": 690,
     "name": "Dynamax Cannon",
     "type": 17,
     "description": "Unleashes core energy. 2x against Dynamaxed foes.",
@@ -8317,7 +8317,7 @@
     "properties": []
   },
   "691": {
-    "id": 691,
+    "moveId": 691,
     "name": "Snipe Shot",
     "type": 12,
     "description": "The user ignores effects that draw in moves.",
@@ -8330,7 +8330,7 @@
     ]
   },
   "692": {
-    "id": 692,
+    "moveId": 692,
     "name": "Jaw Lock",
     "type": 2,
     "description": "Prevents the target from escaping.",
@@ -8344,7 +8344,7 @@
     ]
   },
   "693": {
-    "id": 693,
+    "moveId": 693,
     "name": "Stuff Cheeks",
     "type": 1,
     "description": "Consumes the user's Berry, then sharply raises Def.",
@@ -8355,7 +8355,7 @@
     "properties": []
   },
   "694": {
-    "id": 694,
+    "moveId": 694,
     "name": "No Retreat",
     "type": 2,
     "description": "Raises all of the user's stats but prevents escape.",
@@ -8366,7 +8366,7 @@
     "properties": []
   },
   "695": {
-    "id": 695,
+    "moveId": 695,
     "name": "Tar Shot",
     "type": 6,
     "description": "Lowers the foe's Speed and makes it weak to Fire.",
@@ -8377,7 +8377,7 @@
     "properties": []
   },
   "696": {
-    "id": 696,
+    "moveId": 696,
     "name": "Magic Powder",
     "type": 15,
     "description": "Magic powder changes the target into a Psychic-type.",
@@ -8390,7 +8390,7 @@
     ]
   },
   "697": {
-    "id": 697,
+    "moveId": 697,
     "name": "Dragon Darts",
     "type": 17,
     "description": "The user attacks twice. Two targets are hit once each.",
@@ -8401,7 +8401,7 @@
     "properties": []
   },
   "698": {
-    "id": 698,
+    "moveId": 698,
     "name": "Teatime",
     "type": 1,
     "description": "All Pokémon have teatime and eat their Berries.",
@@ -8412,7 +8412,7 @@
     "properties": []
   },
   "699": {
-    "id": 699,
+    "moveId": 699,
     "name": "Octolock",
     "type": 2,
     "description": "Traps the foe to lower Def and Sp. Def each turn.",
@@ -8423,7 +8423,7 @@
     "properties": []
   },
   "700": {
-    "id": 700,
+    "moveId": 700,
     "name": "Bolt Beak",
     "type": 14,
     "description": "Double power if the user moves before the target.",
@@ -8436,7 +8436,7 @@
     ]
   },
   "701": {
-    "id": 701,
+    "moveId": 701,
     "name": "Fishious Rend",
     "type": 12,
     "description": "Double power if the user moves before the target.",
@@ -8450,7 +8450,7 @@
     ]
   },
   "702": {
-    "id": 702,
+    "moveId": 702,
     "name": "Court Change",
     "type": 1,
     "description": "The user swaps effects on either side of the field.",
@@ -8461,7 +8461,7 @@
     "properties": []
   },
   "703": {
-    "id": 703,
+    "moveId": 703,
     "name": "Clangorous Soul",
     "type": 17,
     "description": "The user uses some of its HP to raise all its stats.",
@@ -8475,7 +8475,7 @@
     ]
   },
   "704": {
-    "id": 704,
+    "moveId": 704,
     "name": "Body Press",
     "type": 2,
     "description": "Does more damage the higher the user's Def.",
@@ -8488,7 +8488,7 @@
     ]
   },
   "705": {
-    "id": 705,
+    "moveId": 705,
     "name": "Decorate",
     "type": 19,
     "description": "The user sharply raises the target's Atk and Sp.Atk.",
@@ -8499,7 +8499,7 @@
     "properties": []
   },
   "706": {
-    "id": 706,
+    "moveId": 706,
     "name": "Drum Beating",
     "type": 13,
     "description": "Plays a drum to attack. The foe's Speed is lowered.",
@@ -8510,7 +8510,7 @@
     "properties": []
   },
   "707": {
-    "id": 707,
+    "moveId": 707,
     "name": "Snap Trap",
     "type": 9,
     "description": "Snares the target in a snap trap for four to five turns.",
@@ -8523,7 +8523,7 @@
     ]
   },
   "708": {
-    "id": 708,
+    "moveId": 708,
     "name": "Pyro Ball",
     "type": 11,
     "description": "Launches a fiery ball at the target. It may cause a burn.",
@@ -8537,7 +8537,7 @@
     ]
   },
   "709": {
-    "id": 709,
+    "moveId": 709,
     "name": "Behemoth Blade",
     "type": 9,
     "description": "Strikes as a sword. Deals 2x damage to Dynamaxed foes.",
@@ -8551,7 +8551,7 @@
     ]
   },
   "710": {
-    "id": 710,
+    "moveId": 710,
     "name": "Behemoth Bash",
     "type": 9,
     "description": "Attacks as a shield. Deals 2x damage to Dynamaxed foes.",
@@ -8564,7 +8564,7 @@
     ]
   },
   "711": {
-    "id": 711,
+    "moveId": 711,
     "name": "Aura Wheel",
     "type": 14,
     "description": "Raises Speed to attack. The Type is based on its form.",
@@ -8575,7 +8575,7 @@
     "properties": []
   },
   "712": {
-    "id": 712,
+    "moveId": 712,
     "name": "Breaking Swipe",
     "type": 17,
     "description": "Swings its tail to attack. Lowers the Atk of those hit.",
@@ -8588,7 +8588,7 @@
     ]
   },
   "713": {
-    "id": 713,
+    "moveId": 713,
     "name": "Branch Poke",
     "type": 13,
     "description": "The user pokes the target with a pointed branch.",
@@ -8601,7 +8601,7 @@
     ]
   },
   "714": {
-    "id": 714,
+    "moveId": 714,
     "name": "Overdrive",
     "type": 14,
     "description": "The user twangs its guitar, causing strong vibrations.",
@@ -8614,7 +8614,7 @@
     ]
   },
   "715": {
-    "id": 715,
+    "moveId": 715,
     "name": "Apple Acid",
     "type": 13,
     "description": "Attacks with tart apple acid to lower the foe's Sp. Def.",
@@ -8625,7 +8625,7 @@
     "properties": []
   },
   "716": {
-    "id": 716,
+    "moveId": 716,
     "name": "Grav Apple",
     "type": 13,
     "description": "Drops an apple from above. Lowers the foe's Defense.",
@@ -8636,7 +8636,7 @@
     "properties": []
   },
   "717": {
-    "id": 717,
+    "moveId": 717,
     "name": "Spirit Break",
     "type": 19,
     "description": "Attacks with spirit-breaking force. Lowers Sp. Atk.",
@@ -8649,7 +8649,7 @@
     ]
   },
   "718": {
-    "id": 718,
+    "moveId": 718,
     "name": "Strange Steam",
     "type": 19,
     "description": "Emits a strange steam to potentially confuse the foe.",
@@ -8660,7 +8660,7 @@
     "properties": []
   },
   "719": {
-    "id": 719,
+    "moveId": 719,
     "name": "Life Dew",
     "type": 12,
     "description": "Scatters water to restore the HP of itself and allies.",
@@ -8673,7 +8673,7 @@
     ]
   },
   "720": {
-    "id": 720,
+    "moveId": 720,
     "name": "Obstruct",
     "type": 18,
     "description": "Protects itself, harshly lowering Def on contact.",
@@ -8684,7 +8684,7 @@
     "properties": []
   },
   "721": {
-    "id": 721,
+    "moveId": 721,
     "name": "False Surrender",
     "type": 18,
     "description": "Bows to stab the foe with hair. It never misses.",
@@ -8697,7 +8697,7 @@
     ]
   },
   "722": {
-    "id": 722,
+    "moveId": 722,
     "name": "Meteor Assault",
     "type": 2,
     "description": "Attacks with a thick leek. The user must then rest.",
@@ -8708,7 +8708,7 @@
     "properties": []
   },
   "723": {
-    "id": 723,
+    "moveId": 723,
     "name": "Eternabeam",
     "type": 17,
     "description": "Eternatus' strongest move. The user rests next turn.",
@@ -8719,7 +8719,7 @@
     "properties": []
   },
   "724": {
-    "id": 724,
+    "moveId": 724,
     "name": "Steel Beam",
     "type": 9,
     "description": "Fires a beam of steel from its body. It hurts the user.",
@@ -8730,7 +8730,7 @@
     "properties": []
   },
   "725": {
-    "id": 725,
+    "moveId": 725,
     "name": "Expanding Force",
     "type": 15,
     "description": "Power goes up and damages all foes on Psychic Terrain.",
@@ -8741,7 +8741,7 @@
     "properties": []
   },
   "726": {
-    "id": 726,
+    "moveId": 726,
     "name": "Steel Roller",
     "type": 9,
     "description": "Destroys terrain. Fails if ground isn't terrain.",
@@ -8754,7 +8754,7 @@
     ]
   },
   "727": {
-    "id": 727,
+    "moveId": 727,
     "name": "Scale Shot",
     "type": 17,
     "description": "Shoots scales 2 to 5 times. Ups Speed, lowers defense.",
@@ -8765,7 +8765,7 @@
     "properties": []
   },
   "728": {
-    "id": 728,
+    "moveId": 728,
     "name": "Meteor Beam",
     "type": 6,
     "description": "A 2-turn move that raises Sp. Attack before attacking.",
@@ -8776,7 +8776,7 @@
     "properties": []
   },
   "729": {
-    "id": 729,
+    "moveId": 729,
     "name": "Shell Side Arm",
     "type": 4,
     "description": "Deals better of physical and special damage. May poison.",
@@ -8787,7 +8787,7 @@
     "properties": []
   },
   "730": {
-    "id": 730,
+    "moveId": 730,
     "name": "Misty Explosion",
     "type": 19,
     "description": "Hit everything and faint. Powers up on Misty Terrain.",
@@ -8798,7 +8798,7 @@
     "properties": []
   },
   "731": {
-    "id": 731,
+    "moveId": 731,
     "name": "Grassy Glide",
     "type": 13,
     "description": "Gliding on ground, hits. Goes first on Grassy Terrain.",
@@ -8811,7 +8811,7 @@
     ]
   },
   "732": {
-    "id": 732,
+    "moveId": 732,
     "name": "Rising Voltage",
     "type": 14,
     "description": "This move's power doubles when on Electric Terrain.",
@@ -8822,7 +8822,7 @@
     "properties": []
   },
   "733": {
-    "id": 733,
+    "moveId": 733,
     "name": "Terrain Pulse",
     "type": 1,
     "description": "Type and power changes depending on the terrain.",
@@ -8835,7 +8835,7 @@
     ]
   },
   "734": {
-    "id": 734,
+    "moveId": 734,
     "name": "Skitter Smack",
     "type": 7,
     "description": "User skitters behind foe to attack. Lowers foe's Sp. Atk.",
@@ -8848,7 +8848,7 @@
     ]
   },
   "735": {
-    "id": 735,
+    "moveId": 735,
     "name": "Burning Jealousy",
     "type": 11,
     "description": "Foes that have stats upped during the turn get burned.",
@@ -8859,7 +8859,7 @@
     "properties": []
   },
   "736": {
-    "id": 736,
+    "moveId": 736,
     "name": "Lash Out",
     "type": 18,
     "description": "If stats lowered during this turn, power is doubled.",
@@ -8872,7 +8872,7 @@
     ]
   },
   "737": {
-    "id": 737,
+    "moveId": 737,
     "name": "Poltergeist",
     "type": 8,
     "description": "Control foe's item to attack. Fails if foe has no item.",
@@ -8883,7 +8883,7 @@
     "properties": []
   },
   "738": {
-    "id": 738,
+    "moveId": 738,
     "name": "Corrosive Gas",
     "type": 4,
     "description": "Highly acidic gas melts items held by surrounding Pokémon.",
@@ -8894,7 +8894,7 @@
     "properties": []
   },
   "739": {
-    "id": 739,
+    "moveId": 739,
     "name": "Coaching",
     "type": 2,
     "description": "Properly coaches allies to up their Attack and Defense.",
@@ -8905,7 +8905,7 @@
     "properties": []
   },
   "740": {
-    "id": 740,
+    "moveId": 740,
     "name": "Flip Turn",
     "type": 12,
     "description": "Attacks and rushes back to switch with a party Pokémon.",
@@ -8918,7 +8918,7 @@
     ]
   },
   "741": {
-    "id": 741,
+    "moveId": 741,
     "name": "Triple Axel",
     "type": 16,
     "description": "A 3-kick attack that gets more powerful with each hit.",
@@ -8932,7 +8932,7 @@
     ]
   },
   "742": {
-    "id": 742,
+    "moveId": 742,
     "name": "Dual Wingbeat",
     "type": 3,
     "description": "User slams the target with wings and hits twice in a row.",
@@ -8945,7 +8945,7 @@
     ]
   },
   "743": {
-    "id": 743,
+    "moveId": 743,
     "name": "Scorching Sands",
     "type": 5,
     "description": "Throws scorching sand at the target. May leave a burn.",
@@ -8956,7 +8956,7 @@
     "properties": []
   },
   "744": {
-    "id": 744,
+    "moveId": 744,
     "name": "Jungle Healing",
     "type": 13,
     "description": "Heals HP and status of itself and allies in battle.",
@@ -8969,7 +8969,7 @@
     ]
   },
   "745": {
-    "id": 745,
+    "moveId": 745,
     "name": "Wicked Blow",
     "type": 18,
     "description": "Mastering the Dark style, strikes with a critical hit.",
@@ -8983,7 +8983,7 @@
     ]
   },
   "746": {
-    "id": 746,
+    "moveId": 746,
     "name": "Surging Strikes",
     "type": 12,
     "description": "Mastering the Water style, strikes with 3 critical hits.",
@@ -8997,7 +8997,7 @@
     ]
   },
   "747": {
-    "id": 747,
+    "moveId": 747,
     "name": "Thunder Cage",
     "type": 14,
     "description": "Traps the foe in a cage of electricity for 4 or 5 turns.",
@@ -9008,7 +9008,7 @@
     "properties": []
   },
   "748": {
-    "id": 748,
+    "moveId": 748,
     "name": "Dragon Energy",
     "type": 17,
     "description": "The higher the user's HP the more damage caused.",
@@ -9019,7 +9019,7 @@
     "properties": []
   },
   "749": {
-    "id": 749,
+    "moveId": 749,
     "name": "Freezing Glare",
     "type": 15,
     "description": "Shoots psychic power from the eyes. May frostbite.",
@@ -9030,7 +9030,7 @@
     "properties": []
   },
   "750": {
-    "id": 750,
+    "moveId": 750,
     "name": "Fiery Wrath",
     "type": 18,
     "description": "An attack fueled by your wrath. May cause flinching.",
@@ -9041,7 +9041,7 @@
     "properties": []
   },
   "751": {
-    "id": 751,
+    "moveId": 751,
     "name": "Thunderous Kick",
     "type": 2,
     "description": "Uses a lightning-like kick to hit. Lowers foe's Defense.",
@@ -9055,7 +9055,7 @@
     ]
   },
   "752": {
-    "id": 752,
+    "moveId": 752,
     "name": "Glacial Lance",
     "type": 16,
     "description": "Hurls a blizzard-cloaked icicle lance at foes.",
@@ -9066,7 +9066,7 @@
     "properties": []
   },
   "753": {
-    "id": 753,
+    "moveId": 753,
     "name": "Astral Barrage",
     "type": 8,
     "description": "Sends a frightful amount of small ghosts at foes.",
@@ -9077,7 +9077,7 @@
     "properties": []
   },
   "754": {
-    "id": 754,
+    "moveId": 754,
     "name": "Eerie Spell",
     "type": 15,
     "description": "Attacks with psychic power. Foe's last move has 3 PP cut.",
@@ -9090,7 +9090,7 @@
     ]
   },
   "755": {
-    "id": 755,
+    "moveId": 755,
     "name": "Dire Claw",
     "type": 4,
     "description": "High critical hit chance. May paralyze, poison or drowse.",
@@ -9103,7 +9103,7 @@
     ]
   },
   "756": {
-    "id": 756,
+    "moveId": 756,
     "name": "Psyshield Bash",
     "type": 15,
     "description": "Hits a foe with psychic energy. May raise Defense.",
@@ -9116,7 +9116,7 @@
     ]
   },
   "757": {
-    "id": 757,
+    "moveId": 757,
     "name": "Power Shift",
     "type": 1,
     "description": "The user swaps its Attack and Defense stats.",
@@ -9127,7 +9127,7 @@
     "properties": []
   },
   "758": {
-    "id": 758,
+    "moveId": 758,
     "name": "Stone Axe",
     "type": 6,
     "description": "High critical hit ratio. Sets Splinters that hurt the foe.",
@@ -9141,7 +9141,7 @@
     ]
   },
   "759": {
-    "id": 759,
+    "moveId": 759,
     "name": "Springtide Storm",
     "type": 19,
     "description": "Wraps a foe in fierce winds. Varies with the user's form.",
@@ -9154,7 +9154,7 @@
     ]
   },
   "760": {
-    "id": 760,
+    "moveId": 760,
     "name": "Mystical Power",
     "type": 15,
     "description": "A mysterious power strikes, raising the user's Sp. Atk.",
@@ -9165,7 +9165,7 @@
     "properties": []
   },
   "761": {
-    "id": 761,
+    "moveId": 761,
     "name": "Raging Fury",
     "type": 11,
     "description": "A rampage of 2 to 3 turns that confuses the user.",
@@ -9176,7 +9176,7 @@
     "properties": []
   },
   "762": {
-    "id": 762,
+    "moveId": 762,
     "name": "Wave Crash",
     "type": 12,
     "description": "A slam shrouded in water. It also hurts the user.",
@@ -9189,7 +9189,7 @@
     ]
   },
   "763": {
-    "id": 763,
+    "moveId": 763,
     "name": "Chloroblast",
     "type": 13,
     "description": "A user-hurting blast of amassed chlorophyll.",
@@ -9200,7 +9200,7 @@
     "properties": []
   },
   "764": {
-    "id": 764,
+    "moveId": 764,
     "name": "Mountain Gale",
     "type": 16,
     "description": "Giant chunks of ice damage the foe. It may flinch.",
@@ -9211,7 +9211,7 @@
     "properties": []
   },
   "765": {
-    "id": 765,
+    "moveId": 765,
     "name": "Victory Dance",
     "type": 2,
     "description": "Dances to raise Attack, Defense and Speed.",
@@ -9224,7 +9224,7 @@
     ]
   },
   "766": {
-    "id": 766,
+    "moveId": 766,
     "name": "Headlong Rush",
     "type": 5,
     "description": "Hits with a full-body tackle. Lowers the users's defenses.",
@@ -9238,7 +9238,7 @@
     ]
   },
   "767": {
-    "id": 767,
+    "moveId": 767,
     "name": "Barb Barrage",
     "type": 4,
     "description": "Can poison on impact. Powers up against poisoned foes.",
@@ -9249,7 +9249,7 @@
     "properties": []
   },
   "768": {
-    "id": 768,
+    "moveId": 768,
     "name": "Esper Wing",
     "type": 15,
     "description": "High critical hit ratio. Ups the user's Speed.",
@@ -9260,7 +9260,7 @@
     "properties": []
   },
   "769": {
-    "id": 769,
+    "moveId": 769,
     "name": "Bitter Malice",
     "type": 8,
     "description": "Hex that may leave target Frostbitten.",
@@ -9271,7 +9271,7 @@
     "properties": []
   },
   "770": {
-    "id": 770,
+    "moveId": 770,
     "name": "Shelter",
     "type": 9,
     "description": "The user hardens their skin, sharply raising its Defense.",
@@ -9282,7 +9282,7 @@
     "properties": []
   },
   "771": {
-    "id": 771,
+    "moveId": 771,
     "name": "Triple Arrows",
     "type": 2,
     "description": "High critical hit ratio. May lower Defense or flinch.",
@@ -9295,7 +9295,7 @@
     ]
   },
   "772": {
-    "id": 772,
+    "moveId": 772,
     "name": "Infernal Parade",
     "type": 8,
     "description": "Hurts a foe harder if it has an ailment. May leave a burn.",
@@ -9306,7 +9306,7 @@
     "properties": []
   },
   "773": {
-    "id": 773,
+    "moveId": 773,
     "name": "Ceaseless Edge",
     "type": 18,
     "description": "High critical hit ratio. Sets Splinters that hurt the foe.",
@@ -9320,7 +9320,7 @@
     ]
   },
   "774": {
-    "id": 774,
+    "moveId": 774,
     "name": "Bleakwind Storm",
     "type": 3,
     "description": "Hits with brutal, cold winds. May lower the foe's Speed.",
@@ -9333,7 +9333,7 @@
     ]
   },
   "775": {
-    "id": 775,
+    "moveId": 775,
     "name": "Wildbolt Storm",
     "type": 14,
     "description": "Hits with a brutal tempest. May inflict paralysis.",
@@ -9346,7 +9346,7 @@
     ]
   },
   "776": {
-    "id": 776,
+    "moveId": 776,
     "name": "Sandsear Storm",
     "type": 5,
     "description": "Hits with brutally hot sand. May inflict a burn.",
@@ -9359,7 +9359,7 @@
     ]
   },
   "777": {
-    "id": 777,
+    "moveId": 777,
     "name": "Lunar Blessing",
     "type": 15,
     "description": "The user heals and cures itself and its ally.",
@@ -9372,7 +9372,7 @@
     ]
   },
   "778": {
-    "id": 778,
+    "moveId": 778,
     "name": "Take Heart",
     "type": 15,
     "description": "The user lifts its spirits to heal and strengthen itself.",
@@ -9383,7 +9383,7 @@
     "properties": []
   },
   "779": {
-    "id": 779,
+    "moveId": 779,
     "name": "Tera Blast",
     "type": 1,
     "description": "If the user's Terastallized, it hits with its Tera-type.",
@@ -9394,7 +9394,7 @@
     "properties": []
   },
   "780": {
-    "id": 780,
+    "moveId": 780,
     "name": "Silk Trap",
     "type": 7,
     "description": "Protects itself, lowering Speed on contact.",
@@ -9405,7 +9405,7 @@
     "properties": []
   },
   "781": {
-    "id": 781,
+    "moveId": 781,
     "name": "Axe Kick",
     "type": 2,
     "description": "May miss and hurt the kicker. May cause confusion.",
@@ -9419,7 +9419,7 @@
     ]
   },
   "782": {
-    "id": 782,
+    "moveId": 782,
     "name": "Last Respects",
     "type": 8,
     "description": "This move deals more damage for each defeated ally.",
@@ -9430,7 +9430,7 @@
     "properties": []
   },
   "783": {
-    "id": 783,
+    "moveId": 783,
     "name": "Lumina Crash",
     "type": 15,
     "description": "A mind-affecting light harshly lowers Sp. Def.",
@@ -9441,7 +9441,7 @@
     "properties": []
   },
   "784": {
-    "id": 784,
+    "moveId": 784,
     "name": "Order Up",
     "type": 17,
     "description": "Boosts a user's stats depending on Tatsugiri.",
@@ -9452,7 +9452,7 @@
     "properties": []
   },
   "785": {
-    "id": 785,
+    "moveId": 785,
     "name": "Jet Punch",
     "type": 12,
     "description": "A punch is thrown at blinding speed to strike first.",
@@ -9466,7 +9466,7 @@
     ]
   },
   "786": {
-    "id": 786,
+    "moveId": 786,
     "name": "Spicy Extract",
     "type": 13,
     "description": "Sharply ups target's Attack, harshly lowers its Defense.",
@@ -9477,7 +9477,7 @@
     "properties": []
   },
   "787": {
-    "id": 787,
+    "moveId": 787,
     "name": "Spin Out",
     "type": 9,
     "description": "Furiously strains its legs. Harshly lowers user's Speed.",
@@ -9490,7 +9490,7 @@
     ]
   },
   "788": {
-    "id": 788,
+    "moveId": 788,
     "name": "Population Bomb",
     "type": 1,
     "description": "The user's fellows hit one to ten times in a row.",
@@ -9504,7 +9504,7 @@
     ]
   },
   "789": {
-    "id": 789,
+    "moveId": 789,
     "name": "Ice Spinner",
     "type": 16,
     "description": "Ice-covered feet hit a foe and destroy the terrain.",
@@ -9517,7 +9517,7 @@
     ]
   },
   "790": {
-    "id": 790,
+    "moveId": 790,
     "name": "Glaive Rush",
     "type": 17,
     "description": "Foe attacks next turn can't miss and do double damage.",
@@ -9530,7 +9530,7 @@
     ]
   },
   "791": {
-    "id": 791,
+    "moveId": 791,
     "name": "Revival Blessing",
     "type": 1,
     "description": "Revives a fainted party ᴾₖᴹₙ and restores half of its HP.",
@@ -9543,7 +9543,7 @@
     ]
   },
   "792": {
-    "id": 792,
+    "moveId": 792,
     "name": "Salt Cure",
     "type": 6,
     "description": "Hurts foe every turn. Double damage to Steel and Water.",
@@ -9554,7 +9554,7 @@
     "properties": []
   },
   "793": {
-    "id": 793,
+    "moveId": 793,
     "name": "Triple Dive",
     "type": 12,
     "description": "Hits target with splashes of water 3 times in a row.",
@@ -9567,7 +9567,7 @@
     ]
   },
   "794": {
-    "id": 794,
+    "moveId": 794,
     "name": "Mortal Spin",
     "type": 4,
     "description": "Erases trap moves and Leech Seed. Poisons adjacent foes.",
@@ -9580,7 +9580,7 @@
     ]
   },
   "795": {
-    "id": 795,
+    "moveId": 795,
     "name": "Doodle",
     "type": 1,
     "description": "Changes user's and ally's Ability into the target's.",
@@ -9591,7 +9591,7 @@
     "properties": []
   },
   "796": {
-    "id": 796,
+    "moveId": 796,
     "name": "Fillet Away",
     "type": 1,
     "description": "Sharply boosts offenses and Speed by using its own HP.",
@@ -9602,7 +9602,7 @@
     "properties": []
   },
   "797": {
-    "id": 797,
+    "moveId": 797,
     "name": "Kowtow Cleave",
     "type": 18,
     "description": "User slashes the foe after kowtowing. It never misses.",
@@ -9616,7 +9616,7 @@
     ]
   },
   "798": {
-    "id": 798,
+    "moveId": 798,
     "name": "Flower Trick",
     "type": 13,
     "description": "Rigged bouquet. Always gets a critical hit, never missing.",
@@ -9627,7 +9627,7 @@
     "properties": []
   },
   "799": {
-    "id": 799,
+    "moveId": 799,
     "name": "Torch Song",
     "type": 11,
     "description": "Flames scorch the target. Boosts the user's Sp. Atk.",
@@ -9640,7 +9640,7 @@
     ]
   },
   "800": {
-    "id": 800,
+    "moveId": 800,
     "name": "Aqua Step",
     "type": 12,
     "description": "Hits with light, fluid dance steps. Ups the user's Speed.",
@@ -9655,7 +9655,7 @@
     ]
   },
   "801": {
-    "id": 801,
+    "moveId": 801,
     "name": "Raging Bull",
     "type": 1,
     "description": "Tackle that breaks barriers. User's form determines type.",
@@ -9668,7 +9668,7 @@
     ]
   },
   "802": {
-    "id": 802,
+    "moveId": 802,
     "name": "Make It Rain",
     "type": 9,
     "description": "Lowers the user's Sp. Atk. Money is recovered after.",
@@ -9679,7 +9679,7 @@
     "properties": []
   },
   "803": {
-    "id": 803,
+    "moveId": 803,
     "name": "Ruination",
     "type": 18,
     "description": "Summons a ruinous disaster and cuts half the foe's HP.",
@@ -9690,7 +9690,7 @@
     "properties": []
   },
   "804": {
-    "id": 804,
+    "moveId": 804,
     "name": "Collision Course",
     "type": 2,
     "description": "Prehistoric explosion that's stronger if super effective.",
@@ -9703,7 +9703,7 @@
     ]
   },
   "805": {
-    "id": 805,
+    "moveId": 805,
     "name": "Electro Drift",
     "type": 14,
     "description": "Futuristic electricity. It's stronger if super effective.",
@@ -9716,7 +9716,7 @@
     ]
   },
   "806": {
-    "id": 806,
+    "moveId": 806,
     "name": "Shed Tail",
     "type": 1,
     "description": "Creates a Substitute for itself before switching out.",
@@ -9727,7 +9727,7 @@
     "properties": []
   },
   "807": {
-    "id": 807,
+    "moveId": 807,
     "name": "Chilly Reception",
     "type": 16,
     "description": "Bad joke summons snowstorm. The user also switches out.",
@@ -9738,7 +9738,7 @@
     "properties": []
   },
   "808": {
-    "id": 808,
+    "moveId": 808,
     "name": "Tidy Up",
     "type": 1,
     "description": "User tidies up hazards and raises its Attack and Speed.",
@@ -9749,7 +9749,7 @@
     "properties": []
   },
   "809": {
-    "id": 809,
+    "moveId": 809,
     "name": "Snowscape",
     "type": 16,
     "description": "Summons a snowstorm that lasts for five turns.",
@@ -9760,7 +9760,7 @@
     "properties": []
   },
   "810": {
-    "id": 810,
+    "moveId": 810,
     "name": "Pounce",
     "type": 7,
     "description": "The user pounces on the foe, lowering its Speed.",
@@ -9773,7 +9773,7 @@
     ]
   },
   "811": {
-    "id": 811,
+    "moveId": 811,
     "name": "Trailblaze",
     "type": 13,
     "description": "The user attacks suddenly, raising its Speed.",
@@ -9786,7 +9786,7 @@
     ]
   },
   "812": {
-    "id": 812,
+    "moveId": 812,
     "name": "Chilling Water",
     "type": 12,
     "description": "A shower with ice-cold water lowers the target's Attack.",
@@ -9797,7 +9797,7 @@
     "properties": []
   },
   "813": {
-    "id": 813,
+    "moveId": 813,
     "name": "Hyper Drill",
     "type": 1,
     "description": "A spinning pointed part bypasses a foe's Protect.",
@@ -9810,7 +9810,7 @@
     ]
   },
   "814": {
-    "id": 814,
+    "moveId": 814,
     "name": "Twin Beam",
     "type": 15,
     "description": "Mystical eye-beams that hit the target twice in a row.",
@@ -9821,7 +9821,7 @@
     "properties": []
   },
   "815": {
-    "id": 815,
+    "moveId": 815,
     "name": "Rage Fist",
     "type": 8,
     "description": "The more the user has been hit, the stronger the move.",
@@ -9835,7 +9835,7 @@
     ]
   },
   "816": {
-    "id": 816,
+    "moveId": 816,
     "name": "Armor Cannon",
     "type": 11,
     "description": "A strong attack but lowers the defensive stats.",
@@ -9848,7 +9848,7 @@
     ]
   },
   "817": {
-    "id": 817,
+    "moveId": 817,
     "name": "Bitter Blade",
     "type": 11,
     "description": "An attack that absorbs half the damage inflicted.",
@@ -9863,7 +9863,7 @@
     ]
   },
   "818": {
-    "id": 818,
+    "moveId": 818,
     "name": "Double Shock",
     "type": 14,
     "description": "Discharges all electricity, losing the Electric type.",
@@ -9876,7 +9876,7 @@
     ]
   },
   "819": {
-    "id": 819,
+    "moveId": 819,
     "name": "Gigaton Hammer",
     "type": 9,
     "description": "Swings a huge hammer. Can't be used twice in a row.",
@@ -9887,7 +9887,7 @@
     "properties": []
   },
   "820": {
-    "id": 820,
+    "moveId": 820,
     "name": "Comeuppance",
     "type": 18,
     "description": "Retaliates strongly against who last hurt the user.",
@@ -9900,7 +9900,7 @@
     ]
   },
   "821": {
-    "id": 821,
+    "moveId": 821,
     "name": "Aqua Cutter",
     "type": 12,
     "description": "Pressurized water cut with a high critical-hit ratio.",
@@ -9913,7 +9913,7 @@
     ]
   },
   "822": {
-    "id": 822,
+    "moveId": 822,
     "name": "Blazing Torque",
     "type": 11,
     "description": "---",
@@ -9924,7 +9924,7 @@
     "properties": []
   },
   "823": {
-    "id": 823,
+    "moveId": 823,
     "name": "Wicked Torque",
     "type": 18,
     "description": "---",
@@ -9935,7 +9935,7 @@
     "properties": []
   },
   "824": {
-    "id": 824,
+    "moveId": 824,
     "name": "Noxious Torque",
     "type": 4,
     "description": "---",
@@ -9946,7 +9946,7 @@
     "properties": []
   },
   "825": {
-    "id": 825,
+    "moveId": 825,
     "name": "Combat Torque",
     "type": 2,
     "description": "---",
@@ -9957,7 +9957,7 @@
     "properties": []
   },
   "826": {
-    "id": 826,
+    "moveId": 826,
     "name": "Magical Torque",
     "type": 19,
     "description": "---",
@@ -9968,7 +9968,7 @@
     "properties": []
   },
   "827": {
-    "id": 827,
+    "moveId": 827,
     "name": "Psyblade",
     "type": 15,
     "description": "This move's power increases when on Electric Terrain.",
@@ -9982,7 +9982,7 @@
     ]
   },
   "828": {
-    "id": 828,
+    "moveId": 828,
     "name": "Hydro Steam",
     "type": 12,
     "description": "This move's power increases under harsh sunlight.",
@@ -9993,7 +9993,7 @@
     "properties": []
   },
   "829": {
-    "id": 829,
+    "moveId": 829,
     "name": "Blood Moon",
     "type": 1,
     "description": "Unleashes the blood moon. Can't be used twice in a row.",
@@ -10004,7 +10004,7 @@
     "properties": []
   },
   "830": {
-    "id": 830,
+    "moveId": 830,
     "name": "Matcha Gotcha",
     "type": 13,
     "description": "Absorbs half the damage inflicted. May cause a burn.",
@@ -10017,7 +10017,7 @@
     ]
   },
   "831": {
-    "id": 831,
+    "moveId": 831,
     "name": "Syrup Bomb",
     "type": 13,
     "description": "Lowers the foe's speed each turn for 3 turns.",
@@ -10030,7 +10030,7 @@
     ]
   },
   "832": {
-    "id": 832,
+    "moveId": 832,
     "name": "Ivy Cudgel",
     "type": 13,
     "description": "Type changes with held mask. High critical-hit ratio.",
@@ -10041,7 +10041,7 @@
     "properties": []
   },
   "833": {
-    "id": 833,
+    "moveId": 833,
     "name": "Electro Shot",
     "type": 14,
     "description": "Gathers electricity, then fires a high-voltage shot.",
@@ -10052,7 +10052,7 @@
     "properties": []
   },
   "834": {
-    "id": 834,
+    "moveId": 834,
     "name": "Tera Starstorm",
     "type": 1,
     "description": "In Terapagos's Stellar Form, it hits all foes.",
@@ -10063,7 +10063,7 @@
     "properties": []
   },
   "835": {
-    "id": 835,
+    "moveId": 835,
     "name": "Fickle Beam",
     "type": 17,
     "description": "Shoots a beam of light. Sometimes twice as strong.",
@@ -10074,7 +10074,7 @@
     "properties": []
   },
   "836": {
-    "id": 836,
+    "moveId": 836,
     "name": "Burning Bulwark",
     "type": 11,
     "description": "Evades attack, and burns the foe if struck.",
@@ -10085,7 +10085,7 @@
     "properties": []
   },
   "837": {
-    "id": 837,
+    "moveId": 837,
     "name": "Thunderclap",
     "type": 14,
     "description": "Strikes first if the foe is preparing an attack.",
@@ -10096,7 +10096,7 @@
     "properties": []
   },
   "838": {
-    "id": 838,
+    "moveId": 838,
     "name": "Mighty Cleave",
     "type": 6,
     "description": "An attack that hits foes using moves like Protect.",
@@ -10110,7 +10110,7 @@
     ]
   },
   "839": {
-    "id": 839,
+    "moveId": 839,
     "name": "Tachyon Cutter",
     "type": 9,
     "description": "Launches particle blades at the target. Strikes twice.",
@@ -10123,7 +10123,7 @@
     ]
   },
   "840": {
-    "id": 840,
+    "moveId": 840,
     "name": "Hard Press",
     "type": 9,
     "description": "The higher the foe's HP the more damage caused.",
@@ -10136,7 +10136,7 @@
     ]
   },
   "841": {
-    "id": 841,
+    "moveId": 841,
     "name": "Dragon Cheer",
     "type": 17,
     "description": "Increases allies' critical hit ratio, especially if Dragons.",
@@ -10147,7 +10147,7 @@
     "properties": []
   },
   "842": {
-    "id": 842,
+    "moveId": 842,
     "name": "Alluring Voice",
     "type": 19,
     "description": "Confuses foe if its stats were boosted this turn.",
@@ -10160,7 +10160,7 @@
     ]
   },
   "843": {
-    "id": 843,
+    "moveId": 843,
     "name": "Temper Flare",
     "type": 11,
     "description": "A desperation attack. Power doubles if last move failed.",
@@ -10173,7 +10173,7 @@
     ]
   },
   "844": {
-    "id": 844,
+    "moveId": 844,
     "name": "Supercell Slam",
     "type": 14,
     "description": "An electrified slam. If it misses, the user is hurt.",
@@ -10186,7 +10186,7 @@
     ]
   },
   "845": {
-    "id": 845,
+    "moveId": 845,
     "name": "Psychic Noise",
     "type": 15,
     "description": "Unpleasant sound waves that damage and prevent healing.",
@@ -10199,7 +10199,7 @@
     ]
   },
   "846": {
-    "id": 846,
+    "moveId": 846,
     "name": "Upper Hand",
     "type": 2,
     "description": "Makes the target flinch if readying a priority move.",
@@ -10212,7 +10212,7 @@
     ]
   },
   "847": {
-    "id": 847,
+    "moveId": 847,
     "name": "Malignant Chain",
     "type": 4,
     "description": "A corrosive chain attack that may badly poison.",
@@ -10223,7 +10223,7 @@
     "properties": []
   },
   "848": {
-    "id": 848,
+    "moveId": 848,
     "name": "Aqua Fang",
     "type": 12,
     "description": "The user bites the foe with aquatic force.",
@@ -10237,7 +10237,7 @@
     ]
   },
   "849": {
-    "id": 849,
+    "moveId": 849,
     "name": "Dark Hole",
     "type": 18,
     "description": "Sends the foe to the abyss. May induce sleep.",
@@ -10248,7 +10248,7 @@
     "properties": []
   },
   "850": {
-    "id": 850,
+    "moveId": 850,
     "name": "Draco Barrage",
     "type": 17,
     "description": "Ignores Fairy immunity; 33% recoil; best of phys. or spec.",
@@ -10259,7 +10259,7 @@
     "properties": []
   },
   "851": {
-    "id": 851,
+    "moveId": 851,
     "name": "Breakneck Blitz",
     "type": 1,
     "description": null,
@@ -10270,7 +10270,7 @@
     "properties": []
   },
   "852": {
-    "id": 852,
+    "moveId": 852,
     "name": "All Out Pummeling",
     "type": 2,
     "description": null,
@@ -10281,7 +10281,7 @@
     "properties": []
   },
   "853": {
-    "id": 853,
+    "moveId": 853,
     "name": "Supersonic Skystrike",
     "type": 3,
     "description": null,
@@ -10292,7 +10292,7 @@
     "properties": []
   },
   "854": {
-    "id": 854,
+    "moveId": 854,
     "name": "Acid Downpour",
     "type": 4,
     "description": null,
@@ -10303,7 +10303,7 @@
     "properties": []
   },
   "855": {
-    "id": 855,
+    "moveId": 855,
     "name": "Tectonic Rage",
     "type": 5,
     "description": null,
@@ -10314,7 +10314,7 @@
     "properties": []
   },
   "856": {
-    "id": 856,
+    "moveId": 856,
     "name": "Continental Crush",
     "type": 6,
     "description": null,
@@ -10325,7 +10325,7 @@
     "properties": []
   },
   "857": {
-    "id": 857,
+    "moveId": 857,
     "name": "Savage Spin Out",
     "type": 7,
     "description": null,
@@ -10336,7 +10336,7 @@
     "properties": []
   },
   "858": {
-    "id": 858,
+    "moveId": 858,
     "name": "Never Ending Nightmare",
     "type": 8,
     "description": null,
@@ -10347,7 +10347,7 @@
     "properties": []
   },
   "859": {
-    "id": 859,
+    "moveId": 859,
     "name": "Corkscrew Crash",
     "type": 9,
     "description": null,
@@ -10358,7 +10358,7 @@
     "properties": []
   },
   "860": {
-    "id": 860,
+    "moveId": 860,
     "name": "Inferno Overdrive",
     "type": 11,
     "description": null,
@@ -10369,7 +10369,7 @@
     "properties": []
   },
   "861": {
-    "id": 861,
+    "moveId": 861,
     "name": "Hydro Vortex",
     "type": 12,
     "description": null,
@@ -10380,7 +10380,7 @@
     "properties": []
   },
   "862": {
-    "id": 862,
+    "moveId": 862,
     "name": "Bloom Doom",
     "type": 13,
     "description": null,
@@ -10391,7 +10391,7 @@
     "properties": []
   },
   "863": {
-    "id": 863,
+    "moveId": 863,
     "name": "Gigavolt Havoc",
     "type": 14,
     "description": null,
@@ -10402,7 +10402,7 @@
     "properties": []
   },
   "864": {
-    "id": 864,
+    "moveId": 864,
     "name": "Shattered Psyche",
     "type": 15,
     "description": null,
@@ -10413,7 +10413,7 @@
     "properties": []
   },
   "865": {
-    "id": 865,
+    "moveId": 865,
     "name": "Subzero Slammer",
     "type": 16,
     "description": null,
@@ -10424,7 +10424,7 @@
     "properties": []
   },
   "866": {
-    "id": 866,
+    "moveId": 866,
     "name": "Devastating Drake",
     "type": 17,
     "description": null,
@@ -10435,7 +10435,7 @@
     "properties": []
   },
   "867": {
-    "id": 867,
+    "moveId": 867,
     "name": "Black Hole Eclipse",
     "type": 18,
     "description": null,
@@ -10446,7 +10446,7 @@
     "properties": []
   },
   "868": {
-    "id": 868,
+    "moveId": 868,
     "name": "Twinkle Tackle",
     "type": 19,
     "description": null,
@@ -10457,7 +10457,7 @@
     "properties": []
   },
   "869": {
-    "id": 869,
+    "moveId": 869,
     "name": "Catastropika",
     "type": 14,
     "description": null,
@@ -10468,7 +10468,7 @@
     "properties": []
   },
   "870": {
-    "id": 870,
+    "moveId": 870,
     "name": "10,000,000 Volt Thunderbolt",
     "type": 14,
     "description": null,
@@ -10479,7 +10479,7 @@
     "properties": []
   },
   "871": {
-    "id": 871,
+    "moveId": 871,
     "name": "Stoked Sparksurfer",
     "type": 14,
     "description": null,
@@ -10490,7 +10490,7 @@
     "properties": []
   },
   "872": {
-    "id": 872,
+    "moveId": 872,
     "name": "Extreme Evoboost",
     "type": 1,
     "description": null,
@@ -10501,7 +10501,7 @@
     "properties": []
   },
   "873": {
-    "id": 873,
+    "moveId": 873,
     "name": "Pulverizing Pancake",
     "type": 1,
     "description": null,
@@ -10512,7 +10512,7 @@
     "properties": []
   },
   "874": {
-    "id": 874,
+    "moveId": 874,
     "name": "Genesis Supernova",
     "type": 15,
     "description": null,
@@ -10523,7 +10523,7 @@
     "properties": []
   },
   "875": {
-    "id": 875,
+    "moveId": 875,
     "name": "Sinister Arrow Raid",
     "type": 8,
     "description": null,
@@ -10534,7 +10534,7 @@
     "properties": []
   },
   "876": {
-    "id": 876,
+    "moveId": 876,
     "name": "Malicious Moonsault",
     "type": 18,
     "description": null,
@@ -10545,7 +10545,7 @@
     "properties": []
   },
   "877": {
-    "id": 877,
+    "moveId": 877,
     "name": "Oceanic Operetta",
     "type": 12,
     "description": null,
@@ -10556,7 +10556,7 @@
     "properties": []
   },
   "878": {
-    "id": 878,
+    "moveId": 878,
     "name": "Splintered Stormshards",
     "type": 6,
     "description": null,
@@ -10567,7 +10567,7 @@
     "properties": []
   },
   "879": {
-    "id": 879,
+    "moveId": 879,
     "name": "Let's Snuggle Forever",
     "type": 19,
     "description": null,
@@ -10578,7 +10578,7 @@
     "properties": []
   },
   "880": {
-    "id": 880,
+    "moveId": 880,
     "name": "Clangorous Soulblaze",
     "type": 17,
     "description": null,
@@ -10591,7 +10591,7 @@
     ]
   },
   "881": {
-    "id": 881,
+    "moveId": 881,
     "name": "Guardian of Alola",
     "type": 19,
     "description": null,
@@ -10602,7 +10602,7 @@
     "properties": []
   },
   "882": {
-    "id": 882,
+    "moveId": 882,
     "name": "Searing Sunraze Smash",
     "type": 9,
     "description": null,
@@ -10613,7 +10613,7 @@
     "properties": []
   },
   "883": {
-    "id": 883,
+    "moveId": 883,
     "name": "Menacing Moonraze Maelstrom",
     "type": 8,
     "description": null,
@@ -10624,7 +10624,7 @@
     "properties": []
   },
   "884": {
-    "id": 884,
+    "moveId": 884,
     "name": "Light That Burns The Sky",
     "type": 15,
     "description": null,
@@ -10635,7 +10635,7 @@
     "properties": []
   },
   "885": {
-    "id": 885,
+    "moveId": 885,
     "name": "Soul Stealing 7 Star Strike",
     "type": 8,
     "description": null,
@@ -10646,7 +10646,7 @@
     "properties": []
   },
   "886": {
-    "id": 886,
+    "moveId": 886,
     "name": "Max Guard",
     "type": 1,
     "description": null,
@@ -10657,7 +10657,7 @@
     "properties": []
   },
   "887": {
-    "id": 887,
+    "moveId": 887,
     "name": "Max Strike",
     "type": 1,
     "description": null,
@@ -10668,7 +10668,7 @@
     "properties": []
   },
   "888": {
-    "id": 888,
+    "moveId": 888,
     "name": "Max Knuckle",
     "type": 2,
     "description": null,
@@ -10679,7 +10679,7 @@
     "properties": []
   },
   "889": {
-    "id": 889,
+    "moveId": 889,
     "name": "Max Airstream",
     "type": 3,
     "description": null,
@@ -10690,7 +10690,7 @@
     "properties": []
   },
   "890": {
-    "id": 890,
+    "moveId": 890,
     "name": "Max Ooze",
     "type": 4,
     "description": null,
@@ -10701,7 +10701,7 @@
     "properties": []
   },
   "891": {
-    "id": 891,
+    "moveId": 891,
     "name": "Max Quake",
     "type": 5,
     "description": null,
@@ -10712,7 +10712,7 @@
     "properties": []
   },
   "892": {
-    "id": 892,
+    "moveId": 892,
     "name": "Max Rockfall",
     "type": 6,
     "description": null,
@@ -10723,7 +10723,7 @@
     "properties": []
   },
   "893": {
-    "id": 893,
+    "moveId": 893,
     "name": "Max Flutterby",
     "type": 7,
     "description": null,
@@ -10734,7 +10734,7 @@
     "properties": []
   },
   "894": {
-    "id": 894,
+    "moveId": 894,
     "name": "Max Phantasm",
     "type": 8,
     "description": null,
@@ -10745,7 +10745,7 @@
     "properties": []
   },
   "895": {
-    "id": 895,
+    "moveId": 895,
     "name": "Max Steelspike",
     "type": 9,
     "description": null,
@@ -10756,7 +10756,7 @@
     "properties": []
   },
   "896": {
-    "id": 896,
+    "moveId": 896,
     "name": "Max Flare",
     "type": 11,
     "description": null,
@@ -10767,7 +10767,7 @@
     "properties": []
   },
   "897": {
-    "id": 897,
+    "moveId": 897,
     "name": "Max Geyser",
     "type": 12,
     "description": null,
@@ -10778,7 +10778,7 @@
     "properties": []
   },
   "898": {
-    "id": 898,
+    "moveId": 898,
     "name": "Max Overgrowth",
     "type": 13,
     "description": null,
@@ -10789,7 +10789,7 @@
     "properties": []
   },
   "899": {
-    "id": 899,
+    "moveId": 899,
     "name": "Max Lightning",
     "type": 14,
     "description": null,
@@ -10800,7 +10800,7 @@
     "properties": []
   },
   "900": {
-    "id": 900,
+    "moveId": 900,
     "name": "Max Mindstorm",
     "type": 15,
     "description": null,
@@ -10811,7 +10811,7 @@
     "properties": []
   },
   "901": {
-    "id": 901,
+    "moveId": 901,
     "name": "Max Hailstorm",
     "type": 16,
     "description": null,
@@ -10822,7 +10822,7 @@
     "properties": []
   },
   "902": {
-    "id": 902,
+    "moveId": 902,
     "name": "Max Wyrmwind",
     "type": 17,
     "description": null,
@@ -10833,7 +10833,7 @@
     "properties": []
   },
   "903": {
-    "id": 903,
+    "moveId": 903,
     "name": "Max Darkness",
     "type": 18,
     "description": null,
@@ -10844,7 +10844,7 @@
     "properties": []
   },
   "904": {
-    "id": 904,
+    "moveId": 904,
     "name": "Max Starfall",
     "type": 19,
     "description": null,
@@ -10855,7 +10855,7 @@
     "properties": []
   },
   "905": {
-    "id": 905,
+    "moveId": 905,
     "name": "G-Max Vine Lash",
     "type": 13,
     "description": null,
@@ -10866,7 +10866,7 @@
     "properties": []
   },
   "906": {
-    "id": 906,
+    "moveId": 906,
     "name": "G-Max Wildfire",
     "type": 11,
     "description": null,
@@ -10877,7 +10877,7 @@
     "properties": []
   },
   "907": {
-    "id": 907,
+    "moveId": 907,
     "name": "G-Max Canonade",
     "type": 12,
     "description": null,
@@ -10888,7 +10888,7 @@
     "properties": []
   },
   "908": {
-    "id": 908,
+    "moveId": 908,
     "name": "G-Max Befuddle",
     "type": 7,
     "description": null,
@@ -10899,7 +10899,7 @@
     "properties": []
   },
   "909": {
-    "id": 909,
+    "moveId": 909,
     "name": "G-Max Volt Crash",
     "type": 14,
     "description": null,
@@ -10910,7 +10910,7 @@
     "properties": []
   },
   "910": {
-    "id": 910,
+    "moveId": 910,
     "name": "G-Max Gold Rush",
     "type": 1,
     "description": null,
@@ -10921,7 +10921,7 @@
     "properties": []
   },
   "911": {
-    "id": 911,
+    "moveId": 911,
     "name": "G-Max Chi Strike",
     "type": 2,
     "description": null,
@@ -10932,7 +10932,7 @@
     "properties": []
   },
   "912": {
-    "id": 912,
+    "moveId": 912,
     "name": "G-Max Terror",
     "type": 8,
     "description": null,
@@ -10943,7 +10943,7 @@
     "properties": []
   },
   "913": {
-    "id": 913,
+    "moveId": 913,
     "name": "G-Max Foam Burst",
     "type": 12,
     "description": null,
@@ -10954,7 +10954,7 @@
     "properties": []
   },
   "914": {
-    "id": 914,
+    "moveId": 914,
     "name": "G-Max Resonance",
     "type": 16,
     "description": null,
@@ -10965,7 +10965,7 @@
     "properties": []
   },
   "915": {
-    "id": 915,
+    "moveId": 915,
     "name": "G-Max Cuddle",
     "type": 1,
     "description": null,
@@ -10976,7 +10976,7 @@
     "properties": []
   },
   "916": {
-    "id": 916,
+    "moveId": 916,
     "name": "G-Max Replenish",
     "type": 1,
     "description": null,
@@ -10987,7 +10987,7 @@
     "properties": []
   },
   "917": {
-    "id": 917,
+    "moveId": 917,
     "name": "G-Max Malodor",
     "type": 4,
     "description": null,
@@ -10998,7 +10998,7 @@
     "properties": []
   },
   "918": {
-    "id": 918,
+    "moveId": 918,
     "name": "G-Max Meltdown",
     "type": 9,
     "description": null,
@@ -11009,7 +11009,7 @@
     "properties": []
   },
   "919": {
-    "id": 919,
+    "moveId": 919,
     "name": "G-Max Drum Solo",
     "type": 13,
     "description": null,
@@ -11020,7 +11020,7 @@
     "properties": []
   },
   "920": {
-    "id": 920,
+    "moveId": 920,
     "name": "G-Max Fireball",
     "type": 11,
     "description": null,
@@ -11031,7 +11031,7 @@
     "properties": []
   },
   "921": {
-    "id": 921,
+    "moveId": 921,
     "name": "G-Max Hydrosnipe",
     "type": 12,
     "description": null,
@@ -11042,7 +11042,7 @@
     "properties": []
   },
   "922": {
-    "id": 922,
+    "moveId": 922,
     "name": "G-Max Wind Rage",
     "type": 3,
     "description": null,
@@ -11053,7 +11053,7 @@
     "properties": []
   },
   "923": {
-    "id": 923,
+    "moveId": 923,
     "name": "G-Max Gravitas",
     "type": 15,
     "description": null,
@@ -11064,7 +11064,7 @@
     "properties": []
   },
   "924": {
-    "id": 924,
+    "moveId": 924,
     "name": "G-Max Stonesurge",
     "type": 12,
     "description": null,
@@ -11075,7 +11075,7 @@
     "properties": []
   },
   "925": {
-    "id": 925,
+    "moveId": 925,
     "name": "G-Max Volcalith",
     "type": 6,
     "description": null,
@@ -11086,7 +11086,7 @@
     "properties": []
   },
   "926": {
-    "id": 926,
+    "moveId": 926,
     "name": "G-Max Tartness",
     "type": 13,
     "description": null,
@@ -11097,7 +11097,7 @@
     "properties": []
   },
   "927": {
-    "id": 927,
+    "moveId": 927,
     "name": "G-Max Sweetness",
     "type": 13,
     "description": null,
@@ -11108,7 +11108,7 @@
     "properties": []
   },
   "928": {
-    "id": 928,
+    "moveId": 928,
     "name": "G-Max Sandblast",
     "type": 5,
     "description": null,
@@ -11119,7 +11119,7 @@
     "properties": []
   },
   "929": {
-    "id": 929,
+    "moveId": 929,
     "name": "G-Max Stun Shock",
     "type": 14,
     "description": null,
@@ -11130,7 +11130,7 @@
     "properties": []
   },
   "930": {
-    "id": 930,
+    "moveId": 930,
     "name": "G-Max Centiferno",
     "type": 11,
     "description": null,
@@ -11141,7 +11141,7 @@
     "properties": []
   },
   "931": {
-    "id": 931,
+    "moveId": 931,
     "name": "G-Max Smite",
     "type": 19,
     "description": null,
@@ -11152,7 +11152,7 @@
     "properties": []
   },
   "932": {
-    "id": 932,
+    "moveId": 932,
     "name": "G-Max Snooze",
     "type": 18,
     "description": null,
@@ -11163,7 +11163,7 @@
     "properties": []
   },
   "933": {
-    "id": 933,
+    "moveId": 933,
     "name": "G-Max Finale",
     "type": 19,
     "description": null,
@@ -11174,7 +11174,7 @@
     "properties": []
   },
   "934": {
-    "id": 934,
+    "moveId": 934,
     "name": "G-Max Steelsurge",
     "type": 9,
     "description": null,
@@ -11185,7 +11185,7 @@
     "properties": []
   },
   "935": {
-    "id": 935,
+    "moveId": 935,
     "name": "G-Max Depletion",
     "type": 17,
     "description": null,
@@ -11196,7 +11196,7 @@
     "properties": []
   },
   "936": {
-    "id": 936,
+    "moveId": 936,
     "name": "G-Max One Blow",
     "type": 18,
     "description": null,
@@ -11207,7 +11207,7 @@
     "properties": []
   },
   "937": {
-    "id": 937,
+    "moveId": 937,
     "name": "G-Max Rapid Flow",
     "type": 12,
     "description": null,
