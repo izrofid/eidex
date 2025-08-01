@@ -1,4002 +1,5007 @@
 {
   "1": {
     "itemId": 1,
-    "Name": "Poké Ball"
+    "Name": "Poké Ball",
+    "Description": "A tool used for catching wild Pokémon."
   },
   "2": {
     "itemId": 2,
-    "Name": "Great Ball"
+    "Name": "Great Ball",
+    "Description": "A good Ball with a higher catch rate than a Poké Ball."
   },
   "3": {
     "itemId": 3,
-    "Name": "Ultra Ball"
+    "Name": "Ultra Ball",
+    "Description": "A better Ball with a higher catch rate than a Great Ball."
   },
   "4": {
     "itemId": 4,
-    "Name": "Master Ball"
+    "Name": "Master Ball",
+    "Description": "The best Ball that catches a Pokémon without fail."
   },
   "5": {
     "itemId": 5,
-    "Name": "Premier Ball"
+    "Name": "Premier Ball",
+    "Description": "A rare Ball made in commemoration of some event."
   },
   "6": {
     "itemId": 6,
-    "Name": "Heal Ball"
+    "Name": "Heal Ball",
+    "Description": "A remedial Ball that restores caught Pokémon."
   },
   "7": {
     "itemId": 7,
-    "Name": "Net Ball"
+    "Name": "Net Ball",
+    "Description": "A Ball that works well on Water- and Bug-type Pokémon."
   },
   "8": {
     "itemId": 8,
-    "Name": "Nest Ball"
+    "Name": "Nest Ball",
+    "Description": "A Ball that works better on weaker Pokémon."
   },
   "9": {
     "itemId": 9,
-    "Name": "Dive Ball"
+    "Name": "Dive Ball",
+    "Description": "A Ball that works better on Pokémon on the ocean floor."
   },
   "10": {
     "itemId": 10,
-    "Name": "Dusk Ball"
+    "Name": "Dusk Ball",
+    "Description": "Works well if used in a dark place."
   },
   "11": {
     "itemId": 11,
-    "Name": "Timer Ball"
+    "Name": "Timer Ball",
+    "Description": "A Ball that gains power in battles taking many turns."
   },
   "12": {
     "itemId": 12,
-    "Name": "Quick Ball"
+    "Name": "Quick Ball",
+    "Description": "Works well if used on the first turn."
   },
   "13": {
     "itemId": 13,
-    "Name": "Repeat Ball"
+    "Name": "Repeat Ball",
+    "Description": "A Ball that works better on Pokémon caught before."
   },
   "14": {
     "itemId": 14,
-    "Name": "Luxury Ball"
+    "Name": "Luxury Ball",
+    "Description": "A cozy Ball that makes Pokémon more friendly."
   },
   "15": {
     "itemId": 15,
-    "Name": "Level Ball"
+    "Name": "Level Ball",
+    "Description": "A Ball that works well on lower level Pokémon."
   },
   "16": {
     "itemId": 16,
-    "Name": "Lure Ball"
+    "Name": "Lure Ball",
+    "Description": "A Ball that works well on fished up Pokémon."
   },
   "17": {
     "itemId": 17,
-    "Name": "Moon Ball"
+    "Name": "Moon Ball",
+    "Description": "A Ball that works well on Moon Stone users."
   },
   "18": {
     "itemId": 18,
-    "Name": "Friend Ball"
+    "Name": "Friend Ball",
+    "Description": "A Ball that makes a Pokémon friendly when caught."
   },
   "19": {
     "itemId": 19,
-    "Name": "Love Ball"
+    "Name": "Love Ball",
+    "Description": "Works well on Pokémon of the opposite gender."
   },
   "20": {
     "itemId": 20,
-    "Name": "Fast Ball"
+    "Name": "Fast Ball",
+    "Description": "Works well on very fast Pokémon."
   },
   "21": {
     "itemId": 21,
-    "Name": "Heavy Ball"
+    "Name": "Heavy Ball",
+    "Description": "Works well on very heavy Pokémon."
   },
   "22": {
     "itemId": 22,
-    "Name": "Dream Ball"
+    "Name": "Dream Ball",
+    "Description": "A Ball that works well on sleeping Pokémon."
   },
   "23": {
     "itemId": 23,
-    "Name": "Safari Ball"
+    "Name": "Safari Ball",
+    "Description": "A special Ball that is used only in the Safari Zone."
   },
   "24": {
     "itemId": 24,
-    "Name": "Sport Ball"
+    "Name": "Sport Ball",
+    "Description": "A special Ball used in the Bug- Catching Contest."
   },
   "25": {
     "itemId": 25,
-    "Name": "Park Ball"
+    "Name": "Park Ball",
+    "Description": "A special Ball for the Pal Park."
   },
   "26": {
     "itemId": 26,
-    "Name": "Beast Ball"
+    "Name": "Beast Ball",
+    "Description": "A Ball designed to catch Ultra Beasts."
   },
   "27": {
     "itemId": 27,
-    "Name": "Cherish Ball"
+    "Name": "Cherish Ball",
+    "Description": "A rare Ball made in commemoration of some event."
   },
   "28": {
     "itemId": 28,
-    "Name": "Potion"
+    "Name": "Potion",
+    "Description": "Restores the HP of a Pokémon by 20 points."
   },
   "29": {
     "itemId": 29,
-    "Name": "Super Potion"
+    "Name": "Super Potion",
+    "Description": "Restores the HP of a Pokémon by 60 points."
   },
   "30": {
     "itemId": 30,
-    "Name": "Hyper Potion"
+    "Name": "Hyper Potion",
+    "Description": "Restores the HP of a Pokémon by 120 points."
   },
   "31": {
     "itemId": 31,
-    "Name": "Max Potion"
+    "Name": "Max Potion",
+    "Description": "Fully restores the HP of a Pokémon."
   },
   "32": {
     "itemId": 32,
-    "Name": "Full Restore"
+    "Name": "Full Restore",
+    "Description": "Fully restores the HP and status of a Pokémon."
   },
   "33": {
     "itemId": 33,
-    "Name": "Revive"
+    "Name": "Revive",
+    "Description": "Revives a fainted Pokémon with half its HP."
   },
   "34": {
     "itemId": 34,
-    "Name": "Max Revive"
+    "Name": "Max Revive",
+    "Description": "Revives a fainted Pokémon with all its HP."
   },
   "35": {
     "itemId": 35,
-    "Name": "Fresh Water"
+    "Name": "Fresh Water",
+    "Description": "A mineral water that restores HP by 30 points."
   },
   "36": {
     "itemId": 36,
-    "Name": "Soda Pop"
+    "Name": "Soda Pop",
+    "Description": "A fizzy soda drink that restores HP by 50 points."
   },
   "37": {
     "itemId": 37,
-    "Name": "Lemonade"
+    "Name": "Lemonade",
+    "Description": "A very sweet drink that restores HP by 70 points."
   },
   "38": {
     "itemId": 38,
-    "Name": "Moomoo Milk"
+    "Name": "Moomoo Milk",
+    "Description": "A nutritious milk that restores HP by 100 points."
   },
   "39": {
     "itemId": 39,
-    "Name": "Energy Powder"
+    "Name": "Energy Powder",
+    "Description": "A bitter powder that restores HP by 60 points."
   },
   "40": {
     "itemId": 40,
-    "Name": "Energy Root"
+    "Name": "Energy Root",
+    "Description": "A bitter root that restores HP by 120 points."
   },
   "41": {
     "itemId": 41,
-    "Name": "Heal Powder"
+    "Name": "Heal Powder",
+    "Description": "A bitter powder that heals all status problems."
   },
   "42": {
     "itemId": 42,
-    "Name": "Revival Herb"
+    "Name": "Revival Herb",
+    "Description": "A very bitter herb that revives a fainted Pokémon."
   },
   "43": {
     "itemId": 43,
-    "Name": "Antidote"
+    "Name": "Antidote",
+    "Description": "Heals a poisoned Pokémon."
   },
   "44": {
     "itemId": 44,
-    "Name": "Paralyze Heal"
+    "Name": "Paralyze Heal",
+    "Description": "Heals a paralyzed Pokémon."
   },
   "45": {
     "itemId": 45,
-    "Name": "Burn Heal"
+    "Name": "Burn Heal",
+    "Description": "Heals Pokémon of a burn."
   },
   "46": {
     "itemId": 46,
-    "Name": "Ice Heal"
+    "Name": "Ice Heal",
+    "Description": "Defrosts a frozen Pokémon."
   },
   "47": {
     "itemId": 47,
-    "Name": "Awakening"
+    "Name": "Awakening",
+    "Description": "Awakens a sleeping Pokémon."
   },
   "48": {
     "itemId": 48,
-    "Name": "Full Heal"
+    "Name": "Full Heal",
+    "Description": "Heals all the status problems of one Pokémon."
   },
   "49": {
     "itemId": 49,
-    "Name": "Ether"
+    "Name": "Ether",
+    "Description": "Restores the PP of a selected move by 10."
   },
   "50": {
     "itemId": 50,
-    "Name": "Max Ether"
+    "Name": "Max Ether",
+    "Description": "Fully restores the PP of a selected move."
   },
   "51": {
     "itemId": 51,
-    "Name": "Elixir"
+    "Name": "Elixir",
+    "Description": "Restores the PP of all moves by 10."
   },
   "52": {
     "itemId": 52,
-    "Name": "Max Elixir"
+    "Name": "Max Elixir",
+    "Description": "Fully restores the PP of a Pokémon's moves."
   },
   "53": {
     "itemId": 53,
-    "Name": "Berry Juice"
+    "Name": "Berry Juice",
+    "Description": "A 100% pure juice that restores HP by 20 points."
   },
   "54": {
     "itemId": 54,
-    "Name": "Sacred Ash"
+    "Name": "Sacred Ash",
+    "Description": "Fully revives and restores all fainted Pokémon."
   },
   "55": {
     "itemId": 55,
-    "Name": "Sweet Heart"
+    "Name": "Sweet Heart",
+    "Description": "A sweet chocolate that restores HP by 20 points."
   },
   "56": {
     "itemId": 56,
-    "Name": "Max Honey"
+    "Name": "Max Honey",
+    "Description": "Revives a fainted Pokémon with all its HP."
   },
   "57": {
     "itemId": 57,
-    "Name": "PewtrCrnches"
+    "Name": "PewtrCrnches",
+    "Description": "Heals all the status problems of one Pokémon."
   },
   "58": {
     "itemId": 58,
-    "Name": "RageCandyBar"
+    "Name": "RageCandyBar",
+    "Description": "Heals all the status problems of one Pokémon."
   },
   "59": {
     "itemId": 59,
-    "Name": "Lava Cookie"
+    "Name": "Lava Cookie",
+    "Description": "A local specialty that heals all status problems."
   },
   "60": {
     "itemId": 60,
-    "Name": "Old Gateau"
+    "Name": "Old Gateau",
+    "Description": "Heals all the status problems of one Pokémon."
   },
   "61": {
     "itemId": 61,
-    "Name": "Casteliacone"
+    "Name": "Casteliacone",
+    "Description": "Heals all the status problems of one Pokémon."
   },
   "62": {
     "itemId": 62,
-    "Name": "LumioseGlete"
+    "Name": "LumioseGlete",
+    "Description": "Heals all the status problems of one Pokémon."
   },
   "63": {
     "itemId": 63,
-    "Name": "ShalourSable"
+    "Name": "ShalourSable",
+    "Description": "Heals all the status problems of one Pokémon."
   },
   "64": {
     "itemId": 64,
-    "Name": "Big Malasada"
+    "Name": "Big Malasada",
+    "Description": "Heals all the status problems of one Pokémon."
   },
   "65": {
     "itemId": 65,
-    "Name": "HP Up"
+    "Name": "HP Up",
+    "Description": "Raises the base HP of one Pokémon."
   },
   "66": {
     "itemId": 66,
-    "Name": "Protein"
+    "Name": "Protein",
+    "Description": "Raises the base Attack stat of one Pokémon."
   },
   "67": {
     "itemId": 67,
-    "Name": "Iron"
+    "Name": "Iron",
+    "Description": "Raises the base Defense stat of one Pokémon."
   },
   "68": {
     "itemId": 68,
-    "Name": "Calcium"
+    "Name": "Calcium",
+    "Description": "Raises the base Sp. Atk stat of one Pokémon."
   },
   "69": {
     "itemId": 69,
-    "Name": "Zinc"
+    "Name": "Zinc",
+    "Description": "Raises the base Sp. Def stat of one Pokémon."
   },
   "70": {
     "itemId": 70,
-    "Name": "Carbos"
+    "Name": "Carbos",
+    "Description": "Raises the base Speed stat of one Pokémon."
   },
   "71": {
     "itemId": 71,
-    "Name": "PP Up"
+    "Name": "PP Up",
+    "Description": "Raises the maximum PP of a selected move."
   },
   "72": {
     "itemId": 72,
-    "Name": "PP Max"
+    "Name": "PP Max",
+    "Description": "Raises the PP of a move to its maximum points."
   },
   "73": {
     "itemId": 73,
-    "Name": "HealthFeather"
+    "Name": "HealthFeather",
+    "Description": "An item that raises the base HP of a Pokémon."
   },
   "74": {
     "itemId": 74,
-    "Name": "MuscleFeather"
+    "Name": "MuscleFeather",
+    "Description": "An item that raises the base Attack of a Pokémon."
   },
   "75": {
     "itemId": 75,
-    "Name": "ResistFeather"
+    "Name": "ResistFeather",
+    "Description": "An item that raises the base Defense of a Pokémon."
   },
   "76": {
     "itemId": 76,
-    "Name": "GeniusFeather"
+    "Name": "GeniusFeather",
+    "Description": "An item that raises the base Sp. Atk. of a Pokémon."
   },
   "77": {
     "itemId": 77,
-    "Name": "CleverFeather"
+    "Name": "CleverFeather",
+    "Description": "An item that raises the base Sp. Def. of a Pokémon."
   },
   "78": {
     "itemId": 78,
-    "Name": "SwiftFeather"
+    "Name": "SwiftFeather",
+    "Description": "An item that raises the base Speed of a Pokémon."
   },
   "79": {
     "itemId": 79,
-    "Name": "AbilityCapsle"
+    "Name": "AbilityCapsle",
+    "Description": "Switches a Poké- mon's ability."
   },
   "80": {
     "itemId": 80,
-    "Name": "AbilityPatch"
+    "Name": "AbilityPatch",
+    "Description": "Turns the ability of a Pokémon into a rare ability."
   },
   "81": {
     "itemId": 81,
-    "Name": "Lonely Mint"
+    "Name": "Lonely Mint",
+    "Description": "Can be smelled. It ups Attack, but reduces Defense."
   },
   "82": {
     "itemId": 82,
-    "Name": "Adamant Mint"
+    "Name": "Adamant Mint",
+    "Description": "Can be smelled. It ups Attack, but reduces Sp. Atk."
   },
   "83": {
     "itemId": 83,
-    "Name": "Naughty Mint"
+    "Name": "Naughty Mint",
+    "Description": "Can be smelled. It ups Attack, but reduces Sp. Def."
   },
   "84": {
     "itemId": 84,
-    "Name": "Brave Mint"
+    "Name": "Brave Mint",
+    "Description": "Can be smelled. It ups Attack, but reduces Speed."
   },
   "85": {
     "itemId": 85,
-    "Name": "Bold Mint"
+    "Name": "Bold Mint",
+    "Description": "Can be smelled. It ups Defense, but reduces Attack."
   },
   "86": {
     "itemId": 86,
-    "Name": "Impish Mint"
+    "Name": "Impish Mint",
+    "Description": "Can be smelled. It ups Defense, but reduces Sp. Atk."
   },
   "87": {
     "itemId": 87,
-    "Name": "Lax Mint"
+    "Name": "Lax Mint",
+    "Description": "Can be smelled. It ups Defense, but reduces Sp. Def."
   },
   "88": {
     "itemId": 88,
-    "Name": "Relaxed Mint"
+    "Name": "Relaxed Mint",
+    "Description": "Can be smelled. It ups Defense, but reduces Speed."
   },
   "89": {
     "itemId": 89,
-    "Name": "Modest Mint"
+    "Name": "Modest Mint",
+    "Description": "Can be smelled. It ups Sp. Atk, but reduces Attack."
   },
   "90": {
     "itemId": 90,
-    "Name": "Mild Mint"
+    "Name": "Mild Mint",
+    "Description": "Can be smelled. It ups Sp. Atk, but reduces Defense."
   },
   "91": {
     "itemId": 91,
-    "Name": "Rash Mint"
+    "Name": "Rash Mint",
+    "Description": "Can be smelled. It ups Sp. Atk, but reduces Sp. Def."
   },
   "92": {
     "itemId": 92,
-    "Name": "Quiet Mint"
+    "Name": "Quiet Mint",
+    "Description": "Can be smelled. It ups Sp. Atk, but reduces Speed."
   },
   "93": {
     "itemId": 93,
-    "Name": "Calm Mint"
+    "Name": "Calm Mint",
+    "Description": "Can be smelled. It ups Sp. Def, but reduces Attack."
   },
   "94": {
     "itemId": 94,
-    "Name": "Gentle Mint"
+    "Name": "Gentle Mint",
+    "Description": "Can be smelled. It ups Sp. Def, but reduces Defense."
   },
   "95": {
     "itemId": 95,
-    "Name": "Careful Mint"
+    "Name": "Careful Mint",
+    "Description": "Can be smelled. It ups Sp. Def, but reduces Sp. Atk."
   },
   "96": {
     "itemId": 96,
-    "Name": "Sassy Mint"
+    "Name": "Sassy Mint",
+    "Description": "Can be smelled. It ups Sp. Def, but reduces Speed."
   },
   "97": {
     "itemId": 97,
-    "Name": "Timid Mint"
+    "Name": "Timid Mint",
+    "Description": "Can be smelled. It ups Speed, but reduces Attack."
   },
   "98": {
     "itemId": 98,
-    "Name": "Hasty Mint"
+    "Name": "Hasty Mint",
+    "Description": "Can be smelled. It ups Speed, but reduces Defense."
   },
   "99": {
     "itemId": 99,
-    "Name": "Jolly Mint"
+    "Name": "Jolly Mint",
+    "Description": "Can be smelled. It ups Speed, but reduces Sp. Atk."
   },
   "100": {
     "itemId": 100,
-    "Name": "Naive Mint"
+    "Name": "Naive Mint",
+    "Description": "Can be smelled. It ups Speed, but reduces Sp. Def."
   },
   "101": {
     "itemId": 101,
-    "Name": "Serious Mint"
+    "Name": "Serious Mint",
+    "Description": "Can be smelled. It makes each stat grow equally."
   },
   "102": {
     "itemId": 102,
-    "Name": "Rare Candy"
+    "Name": "Rare Candy",
+    "Description": "Raises the level of a Pokémon by one."
   },
   "103": {
     "itemId": 103,
-    "Name": "Exp.Candy XS"
+    "Name": "Exp.Candy XS",
+    "Description": "Gives a very small amount of Exp. to a single Pokémon."
   },
   "104": {
     "itemId": 104,
-    "Name": "Exp.Candy S"
+    "Name": "Exp.Candy S",
+    "Description": "Gives a small amount of Exp. to a single Pokémon."
   },
   "105": {
     "itemId": 105,
-    "Name": "Exp.Candy M"
+    "Name": "Exp.Candy M",
+    "Description": "Gives a moderate amount of Exp. to a single Pokémon."
   },
   "106": {
     "itemId": 106,
-    "Name": "Exp.Candy L"
+    "Name": "Exp.Candy L",
+    "Description": "Gives a large amount of Exp. to a single Pokémon."
   },
   "107": {
     "itemId": 107,
-    "Name": "Exp.Candy XL"
+    "Name": "Exp.Candy XL",
+    "Description": "Gives a very large amount of Exp. to a single Pokémon."
   },
   "108": {
     "itemId": 108,
-    "Name": "DynamaxCandy"
+    "Name": "DynamaxCandy",
+    "Description": "Raises the Dynamax Level of a single Pokémon by one."
   },
   "109": {
     "itemId": 109,
-    "Name": "Blue Flute"
+    "Name": "Blue Flute",
+    "Description": "A glass flute that awakens sleeping Pokémon."
   },
   "110": {
     "itemId": 110,
-    "Name": "Yellow Flute"
+    "Name": "Yellow Flute",
+    "Description": "A glass flute that snaps Pokémon out of confusion."
   },
   "111": {
     "itemId": 111,
-    "Name": "Red Flute"
+    "Name": "Red Flute",
+    "Description": "A glass flute that snaps Pokémon out of attraction."
   },
   "112": {
     "itemId": 112,
-    "Name": "Black Flute"
+    "Name": "Black Flute",
+    "Description": "A glass flute that keeps away wild Pokémon."
   },
   "113": {
     "itemId": 113,
-    "Name": "White Flute"
+    "Name": "White Flute",
+    "Description": "A glass flute that lures wild Pokémon."
   },
   "114": {
     "itemId": 114,
-    "Name": "Repel"
+    "Name": "Repel",
+    "Description": "Repels weak wild Pokémon for 100 steps."
   },
   "115": {
     "itemId": 115,
-    "Name": "Super Repel"
+    "Name": "Super Repel",
+    "Description": "Repels weak wild Pokémon for 200 steps."
   },
   "116": {
     "itemId": 116,
-    "Name": "Max Repel"
+    "Name": "Max Repel",
+    "Description": "Repels weak wild Pokémon for 250 steps."
   },
   "117": {
     "itemId": 117,
-    "Name": "Lure"
+    "Name": "Lure",
+    "Description": "Makes Pokémon more likely to appear for 100 steps."
   },
   "118": {
     "itemId": 118,
-    "Name": "Super Lure"
+    "Name": "Super Lure",
+    "Description": "Makes Pokémon more likely to appear for 200 steps."
   },
   "119": {
     "itemId": 119,
-    "Name": "Max Lure"
+    "Name": "Max Lure",
+    "Description": "Makes Pokémon more likely to appear for 250 steps."
   },
   "120": {
     "itemId": 120,
-    "Name": "Escape Rope"
+    "Name": "Escape Rope",
+    "Description": "Use to escape instantly from a cave or a dungeon."
   },
   "121": {
     "itemId": 121,
-    "Name": "X Attack"
+    "Name": "X Attack",
+    "Description": "Sharply raises stat Attack during one battle."
   },
   "122": {
     "itemId": 122,
-    "Name": "X Defense"
+    "Name": "X Defense",
+    "Description": "Sharply raises stat Defense during one battle."
   },
   "123": {
     "itemId": 123,
-    "Name": "X Sp. Atk"
+    "Name": "X Sp. Atk",
+    "Description": "Sharply raises stat Sp. Atk during one battle."
   },
   "124": {
     "itemId": 124,
-    "Name": "X Sp. Def"
+    "Name": "X Sp. Def",
+    "Description": "Sharply raises stat Sp. Def during one battle."
   },
   "125": {
     "itemId": 125,
-    "Name": "X Speed"
+    "Name": "X Speed",
+    "Description": "Sharply raises stat Speed during one battle."
   },
   "126": {
     "itemId": 126,
-    "Name": "X Accuracy"
+    "Name": "X Accuracy",
+    "Description": "Sharply raises move accuracy during one battle."
   },
   "127": {
     "itemId": 127,
-    "Name": "Dire Hit"
+    "Name": "Dire Hit",
+    "Description": "Raises the critical-hit ratio during one battle."
   },
   "128": {
     "itemId": 128,
-    "Name": "Guard Spec."
+    "Name": "Guard Spec.",
+    "Description": "Prevents stat reduction when used in battle."
   },
   "129": {
     "itemId": 129,
-    "Name": "Poké Doll"
+    "Name": "Poké Doll",
+    "Description": "Use to flee from any battle with a wild Pokémon."
   },
   "130": {
     "itemId": 130,
-    "Name": "Fluffy Tail"
+    "Name": "Fluffy Tail",
+    "Description": "Use to flee from any battle with a wild Pokémon."
   },
   "131": {
     "itemId": 131,
-    "Name": "Poké Toy"
+    "Name": "Poké Toy",
+    "Description": "Use to flee from any battle with a wild Pokémon."
   },
   "132": {
     "itemId": 132,
-    "Name": "MaxMushrooms"
+    "Name": "MaxMushrooms",
+    "Description": "Raises every stat during one battle by one stage."
   },
   "133": {
     "itemId": 133,
-    "Name": "Bottle Cap"
+    "Name": "Bottle Cap",
+    "Description": "A beautiful bottle cap that gives off a silver gleam."
   },
   "134": {
     "itemId": 134,
-    "Name": "GoldBottlCap"
+    "Name": "GoldBottlCap",
+    "Description": "A beautiful bottle cap that gives off a golden gleam."
   },
   "135": {
     "itemId": 135,
-    "Name": "Nugget"
+    "Name": "Nugget",
+    "Description": "A nugget of pure gold. Can be sold at a high price."
   },
   "136": {
     "itemId": 136,
-    "Name": "Big Nugget"
+    "Name": "Big Nugget",
+    "Description": "A big nugget made of gold, sellable at a high price."
   },
   "137": {
     "itemId": 137,
-    "Name": "Tiny Mushroom"
+    "Name": "Tiny Mushroom",
+    "Description": "A plain mushroom that would sell at a cheap price."
   },
   "138": {
     "itemId": 138,
-    "Name": "Big Mushroom"
+    "Name": "Big Mushroom",
+    "Description": "A rare mushroom that would sell at a high price."
   },
   "139": {
     "itemId": 139,
-    "Name": "Balm Mushroom"
+    "Name": "Balm Mushroom",
+    "Description": "A rare mushroom that would sell at a high price."
   },
   "140": {
     "itemId": 140,
-    "Name": "Pearl"
+    "Name": "Pearl",
+    "Description": "A pretty pearl that would sell at a cheap price."
   },
   "141": {
     "itemId": 141,
-    "Name": "Big Pearl"
+    "Name": "Big Pearl",
+    "Description": "A lovely large pearl that would sell at a high price."
   },
   "142": {
     "itemId": 142,
-    "Name": "Pearl String"
+    "Name": "Pearl String",
+    "Description": "Very large pearls that would sell at a high price."
   },
   "143": {
     "itemId": 143,
-    "Name": "Stardust"
+    "Name": "Stardust",
+    "Description": "Beautiful red sand. Can be sold at a high price."
   },
   "144": {
     "itemId": 144,
-    "Name": "Star Piece"
+    "Name": "Star Piece",
+    "Description": "A red gem shard. It would sell for a very high price."
   },
   "145": {
     "itemId": 145,
-    "Name": "Comet Shard"
+    "Name": "Comet Shard",
+    "Description": "A comet's shard. It would sell for a high price."
   },
   "146": {
     "itemId": 146,
-    "Name": "Shoal Salt"
+    "Name": "Shoal Salt",
+    "Description": "Salt obtained from deep inside the Shoal Cave."
   },
   "147": {
     "itemId": 147,
-    "Name": "Shoal Shell"
+    "Name": "Shoal Shell",
+    "Description": "A seashell found deep inside the Shoal Cave."
   },
   "148": {
     "itemId": 148,
-    "Name": "Red Shard"
+    "Name": "Red Shard",
+    "Description": "A shard from an ancient item. Can be sold cheaply."
   },
   "149": {
     "itemId": 149,
-    "Name": "Blue Shard"
+    "Name": "Blue Shard",
+    "Description": "A shard from an ancient item. Can be sold cheaply."
   },
   "150": {
     "itemId": 150,
-    "Name": "Yellow Shard"
+    "Name": "Yellow Shard",
+    "Description": "A shard from an ancient item. Can be sold cheaply."
   },
   "151": {
     "itemId": 151,
-    "Name": "Green Shard"
+    "Name": "Green Shard",
+    "Description": "A shard from an ancient item. Can be sold cheaply."
   },
   "152": {
     "itemId": 152,
-    "Name": "Heart Scale"
+    "Name": "Heart Scale",
+    "Description": "A lovely scale. It is coveted by collectors."
   },
   "153": {
     "itemId": 153,
-    "Name": "Honey"
+    "Name": "Honey",
+    "Description": "Sweet honey that attracts wild Pokémon when used."
   },
   "154": {
     "itemId": 154,
-    "Name": "Rare Bone"
+    "Name": "Rare Bone",
+    "Description": "A very rare bone. It can be sold at a high price."
   },
   "155": {
     "itemId": 155,
-    "Name": "Odd Keystone"
+    "Name": "Odd Keystone",
+    "Description": "Voices can be heard from this odd stone occasionally."
   },
   "156": {
     "itemId": 156,
-    "Name": "PrettyFeather"
+    "Name": "PrettyFeather",
+    "Description": "A beautiful yet plain feather that does nothing."
   },
   "157": {
     "itemId": 157,
-    "Name": "Relic Copper"
+    "Name": "Relic Copper",
+    "Description": "A copper coin used long ago. It sells at a high price."
   },
   "158": {
     "itemId": 158,
-    "Name": "Relic Silver"
+    "Name": "Relic Silver",
+    "Description": "A silver coin used long ago. It sells at a high price."
   },
   "159": {
     "itemId": 159,
-    "Name": "Relic Gold"
+    "Name": "Relic Gold",
+    "Description": "A gold coin used long ago. It sells at a high price."
   },
   "160": {
     "itemId": 160,
-    "Name": "Relic Vase"
+    "Name": "Relic Vase",
+    "Description": "A vase made long ago. It sells at a high price."
   },
   "161": {
     "itemId": 161,
-    "Name": "Relic Band"
+    "Name": "Relic Band",
+    "Description": "An old bracelet. It sells at a high price."
   },
   "162": {
     "itemId": 162,
-    "Name": "Relic Statue"
+    "Name": "Relic Statue",
+    "Description": "An old statue. It sells at a high price."
   },
   "163": {
     "itemId": 163,
-    "Name": "Relic Crown"
+    "Name": "Relic Crown",
+    "Description": "An old crown. It sells at a high price."
   },
   "164": {
     "itemId": 164,
-    "Name": "StrngeSouvnr"
+    "Name": "StrngeSouvnr",
+    "Description": "An ornament that depicts a Pokémon from Alola."
   },
   "165": {
     "itemId": 165,
-    "Name": "Helix Fossil"
+    "Name": "Helix Fossil",
+    "Description": "A piece of an ancient marine Pokémon's seashell."
   },
   "166": {
     "itemId": 166,
-    "Name": "Dome Fossil"
+    "Name": "Dome Fossil",
+    "Description": "A piece of an ancient marine Pokémon's shell."
   },
   "167": {
     "itemId": 167,
-    "Name": "Old Amber"
+    "Name": "Old Amber",
+    "Description": "A stone containing the genes of an ancient Pokémon."
   },
   "168": {
     "itemId": 168,
-    "Name": "Root Fossil"
+    "Name": "Root Fossil",
+    "Description": "A fossil of an ancient, seafloor- dwelling Pokémon."
   },
   "169": {
     "itemId": 169,
-    "Name": "Claw Fossil"
+    "Name": "Claw Fossil",
+    "Description": "A fossil of an ancient, seafloor- dwelling Pokémon."
   },
   "170": {
     "itemId": 170,
-    "Name": "Armor Fossil"
+    "Name": "Armor Fossil",
+    "Description": "A piece of a prehistoric Poké- mon's head."
   },
   "171": {
     "itemId": 171,
-    "Name": "Skull Fossil"
+    "Name": "Skull Fossil",
+    "Description": "A piece of a prehistoric Poké- mon's collar."
   },
   "172": {
     "itemId": 172,
-    "Name": "Cover Fossil"
+    "Name": "Cover Fossil",
+    "Description": "A piece of a prehistoric Poké- mon's back."
   },
   "173": {
     "itemId": 173,
-    "Name": "Plume Fossil"
+    "Name": "Plume Fossil",
+    "Description": "A piece of a prehistoric Poké- mon's wing."
   },
   "174": {
     "itemId": 174,
-    "Name": "Jaw Fossil"
+    "Name": "Jaw Fossil",
+    "Description": "A piece of a prehistoric Poké- mon's large jaw."
   },
   "175": {
     "itemId": 175,
-    "Name": "Sail Fossil"
+    "Name": "Sail Fossil",
+    "Description": "A piece of a prehistoric Poké- mon's skin sail."
   },
   "176": {
     "itemId": 176,
-    "Name": "FosslzedBird"
+    "Name": "FosslzedBird",
+    "Description": "A fossil of an ancient, sky- soaring Pokémon."
   },
   "177": {
     "itemId": 177,
-    "Name": "FosslzedFish"
+    "Name": "FosslzedFish",
+    "Description": "A fossil of an ancient, sea- dwelling Pokémon."
   },
   "178": {
     "itemId": 178,
-    "Name": "FosslzedDrke"
+    "Name": "FosslzedDrke",
+    "Description": "A fossil of an ancient, land- roaming Pokémon."
   },
   "179": {
     "itemId": 179,
-    "Name": "FosslzedDino"
+    "Name": "FosslzedDino",
+    "Description": "A fossil of an ancient, sea- dwelling Pokémon."
   },
   "180": {
     "itemId": 180,
-    "Name": "Growth Mulch"
+    "Name": "Growth Mulch",
+    "Description": "A fertilizer that is unsuitable for local soil."
   },
   "181": {
     "itemId": 181,
-    "Name": "Damp Mulch"
+    "Name": "Damp Mulch",
+    "Description": "A fertilizer that is unsuitable for local soil."
   },
   "182": {
     "itemId": 182,
-    "Name": "Stable Mulch"
+    "Name": "Stable Mulch",
+    "Description": "A fertilizer that is unsuitable for local soil."
   },
   "183": {
     "itemId": 183,
-    "Name": "Gooey Mulch"
+    "Name": "Gooey Mulch",
+    "Description": "A fertilizer that is unsuitable for local soil."
   },
   "184": {
     "itemId": 184,
-    "Name": "Rich Mulch"
+    "Name": "Rich Mulch",
+    "Description": "A fertilizer that is unsuitable for local soil."
   },
   "185": {
     "itemId": 185,
-    "Name": "SurprseMulch"
+    "Name": "SurprseMulch",
+    "Description": "A fertilizer that is unsuitable for local soil."
   },
   "186": {
     "itemId": 186,
-    "Name": "Boost Mulch"
+    "Name": "Boost Mulch",
+    "Description": "A fertilizer that is unsuitable for local soil."
   },
   "187": {
     "itemId": 187,
-    "Name": "Amaze Mulch"
+    "Name": "Amaze Mulch",
+    "Description": "A fertilizer that is unsuitable for local soil."
   },
   "188": {
     "itemId": 188,
-    "Name": "Red Apricorn"
+    "Name": "Red Apricorn",
+    "Description": "A red apricorn. It assails your nostrils."
   },
   "189": {
     "itemId": 189,
-    "Name": "Blue Apricorn"
+    "Name": "Blue Apricorn",
+    "Description": "A blue apricorn. It smells a bit like grass."
   },
   "190": {
     "itemId": 190,
-    "Name": "YellwApricorn"
+    "Name": "YellwApricorn",
+    "Description": "A yellow apricorn. It has an invigor- ating scent."
   },
   "191": {
     "itemId": 191,
-    "Name": "GreenApricorn"
+    "Name": "GreenApricorn",
+    "Description": "A green apricorn. It has a strange, aromatic scent."
   },
   "192": {
     "itemId": 192,
-    "Name": "Pink Apricorn"
+    "Name": "Pink Apricorn",
+    "Description": "A pink apricorn. It has a nice, sweet scent."
   },
   "193": {
     "itemId": 193,
-    "Name": "WhiteApricorn"
+    "Name": "WhiteApricorn",
+    "Description": "A white apricorn. It doesn't smell like anything."
   },
   "194": {
     "itemId": 194,
-    "Name": "BlackApricorn"
+    "Name": "BlackApricorn",
+    "Description": "A black apricorn. It has an inde- scribable scent."
   },
   "195": {
     "itemId": 195,
-    "Name": "WishingPiece"
+    "Name": "WishingPiece",
+    "Description": "Throw into a ᴾₖᴹₙ Den to attract Dynamax Pokémon."
   },
   "196": {
     "itemId": 196,
-    "Name": "GalaricaTwig"
+    "Name": "GalaricaTwig",
+    "Description": "A twig from a tree in Galar called Galarica."
   },
   "197": {
     "itemId": 197,
-    "Name": "Armorite Ore"
+    "Name": "Armorite Ore",
+    "Description": "A rare ore. Can be found in the Isle of Armor at Galar."
   },
   "198": {
     "itemId": 198,
-    "Name": "Dynite Ore"
+    "Name": "Dynite Ore",
+    "Description": "A mysterious ore. It can be found in Galar's Max Lair."
   },
   "199": {
     "itemId": 199,
-    "Name": "Orange Mail"
+    "Name": "Orange Mail",
+    "Description": "A Zigzagoon-print Mail to be held by a Pokémon."
   },
   "200": {
     "itemId": 200,
-    "Name": "Harbor Mail"
+    "Name": "Harbor Mail",
+    "Description": "A Wingull-print Mail to be held by a Pokémon."
   },
   "201": {
     "itemId": 201,
-    "Name": "Glitter Mail"
+    "Name": "Glitter Mail",
+    "Description": "A Pikachu-print Mail to be held by a Pokémon."
   },
   "202": {
     "itemId": 202,
-    "Name": "Mech Mail"
+    "Name": "Mech Mail",
+    "Description": "A Magnemite-print Mail to be held by a Pokémon."
   },
   "203": {
     "itemId": 203,
-    "Name": "Wood Mail"
+    "Name": "Wood Mail",
+    "Description": "A Slakoth-print Mail to be held by a Pokémon."
   },
   "204": {
     "itemId": 204,
-    "Name": "Wave Mail"
+    "Name": "Wave Mail",
+    "Description": "A Wailmer-print Mail to be held by a Pokémon."
   },
   "205": {
     "itemId": 205,
-    "Name": "Bead Mail"
+    "Name": "Bead Mail",
+    "Description": "Mail featuring a sketch of the holding Pokémon."
   },
   "206": {
     "itemId": 206,
-    "Name": "Shadow Mail"
+    "Name": "Shadow Mail",
+    "Description": "A Duskull-print Mail to be held by a Pokémon."
   },
   "207": {
     "itemId": 207,
-    "Name": "Tropic Mail"
+    "Name": "Tropic Mail",
+    "Description": "A Bellossom-print Mail to be held by a Pokémon."
   },
   "208": {
     "itemId": 208,
-    "Name": "Dream Mail"
+    "Name": "Dream Mail",
+    "Description": "Mail featuring a sketch of the holding Pokémon."
   },
   "209": {
     "itemId": 209,
-    "Name": "Fab Mail"
+    "Name": "Fab Mail",
+    "Description": "A gorgeous-print Mail to be held by a Pokémon."
   },
   "210": {
     "itemId": 210,
-    "Name": "Retro Mail"
+    "Name": "Retro Mail",
+    "Description": "Mail featuring the drawings of three Pokémon."
   },
   "211": {
     "itemId": 211,
-    "Name": "Fire Stone"
+    "Name": "Fire Stone",
+    "Description": "Makes certain species of Pokémon evolve."
   },
   "212": {
     "itemId": 212,
-    "Name": "Water Stone"
+    "Name": "Water Stone",
+    "Description": "Makes certain species of Pokémon evolve."
   },
   "213": {
     "itemId": 213,
-    "Name": "Thunder Stone"
+    "Name": "Thunder Stone",
+    "Description": "Makes certain species of Pokémon evolve."
   },
   "214": {
     "itemId": 214,
-    "Name": "Leaf Stone"
+    "Name": "Leaf Stone",
+    "Description": "Makes certain species of Pokémon evolve."
   },
   "215": {
     "itemId": 215,
-    "Name": "Ice Stone"
+    "Name": "Ice Stone",
+    "Description": "Makes certain species of Pokémon evolve."
   },
   "216": {
     "itemId": 216,
-    "Name": "Sun Stone"
+    "Name": "Sun Stone",
+    "Description": "Makes certain species of Pokémon evolve."
   },
   "217": {
     "itemId": 217,
-    "Name": "Moon Stone"
+    "Name": "Moon Stone",
+    "Description": "Makes certain species of Pokémon evolve."
   },
   "218": {
     "itemId": 218,
-    "Name": "Shiny Stone"
+    "Name": "Shiny Stone",
+    "Description": "Makes certain species of Pokémon evolve."
   },
   "219": {
     "itemId": 219,
-    "Name": "Dusk Stone"
+    "Name": "Dusk Stone",
+    "Description": "Makes certain species of Pokémon evolve."
   },
   "220": {
     "itemId": 220,
-    "Name": "Dawn Stone"
+    "Name": "Dawn Stone",
+    "Description": "Makes certain species of Pokémon evolve."
   },
   "221": {
     "itemId": 221,
-    "Name": "Sweet Apple"
+    "Name": "Sweet Apple",
+    "Description": "A very sweet apple that makes certain Pokémon evolve."
   },
   "222": {
     "itemId": 222,
-    "Name": "Tart Apple"
+    "Name": "Tart Apple",
+    "Description": "A very tart apple that makes certain Pokémon evolve."
   },
   "223": {
     "itemId": 223,
-    "Name": "Cracked Pot"
+    "Name": "Cracked Pot",
+    "Description": "A cracked teapot that makes certain Pokémon evolve."
   },
   "224": {
     "itemId": 224,
-    "Name": "Chipped Pot"
+    "Name": "Chipped Pot",
+    "Description": "A chipped teapot that makes certain Pokémon evolve."
   },
   "225": {
     "itemId": 225,
-    "Name": "GalaricaCuff"
+    "Name": "GalaricaCuff",
+    "Description": "A cuff from Galar that makes certain Pokémon evolve."
   },
   "226": {
     "itemId": 226,
-    "Name": "GalrcaWreath"
+    "Name": "GalrcaWreath",
+    "Description": "A wreath made in Galar. Makes some Pokémon evolve."
   },
   "227": {
     "itemId": 227,
-    "Name": "Dragon Scale"
+    "Name": "Dragon Scale",
+    "Description": "A strange scale held by Dragon- type Pokémon."
   },
   "228": {
     "itemId": 228,
-    "Name": "Upgrade"
+    "Name": "Upgrade",
+    "Description": "A peculiar box made by Silph Co."
   },
   "229": {
     "itemId": 229,
-    "Name": "Protector"
+    "Name": "Protector",
+    "Description": "Loved by a certain Pokémon. It's stiff and heavy."
   },
   "230": {
     "itemId": 230,
-    "Name": "Electirizer"
+    "Name": "Electirizer",
+    "Description": "Loved by a certain Pokémon. It's full of electric energy."
   },
   "231": {
     "itemId": 231,
-    "Name": "Magmarizer"
+    "Name": "Magmarizer",
+    "Description": "Loved by a certain Pokémon. It's full of magma energy."
   },
   "232": {
     "itemId": 232,
-    "Name": "Dubious Disc"
+    "Name": "Dubious Disc",
+    "Description": "A clear device overflowing with dubious data."
   },
   "233": {
     "itemId": 233,
-    "Name": "Reaper Cloth"
+    "Name": "Reaper Cloth",
+    "Description": "Loved by a certain Pokémon. Imbued with spirit energy."
   },
   "234": {
     "itemId": 234,
-    "Name": "Prism Scale"
+    "Name": "Prism Scale",
+    "Description": "A mysterious scale that evolves a certain Pokémon."
   },
   "235": {
     "itemId": 235,
-    "Name": "Whipped Dream"
+    "Name": "Whipped Dream",
+    "Description": "A soft and sweet treat loved by a certain Pokémon."
   },
   "236": {
     "itemId": 236,
-    "Name": "Sachet"
+    "Name": "Sachet",
+    "Description": "A sachet of strong perfumes, loved by a certain Pokémon."
   },
   "237": {
     "itemId": 237,
-    "Name": "Oval Stone"
+    "Name": "Oval Stone",
+    "Description": "Peculiar stone that evolves a certain Pokémon."
   },
   "238": {
     "itemId": 238,
-    "Name": "StrwbrySweet"
+    "Name": "StrwbrySweet",
+    "Description": "Strawberry-shaped sweet loved by Milcery."
   },
   "239": {
     "itemId": 239,
-    "Name": "Love Sweet"
+    "Name": "Love Sweet",
+    "Description": "A heart-shaped sweet loved by Milcery."
   },
   "240": {
     "itemId": 240,
-    "Name": "Berry Sweet"
+    "Name": "Berry Sweet",
+    "Description": "A berry-shaped sweet loved by Milcery."
   },
   "241": {
     "itemId": 241,
-    "Name": "Clover Sweet"
+    "Name": "Clover Sweet",
+    "Description": "A clover-shaped sweet loved by Milcery."
   },
   "242": {
     "itemId": 242,
-    "Name": "Flower Sweet"
+    "Name": "Flower Sweet",
+    "Description": "A flower-shaped sweet loved by Milcery."
   },
   "243": {
     "itemId": 243,
-    "Name": "Star Sweet"
+    "Name": "Star Sweet",
+    "Description": "A star-shaped sweet loved by Milcery."
   },
   "244": {
     "itemId": 244,
-    "Name": "Ribbon Sweet"
+    "Name": "Ribbon Sweet",
+    "Description": "A ribbon-shaped sweet loved by Milcery."
   },
   "245": {
     "itemId": 245,
-    "Name": "Everstone"
+    "Name": "Everstone",
+    "Description": "A wondrous hold item that prevents evolution."
   },
   "246": {
     "itemId": 246,
-    "Name": "Red Nectar"
+    "Name": "Red Nectar",
+    "Description": "Flower nectar that changes the form of certain Pokémon."
   },
   "247": {
     "itemId": 247,
-    "Name": "Yellow Nectar"
+    "Name": "Yellow Nectar",
+    "Description": "Flower nectar that changes the form of certain Pokémon."
   },
   "248": {
     "itemId": 248,
-    "Name": "Pink Nectar"
+    "Name": "Pink Nectar",
+    "Description": "Flower nectar that changes the form of certain Pokémon."
   },
   "249": {
     "itemId": 249,
-    "Name": "Purple Nectar"
+    "Name": "Purple Nectar",
+    "Description": "Flower nectar that changes the form of certain Pokémon."
   },
   "250": {
     "itemId": 250,
-    "Name": "Flame Plate"
+    "Name": "Flame Plate",
+    "Description": "A tablet that ups the power of Fire-type moves."
   },
   "251": {
     "itemId": 251,
-    "Name": "Splash Plate"
+    "Name": "Splash Plate",
+    "Description": "A tablet that ups the power of Water-type moves."
   },
   "252": {
     "itemId": 252,
-    "Name": "Zap Plate"
+    "Name": "Zap Plate",
+    "Description": "A tablet that ups the power of Elec- tric-type moves."
   },
   "253": {
     "itemId": 253,
-    "Name": "Meadow Plate"
+    "Name": "Meadow Plate",
+    "Description": "A tablet that ups the power of Grass-type moves."
   },
   "254": {
     "itemId": 254,
-    "Name": "Icicle Plate"
+    "Name": "Icicle Plate",
+    "Description": "A tablet that ups the power of Ice-type moves."
   },
   "255": {
     "itemId": 255,
-    "Name": "Fist Plate"
+    "Name": "Fist Plate",
+    "Description": "A tablet that ups the power of Fight- ing-type moves."
   },
   "256": {
     "itemId": 256,
-    "Name": "Toxic Plate"
+    "Name": "Toxic Plate",
+    "Description": "A tablet that ups the power of Poison-type moves."
   },
   "257": {
     "itemId": 257,
-    "Name": "Earth Plate"
+    "Name": "Earth Plate",
+    "Description": "A tablet that ups the power of Ground-type moves."
   },
   "258": {
     "itemId": 258,
-    "Name": "Sky Plate"
+    "Name": "Sky Plate",
+    "Description": "A tablet that ups the power of Flying-type moves."
   },
   "259": {
     "itemId": 259,
-    "Name": "Mind Plate"
+    "Name": "Mind Plate",
+    "Description": "A tablet that ups the power of Psy chic-type moves."
   },
   "260": {
     "itemId": 260,
-    "Name": "Insect Plate"
+    "Name": "Insect Plate",
+    "Description": "A tablet that ups the power of Bug-type moves."
   },
   "261": {
     "itemId": 261,
-    "Name": "Stone Plate"
+    "Name": "Stone Plate",
+    "Description": "A tablet that ups the power of Rock-type moves."
   },
   "262": {
     "itemId": 262,
-    "Name": "Spooky Plate"
+    "Name": "Spooky Plate",
+    "Description": "A tablet that ups the power of Ghost-type moves."
   },
   "263": {
     "itemId": 263,
-    "Name": "Draco Plate"
+    "Name": "Draco Plate",
+    "Description": "A tablet that ups the power of Dragon-type moves."
   },
   "264": {
     "itemId": 264,
-    "Name": "Dread Plate"
+    "Name": "Dread Plate",
+    "Description": "A tablet that ups the power of Dark-type moves."
   },
   "265": {
     "itemId": 265,
-    "Name": "Iron Plate"
+    "Name": "Iron Plate",
+    "Description": "A tablet that ups the power of Steel-type moves."
   },
   "266": {
     "itemId": 266,
-    "Name": "Pixie Plate"
+    "Name": "Pixie Plate",
+    "Description": "A tablet that ups the power of Fairy-type moves."
   },
   "267": {
     "itemId": 267,
-    "Name": "Douse Drive"
+    "Name": "Douse Drive",
+    "Description": "Changes Genesect's Techno Blast to Water-type."
   },
   "268": {
     "itemId": 268,
-    "Name": "Shock Drive"
+    "Name": "Shock Drive",
+    "Description": "Changes Genesect's Techno Blast to Electric-type."
   },
   "269": {
     "itemId": 269,
-    "Name": "Burn Drive"
+    "Name": "Burn Drive",
+    "Description": "Changes Genesect's Techno Blast to Fire-type."
   },
   "270": {
     "itemId": 270,
-    "Name": "Chill Drive"
+    "Name": "Chill Drive",
+    "Description": "Changes Genesect's Techno Blast to Ice-type."
   },
   "271": {
     "itemId": 271,
-    "Name": "Fire Memory"
+    "Name": "Fire Memory",
+    "Description": "A disc with Fire type data. It swaps Silvally's type."
   },
   "272": {
     "itemId": 272,
-    "Name": "Water Memory"
+    "Name": "Water Memory",
+    "Description": "A disc with Water type data. It swaps Silvally's type."
   },
   "273": {
     "itemId": 273,
-    "Name": "ElectrcMemory"
+    "Name": "ElectrcMemory",
+    "Description": "A disc with Electric type data. It swaps Silvally's type."
   },
   "274": {
     "itemId": 274,
-    "Name": "Grass Memory"
+    "Name": "Grass Memory",
+    "Description": "A disc with Grass type data. It swaps Silvally's type."
   },
   "275": {
     "itemId": 275,
-    "Name": "Ice Memory"
+    "Name": "Ice Memory",
+    "Description": "A disc with Ice type data. It swaps Silvally's type."
   },
   "276": {
     "itemId": 276,
-    "Name": "FightngMemory"
+    "Name": "FightngMemory",
+    "Description": "Disc with Fighting type data. It swaps Silvally's type."
   },
   "277": {
     "itemId": 277,
-    "Name": "Poison Memory"
+    "Name": "Poison Memory",
+    "Description": "A disc with Poison type data. It swaps Silvally's type."
   },
   "278": {
     "itemId": 278,
-    "Name": "Ground Memory"
+    "Name": "Ground Memory",
+    "Description": "A disc with Ground type data. It swaps Silvally's type."
   },
   "279": {
     "itemId": 279,
-    "Name": "Flying Memory"
+    "Name": "Flying Memory",
+    "Description": "A disc with Flying type data. It swaps Silvally's type."
   },
   "280": {
     "itemId": 280,
-    "Name": "PsychicMemory"
+    "Name": "PsychicMemory",
+    "Description": "A disc with Psychic type data. It swaps Silvally's type."
   },
   "281": {
     "itemId": 281,
-    "Name": "Bug Memory"
+    "Name": "Bug Memory",
+    "Description": "A disc with Bug type data. It swaps Silvally's type."
   },
   "282": {
     "itemId": 282,
-    "Name": "Rock Memory"
+    "Name": "Rock Memory",
+    "Description": "A disc with Rock type data. It swaps Silvally's type."
   },
   "283": {
     "itemId": 283,
-    "Name": "Ghost Memory"
+    "Name": "Ghost Memory",
+    "Description": "A disc with Ghost type data. It swaps Silvally's type."
   },
   "284": {
     "itemId": 284,
-    "Name": "Dragon Memory"
+    "Name": "Dragon Memory",
+    "Description": "A disc with Dragon type data. It swaps Silvally's type."
   },
   "285": {
     "itemId": 285,
-    "Name": "Dark Memory"
+    "Name": "Dark Memory",
+    "Description": "A disc with Dark type data. It swaps Silvally's type."
   },
   "286": {
     "itemId": 286,
-    "Name": "Steel Memory"
+    "Name": "Steel Memory",
+    "Description": "A disc with Steel type data. It swaps Silvally's type."
   },
   "287": {
     "itemId": 287,
-    "Name": "Fairy Memory"
+    "Name": "Fairy Memory",
+    "Description": "A disc with Fairy type data. It swaps Silvally's type."
   },
   "288": {
     "itemId": 288,
-    "Name": "RustedSword"
+    "Name": "RustedSword",
+    "Description": "A rusty sword. A hero used it to halt a disaster."
   },
   "289": {
     "itemId": 289,
-    "Name": "RustedShield"
+    "Name": "RustedShield",
+    "Description": "A rusty shield. A hero used it to halt a disaster."
   },
   "290": {
     "itemId": 290,
-    "Name": "Red Orb"
+    "Name": "Red Orb",
+    "Description": "A red, glowing orb said to contain an ancient power."
   },
   "291": {
     "itemId": 291,
-    "Name": "Blue Orb"
+    "Name": "Blue Orb",
+    "Description": "A blue, glowing orb said to contain an ancient power."
   },
   "292": {
     "itemId": 292,
-    "Name": "Venusaurite"
+    "Name": "Venusaurite",
+    "Description": "This stone enables Venusaur to Mega Evolve in battle."
   },
   "293": {
     "itemId": 293,
-    "Name": "CharizarditeX"
+    "Name": "CharizarditeX",
+    "Description": "This stone enables Charizard to Mega Evolve in battle."
   },
   "294": {
     "itemId": 294,
-    "Name": "CharizarditeY"
+    "Name": "CharizarditeY",
+    "Description": "This stone enables Charizard to Mega Evolve in battle."
   },
   "295": {
     "itemId": 295,
-    "Name": "Blastoisinite"
+    "Name": "Blastoisinite",
+    "Description": "This stone enables Blastoise to Mega Evolve in battle."
   },
   "296": {
     "itemId": 296,
-    "Name": "Beedrillite"
+    "Name": "Beedrillite",
+    "Description": "This stone enables Beedrill to Mega Evolve in battle."
   },
   "297": {
     "itemId": 297,
-    "Name": "Pidgeotite"
+    "Name": "Pidgeotite",
+    "Description": "This stone enables Pidgeot to Mega Evolve in battle."
   },
   "298": {
     "itemId": 298,
-    "Name": "Alakazite"
+    "Name": "Alakazite",
+    "Description": "This stone enables Alakazam to Mega Evolve in battle."
   },
   "299": {
     "itemId": 299,
-    "Name": "Slowbronite"
+    "Name": "Slowbronite",
+    "Description": "This stone enables Slowbro to Mega Evolve in battle."
   },
   "300": {
     "itemId": 300,
-    "Name": "Gengarite"
+    "Name": "Gengarite",
+    "Description": "This stone enables Gengar to Mega Evolve in battle."
   },
   "301": {
     "itemId": 301,
-    "Name": "Kangaskhanite"
+    "Name": "Kangaskhanite",
+    "Description": "This stone enables Kangaskhan to Mega Evolve in battle."
   },
   "302": {
     "itemId": 302,
-    "Name": "Pinsirite"
+    "Name": "Pinsirite",
+    "Description": "This stone enables Pinsir to Mega Evolve in battle."
   },
   "303": {
     "itemId": 303,
-    "Name": "Gyaradosite"
+    "Name": "Gyaradosite",
+    "Description": "This stone enables Gyarados to Mega Evolve in battle."
   },
   "304": {
     "itemId": 304,
-    "Name": "Aerodactylite"
+    "Name": "Aerodactylite",
+    "Description": "This stone enables Aerodactyl to Mega Evolve in battle."
   },
   "305": {
     "itemId": 305,
-    "Name": "Mewtwonite X"
+    "Name": "Mewtwonite X",
+    "Description": "This stone enables Mewtwo to Mega Evolve in battle."
   },
   "306": {
     "itemId": 306,
-    "Name": "Mewtwonite Y"
+    "Name": "Mewtwonite Y",
+    "Description": "This stone enables Mewtwo to Mega Evolve in battle."
   },
   "307": {
     "itemId": 307,
-    "Name": "Ampharosite"
+    "Name": "Ampharosite",
+    "Description": "This stone enables Ampharos to Mega Evolve in battle."
   },
   "308": {
     "itemId": 308,
-    "Name": "Steelixite"
+    "Name": "Steelixite",
+    "Description": "This stone enables Steelix to Mega Evolve in battle."
   },
   "309": {
     "itemId": 309,
-    "Name": "Scizorite"
+    "Name": "Scizorite",
+    "Description": "This stone enables Scizor to Mega Evolve in battle."
   },
   "310": {
     "itemId": 310,
-    "Name": "Heracronite"
+    "Name": "Heracronite",
+    "Description": "This stone enables Heracross to Mega Evolve in battle."
   },
   "311": {
     "itemId": 311,
-    "Name": "Houndoominite"
+    "Name": "Houndoominite",
+    "Description": "This stone enables Houndoom to Mega Evolve in battle."
   },
   "312": {
     "itemId": 312,
-    "Name": "Tyranitarite"
+    "Name": "Tyranitarite",
+    "Description": "This stone enables Tyranitar to Mega Evolve in battle."
   },
   "313": {
     "itemId": 313,
-    "Name": "Sceptilite"
+    "Name": "Sceptilite",
+    "Description": "This stone enables Sceptile to Mega Evolve in battle."
   },
   "314": {
     "itemId": 314,
-    "Name": "Blazikenite"
+    "Name": "Blazikenite",
+    "Description": "This stone enables Blaziken to Mega Evolve in battle."
   },
   "315": {
     "itemId": 315,
-    "Name": "Swampertite"
+    "Name": "Swampertite",
+    "Description": "This stone enables Swampert to Mega Evolve in battle."
   },
   "316": {
     "itemId": 316,
-    "Name": "Gardevoirite"
+    "Name": "Gardevoirite",
+    "Description": "This stone enables Gardevoir to Mega Evolve in battle."
   },
   "317": {
     "itemId": 317,
-    "Name": "Sablenite"
+    "Name": "Sablenite",
+    "Description": "This stone enables Sableye to Mega Evolve in battle."
   },
   "318": {
     "itemId": 318,
-    "Name": "Mawilite"
+    "Name": "Mawilite",
+    "Description": "This stone enables Mawile to Mega Evolve in battle."
   },
   "319": {
     "itemId": 319,
-    "Name": "Aggronite"
+    "Name": "Aggronite",
+    "Description": "This stone enables Aggron to Mega Evolve in battle."
   },
   "320": {
     "itemId": 320,
-    "Name": "Medichamite"
+    "Name": "Medichamite",
+    "Description": "This stone enables Medicham to Mega Evolve in battle."
   },
   "321": {
     "itemId": 321,
-    "Name": "Manectite"
+    "Name": "Manectite",
+    "Description": "This stone enables Manectric to Mega Evolve in battle."
   },
   "322": {
     "itemId": 322,
-    "Name": "Sharpedonite"
+    "Name": "Sharpedonite",
+    "Description": "This stone enables Sharpedo to Mega Evolve in battle."
   },
   "323": {
     "itemId": 323,
-    "Name": "Cameruptite"
+    "Name": "Cameruptite",
+    "Description": "This stone enables Camerupt to Mega Evolve in battle."
   },
   "324": {
     "itemId": 324,
-    "Name": "Altarianite"
+    "Name": "Altarianite",
+    "Description": "This stone enables Altaria to Mega Evolve in battle."
   },
   "325": {
     "itemId": 325,
-    "Name": "Banettite"
+    "Name": "Banettite",
+    "Description": "This stone enables Banette to Mega Evolve in battle."
   },
   "326": {
     "itemId": 326,
-    "Name": "Absolite"
+    "Name": "Absolite",
+    "Description": "This stone enables Absol to Mega Evolve in battle."
   },
   "327": {
     "itemId": 327,
-    "Name": "Glalitite"
+    "Name": "Glalitite",
+    "Description": "This stone enables Glalie to Mega Evolve in battle."
   },
   "328": {
     "itemId": 328,
-    "Name": "Salamencite"
+    "Name": "Salamencite",
+    "Description": "This stone enables Salamence to Mega Evolve in battle."
   },
   "329": {
     "itemId": 329,
-    "Name": "Metagrossite"
+    "Name": "Metagrossite",
+    "Description": "This stone enables Metagross to Mega Evolve in battle."
   },
   "330": {
     "itemId": 330,
-    "Name": "Latiasite"
+    "Name": "Latiasite",
+    "Description": "This stone enables Latias to Mega Evolve in battle."
   },
   "331": {
     "itemId": 331,
-    "Name": "Latiosite"
+    "Name": "Latiosite",
+    "Description": "This stone enables Latios to Mega Evolve in battle."
   },
   "332": {
     "itemId": 332,
-    "Name": "Lopunnite"
+    "Name": "Lopunnite",
+    "Description": "This stone enables Lopunny to Mega Evolve in battle."
   },
   "333": {
     "itemId": 333,
-    "Name": "Garchompite"
+    "Name": "Garchompite",
+    "Description": "This stone enables Garchomp to Mega Evolve in battle."
   },
   "334": {
     "itemId": 334,
-    "Name": "Lucarionite"
+    "Name": "Lucarionite",
+    "Description": "This stone enables Lucario to Mega Evolve in battle."
   },
   "335": {
     "itemId": 335,
-    "Name": "Abomasite"
+    "Name": "Abomasite",
+    "Description": "This stone enables Abomasnow to Mega Evolve in battle."
   },
   "336": {
     "itemId": 336,
-    "Name": "Galladite"
+    "Name": "Galladite",
+    "Description": "This stone enables Gallade to Mega Evolve in battle."
   },
   "337": {
     "itemId": 337,
-    "Name": "Audinite"
+    "Name": "Audinite",
+    "Description": "This stone enables Audino to Mega Evolve in battle."
   },
   "338": {
     "itemId": 338,
-    "Name": "Diancite"
+    "Name": "Diancite",
+    "Description": "This stone enables Diancie to Mega Evolve in battle."
   },
   "339": {
     "itemId": 339,
-    "Name": "Normal Gem"
+    "Name": "Normal Gem",
+    "Description": "Increases the power of Normal Type moves."
   },
   "340": {
     "itemId": 340,
-    "Name": "Fire Gem"
+    "Name": "Fire Gem",
+    "Description": "Increases the power of Fire Type moves."
   },
   "341": {
     "itemId": 341,
-    "Name": "Water Gem"
+    "Name": "Water Gem",
+    "Description": "Increases the power of Water Type moves."
   },
   "342": {
     "itemId": 342,
-    "Name": "Electric Gem"
+    "Name": "Electric Gem",
+    "Description": "Increases the power of Electric Type moves."
   },
   "343": {
     "itemId": 343,
-    "Name": "Grass Gem"
+    "Name": "Grass Gem",
+    "Description": "Increases the power of Grass Type moves."
   },
   "344": {
     "itemId": 344,
-    "Name": "Ice Gem"
+    "Name": "Ice Gem",
+    "Description": "Increases the power of Ice Type moves."
   },
   "345": {
     "itemId": 345,
-    "Name": "Fighting Gem"
+    "Name": "Fighting Gem",
+    "Description": "Increases the power of Fighting Type moves."
   },
   "346": {
     "itemId": 346,
-    "Name": "Poison Gem"
+    "Name": "Poison Gem",
+    "Description": "Increases the power of Poison Type moves."
   },
   "347": {
     "itemId": 347,
-    "Name": "Ground Gem"
+    "Name": "Ground Gem",
+    "Description": "Increases the power of Ground Type moves."
   },
   "348": {
     "itemId": 348,
-    "Name": "Flying Gem"
+    "Name": "Flying Gem",
+    "Description": "Increases the power of Flying Type moves."
   },
   "349": {
     "itemId": 349,
-    "Name": "Psychic Gem"
+    "Name": "Psychic Gem",
+    "Description": "Increases the power of Psychic Type moves."
   },
   "350": {
     "itemId": 350,
-    "Name": "Bug Gem"
+    "Name": "Bug Gem",
+    "Description": "Increases the power of Bug Type moves."
   },
   "351": {
     "itemId": 351,
-    "Name": "Rock Gem"
+    "Name": "Rock Gem",
+    "Description": "Increases the power of Rock Type moves."
   },
   "352": {
     "itemId": 352,
-    "Name": "Ghost Gem"
+    "Name": "Ghost Gem",
+    "Description": "Increases the power of Ghost Type moves."
   },
   "353": {
     "itemId": 353,
-    "Name": "Dragon Gem"
+    "Name": "Dragon Gem",
+    "Description": "Increases the power of Dragon Type moves."
   },
   "354": {
     "itemId": 354,
-    "Name": "Dark Gem"
+    "Name": "Dark Gem",
+    "Description": "Increases the power of Dark Type moves."
   },
   "355": {
     "itemId": 355,
-    "Name": "Steel Gem"
+    "Name": "Steel Gem",
+    "Description": "Increases the power of Steel Type moves."
   },
   "356": {
     "itemId": 356,
-    "Name": "Fairy Gem"
+    "Name": "Fairy Gem",
+    "Description": "Increases the power of Fairy Type moves."
   },
   "357": {
     "itemId": 357,
-    "Name": "Normalium Z"
+    "Name": "Normalium Z",
+    "Description": "Upgrade Normal- type moves into Z-Moves."
   },
   "358": {
     "itemId": 358,
-    "Name": "Firium Z"
+    "Name": "Firium Z",
+    "Description": "Upgrade Fire- type moves into Z-Moves."
   },
   "359": {
     "itemId": 359,
-    "Name": "Waterium Z"
+    "Name": "Waterium Z",
+    "Description": "Upgrade Water- type moves into Z-Moves."
   },
   "360": {
     "itemId": 360,
-    "Name": "Electrium Z"
+    "Name": "Electrium Z",
+    "Description": "Upgrade Electric- type moves into Z-Moves."
   },
   "361": {
     "itemId": 361,
-    "Name": "Grassium Z"
+    "Name": "Grassium Z",
+    "Description": "Upgrade Grass- type moves into Z-Moves."
   },
   "362": {
     "itemId": 362,
-    "Name": "Icium Z"
+    "Name": "Icium Z",
+    "Description": "Upgrade Ice- type moves into Z-Moves."
   },
   "363": {
     "itemId": 363,
-    "Name": "Fightinium Z"
+    "Name": "Fightinium Z",
+    "Description": "Upgrade Fighting- type moves into Z-Moves."
   },
   "364": {
     "itemId": 364,
-    "Name": "Poisonium Z"
+    "Name": "Poisonium Z",
+    "Description": "Upgrade Poison- type moves into Z-Moves."
   },
   "365": {
     "itemId": 365,
-    "Name": "Groundium Z"
+    "Name": "Groundium Z",
+    "Description": "Upgrade Ground- type moves into Z-Moves."
   },
   "366": {
     "itemId": 366,
-    "Name": "Flyinium Z"
+    "Name": "Flyinium Z",
+    "Description": "Upgrade Flying- type moves into Z-Moves."
   },
   "367": {
     "itemId": 367,
-    "Name": "Psychium Z"
+    "Name": "Psychium Z",
+    "Description": "Upgrade Psychic- type moves into Z-Moves."
   },
   "368": {
     "itemId": 368,
-    "Name": "Buginium Z"
+    "Name": "Buginium Z",
+    "Description": "Upgrade Bug- type moves into Z-Moves."
   },
   "369": {
     "itemId": 369,
-    "Name": "Rockium Z"
+    "Name": "Rockium Z",
+    "Description": "Upgrade Rock- type moves into Z-Moves."
   },
   "370": {
     "itemId": 370,
-    "Name": "Ghostium Z"
+    "Name": "Ghostium Z",
+    "Description": "Upgrade Ghost- type moves into Z-Moves."
   },
   "371": {
     "itemId": 371,
-    "Name": "Dragonium Z"
+    "Name": "Dragonium Z",
+    "Description": "Upgrade Dragon- type moves into Z-Moves."
   },
   "372": {
     "itemId": 372,
-    "Name": "Darkinium Z"
+    "Name": "Darkinium Z",
+    "Description": "Upgrade Dark- type moves into Z-Moves."
   },
   "373": {
     "itemId": 373,
-    "Name": "Steelium Z"
+    "Name": "Steelium Z",
+    "Description": "Upgrade Steel- type moves into Z-Moves."
   },
   "374": {
     "itemId": 374,
-    "Name": "Fairium Z"
+    "Name": "Fairium Z",
+    "Description": "Upgrade Fairy- type moves into Z-Moves."
   },
   "375": {
     "itemId": 375,
-    "Name": "Pikanium Z"
+    "Name": "Pikanium Z",
+    "Description": "Upgrade Pikachu's Volt Tackle into a Z-Move."
   },
   "376": {
     "itemId": 376,
-    "Name": "Eevium Z"
+    "Name": "Eevium Z",
+    "Description": "Upgrade Eevee's Last Resort into a Z-Move."
   },
   "377": {
     "itemId": 377,
-    "Name": "Snorlium Z"
+    "Name": "Snorlium Z",
+    "Description": "Upgrade Snorlax's Giga Impact into a Z-Move."
   },
   "378": {
     "itemId": 378,
-    "Name": "Mewnium Z"
+    "Name": "Mewnium Z",
+    "Description": "Upgrade Mew's Psychic into a Z-Move."
   },
   "379": {
     "itemId": 379,
-    "Name": "Decidium Z"
+    "Name": "Decidium Z",
+    "Description": "Upgrade Decidu- eye's Spirit Sha- ckle into a Z-Move."
   },
   "380": {
     "itemId": 380,
-    "Name": "Incinium Z"
+    "Name": "Incinium Z",
+    "Description": "Upgrade Incine- roar's Darkest La- riat into a Z-Move."
   },
   "381": {
     "itemId": 381,
-    "Name": "Primarium Z"
+    "Name": "Primarium Z",
+    "Description": "Upgrade Primarina's Sparkling Aria into a Z-Move."
   },
   "382": {
     "itemId": 382,
-    "Name": "Lycanium Z"
+    "Name": "Lycanium Z",
+    "Description": "Upgrade Lycanroc's Stone Edge into a Z-Move."
   },
   "383": {
     "itemId": 383,
-    "Name": "Mimikium Z"
+    "Name": "Mimikium Z",
+    "Description": "Upgrade Mimikyu's Play Rough into a Z-Move."
   },
   "384": {
     "itemId": 384,
-    "Name": "Kommonium Z"
+    "Name": "Kommonium Z",
+    "Description": "Upgrade Kommo-o's Clanging Scales into a Z-Move."
   },
   "385": {
     "itemId": 385,
-    "Name": "Tapunium Z"
+    "Name": "Tapunium Z",
+    "Description": "Upgrade the tapus' Nature's Madness into a Z-Move."
   },
   "386": {
     "itemId": 386,
-    "Name": "Solganium Z"
+    "Name": "Solganium Z",
+    "Description": "Upgrade Solgaleo's Sunsteel Strike into a Z-Move."
   },
   "387": {
     "itemId": 387,
-    "Name": "Lunalium Z"
+    "Name": "Lunalium Z",
+    "Description": "Upgrade Lunala's Moongeist Beam into a Z-Move."
   },
   "388": {
     "itemId": 388,
-    "Name": "Marshadium Z"
+    "Name": "Marshadium Z",
+    "Description": "Upgrade Marsha- dow's Spectral Thi- ef into a Z-Move."
   },
   "389": {
     "itemId": 389,
-    "Name": "Aloraichium Z"
+    "Name": "Aloraichium Z",
+    "Description": "Upgrade Alolan Raichu's Thunder- bolt into a Z-Move."
   },
   "390": {
     "itemId": 390,
-    "Name": "Pikashunium Z"
+    "Name": "Pikashunium Z",
+    "Description": "Upgrade Pikachu w/ a cap's Thunderbolt into a Z-Move."
   },
   "391": {
     "itemId": 391,
-    "Name": "U-Necrozium Z"
+    "Name": "U-Necrozium Z",
+    "Description": "A crystal to turn fused Necrozma into a new form."
   },
   "392": {
     "itemId": 392,
-    "Name": "Light Ball"
+    "Name": "Light Ball",
+    "Description": "A hold item that raises the Atk and Sp. Atk of Pikachu."
   },
   "393": {
     "itemId": 393,
-    "Name": "Leek"
+    "Name": "Leek",
+    "Description": "A hold item that raises Farfetch'd's critical-hit ratio."
   },
   "394": {
     "itemId": 394,
-    "Name": "Thick Club"
+    "Name": "Thick Club",
+    "Description": "A hold item that  raises Cubone or Marowak's Attack."
   },
   "395": {
     "itemId": 395,
-    "Name": "Lucky Punch"
+    "Name": "Lucky Punch",
+    "Description": "A hold item that raises Chansey's critical-hit rate."
   },
   "396": {
     "itemId": 396,
-    "Name": "Metal Powder"
+    "Name": "Metal Powder",
+    "Description": "A hold item that raises Ditto's Defense."
   },
   "397": {
     "itemId": 397,
-    "Name": "Quick Powder"
+    "Name": "Quick Powder",
+    "Description": "A hold item that raises the Speed of Ditto."
   },
   "398": {
     "itemId": 398,
-    "Name": "DeepSeaScale"
+    "Name": "DeepSeaScale",
+    "Description": "A hold item that raises the Sp. Def of Clamperl."
   },
   "399": {
     "itemId": 399,
-    "Name": "DeepSeaTooth"
+    "Name": "DeepSeaTooth",
+    "Description": "A hold item that raises the Sp. Atk of Clamperl."
   },
   "400": {
     "itemId": 400,
-    "Name": "Soul Dew"
+    "Name": "Soul Dew",
+    "Description": "Powers up Latios' & Latias' Psychic and Dragon-type moves."
   },
   "401": {
     "itemId": 401,
-    "Name": "Adamant Orb"
+    "Name": "Adamant Orb",
+    "Description": "Powers up Dialga's Dragon and Steel- type moves."
   },
   "402": {
     "itemId": 402,
-    "Name": "Lustrous Orb"
+    "Name": "Lustrous Orb",
+    "Description": "Powers up Palkia's Dragon and Water- type moves."
   },
   "403": {
     "itemId": 403,
-    "Name": "Griseous Orb"
+    "Name": "Griseous Orb",
+    "Description": "Boosts Giratina's Dragon and Ghost- type moves."
   },
   "404": {
     "itemId": 404,
-    "Name": "Sea Incense"
+    "Name": "Sea Incense",
+    "Description": "A hold item that slightly boosts Water-type moves."
   },
   "405": {
     "itemId": 405,
-    "Name": "Lax Incense"
+    "Name": "Lax Incense",
+    "Description": "A hold item that slightly lowers the foe's accuracy."
   },
   "406": {
     "itemId": 406,
-    "Name": "Odd Incense"
+    "Name": "Odd Incense",
+    "Description": "A hold item that boosts Psychic- type moves."
   },
   "407": {
     "itemId": 407,
-    "Name": "Rock Incense"
+    "Name": "Rock Incense",
+    "Description": "A hold item that raises the power of Rock-type moves."
   },
   "408": {
     "itemId": 408,
-    "Name": "Full Incense"
+    "Name": "Full Incense",
+    "Description": "A held item that makes the holder move slower."
   },
   "409": {
     "itemId": 409,
-    "Name": "Wave Incense"
+    "Name": "Wave Incense",
+    "Description": "A hold item that slightly boosts Water-type moves."
   },
   "410": {
     "itemId": 410,
-    "Name": "Rose Incense"
+    "Name": "Rose Incense",
+    "Description": "A hold item that raises the power of Grass-type moves."
   },
   "411": {
     "itemId": 411,
-    "Name": "Luck Incense"
+    "Name": "Luck Incense",
+    "Description": "Doubles money in battle if the holder takes part."
   },
   "412": {
     "itemId": 412,
-    "Name": "Pure Incense"
+    "Name": "Pure Incense",
+    "Description": "A hold item that helps repel wild Pokémon."
   },
   "413": {
     "itemId": 413,
-    "Name": "Red Scarf"
+    "Name": "Red Scarf",
+    "Description": "A hold item that raises Cool in Contests."
   },
   "414": {
     "itemId": 414,
-    "Name": "Blue Scarf"
+    "Name": "Blue Scarf",
+    "Description": "A hold item that raises Beauty in Contests."
   },
   "415": {
     "itemId": 415,
-    "Name": "Pink Scarf"
+    "Name": "Pink Scarf",
+    "Description": "A hold item that raises Cute in Contests."
   },
   "416": {
     "itemId": 416,
-    "Name": "Green Scarf"
+    "Name": "Green Scarf",
+    "Description": "A hold item that raises Smart in Contests."
   },
   "417": {
     "itemId": 417,
-    "Name": "Yellow Scarf"
+    "Name": "Yellow Scarf",
+    "Description": "A hold item that raises Tough in Contests."
   },
   "418": {
     "itemId": 418,
-    "Name": "Macho Brace"
+    "Name": "Macho Brace",
+    "Description": "A hold item that promotes growth, but reduces Speed."
   },
   "419": {
     "itemId": 419,
-    "Name": "Power Weight"
+    "Name": "Power Weight",
+    "Description": "A hold item that promotes HP gain, but reduces Speed."
   },
   "420": {
     "itemId": 420,
-    "Name": "Power Bracer"
+    "Name": "Power Bracer",
+    "Description": "A hold item that promotes Atk gain, but reduces Speed."
   },
   "421": {
     "itemId": 421,
-    "Name": "Power Belt"
+    "Name": "Power Belt",
+    "Description": "A hold item that promotes Def gain, but reduces Speed."
   },
   "422": {
     "itemId": 422,
-    "Name": "Power Lens"
+    "Name": "Power Lens",
+    "Description": "Hold item that pro- motes Sp. Atk gain, but reduces Speed."
   },
   "423": {
     "itemId": 423,
-    "Name": "Power Band"
+    "Name": "Power Band",
+    "Description": "Hold item that pro- motes Sp. Def gain, but reduces Speed."
   },
   "424": {
     "itemId": 424,
-    "Name": "Power Anklet"
+    "Name": "Power Anklet",
+    "Description": "A hold item that promotes Spd gain, but reduces Speed."
   },
   "425": {
     "itemId": 425,
-    "Name": "Silk Scarf"
+    "Name": "Silk Scarf",
+    "Description": "A hold item that raises the power of Normal-type moves."
   },
   "426": {
     "itemId": 426,
-    "Name": "Charcoal"
+    "Name": "Charcoal",
+    "Description": "A hold item that raises the power of Fire-type moves."
   },
   "427": {
     "itemId": 427,
-    "Name": "Mystic Water"
+    "Name": "Mystic Water",
+    "Description": "A hold item that raises the power of Water-type moves."
   },
   "428": {
     "itemId": 428,
-    "Name": "Magnet"
+    "Name": "Magnet",
+    "Description": "A hold item that boosts Electric- type moves."
   },
   "429": {
     "itemId": 429,
-    "Name": "Miracle Seed"
+    "Name": "Miracle Seed",
+    "Description": "A hold item that raises the power of Grass-type moves."
   },
   "430": {
     "itemId": 430,
-    "Name": "Never-MeltIce"
+    "Name": "Never-MeltIce",
+    "Description": "A hold item that raises the power of Ice-type moves."
   },
   "431": {
     "itemId": 431,
-    "Name": "Black Belt"
+    "Name": "Black Belt",
+    "Description": "A hold item that boosts Fighting- type moves."
   },
   "432": {
     "itemId": 432,
-    "Name": "Poison Barb"
+    "Name": "Poison Barb",
+    "Description": "A hold item that raises the power of Poison-type moves."
   },
   "433": {
     "itemId": 433,
-    "Name": "Soft Sand"
+    "Name": "Soft Sand",
+    "Description": "A hold item that raises the power of Ground-type moves."
   },
   "434": {
     "itemId": 434,
-    "Name": "Sharp Beak"
+    "Name": "Sharp Beak",
+    "Description": "A hold item that raises the power of Flying-type moves."
   },
   "435": {
     "itemId": 435,
-    "Name": "Twisted Spoon"
+    "Name": "Twisted Spoon",
+    "Description": "A hold item that boosts Psychic- type moves."
   },
   "436": {
     "itemId": 436,
-    "Name": "Silver Powder"
+    "Name": "Silver Powder",
+    "Description": "A hold item that raises the power of Bug-type moves."
   },
   "437": {
     "itemId": 437,
-    "Name": "Hard Stone"
+    "Name": "Hard Stone",
+    "Description": "A hold item that raises the power of Rock-type moves."
   },
   "438": {
     "itemId": 438,
-    "Name": "Spell Tag"
+    "Name": "Spell Tag",
+    "Description": "A hold item that raises the power of Ghost-type moves."
   },
   "439": {
     "itemId": 439,
-    "Name": "Dragon Fang"
+    "Name": "Dragon Fang",
+    "Description": "A hold item that raises the power of Dragon-type moves."
   },
   "440": {
     "itemId": 440,
-    "Name": "Black Glasses"
+    "Name": "Black Glasses",
+    "Description": "A hold item that raises the power of Dark-type moves."
   },
   "441": {
     "itemId": 441,
-    "Name": "Metal Coat"
+    "Name": "Metal Coat",
+    "Description": "A hold item that raises the power of Steel-type moves."
   },
   "442": {
     "itemId": 442,
-    "Name": "Choice Band"
+    "Name": "Choice Band",
+    "Description": "Boosts Attack, but allows the use of only one move."
   },
   "443": {
     "itemId": 443,
-    "Name": "Choice Specs"
+    "Name": "Choice Specs",
+    "Description": "Boosts Sp. Atk, but allows the use of only one move."
   },
   "444": {
     "itemId": 444,
-    "Name": "Choice Scarf"
+    "Name": "Choice Scarf",
+    "Description": "Boosts Speed, but allows the use of only one move."
   },
   "445": {
     "itemId": 445,
-    "Name": "Flame Orb"
+    "Name": "Flame Orb",
+    "Description": "A bizarre orb that inflicts a burn on holder in battle."
   },
   "446": {
     "itemId": 446,
-    "Name": "Toxic Orb"
+    "Name": "Toxic Orb",
+    "Description": "A bizarre orb that badly poisons the holder in battle."
   },
   "447": {
     "itemId": 447,
-    "Name": "Damp Rock"
+    "Name": "Damp Rock",
+    "Description": "Extends the length of Rain Dance if used by the holder."
   },
   "448": {
     "itemId": 448,
-    "Name": "Heat Rock"
+    "Name": "Heat Rock",
+    "Description": "Extends the length of Sunny Day if used by the holder."
   },
   "449": {
     "itemId": 449,
-    "Name": "Smooth Rock"
+    "Name": "Smooth Rock",
+    "Description": "Extends the length of Sandstorm if used by the holder."
   },
   "450": {
     "itemId": 450,
-    "Name": "Icy Rock"
+    "Name": "Icy Rock",
+    "Description": "Extends the length of the move Hail used by the holder."
   },
   "451": {
     "itemId": 451,
-    "Name": "Electric Seed"
+    "Name": "Electric Seed",
+    "Description": "Boosts Defense on Electric Terrain, but only one time."
   },
   "452": {
     "itemId": 452,
-    "Name": "Psychic Seed"
+    "Name": "Psychic Seed",
+    "Description": "Boosts Sp. Def. on Psychic Terrain, but only one time."
   },
   "453": {
     "itemId": 453,
-    "Name": "Misty Seed"
+    "Name": "Misty Seed",
+    "Description": "Boosts Sp. Def. on Misty Terrain, but only one time."
   },
   "454": {
     "itemId": 454,
-    "Name": "Grassy Seed"
+    "Name": "Grassy Seed",
+    "Description": "Boosts Defense on Grassy Terrain, but only one time."
   },
   "455": {
     "itemId": 455,
-    "Name": "Absorb Bulb"
+    "Name": "Absorb Bulb",
+    "Description": "Raises Sp. Atk if the holder is hit by a Water-type move."
   },
   "456": {
     "itemId": 456,
-    "Name": "Cell Battery"
+    "Name": "Cell Battery",
+    "Description": "Raises Attack if the holder is hit by an Electric move."
   },
   "457": {
     "itemId": 457,
-    "Name": "Luminous Moss"
+    "Name": "Luminous Moss",
+    "Description": "Raises Sp. Def if the holder is hit by a Water-type move."
   },
   "458": {
     "itemId": 458,
-    "Name": "Snowball"
+    "Name": "Snowball",
+    "Description": "Raises Atk if its holder is hit by an Ice-type move."
   },
   "459": {
     "itemId": 459,
-    "Name": "Bright Powder"
+    "Name": "Bright Powder",
+    "Description": "A hold item that casts a glare to reduce accuracy."
   },
   "460": {
     "itemId": 460,
-    "Name": "White Herb"
+    "Name": "White Herb",
+    "Description": "A hold item that restores any lowered stat."
   },
   "461": {
     "itemId": 461,
-    "Name": "Exp. Share"
+    "Name": "Exp. Share",
+    "Description": "This device gives exp. to other party members."
   },
   "462": {
     "itemId": 462,
-    "Name": "Quick Claw"
+    "Name": "Quick Claw",
+    "Description": "A hold item that occasionally allows the first strike."
   },
   "463": {
     "itemId": 463,
-    "Name": "Soothe Bell"
+    "Name": "Soothe Bell",
+    "Description": "A hold item that calms spirits and fosters friendship."
   },
   "464": {
     "itemId": 464,
-    "Name": "Mental Herb"
+    "Name": "Mental Herb",
+    "Description": "Snaps Pokémon out of move-binding effects."
   },
   "465": {
     "itemId": 465,
-    "Name": "King's Rock"
+    "Name": "King's Rock",
+    "Description": "A hold item that may cause flinching when the foe is hit."
   },
   "466": {
     "itemId": 466,
-    "Name": "Amulet Coin"
+    "Name": "Amulet Coin",
+    "Description": "Doubles money in battle if the holder takes part."
   },
   "467": {
     "itemId": 467,
-    "Name": "Cleanse Tag"
+    "Name": "Cleanse Tag",
+    "Description": "A hold item that helps repel wild Pokémon."
   },
   "468": {
     "itemId": 468,
-    "Name": "Smoke Ball"
+    "Name": "Smoke Ball",
+    "Description": "A hold item that assures fleeing from wild Pokémon."
   },
   "469": {
     "itemId": 469,
-    "Name": "Focus Band"
+    "Name": "Focus Band",
+    "Description": "A hold item that occasionally prevents fainting."
   },
   "470": {
     "itemId": 470,
-    "Name": "Lucky Egg"
+    "Name": "Lucky Egg",
+    "Description": "A hold item that boosts Exp. points earned in battle."
   },
   "471": {
     "itemId": 471,
-    "Name": "Scope Lens"
+    "Name": "Scope Lens",
+    "Description": "A hold item that improves the critical-hit rate."
   },
   "472": {
     "itemId": 472,
-    "Name": "Leftovers"
+    "Name": "Leftovers",
+    "Description": "A hold item that gradually restores HP in battle."
   },
   "473": {
     "itemId": 473,
-    "Name": "Shell Bell"
+    "Name": "Shell Bell",
+    "Description": "A hold item that restores HP upon striking the foe."
   },
   "474": {
     "itemId": 474,
-    "Name": "Wide Lens"
+    "Name": "Wide Lens",
+    "Description": "A magnifying lens that boosts the accuracy of moves."
   },
   "475": {
     "itemId": 475,
-    "Name": "Muscle Band"
+    "Name": "Muscle Band",
+    "Description": "A headband that boosts the power of physical moves."
   },
   "476": {
     "itemId": 476,
-    "Name": "Wise Glasses"
+    "Name": "Wise Glasses",
+    "Description": "A pair of glasses that ups the power of special moves."
   },
   "477": {
     "itemId": 477,
-    "Name": "Expert Belt"
+    "Name": "Expert Belt",
+    "Description": "A belt that boosts the power of super effective moves."
   },
   "478": {
     "itemId": 478,
-    "Name": "Light Clay"
+    "Name": "Light Clay",
+    "Description": "Extends the length of barrier moves used by the holder."
   },
   "479": {
     "itemId": 479,
-    "Name": "Life Orb"
+    "Name": "Life Orb",
+    "Description": "Boosts move power but holder loses HP with each attack."
   },
   "480": {
     "itemId": 480,
-    "Name": "Power Herb"
+    "Name": "Power Herb",
+    "Description": "Allows immediate use of a move that charges first."
   },
   "481": {
     "itemId": 481,
-    "Name": "Focus Sash"
+    "Name": "Focus Sash",
+    "Description": "If the holder has full HP, it endures KO hits with 1 HP."
   },
   "482": {
     "itemId": 482,
-    "Name": "Zoom Lens"
+    "Name": "Zoom Lens",
+    "Description": "If the holder moves after the foe, it'll boost accuracy."
   },
   "483": {
     "itemId": 483,
-    "Name": "Metronome"
+    "Name": "Metronome",
+    "Description": "A held item that boosts a move used consecutively."
   },
   "484": {
     "itemId": 484,
-    "Name": "Iron Ball"
+    "Name": "Iron Ball",
+    "Description": "Cuts Speed and becomes vulnerable to Ground moves."
   },
   "485": {
     "itemId": 485,
-    "Name": "Lagging Tail"
+    "Name": "Lagging Tail",
+    "Description": "A held item that makes the holder move slower."
   },
   "486": {
     "itemId": 486,
-    "Name": "Destiny Knot"
+    "Name": "Destiny Knot",
+    "Description": "If the holder falls in love, the foe does too."
   },
   "487": {
     "itemId": 487,
-    "Name": "Black Sludge"
+    "Name": "Black Sludge",
+    "Description": "Restores HP for Poison-types. Damages all others."
   },
   "488": {
     "itemId": 488,
-    "Name": "Grip Claw"
+    "Name": "Grip Claw",
+    "Description": "A held item that extends binding moves like Wrap."
   },
   "489": {
     "itemId": 489,
-    "Name": "Sticky Barb"
+    "Name": "Sticky Barb",
+    "Description": "Damages the holder each turn. May latch on to foes."
   },
   "490": {
     "itemId": 490,
-    "Name": "Shed Shell"
+    "Name": "Shed Shell",
+    "Description": "Allows the holder to switch out without fail."
   },
   "491": {
     "itemId": 491,
-    "Name": "Big Root"
+    "Name": "Big Root",
+    "Description": "A held item that ups the power of HP-stealing moves."
   },
   "492": {
     "itemId": 492,
-    "Name": "Razor Claw"
+    "Name": "Razor Claw",
+    "Description": "A hooked claw that ups the holder's critical-hit ratio."
   },
   "493": {
     "itemId": 493,
-    "Name": "Razor Fang"
+    "Name": "Razor Fang",
+    "Description": "A hold item that may cause flinching when the foe is hit."
   },
   "494": {
     "itemId": 494,
-    "Name": "Eviolite"
+    "Name": "Eviolite",
+    "Description": "Raises the Def and Sp. Def of Pokémon that can evolve."
   },
   "495": {
     "itemId": 495,
-    "Name": "Float Stone"
+    "Name": "Float Stone",
+    "Description": "It's so light that when held, it halves a Pokémon's weight."
   },
   "496": {
     "itemId": 496,
-    "Name": "Rocky Helmet"
+    "Name": "Rocky Helmet",
+    "Description": "Hurts the foe if they touch its holder."
   },
   "497": {
     "itemId": 497,
-    "Name": "Air Balloon"
+    "Name": "Air Balloon",
+    "Description": "Makes the holder float but bursts if hit by an attack."
   },
   "498": {
     "itemId": 498,
-    "Name": "Red Card"
+    "Name": "Red Card",
+    "Description": "Switches out the foe if they hit the holder."
   },
   "499": {
     "itemId": 499,
-    "Name": "Ring Target"
+    "Name": "Ring Target",
+    "Description": "Moves that usually have no effect will hit the holder."
   },
   "500": {
     "itemId": 500,
-    "Name": "Binding Band"
+    "Name": "Binding Band",
+    "Description": "Increases the power of binding moves when held."
   },
   "501": {
     "itemId": 501,
-    "Name": "Eject Button"
+    "Name": "Eject Button",
+    "Description": "Switches out the user if they're hit by the foe."
   },
   "502": {
     "itemId": 502,
-    "Name": "WeaknssPolicy"
+    "Name": "WeaknssPolicy",
+    "Description": "If hit by a super- effective move, ups Atk and Sp. Atk."
   },
   "503": {
     "itemId": 503,
-    "Name": "Assault Vest"
+    "Name": "Assault Vest",
+    "Description": "Raises Sp. Def but prevents the use of status moves."
   },
   "504": {
     "itemId": 504,
-    "Name": "SafetyGoggles"
+    "Name": "SafetyGoggles",
+    "Description": "Protect from weather damage and powder moves."
   },
   "505": {
     "itemId": 505,
-    "Name": "AdrenalineOrb"
+    "Name": "AdrenalineOrb",
+    "Description": "This orb boosts Speed if the holder is intimidated."
   },
   "506": {
     "itemId": 506,
-    "Name": "TerainExtendr"
+    "Name": "TerainExtendr",
+    "Description": "Extends the length of the active battle terrain."
   },
   "507": {
     "itemId": 507,
-    "Name": "ProtectvePads"
+    "Name": "ProtectvePads",
+    "Description": "Guard the holder from contact move effects."
   },
   "508": {
     "itemId": 508,
-    "Name": "Throat Spray"
+    "Name": "Throat Spray",
+    "Description": "Raises Sp. Atk. if the holder uses a sound-based move."
   },
   "509": {
     "itemId": 509,
-    "Name": "Eject Pack"
+    "Name": "Eject Pack",
+    "Description": "Forces the user to switch if its stats are lowered."
   },
   "510": {
     "itemId": 510,
-    "Name": "Heavy-DtyBts"
+    "Name": "Heavy-DtyBts",
+    "Description": "Boots that prevent effects of traps set in the field."
   },
   "511": {
     "itemId": 511,
-    "Name": "BlundrPolicy"
+    "Name": "BlundrPolicy",
+    "Description": "Raises Speed if the user misses due to Accuracy."
   },
   "512": {
     "itemId": 512,
-    "Name": "Room Service"
+    "Name": "Room Service",
+    "Description": "Lowers Speed if Trick Room is active."
   },
   "513": {
     "itemId": 513,
-    "Name": "UtltyUmbrlla"
+    "Name": "UtltyUmbrlla",
+    "Description": "An umbrella that protects from weather effects."
   },
   "514": {
     "itemId": 514,
-    "Name": "Cheri Berry"
+    "Name": "Cheri Berry",
+    "Description": "A hold item that heals paralysis in battle."
   },
   "515": {
     "itemId": 515,
-    "Name": "Chesto Berry"
+    "Name": "Chesto Berry",
+    "Description": "A hold item that awakens Pokémon in battle."
   },
   "516": {
     "itemId": 516,
-    "Name": "Pecha Berry"
+    "Name": "Pecha Berry",
+    "Description": "A hold item that heals poisoning in battle."
   },
   "517": {
     "itemId": 517,
-    "Name": "Rawst Berry"
+    "Name": "Rawst Berry",
+    "Description": "A hold item that heals a burn in battle."
   },
   "518": {
     "itemId": 518,
-    "Name": "Aspear Berry"
+    "Name": "Aspear Berry",
+    "Description": "A hold item that defrosts Pokémon in battle."
   },
   "519": {
     "itemId": 519,
-    "Name": "Leppa Berry"
+    "Name": "Leppa Berry",
+    "Description": "A hold item that restores 10 PP in battle."
   },
   "520": {
     "itemId": 520,
-    "Name": "Oran Berry"
+    "Name": "Oran Berry",
+    "Description": "A hold item that restores 10 HP in battle."
   },
   "521": {
     "itemId": 521,
-    "Name": "Persim Berry"
+    "Name": "Persim Berry",
+    "Description": "A hold item that heals confusion in battle."
   },
   "522": {
     "itemId": 522,
-    "Name": "Lum Berry"
+    "Name": "Lum Berry",
+    "Description": "A hold item that heals any status problem in battle."
   },
   "523": {
     "itemId": 523,
-    "Name": "Sitrus Berry"
+    "Name": "Sitrus Berry",
+    "Description": "A hold item that restores the user's HP a little."
   },
   "524": {
     "itemId": 524,
-    "Name": "Figy Berry"
+    "Name": "Figy Berry",
+    "Description": "A hold item that restores HP but may confuse."
   },
   "525": {
     "itemId": 525,
-    "Name": "Wiki Berry"
+    "Name": "Wiki Berry",
+    "Description": "A hold item that restores HP but may confuse."
   },
   "526": {
     "itemId": 526,
-    "Name": "Mago Berry"
+    "Name": "Mago Berry",
+    "Description": "A hold item that restores HP but may confuse."
   },
   "527": {
     "itemId": 527,
-    "Name": "Aguav Berry"
+    "Name": "Aguav Berry",
+    "Description": "A hold item that restores HP but may confuse."
   },
   "528": {
     "itemId": 528,
-    "Name": "Iapapa Berry"
+    "Name": "Iapapa Berry",
+    "Description": "A hold item that restores HP but may confuse."
   },
   "529": {
     "itemId": 529,
-    "Name": "Razz Berry"
+    "Name": "Razz Berry",
+    "Description": "Pokéblock ingredient. Plant in loamy soil to grow Razz."
   },
   "530": {
     "itemId": 530,
-    "Name": "Bluk Berry"
+    "Name": "Bluk Berry",
+    "Description": "Pokéblock ingredient. Plant in loamy soil to grow Bluk."
   },
   "531": {
     "itemId": 531,
-    "Name": "Nanab Berry"
+    "Name": "Nanab Berry",
+    "Description": "Pokéblock ingredient. Plant in loamy soil to grow Nanab."
   },
   "532": {
     "itemId": 532,
-    "Name": "Wepear Berry"
+    "Name": "Wepear Berry",
+    "Description": "Pokéblock ingredient. Plant in loamy soil to grow Wepear."
   },
   "533": {
     "itemId": 533,
-    "Name": "Pinap Berry"
+    "Name": "Pinap Berry",
+    "Description": "Pokéblock ingredient. Plant in loamy soil to grow Pinap."
   },
   "534": {
     "itemId": 534,
-    "Name": "Pomeg Berry"
+    "Name": "Pomeg Berry",
+    "Description": "Makes a Pokémon friendly but lowers base HP."
   },
   "535": {
     "itemId": 535,
-    "Name": "Kelpsy Berry"
+    "Name": "Kelpsy Berry",
+    "Description": "Makes a Pokémon friendly but lowers base Attack."
   },
   "536": {
     "itemId": 536,
-    "Name": "Qualot Berry"
+    "Name": "Qualot Berry",
+    "Description": "Makes a Pokémon friendly but lowers base Defense."
   },
   "537": {
     "itemId": 537,
-    "Name": "Hondew Berry"
+    "Name": "Hondew Berry",
+    "Description": "Makes a Pokémon friendly but lowers base Sp. Atk."
   },
   "538": {
     "itemId": 538,
-    "Name": "Grepa Berry"
+    "Name": "Grepa Berry",
+    "Description": "Makes a Pokémon friendly but lowers base Sp. Def."
   },
   "539": {
     "itemId": 539,
-    "Name": "Tamato Berry"
+    "Name": "Tamato Berry",
+    "Description": "Makes a Pokémon friendly but lowers base Speed."
   },
   "540": {
     "itemId": 540,
-    "Name": "Cornn Berry"
+    "Name": "Cornn Berry",
+    "Description": "Pokéblock ingredient. Plant in loamy soil to grow Cornn."
   },
   "541": {
     "itemId": 541,
-    "Name": "Magost Berry"
+    "Name": "Magost Berry",
+    "Description": "Pokéblock ingredient. Plant in loamy soil to grow Magost."
   },
   "542": {
     "itemId": 542,
-    "Name": "Rabuta Berry"
+    "Name": "Rabuta Berry",
+    "Description": "Pokéblock ingredient. Plant in loamy soil to grow Rabuta."
   },
   "543": {
     "itemId": 543,
-    "Name": "Nomel Berry"
+    "Name": "Nomel Berry",
+    "Description": "Pokéblock ingredient. Plant in loamy soil to grow Nomel."
   },
   "544": {
     "itemId": 544,
-    "Name": "Spelon Berry"
+    "Name": "Spelon Berry",
+    "Description": "Pokéblock ingredient. Plant in loamy soil to grow Spelon."
   },
   "545": {
     "itemId": 545,
-    "Name": "Pamtre Berry"
+    "Name": "Pamtre Berry",
+    "Description": "Pokéblock ingredient. Plant in loamy soil to grow Pamtre."
   },
   "546": {
     "itemId": 546,
-    "Name": "Watmel Berry"
+    "Name": "Watmel Berry",
+    "Description": "Pokéblock ingredient. Plant in loamy soil to grow Watmel."
   },
   "547": {
     "itemId": 547,
-    "Name": "Durin Berry"
+    "Name": "Durin Berry",
+    "Description": "Pokéblock ingredient. Plant in loamy soil to grow Durin."
   },
   "548": {
     "itemId": 548,
-    "Name": "Belue Berry"
+    "Name": "Belue Berry",
+    "Description": "Pokéblock ingredient. Plant in loamy soil to grow Belue."
   },
   "549": {
     "itemId": 549,
-    "Name": "Chilan Berry"
+    "Name": "Chilan Berry",
+    "Description": "A hold item that weakens a Normal move."
   },
   "550": {
     "itemId": 550,
-    "Name": "Occa Berry"
+    "Name": "Occa Berry",
+    "Description": "A hold item that weakens a Fire move if weak to it."
   },
   "551": {
     "itemId": 551,
-    "Name": "Passho Berry"
+    "Name": "Passho Berry",
+    "Description": "A hold item that weakens a Water move if weak to it."
   },
   "552": {
     "itemId": 552,
-    "Name": "Wacan Berry"
+    "Name": "Wacan Berry",
+    "Description": "A hold item that weakens a Electric move if weak to it."
   },
   "553": {
     "itemId": 553,
-    "Name": "Rindo Berry"
+    "Name": "Rindo Berry",
+    "Description": "A hold item that weakens a Grass move if weak to it."
   },
   "554": {
     "itemId": 554,
-    "Name": "Yache Berry"
+    "Name": "Yache Berry",
+    "Description": "A hold item that weakens a Ice move if weak to it."
   },
   "555": {
     "itemId": 555,
-    "Name": "Chople Berry"
+    "Name": "Chople Berry",
+    "Description": "A hold item that weakens a Fighting move if weak to it."
   },
   "556": {
     "itemId": 556,
-    "Name": "Kebia Berry"
+    "Name": "Kebia Berry",
+    "Description": "A hold item that weakens a Poison move if weak to it."
   },
   "557": {
     "itemId": 557,
-    "Name": "Shuca Berry"
+    "Name": "Shuca Berry",
+    "Description": "A hold item that weakens a Ground move if weak to it."
   },
   "558": {
     "itemId": 558,
-    "Name": "Coba Berry"
+    "Name": "Coba Berry",
+    "Description": "A hold item that weakens a Flying move if weak to it."
   },
   "559": {
     "itemId": 559,
-    "Name": "Payapa Berry"
+    "Name": "Payapa Berry",
+    "Description": "A hold item that weakens a Psychic move if weak to it."
   },
   "560": {
     "itemId": 560,
-    "Name": "Tanga Berry"
+    "Name": "Tanga Berry",
+    "Description": "A hold item that weakens a Bug move if weak to it."
   },
   "561": {
     "itemId": 561,
-    "Name": "Charti Berry"
+    "Name": "Charti Berry",
+    "Description": "A hold item that weakens a Rock move if weak to it."
   },
   "562": {
     "itemId": 562,
-    "Name": "Kasib Berry"
+    "Name": "Kasib Berry",
+    "Description": "A hold item that weakens a Ghost move if weak to it."
   },
   "563": {
     "itemId": 563,
-    "Name": "Haban Berry"
+    "Name": "Haban Berry",
+    "Description": "A hold item that weakens a Dragon move if weak to it."
   },
   "564": {
     "itemId": 564,
-    "Name": "Colbur Berry"
+    "Name": "Colbur Berry",
+    "Description": "A hold item that weakens a Dark move if weak to it."
   },
   "565": {
     "itemId": 565,
-    "Name": "Babiri Berry"
+    "Name": "Babiri Berry",
+    "Description": "A hold item that weakens a Steel move if weak to it."
   },
   "566": {
     "itemId": 566,
-    "Name": "Roseli Berry"
+    "Name": "Roseli Berry",
+    "Description": "A hold item that weakens a Fairy move if weak to it."
   },
   "567": {
     "itemId": 567,
-    "Name": "Liechi Berry"
+    "Name": "Liechi Berry",
+    "Description": "A hold item that raises Attack in a pinch."
   },
   "568": {
     "itemId": 568,
-    "Name": "Ganlon Berry"
+    "Name": "Ganlon Berry",
+    "Description": "A hold item that raises Defense in a pinch."
   },
   "569": {
     "itemId": 569,
-    "Name": "Salac Berry"
+    "Name": "Salac Berry",
+    "Description": "A hold item that raises Speed in a pinch."
   },
   "570": {
     "itemId": 570,
-    "Name": "Petaya Berry"
+    "Name": "Petaya Berry",
+    "Description": "A hold item that raises Sp. Atk in a pinch."
   },
   "571": {
     "itemId": 571,
-    "Name": "Apicot Berry"
+    "Name": "Apicot Berry",
+    "Description": "A hold item that raises Sp. Def in a pinch."
   },
   "572": {
     "itemId": 572,
-    "Name": "Lansat Berry"
+    "Name": "Lansat Berry",
+    "Description": "A hold item that ups the critical- hit rate in a pinch."
   },
   "573": {
     "itemId": 573,
-    "Name": "Starf Berry"
+    "Name": "Starf Berry",
+    "Description": "A hold item that sharply boosts a stat in a pinch."
   },
   "574": {
     "itemId": 574,
-    "Name": "Enigma Berry"
+    "Name": "Enigma Berry",
+    "Description": "A hold item that heals from super effective moves."
   },
   "575": {
     "itemId": 575,
-    "Name": "Micle Berry"
+    "Name": "Micle Berry",
+    "Description": "When held, it ups the Accuracy of a move in a pinch."
   },
   "576": {
     "itemId": 576,
-    "Name": "Custap Berry"
+    "Name": "Custap Berry",
+    "Description": "It allows a Pokémon in a pinch to move first just once."
   },
   "577": {
     "itemId": 577,
-    "Name": "Jaboca Berry"
+    "Name": "Jaboca Berry",
+    "Description": "If hit by a physical move, it will hurt the attacker a bit."
   },
   "578": {
     "itemId": 578,
-    "Name": "Rowap Berry"
+    "Name": "Rowap Berry",
+    "Description": "If hit by a special move, it will hurt the attacker a bit."
   },
   "579": {
     "itemId": 579,
-    "Name": "Kee Berry"
+    "Name": "Kee Berry",
+    "Description": "If hit by a physical move, it raises the Defense a bit."
   },
   "580": {
     "itemId": 580,
-    "Name": "Maranga Berry"
+    "Name": "Maranga Berry",
+    "Description": "If hit by a special move, it raises the Sp. Def. a bit."
   },
   "581": {
     "itemId": 581,
-    "Name": "Enigma Berry"
+    "Name": "Enigma Berry",
+    "Description": "Pokéblock ingredient. Plant in loamy soil to grow a mystery."
   },
   "582": {
     "itemId": 582,
-    "Name": "TM01"
+    "Name": "TM01",
+    "Description": "Powerful, but makes the user flinch if hit by the foe."
   },
   "583": {
     "itemId": 583,
-    "Name": "TM02"
+    "Name": "TM02",
+    "Description": "Hooks and slashes the foe with long, sharp claws."
   },
   "584": {
     "itemId": 584,
-    "Name": "TM03"
+    "Name": "TM03",
+    "Description": "Attacks and rushes back to switch with a party Pokémon."
   },
   "585": {
     "itemId": 585,
-    "Name": "TM04"
+    "Name": "TM04",
+    "Description": "Raises Sp. Atk and Sp. Def by focusing the mind."
   },
   "586": {
     "itemId": 586,
-    "Name": "TM05"
+    "Name": "TM05",
+    "Description": "A savage roar that makes the foe flee  to end the battle."
   },
   "587": {
     "itemId": 587,
-    "Name": "TM06"
+    "Name": "TM06",
+    "Description": "Poisons the foe with a toxin that gradually worsens."
   },
   "588": {
     "itemId": 588,
-    "Name": "TM07"
+    "Name": "TM07",
+    "Description": "Summons a snowstorm that lasts 5 turns."
   },
   "589": {
     "itemId": 589,
-    "Name": "TM08"
+    "Name": "TM08",
+    "Description": "Bulks up the body to boost both Attack & Defense."
   },
   "590": {
     "itemId": 590,
-    "Name": "TM09"
+    "Name": "TM09",
+    "Description": "Shoots 2 to 5 seeds in a row to strike the foe."
   },
   "591": {
     "itemId": 591,
-    "Name": "TM10"
+    "Name": "TM10",
+    "Description": "The attack power varies among different Pokémon."
   },
   "592": {
     "itemId": 592,
-    "Name": "TM11"
+    "Name": "TM11",
+    "Description": "Raises the power of Fire-type moves for 5 turns."
   },
   "593": {
     "itemId": 593,
-    "Name": "TM12"
+    "Name": "TM12",
+    "Description": "Enrages the foe so it can only use attack moves."
   },
   "594": {
     "itemId": 594,
-    "Name": "TM13"
+    "Name": "TM13",
+    "Description": "Fires an icy cold beam that may inflict frostbite."
   },
   "595": {
     "itemId": 595,
-    "Name": "TM14"
+    "Name": "TM14",
+    "Description": "A snow-and-wind attack that may inflict frostbite."
   },
   "596": {
     "itemId": 596,
-    "Name": "TM15"
+    "Name": "TM15",
+    "Description": "Snares the foe with an electric net. Lowers Speed."
   },
   "597": {
     "itemId": 597,
-    "Name": "TM16"
+    "Name": "TM16",
+    "Description": "Creates a wall of light that lowers Sp. Atk damage."
   },
   "598": {
     "itemId": 598,
-    "Name": "TM17"
+    "Name": "TM17",
+    "Description": "Negates all damage, but may fail if used in succession."
   },
   "599": {
     "itemId": 599,
-    "Name": "TM18"
+    "Name": "TM18",
+    "Description": "Raises the power of Water-type moves for 5 turns."
   },
   "600": {
     "itemId": 600,
-    "Name": "TM19"
+    "Name": "TM19",
+    "Description": "Recovers half the HP of the damage  this move inflicts."
   },
   "601": {
     "itemId": 601,
-    "Name": "TM20"
+    "Name": "TM20",
+    "Description": "A loud attack that uses sound waves to injure."
   },
   "602": {
     "itemId": 602,
-    "Name": "TM21"
+    "Name": "TM21",
+    "Description": "A chilling attack that lowers the foe's Speed."
   },
   "603": {
     "itemId": 603,
-    "Name": "TM22"
+    "Name": "TM22",
+    "Description": "Absorbs sunlight in the 1st turn, then attacks next turn."
   },
   "604": {
     "itemId": 604,
-    "Name": "TM23"
+    "Name": "TM23",
+    "Description": "Slams the foe with a hard tail. It may lower Defense."
   },
   "605": {
     "itemId": 605,
-    "Name": "TM24"
+    "Name": "TM24",
+    "Description": "A powerful electric attack that may cause paralysis."
   },
   "606": {
     "itemId": 606,
-    "Name": "TM25"
+    "Name": "TM25",
+    "Description": "Strikes the foe with a thunderbolt. It may paralyze."
   },
   "607": {
     "itemId": 607,
-    "Name": "TM26"
+    "Name": "TM26",
+    "Description": "Causes a quake that has no effect on flying foes."
   },
   "608": {
     "itemId": 608,
-    "Name": "TM27"
+    "Name": "TM27",
+    "Description": "The more the user likes you, the more powerful this move."
   },
   "609": {
     "itemId": 609,
-    "Name": "TM28"
+    "Name": "TM28",
+    "Description": "Digs underground the 1st turn, then strikes next turn."
   },
   "610": {
     "itemId": 610,
-    "Name": "TM29"
+    "Name": "TM29",
+    "Description": "A powerful psychic attack that may lower Sp. Def."
   },
   "611": {
     "itemId": 611,
-    "Name": "TM30"
+    "Name": "TM30",
+    "Description": "Hurls a dark lump at the foe. It may lower Sp. Def."
   },
   "612": {
     "itemId": 612,
-    "Name": "TM31"
+    "Name": "TM31",
+    "Description": "Destroys barriers like Light Screen and causes damage."
   },
   "613": {
     "itemId": 613,
-    "Name": "TM32"
+    "Name": "TM32",
+    "Description": "Charges first turn then chops with a blade of light."
   },
   "614": {
     "itemId": 614,
-    "Name": "TM33"
+    "Name": "TM33",
+    "Description": "Creates a wall of light that weakens physical attacks."
   },
   "615": {
     "itemId": 615,
-    "Name": "TM34"
+    "Name": "TM34",
+    "Description": "A psychic move for fleeing from battle instantly."
   },
   "616": {
     "itemId": 616,
-    "Name": "TM35"
+    "Name": "TM35",
+    "Description": "Looses a stream of fire that may burn the foe."
   },
   "617": {
     "itemId": 617,
-    "Name": "TM36"
+    "Name": "TM36",
+    "Description": "Hurls sludge at the foe. It may poison the foe."
   },
   "618": {
     "itemId": 618,
-    "Name": "TM37"
+    "Name": "TM37",
+    "Description": "Causes a sandstorm that hits the foe over several turns."
   },
   "619": {
     "itemId": 619,
-    "Name": "TM38"
+    "Name": "TM38",
+    "Description": "A powerful fire attack that may burn the foe."
   },
   "620": {
     "itemId": 620,
-    "Name": "TM39"
+    "Name": "TM39",
+    "Description": "Stops the foe from moving with rocks. May lower Speed."
   },
   "621": {
     "itemId": 621,
-    "Name": "TM40"
+    "Name": "TM40",
+    "Description": "An extremely fast attack that can't be avoided."
   },
   "622": {
     "itemId": 622,
-    "Name": "TM41"
+    "Name": "TM41",
+    "Description": "A mystical dance that ups Attack and Speed."
   },
   "623": {
     "itemId": 623,
-    "Name": "TM42"
+    "Name": "TM42",
+    "Description": "Raises Attack when poisoned, burned, or paralyzed."
   },
   "624": {
     "itemId": 624,
-    "Name": "TM43"
+    "Name": "TM43",
+    "Description": "Removes obstacles and lowers evasion."
   },
   "625": {
     "itemId": 625,
-    "Name": "TM44"
+    "Name": "TM44",
+    "Description": "The user sleeps for 2 turns to restore health and status."
   },
   "626": {
     "itemId": 626,
-    "Name": "TM45"
+    "Name": "TM45",
+    "Description": "An attack that absorbs over half the damage done."
   },
   "627": {
     "itemId": 627,
-    "Name": "TM46"
+    "Name": "TM46",
+    "Description": "While attacking, it may steal the foe's held item."
   },
   "628": {
     "itemId": 628,
-    "Name": "TM47"
+    "Name": "TM47",
+    "Description": "Spreads hard- edged wings and slams into the foe."
   },
   "629": {
     "itemId": 629,
-    "Name": "TM48"
+    "Name": "TM48",
+    "Description": "2-turn move that raises Sp. Attack before attacking."
   },
   "630": {
     "itemId": 630,
-    "Name": "TM49"
+    "Name": "TM49",
+    "Description": "An attack that steals half the damage inflicted."
   },
   "631": {
     "itemId": 631,
-    "Name": "TM50"
+    "Name": "TM50",
+    "Description": "Enables full-power attack, but sharply lowers Sp. Atk."
   },
   "632": {
     "itemId": 632,
-    "Name": "TM51"
+    "Name": "TM51",
+    "Description": "Restores the user's HP by half of its max HP."
   },
   "633": {
     "itemId": 633,
-    "Name": "TM52"
+    "Name": "TM52",
+    "Description": "Attacks at full power. May lower Sp. Def."
   },
   "634": {
     "itemId": 634,
-    "Name": "TM53"
+    "Name": "TM53",
+    "Description": "Draws power from nature to attack May lower Sp. Def."
   },
   "635": {
     "itemId": 635,
-    "Name": "TM54"
+    "Name": "TM54",
+    "Description": "Gliding on ground, hits. Goes first on Grassy Terrain."
   },
   "636": {
     "itemId": 636,
-    "Name": "TM55"
+    "Name": "TM55",
+    "Description": "Power goes up and damages all foes on Psychic Terrain."
   },
   "637": {
     "itemId": 637,
-    "Name": "TM56"
+    "Name": "TM56",
+    "Description": "A hard punch that raises the user's Attack."
   },
   "638": {
     "itemId": 638,
-    "Name": "TM57"
+    "Name": "TM57",
+    "Description": "Fires a beam of electricity. Raises Sp. Atk."
   },
   "639": {
     "itemId": 639,
-    "Name": "TM58"
+    "Name": "TM58",
+    "Description": "This move's power doubles when on Electric Terrain."
   },
   "640": {
     "itemId": 640,
-    "Name": "TM59"
+    "Name": "TM59",
+    "Description": "Generates a shock wave to damage the foe."
   },
   "641": {
     "itemId": 641,
-    "Name": "TM60"
+    "Name": "TM60",
+    "Description": "A punch that absorbs half the  damage inflicted."
   },
   "642": {
     "itemId": 642,
-    "Name": "TM61"
+    "Name": "TM61",
+    "Description": "Inflicts a burn on the foe with intense fire."
   },
   "643": {
     "itemId": 643,
-    "Name": "TM62"
+    "Name": "TM62",
+    "Description": "A powdery attack that may raise abilities."
   },
   "644": {
     "itemId": 644,
-    "Name": "TM63"
+    "Name": "TM63",
+    "Description": "Does double damage if the foe is poisoned."
   },
   "645": {
     "itemId": 645,
-    "Name": "TM64"
+    "Name": "TM64",
+    "Description": "Inflicts severe damage but makes the user faint."
   },
   "646": {
     "itemId": 646,
-    "Name": "TM65"
+    "Name": "TM65",
+    "Description": "Strikes with a shadow claw. High critical-hit ratio."
   },
   "647": {
     "itemId": 647,
-    "Name": "TM66"
+    "Name": "TM66",
+    "Description": "Damages foes by emitting a bright flash."
   },
   "648": {
     "itemId": 648,
-    "Name": "TM67"
+    "Name": "TM67",
+    "Description": "Control foe's item to attack. Fails if foe has no item."
   },
   "649": {
     "itemId": 649,
-    "Name": "TM68"
+    "Name": "TM68",
+    "Description": "Attacks with brutal hits that strike twice."
   },
   "650": {
     "itemId": 650,
-    "Name": "TM69"
+    "Name": "TM69",
+    "Description": "Polishes the body to sharply raise Speed."
   },
   "651": {
     "itemId": 651,
-    "Name": "TM70"
+    "Name": "TM70",
+    "Description": "A 3-kick attack that gets more power on each hit."
   },
   "652": {
     "itemId": 652,
-    "Name": "TM71"
+    "Name": "TM71",
+    "Description": "Stabs the foe with stones. High critical-hit ratio."
   },
   "653": {
     "itemId": 653,
-    "Name": "TM72"
+    "Name": "TM72",
+    "Description": "Attacks with a psychic wave. Uses physical damage."
   },
   "654": {
     "itemId": 654,
-    "Name": "TM73"
+    "Name": "TM73",
+    "Description": "A weak jolt of electricity that paralyzes the foe."
   },
   "655": {
     "itemId": 655,
-    "Name": "TM74"
+    "Name": "TM74",
+    "Description": "A high-speed spin that does more to faster foes."
   },
   "656": {
     "itemId": 656,
-    "Name": "TM75"
+    "Name": "TM75",
+    "Description": "A fighting dance that sharply raises Attack."
   },
   "657": {
     "itemId": 657,
-    "Name": "TM76"
+    "Name": "TM76",
+    "Description": "Sets floating stones that hurt foes switching in."
   },
   "658": {
     "itemId": 658,
-    "Name": "TM77"
+    "Name": "TM77",
+    "Description": "Attacks in a cloak of flames. Raises Speed."
   },
   "659": {
     "itemId": 659,
-    "Name": "TM78"
+    "Name": "TM78",
+    "Description": "Attacks the foe's legs, lowering its Speed."
   },
   "660": {
     "itemId": 660,
-    "Name": "TM79"
+    "Name": "TM79",
+    "Description": "Attacks with a horrible aura. May cause flinching."
   },
   "661": {
     "itemId": 661,
-    "Name": "TM80"
+    "Name": "TM80",
+    "Description": "Large boulders are hurled. May cause flinching."
   },
   "662": {
     "itemId": 662,
-    "Name": "TM81"
+    "Name": "TM81",
+    "Description": "Slashes the foe crossed scythes,  claws, etc."
   },
   "663": {
     "itemId": 663,
-    "Name": "TM82"
+    "Name": "TM82",
+    "Description": "Uses an available move randomly while asleep."
   },
   "664": {
     "itemId": 664,
-    "Name": "TM83"
+    "Name": "TM83",
+    "Description": "Shoots boiling water at the foe. May inflict a burn."
   },
   "665": {
     "itemId": 665,
-    "Name": "TM84"
+    "Name": "TM84",
+    "Description": "A stabbing attack that may poison the foe."
   },
   "666": {
     "itemId": 666,
-    "Name": "TM85"
+    "Name": "TM85",
+    "Description": "Heightens inner power to strike 2 turns later."
   },
   "667": {
     "itemId": 667,
-    "Name": "TM86"
+    "Name": "TM86",
+    "Description": "A snare attack that does more to heavier foes."
   },
   "668": {
     "itemId": 668,
-    "Name": "TM87"
+    "Name": "TM87",
+    "Description": "A kick that inflicts more damage to heavier foes."
   },
   "669": {
     "itemId": 669,
-    "Name": "TM88"
+    "Name": "TM88",
+    "Description": "Eats the foe's held Berry, gaining its effect."
   },
   "670": {
     "itemId": 670,
-    "Name": "TM89"
+    "Name": "TM89",
+    "Description": "Does damage then switches out the user."
   },
   "671": {
     "itemId": 671,
-    "Name": "TM90"
+    "Name": "TM90",
+    "Description": "Creates a Substitute to take hits for itself."
   },
   "672": {
     "itemId": 672,
-    "Name": "TM91"
+    "Name": "TM91",
+    "Description": "Releases a blast of light that may lower Sp. Def."
   },
   "673": {
     "itemId": 673,
-    "Name": "TM92"
+    "Name": "TM92",
+    "Description": "Does electric damage then  switches out."
   },
   "674": {
     "itemId": 674,
-    "Name": "TM93"
+    "Name": "TM93",
+    "Description": "Knocks the foe out with a tail to get them off the field."
   },
   "675": {
     "itemId": 675,
-    "Name": "TM94"
+    "Name": "TM94",
+    "Description": "The user attacks suddenly, raising its Speed."
   },
   "676": {
     "itemId": 676,
-    "Name": "TM95"
+    "Name": "TM95",
+    "Description": "Does double damage if the user has no item."
   },
   "677": {
     "itemId": 677,
-    "Name": "TM96"
+    "Name": "TM96",
+    "Description": "Stomps down on the ground. Lowers Speed."
   },
   "678": {
     "itemId": 678,
-    "Name": "TM97"
+    "Name": "TM97",
+    "Description": "Yells and rants at the foe, lowering its Sp. Atk."
   },
   "679": {
     "itemId": 679,
-    "Name": "TM98"
+    "Name": "TM98",
+    "Description": "The user is roused. Ups Attack and Sp. Atk."
   },
   "680": {
     "itemId": 680,
-    "Name": "TM99"
+    "Name": "TM99",
+    "Description": "An electrical slam that also hurts the user."
   },
   "681": {
     "itemId": 681,
-    "Name": "TM100"
+    "Name": "TM100",
+    "Description": "Slams the target with  wings and hits twice in a row."
   },
   "682": {
     "itemId": 682,
-    "Name": "TM101"
+    "Name": "TM101",
+    "Description": "Boosts strength sharply, but lowers abilities."
   },
   "683": {
     "itemId": 683,
-    "Name": "TM102"
+    "Name": "TM102",
+    "Description": "Throws scorching  sand at the target. May leave a burn."
   },
   "684": {
     "itemId": 684,
-    "Name": "TM103"
+    "Name": "TM103",
+    "Description": "Throws a rock to knock the foe down to the ground."
   },
   "685": {
     "itemId": 685,
-    "Name": "TM104"
+    "Name": "TM104",
+    "Description": "Fiery slam that does more if the user is heavier."
   },
   "686": {
     "itemId": 686,
-    "Name": "TM105"
+    "Name": "TM105",
+    "Description": "Does more damage the higher the user's Defense."
   },
   "687": {
     "itemId": 687,
-    "Name": "TM106"
+    "Name": "TM106",
+    "Description": "Slower Pokémon get to move first for 5 turns."
   },
   "688": {
     "itemId": 688,
-    "Name": "TM107"
+    "Name": "TM107",
+    "Description": "A low altitude charge that also hurts the user."
   },
   "689": {
     "itemId": 689,
-    "Name": "TM108"
+    "Name": "TM108",
+    "Description": "Ice-covered feet hit a foe and clear the terrain."
   },
   "690": {
     "itemId": 690,
-    "Name": "TM109"
+    "Name": "TM109",
+    "Description": "The user bites the target, eating its held Berry."
   },
   "691": {
     "itemId": 691,
-    "Name": "TM110"
+    "Name": "TM110",
+    "Description": "Stomps around angrily. Stronger after a failure."
   },
   "692": {
     "itemId": 692,
-    "Name": "TM111"
+    "Name": "TM111",
+    "Description": "The user punches with a fiery fist. May burn."
   },
   "693": {
     "itemId": 693,
-    "Name": "TM112"
+    "Name": "TM112",
+    "Description": "The user punches with an icy fist. May frostbite"
   },
   "694": {
     "itemId": 694,
-    "Name": "TM113"
+    "Name": "TM113",
+    "Description": "The user punches with an electrified fist. May paralyze."
   },
   "695": {
     "itemId": 695,
-    "Name": "TM114"
+    "Name": "TM114",
+    "Description": "The user bites with flaming fangs. May flinch or burn."
   },
   "696": {
     "itemId": 696,
-    "Name": "TM115"
+    "Name": "TM115",
+    "Description": "The user bites with icy fangs. May flinch or frost."
   },
   "697": {
     "itemId": 697,
-    "Name": "TM116"
+    "Name": "TM116",
+    "Description": "The user bites with electrified fangs. May flinch or para."
   },
   "698": {
     "itemId": 698,
-    "Name": "TM117"
+    "Name": "TM117",
+    "Description": "The user bites with psychic fangs. Breaks screens."
   },
   "699": {
     "itemId": 699,
-    "Name": "TM118"
+    "Name": "TM118",
+    "Description": "The user bites with poisonous fangs. May badly poison."
   },
   "700": {
     "itemId": 700,
-    "Name": "TM119"
+    "Name": "TM119",
+    "Description": "The user slams the target with a steel head. May flinch."
   },
   "701": {
     "itemId": 701,
-    "Name": "TM120"
+    "Name": "TM120",
+    "Description": "The user liquidates the target. May lower Defense."
   },
   "702": {
     "itemId": 702,
-    "Name": "TM121"
+    "Name": "TM121",
+    "Description": "The user fires a Hydro Pump that  slams the target."
   },
   "703": {
     "itemId": 703,
-    "Name": "TM122"
+    "Name": "TM122",
+    "Description": "User crashes into target with drills. High crit ratio."
   },
   "704": {
     "itemId": 704,
-    "Name": "TM123"
+    "Name": "TM123",
+    "Description": "The user launches a fiery kick. May burn, high crit."
   },
   "705": {
     "itemId": 705,
-    "Name": "TM124"
+    "Name": "TM124",
+    "Description": "The user splits its HP in half with the target."
   },
   "706": {
     "itemId": 706,
-    "Name": "TM125"
+    "Name": "TM125",
+    "Description": "User focuses its mind before ramm- ing. May flinch."
   },
   "707": {
     "itemId": 707,
-    "Name": "TM126"
+    "Name": "TM126",
+    "Description": "Type depends on the weather on the field."
   },
   "708": {
     "itemId": 708,
-    "Name": "TM127"
+    "Name": "TM127",
+    "Description": "User attacks with a blade of air. May flinch."
   },
   "709": {
     "itemId": 709,
-    "Name": "TM128"
+    "Name": "TM128",
+    "Description": "The user hexes the target. Doubles dmg if statused."
   },
   "710": {
     "itemId": 710,
-    "Name": "TM129"
+    "Name": "TM129",
+    "Description": "Attacks the target with mystical fire. Lowers SpAtk."
   },
   "711": {
     "itemId": 711,
-    "Name": "TM130"
+    "Name": "TM130",
+    "Description": "The user slams seeds down on the target."
   },
   "712": {
     "itemId": 712,
-    "Name": "TM131"
+    "Name": "TM131",
+    "Description": "The user cuts its target with leaves. High crit ratio."
   },
   "713": {
     "itemId": 713,
-    "Name": "TM132"
+    "Name": "TM132",
+    "Description": "The user knocks the target's held item off."
   },
   "714": {
     "itemId": 714,
-    "Name": "TM133"
+    "Name": "TM133",
+    "Description": "Attacks with rays of light that shine like diamonds."
   },
   "715": {
     "itemId": 715,
-    "Name": "TM134"
+    "Name": "TM134",
+    "Description": "Hurls boulders at the foe 2 to 5 times in a row."
   },
   "716": {
     "itemId": 716,
-    "Name": "TM135"
+    "Name": "TM135",
+    "Description": "Sharp pins are fired to strike 2 to 5 times."
   },
   "717": {
     "itemId": 717,
-    "Name": "TM136"
+    "Name": "TM136",
+    "Description": "Attacks the foe by firing 2 to 5 icicles in a row."
   },
   "718": {
     "itemId": 718,
-    "Name": "TM137"
+    "Name": "TM137",
+    "Description": "Strikes the foe with its tail 2 to 5 times."
   },
   "719": {
     "itemId": 719,
-    "Name": "TM138"
+    "Name": "TM138",
+    "Description": "Straight-arm hits that strike the foe 2 to 5 times."
   },
   "720": {
     "itemId": 720,
-    "Name": "TM139"
+    "Name": "TM139",
+    "Description": "The higher the foe's Attack the more damage caused."
   },
   "721": {
     "itemId": 721,
-    "Name": "TM140"
+    "Name": "TM140",
+    "Description": "Hardens the body's surface to sharply raise Defense."
   },
   "722": {
     "itemId": 722,
-    "Name": "TM141"
+    "Name": "TM141",
+    "Description": "Thinks bad thoughts to boost Sp. Atk sharply."
   },
   "723": {
     "itemId": 723,
-    "Name": "TM142"
+    "Name": "TM142",
+    "Description": "Makes the ground erupt with power. May lower Sp.Def."
   },
   "724": {
     "itemId": 724,
-    "Name": "TM143"
+    "Name": "TM143",
+    "Description": "Attacks with an aura blast that cannot be evaded."
   },
   "725": {
     "itemId": 725,
-    "Name": "TM144"
+    "Name": "TM144",
+    "Description": "Exhales a hot breath on the foe May inflict a burn."
   },
   "726": {
     "itemId": 726,
-    "Name": "TM145"
+    "Name": "TM145",
+    "Description": "Traps the foe in a fierce wind. May cause confusion."
   },
   "727": {
     "itemId": 727,
-    "Name": "TM146"
+    "Name": "TM146",
+    "Description": "Violently lashes the foe with vines or tentacles."
   },
   "728": {
     "itemId": 728,
-    "Name": "TM147"
+    "Name": "TM147",
+    "Description": "Slams hard into the foe with its entire body."
   },
   "729": {
     "itemId": 729,
-    "Name": "TM148"
+    "Name": "TM148",
+    "Description": "A damaging sound wave that may lower Sp. Def."
   },
   "730": {
     "itemId": 730,
-    "Name": "TM149"
+    "Name": "TM149",
+    "Description": "Vanishes on the first turn then strikes the next."
   },
   "731": {
     "itemId": 731,
-    "Name": "TM150"
+    "Name": "TM150",
+    "Description": "A charge that may burn the foe. Also hurts the user."
   },
   "732": {
     "itemId": 732,
-    "Name": "TM151"
+    "Name": "TM151",
+    "Description": "The higher the user's stats the more damage caused."
   },
   "733": {
     "itemId": 733,
-    "Name": "TM152"
+    "Name": "TM152",
+    "Description": "Shoots filthy garbage at the foe. May poison."
   },
   "734": {
     "itemId": 734,
-    "Name": "TM153"
+    "Name": "TM153",
+    "Description": "Whips up a turbulent breeze that raises Speed."
   },
   "735": {
     "itemId": 735,
-    "Name": "TM154"
+    "Name": "TM154",
+    "Description": "A brutal ramming attack using out- thrust horns."
   },
   "736": {
     "itemId": 736,
-    "Name": "TM155"
+    "Name": "TM155",
+    "Description": "Casts comets onto the foe. Harshly lowers the Sp.Atk."
   },
   "737": {
     "itemId": 737,
-    "Name": "TM156"
+    "Name": "TM156",
+    "Description": "The user fights the target up close without guarding."
   },
   "738": {
     "itemId": 738,
-    "Name": "TM157"
+    "Name": "TM157",
+    "Description": "Attacks with the power of the moon. May lower Sp. Atk."
   },
   "739": {
     "itemId": 739,
-    "Name": "TM158"
+    "Name": "TM158",
+    "Description": "A full-body slam that may cause paralysis."
   },
   "740": {
     "itemId": 740,
-    "Name": "TM159"
+    "Name": "TM159",
+    "Description": "Plays rough with the target. May lower attack."
   },
   "741": {
     "itemId": 741,
-    "Name": "TM160"
+    "Name": "TM160",
+    "Description": "Attacks with ultrasonic waves. May confuse."
   },
   "742": {
     "itemId": 742,
-    "Name": "TM161"
+    "Name": "TM161",
+    "Description": "Sends the foe To the abyss. May sleep."
   },
   "743": {
     "itemId": 743,
-    "Name": "TM162"
+    "Name": "TM162",
+    "Description": "Swamps the foe with a wave of sludge. May poison."
   },
   "744": {
     "itemId": 744,
-    "Name": "TM163"
+    "Name": "TM163",
+    "Description": "An electric slam. If it misses, the user is hurt."
   },
   "745": {
     "itemId": 745,
-    "Name": "TM164"
+    "Name": "TM164",
+    "Description": "Desperate attack, power doubles if last move failed."
   },
   "746": {
     "itemId": 746,
-    "Name": "TM165"
+    "Name": "TM165",
+    "Description": "Shoots scales 2 to 5 times. Ups Spd, lowers Def."
   },
   "747": {
     "itemId": 747,
-    "Name": "TM166"
+    "Name": "TM166",
+    "Description": "Unpleasant sounds that damage and prevent healing."
   },
   "748": {
     "itemId": 748,
-    "Name": "TM167"
+    "Name": "TM167",
+    "Description": "Confuses foe if its stats were boosted this turn."
   },
   "749": {
     "itemId": 749,
-    "Name": "TM168"
+    "Name": "TM168",
+    "Description": "Whirls its fists to send a wave that strikes first."
   },
   "750": {
     "itemId": 750,
-    "Name": "TM169"
+    "Name": "TM169",
+    "Description": "Sets spikes that hurt a foe switching in."
   },
   "751": {
     "itemId": 751,
-    "Name": "TM170"
+    "Name": "TM170",
+    "Description": "Fires a beam from its body. It hurts the user."
   },
   "752": {
     "itemId": 752,
-    "Name": "TM171"
+    "Name": "TM171",
+    "Description": "Beats Fairy immunity; 33% recoil; best of phys. or spec."
   },
   "753": {
     "itemId": 753,
-    "Name": "TM172"
+    "Name": "TM172",
+    "Description": "Does more damage if the user outweighs the foe."
   },
   "754": {
     "itemId": 754,
-    "Name": "TM173"
+    "Name": "TM173",
+    "Description": "Gravity is intensified negating levitation."
   },
   "755": {
     "itemId": 755,
-    "Name": "TM174"
+    "Name": "TM174",
+    "Description": "Hit everything and faint. Powers up on Misty Terrain."
   },
   "756": {
     "itemId": 756,
-    "Name": "TM175"
+    "Name": "TM175",
+    "Description": "?????"
   },
   "757": {
     "itemId": 757,
-    "Name": "TM176"
+    "Name": "TM176",
+    "Description": "?????"
   },
   "758": {
     "itemId": 758,
-    "Name": "TM177"
+    "Name": "TM177",
+    "Description": "?????"
   },
   "759": {
     "itemId": 759,
-    "Name": "TM178"
+    "Name": "TM178",
+    "Description": "?????"
   },
   "760": {
     "itemId": 760,
-    "Name": "TM179"
+    "Name": "TM179",
+    "Description": "?????"
   },
   "761": {
     "itemId": 761,
-    "Name": "TM180"
+    "Name": "TM180",
+    "Description": "?????"
   },
   "762": {
     "itemId": 762,
-    "Name": "TM181"
+    "Name": "TM181",
+    "Description": "?????"
   },
   "763": {
     "itemId": 763,
-    "Name": "TM182"
+    "Name": "TM182",
+    "Description": "?????"
   },
   "764": {
     "itemId": 764,
-    "Name": "TM183"
+    "Name": "TM183",
+    "Description": "?????"
   },
   "765": {
     "itemId": 765,
-    "Name": "TM184"
+    "Name": "TM184",
+    "Description": "?????"
   },
   "766": {
     "itemId": 766,
-    "Name": "TM185"
+    "Name": "TM185",
+    "Description": "?????"
   },
   "767": {
     "itemId": 767,
-    "Name": "TM186"
+    "Name": "TM186",
+    "Description": "?????"
   },
   "768": {
     "itemId": 768,
-    "Name": "TM187"
+    "Name": "TM187",
+    "Description": "?????"
   },
   "769": {
     "itemId": 769,
-    "Name": "TM188"
+    "Name": "TM188",
+    "Description": "?????"
   },
   "770": {
     "itemId": 770,
-    "Name": "TM189"
+    "Name": "TM189",
+    "Description": "?????"
   },
   "771": {
     "itemId": 771,
-    "Name": "TM190"
+    "Name": "TM190",
+    "Description": "?????"
   },
   "772": {
     "itemId": 772,
-    "Name": "TM191"
+    "Name": "TM191",
+    "Description": "?????"
   },
   "773": {
     "itemId": 773,
-    "Name": "TM192"
+    "Name": "TM192",
+    "Description": "?????"
   },
   "774": {
     "itemId": 774,
-    "Name": "TM193"
+    "Name": "TM193",
+    "Description": "?????"
   },
   "775": {
     "itemId": 775,
-    "Name": "TM194"
+    "Name": "TM194",
+    "Description": "?????"
   },
   "776": {
     "itemId": 776,
-    "Name": "TM195"
+    "Name": "TM195",
+    "Description": "?????"
   },
   "777": {
     "itemId": 777,
-    "Name": "TM196"
+    "Name": "TM196",
+    "Description": "?????"
   },
   "778": {
     "itemId": 778,
-    "Name": "TM197"
+    "Name": "TM197",
+    "Description": "?????"
   },
   "779": {
     "itemId": 779,
-    "Name": "TM198"
+    "Name": "TM198",
+    "Description": "?????"
   },
   "780": {
     "itemId": 780,
-    "Name": "TM199"
+    "Name": "TM199",
+    "Description": "?????"
   },
   "781": {
     "itemId": 781,
-    "Name": "TM200"
+    "Name": "TM200",
+    "Description": "?????"
   },
   "782": {
     "itemId": 782,
-    "Name": "TM201"
+    "Name": "TM201",
+    "Description": "?????"
   },
   "783": {
     "itemId": 783,
-    "Name": "TM202"
+    "Name": "TM202",
+    "Description": "?????"
   },
   "784": {
     "itemId": 784,
-    "Name": "TM203"
+    "Name": "TM203",
+    "Description": "?????"
   },
   "785": {
     "itemId": 785,
-    "Name": "TM204"
+    "Name": "TM204",
+    "Description": "?????"
   },
   "786": {
     "itemId": 786,
-    "Name": "TM205"
+    "Name": "TM205",
+    "Description": "?????"
   },
   "787": {
     "itemId": 787,
-    "Name": "TM206"
+    "Name": "TM206",
+    "Description": "?????"
   },
   "788": {
     "itemId": 788,
-    "Name": "TM207"
+    "Name": "TM207",
+    "Description": "?????"
   },
   "789": {
     "itemId": 789,
-    "Name": "TM208"
+    "Name": "TM208",
+    "Description": "?????"
   },
   "790": {
     "itemId": 790,
-    "Name": "TM209"
+    "Name": "TM209",
+    "Description": "?????"
   },
   "791": {
     "itemId": 791,
-    "Name": "TM210"
+    "Name": "TM210",
+    "Description": "?????"
   },
   "792": {
     "itemId": 792,
-    "Name": "TM211"
+    "Name": "TM211",
+    "Description": "?????"
   },
   "793": {
     "itemId": 793,
-    "Name": "TM212"
+    "Name": "TM212",
+    "Description": "?????"
   },
   "794": {
     "itemId": 794,
-    "Name": "TM213"
+    "Name": "TM213",
+    "Description": "?????"
   },
   "795": {
     "itemId": 795,
-    "Name": "TM214"
+    "Name": "TM214",
+    "Description": "?????"
   },
   "796": {
     "itemId": 796,
-    "Name": "TM215"
+    "Name": "TM215",
+    "Description": "?????"
   },
   "797": {
     "itemId": 797,
-    "Name": "TM216"
+    "Name": "TM216",
+    "Description": "?????"
   },
   "798": {
     "itemId": 798,
-    "Name": "TM217"
+    "Name": "TM217",
+    "Description": "?????"
   },
   "799": {
     "itemId": 799,
-    "Name": "TM218"
+    "Name": "TM218",
+    "Description": "?????"
   },
   "800": {
     "itemId": 800,
-    "Name": "TM219"
+    "Name": "TM219",
+    "Description": "?????"
   },
   "801": {
     "itemId": 801,
-    "Name": "TM220"
+    "Name": "TM220",
+    "Description": "?????"
   },
   "802": {
     "itemId": 802,
-    "Name": "TM221"
+    "Name": "TM221",
+    "Description": "?????"
   },
   "803": {
     "itemId": 803,
-    "Name": "TM222"
+    "Name": "TM222",
+    "Description": "?????"
   },
   "804": {
     "itemId": 804,
-    "Name": "TM223"
+    "Name": "TM223",
+    "Description": "?????"
   },
   "805": {
     "itemId": 805,
-    "Name": "TM224"
+    "Name": "TM224",
+    "Description": "?????"
   },
   "806": {
     "itemId": 806,
-    "Name": "TM225"
+    "Name": "TM225",
+    "Description": "?????"
   },
   "807": {
     "itemId": 807,
-    "Name": "TM226"
+    "Name": "TM226",
+    "Description": "?????"
   },
   "808": {
     "itemId": 808,
-    "Name": "TM227"
+    "Name": "TM227",
+    "Description": "?????"
   },
   "809": {
     "itemId": 809,
-    "Name": "TM228"
+    "Name": "TM228",
+    "Description": "?????"
   },
   "810": {
     "itemId": 810,
-    "Name": "TM229"
+    "Name": "TM229",
+    "Description": "?????"
   },
   "811": {
     "itemId": 811,
-    "Name": "TM230"
+    "Name": "TM230",
+    "Description": "?????"
   },
   "812": {
     "itemId": 812,
-    "Name": "TM231"
+    "Name": "TM231",
+    "Description": "?????"
   },
   "813": {
     "itemId": 813,
-    "Name": "TM232"
+    "Name": "TM232",
+    "Description": "?????"
   },
   "814": {
     "itemId": 814,
-    "Name": "TM233"
+    "Name": "TM233",
+    "Description": "?????"
   },
   "815": {
     "itemId": 815,
-    "Name": "TM234"
+    "Name": "TM234",
+    "Description": "?????"
   },
   "816": {
     "itemId": 816,
-    "Name": "TM235"
+    "Name": "TM235",
+    "Description": "?????"
   },
   "817": {
     "itemId": 817,
-    "Name": "TM236"
+    "Name": "TM236",
+    "Description": "?????"
   },
   "818": {
     "itemId": 818,
-    "Name": "TM237"
+    "Name": "TM237",
+    "Description": "?????"
   },
   "819": {
     "itemId": 819,
-    "Name": "TM238"
+    "Name": "TM238",
+    "Description": "?????"
   },
   "820": {
     "itemId": 820,
-    "Name": "TM239"
+    "Name": "TM239",
+    "Description": "?????"
   },
   "821": {
     "itemId": 821,
-    "Name": "TM240"
+    "Name": "TM240",
+    "Description": "?????"
   },
   "822": {
     "itemId": 822,
-    "Name": "TM241"
+    "Name": "TM241",
+    "Description": "?????"
   },
   "823": {
     "itemId": 823,
-    "Name": "TM242"
+    "Name": "TM242",
+    "Description": "?????"
   },
   "824": {
     "itemId": 824,
-    "Name": "HM01"
+    "Name": "HM01",
+    "Description": "Attacks the foe with sharp blades or claws."
   },
   "825": {
     "itemId": 825,
-    "Name": "HM02"
+    "Name": "HM02",
+    "Description": "Flies up on the first turn, then attacks next turn."
   },
   "826": {
     "itemId": 826,
-    "Name": "HM03"
+    "Name": "HM03",
+    "Description": "Creates a huge wave, then crashes it down on the foe."
   },
   "827": {
     "itemId": 827,
-    "Name": "HM04"
+    "Name": "HM04",
+    "Description": "Builds enormous power, then slams the foe."
   },
   "828": {
     "itemId": 828,
-    "Name": "HM05"
+    "Name": "HM05",
+    "Description": "Looses a powerful blast of light that reduces accuracy."
   },
   "829": {
     "itemId": 829,
-    "Name": "HM06"
+    "Name": "HM06",
+    "Description": "A rock-crushingly tough attack that may lower Defense."
   },
   "830": {
     "itemId": 830,
-    "Name": "HM07"
+    "Name": "HM07",
+    "Description": "Attacks the foe with enough power to climb waterfalls."
   },
   "831": {
     "itemId": 831,
-    "Name": "HM08"
+    "Name": "HM08",
+    "Description": "Dives underwater the 1st turn, then attacks next turn."
   },
   "832": {
     "itemId": 832,
-    "Name": "Oval Charm"
+    "Name": "Oval Charm",
+    "Description": "Raises the chance of finding eggs at the daycare."
   },
   "833": {
     "itemId": 833,
-    "Name": "Shiny Charm"
+    "Name": "Shiny Charm",
+    "Description": "A charm that will raise the chance of Shiny Pokémon."
   },
   "834": {
     "itemId": 834,
-    "Name": "CatchngCharm"
+    "Name": "CatchngCharm",
+    "Description": "A charm that raises the chance of Critical Captures."
   },
   "835": {
     "itemId": 835,
-    "Name": "Exp. Charm"
+    "Name": "Exp. Charm",
+    "Description": "A charm that raises the amount of Exp. earned in battle."
   },
   "836": {
     "itemId": 836,
-    "Name": "RotomCatalog"
+    "Name": "RotomCatalog",
+    "Description": "A catalog full of devices liked by Rotom."
   },
   "837": {
     "itemId": 837,
-    "Name": "Gracidea"
+    "Name": "Gracidea",
+    "Description": "Bouquets made with it are offered as a token of gratitude."
   },
   "838": {
     "itemId": 838,
-    "Name": "Reveal Glass"
+    "Name": "Reveal Glass",
+    "Description": "This glass returns a Pokémon back to its original form."
   },
   "839": {
     "itemId": 839,
-    "Name": "DNA Splicers"
+    "Name": "DNA Splicers",
+    "Description": "Splicer that fuses Kyurem and a certain Pokémon."
   },
   "840": {
     "itemId": 840,
-    "Name": "Zygarde Cube"
+    "Name": "Zygarde Cube",
+    "Description": "An item to store Zygarde Cores and Cells."
   },
   "841": {
     "itemId": 841,
-    "Name": "Prison Bottle"
+    "Name": "Prison Bottle",
+    "Description": "A bottle used to seal a certain Pokémon long ago."
   },
   "842": {
     "itemId": 842,
-    "Name": "N-Solarizer"
+    "Name": "N-Solarizer",
+    "Description": "A device to fuse and split Necrozma using a Solgaleo."
   },
   "843": {
     "itemId": 843,
-    "Name": "N-Lunarizer"
+    "Name": "N-Lunarizer",
+    "Description": "A device to fuse and split Necrozma using a Lunala."
   },
   "844": {
     "itemId": 844,
-    "Name": "ReinsOfUnity"
+    "Name": "ReinsOfUnity",
+    "Description": "Reins that unite Calyrex with its beloved steed."
   },
   "845": {
     "itemId": 845,
-    "Name": "Mega Ring"
+    "Name": "Mega Ring",
+    "Description": "Enables ᴾₖᴹₙ holding their Mega Stone to Mega Evolve."
   },
   "846": {
     "itemId": 846,
-    "Name": "Z-Power Ring"
+    "Name": "Z-Power Ring",
+    "Description": "A strange ring that enables Z-Move usage."
   },
   "847": {
     "itemId": 847,
-    "Name": "Dynamax Band"
+    "Name": "Dynamax Band",
+    "Description": "A band carrying a Wishing Star that allows Dynamaxing."
   },
   "848": {
     "itemId": 848,
-    "Name": "Bicycle"
+    "Name": "Bicycle",
+    "Description": "A folding bicycle that is faster than the Running Shoes."
   },
   "849": {
     "itemId": 849,
-    "Name": "Mach Bike"
+    "Name": "Mach Bike",
+    "Description": "A folding bicycle that doubles your speed or better."
   },
   "850": {
     "itemId": 850,
-    "Name": "Acro Bike"
+    "Name": "Acro Bike",
+    "Description": "A folding bicycle capable of jumps and wheelies."
   },
   "851": {
     "itemId": 851,
-    "Name": "Old Rod"
+    "Name": "Old Rod",
+    "Description": "Use by any body of water to fish for wild Pokémon."
   },
   "852": {
     "itemId": 852,
-    "Name": "Good Rod"
+    "Name": "Good Rod",
+    "Description": "A decent fishing rod for catching wild Pokémon."
   },
   "853": {
     "itemId": 853,
-    "Name": "Super Rod"
+    "Name": "Super Rod",
+    "Description": "The best fishing rod for catching wild Pokémon."
   },
   "854": {
     "itemId": 854,
-    "Name": "Dowsing MCHN"
+    "Name": "Dowsing MCHN",
+    "Description": "A device that signals an invisible item by sound."
   },
   "855": {
     "itemId": 855,
-    "Name": "Town Map"
+    "Name": "Town Map",
+    "Description": "Can be viewed anytime. Shows your present location."
   },
   "856": {
     "itemId": 856,
-    "Name": "Vs. Seeker"
+    "Name": "Vs. Seeker",
+    "Description": "A rechargeable unit that flags battle- ready Trainers."
   },
   "857": {
     "itemId": 857,
-    "Name": "TM Case"
+    "Name": "TM Case",
+    "Description": "A convenient case that holds TMs and HMs."
   },
   "858": {
     "itemId": 858,
-    "Name": "Berry Pouch"
+    "Name": "Berry Pouch",
+    "Description": "A convenient container that holds Berries."
   },
   "859": {
     "itemId": 859,
-    "Name": "PKMN Box Link"
+    "Name": "ᴾₖᴹₙ Box Link",
+    "Description": "This device grants access to the ᴾₖᴹₙ Storage System."
   },
   "860": {
     "itemId": 860,
-    "Name": "Coin Case"
+    "Name": "Coin Case",
+    "Description": "A case that holds up to 9,999 Coins."
   },
   "861": {
     "itemId": 861,
-    "Name": "Powder Jar"
+    "Name": "Powder Jar",
+    "Description": "Stores Berry Powder made using a Berry Crusher."
   },
   "862": {
     "itemId": 862,
-    "Name": "Wailmer Pail"
+    "Name": "Wailmer Pail",
+    "Description": "A tool used for watering Berries and plants."
   },
   "863": {
     "itemId": 863,
-    "Name": "Poké Radar"
+    "Name": "Poké Radar",
+    "Description": "A tool used to search out Pokémon hiding in grass."
   },
   "864": {
     "itemId": 864,
-    "Name": "Pokéblock Case"
+    "Name": "Pokéblock Case",
+    "Description": "A case for holding Pokéblocks made with a Berry Blender."
   },
   "865": {
     "itemId": 865,
-    "Name": "Soot Sack"
+    "Name": "Soot Sack",
+    "Description": "A sack used to gather and hold volcanic ash."
   },
   "866": {
     "itemId": 866,
-    "Name": "Poké Flute"
+    "Name": "Poké Flute",
+    "Description": "A sweet-sounding flute that awakens Pokémon."
   },
   "867": {
     "itemId": 867,
-    "Name": "Fame Checker"
+    "Name": "Fame Checker",
+    "Description": "Stores information on famous people for instant recall."
   },
   "868": {
     "itemId": 868,
-    "Name": "Teachy TV"
+    "Name": "Teachy TV",
+    "Description": "A TV set tuned to an advice program for Trainers."
   },
   "869": {
     "itemId": 869,
-    "Name": "S.S. Ticket"
+    "Name": "S.S. Ticket",
+    "Description": "The ticket required for sailing on a ferry."
   },
   "870": {
     "itemId": 870,
-    "Name": "Eon Ticket"
+    "Name": "Eon Ticket",
+    "Description": "The ticket for a ferry to a distant southern island."
   },
   "871": {
     "itemId": 871,
-    "Name": "Mystic Ticket"
+    "Name": "Mystic Ticket",
+    "Description": "A ticket required to board the ship to Navel Rock."
   },
   "872": {
     "itemId": 872,
-    "Name": "Aurora Ticket"
+    "Name": "Aurora Ticket",
+    "Description": "A ticket required to board the ship to Birth Island."
   },
   "873": {
     "itemId": 873,
-    "Name": "Old Sea Map"
+    "Name": "Old Sea Map",
+    "Description": "A faded sea chart that shows the way to a certain island."
   },
   "874": {
     "itemId": 874,
-    "Name": "Letter"
+    "Name": "Letter",
+    "Description": "A letter to Steven from the President of the Devon Corp."
   },
   "875": {
     "itemId": 875,
-    "Name": "Devon Parts"
+    "Name": "Devon Parts",
+    "Description": "A package that contains Devon's machine parts."
   },
   "876": {
     "itemId": 876,
-    "Name": "Go-Goggles"
+    "Name": "Go-Goggles",
+    "Description": "Nifty goggles that protect eyes from desert sandstorms."
   },
   "877": {
     "itemId": 877,
-    "Name": "Devon Scope"
+    "Name": "Devon Scope",
+    "Description": "A device by Devon that signals any unseeable Pokémon."
   },
   "878": {
     "itemId": 878,
-    "Name": "Basement Key"
+    "Name": "Basement Key",
+    "Description": "The key for New Mauville beneath Mauville City."
   },
   "879": {
     "itemId": 879,
-    "Name": "Scanner"
+    "Name": "Scanner",
+    "Description": "A device found inside the Abandoned Ship."
   },
   "880": {
     "itemId": 880,
-    "Name": "Storage Key"
+    "Name": "Storage Key",
+    "Description": "The key to the storage inside the Abandoned Ship."
   },
   "881": {
     "itemId": 881,
-    "Name": "Key to Room 1"
+    "Name": "Key to Room 1",
+    "Description": "A key that opens a door inside the Abandoned Ship."
   },
   "882": {
     "itemId": 882,
-    "Name": "Key to Room 2"
+    "Name": "Key to Room 2",
+    "Description": "A key that opens a door inside the Abandoned Ship."
   },
   "883": {
     "itemId": 883,
-    "Name": "Key to Room 4"
+    "Name": "Key to Room 4",
+    "Description": "A key that opens a door inside the Abandoned Ship."
   },
   "884": {
     "itemId": 884,
-    "Name": "Key to Room 6"
+    "Name": "Key to Room 6",
+    "Description": "A key that opens a door inside the Abandoned Ship."
   },
   "885": {
     "itemId": 885,
-    "Name": "Meteorite"
+    "Name": "Meteorite",
+    "Description": "A meteorite found at Meteor Falls."
   },
   "886": {
     "itemId": 886,
-    "Name": "Magma Emblem"
+    "Name": "Magma Emblem",
+    "Description": "A medal-like item in the same shape as Team Magma's mark."
   },
   "887": {
     "itemId": 887,
-    "Name": "Contest Pass"
+    "Name": "Contest Pass",
+    "Description": "The pass required for entering Pokémon Contests."
   },
   "888": {
     "itemId": 888,
-    "Name": "Parcel"
+    "Name": "Parcel",
+    "Description": "A parcel for Prof. Oak from a Pokémon Mart's clerk."
   },
   "889": {
     "itemId": 889,
-    "Name": "Secret Key"
+    "Name": "Secret Key",
+    "Description": "The key to the Cinnabar Island Gym's entrance."
   },
   "890": {
     "itemId": 890,
-    "Name": "Bike Voucher"
+    "Name": "Bike Voucher",
+    "Description": "A voucher for obtaining a bicycle from the Bike Shop."
   },
   "891": {
     "itemId": 891,
-    "Name": "Gold Teeth"
+    "Name": "Gold Teeth",
+    "Description": "Gold dentures lost by the Safari Zone's Warden."
   },
   "892": {
     "itemId": 892,
-    "Name": "Card Key"
+    "Name": "Card Key",
+    "Description": "A card-type door key used in Silph Co's office."
   },
   "893": {
     "itemId": 893,
-    "Name": "Lift Key"
+    "Name": "Lift Key",
+    "Description": "An elevator key used in Team Rocket's Hideout."
   },
   "894": {
     "itemId": 894,
-    "Name": "Silph Scope"
+    "Name": "Silph Scope",
+    "Description": "Silph Co's scope makes unseeable Pokémon visible."
   },
   "895": {
     "itemId": 895,
-    "Name": "Tri-Pass"
+    "Name": "Tri-Pass",
+    "Description": "A pass for ferries between One, Two, and Three Island."
   },
   "896": {
     "itemId": 896,
-    "Name": "Rainbow Pass"
+    "Name": "Rainbow Pass",
+    "Description": "For ferries serving Vermilion and the Sevii Islands."
   },
   "897": {
     "itemId": 897,
-    "Name": "Tea"
+    "Name": "Tea",
+    "Description": "A thirst-quenching tea prepared by an old lady."
   },
   "898": {
     "itemId": 898,
-    "Name": "Ruby"
+    "Name": "Ruby",
+    "Description": "An exquisite, red- glowing gem that symbolizes passion."
   },
   "899": {
     "itemId": 899,
-    "Name": "Sapphire"
+    "Name": "Sapphire",
+    "Description": "A brilliant blue gem that symbolizes honesty."
   },
   "900": {
     "itemId": 900,
-    "Name": "AbilityShield"
+    "Name": "AbilityShield",
+    "Description": "Ability changes are prevented for this items's holder."
   },
   "901": {
     "itemId": 901,
-    "Name": "Clear Amulet"
+    "Name": "Clear Amulet",
+    "Description": "Stat lowering is prevented for this items's holder."
   },
   "902": {
     "itemId": 902,
-    "Name": "PunchingGlove"
+    "Name": "PunchingGlove",
+    "Description": "Powers up punching moves and removes their contact."
   },
   "903": {
     "itemId": 903,
-    "Name": "Covert Cloak"
+    "Name": "Covert Cloak",
+    "Description": "Protects holder from additional effects of moves."
   },
   "904": {
     "itemId": 904,
-    "Name": "Loaded Dice"
+    "Name": "Loaded Dice",
+    "Description": "Rolls high numbers. Multihit strikes hit more times."
   },
   "905": {
     "itemId": 905,
-    "Name": "AuspciousArmr"
+    "Name": "AuspciousArmr",
+    "Description": "Armor inhabited by auspicious wishes. Causes evolution."
   },
   "906": {
     "itemId": 906,
-    "Name": "BoosterEnergy"
+    "Name": "BoosterEnergy",
+    "Description": "Encapsuled energy ups Pokémon with certain Abilities."
   },
   "907": {
     "itemId": 907,
-    "Name": "BigBmbooShoot"
+    "Name": "BigBmbooShoot",
+    "Description": "A large and rare bamboo shoot. Best sold to gourmands."
   },
   "908": {
     "itemId": 908,
-    "Name": "GimighoulCoin"
+    "Name": "GimighoulCoin",
+    "Description": "Gimmighoul hoard and treasure these curious coins."
   },
   "909": {
     "itemId": 909,
-    "Name": "Leader'sCrest"
+    "Name": "Leader'sCrest",
+    "Description": "A shard of an old blade of some sort. Held by Bisharp."
   },
   "910": {
     "itemId": 910,
-    "Name": "MaliciousArmr"
+    "Name": "MaliciousArmr",
+    "Description": "Armor inhabited by malicious will. Causes evolution."
   },
   "911": {
     "itemId": 911,
-    "Name": "Mirror Herb"
+    "Name": "Mirror Herb",
+    "Description": "Mirrors an enemy's stat increases but only once."
   },
   "912": {
     "itemId": 912,
-    "Name": "ScrllOfDrknss"
+    "Name": "ScrllOfDrknss",
+    "Description": "A peculiar scroll with secrets of the dark path."
   },
   "913": {
     "itemId": 913,
-    "Name": "ScrollOfWatrs"
+    "Name": "ScrollOfWatrs",
+    "Description": "A peculiar scroll with secrets of the water path."
   },
   "914": {
     "itemId": 914,
-    "Name": "Tera Orb"
+    "Name": "Tera Orb",
+    "Description": "Energy charges can be used to cause Terastallization."
   },
   "915": {
     "itemId": 915,
-    "Name": "TinyBmbooShot"
+    "Name": "TinyBmbooShot",
+    "Description": "A small and rare bamboo shoot. Best sold to gourmands."
   },
   "916": {
     "itemId": 916,
-    "Name": "Bug TeraShard"
+    "Name": "Bug TeraShard",
+    "Description": "These shards may form when a Tera Pokémon faints."
   },
   "917": {
     "itemId": 917,
-    "Name": "DarkTeraShard"
+    "Name": "DarkTeraShard",
+    "Description": "These shards may form when a Tera Pokémon faints."
   },
   "918": {
     "itemId": 918,
-    "Name": "DragnTeraShrd"
+    "Name": "DragnTeraShrd",
+    "Description": "These shards may form when a Tera Pokémon faints."
   },
   "919": {
     "itemId": 919,
-    "Name": "EltrcTeraShrd"
+    "Name": "EltrcTeraShrd",
+    "Description": "These shards may form when a Tera Pokémon faints."
   },
   "920": {
     "itemId": 920,
-    "Name": "FairyTeraShrd"
+    "Name": "FairyTeraShrd",
+    "Description": "These shards may form when a Tera Pokémon faints."
   },
   "921": {
     "itemId": 921,
-    "Name": "FghtngTerShrd"
+    "Name": "FghtngTerShrd",
+    "Description": "These shards may form when a Tera Pokémon faints."
   },
   "922": {
     "itemId": 922,
-    "Name": "FireTeraShard"
+    "Name": "FireTeraShard",
+    "Description": "These shards may form when a Tera Pokémon faints."
   },
   "923": {
     "itemId": 923,
-    "Name": "FlyngTeraShrd"
+    "Name": "FlyngTeraShrd",
+    "Description": "These shards may form when a Tera Pokémon faints."
   },
   "924": {
     "itemId": 924,
-    "Name": "GhostTeraShrd"
+    "Name": "GhostTeraShrd",
+    "Description": "These shards may form when a Tera Pokémon faints."
   },
   "925": {
     "itemId": 925,
-    "Name": "GrassTeraShrd"
+    "Name": "GrassTeraShrd",
+    "Description": "These shards may form when a Tera Pokémon faints."
   },
   "926": {
     "itemId": 926,
-    "Name": "GrondTeraShrd"
+    "Name": "GrondTeraShrd",
+    "Description": "These shards may form when a Tera Pokémon faints."
   },
   "927": {
     "itemId": 927,
-    "Name": "Ice TeraShard"
+    "Name": "Ice TeraShard",
+    "Description": "These shards may form when a Tera Pokémon faints."
   },
   "928": {
     "itemId": 928,
-    "Name": "NormlTeraShrd"
+    "Name": "NormlTeraShrd",
+    "Description": "These shards may form when a Tera Pokémon faints."
   },
   "929": {
     "itemId": 929,
-    "Name": "PoisnTeraShrd"
+    "Name": "PoisnTeraShrd",
+    "Description": "These shards may form when a Tera Pokémon faints."
   },
   "930": {
     "itemId": 930,
-    "Name": "PschcTeraShrd"
+    "Name": "PschcTeraShrd",
+    "Description": "These shards may form when a Tera Pokémon faints."
   },
   "931": {
     "itemId": 931,
-    "Name": "RockTeraShard"
+    "Name": "RockTeraShard",
+    "Description": "These shards may form when a Tera Pokémon faints."
   },
   "932": {
     "itemId": 932,
-    "Name": "SteelTeraShrd"
+    "Name": "SteelTeraShrd",
+    "Description": "These shards may form when a Tera Pokémon faints."
   },
   "933": {
     "itemId": 933,
-    "Name": "WaterTeraShrd"
+    "Name": "WaterTeraShrd",
+    "Description": "These shards may form when a Tera Pokémon faints."
   },
   "934": {
     "itemId": 934,
-    "Name": "AdamantCrystl"
+    "Name": "AdamantCrystl",
+    "Description": "A large, glowing gem that lets Dialga change form."
   },
   "935": {
     "itemId": 935,
-    "Name": "Griseous Core"
+    "Name": "Griseous Core",
+    "Description": "A large, glowing gem that lets Giratina change form."
   },
   "936": {
     "itemId": 936,
-    "Name": "LustrousGlobe"
+    "Name": "LustrousGlobe",
+    "Description": "A large, glowing gem that lets Palkia change form."
   },
   "937": {
     "itemId": 937,
-    "Name": "BlackAugurite"
+    "Name": "BlackAugurite",
+    "Description": "A black stone that makes some Pokémon evolve."
   },
   "938": {
     "itemId": 938,
-    "Name": "Linking Cord"
+    "Name": "Linking Cord",
+    "Description": "A mysterious string that makes some Pokémon evolve."
   },
   "939": {
     "itemId": 939,
-    "Name": "Peat Block"
+    "Name": "Peat Block",
+    "Description": "A block of material that makes some Pokémon evolve."
   },
   "940": {
     "itemId": 940,
-    "Name": "Berserk Gene"
+    "Name": "Berserk Gene",
+    "Description": "Sharply boosts Attack, but causes lasting confusion."
   },
   "941": {
     "itemId": 941,
-    "Name": "Fairy Feather"
+    "Name": "Fairy Feather",
+    "Description": "A hold item that raises the power of Fairy-type moves."
   },
   "942": {
     "itemId": 942,
-    "Name": "Syrupy Apple"
+    "Name": "Syrupy Apple",
+    "Description": "A very syrupy apple that makes certain Pokémon evolve."
   },
   "943": {
     "itemId": 943,
-    "Name": "UnrmkblTeacup"
+    "Name": "UnrmkblTeacup",
+    "Description": "A cracked teacup that makes certain Pokémon evolve."
   },
   "944": {
     "itemId": 944,
-    "Name": "MstrpceTeacup"
+    "Name": "MstrpceTeacup",
+    "Description": "A chipped teacup that makes certain Pokémon evolve."
   },
   "945": {
     "itemId": 945,
-    "Name": "CornrstneMask"
+    "Name": "CornrstneMask",
+    "Description": "Allows Ogerpon to wield the Rock- type in battle."
   },
   "946": {
     "itemId": 946,
-    "Name": "WellsprngMask"
+    "Name": "WellsprngMask",
+    "Description": "Allows Ogerpon to wield the Water- type in battle."
   },
   "947": {
     "itemId": 947,
-    "Name": "HrthflameMask"
+    "Name": "HrthflameMask",
+    "Description": "Allows Ogerpon to wield the Fire- type in battle."
   },
   "948": {
     "itemId": 948,
-    "Name": "Health Mochi"
+    "Name": "Health Mochi",
+    "Description": "An item that raises the base HP of a Pokémon."
   },
   "949": {
     "itemId": 949,
-    "Name": "Muscle Mochi"
+    "Name": "Muscle Mochi",
+    "Description": "An item that raises the base Attack of a Pokémon."
   },
   "950": {
     "itemId": 950,
-    "Name": "Resist Mochi"
+    "Name": "Resist Mochi",
+    "Description": "An item that raises the base Defense of a Pokémon."
   },
   "951": {
     "itemId": 951,
-    "Name": "Genius Mochi"
+    "Name": "Genius Mochi",
+    "Description": "An item that raises the base Sp. Atk. of a Pokémon."
   },
   "952": {
     "itemId": 952,
-    "Name": "Clever Mochi"
+    "Name": "Clever Mochi",
+    "Description": "An item that raises the base Sp. Def. of a Pokémon."
   },
   "953": {
     "itemId": 953,
-    "Name": "Swift Mochi"
+    "Name": "Swift Mochi",
+    "Description": "An item that raises the base Speed of a Pokémon."
   },
   "954": {
     "itemId": 954,
-    "Name": "FrshStrtMochi"
+    "Name": "FrshStrtMochi",
+    "Description": "An item that resets all base points of a Pokémon."
   },
   "955": {
     "itemId": 955,
-    "Name": "GlmmringCharm"
+    "Name": "GlmmringCharm",
+    "Description": "A charm that will raise the shards from Tera Raids."
   },
   "956": {
     "itemId": 956,
-    "Name": "PokéVial"
+    "Name": "Item 822",
+    "Description": "Item 822"
   },
   "957": {
     "itemId": 957,
-    "Name": "PokéVial"
+    "Name": "Item 823",
+    "Description": "Item 823"
   },
   "958": {
     "itemId": 958,
-    "Name": "PokéVial"
+    "Name": "PokéVial",
+    "Description": "The PokéVial restores your party entirely."
   },
   "959": {
     "itemId": 959,
-    "Name": "InfiniteCandy"
+    "Name": "InfiniteCandy",
+    "Description": "An ultra rare candy that never goes away."
   },
   "960": {
     "itemId": 960,
-    "Name": "InfiniteRepel"
+    "Name": "InfiniteRepel",
+    "Description": "Repels all wild Pokémon for any number of steps."
   },
   "961": {
     "itemId": 961,
-    "Name": "Metal Alloy"
+    "Name": "Metal Alloy",
+    "Description": "A peculiar metal that makes certain Pokémon evolve."
   },
   "962": {
     "itemId": 962,
-    "Name": "StllrTeraShrd"
+    "Name": "StllrTeraShrd",
+    "Description": "These shards may form when a Tera Pokémon faints."
   },
   "963": {
     "itemId": 963,
-    "Name": "JublifeMuffin"
+    "Name": "JublifeMuffin",
+    "Description": "Heals all the status problems of one Pokémon."
   },
   "964": {
     "itemId": 964,
-    "Name": "Remedy"
+    "Name": "Remedy",
+    "Description": "A bitter powder that restores HP by 20 points."
   },
   "965": {
     "itemId": 965,
-    "Name": "Fine Remedy"
+    "Name": "Fine Remedy",
+    "Description": "A bitter powder that restores HP by 60 points."
   },
   "966": {
     "itemId": 966,
-    "Name": "Superb Remedy"
+    "Name": "Superb Remedy",
+    "Description": "A bitter powder that restores HP by 120 points."
   },
   "967": {
     "itemId": 967,
-    "Name": "Aux Evasion"
+    "Name": "Aux Evasion",
+    "Description": "Sharply raises evasiveness during one battle."
   },
   "968": {
     "itemId": 968,
-    "Name": "Aux Guard"
+    "Name": "Aux Guard",
+    "Description": "Sharply raises defenses during one battle."
   },
   "969": {
     "itemId": 969,
-    "Name": "Aux Power"
+    "Name": "Aux Power",
+    "Description": "Sharply raises offenses during one battle."
   },
   "970": {
     "itemId": 970,
-    "Name": "AuxPowerguard"
+    "Name": "AuxPowerguard",
+    "Description": "Sharply raises offense & defense during one battle."
   },
   "971": {
     "itemId": 971,
-    "Name": "ChoiceDumplng"
+    "Name": "ChoiceDumplng",
+    "Description": "?????"
   },
   "972": {
     "itemId": 972,
-    "Name": "Swap Snack"
+    "Name": "Swap Snack",
+    "Description": "?????"
   },
   "973": {
     "itemId": 973,
-    "Name": "2xSpicedRadsh"
+    "Name": "2xSpicedRadsh",
+    "Description": "?????"
   },
   "974": {
     "itemId": 974,
-    "Name": "Pokéshi Doll"
+    "Name": "Pokéshi Doll",
+    "Description": "A wooden toy resembling a Poké-. mon. Can be sold."
   },
   "975": {
     "itemId": 975,
-    "Name": "Luxrite"
+    "Name": "Luxrite",
+    "Description": "This stone enables Luxray to Mega Evolve in battle."
   },
   "976": {
     "itemId": 976,
-    "Name": "Torterrite"
+    "Name": "Torterrite",
+    "Description": "This stone enables Torterra to Mega Evolve in battle."
   },
   "977": {
     "itemId": 977,
-    "Name": "EmpoleoniteO"
+    "Name": "EmpoleoniteO",
+    "Description": "This stone enables Empoleon to Mega Evolve in battle."
   },
   "978": {
     "itemId": 978,
-    "Name": "EmpoleoniteD"
+    "Name": "EmpoleoniteD",
+    "Description": "This stone enables Empoleon to Mega Evolve in battle."
   },
   "979": {
     "itemId": 979,
-    "Name": "Infernapite"
+    "Name": "Infernapite",
+    "Description": "This stone enables Infernape to Mega Evolve in battle."
   },
   "980": {
     "itemId": 980,
-    "Name": "KickingShoes"
+    "Name": "KickingShoes",
+    "Description": "Powers up kicking moves and removes their contact."
   },
   "981": {
     "itemId": 981,
-    "Name": "Kinglerite"
+    "Name": "Kinglerite",
+    "Description": "This stone enables Kingler to Mega Evolve in battle."
   },
   "982": {
     "itemId": 982,
-    "Name": "Butterfrite"
+    "Name": "Butterfrite",
+    "Description": "This stone enables Butterfree to Mega Evolve in battle."
   },
   "983": {
     "itemId": 983,
-    "Name": "Machampite"
+    "Name": "Machampite",
+    "Description": "This stone enables Machamp to Mega Evolve in battle."
   },
   "984": {
     "itemId": 984,
-    "Name": "Laprasite"
+    "Name": "Laprasite",
+    "Description": "This stone enables Lapras to Mega Evolve in battle."
   },
   "985": {
     "itemId": 985,
-    "Name": "Snorlaxite"
+    "Name": "Snorlaxite",
+    "Description": "This stone enables Snorlax to Mega Evolve in battle."
   },
   "986": {
     "itemId": 986,
-    "Name": "Garbodorite"
+    "Name": "Garbodorite",
+    "Description": "This stone enables Garbodor to Mega Evolve in battle."
   },
   "987": {
     "itemId": 987,
-    "Name": "Orbeetlite"
+    "Name": "Orbeetlite",
+    "Description": "This stone enables Orbeetle to Mega Evolve in battle."
   },
   "988": {
     "itemId": 988,
-    "Name": "Drednawite"
+    "Name": "Drednawite",
+    "Description": "This stone enables Drednaw to Mega Evolve in battle."
   },
   "989": {
     "itemId": 989,
-    "Name": "Coalossite"
+    "Name": "Coalossite",
+    "Description": "This stone enables Coalossal to Mega Evolve in battle."
   },
   "990": {
     "itemId": 990,
-    "Name": "Applite"
+    "Name": "Applite",
+    "Description": "Appletun and Flapple can Mega Evolve in battle."
   },
   "991": {
     "itemId": 991,
-    "Name": "Sandacondite"
+    "Name": "Sandacondite",
+    "Description": "This stone enables Sandaconda to Mega Evolve in battle."
   },
   "992": {
     "itemId": 992,
-    "Name": "Toxtricitite"
+    "Name": "Toxtricitite",
+    "Description": "This stone enables Toxtricity to Mega Evolve in battle."
   },
   "993": {
     "itemId": 993,
-    "Name": "Centiskite"
+    "Name": "Centiskite",
+    "Description": "This stone enables Centiskorc to Mega Evolve in battle."
   },
   "994": {
     "itemId": 994,
-    "Name": "Grimmite"
+    "Name": "Grimmite",
+    "Description": "This stone enables Grimmsnarl to Mega Evolve in battle."
   },
   "995": {
     "itemId": 995,
-    "Name": "Copperajite"
+    "Name": "Copperajite",
+    "Description": "This stone enables Copperajah to Mega Evolve in battle."
   },
   "996": {
     "itemId": 996,
-    "Name": "Slakite"
+    "Name": "Slakite",
+    "Description": "This stone enables Slaking to Mega Evolve in battle."
   },
   "997": {
     "itemId": 997,
-    "Name": "Roseradite"
+    "Name": "Roseradite",
+    "Description": "This stone enables Roserade to Mega Evolve in battle."
   },
   "998": {
     "itemId": 998,
-    "Name": "Strange Ball"
+    "Name": "Strange Ball",
+    "Description": "An unusual Ball warped through space and time."
   },
   "999": {
     "itemId": 999,
-    "Name": "Dusknoirite"
+    "Name": "Dusknoirite",
+    "Description": "This stone enables Dusknoir to Mega Evolve in battle."
   },
   "1000": {
     "itemId": 1000,
-    "Name": "Steel Feather"
+    "Name": "Steel Feather",
+    "Description": "A hold item that raises the power of Steel-type moves."
+  },
+  "1001": {
+    "itemId": 1001,
+    "Name": "Hex Orb",
+    "Description": "A purple orb said to contain a cursed power."
   }
 }
