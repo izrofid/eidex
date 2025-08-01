@@ -54,12 +54,15 @@ const MoveEntry: React.FC<MoveEntryProps> = memo(({ move, level }) => {
       </div>
       {/* Row 2: Power/Acc and MovePropBox */}
       <div className="mb-3 flex w-full flex-row items-center justify-between">
-        <div className="flex flex-row items-center gap-2">
-          <span className="w-14 flex justify-center rounded-full bg-black/10 py-0.5 text-sm font-medium text-gray-100 shadow-sm ring-1 ring-white/20">
+        <div className="flex flex-row items-center gap-1">
+          <span className="w-max px-2 py-0.5 flex justify-center rounded bg-black/30 text-xs text-red-400 shadow-sm ring-1 ring-red-400/20">
             {move.power ? `${move.power}` : "—"}
           </span>
-          <span className="w-14 flex justify-center rounded-full bg-black/10 py-0.5 text-sm font-medium text-gray-100 shadow-sm ring-1 ring-white/20">
+          <span className="w-max px-2 py-0.5 flex justify-center rounded bg-black/30 text-xs text-blue-400 shadow-sm ring-1 ring-blue-400/20">
             {move.acc ? (move.acc === 999 ? "∞" : `${move.acc}%`) : "—"}
+          </span>
+          <span className="w-max px-2 py-0.5 flex justify-center rounded bg-black/30 text-xs text-amber-400 shadow-sm ring-1 ring-amber-400/20">
+           { `${move.pp} PP`}
           </span>
         </div>
         <div className="flex flex-row items-center">
