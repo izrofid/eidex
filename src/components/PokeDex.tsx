@@ -12,6 +12,7 @@ import { filterPokemon } from "../utils/filterUtils/filterPokemon";
 import { useRandomiserState } from "../utils/randomiserState";
 import HelpPanel from "./InfoSection/HelpPanel";
 import { useModularFilterStore } from "../stores/filterStore/index";
+
 function PokeDex() {
   // Get filter state from Zustand store
   const { filters } = useModularFilterStore();

@@ -3,7 +3,7 @@ import MoveCombobox from "./MoveCombobox";
 
 function MoveFilterGroup() {
   return (
-    <div className="flex w-full items-center rounded-full bg-filterbox h-9">
+    <div className="flex w-full gap-1 items-center">
       <MoveSourceDropdown />
       <MoveCombobox/>
     </div>

@@ -2,9 +2,6 @@ import { Slider } from "@/components/ui/slider";
 import StatInputBox from "./StatInputBox";
 import { useModularFilterStore } from "@/stores/filterStore/index";
 
-
-
-
 function StatSlider({ max, min }: { max: number; min: number }) {
   const statValue = useModularFilterStore((state) => state.statValue);
   const setStatValue = useModularFilterStore((state) => state.setStatValue);
@@ -15,7 +12,7 @@ function StatSlider({ max, min }: { max: number; min: number }) {
     <div className="flex flex-1 flex-row-reverse items-center gap-2 cursor-pointer">
       <Slider
         max={max}
-        step={1}
+        step={5}
         value={statValue !== undefined ? [statValue] : [min]}
         onValueChange={([val]) => setStatValue(val)}
         className="flex-1"

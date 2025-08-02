@@ -10,32 +10,29 @@ import CloseButton from "@/components/MiscUI/CloseButton";
 import { useUIStore } from "@/stores/uiStore";
 import FilterRadio from "../Filter/FilterRadio";
 import ItemCombobox from "../Filter/FilterComponents/ItemCombobox";
+import MoveCombobox from "../Filter/FilterComponents/MoveCombobox";
 
 const PokedexSidebarContent: React.FC = () => {
-    
-    const toggleSidebar = useUIStore((state) => state.toggleSidebar);
 
     return(
     <>
-        <div className="mb-4 pl-1 flex items-center gap-2 justify-between">
-            <span className="inline-flex items-center select-none">
-              <span className="flex items-center">
-                <span className="text-2xl font-extrabold font-gr bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 bg-clip-text text-transparent drop-shadow-sm tracking-tight pb-1">
-                  Poké
-                </span>
-                <span className="text-2xl font-bold bg-gradient-to-r from-green-500 via-blue-500 to-purple-500 bg-clip-text text-transparent drop-shadow-sm tracking-tight pb-1">
-                  Dex
-                </span>
-              </span>
-            </span>
-            <span className="sm:hidden"><CloseButton onClick={toggleSidebar}/></span>
-        </div>
-        <div className="flex flex-1 flex-col gap-3 overflow-y-auto max-h-[calc(100vh-8rem)]">
-            <NameCombobox />
-            <AbilityCombobox />
-            <MoveFilterGroup />
-            <TypePanel />
+        <div className="flex flex-initial w-full p-1 flex-col gap-2 overflow-y-auto max-h-[calc(100vh-8rem)]">
+<div className="flex flex-wrap w-full gap-2">
+  <div className="flex-1 min-w-[180px]">
+    <NameCombobox />
+  </div>
+  <div className="flex-1 min-w-[180px]">
+    <AbilityCombobox />
+  </div>
+  <div className="flex-1">
+    <MoveFilterGroup />
+  </div>
+  <div className="flex-1 min-w-[180px]">
             <ItemCombobox />
+  </div>
+</div>
+            
+            <TypePanel />
             <FilterRadio/>
             <StatFilter />
             <div className="my-3">

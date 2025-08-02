@@ -11,3 +11,14 @@ export function removeSuffix(str: string, suffixes: string[]) {
   }
   return str;
 }
+
+export const matchesPattern = (str: string, pattern: string): boolean => {
+  let i = 0;
+  for (let c of str) {
+    if (c.toLowerCase() === pattern[i]?.toLowerCase()) {
+      i++;
+      if (i === pattern.length) return true;
+    }
+  }
+  return false;
+};

@@ -3,12 +3,14 @@ import PokedexSidebarContent from "@/components/Sidebar/PokedexSidebarContent";
 import "./App.css";
 import { useUIStore } from "./stores/uiStore";
 import PokeDex from "./components/PokeDex";
+import { ThemeProvider } from "./components/ThemeProvider";
 
 function App() {
   const isSidebarOpen = useUIStore((state) => state.isSidebarOpen);
   const toggleSidebar = useUIStore((state) => state.toggleSidebar);
 
   return (
+<ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
     <div className="flex h-full w-[100%]">
       {/* Overlay for small screens */}
       {isSidebarOpen && (
@@ -26,6 +28,7 @@ function App() {
       </div>
       <PokeDex />
     </div>
+      </ThemeProvider>
   );
 }
 

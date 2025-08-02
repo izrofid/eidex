@@ -1,9 +1,10 @@
-import GenericComboBox, { ComboBoxEntry } from "./GenericComboBox";
-import moveData from "../../../data/moveData.json";
 import { useMemo } from "react";
-import { LuSword } from "react-icons/lu";
+import moveData from "../../../data/moveData.json";
 import { Move } from "../../../types";
 import { useModularFilterStore } from "@/stores/filterStore/index";
+import { ShadcnGenericCombobox } from "./ShadcnCombobox";
+import type { ComboBoxEntry } from "./GenericComboBox";
+import { getMoveName } from "@/utils/moveData";
 
 const moveIDMap: ComboBoxEntry[] = Object.values(moveData)
   .filter((m) => typeof m === "object" && !!m && "moveId" in m)
@@ -13,17 +14,26 @@ const moveIDMap: ComboBoxEntry[] = Object.values(moveData)
   }));
 
 function MoveCombobox() {
-  const moveEntries: ComboBoxEntry[] = useMemo(() => moveIDMap, []);
+  const moveIds = useModularFilterStore((state) => state.filters.moveIds);
   const setMoveValue = useModularFilterStore((state) => state.setMoveValue);
+  const moveEntries: ComboBoxEntry[] = useMemo(() => moveIDMap, []);
+
+  // Find the entry matching the current move, or use {id: null, name} if not found and move is set
+
+  const handleMoveSelect = (entry: ComboBoxEntry | null) => {
+    setMoveValue(entry);
+  };
 
   return (
-    <GenericComboBox
+    <ShadcnGenericCombobox
       entries={moveEntries}
-      onSelect={setMoveValue}
+      onSelect={handleMoveSelect}
       placeholder="Pick a move..."
-      icon={<LuSword />}
-      bg="bg-transparent"
+      isControlled={true}
+      showQuery={true}
+      className="flex-initial"
     />
   );
 }
+
 export default MoveCombobox;

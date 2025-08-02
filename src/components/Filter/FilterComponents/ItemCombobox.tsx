@@ -1,7 +1,7 @@
-import GenericComboBox, { ComboBoxEntry } from "./GenericComboBox";
+import { ShadcnGenericCombobox } from "./ShadcnCombobox";
+import type { ComboBoxEntry } from "./GenericComboBox";
 import itemData from "../../../data/itemData.json";
-import { useMemo, useState, useEffect, useCallback } from "react";
-import { MdShoppingBag} from "react-icons/md";
+import { useMemo } from "react";
 import { useModularFilterStore } from "@/stores/filterStore/index";
 
 const speciesIDMap: ComboBoxEntry[] = Object.values(itemData)
@@ -14,30 +14,26 @@ const speciesIDMap: ComboBoxEntry[] = Object.values(itemData)
 function ItemCombobox() {
   const heldItem = useModularFilterStore((state) => state.filters.heldItem);
   const setHeldItem = useModularFilterStore((state) => state.setHeldItem);
-  const [selectedEntry, setSelectedEntry] = useState<ComboBoxEntry | null>(
-    null,
-  );
   const itemEntries: ComboBoxEntry[] = useMemo(() => speciesIDMap, []);
 
-  const handleItemSelect = useCallback((entry: ComboBoxEntry | null) => {
-    setSelectedEntry(entry);
-    setHeldItem(entry ? entry.id : 0);
-  }, [setHeldItem]);
+  // Find the entry matching the current heldItem, or use {id: null, name} if not found and heldItem is set
+  const selectedEntry =
+    !heldItem
+      ? null
+      : itemEntries.find((entry) => entry.id === heldItem) || { id: null, name: String(heldItem) };
 
-  // Reset the component when nameValue is cleared
-  useEffect(() => {
-    if (!heldItem && selectedEntry) {
-      setSelectedEntry(null);
-    }
-  }, [heldItem, selectedEntry]);
+  const handleItemSelect = (entry: ComboBoxEntry | null) => {
+    setHeldItem(entry?.id ?? 0);
+  };
 
   return (
-    <GenericComboBox
+    <ShadcnGenericCombobox
       entries={itemEntries}
       onSelect={handleItemSelect}
       placeholder="Choose an item..."
-      icon={<MdShoppingBag />}
       value={selectedEntry}
+      isControlled={true}
+      showQuery={false}
     />
   );
 }
