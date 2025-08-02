@@ -1,8 +1,8 @@
-import GenericComboBox, { ComboBoxEntry } from "./GenericComboBox";
+import { ShadcnGenericCombobox } from "./ShadcnCombobox";
+import { ComboBoxEntry } from "./GenericComboBox";
 import abilities from "../../../data/abilityData.json";
 import { getAbilityName } from "../../../utils/abilityData";
-import { useCallback, useMemo } from "react";
-import { IoRibbon } from "react-icons/io5";
+import { useMemo, useCallback } from "react";
 import { useModularFilterStore } from "@/stores/filterStore/index";
 
 const abilityIDMap: ComboBoxEntry[] = Object.keys(abilities)
@@ -18,26 +18,26 @@ const abilityIDMap: ComboBoxEntry[] = Object.keys(abilities)
 function AbilityCombobox() {
   const abilityId = useModularFilterStore((state) => state.filters.abilityId);
   const setAbility = useModularFilterStore((state) => state.setAbility);
-  
-  // Create abilityValue only when abilityId changes, not on every render
-  const abilityValue = useMemo(() => 
-    abilityId ? { id: abilityId, name: getAbilityName(abilityId) } : null
-  , [abilityId]);
-  
-  const setAbilityValue = useCallback((entry: ComboBoxEntry | null) => 
-    setAbility(entry?.id ?? 0)
-  , [setAbility]);
 
   const abilityEntries: ComboBoxEntry[] = useMemo(() => abilityIDMap, []);
+  const selectedEntry =
+    !abilityId
+      ? null
+      : abilityEntries.find((entry) => entry.id === abilityId) || { id: null, name: getAbilityName(abilityId) };
+
+  const handleAbilitySelect = useCallback((entry: ComboBoxEntry | null) => {
+    setAbility(entry?.id ?? 0);
+  }, [setAbility]);
 
   return (
     <div className="w-full">
-      <GenericComboBox
+      <ShadcnGenericCombobox
         entries={abilityEntries}
-        onSelect={setAbilityValue}
+        onSelect={handleAbilitySelect}
         placeholder="Select an ability..."
-        icon={<IoRibbon />}
-        value={abilityValue}
+        value={selectedEntry}
+        isControlled={true}
+        showQuery={false}
       />
     </div>
   );

@@ -1,10 +1,27 @@
 import { useModularFilterStore } from "@/stores/filterStore/index";
-import { Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/react';
-import { MdOutlineKeyboardArrowDown} from "react-icons/md";
+import { useState } from "react";
+import { Check, ChevronsUpDown } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import {
+  Command,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+} from "@/components/ui/command";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import { MoveSource } from "@/types";
 
 function MoveSourceDropdown() {
   const moveSource = useModularFilterStore(state => state.moveSource);
   const setMoveSource = useModularFilterStore(state => state.setMoveSource);
+  const [open, setOpen] = useState(false);
 
   const options = [
     { id: "all", label: "All" },
@@ -13,29 +30,49 @@ function MoveSourceDropdown() {
     { id: "egg", label: "Egg" },
   ];
 
+  const selectedOption = options.find(opt => opt.id === moveSource);
+
   return (
-    <Listbox value={moveSource} onChange={setMoveSource}>
-      <div className="relative">
-        <ListboxButton className="flex h-9 w-12 pl-3 items-center justify-between rounded-full bg-transparent text-sm text-white">
-          {options.find(opt => opt.id === moveSource)?.label || "All"}
-          <MdOutlineKeyboardArrowDown/>
-        </ListboxButton>
-        <ListboxOptions
-          anchor="bottom start"
-          className="no-scrollbar w-(--button-width) rounded-md shadow-lg z-50 bg-zinc-800 ring-1 ring-gray-500 ring-opacity-5 [--anchor-gap:4px] focus:outline-none"
+    <Popover open={open} onOpenChange={setOpen} modal={true}>
+      <PopoverTrigger asChild>
+        <Button
+          variant="secondary"
+          role="combobox"
+          aria-expanded={open}
+          className="w-[80px] justify-between border-1 border-red-500/80 text-red-500"
         >
-          {options.map((option) => (
-            <ListboxOption
-              key={option.id}
-              value={option.id}
-              className="data-active:bg-gray-600 data-selected:font-bold data-selected:text-emerald-500 cursor-pointer select-none py-2 text-center text-sm text-white"
-            >
-              {option.label}
-            </ListboxOption>
-          ))}
-        </ListboxOptions>
-      </div>
-    </Listbox>
+          {selectedOption?.label || "All"}
+          <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+        </Button>
+      </PopoverTrigger>
+      <PopoverContent className="w-[80px] p-0">
+        <Command>
+          <CommandList>
+            <CommandEmpty>No option found.</CommandEmpty>
+            <CommandGroup>
+              {options.map((option) => (
+                <CommandItem
+                  key={option.id}
+                  value={option.id}
+                  onSelect={() => {
+                    setMoveSource(option.id as MoveSource);
+                    setOpen(false);
+                  }}
+                >
+                  {option.label}
+                  <Check
+                    className={cn(
+                      "h-4",
+                      moveSource === option.id ? "opacity-100" : "opacity-0"
+                    )}
+                  />
+                </CommandItem>
+              ))}
+            </CommandGroup>
+          </CommandList>
+        </Command>
+      </PopoverContent>
+    </Popover>
   );
 }
 

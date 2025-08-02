@@ -22,6 +22,8 @@ import {
 
 type SortType = "az" | "za" | "asc" | "desc" | "default";
 
+type ButtonStyle = "default" | "outline" | "link" | "destructive" | "secondary" | "ghost" | null | undefined;
+
 type ShadcnGenericComboboxProps = {
     entries: ComboBoxEntry[];
     onSelect: (entry: ComboBoxEntry | null) => void;
@@ -29,6 +31,7 @@ type ShadcnGenericComboboxProps = {
     sort?: SortType;
     value?: ComboBoxEntry | null;
     className?: string;
+    buttonType?: ButtonStyle;
     slice?: number;
     showQuery?: boolean;
     isControlled?: boolean
@@ -41,7 +44,8 @@ export function ShadcnGenericCombobox({
     sort = "default",
     value = null,
     className,
-    slice = 50,
+    buttonType="outline",
+    slice = 100,
     showQuery = false,
     isControlled = false
 }: ShadcnGenericComboboxProps) {
@@ -98,26 +102,28 @@ export function ShadcnGenericCombobox({
     const filtered =
         sort && sort !== "default" ? sortedEntries : filteredByQuery;
 
+    const hasExactMatch = filtered.some(
+  (entry) => entry.name.toLowerCase() === search.toLowerCase()
+);
+
     // Add query as first option if not a perfect match
     const filteredEntries =
         search === ""
             ? filtered
-            : showQuery &&
-              (filtered.length === 0 ||
-                filtered[0].name.toLowerCase() !== search.toLowerCase())
+            : showQuery && !hasExactMatch
             ? [{ id: null, name: capitalize(search) }, ...filtered]
             : filtered;
 
     const limitedEntries = filteredEntries.slice(0, slice);
 
     return (
-        <Popover open={open} onOpenChange={setOpen}>
+        <Popover open={open} onOpenChange={setOpen} modal={true}>
             <PopoverTrigger asChild>
                 <Button
-                    variant="outline"
+                    variant={buttonType}
                     role="combobox"
                     aria-expanded={open}
-                    className={cn("w-[200px] justify-between", className)}
+                    className={cn("w-full justify-between", className)}
                 >
                     {!isControlled
                         ? selected
@@ -127,7 +133,7 @@ export function ShadcnGenericCombobox({
                     <ChevronsUpDown className="opacity-50" />
                 </Button>
             </PopoverTrigger>
-            <PopoverContent className="w-[200px] p-0">
+            <PopoverContent className="w-[200px] p-0 z-50">
                 <Command>
                     <CommandInput
                         placeholder="Search..."

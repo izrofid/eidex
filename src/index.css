@@ -6,7 +6,6 @@
 @import "tailwindcss";
 @import "./fonts.css";
 @import "./shadcn.css";
-@import "tw-animate-css";
 
 /* -----------------------------
  * Theme Configuration
@@ -119,9 +118,4 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
-}
-
-
-:root {
-  color-scheme: dark;
 }

@@ -17,7 +17,7 @@ import {
 import { MdClose, MdSearch } from "react-icons/md";
 
 
-export type ComboBoxEntry = { id: number; name: string };
+export type ComboBoxEntry = { id: number|null; name: string };
 
 type GenericComboBoxProps = {
   entries: ComboBoxEntry[];
