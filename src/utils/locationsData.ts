@@ -228,11 +228,11 @@ export function getConsolidatedEncounters(
     // For fishing, use a more specific method key that includes the rod type
     if (methodKey === "fishing") {
       const slot = encounter.slot;
-      if (slot === 0 || slot === 1) {
+      if (slot >= 0 && slot <= 2) {
         methodKey = "fishing_old";
-      } else if (slot >= 2 && slot <= 4) {
+      } else if (slot >= 3 && slot <= 5) {
         methodKey = "fishing_good";
-      } else if (slot >= 5 && slot <= 9) {
+      } else if (slot > 5 ) {
         methodKey = "fishing_super";
       }
     }
