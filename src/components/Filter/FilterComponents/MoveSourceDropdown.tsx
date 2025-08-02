@@ -6,10 +6,8 @@ import { Button } from "@/components/ui/button";
 import {
   Command,
   CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-  CommandList,
+  CommandGroup, CommandItem,
+  CommandList
 } from "@/components/ui/command";
 import {
   Popover,

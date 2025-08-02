@@ -6,11 +6,8 @@ import StatFilter from "../Filter/StatFilter/StatFilter";
 import TypePanel from "../Filter/TypePanel";
 import SaveInfo from "../SaveInfo";
 import SecondaryBar from "../SecondaryBar";
-import CloseButton from "@/components/MiscUI/CloseButton";
-import { useUIStore } from "@/stores/uiStore";
 import FilterRadio from "../Filter/FilterRadio";
 import ItemCombobox from "../Filter/FilterComponents/ItemCombobox";
-import MoveCombobox from "../Filter/FilterComponents/MoveCombobox";
 
 const PokedexSidebarContent: React.FC = () => {
 

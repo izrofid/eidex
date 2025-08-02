@@ -4,7 +4,6 @@ import { Move } from "../../../types";
 import { useModularFilterStore } from "@/stores/filterStore/index";
 import { ShadcnGenericCombobox } from "./ShadcnCombobox";
 import type { ComboBoxEntry } from "./GenericComboBox";
-import { getMoveName } from "@/utils/moveData";
 
 const moveIDMap: ComboBoxEntry[] = Object.values(moveData)
   .filter((m) => typeof m === "object" && !!m && "moveId" in m)
@@ -14,7 +13,6 @@ const moveIDMap: ComboBoxEntry[] = Object.values(moveData)
   }));
 
 function MoveCombobox() {
-  const moveIds = useModularFilterStore((state) => state.filters.moveIds);
   const setMoveValue = useModularFilterStore((state) => state.setMoveValue);
   const moveEntries: ComboBoxEntry[] = useMemo(() => moveIDMap, []);
 

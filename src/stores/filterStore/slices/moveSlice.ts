@@ -51,7 +51,7 @@ export const createMoveSlice: StateCreator<MoveState, [], [], MoveSlice> = (set)
         moveValues: newMoves,
         filters: {
           ...state.filters,
-          moveIds: newMoves.map(move => move.id),
+          moveIds: newMoves.filter(move => move.id !== null).map(move => move.id as number),
           moveNames: newMoves.map(move => move.name),
         },
       };
@@ -77,7 +77,7 @@ export const createMoveSlice: StateCreator<MoveState, [], [], MoveSlice> = (set)
         moveValues: newMoves,
         filters: {
           ...state.filters,
-          moveIds: newMoves.map(move => move.id),
+          moveIds: newMoves.filter(move => move.id !== null).map(move => move.id as number),
           moveNames: newMoves.map(move => move.name),
         },
       };
