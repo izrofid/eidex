@@ -1,8 +1,8 @@
 import React from "react";
 import MoveDexCombobox from "../MoveDex/MoveDexCombobox";
-import TypePanel from "../Filter/TypePanel";
 import SaveInfo from "../SaveInfo";
 import SecondaryBar from "../SecondaryBar";
+import MoveTypePanel from "../MoveDex/MoveTypePanel";
 
 
 const MoveDexSidebarContent: React.FC = () => {
@@ -10,7 +10,7 @@ const MoveDexSidebarContent: React.FC = () => {
 <>
         <div className="flex flex-1 flex-col gap-3 overflow-y-auto max-h-[calc(100vh-8rem)]">
                 <MoveDexCombobox/>
-                <TypePanel/>
+                <MoveTypePanel/>
         </div>
         <div className="flex flex-col gap-3">
             <SaveInfo />

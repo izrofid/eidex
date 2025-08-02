@@ -1,14 +1,14 @@
-function FilterBar() {
+import SidebarButton from "../Filter/SidebarButton";
+import MoveDexCombobox from "./MoveDexCombobox";
+
+function MoveDexFilterBar() {
 
   return (
-    <div className="select-none">
-      <div className="flex flex-1 items-center justify-between gap-3 rounded-t-lg px-3 py-2">
-      </div>
-      <div className="px-3 shadow-inner">
-
-      </div>
+    <div className="flex items-center gap-1">
+      <MoveDexCombobox/>
+      <SidebarButton/>
     </div>
   );
 };
 
-export default FilterBar;
+export default MoveDexFilterBar;

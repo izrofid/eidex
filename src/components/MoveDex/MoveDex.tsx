@@ -7,11 +7,9 @@ import FloatingButton from "../MiscUI/FloatingActionButton";
 import moves from "@/data/moveData.json";
 import MoveDexList from "./MoveDexList";
 import MoveDexHeaderBar from "./MoveDexHeaderBar";
-import MoveDexCombobox from "./MoveDexCombobox";
+import MoveDexFilterBar from "./MoveDexFilterBar";
 
-
-const MoveDex:React.FC = () => {
-
+const MoveDex: React.FC = () => {
     const isSidebarOpen = useUIStore((state) => state.isSidebarOpen);
 
     const containerRef = useRef<HTMLDivElement>(null);
@@ -40,9 +38,9 @@ const MoveDex:React.FC = () => {
         <div className="sm:ml-(--sidebar-width) flex min-h-screen w-full flex-col items-center bg-neutral-900">
             <div ref={ref} className="w-full bg-zinc-800 sm:max-w-[60%]">
                 <MoveDexHeaderBar />
-            <div className="px-3">
- <MoveDexCombobox  />
-            </div>
+                <div className="px-3">
+                    <MoveDexFilterBar />
+                </div>
             </div>
             <div
                 ref={containerRef}
@@ -50,7 +48,7 @@ const MoveDex:React.FC = () => {
             >
                 <CreditsPanel />
                 <HelpPanel />
-                <MoveDexList moves={Object.values(moves)}/>
+                <MoveDexList moves={Object.values(moves)} />
 
                 {!inView && !isSidebarOpen && (
                     <div
@@ -63,6 +61,6 @@ const MoveDex:React.FC = () => {
             </div>
         </div>
     );
-}
+};
 
 export default MoveDex;

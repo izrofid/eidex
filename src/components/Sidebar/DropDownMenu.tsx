@@ -1,3 +1,4 @@
+import { useScreenWidth } from "@/hooks/useScreenWidth";
 import {
   Button,
   Menu,
@@ -12,15 +13,17 @@ interface DropDownMenuProps {
   menuItems?: { label: string; onClick: () => void }[];
 }
 
+
 export const DropDownMenu: React.FC<DropDownMenuProps> = ({ menuButton, menuItems }) => {
+    const smallScreen = useScreenWidth() === "sm"
     return (
         <Menu>
             <MenuButton className="data-active:bg-zinc-700 w-full rounded-md font-sans">
                 {menuButton}
             </MenuButton>
             <MenuItems
-                anchor="right start"
-                className="z-40 min-w-[180px] rounded-lg border border-zinc-700 bg-zinc-800/95 p-2 font-sans text-white shadow-lg [--anchor-gap:28px] focus:outline-0"
+                anchor={smallScreen ? `bottom start`:`right start`}
+                className="z-40 min-w-[180px] rounded-lg border border-zinc-700 bg-zinc-800/95 p-2 font-sans text-white shadow-lg [--anchor-gap:4px] sm:[--anchor-gap:28px] focus:outline-0"
             >
                 {menuItems && menuItems.length > 0 ? (
                     menuItems.map((item, idx) => (

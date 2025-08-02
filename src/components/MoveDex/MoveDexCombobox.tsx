@@ -1,10 +1,11 @@
 
 import moveData from "../../data/moveData.json";
-import React, { useMemo, useState, useRef } from "react";
+import React, { useMemo, useState } from "react";
 import { LuSword } from "react-icons/lu";
 import { Move } from "../../types";
-import { useModularFilterStore } from "@/stores/filterStore/index";
 import { Combobox, ComboboxInput, ComboboxOptions, ComboboxOption } from "@headlessui/react";
+import { useMoveDexStore } from "@/stores/moveDexStore";
+import { sentenceCase } from "@/utils/miscUtils";
 
 
 type ComboBoxEntry = { id: number; name: string };
@@ -19,27 +20,32 @@ const moveIDMap: ComboBoxEntry[] = Object.values(moveData)
 
 const MoveDexCombobox: React.FC = () => {
   const moveEntries: ComboBoxEntry[] = useMemo(() => moveIDMap, []);
-  const setMoveValue = useModularFilterStore((state) => state.setMoveValue);
   const [query, setQuery] = useState("");
   const [selected, setSelected] = useState<ComboBoxEntry | null>(null);
+  const filteredMoves = useMemo(() => {
+    if (query === "") return moveEntries;
+    const lowerQuery = query.toLowerCase();
+    const filtered = moveEntries.filter((move) =>
+      move.name.toLowerCase().includes(lowerQuery)
+    );
+    if (!filtered.some(move => move.name.toLowerCase() === lowerQuery)) {
+      return [{ id: -1, name: sentenceCase(query) }, ...filtered];
+    }
+    return filtered;
+  }, [query, moveEntries]);
+  const setMoveName = useMoveDexStore(state => state.setMoveName)
 
-  const filteredMoves =
-    query === ""
-      ? moveEntries
-      : moveEntries.filter((move) =>
-          move.name.toLowerCase().includes(query.toLowerCase())
-        );
-
+  const handleSelect = (val: ComboBoxEntry | null) => {
+    setSelected(val);
+    setMoveName(val?.name ?? "");
+  }
 
 
   return (
     <Combobox
       value={selected}
       virtual={{ options: filteredMoves }}
-      onChange={(val) => {
-        setSelected(val);
-        setMoveValue(val);
-      }}
+      onChange={(val) => handleSelect(val)}
       onClose={() => setQuery("")}
     >
       <div className="relative w-full">
@@ -54,7 +60,7 @@ const MoveDexCombobox: React.FC = () => {
         </div>
         <ComboboxOptions
           anchor="bottom start"
-          className="w-(--input-width) mt-2 rounded-l-xl h-80 border border-zinc-700 bg-zinc-800/95 shadow-lg py-1 px-1 z-40"
+          className="w-(--input-width) mt-2 rounded-l-xl border border-zinc-700 bg-zinc-800/95 shadow-lg py-1 px-1 z-40"
         >
           {({ option: move }) => (
             <ComboboxOption

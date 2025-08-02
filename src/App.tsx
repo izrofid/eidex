@@ -5,7 +5,6 @@ import "./App.css";
 import { useUIStore } from "./stores/uiStore";
 import PokeDex from "./components/PokeDex";
 import MoveDex from "./components/MoveDex/MoveDex";
-import React from "react";
 
 function App() {
   const isSidebarOpen = useUIStore((state) => state.isSidebarOpen);

@@ -1,17 +1,30 @@
 import { Move } from "@/types";
-import { getMoveData } from "@/utils/moveData";
 import { getTypeColor } from "@/utils/typeInfo";
 import chroma from "chroma-js";
-import React, { memo } from "react";
+import React from "react";
+import { HiOutlineExternalLink } from "react-icons/hi";
 import MovePropBox from "../PokemonModal/Learnset/MovePropRow";
 import { TypeIcon } from "../TypeBadges/TypeIcon";
+import { Button } from "@headlessui/react";
+import { useModularFilterStore } from "@/stores/filterStore";
+import { ComboBoxEntry } from "../Filter/FilterComponents/GenericComboBox";
+import { useUIStore } from "@/stores/uiStore";
 
 interface MoveCardProps {
-    moveId: number;
+    move: Move;
 }
 
-export const MoveCard: React.FC<MoveCardProps> = ({ moveId }) => {
-    const move = getMoveData(moveId) as Move;
+export const MoveCard: React.FC<MoveCardProps> = ({ move }) => {
+
+    const setMove = useModularFilterStore(state  => state.setMoveValue)
+    const moveValue: ComboBoxEntry = {id:move.moveId, name:move.name}
+    const setActiveDex = useUIStore(state => state.setActiveDex)
+
+    const handleClick = () => {
+        setMove(moveValue)
+        setActiveDex("pokemon")
+    }
+
     const typeId = move.type;
     const adjustedBgCache: Record<number, string> = {};
     let adjustedBg = adjustedBgCache[typeId];
@@ -68,7 +81,14 @@ export const MoveCard: React.FC<MoveCardProps> = ({ moveId }) => {
                 </div>
                 {/* Row 3: Description */}
                 <div className="mt-1 w-full text-sm leading-relaxed text-gray-300/90">
-                    {move.description}
+                    <span className="flex gap-1 justify-between">
+                        <span>{move.description}</span>
+                        <Button className="text-base cursor-pointer"
+                        onClick={() => handleClick()}>
+                            <HiOutlineExternalLink />
+                        </Button>
+
+                    </span>
                 </div>
             </div>
         );
