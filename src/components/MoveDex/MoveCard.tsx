@@ -1,4 +1,3 @@
-import chroma from "chroma-js";
 import React from "react";
 import { Move } from "@/types";
 import { Button } from "@headlessui/react";
@@ -9,11 +8,11 @@ import { TypeIcon } from "../TypeBadges/TypeIcon";
 import { useModularFilterStore } from "@/stores/filterStore";
 import { ComboBoxEntry } from "../Filter/FilterComponents/GenericComboBox";
 import { useUIStore } from "@/stores/uiStore";
-import BigMoveCard from "../ui/BigMoveCard";
+import BigMoveCard from "@/components/ui/BigMoveCard";
 type MoveWithLevel = Move & { level: number };
 
 interface MoveCardProps {
-    move: MoveWithLevel;
+    move: MoveWithLevel | Move;
 }
 
 export const MoveCard: React.FC<MoveCardProps> = ({ move }) => {
