@@ -150,10 +150,11 @@ export const CommandMenu: React.FC = () => {
     nameField: string,
     idField: string,
     icon?: React.ReactNode,
+    slice:number = 15,
   ): SearchEntry[] => {
     return Object.values(data)
       .filter((p) => matchesPattern(p[nameField], search.trim()))
-      .slice(0, 10)
+      .slice(0, slice)
       .map((p) => {
         const name = p[nameField];
         const id = p[idField];
@@ -166,7 +167,7 @@ export const CommandMenu: React.FC = () => {
   };
 
   const pokemonEntries = useMemo(
-    () => getFilteredEntries(speciesData, "nameKey", "speciesId", <MdCatchingPokemon />),
+    () => getFilteredEntries(speciesData, "nameKey", "speciesId", <MdCatchingPokemon />, 30),
     [search],
   );
 
