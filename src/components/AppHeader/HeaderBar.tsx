@@ -38,7 +38,7 @@ const HeaderBar: React.FC = () => (
       </Button>
       <Button
         as="a"
-        href="https://discord.gg/emeraldimperium"
+        href="https://discord.gg/Qw9eNGaRut"
         target="_blank"
         rel="noopener noreferrer"
         className="active:animate-pulse"
