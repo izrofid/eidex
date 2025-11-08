@@ -14,7 +14,7 @@ const HeaderBar: React.FC = () => (
       <span>
       {" "}
       <span className="m-0 whitespace-nowrap bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 bg-clip-text text-base font-extrabold text-transparent drop-shadow-lg sm:text-2xl sm:font-bold">
-        Emerald Imperium
+        Pokemon Hearth 
       </span>
       {"  "}
       <span className="m-0 whitespace-nowrap bg-gradient-to-r from-green-500 via-blue-500 to-purple-500 bg-clip-text text-base font-extrabold text-transparent drop-shadow-lg sm:text-2xl sm:font-bold relative">
