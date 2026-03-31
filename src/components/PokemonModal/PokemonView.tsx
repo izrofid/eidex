@@ -19,7 +19,6 @@ import PokemonLearnset from "./Learnset/PokemonLearnset";
 import React from "react";
 import { isObtainable } from "@/utils/locationsData";
 import ItemView from "./MiscModal/ItemView";
-import ViewChanger from "./Learnset/ViewChanger";
 
 interface PokemonViewProps {
     pokemon: Pokemon;
@@ -142,11 +141,10 @@ const PokemonView: React.FC<PokemonViewProps> = ({ pokemon }) => {
 
                 {/* Learnset section */}
                 <div className="bg-card-backdrop rounded-xl p-5 shadow-md">
-                    <span className="flex justify-between items-center">
+                    <span className="flex items-center justify-between">
                         <span className="font-chakra mb-3 text-lg font-medium text-gray-100">
                             Learnset
                         </span>
-                        <ViewChanger/>
                     </span>
                     <PokemonLearnset pokemon={pokemon} />
                 </div>

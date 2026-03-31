@@ -59,6 +59,12 @@ export interface FilterOptions {
   ability?: string;
 }
 
+export interface MoveFilterOptions {
+  moveName?: string;
+  moveType?: number;
+}
+
+
 export interface Move {
   moveId: number;
   name: string;

@@ -11,7 +11,9 @@ interface UIState {
   isSidebarOpen: boolean;
   isHelpOpen: boolean;
   isCmdOpen: boolean;
-  learnsetView: "list" | "card"
+  learnsetView: "list" | "card";
+  activeDex: "pokemon" | "move";
+  setActiveDex: (dex: "pokemon" | "move") => void;
   toggleShiny: () => void;
   setSelectedPokemon: (pokemon: Pokemon | null) => void;
   setSelectedAbility: (ability: Ability | null) => void;
@@ -39,8 +41,10 @@ export const useUIStore = create<UIState>()(
       isHelpOpen: false,
       isCmdOpen: false,
       learnsetView: "card",
+      activeDex: "pokemon",
 
       //Actions
+      setActiveDex: (dex) => set({ activeDex: dex }),
       toggleShiny: () => set((state) => ({ isShiny: !state.isShiny })),
       setSelectedPokemon: (pokemon) => set({ selectedPokemon: pokemon }),
       setSelectedAbility: (ability) => set({ selectedAbility: ability }),

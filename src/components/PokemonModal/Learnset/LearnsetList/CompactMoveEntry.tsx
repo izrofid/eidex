@@ -1,4 +1,4 @@
-import { Move } from "../../../types";
+import { Move } from "@/types";
 import { getTypeColor } from "@/utils/typeInfo";
 import { TypeIcon } from "@/components/TypeBadges/TypeIcon";
 import chroma from "chroma-js";
